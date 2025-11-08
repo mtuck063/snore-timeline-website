@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["G43Z43LR73.com.meneliktucker.snoretimeline"],
+        "components": [
+          { "/": "/open/*", "comment": "App deep links, including the Sleep Talk Transcription in-app event" }
+        ]
+      }
+    ]
+  }
+}
