@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>音声検出の仕組み - Snore Timeline サポート</title>
+    <meta name="title" content="音声検出の仕組み - Snore Timeline サポート">
+    <meta name="description" content="Snore Timeline が睡眠中の音をどのように分類するかを説明します。リアルタイムのデバイス内解析、デシベル値、周波数カラー、ノイズ対策のヒントなど。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ja/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/ja/support/how-detection-works">
+    <meta property="og:title" content="音声検出の仕組み - Snore Timeline サポート">
+    <meta property="og:description" content="Snore Timeline が睡眠中の音をどのように分類するかを説明します。リアルタイムのデバイス内解析、デシベル値、周波数カラー、ノイズ対策のヒントなど。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ja/support/how-detection-works">
+    <meta property="twitter:title" content="音声検出の仕組み - Snore Timeline サポート">
+    <meta property="twitter:description" content="Snore Timeline が睡眠中の音をどのように分類するかを説明します。リアルタイムのデバイス内解析、デシベル値、周波数カラー、ノイズ対策のヒントなど。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "サポート", "item": "https://snoretimeline.com/ja/support/" },
+        { "@type": "ListItem", "position": 2, "name": "検出の仕組み", "item": "https://snoretimeline.com/ja/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline における音声検出の仕組み",
+      "description": "Snore Timeline が睡眠中の音をどのように分類するかを説明します。リアルタイムのデバイス内解析、デシベル値、周波数カラー、ノイズ対策のヒントなど。",
+      "url": "https://snoretimeline.com/ja/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ja/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline ロゴ">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">サポート</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">アプリを開く
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="パンくずリスト">
+                    <a href="/ja/support/">サポート</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">検出の仕組み</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">録音</span>
+                    <h1 class="privacy-title">音声検出の仕組み</h1>
+                    <p class="privacy-updated">アプリが何を聴き、どのように判断し、数値が何を意味するか。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>このページの内容</summary>
+                        <ul>
+                            <li><a href="#sound-types">アプリが分類する音の種類</a></li>
+                            <li><a href="#real-time">リアルタイム解析、サンプリングなし</a></li>
+                            <li><a href="#confidence">感度と誤検出</a></li>
+                            <li><a href="#decibels">デシベルと周波数カラー</a></li>
+                            <li><a href="#loud-sound-detection">大きな音の検出</a></li>
+                            <li><a href="#background-noise">背景ノイズが検出に与える影響</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline は一晩分の生音声をラベル付きのイベントに変えます。そのラベルは、どこから来たのかが分かると信頼しやすくなります。そこでこのページでは処理の流れをひととおり見ていきます。アプリがどんな音を聴いているのか、何をタイムラインに残すと判断するのか、デシベルの数値とオレンジ色の波形は何を表すのか、そして騒がしい部屋だと結果がどう変わるのか。</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>アプリが分類する音の種類</h2>
+                        <p>アプリはあらゆる音をいびきとして扱うわけではありません。聴き取った音を6つの主要カテゴリに分けます。</p>
+                        <ul>
+                            <li><strong>いびき</strong>: メインのイベント。ひとつひとつが音量とともにタイムラインに載ります。</li>
+                            <li><strong>あえぎ（ガスプ）</strong>: 呼吸停止の直後によく現れる、鋭い息の吸い込み。</li>
+                            <li><strong>咳</strong>: いびきに紛れ込まないよう、独立して数えます。</li>
+                            <li><strong>寝言</strong>: 話し声、ささやき、つぶやきを含みます。</li>
+                            <li><strong>笑い</strong>。人は寝ていても笑います。</li>
+                            <li><strong>大きな音</strong>: 部屋の背景ノイズ、または自分で決めた値を超えるすべての音。詳しくは<a href="#loud-sound-detection">この後</a>で説明します。</li>
+                        </ul>
+                        <p>いびき、あえぎ、咳が呼吸グループを構成します。アプリは一晩を通じて呼吸も追いかけています。約10秒以上静かな状態が続いた後、その静けさより明らかに大きな回復音が現れると、呼吸の乱れとしてフラグが立ちます。詳しくは<a href="/ja/support/breathing-disruptions">呼吸の乱れ</a>できちんと扱っています。</p>
+                        <p>では、いびきと咳をどう見分けているのでしょうか。音の種類ごとに固有の音響的な指紋があります。いびきはエネルギーの大部分が低音域と中音域、おおむね50 Hz〜3 kHzに集中しており、それが話し声や咳、部屋の物音との違いになります。分類器はラベルを決める前に、音の形と周波数の構成の両方を見ます。背景ノイズの大半にはラベルが付きません。</p>
+                        <p>間違えることもあります。2つの音が重なったり、布団が片方を覆ってしまったりすると、イベントが違うカテゴリに入ります。ラベルがおかしいと感じたら、その瞬間を再生して自分の耳で確かめてください。念のためお伝えすると、これはすべてご自身の把握のための音声解析です。アプリは睡眠時無呼吸症候群もそれ以外も診断しません。</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>リアルタイム解析、サンプリングなし</h2>
+                    <figure class="support-diagram" aria-label="図：デバイスの内部では、マイクがデバイス内AIに音声を送り、各音にラベルが付けられ、外部には何も送信されません">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">PRIVATE TO YOUR DEVICE</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">マイク</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">一晩中聴き続ける</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">デバイス内AI</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">リアルタイム</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Snore</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Gasp</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Cough</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Sleep talk</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Breathing</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">検出イベント</text>
+</svg>
+                        <figcaption>音声はスマートフォンの中で、発生したその瞬間に分類されます。どの音もリアルタイムでラベル付けされ、そのどれもがどこにも送られません。</figcaption>
+                    </figure>
+                        <p>一部のアプリはサンプリングでバッテリーを節約します。ときどき起動して少しだけ聴き、また休止するので、その間に起きたことは失われます。Snore Timeline はスマートフォン本体で動くAppleのSound Analysisフレームワークを使い、ずっと聴き続けます。どの音も発生と同時に処理され、アップロードは一切ありません。</p>
+                        <p>その結果、次の2つに気づくはずです。</p>
+                        <ul>
+                            <li><strong>検出はすぐ始まります。</strong>キャリブレーションも準備の手順もありません。夜最初のいびきも100回目のいびきも同じように数えます。</li>
+                            <li><strong>タイムラインに穴が空きません。</strong>アプリが聴くのをやめないので、静かな区間は部屋が静かだったという意味になり、その区間が呼吸と<a href="/ja/support/sleep-stages">睡眠ステージ</a>の解析を支えます。</li>
+                        </ul>
+                        <p>すべてデバイス上で動きます。音声がスマートフォンの外に出ることはありません。それが実際に何を意味するかは<a href="/ja/privacy">プライバシーポリシー</a>で説明しています。</p>
+                        <p>リアルタイム検出は、いびきが起きているその場でアプリが手を打てるということでもあります。<a href="/ja/support/snore-nudge">いびきナッジ</a>は、いびきが確定すると iPhone から短くサウンドを鳴らすか、Apple Watch で手首をタップします。それだけで寝返りを打てることがよくあります。ほとんどのトラッカーは、朝になってから教えることしかできません。</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>感度と誤検出</h2>
+                        <p>すべての音が残るわけではありません。アプリはその音がいずれかのカテゴリに十分強く一致したときだけイベントとして記録します。軋むラジエーターが一晩を幻のいびきで埋め尽くさずに済むのは、そのおかげです。</p>
+                        <p>その基準をどれだけ厳しくするかは、感度設定で決めます。<strong>最小限、低、バランス、高、最大</strong>の5段階があり、デフォルトは「バランス」です。</p>
+                        <ul>
+                            <li><strong>最小限</strong>ははっきりした大きないびきだけを拾い、ほかはほとんど無視します。騒がしい部屋や、パートナーのいびきが何度も検出を引き起こすときに使ってください。</li>
+                            <li><strong>最大</strong>はごくかすかないびきも拾いますが、その分だけ背景ノイズも誤検出も増えます。</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">ヒント</span>
+                            <p>どちらに動かすかはタイムラインが教えてくれます。再生しても何も聞こえない余計なイベントが多いなら、感度を下げてください。録音では聞こえるのにアプリが取りこぼしたいびきがあるなら、上げてください。「バランス」はたいていの人にとってよい出発点です。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>デシベルと周波数カラー</h2>
+                        <p>音量はアプリのどこでもdB SPLで表示され、約28 dB（ほぼ無音）から105 dB（耳が痛いほどの大音量）までのスケールです。音量計として読んでください。いびきの大まかな目安は次のとおりです。</p>
+                        <ul>
+                            <li><strong>約40 dB未満</strong>: かすかないびき</li>
+                            <li><strong>40〜48 dB</strong>: 軽いいびき</li>
+                            <li><strong>48〜56 dB</strong>: はっきり聞こえるいびき</li>
+                            <li><strong>56 dB以上</strong>: 重いいびき</li>
+                        </ul>
+                        <p>エピソードごとにピーク値と平均値の両方が付きます。数値は個人的な目安として見てください。枕元のスマートフォンは校正された測定器ではありません。</p>
+                        <p>アプリは使用中のマイクを把握しており、音楽やポッドキャストなどをスマートフォンが再生している間は読み取り値を補正します。</p>
+                        <p>すべての音は周波数の混ざり合いです。周波数とは空気の振動の速さのことで、ヘルツ（Hz）で測ります。低い音はゆっくり、高い音は速く振動します。再生を押してスライダーをドラッグし、音が高くなるにつれて波が詰まっていく様子を見てください。</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="低音域" data-band-mid="中音域" data-band-high="高音域"
+                                aria-label="ドラッグして音の高さを変え、周波数が高いほど速く振動する様子を確認できます">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="ドラッグして音の高さを変更">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="再生" data-label-stop="停止">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">再生</span>
+                                </button>
+                                <span class="pitch-hint">スライダーをドラッグ &mdash; 音が高いほど速く振動します</span>
+                            </div>
+                            <figcaption>下の帯域も同じスケールです。ゆっくりした振動が低音域、速い振動が高音域。いびきはずっと下のほうに住んでいます。呼気のかすかな摩擦音はずっと上のほうです。聞くにはヘッドフォンかスピーカーが必要です。</figcaption>
+                        </figure>
+                        <p>波形を目一杯ズームインすると、バーが積み重なったオレンジの階調に分かれ、その音のエネルギーが周波数帯のどこにあるかが見えてきます。</p>
+                        <ul>
+                            <li><strong>濃いオレンジ</strong>: 低音域、約50〜250 Hz。いびき特有の深い唸り音。</li>
+                            <li><strong>中間のオレンジ</strong>: 中音域、約250〜1500 Hz。倍音や母音の音。</li>
+                            <li><strong>明るいオレンジ</strong>: 高音域、約1500〜8000 Hz。「スス」という音のような摩擦音。</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="実際の録音を再生して、その周波数帯域が波形上にアプリと同じように表示される様子を確認できます">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">呼吸</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">いびき</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="吸気" data-exhale="呼気 &mdash; 高音域のエネルギーが増えます" data-idle="再生を押して、ひと呼吸ずつ追ってみましょう"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="再生" data-label-stop="一時停止">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">再生</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">高音域</span>
+                                    <span class="wave-key" data-band="mid">中音域</span>
+                                    <span class="wave-key" data-band="low">低音域</span>
+                                </span>
+                            </div>
+                            <figcaption>実際の録音を2つ、アプリが波形を描くのと同じ色で、各バーを低音・中音・高音のエネルギーに分けて表示しています。再生を押して線を追ってください。呼吸のクリップでは、音そのものは小さいままなのに、呼気のたびに明るい高音域がぴくっと跳ね上がります。いびきのクリップでは濃い低音域が主役になります。その高音域のリズムが止まったとき、それが<a href="/ja/support/breathing-disruptions">呼吸の乱れ</a>の可能性を示すサインです。</figcaption>
+                        </figure>
+                        <p>呼吸で効いてくるのは明るい高音域です。呼気のたびにかすかな摩擦音、やわらかい「スス」という音が出て、それが高音域の上のほうに現れます。Snore Timeline はそれを追って一晩中の呼吸をたどり、<a href="/ja/support/breathing-disruptions">呼吸の乱れ検出</a>と<a href="/ja/support/sleep-stages">睡眠ステージの推定</a>はその追跡の上に成り立っています。スマートフォンが遠すぎたり部屋が騒がしかったりすると、この両方が弱くなるのもそのためです。摩擦音は小さいので、真っ先に消えてしまいます。</p>
+                        <p>周波数の詳細が見えるのは1秒バーだけで、<a href="/ja/support/timeline-and-playback#real-time-view">リアルタイム表示</a>の1段階外側にあたります。それより広いズームではバーは単色です。波形全体の読み方は<a href="/ja/support/timeline-and-playback#reading-the-waveform">タイムラインと再生</a>で扱っています。</p>
+                        <div class="callout callout--tip"><span class="callout-label">試してみる</span><p>夜の静かな区間を目一杯ズームインして、下にほとんど何もない明るいオレンジの短い山を探してみてください。それがあなたの呼吸です。</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="アプリの全画面表示" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> ズームイン</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="いびきエピソード中に積み重なったオレンジ色の周波数帯域を示すズームイン波形" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>1秒バーでの周波数カラー。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>大きな音の検出</h2>
+                        <p>いびきと寝言は分類器が自分で処理します。大きな音の検出は、それ以外のすべてのためにあります。音が音量のしきい値を超えれば、その音が何であれエピソードを作ります。これで分類器に名前を付けられない音、たとえば声として数えられないほど小さなささやきの寝言、歯ぎしり、寝返りを打つときの衣擦れ、そのほか部屋で起きた何かを拾えます。</p>
+                        <p>しきい値には2つのモードがあり、設定の<strong>しきい値モード</strong>で選びます。</p>
+                        <ul>
+                            <li><strong>自動</strong>（既定）。録音中にアプリが部屋の背景ノイズを測り、しきい値をそのすぐ上に保ちます。1分ごとに測り直すので、扇風機が回り始めたり窓が開いたりすればしきい値は上がり、静かな部屋では下がります。それぞれの夜は、最後に測定した夜の値から始まります。設定画面には、測定された音量、それがどの夜のものか、そしてそこから決まる dB が表示されます。</li>
+                            <li><strong>固定</strong>。毎晩同じ線で見たいときのために、自分で決める dB のスライダーです。自動が登場する前に値を設定していた場合は、その値の固定のままになっています。</li>
+                        </ul>
+                        <p>部屋が静かなほどしきい値は下がり、それだけ多くの音を捉えられます。</p>
+                        <p>いびきだと思っていた音が大きな音のカテゴリに入っていることがあります。これは背景ノイズが、いびき分類器の頼りにしている呼吸パターンを覆い隠すときに起こります。何かをいびきと呼ぶにはきれいな信号が必要で、静かなときの部屋が約45 dBを超えると、いびきではなく大きな音のシグナルとして記録される音が増えます。対処法は次のセクションで扱います。</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>背景ノイズが検出に与える影響</h2>
+                        <p>エアコン、扇風機、交通騒音、音楽、雨、波の音のような定常的な背景ノイズは別に追跡され、タイムラインにいびきイベントを作りません。アプリはそれを連続した環境ノイズとして認識するので、うなるエアコンだけで一晩が偽のいびきで埋まることはありません。</p>
+                        <p>定常的なノイズが奪うのはマスキングの分です。ノイズフロアが高いと静かな呼吸音やかすかないびきがかき消され、分類器の手元に残る材料が減ります。起きることは2つです。</p>
+                        <ul>
+                            <li>小さな音はそもそも検出されにくくなります。</li>
+                            <li>静かなときでも約<strong>45 dB</strong>を超える部屋では、普通ならいびきと数えられる音が大きな音のカテゴリに移ります。</li>
+                        </ul>
+                        <p>分類をきれいにするには、できる範囲で部屋を静かにしてください。よくある犯人は扇風機やホワイトノイズマシン、空調や空気清浄機、交通に面した開けっぱなしの窓、つけっぱなしのテレビやスピーカーです。部屋が静かなほど、全体として検出は正確になります。</p>
+                        <p>ホテルの部屋などでノイズをどうにもできないときは、あるもので工夫してください。</p>
+                        <ul>
+                            <li><strong>スマートフォンを頭の近くに置いてください</strong>。うなり音の中でも呼吸が聞き取れるようにするためです。配置については<a href="/ja/support/getting-started#placement">はじめに</a>で扱っています。</li>
+                            <li><strong><a href="#confidence">感度</a>を上げてください</strong>。背景ノイズの向こうにある小さめの音もアプリが拾えるようになります。</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="アプリの全画面表示" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> ズームイン</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="ピーク・平均デシベルと大きな音シグナルバッジを表示した大きな音の検出エピソード" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>45 dBのノイズフロアを超える部屋での録音例。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>関連ページ</h2>
+                        <ul>
+                            <li><a href="/ja/support/episodes-and-events">エピソードとイベント</a></li>
+                            <li><a href="/ja/support/timeline-and-playback">タイムラインの読み方と音声再生</a></li>
+                            <li><a href="/ja/support/breathing-disruptions">呼吸の乱れ</a></li>
+                            <li><a href="/ja/support/getting-started">はじめに</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="他のサポートページ"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ja/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>いびき、呼吸、睡眠を録音・可視化・理解できます。すべてデバイス上で完結します。</p>
+                <p><a href="/ja/support/">サポート</a> &middot; <a href="/ja/privacy">プライバシー</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学ぶ</h4>
+                <ul>
+                    <li><a href="/ja/support/getting-started">はじめに</a></li>
+                    <li><a href="/ja/support/how-detection-works">検出の仕組み</a></li>
+                    <li><a href="/ja/support/timeline-and-playback">タイムラインと再生</a></li>
+                    <li><a href="/ja/support/breathing-disruptions">呼吸の乱れ</a></li>
+                    <li><a href="/ja/support/sleep-stages">睡眠ステージ</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>その他</h4>
+                <ul>
+                    <li><a href="/ja/support/apple-watch">Apple Watch とヘルスケア</a></li>
+                    <li><a href="/ja/support/export-and-sharing">エクスポートと共有</a></li>
+                    <li><a href="/ja/support/troubleshooting">トラブルシューティング</a></li>
+                    <li><a href="/ja/support/android">Android</a></li>
+                    <li><a href="/ja/support/faq">よくある質問</a></li>
+                    <li><a href="/ja/support/#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js?v=2"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

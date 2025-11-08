@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>时间轴与回放 - Snore Timeline 支持</title>
+    <meta name="title" content="时间轴与回放 - Snore Timeline 支持">
+    <meta name="description" content="学会读懂 Snore Timeline 的波形：实时视图、颜色含义、缩放级别，以及如何以清晰的音质回放夜里的任意瞬间。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/support/timeline-and-playback">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh/support/timeline-and-playback">
+    <meta property="og:title" content="时间轴与回放 - Snore Timeline 支持">
+    <meta property="og:description" content="学会读懂 Snore Timeline 的波形：实时视图、颜色含义、缩放级别，以及如何以清晰的音质回放夜里的任意瞬间。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh/support/timeline-and-playback">
+    <meta property="twitter:title" content="时间轴与回放 - Snore Timeline 支持">
+    <meta property="twitter:description" content="学会读懂 Snore Timeline 的波形：实时视图、颜色含义、缩放级别，以及如何以清晰的音质回放夜里的任意瞬间。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支持", "item": "https://snoretimeline.com/zh/support/" },
+        { "@type": "ListItem", "position": 2, "name": "时间轴与回放", "item": "https://snoretimeline.com/zh/support/timeline-and-playback" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "读懂时间轴并回放音频",
+      "description": "学会读懂 Snore Timeline 的波形：实时视图、颜色含义、缩放级别，以及如何以清晰的音质回放夜里的任意瞬间。",
+      "url": "https://snoretimeline.com/zh/support/timeline-and-playback",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="timeline-and-playback" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 图标">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支持</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">打开应用
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="面包屑导航">
+                    <a href="/zh/support/">支持</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">时间轴与回放</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">您的结果</span>
+                    <h1 class="privacy-title">读懂时间轴并回放音频</h1>
+                    <p class="privacy-updated">波形图上的每种颜色、每个缩放级别和每次点击，一一解析。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本页内容</summary>
+                        <ul>
+                            <li><a href="#reading-the-waveform">读懂波形图</a></li>
+                            <li><a href="#real-time-view">实时视图</a></li>
+                            <li><a href="#zoom-levels">缩放级别与自动滚动</a></li>
+                            <li><a href="#finding-moments">定位特定时刻</a></li>
+                            <li><a href="#calendar">切换不同夜晚</a></li>
+                            <li><a href="#status-bar">状态栏</a></li>
+                            <li><a href="#playback">回放您的夜晚</a></li>
+                            <li><a href="#audio-enhancement">音频增强</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">时间轴是一整晚的音频变成您可以翻找的东西的地方。一旦您明白颜色的含义、各缩放级别如何衔接，就能在几秒内从"我觉得我打鼾了"到听见那个确切的瞬间。本页讲怎么读波形、怎么在里面走动，以及怎么回放。</p>
+
+                    <div class="privacy-section" id="reading-the-waveform">
+                        <h2>读懂波形图</h2>
+                        <p>Snore Timeline 把您的夜晚画成一条波形。时间从左往右走，每根柱子的高度是那一小段夜晚的峰值平均音量。屏幕中间的时间指示器显示它正下方的确切时刻，并在您滑动或录音继续时更新。向左或向右拖动波形就能在夜里移动。快速一划会继续滑行，直到自己慢下来。</p>
+                        <p>柱子按声音类型上色，所以不用播放您也看得出哪是哪：</p>
+                        <ul>
+                            <li><strong>橙色/杏色</strong>代表普通音频。</li>
+                            <li><strong>玫瑰粉色</strong>代表打鼾声。</li>
+                            <li><strong>奶油色/米色</strong>代表梦话。</li>
+                            <li><strong>淡紫色</strong>代表<a href="/zh/support/breathing-disruptions#timeline-markers">呼吸中断</a>。</li>
+                            <li><strong>褪色灰</strong>标记完全没有声音的时段。这些时段跳过波形镜像的下半部分，所以寂静看起来和安静的声音不一样。</li>
+                            <li><strong>较浅的半透明灰色</strong>标记当前录音会话之前的片段，让旧数据在视觉上和实时数据分开。</li>
+                        </ul>
+                        <p>检测到的<a href="/zh/support/sleep-stages#hypnogram">睡眠阶段</a>会以睡眠图的形式出现在每晚摘要里。点其中的阶段色块，时间轴就跳到那一刻，想把打鼾片段和某个阶段对上时很好用。在可穿戴设备同步了睡眠数据、但您没有录音的夜晚，本来空白的波形会以睡眠图的配色画出阶段色带，状态栏在中心线下方读出阶段和您的生命体征，大概像"浅睡眠 &middot; 57 bpm &middot; 13 次/分钟 &middot; 血氧 96%"。</p>
+                        <p><strong>橙色的深浅</strong>也有含义。橙色柱子叠成不同深浅，显示一段声音的能量在各频率上怎么分布。深橙色是低端，大约 50 至 250 赫兹，打鼾的低沉轰鸣。中橙色是中频，大约 250 至 1500 赫兹，泛音和元音所在的地方。亮橙色是高频，大约 1500 至 8000 赫兹，"嘶"这类摩擦音。这个细节只在 1 秒柱子上有，也就是实时视图往外一级。缩放级别再宽，柱子就是纯色的。<a href="/zh/support/how-detection-works#decibels">声音检测原理</a>解释了这些频率颜色，和这里的一切一样，它是给您自己看的，不是医学读数。</p>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-nightly.webp" type="image/webp">
+                                    <img src="/support/img/shot-nightly.png" alt="完整应用界面截图" loading="lazy" width="600" height="1170">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:10%;width:94%;height:22.5%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 放大视图</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-waveform.webp" type="image/webp">
+                                    <img src="/support/img/shot-waveform.png" alt="放大后的波形图，显示玫瑰粉色打鼾柱、褪色灰色寂静区段以及"打鼾信号"图例" loading="lazy" width="900" height="417">
+                                </picture>
+                                <figcaption>颜色告诉您在按下播放键之前应用听到了什么。</figcaption>
+                            </div>
+                        </figure>
+                        <p>如果时间轴上的文字太小，应用支持动态字体。在 iPhone 设置中前往"辅助功能">"显示与文字大小">"更大字体"调大字号，应用内的标签会跟着一起变大。</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time-view">
+                        <h2>实时视图</h2>
+                        <p>放大到底，柱子就消失了。实时视图把声音画成一条连续的形状，细到您能看清一次鼾声的起落。开始录音的那一刻，应用打开的正是这个视图。</p>
+                        <figure class="support-figure support-figure--card">
+                            <picture>
+                                <source srcset="/support/img/shot-realtime.webp" type="image/webp">
+                                <img src="/support/img/shot-realtime.png" alt="实时波形：杏色与玫瑰色的起伏从虚线噪声底线上生长，下方显示 62 dB 读数和打鼾信号标签" loading="lazy" width="1110" height="592">
+                            </picture>
+                            <figcaption>几秒钟的鼾声。虚线是房间的噪声底线，明亮的中心显示声音传开的位置。</figcaption>
+                        </figure>
+                        <p><strong>虚线就是您房间的噪声底线。</strong>每晚应用都会测量您睡觉处的安静基准，波形从这条线上生长，而不是从零开始。所以无论是安静的卧室还是开着风扇的房间，轻微的呼吸都能保持可见。基准会随房间移动。</p>
+                        <p><strong>亮度说明声音传开了多少。</strong>每一处起伏都有半透明的外轮廓和更密实的明亮中心。外轮廓描出峰值，明亮中心显示这一小段里有多少含着声音。几乎不发亮的起伏只是一闪而过的噪声。饱满的那些是鼾声、说话声或翻身，也正是值得播放的部分。</p>
+                        <p><strong>颜色标明信号类型。</strong>每一处带色的起伏都是应用统计到的信号，与您的每晚摘要所汇总的信号一致。玫瑰粉色是打鼾，奶油色是梦话，淡紫色是<a href="/zh/support/breathing-disruptions#timeline-markers">呼吸中断</a>，青色是喘息，绿色是咳嗽。杏色是应用统计到却叫不出名字的声音，比如关门声或驶过的汽车。</p>
+                        <p>最后这种情况正是值得细看此视图的理由。声音一开始波形就会变亮，比打鼾或梦话标签能出现的时间约早一秒，因此明亮的杏色起伏往往意味着应用听到了某种它叫不出名字的声音。把这些放来听听，惊喜就在那儿。波形下方的分贝读数在此缩放级别下同样精细。它给出的是那一瞬间的音量，而非窗口平均值，并在您拖动时每秒刷新八次。</p>
+                        <p>录音进行时，波形向右生长并止于中线。中线之前不会画出任何内容。您看到的，麦克风已经采集到了。</p>
+                    </div>
+
+                    <div class="privacy-section" id="zoom-levels">
+                        <h2>缩放级别与自动滚动</h2>
+                    <figure class="zoom-stack" aria-label="同一条时间线的四张截图，从三个夜晚一直放大到一次鼾声">
+                        <picture>
+        <source srcset="/support/img/shot-zoom-nights.webp" type="image/webp">
+        <img src="/support/img/shot-zoom-nights.png" alt="三个夜晚并排显示" loading="lazy" width="1110" height="496">
+    </picture>
+                        <svg class="zoom-stack-arrow" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2 V22 M5 15 l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <picture>
+        <source srcset="/support/img/shot-zoom-night.webp" type="image/webp">
+        <img src="/support/img/shot-zoom-night.png" alt="一整夜，从午夜到六点" loading="lazy" width="1110" height="496">
+    </picture>
+                        <svg class="zoom-stack-arrow" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2 V22 M5 15 l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <picture>
+        <source srcset="/support/img/shot-zoom-hour.webp" type="image/webp">
+        <img src="/support/img/shot-zoom-hour.png" alt="那一夜中的一个小时" loading="lazy" width="1110" height="496">
+    </picture>
+                        <svg class="zoom-stack-arrow" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2 V22 M5 15 l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <picture>
+        <source srcset="/support/img/shot-zoom-seconds.webp" type="image/webp">
+        <img src="/support/img/shot-zoom-seconds.png" alt="几秒钟：一次鼾声" loading="lazy" width="1110" height="496">
+    </picture>
+                        <figcaption>同一条时间轴在六个缩放级别中的四个。标签标明级别，下方的时间显示屏幕上呈现的是夜晚的哪一段。长按某个缩放按钮可一次跳到最近或最远。</figcaption>
+                    </figure>
+                        <p>缩放级别一共六个。最近的一级是<a href="#real-time-view">实时视图</a>，它绘制的是连续波形而非柱子。往外是五个柱状级别，由细到粗依次为 <strong>1 秒、5 秒、1 分钟、10 分钟和 1 小时</strong>。1 秒柱子显示单个声音，1 小时视图把整晚装进一屏。时间轴右上角的加号和减号放大镜按钮每点一次进出一级。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>长按缩放按钮约三分之一秒，它就直接跳到那个方向最近或最宽的视图，省得您逐级点击。</p>
+                        </div>
+                        <p>有几种情况应用也会自己改变缩放和滚动。知道规则能省去一些困惑：</p>
+                        <ul>
+                            <li><strong>录音开始时</strong>，时间轴切换到<a href="#real-time-view">实时视图</a>并进入实时模式，您可以看着声音随麦克风的采集逐渐到来。</li>
+                            <li><strong>实时模式下</strong>，它会自己滚动以保持最新音频在视野内。实时视图连续滑动。柱状视图大约每秒推进一步。</li>
+                            <li><strong>录音停止时</strong>，缩放会自动适配刚刚录下的内容。不到几分钟的停留在实时视图。较短的录音落在 1 秒或 5 秒柱子上。整晚录音以 1 分钟视图打开，好让您总览。</li>
+                            <li><strong>离开一小时或更久后返回</strong>，时间轴重置为实时模式，回到今天的日期，并使用较宽的 10 分钟视图。</li>
+                        </ul>
+                        <p>要停止自动滚动，向后滚动即可。一旦您向较早的音频方向移动，时间轴就冻结，停在您放置的位置，方便浏览。如果您滚动超过已加载的最早数据，应用会在后台取来上一段内容，并保持您正在查看的时间居中。缩放您随时可以用放大镜按钮自己调。</p>
+                    </div>
+
+                    <div class="privacy-section" id="finding-moments">
+                        <h2>定位特定时刻</h2>
+                        <p>要到达某个特定时间，拖动波形直到该时间落在中心指示器下方。要到达某个特定片段，<strong>长按波形</strong>，应用会跳到最近的那条，并把片段列表滚到相应位置。</p>
+                        <p>您不必拖遍整晚来找响亮的地方。打开片段列表，它直接把您带到已检测到的片段，点其中一条就能查看详情并回放。每个片段都显示其分贝音量，所以扫一遍列表找最大的数字。声音以 dB SPL 为单位测量，最高 105 dB。<a href="/zh/support/episodes-and-events#episode-details">片段与事件</a>详细说明了片段卡片上的所有内容。</p>
+                    </div>
+
+                    <div class="privacy-section" id="calendar">
+                        <h2>切换不同夜晚</h2>
+                        <p>点击波形上方的日期标签打开日历。它显示当前月份和之前的月份。左右滑动可在月份间切换。未来日期显示为灰色，一到当前月份右箭头就变为不可用，因为再往后没有可显示的内容。</p>
+                        <p>有数据的夜晚最多会带有两个<strong>小圆点</strong>。玫瑰色圆点代表已录音，薄荷色圆点代表已同步手表睡眠数据，让您区分仅录音、仅手表同步，以及两者兼有的夜晚。点击任意有数据的过去日期，时间轴会跳到当晚晚上 10 点，这是夜间录音的合理起点。点击今天的日期则跳到当前时间，因为今晚还没发生。</p>
+                        <p>相邻的夜晚可以跳过日历。在"每晚摘要"界面左右滑动可切换夜晚，在"每周摘要"界面做同样的手势可切换周次。</p>
+                    </div>
+
+                    <div class="privacy-section" id="status-bar">
+                        <h2>状态栏</h2>
+                        <p>波形下方的条带告诉您时间轴此刻在做什么：</p>
+                        <ul>
+                            <li><strong>录音期间</strong>，显示当前输入设备和实时分贝音量。</li>
+                            <li><strong>当您移动到某根柱子上时</strong>，它给出信号类型，比如打鼾或梦话，以及该时间窗口的峰值音量（dB）。</li>
+                            <li><strong>如果您尝试在空白时段播放</strong>，它会告诉您附近没有可播放的音频。</li>
+                            <li><strong>设置了录音延迟时</strong>，显示录音开始前的倒计时。</li>
+                            <li><strong>以分钟或小时缩放级别回看某一夜时</strong>，右侧会显示中心线下那一分钟的打鼾速率，例如"每分钟 12 次打鼾"，并随您拖动而更新。安静的分钟显示为 0。完全没有打鼾的夜晚则不显示该读数。</li>
+                        </ul>
+                        <p>切换缩放时还会短暂闪现一个小标签，标明新的时间刻度，从最近缩放的实时视图到最远的 1 小时柱子，让您始终清楚自己正在看什么。</p>
+                        <p>此处的分贝读数和应用内其他地方一样，以 dB SPL 为单位，最高 105 dB。<a href="/zh/support/how-detection-works#decibels">声音检测原理</a>解释了这些数字的含义。</p>
+                    </div>
+
+                    <div class="privacy-section" id="playback">
+                        <h2>回放您的夜晚</h2>
+                        <p>您的录音就在时间轴里。没有单独的文件或文件夹要打理。打开某个夜晚，音频就在波形下方。（如需把片段保存到应用外部，请参阅<a href="/zh/support/export-and-sharing#audio-export">导出与分享</a>。）</p>
+                        <p>当有音频且未在录音时，右上角会出现一个<strong>播放按钮</strong>。把波形滚动到您想听的时刻居中，然后点击播放就能听见。再点一次停止。如果中心处没有可播放的音频，播放按钮会往前找，播放它找到的下一个片段。音频播放期间，时间轴会滚动以保持播放位置居中，所以您看到的柱子和您听到的声音对得上。</p>
+                        <p>要跳转位置，点击时间轴上的任意一点，播放就移到那里。按住并拖动可以擦洗。拖动期间播放暂停，方便您找准位置；松开后若之前正在播放就接着放。播放期间拖动也一样。它先暂停，等您停手片刻后继续，除非您自己点了停止。</p>
+                        <p><strong>只想听某几类声音</strong>，就从片段列表而不是波形入手。片段卡片带有打鼾、梦话、呼吸中断和巨大声响的标签，方便您挑感兴趣的类型。点某个片段，回放会从它开始前约 2 秒处启动，让您在声音本身之前先听到一点上下文。</p>
+                        <p><strong>回放是无缝衔接的。</strong>当一个夜晚被切成几段录音时，应用会在当前段还在播放时就备好下一段，并在大约 10 分钟内找一个兼容的段落。如果格式匹配，音频会毫无可闻的空隙地接下去，所以一次会话就能把 7 小时的一夜放完，不用您切换文件。</p>
+                        <p>片段播放期间，应用显示其类型标签、开始时间、时长和结束时间（在最大无障碍字号下结束时间会隐藏以节省空间），以及<strong>峰值和平均分贝音量</strong>和声音的波形。您就是这样知道自己鼾声有多响的。边听边看 dB 数值。应用还会高亮正在播放的片段，播放越过它之后清除高亮。和往常一样，这些数字是给您自己看的，不是医学测量。</p>
+                        <p><strong>如果录音放不出来</strong>，通常有这么几条规则能解释。录音进行中时应用不会开始回放，请先停止录音。文件太小、装不下真正音频的会被跳过。回放在音频用尽或您离开应用时自动结束。停止后位置重置到开头，所以下次点击会从您选的地方重新开始。</p>
+                    </div>
+
+                    <div class="privacy-section" id="audio-enhancement">
+                        <h2>音频增强</h2>
+                        <p>回放的声音可能比当时房间里听起来更清晰、更饱满。这是有意为之。对于在安静房间里录制的内容，应用会在回放期间整形音频。它提升打鼾、呼吸和说话声所在的低中频段，压下嘶声和风扇噪音所在的高频段，并把音量拉平，让微弱声音上来，同时把响亮的鼾声按住。原始音频里您会错过的微弱呼吸声因此变得可闻。</p>
+                        <p>这件事没有开关。应用根据录音是怎么录下来的自行决定。安静房间里的录音会得到清晰度提升。在有其他音频播放时录下的内容跳过整形，保持接近原始音量，因为它们本就是在满音量下采集的。无论哪种情况，您什么都不用调，就能得到能拿到的最清晰的回放。</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>相关内容</h2>
+                        <ul>
+                            <li><a href="/zh/support/episodes-and-events">片段与事件</a></li>
+                            <li><a href="/zh/support/how-detection-works">声音检测原理</a></li>
+                            <li><a href="/zh/support/export-and-sharing">导出与分享</a></li>
+                            <li><a href="/zh/support/sleep-stages">睡眠阶段</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支持页面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>在您的设备上录制、查看并了解您的鼾声、呼吸状况和睡眠情况。</p>
+                <p><a href="/zh/support/">支持</a> &middot; <a href="/zh/privacy">隐私政策</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学习</h4>
+                <ul>
+                    <li><a href="/zh/support/getting-started">入门指南</a></li>
+                    <li><a href="/zh/support/how-detection-works">检测原理</a></li>
+                    <li><a href="/zh/support/timeline-and-playback">时间轴与回放</a></li>
+                    <li><a href="/zh/support/breathing-disruptions">呼吸中断</a></li>
+                    <li><a href="/zh/support/sleep-stages">睡眠阶段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh/support/apple-watch">Apple Watch 与健康</a></li>
+                    <li><a href="/zh/support/export-and-sharing">导出与分享</a></li>
+                    <li><a href="/zh/support/troubleshooting">故障排除</a></li>
+                    <li><a href="/zh/support/android">Android</a></li>
+                    <li><a href="/zh/support/faq">常见问题</a></li>
+                    <li><a href="/zh/support/#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 保留所有权利。</div>
+    </footer>
+
+    <script src="/support/support-nav.js?v=2"></script>
+</body>
+</html>

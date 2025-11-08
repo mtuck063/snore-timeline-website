@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น | Snore Timeline</title>
+    <meta name="title" content="แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น | Snore Timeline">
+    <meta name="description" content="แอปบันทึกการกรนทำเครื่องหมายช่วงเงียบและเสียงฟื้นคืนจากเสียง ไม่มีแอปใดวินิจฉัยภาวะหยุดหายใจขณะหลับ โทรศัพท์และ Apple Watch วัดอะไรได้ และควรให้แพทย์ดูอะไร">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="en" href="https://snoretimeline.com/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="fil" href="https://snoretimeline.com/fil/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/blog/snoring-app-that-detects-breathing-pauses">
+    <link rel="alternate" type="application/rss+xml" title="Snore Timeline Guides" href="https://snoretimeline.com/blog/feed.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses">
+    <meta property="og:title" content="แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น">
+    <meta property="og:description" content="แอปบันทึกการกรนทำเครื่องหมายช่วงเงียบและเสียงฟื้นคืนจากเสียง ไม่มีแอปใดวินิจฉัยภาวะหยุดหายใจขณะหลับ โทรศัพท์และ Apple Watch วัดอะไรได้ และควรให้แพทย์ดูอะไร">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+    <meta property="og:locale" content="th_TH">
+    <meta property="article:published_time" content="2026-09-27">
+    <meta property="article:modified_time" content="2026-09-27">
+    <meta property="article:author" content="Menelik Tucker">
+    <meta property="article:section" content="How-to">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses">
+    <meta property="twitter:title" content="แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น">
+    <meta property="twitter:description" content="แอปบันทึกการกรนทำเครื่องหมายช่วงเงียบและเสียงฟื้นคืนจากเสียง ไม่มีแอปใดวินิจฉัยภาวะหยุดหายใจขณะหลับ โทรศัพท์และ Apple Watch วัดอะไรได้ และควรให้แพทย์ดูอะไร">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "หน้าแรก", "item": "https://snoretimeline.com/th/"},
+        {"@type": "ListItem", "position": 2, "name": "คู่มือ", "item": "https://snoretimeline.com/th/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น", "item": "https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น",
+      "description": "แอปบันทึกการกรนทำเครื่องหมายช่วงเงียบและเสียงฟื้นคืนจากเสียง ไม่มีแอปใดวินิจฉัยภาวะหยุดหายใจขณะหลับ โทรศัพท์และ Apple Watch วัดอะไรได้ และควรให้แพทย์ดูอะไร",
+      "url": "https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://snoretimeline.com/th/blog/snoring-app-that-detects-breathing-pauses"},
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-28",
+      "articleSection": "How-to",
+      "inLanguage": "th",
+      "author": {"@type": "Person", "@id": "https://snoretimeline.com/about#person", "name": "Menelik Tucker", "url": "https://snoretimeline.com/about"},
+      "publisher": {"@type": "Organization", "@id": "https://snoretimeline.com/#organization", "name": "Snore Timeline", "logo": {"@type": "ImageObject", "url": "https://snoretimeline.com/logo.png"}},
+      "citation": [
+        {"@type": "CreativeWork", "name": "Sleep Apnea: What Is Sleep Apnea?", "url": "https://www.nhlbi.nih.gov/health/sleep-apnea"},
+        {"@type": "CreativeWork", "name": "Sleep Apnea: Symptoms", "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms"},
+        {"@type": "CreativeWork", "name": "Apnea-Hypopnea Index (AHI) and Sleep Apnea", "url": "https://www.sleepfoundation.org/sleep-apnea/ahi"},
+        {"@type": "CreativeWork", "name": "SnoreLab : Record Your Snoring (App Store listing)", "url": "https://apps.apple.com/us/app/id529443604"},
+        {"@type": "CreativeWork", "name": "Sleep Apnea Detector - Somnio+ (App Store listing)", "url": "https://apps.apple.com/us/app/id6755539244"},
+        {"@type": "CreativeWork", "name": "Sleep apnea notifications on your Apple Watch", "url": "https://support.apple.com/en-us/120031"},
+        {"@type": "CreativeWork", "name": "watchOS 11 is available today", "url": "https://www.apple.com/newsroom/2024/09/watchos-11-is-available-today/"},
+        {"@type": "CreativeWork", "name": "Noncontact identification of sleep-disturbed breathing from smartphone-recorded sounds validated by polysomnography", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534134/"},
+        {"@type": "CreativeWork", "name": "Diagnostic value of smartphone in obstructive sleep apnea syndrome: A systematic review and meta-analysis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9119483/"},
+        {"@type": "CreativeWork", "name": "STOP questionnaire: a tool to screen patients for obstructive sleep apnea", "url": "https://pubmed.ncbi.nlm.nih.gov/18431116/"},
+        {"@type": "CreativeWork", "name": "PSG-Audio, a scored polysomnography dataset with simultaneous audio recordings for sleep apnea studies", "url": "https://doi.org/10.1038/s41597-021-00977-w"},
+        {"@type": "CreativeWork", "name": "Snore Tracker & Sleep, Snollo (App Store listing)", "url": "https://apps.apple.com/us/app/id6752620925"},
+        {"@type": "CreativeWork", "name": "Snollo Sleep Apnea Risk Test", "url": "https://snollo.com/sleep-apnea-risk-test/"}
+      ],
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".tldr p"]}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "แอปวินิจฉัยภาวะหยุดหายใจขณะหลับได้ไหม", "acceptedAnswer": {"@type": "Answer", "text": "ไม่ได้ Snore Timeline, SnoreLab และ Somnio+ ต่างระบุว่าตัวเองไม่ใช่อุปกรณ์ทางการแพทย์ และไม่ได้วินิจฉัยภาวะหยุดหายใจขณะหลับ แพทย์เป็นผู้ตัดสิน โดยอาศัยการตรวจการนอนหลับที่บันทึกสัญญาณซึ่งโทรศัพท์วัดไม่ได้ เช่น การไหลของอากาศและออกซิเจนในเลือด"}},
+        {"@type": "Question", "name": "เครื่องหมายช่วงหยุดหายใจใน Snore Timeline หมายความว่าอะไร", "acceptedAnswer": {"@type": "Answer", "text": "หมายความว่าแอปได้ยินเสียงหายใจอย่างน้อย 1 นาที ตามด้วยความเงียบ 10 วินาทีขึ้นไป แล้วมีเสียงฟื้นคืนมาทำลายความเงียบ เช่น เสียงกรนดัง เสียงหายใจเฮือก หรือเสียงหายใจแรง แอปทำเครื่องหมายช่วงเวลานั้นไว้บนไทม์ไลน์ให้คุณกลับไปฟังได้ เครื่องหมายนี้อธิบายรูปแบบของเสียง ไม่ได้บอกว่าอากาศหยุดไหลจริงหรือไม่หรือเพราะอะไร และเป็นสิ่งที่ควรเปิดให้แพทย์ฟัง"}},
+        {"@type": "Question", "name": "Apple Watch ตรวจพบภาวะหยุดหายใจขณะหลับได้ไหม", "acceptedAnswer": {"@type": "Answer", "text": "Apple Watch แจ้งเตือนคุณถึงสัญญาณที่อาจเป็นภาวะหยุดหายใจขณะหลับได้ Apple Support ระบุว่านาฬิกาใช้ตัววัดความเร่งติดตามการหายใจติดขัด ตรวจข้อมูลทุก 30 วัน และส่งการแจ้งเตือนถ้าคุณมีการหายใจติดขัดในระดับสูงขึ้นอย่างสม่ำเสมอ Apple ยังระบุว่าฟีเจอร์นี้ไม่ได้มีไว้เพื่อวินิจฉัยภาวะหยุดหายใจขณะหลับ การแจ้งเตือนจึงเป็นเหตุผลให้ไปพบแพทย์"}},
+        {"@type": "Question", "name": "ช่วงหยุดหายใจกี่ครั้งถึงจะถือว่าปกติ", "acceptedAnswer": {"@type": "Answer", "text": "ฉันไม่ให้ตัวเลข เพราะคำตอบขึ้นอยู่กับค่าที่ไม่มีแอปบนโทรศัพท์แอปไหนวัดได้ แพทย์ใช้ดัชนีการหยุดหายใจและหายใจแผ่ว (AHI) ซึ่งเป็นจำนวนครั้งของการหยุดหายใจและการหายใจแผ่วต่อชั่วโมงการนอน ได้จากการตรวจการนอนหลับที่ติดตามคลื่นสมอง ออกซิเจนในเลือด อัตราการเต้นของหัวใจ และการหายใจ Sleep Foundation ระบุว่าแพทย์พิจารณาค่านี้ร่วมกับค่าอื่น ๆ จำนวนต่อชั่วโมงจากแอปไม่ใช่ AHI จึงควรให้แพทย์เป็นผู้แปลผลของคุณ"}},
+        {"@type": "Question", "name": "ควรหยุดใช้ CPAP เพราะผลจากแอปไหม", "acceptedAnswer": {"@type": "Answer", "text": "ไม่ควร ใช้ CPAP ต่อตามที่แพทย์สั่ง และปรึกษาแพทย์ที่สั่งเครื่องให้ก่อนเปลี่ยนแปลงอะไร แอปที่ใช้เสียงอาจนับได้น้อยกว่าความจริงในคืนที่ใช้ CPAP เพราะเสียงเครื่องอาจกลบเสียงหายใจเบา ๆ ตัวเลขที่ต่ำจึงไม่ใช่หลักฐานว่าคุณไม่ต้องรักษาแล้ว"}}
+      ]
+    }
+    </script>
+</head>
+<body data-group="help" data-blog-page="snoring-app-that-detects-breathing-pauses">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/th/" class="support-topbar-brand">
+                <img src="/logo.png" alt="โลโก้ Snore Timeline">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">คู่มือ</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>ดาวน์โหลด</a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="เส้นทางนำทาง">
+                    <a href="/th/">หน้าแรก</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <a href="/th/blog/">คู่มือ</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">วิธีใช้</span>
+                    <h1 class="privacy-title">แอปบันทึกการกรนที่ทำเครื่องหมายช่วงหยุดหายใจ และข้อจำกัดของแอปเหล่านั้น</h1>
+                    <p class="privacy-updated">แอปที่ใช้เสียงจับช่วงเงียบ 10 วินาทีได้อย่างไร พลาดเหตุการณ์แบบไหน และควรนำอะไรไปพบแพทย์</p>
+                    <p class="article-meta">โดย <a href="/th/about">Menelik Tucker</a> &middot; อัปเดต <time datetime="2026-09-28">28 ก.ย. 2026</time></p>
+                </header>
+
+                <div class="privacy-content">
+                    <div class="tldr">
+                        <span class="tldr-label">คำตอบสั้น ๆ</span>
+                        <p>แอปบันทึกการกรนบางแอปทำเครื่องหมายช่วงที่อาจหยุดหายใจ โดยฟังหาช่วงเงียบที่จบลงด้วยเสียงหายใจเฮือกหรือเสียงหายใจแรง ไม่มีแอปไหนวินิจฉัยภาวะหยุดหายใจขณะหลับได้ สิ่งที่ทำได้คือการตรวจการนอนหลับที่แพทย์เป็นผู้อ่านผล Snore Timeline ทำเครื่องหมายช่วงหยุดหายใจเมื่อได้ยินเสียงหายใจ 1 นาทีขึ้นไป ตามด้วยความเงียบ 10 วินาทีขึ้นไป แล้วมีเสียงฟื้นคืนมาทำลายความเงียบ เช่น เสียงกรนดัง เสียงหายใจเฮือก หรือเสียงหายใจแรง และทุกเครื่องหมายคือสิ่งที่ควรนำไปให้แพทย์ดู</p>
+                    </div>
+
+                    <div class="key-takeaways">
+                        <h2>ประเด็นสำคัญ</h2>
+                        <ul>
+                            <li>Snore Timeline, SnoreLab Premium และ Somnio+ อธิบายฟีเจอร์ด้านการหายใจที่อาศัยเสียง และทุกแอประบุว่าตัวเองไม่ใช่อุปกรณ์ทางการแพทย์</li>
+                            <li>ไมโครโฟนของโทรศัพท์ได้ยินเสียง แต่วัดการไหลของอากาศ ออกซิเจนในเลือด การเคลื่อนไหวของทรวงอกขณะหายใจ หรือคลื่นสมองไม่ได้ ซึ่งเป็นสัญญาณที่การตรวจการนอนหลับบันทึก</li>
+                            <li>การแจ้งเตือนภาวะหยุดหายใจขณะหลับของ Apple Watch ใช้ตัววัดความเร่งติดตาม Breathing Disturbances (การหายใจติดขัด) ตลอด 30 วัน และ Apple ระบุว่าฟีเจอร์นี้ไม่ได้มีไว้เพื่อวินิจฉัยภาวะหยุดหายใจขณะหลับ</li>
+                            <li>การวิเคราะห์อภิมานปี 2022 จาก 11 การศึกษารายงานความไวรวม 90.6% และความจำเพาะรวม 88.0% ของวิธีที่ใช้สมาร์ตโฟนสำหรับภาวะหยุดหายใจขณะหลับระดับปานกลางถึงรุนแรง โดยมีขอบเขตความสอดคล้องกับการตรวจการนอนหลับแบบโพลีซอมโนกราฟีที่กว้าง</li>
+                            <li>STOP-Bang เป็นแบบคัดกรองแปดคำถาม คะแนนสูงเป็นเหตุผลให้สอบถามเรื่องการตรวจ ส่วนคะแนนต่ำก็ไม่ได้ตัดภาวะหยุดหายใจขณะหลับออกไป</li>
+                        </ul>
+                    </div>
+
+                    <div class="callout callout--medical">
+                        <span class="callout-label">อย่ารอผลจากแอป</span>
+                        <p>ถ้าคุณหรือคู่นอนสังเกตเห็นอาการสำลัก หายใจเฮือก หรือหยุดหายใจขณะหลับ ให้ปรึกษาแพทย์ นัดหมายตั้งแต่ตอนนี้ คุณไม่ต้องบันทึกเสียงให้ครบหนึ่งสัปดาห์ก่อน และคืนที่แอปบอกว่าเงียบก็ไม่ได้ลบล้างสิ่งที่คู่นอนเห็น</p>
+                    </div>
+
+                    <details class="toc-box" open>
+                        <summary>ในบทความนี้</summary>
+                        <ul id="article-toc"></ul>
+                    </details>
+
+                    <div class="privacy-section" id="at-a-glance">
+                        <h2>สรุปโดยย่อ</h2>
+                        <div class="cmp-table-wrap">
+                            <table class="cmp-table">
+                                <caption>ฟีเจอร์ด้านการหายใจตามที่หน้า App Store หรือหน้า Apple Support ของแต่ละรายการอธิบายไว้ การซื้อและป้ายความเป็นส่วนตัวตามที่แจ้งไว้ใน App Store (สหรัฐฯ) เมื่อ 27 กันยายน 2026</caption>
+                                <thead>
+                                    <tr><th scope="col">แอปหรือฟีเจอร์</th><th scope="col">สิ่งที่วัด</th><th scope="col">สิ่งที่ทำเครื่องหมาย</th><th scope="col">วินิจฉัยได้ไหม</th><th scope="col">การซื้อ</th><th scope="col">ป้ายความเป็นส่วนตัว</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="is-us"><th scope="row">Snore Timeline</th><td>เสียงจากโทรศัพท์หรือไมค์ Bluetooth</td><td>การรบกวนการหายใจ: หายใจ 1 นาทีขึ้นไป เงียบ 10 วินาทีขึ้นไป และเสียงฟื้นคืนที่ทำลายความเงียบ</td><td>ไม่ได้</td><td>ไม่มี</td><td>Data Not Collected (ไม่มีการเก็บข้อมูล)</td></tr>
+                                    <tr><th scope="row">SnoreLab</th><td>เสียง</td><td>ความคงที่ของการหายใจจาก BreathFlow และการหายใจที่อาจหยุดชะงัก (Premium)</td><td>ไม่ได้</td><td>$5.99 ถึง $59.99</td><td>Data Used to Track You (ข้อมูลที่ใช้ติดตามคุณ); Data Linked to You (ข้อมูลที่ลิงก์กับคุณ); Data Not Linked to You (ข้อมูลที่ไม่ได้ลิงก์กับคุณ)</td></tr>
+                                    <tr><th scope="row">Somnio+</th><td>เสียง</td><td>ช่วงเงียบนานที่ไม่มีเสียงหายใจ ทำเครื่องหมายว่าอาจเป็นช่วงหยุดหายใจ</td><td>ไม่ได้</td><td>$4.99 ถึง $29.99</td><td>Data Not Collected</td></tr>
+                                    <tr><th scope="row">Snollo</th><td>เสียง รวมถึงอัตราการเต้นของหัวใจ อัตราการหายใจ และ SpO2 จากนาฬิกา</td><td>ตัวบ่งชี้การหายใจใน Sleep Sounds ตามหน้าแอป</td><td>ไม่ได้</td><td>$5.99 ถึง $39.99</td><td>Data Linked to You; Data Not Linked to You</td></tr>
+                                    <tr><th scope="row">การแจ้งเตือนภาวะหยุดหายใจขณะหลับของ Apple Watch</th><td>การเคลื่อนไหวของข้อมือผ่านตัววัดความเร่ง</td><td>การหายใจติดขัดรายคืน ระดับสูงขึ้นหรือไม่สูงขึ้น และการแจ้งเตือนหลังการประเมิน 30 วัน</td><td>ไม่ได้</td><td>ต้องมี Apple Watch รุ่นที่รองรับ</td><td>มีใน watchOS ไม่มีป้ายใน App Store</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="what-is-osa">
+                        <h2>ภาวะหยุดหายใจขณะหลับจากการอุดกั้นคืออะไร ในย่อหน้าเดียว</h2>
+                        <p>สถาบันหัวใจ ปอด และเลือดแห่งชาติของสหรัฐฯ (NHLBI) อธิบายว่าภาวะหยุดหายใจขณะหลับเป็นภาวะที่พบบ่อย ซึ่งการหายใจของคุณหยุดและกลับมาเริ่มใหม่หลายครั้งระหว่างที่หลับ ในชนิดอุดกั้น ทางเดินหายใจส่วนบนจะถูกปิดกั้นหลายครั้งตลอดคืน ในชนิดที่เกิดจากสมอง (central) สมองไม่ได้ส่งสัญญาณที่จำเป็นต่อการหายใจ NHLBI ระบุว่าอาการขณะหลับได้แก่ การหายใจที่หยุดแล้วเริ่มใหม่ การกรนเสียงดังบ่อย ๆ และการหายใจเฮือก ส่วนอาการตอนตื่นได้แก่ ง่วงนอนตอนกลางวัน ปากแห้ง และปวดศีรษะ ถ้าไม่รักษา ภาวะนี้จะเพิ่มความเสี่ยงต่อโรคหลอดเลือดสมอง หัวใจวาย และปัญหาร้ายแรงอื่น ๆ และผู้ให้บริการด้านสุขภาพอาจสั่งตรวจการนอนหลับเพื่อดูว่าคุณเป็นชนิดใดและรุนแรงแค่ไหน <a href="#sources">[1][2]</a> การกรนอย่างเดียวไม่ได้หมายความว่าคุณมีภาวะนี้ หลายคนกรนโดยไม่มีช่วงหยุดหายใจเลย</p>
+                    </div>
+
+                    <div class="privacy-section" id="what-a-microphone-hears">
+                        <h2>สิ่งที่ไมโครโฟนได้ยินและไม่ได้ยิน</h2>
+                        <p>แอปบนโทรศัพท์ทำงานจากสัญญาณเดียว คือเสียงในห้อง แอปได้ยินเสียงหายใจที่ดังขึ้น เงียบลง แล้วกลับมาพร้อมเสียงกรนพรืด แต่บอกไม่ได้ว่าทำไมห้องถึงเงียบ</p>
+                        <h3>ความเงียบไม่ใช่สิ่งเดียวกับการไม่มีอากาศไหลผ่าน</h3>
+                        <p>การตรวจการนอนหลับวัดการหายใจโดยตรง Sleep Foundation อธิบายว่าการตรวจแบบโพลีซอมโนกราฟีติดตามคลื่นสมอง ออกซิเจนในเลือด อัตราการเต้นของหัวใจ และการหายใจตลอดคืน <a href="#sources">[3]</a> ไมโครโฟนไม่ได้วัดสิ่งเหล่านี้เลย เมื่อเสียงหายใจของคุณเงียบลง แอปจะเห็นช่องว่างในเสียง ช่องว่างนั้นอาจเป็นช่วงหยุดหายใจ แต่ก็อาจเป็นการหายใจเบา ๆ การหันศีรษะออกจากโทรศัพท์ หรือผ้าห่มที่คลุมหน้าอยู่ก็ได้</p>
+                        <p>บางเหตุการณ์ไม่มีเสียงเลย ภาวะหยุดหายใจชนิดที่เกิดจากสมองไม่มีความพยายามหายใจ จึงไม่มีเสียงดิ้นรนให้ได้ยิน การอุดกั้นบางส่วน หรือภาวะหายใจแผ่ว (hypopnea) ที่นับรวมในคะแนนของการตรวจการนอนหลับ ทำให้อากาศไหลผ่านน้อยลงได้โดยไม่เกิดความเงียบที่ชัดเจน แอปที่ใช้เสียงพลาดทั้งสองอย่าง</p>
+                        <h3>ตำแหน่งและเสียงรบกวนเป็นตัวกำหนดข้อจำกัด</h3>
+                        <ul>
+                            <li><strong>ระยะห่าง</strong> เสียงหายใจจางหายเร็ว Snore Timeline ขอให้วางโทรศัพท์ห่างจากศีรษะ 30 ถึง 60 ซม. เมื่อคุณต้องการจับช่วงหยุดหายใจ ซึ่งใกล้กว่าระยะประมาณ 1 เมตรที่แนะนำสำหรับการกรน</li>
+                            <li><strong>ท่านอนของคุณ</strong> การพลิกตัวหันออกจากโทรศัพท์อาจทำให้เสียงหายใจเบาลงจนไมค์จับไม่ได้ ซึ่งดูเหมือนความเงียบ</li>
+                            <li><strong>เสียงรบกวนในห้อง</strong> พัดลม เครื่องทำเสียงไวต์นอยส์ เครื่องฟอกอากาศ หรือเครื่องปรับอากาศ อาจกลบทั้งเสียงหายใจและความเงียบ คู่มือของ Snore Timeline ระบุว่าแอปอาจพลาดเหตุการณ์ที่เงียบเมื่อระดับเสียงพื้นหลังของห้องเกิน 45 dB</li>
+                            <li><strong>คู่นอน</strong> เสียงหายใจของอีกคนอาจเติมช่วงเงียบของคุณ ช่วงหยุดหายใจจริงจึงอาจไม่ถูกทำเครื่องหมาย</li>
+                        </ul>
+                        <p>ข้อจำกัดเหล่านี้ดันตัวเลขไปทางเดียว แอปที่ใช้เสียงพลาดเหตุการณ์บ่อยกว่าที่จะสร้างเหตุการณ์ขึ้นมาเอง ตัวเลขที่ต่ำจึงไม่ใช่หลักฐานว่าไม่มีอะไรเกิดขึ้น</p>
+                    </div>
+
+                    <div class="privacy-section" id="how-snore-timeline-flags">
+                        <h2>Snore Timeline ทำเครื่องหมายการรบกวนการหายใจอย่างไร</h2>
+                        <p>Snore Timeline บันทึกการรบกวนการหายใจเมื่อเกิดสามอย่างนี้ตามลำดับ:</p>
+                        <ol>
+                            <li><strong>ได้ยินเสียงหายใจอย่างน้อย 1 นาที</strong> แอปตรวจช่วงละ 5 วินาทีสิบสองช่วง และต้องได้ยินเสียงหายใจอย่างน้อย 11 ช่วง นี่ยืนยันว่าเสียงหายใจของคุณดังพอให้ได้ยินก่อนที่จะเงียบไป</li>
+                            <li><strong>เงียบ 10 วินาทีขึ้นไป</strong> ช่องว่างที่สั้นกว่านี้ไม่นับ ซึ่งตัดช่วงเว้นปกติระหว่างลมหายใจออกไป</li>
+                            <li><strong>เสียงฟื้นคืนที่ทำลายความเงียบ เช่น เสียงกรนดัง เสียงหายใจเฮือก หรือเสียงหายใจแรง</strong> ความเงียบต้องจบลงด้วยเสียงหายใจเฮือก เสียงกรนพรืด หรือเสียงหายใจดังขึ้นทันที เงื่อนไขนี้แยกช่วงหยุดหายใจออกจากกรณีที่คุณพลิกตัวหันออกจากโทรศัพท์</li>
+                        </ol>
+                        <p>การรบกวนการหายใจแต่ละครั้งแสดงเป็นเครื่องหมายสีฟ้าอมเทาบนไทม์ไลน์ แตะเครื่องหมายในสรุปรายคืนเพื่อข้ามไปยังช่วงนั้นแล้วฟัง แอปบันทึกเวลา ความยาวของช่วงเงียบ และความแรงของการหายใจฟื้นตัว และจัดระดับความเงียบแต่ละช่วงตามความยาว ต่ำกว่า 12 วินาทีคือเล็กน้อย 12 ถึง 20 วินาทีคือปานกลาง เกิน 20 วินาทีคือรุนแรง</p>
+                        <p>สรุปยังแสดงจำนวนการรบกวนต่อชั่วโมงการนอน โดยมีระดับของตัวเองตั้งแต่น้อยมากไปจนถึงมีนัยสำคัญ อัตรานี้อธิบายสิ่งที่แอปได้ยิน ไม่ใช่คะแนนทางการแพทย์ และไม่ใช่ดัชนีการหยุดหายใจและหายใจแผ่ว (AHI) การประเมินรายคืนต้องมีการนอนอย่างน้อย 2 ชั่วโมง และถ้าแอปไม่เคยได้ยินเสียงหายใจมากพอจะสร้างค่าพื้นฐาน การประเมินจะถูกซ่อนไว้ กฎทั้งหมด รวมถึงผลของคืนที่ใช้ CPAP และคนที่หายใจเบาต่อจำนวนที่นับได้ อยู่ในหน้าช่วยเหลือ<a href="/th/support/breathing-disruptions">การรบกวนการหายใจ</a> และ<a href="/th/support/how-detection-works">การตรวจจับเสียงทำงานอย่างไร</a>อธิบายการวัดเดซิเบล</p>
+                        <p>ฉันตรวจเครื่องหมายนี้กับการบันทึกข้ามคืน 57 รายการจาก PSG-Audio ชุดข้อมูลสาธารณะจากห้องปฏิบัติการการนอนหลับที่แพทย์ให้คะแนนเหตุการณ์ไว้ <a href="#sources">[11]</a> เหตุการณ์ที่ห้องปฏิบัติการให้คะแนนรวมถึงภาวะหายใจแผ่วและภาวะหยุดหายใจแบบเงียบที่ไม่มีเสียงใด ๆ เครื่องหมายจึงจับได้เพียงบางส่วน และแอปนี้ยังไม่ผ่านการตรวจสอบทางคลินิก ให้ถือว่าจำนวนที่นับได้เป็นค่าประมาณแบบระมัดระวัง และดูแนวโน้มข้ามหลายคืน ถ้าคุณจับคู่ Apple Watch ที่บันทึกออกซิเจนในเลือด สรุปจะแสดงเวลาที่ความอิ่มตัวต่ำกว่า 95% และค่าต่ำสุดของคุณได้ ซึ่งมาจากนาฬิกาผ่าน Apple Health</p>
+                    </div>
+
+                    <div class="privacy-section" id="other-apps">
+                        <h2>แอปอื่นมีอะไรให้</h2>
+                        <p>ฉันอธิบายแต่ละผลิตภัณฑ์ด้านล่างจากหน้า App Store หรือหน้าช่วยเหลือของผู้ผลิตเอง การซื้อและป้ายความเป็นส่วนตัวเป็นสิ่งที่นักพัฒนาแจ้งเอง ตามที่แจ้งไว้ใน App Store เมื่อ 27 กันยายน 2026 หน้าแอปและหน้าช่วยเหลือเหล่านี้ไม่ได้อ้างว่าวินิจฉัยภาวะหยุดหายใจขณะหลับได้</p>
+                        <h3>SnoreLab</h3>
+                        <p>SnoreLab มี 57K เรตติ้งใน App Store สหรัฐฯ และมีประวัติยาวนานกับ Snore Score และการติดตามวิธีแก้การกรน คำตอบของ Snore Timeline คือคะแนนการนอนหลับ 0 ถึง 100 ที่การรบกวนการหายใจหักคะแนนมากกว่าการกรน และการติดตามวิธีแก้ด้วยปัจจัยการนอนหลับในตัว 23 รายการ บวกกับปัจจัยที่คุณสร้างเอง แอปมีเรตติ้งน้อยกว่ามาก เพราะเปิดตัวใน App Store เมื่อเดือนกันยายน 2025 ส่วน SnoreLab ในปี 2012 และฉันพัฒนาแอปนี้คนเดียว โดยไม่มีเงินทุนจากภายนอกและไม่มีงบการตลาด หน้า App Store ของ SnoreLab อธิบายว่า BreathFlow เป็นการวัดความคงที่ของการหายใจ ซึ่งวิเคราะห์รูปแบบเสียงเพื่อหาสัญญาณของการหายใจที่ไม่สม่ำเสมอ และมีฟีเจอร์ Breathing Rate ที่ติดตามอัตราการหายใจและระบุการหายใจที่อาจหยุดชะงัก ทั้งสองฟีเจอร์อยู่ใน SnoreLab Premium <a href="#sources">[4]</a> เว็บไซต์ของ SnoreLab นิยามการหายใจติดขัด (breathing disturbances) ว่าเป็นการหยุดชะงักชั่วคราวของรูปแบบการหายใจระหว่างหลับ หน้าแอประบุว่า SnoreLab ไม่ใช่อุปกรณ์ทางการแพทย์ และไม่ได้มีไว้เพื่อวินิจฉัยหรือรักษาภาวะหยุดหายใจขณะหลับ ถ้าอยากดูแบบเทียบกัน อ่าน<a href="/th/blog/snore-timeline-vs-snorelab">Snore Timeline กับ SnoreLab</a></p>
+                        <h3>Somnio+</h3>
+                        <p>Somnio+ ปรากฏใน App Store ในชื่อ "Sleep Apnea Detector - Somnio+" หน้าแอปบอกว่าบันทึกเสียงขณะหลับ และทำเครื่องหมายช่วงเงียบนานที่ไม่มีเสียงหายใจว่าอาจเป็นช่วงหยุดหายใจ และระบุว่าแอปไม่ใช่อุปกรณ์ทางการแพทย์ และไม่ได้ให้การวินิจฉัยทางการแพทย์ <a href="#sources">[5]</a> ป้ายความเป็นส่วนตัวของแอปนี้ระบุ Data Not Collected เช่นเดียวกับ Snore Timeline แอปขายการสมัครสมาชิกรายสัปดาห์และรายปีตั้งแต่ $4.99 ถึง $29.99 ในแอปบันทึกการกรน 14 แอปที่ฉันตรวจ มีสี่แอปที่แจ้ง Data Not Collected และ Snore Timeline เป็นแอปเดียวในสี่แอปนั้นที่ไม่มีการซื้อ</p>
+                        <h3>Snollo</h3>
+                        <p>หน้า App Store ของ Snollo บอกว่าแอปวิเคราะห์เสียงบนอุปกรณ์ และรวมเข้ากับอัตราการเต้นของหัวใจ อัตราการหายใจ และออกซิเจนในเลือดจาก Apple Watch บันทึกประจำรุ่นล่าสุดเพิ่มตัวบ่งชี้การหายใจใน Sleep Sounds <a href="#sources">[12]</a> เว็บไซต์ของแอประบุว่า Snollo ไม่ได้วินิจฉัยหรือรักษาภาวะทางการแพทย์ใด ๆ <a href="#sources">[13]</a></p>
+                        <h3>การแจ้งเตือนภาวะหยุดหายใจขณะหลับของ Apple Watch</h3>
+                        <p>Apple ใส่ฟีเจอร์นี้ไว้ใน watchOS Apple Support ระบุว่านาฬิกาใช้ตัววัดความเร่งเพื่อหาการหายใจติดขัดระหว่างที่คุณหลับ นาฬิกาจัดแต่ละคืนเป็นระดับสูงขึ้นหรือไม่สูงขึ้น วิเคราะห์ข้อมูลทุก 30 วัน และแจ้งเตือนคุณถ้าคุณมีการหายใจติดขัดในระดับสูงขึ้นอย่างสม่ำเสมอ ฟีเจอร์นี้มีไว้สำหรับผู้ที่อายุ 18 ปีขึ้นไปและยังไม่ได้รับการวินิจฉัยว่ามีภาวะหยุดหายใจขณะหลับ และ Apple ระบุว่าฟีเจอร์นี้ไม่ได้มีไว้เพื่อวินิจฉัย รักษา หรือช่วยจัดการภาวะหยุดหายใจขณะหลับ <a href="#sources">[6]</a> Apple ประกาศว่าการแจ้งเตือนนี้ได้รับอนุญาตแบบ 510(k) จาก FDA ในเดือนกันยายน 2024 <a href="#sources">[7]</a> นาฬิกาไม่ได้บันทึกเสียงสำหรับฟีเจอร์นี้ จึงใช้เสริมกับไมโครโฟนได้ อ่านเพิ่มเติมเรื่องนาฬิกาได้ใน<a href="/th/blog/does-apple-watch-track-snoring">Apple Watch ติดตามการกรนได้ไหม</a> และใน<a href="/th/support/apple-watch">หน้าช่วยเหลือ Apple Watch</a></p>
+                    </div>
+
+                    <div class="privacy-section" id="accuracy">
+                        <h2>แอปบนโทรศัพท์แม่นยำแค่ไหน</h2>
+                        <p>ไม่มีงานวิจัยที่ตีพิมพ์ที่ฉันพบซึ่งทดสอบแอปสำหรับผู้บริโภคข้างต้นแอปใดเทียบกับการตรวจการนอนหลับ งานวิจัยทดสอบอัลกอริทึมจากห้องปฏิบัติการที่ทำงานบนโทรศัพท์ และผลลัพธ์ขึ้นอยู่กับวิธีที่ใช้</p>
+                        <p>Narayan และคณะวาง Samsung Galaxy S5 ที่ไม่ได้ดัดแปลงไว้ใกล้เตียงของผู้ป่วย 91 คนที่กำลังตรวจการนอนหลับทางคลินิก หลังจากสร้างอัลกอริทึมเสียงจากผู้ป่วย 32 คน พวกเขาทดสอบกับผู้ป่วยอีก 59 คน บทคัดย่อรายงานค่า c-statistic 0.87 ในการแยก AHI ต่ำกว่า 15 ออกจาก AHI สูงกว่า 15 เมื่อเทียบกับการตรวจแบบโพลีซอมโนกราฟีตลอดคืน ผู้วิจัยสรุปว่าเสียงที่บันทึกด้วยโทรศัพท์สามารถระบุภาวะหยุดหายใจและการหายใจผิดปกติได้ และเรียกร้องให้มีการศึกษาเรื่องการคัดกรองต่อไป <a href="#sources">[8]</a></p>
+                        <p>Kim, Kim และ Hwang รวบรวม 11 การศึกษาเกี่ยวกับการวัดด้วยสมาร์ตโฟน ครอบคลุมการเคลื่อนไหว เสียง การวัดออกซิเจน และแบบผสม สำหรับภาวะหยุดหายใจขณะหลับจากการอุดกั้นระดับปานกลางถึงรุนแรง (AHI สูงกว่า 15) บทคัดย่อรายงานความไวรวม 0.9064 และความจำเพาะรวม 0.8801 ค่าเฉลี่ยความต่างของ AHI ระหว่างโทรศัพท์กับโพลีซอมโนกราฟีมีน้อย แต่ขอบเขตความสอดคล้องกว้าง และผู้วิจัยเขียนว่าแพทย์ควรระมัดระวังเมื่อตัดสินใจทางคลินิกโดยอิงจากอุปกรณ์เหล่านี้ <a href="#sources">[9]</a></p>
+                        <p>จากตรงนี้มีสองประเด็น ตัวเลขรวมผสมหลายวิธีเข้าด้วยกัน จึงไม่ได้อธิบายแอปที่ใช้ไมโครโฟนอย่างเดียว และตัวเลขเหล่านี้เป็นกรณีระดับปานกลางถึงรุนแรงที่มี AHI สูงกว่า 15 แอปที่ทำเครื่องหมายช่วงเงียบช่วยเปิดบทสนทนากับแพทย์ได้ แต่ให้ตัวเลขแบบที่การตรวจการนอนหลับให้ไม่ได้</p>
+                    </div>
+
+                    <div class="privacy-section" id="stop-bang">
+                        <h2>STOP-BANG และแบบคัดกรองอื่น ๆ</h2>
+                        <p>STOP-Bang เป็นแบบสอบถาม เริ่มต้นจากเครื่องมือ STOP สี่คำถาม ซึ่ง Chung และคณะตีพิมพ์ในปี 2008 สำหรับผู้ป่วยผ่าตัด ได้แก่ การกรน (Snoring) ความเหนื่อยล้าตอนกลางวัน (Tiredness) การที่มีคนเห็นว่าหยุดหายใจ (Observed apnea) และความดันโลหิตสูง (Pressure) การเพิ่ม BMI อายุ รอบคอ และเพศ ทำให้ความไวสูงขึ้นในการศึกษาเดียวกัน <a href="#sources">[10]</a> ผลที่ได้คือคำถามแบบใช่หรือไม่แปดข้อ ให้คะแนนตั้งแต่ 0 ถึง 8</p>
+                        <p>แบบคัดกรองแบ่งคนตามความเสี่ยง ไม่ได้วัดการหายใจของคุณ การศึกษาปี 2008 ให้คะแนนผู้ป่วยเทียบกับ AHI จากการตรวจการนอนหลับที่มีการเฝ้าติดตาม ซึ่งเป็นการตรวจจริง ถ้าคะแนนของคุณสูง หรือคู่นอนเคยเห็นคุณหยุดหายใจ ขั้นต่อไปคือพบแพทย์และตรวจการนอนหลับ คะแนนต่ำแต่กรนดังและหายใจเฮือกก็ยังควรนำไปปรึกษา</p>
+                    </div>
+
+                    <div class="privacy-section" id="bring-to-doctor">
+                        <h2>ควรนำอะไรไปพบแพทย์</h2>
+                        <p>แพทย์ได้ข้อมูลจากรูปแบบหลายคืนมากกว่าจากคืนเดียว ควรนำสิ่งเหล่านี้ไป:</p>
+                        <ul>
+                            <li><strong>ข้อมูลหลายคืน</strong> บันทึกทั้งคืนสักหลายคืน โดยวางโทรศัพท์ห่าง 30 ถึง 60 ซม. ในห้องที่เงียบ คู่มือ<a href="/th/support/doctor-ready-data">การรวบรวมข้อมูลการหายใจเพื่อแสดงแพทย์</a>อธิบายการตั้งค่าทีละขั้น</li>
+                            <li><strong>เวลาที่ถูกทำเครื่องหมาย</strong> ไฟล์ส่งออกเหตุการณ์ที่ตรวจพบแสดงการรบกวนการหายใจทุกครั้ง พร้อมเวลา ความยาวของช่วงเงียบ และความแรงของการฟื้นตัว</li>
+                            <li><strong>คลิปที่ส่งออก</strong> แพทย์ที่ได้ยินช่วงเงียบจบลงด้วยเสียงหายใจเฮือกจะเข้าใจมากกว่าที่ตัวเลขแถวหนึ่งบอกได้ <a href="/th/support/export-and-sharing">ส่งออกรายงาน &amp; แชร์ข้อมูลของคุณ</a>อธิบายไฟล์ CSV คลิปแยกตามเหตุการณ์ และเสียงทั้งคืน ซึ่งส่งออกได้ทั้งหมดโดยไม่มีค่าใช้จ่าย</li>
+                            <li><strong>สิ่งที่คู่นอนสังเกตเห็น</strong> สิ่งที่คู่นอนเห็นหรือได้ยิน และเกิดในคืนไหน รวมถึงอาการง่วงตอนกลางวันหรือปวดศีรษะตอนเช้าของคุณเอง</li>
+                        </ul>
+                        <p>บอกแพทย์ให้ชัดว่าข้อมูลนี้คืออะไร คือเสียงจากโทรศัพท์ที่จับได้เฉพาะเหตุการณ์ที่ดังพอให้ได้ยิน และมีแนวโน้มนับได้น้อยกว่าความจริง ข้อมูลทั้งหมดอยู่ในโทรศัพท์ของคุณจนกว่าคุณจะแชร์</p>
+                    </div>
+
+                    <div class="callout callout--medical">
+                        <span class="callout-label">หมายเหตุทางการแพทย์</span>
+                        <p>Snore Timeline วิเคราะห์เสียง แอปนี้ไม่ใช่อุปกรณ์ทางการแพทย์ และไม่ได้วินิจฉัยภาวะหยุดหายใจขณะหลับหรือภาวะอื่นใด หากคุณสงสัยว่ามีช่วงหยุดหายใจ ให้นำไฟล์บันทึกไปให้แพทย์ดู</p>
+                    </div>
+
+                    <div class="privacy-section" id="faq">
+                        <h2>คำถามที่พบบ่อย</h2>
+                        <details class="faq-entry" id="faq-app-diagnose">
+                            <summary>แอปวินิจฉัยภาวะหยุดหายใจขณะหลับได้ไหม</summary>
+                            <div class="faq-a">
+                                <p>ไม่ได้ Snore Timeline, SnoreLab และ Somnio+ ต่างระบุว่าตัวเองไม่ใช่อุปกรณ์ทางการแพทย์ และไม่ได้วินิจฉัยภาวะหยุดหายใจขณะหลับ แพทย์เป็นผู้ตัดสิน โดยอาศัยการตรวจการนอนหลับที่บันทึกสัญญาณซึ่งโทรศัพท์วัดไม่ได้ เช่น การไหลของอากาศและออกซิเจนในเลือด</p>
+                            </div>
+                        </details>
+                        <details class="faq-entry" id="faq-flag-meaning">
+                            <summary>เครื่องหมายช่วงหยุดหายใจใน Snore Timeline หมายความว่าอะไร</summary>
+                            <div class="faq-a">
+                                <p>หมายความว่าแอปได้ยินเสียงหายใจอย่างน้อย 1 นาที ตามด้วยความเงียบ 10 วินาทีขึ้นไป แล้วมีเสียงฟื้นคืนมาทำลายความเงียบ เช่น เสียงกรนดัง เสียงหายใจเฮือก หรือเสียงหายใจแรง แอปทำเครื่องหมายช่วงเวลานั้นไว้บนไทม์ไลน์ให้คุณกลับไปฟังได้</p>
+                                <p>เครื่องหมายนี้อธิบายรูปแบบของเสียง ไม่ได้บอกว่าอากาศหยุดไหลจริงหรือไม่หรือเพราะอะไร และเป็นสิ่งที่ควรเปิดให้แพทย์ฟัง</p>
+                            </div>
+                        </details>
+                        <details class="faq-entry" id="faq-apple-watch">
+                            <summary>Apple Watch ตรวจพบภาวะหยุดหายใจขณะหลับได้ไหม</summary>
+                            <div class="faq-a">
+                                <p>Apple Watch แจ้งเตือนคุณถึงสัญญาณที่อาจเป็นภาวะหยุดหายใจขณะหลับได้ Apple Support ระบุว่านาฬิกาใช้ตัววัดความเร่งติดตามการหายใจติดขัด ตรวจข้อมูลทุก 30 วัน และส่งการแจ้งเตือนถ้าคุณมีการหายใจติดขัดในระดับสูงขึ้นอย่างสม่ำเสมอ Apple ยังระบุว่าฟีเจอร์นี้ไม่ได้มีไว้เพื่อวินิจฉัยภาวะหยุดหายใจขณะหลับ การแจ้งเตือนจึงเป็นเหตุผลให้ไปพบแพทย์</p>
+                            </div>
+                        </details>
+                        <details class="faq-entry" id="faq-how-many">
+                            <summary>ช่วงหยุดหายใจกี่ครั้งถึงจะถือว่าปกติ</summary>
+                            <div class="faq-a">
+                                <p>ฉันไม่ให้ตัวเลข เพราะคำตอบขึ้นอยู่กับค่าที่ไม่มีแอปบนโทรศัพท์แอปไหนวัดได้ แพทย์ใช้ดัชนีการหยุดหายใจและหายใจแผ่ว (AHI) ซึ่งเป็นจำนวนครั้งของการหยุดหายใจและการหายใจแผ่วต่อชั่วโมงการนอน ได้จากการตรวจการนอนหลับที่ติดตามคลื่นสมอง ออกซิเจนในเลือด อัตราการเต้นของหัวใจ และการหายใจ Sleep Foundation ระบุว่าแพทย์พิจารณาค่านี้ร่วมกับค่าอื่น ๆ จำนวนต่อชั่วโมงจากแอปไม่ใช่ AHI จึงควรให้แพทย์เป็นผู้แปลผลของคุณ</p>
+                            </div>
+                        </details>
+                        <details class="faq-entry" id="faq-cpap">
+                            <summary>ควรหยุดใช้ CPAP เพราะผลจากแอปไหม</summary>
+                            <div class="faq-a">
+                                <p>ไม่ควร ใช้ CPAP ต่อตามที่แพทย์สั่ง และปรึกษาแพทย์ที่สั่งเครื่องให้ก่อนเปลี่ยนแปลงอะไร แอปที่ใช้เสียงอาจนับได้น้อยกว่าความจริงในคืนที่ใช้ CPAP เพราะเสียงเครื่องอาจกลบเสียงหายใจเบา ๆ ตัวเลขที่ต่ำจึงไม่ใช่หลักฐานว่าคุณไม่ต้องรักษาแล้ว</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="privacy-section sources" id="sources">
+                        <h2>แหล่งอ้างอิง</h2>
+                        <ol>
+                            <li><a href="https://www.nhlbi.nih.gov/health/sleep-apnea" target="_blank" rel="noopener noreferrer">Sleep Apnea: What Is Sleep Apnea?</a>. National Heart, Lung, and Blood Institute (NIH). Accessed 27 Sep 2026.</li>
+                            <li><a href="https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms" target="_blank" rel="noopener noreferrer">Sleep Apnea: Symptoms</a>. National Heart, Lung, and Blood Institute (NIH). Accessed 27 Sep 2026.</li>
+                            <li><a href="https://www.sleepfoundation.org/sleep-apnea/ahi" target="_blank" rel="noopener noreferrer">Apnea-Hypopnea Index (AHI) and Sleep Apnea</a>. Sleep Foundation. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://apps.apple.com/us/app/id529443604" target="_blank" rel="noopener noreferrer">SnoreLab : Record Your Snoring (App Store listing)</a>. Apple App Store. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://apps.apple.com/us/app/id6755539244" target="_blank" rel="noopener noreferrer">Sleep Apnea Detector - Somnio+ (App Store listing)</a>. Apple App Store. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://support.apple.com/en-us/120031" target="_blank" rel="noopener noreferrer">Sleep apnea notifications on your Apple Watch</a>. Apple Support. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://www.apple.com/newsroom/2024/09/watchos-11-is-available-today/" target="_blank" rel="noopener noreferrer">watchOS 11 is available today</a>. Apple Newsroom, 2024. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6534134/" target="_blank" rel="noopener noreferrer">Noncontact identification of sleep-disturbed breathing from smartphone-recorded sounds validated by polysomnography</a>. Narayan S et al., Sleep and Breathing, 2019. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9119483/" target="_blank" rel="noopener noreferrer">Diagnostic value of smartphone in obstructive sleep apnea syndrome: A systematic review and meta-analysis</a>. Kim DH, Kim SW, Hwang SH, PLOS ONE, 2022. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://pubmed.ncbi.nlm.nih.gov/18431116/" target="_blank" rel="noopener noreferrer">STOP questionnaire: a tool to screen patients for obstructive sleep apnea</a>. Chung F et al., Anesthesiology, 2008. Accessed 27 Sep 2026.</li>
+                            <li><a href="https://doi.org/10.1038/s41597-021-00977-w" target="_blank" rel="noopener noreferrer">PSG-Audio, a scored polysomnography dataset with simultaneous audio recordings for sleep apnea studies</a>. Korompili et al., Scientific Data, 2021.</li>
+                            <li><a href="https://apps.apple.com/us/app/id6752620925" target="_blank" rel="noopener noreferrer">Snore Tracker &amp; Sleep, Snollo (App Store listing)</a>. Apple App Store. Accessed 28 Sep 2026.</li>
+                            <li><a href="https://snollo.com/sleep-apnea-risk-test/" target="_blank" rel="noopener noreferrer">Sleep Apnea Risk Test</a>. Snollo. Accessed 28 Sep 2026.</li>
+                        </ol>
+                    </div>
+
+                    <div class="article-cta">
+                        <h2>ลองใช้ Snore Timeline</h2>
+                        <div class="article-cta-buttons">
+                            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn-store" data-store-badge="ios" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="btn-store btn-store--secondary" data-store-badge="android" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.15-.55.4.4 0 0 0-.54.16l-1.86 3.23a11.4 11.4 0 0 0-9.78 0L5.25 5.91a.4.4 0 0 0-.54-.16.4.4 0 0 0-.15.55L6.4 9.48A10.8 10.8 0 0 0 1 17.5h22a10.8 10.8 0 0 0-5.4-8.02zM7 14.75a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>Google Play</a>
+                        </div>
+                        <p class="article-cta-note">ฟรี ไม่มีการสมัครสมาชิก ไม่ต้องสร้างบัญชี และไม่มีการซื้อภายในแอป</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>คู่มืออื่น ๆ</h2>
+                        <ul>
+                            <li><a href="/th/blog/snoring-app-privacy-labels">แอปบันทึกการกรนแอปไหนเก็บข้อมูลของคุณ เปรียบเทียบป้ายความเป็นส่วนตัวใน App Store 14 แอป</a></li>
+                            <li><a href="/th/blog/snore-timeline-vs-snorelab">Snore Timeline กับ SnoreLab: ความเป็นส่วนตัว ราคา และการบันทึก</a></li>
+                            <li><a href="/th/blog/does-apple-watch-track-snoring">Apple Watch ติดตามการกรนได้ไหม ไม่ได้ แต่ทำอะไรได้แทน</a></li>
+                            <li><a href="/th/blog/best-free-snoring-apps-iphone">แอปบันทึกการกรนฟรีที่ดีที่สุดสำหรับ iPhone: เวอร์ชันฟรีของแต่ละแอปมีอะไรบ้าง</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/th/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>บันทึก ดู และทำความเข้าใจการกรน การหายใจ และการนอนหลับของคุณ ทั้งหมดบนอุปกรณ์ของคุณ</p>
+                <p><a href="/th/support/">สนับสนุน</a> &middot; <a href="/th/blog/">คู่มือ</a> &middot; <a href="/th/about">เกี่ยวกับ</a> &middot; <a href="/th/privacy">ความเป็นส่วนตัว</a></p>
+                <div class="lang-switcher">
+                    <button class="lang-switcher-btn" aria-label="Change language">
+                        <img class="lang-flag" src="/flags/th.svg" alt="">
+                        <span>&#3652;&#3607;&#3618;</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/ca.svg" alt=""><span class="lang-name">English</span></a>
+                        <a href="/ar/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/sa.svg" alt=""><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></a>
+                        <a href="/zh/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/cn.svg" alt=""><span class="lang-name">&#20013;&#25991;</span></a>
+                        <a href="/zh-Hant/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/tw.svg" alt=""><span class="lang-name">&#32321;&#39636;&#20013;&#25991;</span></a>
+                        <a href="/da/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/dk.svg" alt=""><span class="lang-name">Dansk</span></a>
+                        <a href="/nl/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/nl.svg" alt=""><span class="lang-name">Nederlands</span></a>
+                        <a href="/fil/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/ph.svg" alt=""><span class="lang-name">Filipino</span></a>
+                        <a href="/fr/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/fr.svg" alt=""><span class="lang-name">Fran&ccedil;ais</span></a>
+                        <a href="/de/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/de.svg" alt=""><span class="lang-name">Deutsch</span></a>
+                        <a href="/hi/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/in.svg" alt=""><span class="lang-name">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</span></a>
+                        <a href="/id/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/id.svg" alt=""><span class="lang-name">Bahasa Indonesia</span></a>
+                        <a href="/it/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/it.svg" alt=""><span class="lang-name">Italiano</span></a>
+                        <a href="/ja/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/jp.svg" alt=""><span class="lang-name">&#26085;&#26412;&#35486;</span></a>
+                        <a href="/ko/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/kr.svg" alt=""><span class="lang-name">&#54620;&#44397;&#50612;</span></a>
+                        <a href="/ms/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/my.svg" alt=""><span class="lang-name">Bahasa Melayu</span></a>
+                        <a href="/no/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/no.svg" alt=""><span class="lang-name">Norsk</span></a>
+                        <a href="/pl/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/pl.svg" alt=""><span class="lang-name">Polski</span></a>
+                        <a href="/pt/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/pt.svg" alt=""><span class="lang-name">Portugu&ecirc;s</span></a>
+                        <a href="/ru/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/ru.svg" alt=""><span class="lang-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></a>
+                        <a href="/es/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/es.svg" alt=""><span class="lang-name">Espa&ntilde;ol</span></a>
+                        <a href="/sv/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/se.svg" alt=""><span class="lang-name">Svenska</span></a>
+                        <a href="/th/blog/snoring-app-that-detects-breathing-pauses" class="active"><img class="lang-flag" src="/flags/th.svg" alt=""><span class="lang-name">&#3652;&#3607;&#3618;</span></a>
+                        <a href="/tr/blog/snoring-app-that-detects-breathing-pauses"><img class="lang-flag" src="/flags/tr.svg" alt=""><span class="lang-name">T&uuml;rk&ccedil;e</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="support-footer-col">
+                <h4>เรียนรู้</h4>
+                <ul>
+                    <li><a href="/th/support/getting-started">เริ่มต้นใช้งาน</a></li>
+                    <li><a href="/th/support/how-detection-works">วิธีการตรวจจับทำงาน</a></li>
+                    <li><a href="/th/support/timeline-and-playback">ไทม์ไลน์และการเล่นเสียง</a></li>
+                    <li><a href="/th/support/breathing-disruptions">การรบกวนการหายใจ</a></li>
+                    <li><a href="/th/support/sleep-stages">ระยะการนอนหลับ</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>เพิ่มเติม</h4>
+                <ul>
+                    <li><a href="/th/support/apple-watch">Apple Watch และสุขภาพ</a></li>
+                    <li><a href="/th/support/export-and-sharing">การส่งออกและการแชร์</a></li>
+                    <li><a href="/th/support/troubleshooting">การแก้ไขปัญหา</a></li>
+                    <li><a href="/th/support/android">Android</a></li>
+                    <li><a href="/th/support/faq">คำถามที่พบบ่อย</a></li>
+                    <li><a href="/th/blog/">คู่มือ</a></li>
+                    <li><a href="/th/support/#contact">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. สงวนลิขสิทธิ์ทั้งหมด</div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script>
+    // Build the "In this article" list from section headings (skips FAQ and Sources).
+    (function () {
+        var toc = document.getElementById('article-toc');
+        if (!toc) return;
+        var skip = { faq: 1, sources: 1 };
+        document.querySelectorAll('.privacy-content > .privacy-section[id] > h2').forEach(function (h) {
+            var id = h.parentNode.id;
+            if (skip[id]) return;
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = '#' + id;
+            a.textContent = h.textContent;
+            li.appendChild(a);
+            toc.appendChild(li);
+        });
+        if (!toc.children.length) toc.closest('.toc-box').hidden = true;
+    }());
+    </script>
+</body>
+</html>
