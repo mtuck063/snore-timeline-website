@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>支持 - Snore Timeline</title>
+    <meta name="title" content="支持 - Snore Timeline">
+    <meta name="description" content="Snore Timeline 帮助。查看关于录音、检测、事件、呼吸中断、睡眠阶段、数据导出等常见问题的答案。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/support">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="../logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Support Content -->
+    <section class="support-page">
+        <div class="support-layout">
+            <!-- Sidebar Navigation (Desktop Only) -->
+            <aside class="support-sidebar">
+                <nav class="support-nav">
+                    <a href="#getting-started">入门</a>
+                    <a href="#how-detection-works">检测原理</a>
+                    <a href="#understanding-timeline">了解时间轴</a>
+                    <a href="#episodes">事件与发生情况</a>
+                    <a href="#breathing-disruptions">呼吸中断</a>
+                    <a href="#sleep-stages">睡眠阶段</a>
+                    <a href="#audio-export">音频回放与导出</a>
+                    <a href="#storage-settings">存储与录音质量</a>
+                    <a href="#tips">更佳录音建议</a>
+                    <a href="#troubleshooting">故障排查</a>
+                    <a href="#privacy">隐私与数据</a>
+                    <a href="#contact">联系我们</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="support-main">
+                <header class="support-header">
+                    <h1 class="privacy-title">支持</h1>
+                    <p class="privacy-updated">关于 Snore Timeline 您需要了解的一切</p>
+                </header>
+
+                <div class="privacy-content">
+                    <p class="privacy-intro">欢迎来到 Snore Timeline 支持页面。这里有应用工作原理的详细信息，包括打鼾检测、呼吸中断、睡眠阶段分类，以及常见问题解答。</p>
+
+                <!-- Getting Started -->
+                <div class="privacy-section" id="getting-started">
+                    <h2>入门</h2>
+
+                    <h3>如何使用本应用？</h3>
+                    <p>Snore Timeline 设计简洁。打开应用并按下录音按钮即可开始跟踪睡眠声音。将手机放在床头柜上，离您约 30-60 厘米，最好接上充电器。应用将整夜录音并实时处理音频。</p>
+
+                    <h3>应用能检测什么？</h3>
+                    <p>应用使用设备端 AI 检测并分类多种睡眠声音：</p>
+                    <ul>
+                        <li><strong>打鼾</strong> — 主要关注对象，检测频率主要在 50Hz-3kHz 之间。每次检测都会在时间轴上标记其音量级别。</li>
+                        <li><strong>喘息</strong> — 突然吸气的声音，通常与呼吸中断相关</li>
+                        <li><strong>咳嗽</strong> — 睡眠期间的咳嗽声，与打鼾分开跟踪</li>
+                        <li><strong>梦呓</strong> — 说话、低语和咿呀声</li>
+                        <li><strong>呼吸</strong> — 规律的呼吸模式，用于呼吸中断检测和睡眠阶段分类</li>
+                    </ul>
+                    <p>所有检测均通过 Apple 的 Sound Analysis 框架实时进行，完全在您的设备上运行。</p>
+
+                    <h3>需要账户吗？</h3>
+                    <p>不需要。Snore Timeline 没有账户、登录或云服务。一切都在您的设备上本地运行。</p>
+                </div>
+
+                <!-- How Detection Works -->
+                <div class="privacy-section" id="how-detection-works">
+                    <h2>检测原理</h2>
+
+                    <h3>实时 AI 分析</h3>
+                    <p>与定期采样音频的应用不同，Snore Timeline 使用 Apple 的设备端声音分类技术实时连续分析您的音频。每个声音都会在发生时立即处理——不会跳过或采样任何数据。</p>
+
+                    <h3>置信度阈值</h3>
+                    <p>AI 会为每个检测到的声音分配一个置信度评分。应用根据声音类型以及您是否正在主动使用手机或它是否在后台运行（您真正入睡时）采用不同的阈值。这有助于在保持准确性的同时减少误报。</p>
+
+                    <h3>分贝测量</h3>
+                    <p>声音以分贝（dB SPL）为单位测量，应用最高可测量 105 dB。可以将其想象为音量计——数值越高，声音越大。应用会跟踪每次事件的峰值和平均分贝级别。</p>
+                </div>
+
+                <!-- Understanding the Timeline -->
+                <div class="privacy-section" id="understanding-timeline">
+                    <h2>了解时间轴</h2>
+
+                    <h3>交互式时间轴可视化</h3>
+                    <p>您的整夜都显示在可滚动、可缩放的时间轴上。您可以在睡眠时段中导航，准确查看声音发生的时间。</p>
+
+                    <h3>时间刻度</h3>
+                    <p>时间轴支持多个缩放级别：</p>
+                    <ul>
+                        <li><strong>1 秒间隔</strong> — 最详细的视图，每个刻度代表 1 秒</li>
+                        <li><strong>5 秒间隔</strong> — 用于检查特定事件的详细视图</li>
+                        <li><strong>1 分钟间隔</strong> — 适合查看特定时段</li>
+                        <li><strong>10 分钟间隔</strong> — 睡眠模式的总览</li>
+                        <li><strong>1 小时间隔</strong> — 一眼浏览整夜</li>
+                    </ul>
+                    <p><strong>提示：</strong>长按缩放按钮可快速放大或缩小到底——无需多次点击。</p>
+
+                    <h3>在不同夜晚间切换</h3>
+                    <p>在每夜摘要界面上向左或向右滑动，可在不同夜晚之间切换。在周摘要界面上使用同样的手势可在不同周之间导航。</p>
+
+                    <h3>日历视图</h3>
+                    <p>使用日历直接跳转到任何已录制的夜晚。有录音的夜晚会高亮显示，方便您找到自己的数据。</p>
+
+                    <h3>时间轴上的睡眠阶段</h3>
+                    <p>如果检测到了睡眠阶段，您会在时间轴上看到彩色的背景条带，指示您在整夜每个时刻所处的阶段。这便于将打鼾事件与特定的睡眠阶段关联起来。</p>
+
+                    <h3>周摘要</h3>
+                    <p>周摘要界面显示多个夜晚的趋势，让您可以跟踪：</p>
+                    <ul>
+                        <li><strong>事件数量趋势</strong> — 查看您的打鼾是在增加、减少还是保持稳定</li>
+                        <li><strong>平均音量</strong> — 跟踪您的打鼾随时间变得更响还是更轻</li>
+                        <li><strong>总录音时长</strong> — 您每晚获得多少睡眠</li>
+                        <li><strong>周与周对比</strong> — 将当前周与之前的周进行比较</li>
+                    </ul>
+                    <p>这有助于您识别规律，并查看生活方式的改变（睡姿、减重、避免饮酒等）是否产生了效果。</p>
+                </div>
+
+                <!-- Episodes & Events -->
+                <div class="privacy-section" id="episodes">
+                    <h2>事件与发生情况</h2>
+
+                    <h3>什么是打鼾信号？</h3>
+                    <p>每次应用检测到打鼾声音，都会被计为一个"打鼾信号"。信号越多，意味着该时段的打鼾活动越频繁。</p>
+
+                    <h3>什么是事件？</h3>
+                    <p>事件是一组在时间上紧密相邻的打鼾信号。当应用检测到打鼾时，就会创建一个事件。如果连续 30 秒没有打鼾，该事件就会结束。下次再检测到打鼾时，会开始一个新事件。</p>
+
+                    <h3>事件详情</h3>
+                    <p>每个事件显示：</p>
+                    <ul>
+                        <li><strong>持续时间</strong> — 该事件持续了多久</li>
+                        <li><strong>打鼾次数</strong> — 打鼾信号的总数</li>
+                        <li><strong>峰值音量</strong> — 以分贝表示的最响亮时刻</li>
+                        <li><strong>平均音量</strong> — 整体音量水平</li>
+                        <li><strong>事件细分</strong> — 打鼾、喘息、咳嗽和梦呓的次数</li>
+                        <li><strong>白话总结</strong> — 类似"重度打鼾持续超过 20 分钟，伴有一次呼吸中断"这样的描述</li>
+                    </ul>
+
+                    <h3>事件描述</h3>
+                    <p>应用会根据事件特征自动生成描述：</p>
+                    <ul>
+                        <li><strong>音量级别：</strong>微弱（&lt;40 dB）、轻度（40-48 dB）、可闻（48-56 dB）、重度（56+ dB）</li>
+                        <li><strong>节奏模式：</strong>有节奏（间隔一致）、规律（轻微变化）、间歇性（时停时起）</li>
+                        <li><strong>趋势：</strong>打鼾随时间变得更响、减弱还是保持稳定</li>
+                    </ul>
+                </div>
+
+                <!-- Breathing Disruptions -->
+                <div class="privacy-section" id="breathing-disruptions">
+                    <h2>呼吸中断</h2>
+
+                    <h3>什么是呼吸中断？</h3>
+                    <p>当应用检测到一种特定模式时会标记为呼吸中断：可闻的呼吸声之后出现长时间静音，然后是一个恢复声音。这可能表示睡眠中的呼吸暂停。</p>
+
+                    <h3>如何检测？</h3>
+                    <p>检测需要依次满足三个条件：</p>
+                    <ol>
+                        <li><strong>基线呼吸</strong> — 在静音期之前，应用必须至少检测到一分钟可闻的呼吸声（12 个五秒窗口中需要有 11 个检测到呼吸）</li>
+                        <li><strong>长时间静音</strong> — 持续 10 秒或更长的完全静音期</li>
+                        <li><strong>恢复声音</strong> — 静音被一个打鼾信号打破，且该信号比静音期间的平均音量至少高 15 dB</li>
+                    </ol>
+
+                    <h3>时间轴标记</h3>
+                    <p>呼吸中断在时间轴上显示为不明显的灰蓝色标记，便于您发现整夜的模式。</p>
+
+                    <h3>重要声明</h3>
+                    <p><strong>这只是音频分析——不是医疗设备。</strong>应用无法诊断睡眠呼吸暂停或任何其他医疗状况。它分析声音模式，而非血氧水平或脑活动。如果您发现频繁的呼吸中断，请考虑与医疗专业人员讨论这些结果。</p>
+                </div>
+
+                <!-- Sleep Stages -->
+                <div class="privacy-section" id="sleep-stages">
+                    <h2>睡眠阶段</h2>
+
+                    <h3>什么是睡眠阶段？</h3>
+                    <p>睡眠阶段是一项功能，可估算您在整夜任意时刻所处的睡眠阶段：清醒、浅睡眠、深睡眠或 REM（快速眼动）睡眠。这些估算结果在时间轴上显示为彩色条带，并在每夜摘要中以睡眠曲线图（hypnogram）形式呈现。</p>
+
+                    <h3>它是如何工作的？</h3>
+                    <p>应用通过麦克风采集您的呼吸模式，并分析其规律性和方差。录音大约 15 分钟后，算法会建立您个人的呼吸基线。然后使用基于研究的阈值对睡眠阶段进行分类：</p>
+                    <ul>
+                        <li><strong>深睡眠</strong> — 稳定、规律的呼吸，方差较低</li>
+                        <li><strong>REM 睡眠</strong> — 不规律的呼吸模式，方差较高</li>
+                        <li><strong>浅睡眠</strong> — 中等的呼吸规律性</li>
+                        <li><strong>清醒</strong> — 与睡眠不一致的动作、声音或呼吸模式</li>
+                    </ul>
+                    <p>算法还会考虑呼吸频率、打鼾模式和夜间时间。深睡眠通常出现在夜晚的早期阶段，而 REM 睡眠则在临近清晨时增加。</p>
+
+                    <h3>理解睡眠曲线图</h3>
+                    <p>睡眠曲线图（hypnogram）是显示您整夜在不同睡眠阶段之间转换的图表。每个彩色条带代表在某个特定阶段停留 5 分钟：</p>
+                    <ul>
+                        <li><strong>橙色</strong> — 清醒时段</li>
+                        <li><strong>青色（浅蓝）</strong> — 浅睡眠</li>
+                        <li><strong>靛蓝（深蓝）</strong> — 深睡眠</li>
+                        <li><strong>粉色/青色</strong> — REM 睡眠</li>
+                    </ul>
+                    <p>您可以看到自己经历了多少个完整的睡眠周期、深睡眠最多的时段，以及 REM 睡眠出现的时间。</p>
+
+                    <h3>阶段分布</h3>
+                    <p>每夜摘要还会显示您在每个阶段花费的时间百分比。一个典型夜晚的睡眠可能是这样：</p>
+                    <ul>
+                        <li>45% 浅睡眠</li>
+                        <li>20% 深睡眠</li>
+                        <li>27% REM 睡眠</li>
+                        <li>8% 清醒</li>
+                    </ul>
+                    <p>这些百分比会根据年龄、健康状况、压力水平和其他因素而有所不同。</p>
+
+                    <h3>估算的准确度如何？</h3>
+                    <p>睡眠阶段检测基于已发表的关于呼吸规律性与睡眠阶段关系的研究。这些估算结果可以提供您整体睡眠结构和长期趋势的有用图景。使用类似音频方法的研究在与多导睡眠图（临床睡眠研究）对比验证时已达到约 70% 的准确率。</p>
+                    <p><strong>重要：</strong>这些是来自音频分析的估算，并非临床测量。应用未经过多导睡眠图验证，应视为估算而非诊断。如需临床睡眠分析，请咨询医疗专业人员。</p>
+
+                    <h3>为什么没有检测到睡眠阶段？</h3>
+                    <p>睡眠阶段检测需要整个录音过程中都有可闻的呼吸声。如果未检测到睡眠阶段：</p>
+                    <ul>
+                        <li>您的呼吸声可能对麦克风来说不够清晰</li>
+                        <li>手机可能放得太远（试试 30-60 厘米的距离）</li>
+                        <li>背景噪音可能干扰了呼吸检测</li>
+                        <li>录音可能太短（算法需要约 15 分钟来建立基线）</li>
+                    </ul>
+
+                    <h3>研究参考</h3>
+                    <p>睡眠阶段分类算法参考了以下研究：</p>
+                    <ul>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/" target="_blank" rel="noopener noreferrer">Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages</a>（Schumann et al., 2010）— 证明呼吸缩放指数在不同睡眠阶段之间存在可测量的差异</li>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/" target="_blank" rel="noopener noreferrer">Using Spectral Continuity to Extract Breathing Rate from Heart Rate and Its Applications in Sleep Physiology</a>（Orphanides et al., 2024）— 证实深睡眠的呼吸最稳定且最可预测</li>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/" target="_blank" rel="noopener noreferrer">Sleep Stage Classification from Heart-Rate Variability</a> — 基于音频的睡眠阶段分类，准确率约为 70%</li>
+                    </ul>
+                </div>
+
+                <!-- Audio Playback & Export -->
+                <div class="privacy-section" id="audio-export">
+                    <h2>音频回放与导出</h2>
+
+                    <h3>聆听录音</h3>
+                    <p>点击时间轴上的任何事件或时刻，即可回放录音的相应部分。应用包含音频增强功能，让睡眠期间的声音更易于聆听。</p>
+
+                    <h3>下载事件音频</h3>
+                    <p>点击任何事件上的下载按钮，将该音频片段保存到您的"文件" app 中。应用会将该事件相关的所有音频片段合并为一个文件。</p>
+
+                    <h3>在哪里找到下载</h3>
+                    <div class="file-path-list">
+                        <div class="file-path-item">
+                            <span class="file-path">文件 > 我的 iPhone > Snore Timeline > Recordings</span>
+                            <span class="file-path-desc">整夜录音</span>
+                        </div>
+                        <div class="file-path-item">
+                            <span class="file-path">文件 > 我的 iPhone > Snore Timeline > Snoring Episodes</span>
+                            <span class="file-path-desc">单个事件音频片段和 CSV 导出</span>
+                        </div>
+                    </div>
+
+                    <h3>导出数据</h3>
+                    <p>您可以将任何夜晚的详细数据导出为 CSV 文件：</p>
+                    <ul>
+                        <li><strong>Nightly Summary.csv</strong> — 总体统计数据，包括：
+                            <ul>
+                                <li>总录音时长和日期</li>
+                                <li>事件数量、总打鼾信号数、峰值和平均音量</li>
+                                <li>呼吸中断次数</li>
+                                <li>睡眠阶段分布（如检测到）— 每个阶段花费的时间</li>
+                                <li>事件细分（喘息、咳嗽、梦呓）</li>
+                            </ul>
+                        </li>
+                        <li><strong>Snoring Episodes.csv</strong> — 每个事件的详细数据：
+                            <ul>
+                                <li>开始时间、结束时间和持续时间</li>
+                                <li>打鼾信号数、峰值音量、平均音量</li>
+                                <li>事件计数（喘息、咳嗽、梦呓）</li>
+                                <li>节奏分类和趋势分析</li>
+                                <li>白话描述</li>
+                                <li>呼吸中断标记（如适用）</li>
+                                <li>当时的睡眠阶段（如检测到）</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>这些数据有助于您长期跟踪规律，或与医疗服务提供者分享。CSV 文件可在 Excel、Numbers、Google Sheets 或任何电子表格应用中打开。</p>
+                </div>
+
+                <!-- Storage & Recording Quality -->
+                <div class="privacy-section" id="storage-settings">
+                    <h2>存储与录音质量</h2>
+
+                    <h3>录音质量选项</h3>
+                    <p>选择适合您需求的质量级别：</p>
+
+                    <h4>Basic（专注打鼾）— 约 8 MB/小时</h4>
+                    <ul>
+                        <li>压缩录音以专注于 4,000 Hz 以下的频率</li>
+                        <li>针对打鼾声（50Hz-3kHz）进行了优化</li>
+                        <li>文件最小，占用存储空间最少</li>
+                        <li>较安静的声音可能不够细致</li>
+                    </ul>
+
+                    <h4>Standard（清晰音频）— 约 15 MB/小时</h4>
+                    <ul>
+                        <li>捕捉最高 8,000 Hz 的频率（完整的语音范围）</li>
+                        <li>质量与存储空间的良好平衡</li>
+                        <li>更便于将打鼾声与其他声音区分开</li>
+                    </ul>
+
+                    <h4>High Fidelity（完整细节）— 约 25 MB/小时</h4>
+                    <ul>
+                        <li>录制最高 24,000 Hz 的完整可闻频谱</li>
+                        <li>保留所有音频细节，包括室内声学效果</li>
+                        <li>占用最多的存储空间</li>
+                    </ul>
+
+                    <h3>存储管理</h3>
+                    <p>应用提供管理存储的选项：</p>
+                    <ul>
+                        <li><strong>存储限制</strong> — 为录音设置存储上限（1-8 GB）</li>
+                        <li><strong>自动清理</strong> — 达到上限时自动删除最早的录音</li>
+                    </ul>
+                </div>
+
+                <!-- Tips for Better Recordings -->
+                <div class="privacy-section" id="tips">
+                    <h2>更佳录音建议</h2>
+
+                    <h3>手机放置</h3>
+                    <p>将手机放在距您约 30-60 厘米处可获得最佳效果。距离更近意味着检测更响亮，但放得太远会降低准确性——尤其是对于呼吸声的捕捉，呼吸声必须清晰可闻才能被检测到。</p>
+                    <p><strong>理想设置：</strong>将手机放在床边的床头柜上，并接上充电器。</p>
+
+                    <h3>电量消耗</h3>
+                    <p>Snore Timeline 针对整夜录音进行了优化。大多数用户报告 8 小时内电量消耗 20-30%。保持手机接通充电器可确保录音不中断。</p>
+
+                    <h3>蓝牙设备</h3>
+                    <p>应用支持包括 AirPods 在内的蓝牙音频设备。不过，为获得最佳的呼吸检测效果，手机内置麦克风通常能提供更稳定的结果。</p>
+
+                    <h3>房间环境</h3>
+                    <p>要让呼吸中断检测和睡眠阶段分类有效工作，您的常规呼吸需要能被手机麦克风听到。如果您呼吸声非常轻或手机距离太远，呼吸声可能无法被持续检测到，从而无法建立基线。</p>
+
+                    <h3>优化睡眠阶段检测</h3>
+                    <p>要获得最准确的睡眠阶段估算结果：</p>
+                    <ul>
+                        <li><strong>稳定放置</strong> — 每晚使用相同的手机位置，以便持续检测呼吸</li>
+                        <li><strong>安静的房间</strong> — 尽量减少来自风扇、空调或户外交通的背景噪音</li>
+                        <li><strong>完整的整夜录音</strong> — 算法会随时间改进；更长的录音（6 小时以上）能提供更好的阶段分类</li>
+                        <li><strong>可闻的呼吸</strong> — 手机必须足够近才能清晰捕捉到您的呼吸声（30-60 厘米最为理想）</li>
+                    </ul>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="privacy-section" id="troubleshooting">
+                    <h2>故障排查</h2>
+
+                    <h3>应用没有录制任何内容</h3>
+                    <p>应用只在检测到与睡眠相关的声音时才会保存音频。如果没有录到任何内容：</p>
+                    <ul>
+                        <li>在"设置 > 隐私 > 麦克风"中确认 Snore Timeline 已获得麦克风权限</li>
+                        <li>确保手机距离足够近以检测到声音（30-60 厘米）</li>
+                        <li>确保手机未被静音或处于可能影响录音的勿扰模式</li>
+                        <li>您可能只是度过了一个安静、几乎没有打鼾的夜晚</li>
+                    </ul>
+
+                    <h3>未检测到呼吸中断</h3>
+                    <p>呼吸中断检测有严格的要求：</p>
+                    <ul>
+                        <li>在静音期前，您的常规呼吸必须能被手机听到至少一分钟</li>
+                        <li>手机可能距离太远，无法捕捉到呼吸声</li>
+                        <li>静音必须持续至少 10 秒</li>
+                        <li>必须紧跟一个明显比静音期更响的恢复声音（打鼾、喘息）</li>
+                    </ul>
+
+                    <h3>检测似乎不准确</h3>
+                    <p>如果检测次数过多或过少：</p>
+                    <ul>
+                        <li>尝试调整手机位置——靠近以提高灵敏度，远离以降低灵敏度</li>
+                        <li>背景噪音（风扇、空调、交通）会影响检测准确性</li>
+                        <li>应用在后台和前台使用不同的灵敏度，以减少日间声音造成的误报</li>
+                    </ul>
+
+                    <h3>存储空间快满了</h3>
+                    <ul>
+                        <li>在应用内删除您不再需要的旧录音</li>
+                        <li>在设置中启用存储限制以自动管理空间</li>
+                        <li>切换到更低的录音质量以减小文件大小</li>
+                    </ul>
+
+                    <h3>录音期间应用崩溃或关闭</h3>
+                    <p>应用设计为可在后台持续录音。如果意外停止：</p>
+                    <ul>
+                        <li>确认已为 Snore Timeline 启用"后台 App 刷新"</li>
+                        <li>保持手机接通充电器——iOS 可能会在电量低时关闭后台应用</li>
+                        <li>检查是否有其他应用在争夺音频资源</li>
+                    </ul>
+                </div>
+
+                <!-- Privacy & Data -->
+                <div class="privacy-section" id="privacy">
+                    <h2>隐私与数据</h2>
+
+                    <h3>我的数据存在哪里？</h3>
+                    <p>所有录音和数据都本地存储在您的 iPhone 上。不会上传到任何服务器或云服务。</p>
+
+                    <h3>应用收集任何信息吗？</h3>
+                    <p>不。Snore Timeline 不收集、传输或存储任何个人信息。没有分析、跟踪或账户。</p>
+
+                    <h3>如何删除我的数据？</h3>
+                    <p>您可以从应用的时间轴视图中删除录音。要完全删除所有数据，请从设备上卸载应用。</p>
+
+                    <h3>我可以分享我的数据吗？</h3>
+                    <p>可以 — 您完全掌控自己的数据。使用导出功能保存录音和 CSV 报告，然后通过您选择的方式（电子邮件、消息、云存储等）分享。</p>
+
+                    <p>完整详情请见我们的<a href="/zh/privacy">隐私政策</a>。</p>
+                </div>
+
+                <!-- Contact -->
+                <div class="privacy-section" id="contact">
+                    <h2>联系我们</h2>
+                    <p>如果您有此处未回答的问题、遇到了错误或有应用反馈，请联系我们。我阅读每条消息并尽力快速回复。</p>
+                    <p><strong>电子邮件：</strong><a href="mailto:meneliktucker@gmail.com?subject=Snore%20Timeline%20Support" class="privacy-email">meneliktucker@gmail.com</a></p>
+                    <p><strong>Reddit：</strong><a href="https://www.reddit.com/user/Comprehensive_Tap769" rel="noopener noreferrer" class="privacy-email">u/Comprehensive_Tap769</a></p>
+                    <p>报告错误时请附上：</p>
+                    <ul>
+                        <li>您的 iPhone 型号和 iOS 版本</li>
+                        <li>问题发生时您在做什么</li>
+                        <li>您看到的任何错误消息</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="privacy-actions">
+                    <a href="/zh/" class="btn btn-secondary">返回首页</a>
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        在 App Store 下载
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <svg class="btn-icon" viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        在 Google Play 上获取
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/zh/privacy">隐私政策</a>
+                <a href="/zh/support">支持</a>
+            </div>
+            <p>&copy; 2026 Snore Timeline. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

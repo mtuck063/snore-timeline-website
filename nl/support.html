@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Ondersteuning - Snore Timeline</title>
+    <meta name="title" content="Ondersteuning - Snore Timeline">
+    <meta name="description" content="Hulp bij Snore Timeline. Vind antwoorden op veelgestelde vragen over opname, detectie, episodes, ademonderbrekingen, slaapfases, data-export en meer.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/nl/support">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="../logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Support Content -->
+    <section class="support-page">
+        <div class="support-layout">
+            <!-- Sidebar Navigation (Desktop Only) -->
+            <aside class="support-sidebar">
+                <nav class="support-nav">
+                    <a href="#getting-started">Aan de slag</a>
+                    <a href="#how-detection-works">Hoe detectie werkt</a>
+                    <a href="#understanding-timeline">De tijdlijn begrijpen</a>
+                    <a href="#episodes">Episodes en gebeurtenissen</a>
+                    <a href="#breathing-disruptions">Ademonderbrekingen</a>
+                    <a href="#sleep-stages">Slaapfases</a>
+                    <a href="#audio-export">Audioafspeling en export</a>
+                    <a href="#storage-settings">Opslag en opnamekwaliteit</a>
+                    <a href="#tips">Tips voor betere opnames</a>
+                    <a href="#troubleshooting">Probleemoplossing</a>
+                    <a href="#privacy">Privacy en gegevens</a>
+                    <a href="#contact">Neem contact op</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="support-main">
+                <header class="support-header">
+                    <h1 class="privacy-title">Ondersteuning</h1>
+                    <p class="privacy-updated">Alles wat je moet weten over Snore Timeline</p>
+                </header>
+
+                <div class="privacy-content">
+                    <p class="privacy-intro">Welkom op de Snore Timeline-ondersteuningspagina. Hier vind je gedetailleerde informatie over hoe de app werkt, inclusief snurkdetectie, ademonderbrekingen, slaapfase-classificatie en antwoorden op veelgestelde vragen.</p>
+
+                <!-- Getting Started -->
+                <div class="privacy-section" id="getting-started">
+                    <h2>Aan de slag</h2>
+
+                    <h3>Hoe gebruik ik de app?</h3>
+                    <p>Snore Timeline is bewust eenvoudig. Open de app en druk op opnemen om je slaapgeluiden te beginnen volgen. Leg je telefoon op een nachtkastje, 30-60 cm van je vandaan, bij voorkeur aan de oplader. De app neemt de hele nacht op en verwerkt je audio realtime.</p>
+
+                    <h3>Wat detecteert de app?</h3>
+                    <p>De app gebruikt AI op het apparaat om verschillende slaapgeluiden te detecteren en te categoriseren:</p>
+                    <ul>
+                        <li><strong>Snurken</strong> — De primaire focus, gedetecteerd bij frequenties voornamelijk tussen 50Hz-3kHz. Elke detectie wordt op de tijdlijn gemarkeerd met het volumeniveau.</li>
+                        <li><strong>Naar adem happen</strong> — Plotselinge ademinhalingsgeluiden, vaak geassocieerd met ademonderbrekingen</li>
+                        <li><strong>Hoesten</strong> — Hoesten tijdens de slaap, apart van snurken gevolgd</li>
+                        <li><strong>Praten in je slaap</strong> — Spraak, gefluister en gebrabbel</li>
+                        <li><strong>Ademhaling</strong> — Regelmatige ademhalingspatronen die zowel voor onderbrekingsdetectie als slaapfase-classificatie worden gebruikt</li>
+                    </ul>
+                    <p>Alle detectie gebeurt realtime via Apple's Sound Analysis-framework, volledig op je apparaat.</p>
+
+                    <h3>Heb ik een account nodig?</h3>
+                    <p>Nee. Snore Timeline heeft geen accounts, logins of cloudservices. Alles draait lokaal op je apparaat.</p>
+                </div>
+
+                <!-- How Detection Works -->
+                <div class="privacy-section" id="how-detection-works">
+                    <h2>Hoe detectie werkt</h2>
+
+                    <h3>Realtime AI-analyse</h3>
+                    <p>In tegenstelling tot apps die audio periodiek bemonsteren, analyseert Snore Timeline je audio continu en realtime via Apple's geluidsclassificatie op het apparaat. Elk geluid wordt verwerkt zodra het plaatsvindt — er worden geen gegevens overgeslagen of bemonsterd.</p>
+
+                    <h3>Vertrouwensdrempels</h3>
+                    <p>De AI kent aan elk gedetecteerd geluid een vertrouwensscore toe. De app gebruikt verschillende drempels afhankelijk van het type geluid en of je de telefoon actief gebruikt of dat deze op de achtergrond draait (wanneer je daadwerkelijk slaapt). Dit helpt valse positieven te verminderen terwijl de nauwkeurigheid behouden blijft.</p>
+
+                    <h3>Decibelmeting</h3>
+                    <p>Geluiden worden gemeten in decibel (dB SPL), waarbij de app tot 105 dB kan meten. Zie het als een volumemeter — hoe hoger het getal, hoe luider het geluid. De app houdt zowel piek- als gemiddelde decibelniveaus bij voor elke episode.</p>
+                </div>
+
+                <!-- Understanding the Timeline -->
+                <div class="privacy-section" id="understanding-timeline">
+                    <h2>De tijdlijn begrijpen</h2>
+
+                    <h3>Interactieve tijdlijnvisualisatie</h3>
+                    <p>Je hele nacht wordt weergegeven op een scrollbare, zoombare tijdlijn. Je kunt door je slaapsessie navigeren om precies te zien wanneer geluiden plaatsvonden.</p>
+
+                    <h3>Tijdschalen</h3>
+                    <p>De tijdlijn ondersteunt meerdere zoomniveaus:</p>
+                    <ul>
+                        <li><strong>Intervallen van 1 seconde</strong> — Meest gedetailleerde weergave, elke streep staat voor 1 seconde</li>
+                        <li><strong>Intervallen van 5 seconden</strong> — Gedetailleerde weergave om specifieke episodes te onderzoeken</li>
+                        <li><strong>Intervallen van 1 minuut</strong> — Geschikt voor het bekijken van specifieke periodes</li>
+                        <li><strong>Intervallen van 10 minuten</strong> — Overzicht van slaappatronen</li>
+                        <li><strong>Intervallen van 1 uur</strong> — Hele nacht in één oogopslag</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Houd de zoomknop ingedrukt om snel helemaal in of uit te zoomen — geen meerdere keren tikken nodig.</p>
+
+                    <h3>Tussen nachten navigeren</h3>
+                    <p>Veeg naar links of rechts op het scherm met de nachtelijke samenvatting om tussen verschillende nachten te wisselen. Hetzelfde gebaar werkt op het scherm Wekelijkse samenvatting om tussen weken te navigeren.</p>
+
+                    <h3>Kalenderweergave</h3>
+                    <p>Gebruik de kalender om direct naar een opgenomen nacht te springen. Nachten met opnames zijn gemarkeerd, zodat je je gegevens gemakkelijk kunt terugvinden.</p>
+
+                    <h3>Slaapfase-visualisatie op tijdlijn</h3>
+                    <p>Als slaapfases zijn gedetecteerd, zie je gekleurde achtergrondbanden op je tijdlijn die aangeven in welke fase je je op elk moment van de nacht bevond. Dit maakt het eenvoudig om snurkepisodes te correleren met specifieke slaapfases.</p>
+
+                    <h3>Wekelijkse samenvatting</h3>
+                    <p>Het scherm Wekelijkse samenvatting toont trends over meerdere nachten, waardoor je het volgende kunt volgen:</p>
+                    <ul>
+                        <li><strong>Trends in episode-aantallen</strong> — Zie of je snurken toeneemt, afneemt of constant blijft</li>
+                        <li><strong>Gemiddelde volumes</strong> — Volg of je snurken na verloop van tijd luider of zachter wordt</li>
+                        <li><strong>Totale opnametijd</strong> — Hoeveel je elke nacht slaapt</li>
+                        <li><strong>Week-op-week-vergelijkingen</strong> — Vergelijk de huidige week met voorgaande weken</li>
+                    </ul>
+                    <p>Dit helpt je patronen te herkennen en te zien of veranderingen in levensstijl (slaaphouding, gewichtsverlies, alcohol vermijden, enz.) verschil maken.</p>
+                </div>
+
+                <!-- Episodes & Events -->
+                <div class="privacy-section" id="episodes">
+                    <h2>Episodes en gebeurtenissen</h2>
+
+                    <h3>Wat is een snurksignaal?</h3>
+                    <p>Elke keer dat de app een snurkgeluid detecteert, telt dat als één "snurksignaal". Meer signalen betekent meer snurkactiviteit gedurende die periode.</p>
+
+                    <h3>Wat is een episode?</h3>
+                    <p>Een episode is een groep snurksignalen die kort na elkaar plaatsvinden. Wanneer de app snurken detecteert, wordt er een episode aangemaakt. Als er 30 seconden lang geen snurken plaatsvindt, eindigt die episode. De volgende keer dat snurken wordt gedetecteerd, begint een nieuwe episode.</p>
+
+                    <h3>Episode-details</h3>
+                    <p>Elke episode toont:</p>
+                    <ul>
+                        <li><strong>Duur</strong> — Hoe lang de episode duurde</li>
+                        <li><strong>Aantal snurken</strong> — Totaal aantal snurksignalen</li>
+                        <li><strong>Piekvolume</strong> — Luidste moment in decibel</li>
+                        <li><strong>Gemiddeld volume</strong> — Algeheel geluidsniveau</li>
+                        <li><strong>Gebeurtenisverdeling</strong> — Aantallen voor snurken, naar adem happen, hoesten en praten in je slaap</li>
+                        <li><strong>Samenvatting in gewone taal</strong> — Een beschrijving zoals "Hevig snurken gedurende meer dan 20 minuten, met een ademonderbreking"</li>
+                    </ul>
+
+                    <h3>Episode-beschrijvingen</h3>
+                    <p>De app genereert automatisch beschrijvingen op basis van de kenmerken van de episode:</p>
+                    <ul>
+                        <li><strong>Volumeniveaus:</strong> Zwak (&lt;40 dB), Licht (40-48 dB), Hoorbaar (48-56 dB), Hevig (56+ dB)</li>
+                        <li><strong>Ritmepatronen:</strong> Ritmisch (constante intervallen), Regelmatig (kleine variaties), Met onderbrekingen (stop-en-start)</li>
+                        <li><strong>Trends:</strong> Of het snurken na verloop van tijd luider werd, afzwakte of stabiel bleef</li>
+                    </ul>
+                </div>
+
+                <!-- Breathing Disruptions -->
+                <div class="privacy-section" id="breathing-disruptions">
+                    <h2>Ademonderbrekingen</h2>
+
+                    <h3>Wat is een ademonderbreking?</h3>
+                    <p>Een ademonderbreking wordt gemarkeerd wanneer de app een specifiek patroon detecteert: hoorbare ademhaling gevolgd door langdurige stilte, daarna een herstelgeluid. Dit kan duiden op pauzes in de ademhaling tijdens de slaap.</p>
+
+                    <h3>Hoe worden ze gedetecteerd?</h3>
+                    <p>De detectie vereist drie voorwaarden in volgorde:</p>
+                    <ol>
+                        <li><strong>Basislijn-ademhaling</strong> — De app moet ten minste één minuut vóór de stille periode hoorbare ademhalingsgeluiden detecteren (in 11 van de 12 vensters van vijf seconden moet ademhaling worden gedetecteerd)</li>
+                        <li><strong>Langdurige stilte</strong> — Een periode van volledige stilte van 10 seconden of meer</li>
+                        <li><strong>Herstelgeluid</strong> — De stilte wordt onderbroken door een snurksignaal dat ten minste 15 dB luider is dan het gemiddelde volume tijdens de stille periode</li>
+                    </ol>
+
+                    <h3>Tijdlijnmarkeringen</h3>
+                    <p>Ademonderbrekingen verschijnen als subtiele grijsblauwe markeringen op je tijdlijn, waardoor het eenvoudig is om patronen door de nacht heen te herkennen.</p>
+
+                    <h3>Belangrijke disclaimer</h3>
+                    <p><strong>Dit is uitsluitend audio-analyse — geen medisch apparaat.</strong> De app kan slaapapneu of andere medische aandoeningen niet diagnosticeren. Het analyseert geluidspatronen, geen zuurstofgehalte in het bloed of hersenactiviteit. Als je vaak ademonderbrekingen opmerkt, overweeg dan om de resultaten met een zorgverlener te bespreken.</p>
+                </div>
+
+                <!-- Sleep Stages -->
+                <div class="privacy-section" id="sleep-stages">
+                    <h2>Slaapfases</h2>
+
+                    <h3>Wat zijn slaapfases?</h3>
+                    <p>Slaapfases is een functie die schat in welke slaapfase je je op elk moment van de nacht bevindt: Wakker, Lichte slaap, Diepe slaap of REM (Rapid Eye Movement). Deze schattingen verschijnen als gekleurde banden op je tijdlijn en als een hypnogram in je nachtelijke samenvatting.</p>
+
+                    <h3>Hoe werkt het?</h3>
+                    <p>De app analyseert de regelmaat en variantie van je ademhalingspatronen die via de microfoon worden opgevangen. Na ongeveer 15 minuten opname stelt het algoritme je persoonlijke ademhalingsbasislijn vast. Vervolgens gebruikt het op onderzoek gebaseerde drempels om slaapfases te classificeren:</p>
+                    <ul>
+                        <li><strong>Diepe slaap</strong> — Gestage, regelmatige ademhaling met lage variantie</li>
+                        <li><strong>REM-slaap</strong> — Onregelmatige ademhalingspatronen met hoge variantie</li>
+                        <li><strong>Lichte slaap</strong> — Matige regelmaat in de ademhaling</li>
+                        <li><strong>Wakker</strong> — Beweging, geluiden of ademhalingspatronen die niet met slaap stroken</li>
+                    </ul>
+                    <p>Het algoritme houdt ook rekening met ademhalingsfrequentie, snurkpatronen en het tijdstip van de nacht. Diepe slaap treedt doorgaans vroeg in de nacht op, terwijl REM tegen de ochtend toeneemt.</p>
+
+                    <h3>Het hypnogram begrijpen</h3>
+                    <p>Het hypnogram is een grafiek die je voortgang door de slaapfases gedurende de nacht weergeeft. Elke gekleurde band staat voor 5 minuten in een bepaalde fase:</p>
+                    <ul>
+                        <li><strong>Oranje</strong> — Wakkere periodes</li>
+                        <li><strong>Cyaan (lichtblauw)</strong> — Lichte slaap</li>
+                        <li><strong>Indigo (donkerblauw)</strong> — Diepe slaap</li>
+                        <li><strong>Roze/Cyaan</strong> — REM-slaap</li>
+                    </ul>
+                    <p>Je kunt zien hoeveel volledige slaapcycli je hebt doorlopen, wanneer je de meeste diepe slaap had en wanneer REM-slaap optrad.</p>
+
+                    <h3>Fase-verdeling</h3>
+                    <p>De nachtelijke samenvatting toont ook het percentage tijd dat je in elke fase hebt doorgebracht. Een typische nacht slaap kan er zo uitzien:</p>
+                    <ul>
+                        <li>45% Lichte slaap</li>
+                        <li>20% Diepe slaap</li>
+                        <li>27% REM-slaap</li>
+                        <li>8% Wakker</li>
+                    </ul>
+                    <p>Deze percentages kunnen variëren afhankelijk van leeftijd, gezondheid, stressniveau en andere factoren.</p>
+
+                    <h3>Hoe nauwkeurig zijn de schattingen?</h3>
+                    <p>Slaapfase-detectie is gebaseerd op gepubliceerd onderzoek naar het verband tussen ademhalingsregelmaat en slaapfases. De schattingen geven een nuttig beeld van je algemene slaaparchitectuur en trends over de tijd. Onderzoek met vergelijkbare audio-gebaseerde methoden heeft ongeveer 70% nauwkeurigheid bereikt wanneer dit werd gevalideerd tegen polysomnografie (klinische slaapstudies).</p>
+                    <p><strong>Belangrijk:</strong> Dit zijn schattingen op basis van audio-analyse, geen klinische metingen. De app is niet gevalideerd tegen polysomnografie en moet als schattingen worden behandeld, niet als diagnoses. Raadpleeg een zorgverlener voor klinische slaapanalyse.</p>
+
+                    <h3>Waarom geen slaapfases gedetecteerd?</h3>
+                    <p>Slaapfase-detectie vereist hoorbare ademhaling gedurende de opname. Als fases niet worden gedetecteerd:</p>
+                    <ul>
+                        <li>Je ademhaling is mogelijk niet hoorbaar genoeg voor de microfoon</li>
+                        <li>De telefoon is mogelijk te ver weg geplaatst (probeer 30 tot 60 cm)</li>
+                        <li>Achtergrondgeluid kan de ademhalingsdetectie verstoren</li>
+                        <li>De opname is mogelijk te kort (het algoritme heeft ongeveer 15 minuten nodig om een basislijn vast te stellen)</li>
+                    </ul>
+
+                    <h3>Onderzoeksverwijzingen</h3>
+                    <p>Het algoritme voor slaapfase-classificatie is gebaseerd op:</p>
+                    <ul>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/" target="_blank" rel="noopener noreferrer">Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages</a> (Schumann et al., 2010) — Toont aan dat respiratoire schalingsexponenten meetbaar verschillen tussen slaapfases</li>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/" target="_blank" rel="noopener noreferrer">Using Spectral Continuity to Extract Breathing Rate from Heart Rate and Its Applications in Sleep Physiology</a> (Orphanides et al., 2024) — Bevestigt dat diepe slaap de meest stabiele en voorspelbare ademhaling kent</li>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/" target="_blank" rel="noopener noreferrer">Sleep Stage Classification from Heart-Rate Variability</a> — Audio-gebaseerde slaapfase-classificatie met ongeveer 70% nauwkeurigheid</li>
+                    </ul>
+                </div>
+
+                <!-- Audio Playback & Export -->
+                <div class="privacy-section" id="audio-export">
+                    <h2>Audioafspeling en export</h2>
+
+                    <h3>Opnames beluisteren</h3>
+                    <p>Tik op een episode of een moment op de tijdlijn om dat deel van je opname af te spelen. De app bevat audioverbetering om slaapgeluiden makkelijker hoorbaar te maken.</p>
+
+                    <h3>Episode-audio downloaden</h3>
+                    <p>Tik op de downloadknop bij een episode om die audioclip op te slaan in je Bestanden-app. De app voegt alle relevante audiofragmenten samen tot één bestand voor die episode.</p>
+
+                    <h3>Waar vind je je downloads</h3>
+                    <div class="file-path-list">
+                        <div class="file-path-item">
+                            <span class="file-path">Bestanden > Op mijn iPhone > Snore Timeline > Recordings</span>
+                            <span class="file-path-desc">Volledige nachtopnames</span>
+                        </div>
+                        <div class="file-path-item">
+                            <span class="file-path">Bestanden > Op mijn iPhone > Snore Timeline > Snoring Episodes</span>
+                            <span class="file-path-desc">Individuele episode-audioclips en CSV-exports</span>
+                        </div>
+                    </div>
+
+                    <h3>Data exporteren</h3>
+                    <p>Je kunt gedetailleerde gegevens voor elke nacht exporteren als CSV-bestanden:</p>
+                    <ul>
+                        <li><strong>Nightly Summary.csv</strong> — Algemene statistieken, waaronder:
+                            <ul>
+                                <li>Totale opnametijd en datum</li>
+                                <li>Aantal episodes, totaal aantal snurksignalen, piek- en gemiddelde volumes</li>
+                                <li>Aantal ademonderbrekingen</li>
+                                <li>Slaapfase-verdeling (indien gedetecteerd) — tijd doorgebracht in elke fase</li>
+                                <li>Gebeurtenisverdeling (naar adem happen, hoesten, praten in je slaap)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Snoring Episodes.csv</strong> — Gedetailleerde gegevens voor elke episode:
+                            <ul>
+                                <li>Starttijd, eindtijd en duur</li>
+                                <li>Aantal snurksignalen, piekvolume, gemiddeld volume</li>
+                                <li>Aantal gebeurtenissen (naar adem happen, hoesten, praten in je slaap)</li>
+                                <li>Ritmeclassificatie en trendanalyse</li>
+                                <li>Beschrijving in gewone taal</li>
+                                <li>Indicator voor ademonderbreking (indien van toepassing)</li>
+                                <li>Slaapfase op dat moment (indien gedetecteerd)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Deze gegevens kunnen nuttig zijn om patronen over de tijd te volgen of te delen met zorgverleners. CSV-bestanden kun je openen in Excel, Numbers, Google Sheets of elke andere spreadsheet-app.</p>
+                </div>
+
+                <!-- Storage & Recording Quality -->
+                <div class="privacy-section" id="storage-settings">
+                    <h2>Opslag en opnamekwaliteit</h2>
+
+                    <h3>Opnamekwaliteit-opties</h3>
+                    <p>Kies het kwaliteitsniveau dat bij je past:</p>
+
+                    <h4>Basic (Snurkgericht) — ~8 MB/uur</h4>
+                    <ul>
+                        <li>Comprimeert opnames om de focus te leggen op frequenties onder 4.000 Hz</li>
+                        <li>Geoptimaliseerd voor snurkgeluiden (50Hz-3kHz)</li>
+                        <li>Kleinste bestandsgrootte, gebruikt minimale opslag</li>
+                        <li>Zachtere geluiden kunnen minder gedetailleerd zijn</li>
+                    </ul>
+
+                    <h4>Standard (Heldere audio) — ~15 MB/uur</h4>
+                    <ul>
+                        <li>Vangt frequenties tot 8.000 Hz op (volledig spraakbereik)</li>
+                        <li>Goede balans tussen kwaliteit en opslag</li>
+                        <li>Beter om snurken van andere geluiden te onderscheiden</li>
+                    </ul>
+
+                    <h4>High Fidelity (Volledig detail) — ~25 MB/uur</h4>
+                    <ul>
+                        <li>Neemt het volledige hoorbare spectrum op tot 24.000 Hz</li>
+                        <li>Bewaart alle audiodetails, inclusief de akoestiek van de kamer</li>
+                        <li>Gebruikt de meeste opslagruimte</li>
+                    </ul>
+
+                    <h3>Opslagbeheer</h3>
+                    <p>De app biedt opties om opslag te beheren:</p>
+                    <ul>
+                        <li><strong>Opslaglimiet</strong> — Stel een maximale opslaghoeveelheid (1-8 GB) in voor opnames</li>
+                        <li><strong>Automatisch opschonen</strong> — Verwijder automatisch de oudste opnames wanneer de limiet wordt bereikt</li>
+                    </ul>
+                </div>
+
+                <!-- Tips for Better Recordings -->
+                <div class="privacy-section" id="tips">
+                    <h2>Tips voor betere opnames</h2>
+
+                    <h3>Telefoon plaatsen</h3>
+                    <p>Houd je telefoon ongeveer 30 tot 60 cm van je vandaan voor de beste resultaten. Dichterbij betekent luidere detectie, maar te ver weg vermindert de nauwkeurigheid — vooral voor het opvangen van ademhalingsgeluiden, die duidelijk hoorbaar moeten zijn om te worden gedetecteerd.</p>
+                    <p><strong>Ideale opstelling:</strong> Leg je telefoon op een nachtkastje naast je bed, aan de oplader.</p>
+
+                    <h3>Batterijgebruik</h3>
+                    <p>Snore Timeline is geoptimaliseerd voor nachtelijke opnames. De meeste gebruikers melden 20-30% batterijverbruik over 8 uur. Door je telefoon aan de oplader te houden, voorkom je onderbrekingen tijdens het opnemen.</p>
+
+                    <h3>Bluetooth-apparaten</h3>
+                    <p>De app ondersteunt Bluetooth-audioapparaten, waaronder AirPods. Voor de beste ademhalingsdetectie levert de ingebouwde microfoon van de telefoon doorgaans consistentere resultaten op.</p>
+
+                    <h3>Kameromgeving</h3>
+                    <p>Om ademonderbrekingsdetectie en slaapfase-classificatie effectief te laten werken, moet je normale ademhaling hoorbaar zijn voor de microfoon van de telefoon. Als je heel zacht ademt of de telefoon te ver weg ligt, worden ademhalingsgeluiden mogelijk niet consistent genoeg gedetecteerd om een basislijn te bepalen.</p>
+
+                    <h3>Optimaliseren voor slaapfase-detectie</h3>
+                    <p>Voor de meest nauwkeurige slaapfase-schattingen:</p>
+                    <ul>
+                        <li><strong>Consistente plaatsing</strong> — Gebruik elke nacht dezelfde positie van de telefoon zodat ademhaling consistent wordt gedetecteerd</li>
+                        <li><strong>Stille kamer</strong> — Beperk achtergrondgeluid van ventilatoren, airco's of verkeer buiten</li>
+                        <li><strong>Opname van een hele nacht</strong> — Het algoritme verbetert met de tijd; langere opnames (6+ uur) leveren betere fase-classificatie op</li>
+                        <li><strong>Hoorbare ademhaling</strong> — De telefoon moet dichtbij genoeg zijn om je ademhalingsgeluiden duidelijk op te vangen (30 tot 60 cm is ideaal)</li>
+                    </ul>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="privacy-section" id="troubleshooting">
+                    <h2>Probleemoplossing</h2>
+
+                    <h3>De app heeft niets opgenomen</h3>
+                    <p>De app slaat alleen audio op wanneer er slaapgerelateerde geluiden worden gedetecteerd. Als er niets is opgenomen:</p>
+                    <ul>
+                        <li>Controleer of Snore Timeline microfoontoestemming heeft via Instellingen > Privacy > Microfoon</li>
+                        <li>Zorg dat de telefoon dichtbij genoeg was om geluiden te detecteren (30 tot 60 cm)</li>
+                        <li>Zorg dat de telefoon niet op stil stond of in Niet storen-modus stond, wat de opname kan beïnvloeden</li>
+                        <li>Mogelijk had je gewoon een rustige nacht met minimaal snurken</li>
+                    </ul>
+
+                    <h3>Geen ademonderbrekingen gedetecteerd</h3>
+                    <p>Ademonderbrekingsdetectie stelt strikte eisen:</p>
+                    <ul>
+                        <li>Je normale ademhaling moet ten minste één minuut vóór de stille periode hoorbaar zijn voor de telefoon</li>
+                        <li>De telefoon ligt mogelijk te ver weg om ademhalingsgeluiden op te vangen</li>
+                        <li>De stilte moet minstens 10 seconden duren</li>
+                        <li>Er moet een herstelgeluid (snurken, naar adem happen) volgen dat aanzienlijk luider is dan de stilte</li>
+                    </ul>
+
+                    <h3>Detectie lijkt onnauwkeurig</h3>
+                    <p>Als je te veel of te weinig detecties krijgt:</p>
+                    <ul>
+                        <li>Pas de plaatsing van de telefoon aan — dichterbij voor meer gevoeligheid, verder weg voor minder</li>
+                        <li>Achtergrondgeluid (ventilatoren, airco, verkeer) kan de detectienauwkeurigheid beïnvloeden</li>
+                        <li>De app gebruikt andere gevoeligheid op de achtergrond dan op de voorgrond om valse positieven van geluiden overdag te verminderen</li>
+                    </ul>
+
+                    <h3>Opslag raakt vol</h3>
+                    <ul>
+                        <li>Verwijder oude opnames die je niet meer nodig hebt vanuit de app</li>
+                        <li>Schakel opslaglimieten in via de instellingen om ruimte automatisch te beheren</li>
+                        <li>Stap over op een lagere opnamekwaliteit om de bestandsgrootte te verkleinen</li>
+                    </ul>
+
+                    <h3>App is gecrasht of gesloten tijdens opname</h3>
+                    <p>De app is ontworpen om op de achtergrond door te gaan met opnemen. Als deze onverwacht is gestopt:</p>
+                    <ul>
+                        <li>Zorg dat App-verversing op achtergrond is ingeschakeld voor Snore Timeline</li>
+                        <li>Houd de telefoon aan de oplader — iOS kan apps op de achtergrond sluiten bij een lage batterij</li>
+                        <li>Controleer of andere apps geen audiobronnen claimen</li>
+                    </ul>
+                </div>
+
+                <!-- Privacy & Data -->
+                <div class="privacy-section" id="privacy">
+                    <h2>Privacy en gegevens</h2>
+
+                    <h3>Waar worden mijn gegevens opgeslagen?</h3>
+                    <p>Alle opnames en gegevens worden lokaal op je iPhone opgeslagen. Niets wordt geüpload naar servers of cloud.</p>
+
+                    <h3>Verzamelt de app informatie?</h3>
+                    <p>Nee. Snore Timeline verzamelt, verzendt of bewaart geen persoonlijke informatie. Er is geen analyse, tracking of account.</p>
+
+                    <h3>Hoe verwijder ik mijn gegevens?</h3>
+                    <p>Je kunt opnames verwijderen vanuit de tijdlijnweergave van de app. Voor volledige verwijdering: deïnstalleer de app.</p>
+
+                    <h3>Kan ik mijn gegevens delen?</h3>
+                    <p>Ja — jij beheert je gegevens. Gebruik de exportfunctie om opnames en CSV-rapporten op te slaan en deel ze zoals je wilt (e-mail, berichten, cloud, enz.).</p>
+
+                    <p>Volledige details vind je in ons <a href="/nl/privacy">Privacybeleid</a>.</p>
+                </div>
+
+                <!-- Contact -->
+                <div class="privacy-section" id="contact">
+                    <h2>Neem contact op</h2>
+                    <p>Heb je een vraag die hier niet beantwoord is, vind je een bug of heb je feedback? Neem gerust contact op. Ik lees elk bericht en reageer snel.</p>
+                    <p><strong>Email:</strong> <a href="mailto:meneliktucker@gmail.com?subject=Snore%20Timeline%20Support" class="privacy-email">meneliktucker@gmail.com</a></p>
+                    <p><strong>Reddit:</strong> <a href="https://www.reddit.com/user/Comprehensive_Tap769" rel="noopener noreferrer" class="privacy-email">u/Comprehensive_Tap769</a></p>
+                    <p>Vermeld bij een bugmelding:</p>
+                    <ul>
+                        <li>Je iPhone-model en iOS-versie</li>
+                        <li>Wat je deed toen het probleem optrad</li>
+                        <li>Foutmeldingen die je zag</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="privacy-actions">
+                    <a href="/nl/" class="btn btn-secondary">Terug naar Home</a>
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        Download in de App Store
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <svg class="btn-icon" viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        Ontdek het op Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/nl/privacy">Privacybeleid</a>
+                <a href="/nl/support">Ondersteuning</a>
+            </div>
+            <p>&copy; 2026 Snore Timeline. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

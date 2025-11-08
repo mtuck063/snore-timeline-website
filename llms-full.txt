@@ -1,0 +1,424 @@
+# Snore Timeline
+
+> Snore Timeline is a free iOS app that records, detects, and visualizes nighttime snoring, breathing pauses, and sleep stages on an interactive timeline. All audio analysis happens on-device. No accounts, no cloud uploads, no tracking, no subscription.
+
+- Live site: https://snoretimeline.com
+- App Store: https://apps.apple.com/app/apple-store/id6751759381
+
+---
+
+# Home Page
+
+## Hero
+
+**Snore Timeline — See Your Sleep Like Never Before**
+
+The interactive timeline that reveals every snoring episode, breathing pause, and sleep sound throughout your night.
+
+Free on iOS. No subscription. 100% Private. Real-time Detection.
+
+## Features
+
+**01. Start Your Day** — Wake up and see your entire night on an interactive timeline. Scroll through your sleep, zoom in on specific hours, and instantly spot patterns in your snoring.
+
+**02. See What Happened** — AI-powered detection identifies snores, gasps, coughs, sleep talking, and breathing pauses, all in real time while you sleep.
+
+**03. Review Episodes** — Consecutive snores are grouped into episodes. See duration, snore count, and plain-English summaries like "12 snores over 3 minutes."
+
+**04. Hear It Yourself** — Tap any moment on the timeline to hear enhanced audio. Confirm what happened with your own ears.
+
+**05. Track Your Progress** — Compare nights and weeks. Export detailed CSV reports and audio files to share with your doctor or track improvements over time.
+
+**06. Your Data, Your Device** — Everything stays on your iPhone. No cloud uploads, no servers, no accounts required. Complete privacy by design.
+
+## Detect When You Stop Breathing
+
+In addition to snore detection, the algorithm identifies moments when you stop breathing for 10+ seconds, helping you spot patterns worth discussing with a doctor.
+
+1. **Baseline Observation** — Monitors audible breathing for at least one minute to establish accurate baseline patterns.
+2. **Silence Detection** — Identifies extended quiet periods lasting 10+ seconds, a key indicator of breathing disruptions.
+3. **Recovery Recognition** — Detects loud abrupt snoring, gasps, coughs, or breathing sounds that follow the silent period.
+4. **Timeline Marking** — Places markers at exact timestamps, creating a visual map of disruptions.
+
+## Understand Your Sleep Stages
+
+Using only your phone's microphone, Snore Timeline estimates when you're in light sleep, deep sleep, or REM based on published research into breathing regularity during sleep.
+
+1. **Listen to Your Breathing** — Continuous audio capture picks up breathing rate, regularity, and snoring patterns throughout the night.
+2. **Establish Your Baseline** — After ~15 minutes the algorithm learns your personal breathing rate and regularity baseline, adapting thresholds to your unique patterns.
+3. **Analyze Breath Regularity** — Steady, low-variance breathing suggests deep sleep; irregular patterns with high variance indicate REM.
+4. **Adapt Through the Night** — Time-aware logic accounts for natural sleep architecture. Deep sleep peaks early in the night, REM increases toward morning.
+
+Estimated from audio analysis. Not a medical device.
+
+## FAQ
+
+### Where are my recordings saved?
+You can export the entire night's audio as a single file, or bulk download all your snoring episodes at once. Exported files are saved to your iPhone's Files app under On My iPhone > Snore Timeline, organized into Recordings (full night) and Snoring Episodes (individual clips).
+
+### Can I share my recordings with others?
+Yes. Recordings are saved to your Files app and can also be shared via the share sheet (AirDrop, Messages, email, ChatGPT, and more). To share the full night, navigate to that night, tap the download icon at the top of the Snoring Episodes list, and choose Export Full Night Audio. To share an individual episode, tap the download icon on the episode card.
+
+### Where should I place my phone while recording?
+For snoring detection, 3–4 feet works well. For breathing disruption detection, place the phone 1–2 feet away — breathing must be clearly audible. Ideal placement is on a nightstand near your bed, plugged in.
+
+### What makes Snore Timeline different from other snore tracking apps?
+Unlike apps that sample audio periodically, Snore Timeline captures and analyzes every sound in real time. You get an interactive timeline that shows every snoring episode.
+
+### Does Snore Timeline require a subscription?
+No. The app is free with no subscription. All features are included: breathing disruption detection, episode grouping, nightly summaries, sleep stages, and data export.
+
+### Does it detect breathing pauses?
+Yes. The app identifies extended silent periods (10+ seconds) followed by gasps or recovery sounds, and marks these on the timeline. This is audio analysis only, not a medical device.
+
+### How accurate is the snoring detection?
+The app uses Apple's sound classification technology to analyze audio continuously in real time. Detection starts immediately, no calibration needed. All processing happens on-device.
+
+### How does the app show episodes?
+Consecutive snores are grouped into episodes. When 30 seconds pass with no snoring, the episode ends. The next snore starts a new episode. Each episode displays duration, snore count, and a plain-English summary.
+
+### Is my data private?
+Yes. All audio processing happens on the iPhone — no cloud uploads, no external servers, no accounts. You can export data to share with doctors while keeping the originals on-device.
+
+### Can I use it with AirPods or Bluetooth devices?
+Yes. The app supports Bluetooth audio devices including AirPods.
+
+### How much battery does it use?
+Most users report 20–30% battery drain over 8 hours of recording. Keeping the phone plugged in is recommended.
+
+### Why did the app stop recording before morning?
+iOS interrupted the audio session in the background — usually a phone call, alarm, or notification with sound. Enable Do Not Disturb or a Focus mode before recording to prevent this.
+
+### How do I restart the app?
+Force-quit and reopen. Open the App Switcher (swipe up and pause, or double-tap Home on older iPhones), swipe up on the Snore Timeline card to close, then tap the icon to relaunch.
+
+### What dB threshold should I use for Loud Sound Detection?
+Loud Sound Detection creates episodes whenever sounds exceed your chosen dB threshold — useful for catching sounds the classifier doesn't tag (whispers, mumbling). Snoring and sleep talking are detected without this. To pick a threshold: start a recording, watch the live dB meter while quiet (typical room ambient is 30–40 dB), then set the threshold 15–20 dB above that.
+
+### Which audio quality setting should I choose?
+The settings exist to save storage. Use **High Fidelity** (~25 MB/hour) for the best recordings. Choose **Basic** (~8 MB/hour) or **Standard** (~15 MB/hour) only when storage is tight — these trim higher frequencies. To hear yourself breathing in playback, you must use High Fidelity; the lower tiers cut the subtle frequencies where breathing sounds occur.
+
+### How does Snore Timeline estimate sleep stages?
+The app analyzes breathing regularity through your phone's microphone. After ~15 minutes it establishes your personal breathing baseline, then classifies periods into Awake, Light Sleep, Deep Sleep, and REM using research-backed thresholds. Steady, regular breathing suggests deep sleep; irregular patterns indicate REM. The algorithm is time-aware, accounting for the natural progression of sleep stages through the night.
+
+### How accurate are the sleep stage estimates?
+Estimates are based on published research into breathing regularity and sleep stages. They have not been validated against polysomnography and should be treated as estimates, not diagnoses. Research using similar audio-based methods has achieved ~70% accuracy when validated against polysomnography.
+
+Research references:
+- Schumann et al., 2010 — Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages: https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/
+- Orphanides et al., 2024 — Using Spectral Continuity to Extract Breathing Rate from Heart Rate: https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/
+- Sleep Stage Classification from Heart-Rate Variability: https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/
+
+### Does sleep stage detection require any special setup?
+No. It works automatically using the same audio recording. Place the phone 1–2 feet away on a nightstand. The algorithm needs ~15 minutes to establish a baseline. Use the same placement each night for consistent results.
+
+---
+
+# Support Page
+
+Source: https://snoretimeline.com/support
+
+## Getting Started
+
+### How do I use the app?
+Open the app and press the record button to begin tracking your sleep sounds. Place your phone on a nightstand 1–2 feet away, ideally plugged in. The app records throughout the night and processes audio in real time.
+
+### What does the app detect?
+Using on-device AI, the app categorizes:
+
+- **Snoring** — primary focus, mostly 50 Hz–3 kHz; each detection is marked with a volume level
+- **Gasps** — sudden intake of breath sounds, often associated with breathing disruptions
+- **Coughs** — coughing during sleep, tracked separately from snoring
+- **Sleep talking** — speech, whispers, babbling
+- **Breathing** — regular patterns used for disruption detection and sleep stage classification
+
+All detection runs in real time using Apple's Sound Analysis framework, on-device.
+
+### Do I need an account?
+No. No accounts, no logins, no cloud services.
+
+## How Detection Works
+
+### Real-time AI analysis
+Unlike apps that sample periodically, Snore Timeline analyzes audio continuously using Apple's on-device sound classification. No data is skipped or sampled.
+
+### Confidence thresholds
+The AI assigns a confidence score to each detected sound. Different thresholds apply depending on the sound type and whether the phone is in foreground or background, reducing false positives.
+
+### Decibel measurement
+Sounds are measured in dB SPL up to 105 dB. The app tracks both peak and average decibel levels for each episode.
+
+## Understanding the Timeline
+
+### Interactive timeline visualization
+The entire night displays on a scrollable, zoomable timeline.
+
+### Time scales
+- 1-second intervals — most detailed
+- 5-second intervals — for examining specific episodes
+- 1-minute intervals — for reviewing specific periods
+- 10-minute intervals — overview of sleep patterns
+- 1-hour intervals — full night at a glance
+
+Tip: hold the zoom button to jump fully in or out.
+
+### Navigating between nights
+Swipe left or right on the Nightly Summary screen. The same gesture on the Weekly Summary screen moves between weeks.
+
+### Calendar view
+Jump to any recorded night. Nights with recordings are highlighted.
+
+### Sleep stage visualization on timeline
+When sleep stages are detected, colored background bands on the timeline indicate the stage at each point, making it easy to correlate snoring with stages.
+
+### Weekly Summary
+Trends across multiple nights:
+
+- Episode count trends
+- Average volumes
+- Total recording time
+- Week-over-week comparisons
+
+## Episodes & Events
+
+### What is a snore signal?
+Each detected snoring sound counts as one snore signal. More signals means more snoring activity.
+
+### What is an episode?
+A group of snore signals close together. When snoring is detected, an episode starts. After 30 seconds of no snoring, the episode ends. The next snore begins a new episode.
+
+### Episode details
+Each episode shows duration, snore count, peak volume, average volume, event breakdown (snoring, gasps, coughs, sleep talking), and a plain-English summary like "Heavy snoring for over 20 minutes, with a breathing disruption."
+
+### Episode descriptions
+- Volume levels: Faint (<40 dB), Light (40–48 dB), Audible (48–56 dB), Heavy (56+ dB)
+- Rhythm patterns: Rhythmic (consistent), Regular (minor variations), Intermittent (stop-and-start)
+- Trends: louder, fading, or stable over time
+
+## Breathing Disruptions
+
+### What is a breathing disruption?
+A specific pattern: audible breathing, then extended silence, then a recovery sound. May indicate pauses in breathing during sleep.
+
+### How are they detected?
+Three conditions in sequence:
+
+1. **Baseline breathing** — audible breathing for at least one minute (11 of 12 five-second windows must have breathing detected)
+2. **Extended silence** — complete silence lasting 10 seconds or more
+3. **Recovery sound** — a snore signal at least 15 dB louder than the average volume during the silent period
+
+### Timeline markers
+Disruptions appear as subtle gray-blue markers on the timeline.
+
+### Disclaimer
+Audio analysis only, not a medical device. The app cannot diagnose sleep apnea or any other condition. It analyzes sound, not blood oxygen or brain activity. Frequent disruptions are worth discussing with a healthcare professional.
+
+## Sleep Stages
+
+### What are sleep stages?
+The feature estimates which stage you're in throughout the night: Awake, Light Sleep, Deep Sleep, REM. Estimates appear as colored bands on the timeline and as a hypnogram in the nightly summary.
+
+### How does it work?
+The app analyzes regularity and variance of breathing patterns. After ~15 minutes the algorithm establishes your personal baseline, then uses research-based thresholds:
+
+- **Deep Sleep** — steady, regular breathing with low variance
+- **REM Sleep** — irregular breathing with high variance
+- **Light Sleep** — moderate regularity
+- **Awake** — movement, sounds, or breathing patterns inconsistent with sleep
+
+The algorithm also considers breathing rate, snoring patterns, and time of night. Deep sleep typically occurs early; REM increases toward morning.
+
+### Understanding the hypnogram
+A chart showing progression through stages. Each colored band represents 5 minutes:
+
+- Orange — Awake
+- Cyan — Light Sleep
+- Indigo — Deep Sleep
+- Pink/Cyan — REM Sleep
+
+### Stage distribution
+A typical night might show:
+
+- 45% Light Sleep
+- 20% Deep Sleep
+- 27% REM Sleep
+- 8% Awake
+
+These vary by age, health, stress, and other factors.
+
+### How accurate are sleep stage estimates?
+Based on published research into breathing regularity and sleep stages. Research using similar audio-based methods has achieved ~70% accuracy against polysomnography. The app has not been validated against polysomnography. Treat results as estimates, not diagnoses.
+
+### Why no sleep stages detected?
+Possible causes:
+
+- Breathing not audible enough to the microphone
+- Phone too far away (try 1–2 feet)
+- Background noise interfering
+- Recording too short (algorithm needs ~15 minutes)
+
+### Research references
+- Schumann et al., 2010: https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/
+- Orphanides et al., 2024: https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/
+- Sleep Stage Classification from Heart-Rate Variability: https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/
+
+## Audio Playback & Export
+
+### Listening to recordings
+Tap any episode or moment on the timeline to play that portion. The app includes audio enhancement to make sleep sounds easier to hear.
+
+### Downloading episode audio
+Tap the download button on any episode to save the clip to the Files app. The app combines all relevant audio segments into a single file.
+
+### Where to find downloads
+- Files > On My iPhone > Snore Timeline > Recordings — full night recordings
+- Files > On My iPhone > Snore Timeline > Snoring Episodes — individual episode clips and CSV exports
+
+### Exporting data
+Two CSV files per night:
+
+**Nightly Summary.csv** — overall statistics:
+- Total recording time and date
+- Episode count, total snore signals, peak and average volumes
+- Breathing disruption count
+- Sleep stage distribution (if detected)
+- Event breakdown (gasps, coughs, sleep talking)
+
+**Snoring Episodes.csv** — per-episode detail:
+- Start, end, duration
+- Snore signal count, peak volume, average volume
+- Event counts (gasps, coughs, sleep talking)
+- Rhythm classification and trend
+- Plain-English description
+- Breathing disruption flag (if applicable)
+- Sleep stage at the time (if detected)
+
+CSV files open in Excel, Numbers, Google Sheets, or any spreadsheet app.
+
+## Storage & Recording Quality
+
+### Recording quality options
+
+**Basic (Snore-Focused) — ~8 MB/hour**
+- Compresses recordings to focus on frequencies below 4,000 Hz
+- Optimized for snoring sounds (50 Hz–3 kHz)
+- Smallest file size
+- Quieter sounds may be less detailed
+
+**Standard (Clear Audio) — ~15 MB/hour**
+- Captures up to 8,000 Hz (full speech range)
+- Balance of quality and storage
+- Better for distinguishing snores from other sounds
+
+**High Fidelity (Full Detail) — ~25 MB/hour**
+- Records full audible spectrum up to 24,000 Hz
+- Preserves all detail including room acoustics
+- Most storage
+
+### Storage management
+- Storage limit — set a max (1–8 GB) for recordings
+- Auto-trim — automatically delete oldest recordings when limit is reached
+
+## Tips for Better Recordings
+
+### Phone placement
+1–2 feet from you. Closer = louder detection; too far reduces accuracy, especially for breathing. Ideal: nightstand near the bed, plugged in.
+
+### Battery usage
+Most users report 20–30% drain over 8 hours. Keep the phone plugged in.
+
+### Bluetooth devices
+Supports Bluetooth audio including AirPods. The phone's built-in microphone usually gives more consistent breathing detection.
+
+### Room environment
+For breathing disruption detection and sleep stages, regular breathing must be audible to the microphone. Quiet breathers or distant phones may not get a stable baseline.
+
+### Optimizing for sleep stage detection
+- Consistent placement each night
+- Quiet room (minimize fans, AC, traffic)
+- Full night recording — longer (6+ hours) gives better classification
+- Audible breathing — phone close enough (1–2 feet)
+
+## Troubleshooting
+
+### The app didn't record anything
+The app only saves audio when it detects sleep-related sounds. Possible causes:
+
+- Microphone permission disabled (Settings > Privacy > Microphone)
+- Phone too far away
+- Phone muted or in a Do Not Disturb mode that affects recording
+- Quiet night with minimal snoring
+
+### No breathing disruptions detected
+Detection requires strict conditions:
+
+- Regular breathing audible to the phone for at least one minute before the silent period
+- Phone close enough to pick up breathing
+- Silence lasting at least 10 seconds
+- Recovery sound significantly louder than the silence
+
+### Detection seems inaccurate
+- Adjust phone placement (closer for sensitivity, further for less)
+- Background noise (fans, AC, traffic) affects accuracy
+- Different sensitivity in foreground vs. background reduces false positives from daytime sounds
+
+### Storage filling up
+- Delete old recordings from within the app
+- Enable storage limits
+- Switch to a lower recording quality
+
+### App crashed or closed during recording
+- Enable Background App Refresh for Snore Timeline
+- Keep phone plugged in (iOS may close background apps on low battery)
+- Check that no other apps are competing for audio
+
+## Privacy & Data
+
+### Where is my data stored?
+Locally on the iPhone. Nothing uploaded to any server or cloud.
+
+### Does the app collect any information?
+No. No analytics, no tracking, no accounts.
+
+### How do I delete my data?
+Delete recordings from within the app's timeline, or uninstall the app to remove everything.
+
+### Can I share my data?
+Yes. Use the export feature to save recordings and CSV reports, then share via email, messaging, cloud storage, etc.
+
+For full details, see the Privacy Policy.
+
+---
+
+# Privacy Policy
+
+Source: https://snoretimeline.com/privacy
+Last Updated: January 10, 2026
+
+This Privacy Policy explains how Snore Timeline (the App) and the marketing website (snoretimeline.com) handle your information.
+
+## 1. Our Commitment to Your Privacy
+Your privacy is the top priority. The app is designed with a fundamental commitment to not collect any personally identifiable information.
+
+## 2. No Website Tracking
+snoretimeline.com does not use analytics, tracking, or cookies.
+
+## 3. Information the App Does NOT Collect
+The iOS app does not collect, store, or transmit:
+
+- **Personally Identifiable Information** — no name, email, phone number, or other identifying information
+- **Audio Recordings** — recordings are created, processed, and stored exclusively on your device
+- **Usage Data & Analytics** — no third-party analytics, no tracking
+- **Health or Medical Information** — no health data, snore patterns, or medical history collected
+
+## 4. Data Storage
+All app data, including recordings, is processed and stored locally on your device. Nothing is transferred to external servers, third parties, or the developer.
+
+## 5. No Third-Party Access
+No data is collected, so there is nothing to share with third parties.
+
+## 6. Your Control Over Your Data
+All data lives on your device. Delete recordings within the app or uninstall the app to remove everything.
+
+## 7. Changes to This Privacy Policy
+Updates will be posted to this page.
