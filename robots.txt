@@ -1,0 +1,7 @@
+# robots.txt for Snore Timeline
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://snoretimeline.com/sitemap.xml
