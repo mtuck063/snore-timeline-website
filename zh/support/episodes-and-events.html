@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>片段与事件 - Snore Timeline 支持</title>
+    <meta name="title" content="片段与事件 - Snore Timeline 支持">
+    <meta name="description" content="了解 Snore Timeline 如何将鼾声信号整合为片段：30秒分组规则、片段指标、通俗摘要以及事件类型。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/support/episodes-and-events">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh/support/episodes-and-events">
+    <meta property="og:title" content="片段与事件 - Snore Timeline 支持">
+    <meta property="og:description" content="了解 Snore Timeline 如何将鼾声信号整合为片段：30秒分组规则、片段指标、通俗摘要以及事件类型。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh/support/episodes-and-events">
+    <meta property="twitter:title" content="片段与事件 - Snore Timeline 支持">
+    <meta property="twitter:description" content="了解 Snore Timeline 如何将鼾声信号整合为片段：30秒分组规则、片段指标、通俗摘要以及事件类型。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支持", "item": "https://snoretimeline.com/zh/support/" },
+        { "@type": "ListItem", "position": 2, "name": "片段与事件", "item": "https://snoretimeline.com/zh/support/episodes-and-events" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline 中的片段、信号与事件",
+      "description": "了解 Snore Timeline 如何将鼾声信号整合为片段：30秒分组规则、片段指标、通俗摘要以及事件类型。",
+      "url": "https://snoretimeline.com/zh/support/episodes-and-events",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="episodes-and-events" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 标志">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支持</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">打开应用
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="面包屑导航">
+                    <a href="/zh/support/">支持</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">片段与事件</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">您的结果</span>
+                    <h1 class="privacy-title">片段、信号与事件</h1>
+                    <p class="privacy-updated">单个鼾声如何转化为您每天早晨查看的片段。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本页内容</summary>
+                        <ul>
+                            <li><a href="#signals-vs-episodes">信号与片段</a></li>
+                            <li><a href="#grouping">信号如何归组为片段</a></li>
+                            <li><a href="#episode-details">每个片段显示什么</a></li>
+                            <li><a href="#descriptions">描述如何生成</a></li>
+                            <li><a href="#event-types">片段和事件类型</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">一夜的打鼾可能包含数百个单独的声音。把它们一个个列出来只会把您埋掉，所以 Snore Timeline 把它们分成两层。单个声音是一个信号。彼此相近的信号凑成一个片段。一旦您知道这两层以及分开它们的那一条规则，应用里的每一个计数和每一份摘要就都说得通了。</p>
+
+                    <div class="privacy-section" id="signals-vs-episodes">
+                        <h2>信号与片段</h2>
+                        <p>每当 Snore Timeline 听到一次鼾声，它就数一个<strong>鼾声信号</strong>。信号是应用跟踪的最小单元，一次检测到的鼾声。信号越多，打鼾越多。</p>
+                        <p><strong>片段</strong>是一组彼此相近发生的信号。凌晨2点前后断断续续的打鼾，会显示为一个装着数十个信号的片段，它告诉您这事持续了多久、有多密集。</p>
+                        <p>这两层在夜里也能看到。录音时，实时动态会显示两个跑动的计数，波形图标旁的<strong>片段计数</strong>和月亮图标旁的<strong>信号计数</strong>。它们让您对这一夜的走向有个大致感觉。完整的分解在次日早晨的应用里。设置方法请参阅<a href="/zh/support/siri-and-shortcuts#live-activity">实时动态</a>。</p>
+                    </div>
+
+                    <div class="privacy-section" id="grouping">
+                        <h2>信号如何归组为片段</h2>
+                    <figure class="support-diagram" aria-label="示意图：鼾声信号被30秒间隔分隔后归组为片段">
+                        <svg viewBox="0 0 600 170" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="20" y1="120" x2="580" y2="120"/>
+<g class="dgm-accent-fill"><rect x="70" y="78" width="6" height="42" rx="2"/><rect x="92" y="64" width="6" height="56" rx="2"/><rect x="114" y="72" width="6" height="48" rx="2"/><rect x="136" y="60" width="6" height="60" rx="2"/><rect x="158" y="82" width="6" height="38" rx="2"/></g>
+<g class="dgm-accent-fill"><rect x="375" y="70" width="6" height="50" rx="2"/><rect x="397" y="78" width="6" height="42" rx="2"/><rect x="419" y="62" width="6" height="58" rx="2"/><rect x="441" y="74" width="6" height="46" rx="2"/></g>
+<line class="dgm-grid" x1="178" y1="120" x2="366" y2="120" stroke-dasharray="4 4"/>
+<path class="dgm-ctx" d="M178 106 L178 120 M366 106 L366 120"/>
+<text class="dgm-label" x="272" y="100" text-anchor="middle">30秒静默</text>
+<text class="dgm-label-sm" x="272" y="114" text-anchor="middle">结束片段</text>
+<path class="dgm-ctx" d="M66 134 L66 140 L166 140 L166 134"/>
+<text class="dgm-label-strong" x="116" y="158" text-anchor="middle">片段 1</text>
+<path class="dgm-ctx" d="M371 134 L371 140 L449 140 L449 134"/>
+<text class="dgm-label-strong" x="410" y="158" text-anchor="middle">片段 2</text>
+</svg>
+                        <figcaption>每根竖条是一个鼾声信号。彼此相近的信号构成一个片段。30秒的静默把它关上，下一个信号开启新的片段。</figcaption>
+                    </figure>
+                        <p>只有一条规则：<strong>30秒的静默结束一个片段</strong>。应用听到打鼾时就开启一个片段，并在鼾声持续期间不断加进信号。若整整30秒都没听到鼾声，片段就关上。之后的下一个信号会开启新的片段。</p>
+                        <p>分开片段的是声音之间的空隙，跟总时长毫无关系。常有人问，相隔20秒的两次鼾声为什么算同一个片段。因为20秒落在30秒的窗口里。静默要满满30秒，应用才会关掉这个片段。这样一来，一次断断续续的打鼾仍是一个片段，而不会被剁成一堆细碎的小片段。</p>
+                        <figure class="support-figure" role="img" aria-label="示意图：时间轴上的鼾声信号。20秒间隔使信号保持在同一片段中；30秒或更长的间隔则开启新片段。">
+                            <svg viewBox="0 0 640 200" width="100%" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                                <!-- Episode 1 region -->
+                                <rect x="36" y="56" width="262" height="84" rx="12" fill="var(--color-primary)" opacity="0.12"/>
+                                <rect x="36" y="56" width="262" height="84" rx="12" fill="none" stroke="var(--color-primary)" stroke-opacity="0.5"/>
+                                <text x="167" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="var(--color-primary)" font-family="inherit">片段 1</text>
+                                <!-- Episode 1 signals -->
+                                <rect x="56" y="84" width="8" height="44" rx="4" fill="var(--color-primary)"/>
+                                <rect x="84" y="78" width="8" height="50" rx="4" fill="var(--color-primary)"/>
+                                <rect x="112" y="88" width="8" height="40" rx="4" fill="var(--color-primary)"/>
+                                <rect x="140" y="80" width="8" height="48" rx="4" fill="var(--color-primary)"/>
+                                <rect x="232" y="86" width="8" height="42" rx="4" fill="var(--color-primary)"/>
+                                <rect x="260" y="80" width="8" height="48" rx="4" fill="var(--color-primary)"/>
+                                <!-- 20s gap annotation -->
+                                <line x1="152" y1="118" x2="228" y2="118" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="3 3"/>
+                                <text x="190" y="158" text-anchor="middle" font-size="12" fill="var(--color-text-secondary)" font-family="inherit">20秒间隔：同一片段</text>
+                                <!-- 30s+ gap annotation -->
+                                <line x1="306" y1="98" x2="394" y2="98" stroke="var(--color-secondary)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                                <text x="350" y="84" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-secondary)" font-family="inherit">30秒以上静默</text>
+                                <text x="350" y="118" text-anchor="middle" font-size="11" fill="var(--color-text-secondary)" font-family="inherit">片段结束</text>
+                                <!-- Episode 2 region -->
+                                <rect x="402" y="56" width="206" height="84" rx="12" fill="var(--color-secondary)" opacity="0.1"/>
+                                <rect x="402" y="56" width="206" height="84" rx="12" fill="none" stroke="var(--color-secondary)" stroke-opacity="0.5"/>
+                                <text x="505" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="var(--color-secondary)" font-family="inherit">片段 2</text>
+                                <!-- Episode 2 signals -->
+                                <rect x="424" y="82" width="8" height="46" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="452" y="88" width="8" height="40" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="480" y="78" width="8" height="50" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="508" y="84" width="8" height="44" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="536" y="90" width="8" height="38" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="564" y="82" width="8" height="46" rx="4" fill="var(--color-secondary)"/>
+                                <!-- Time axis -->
+                                <line x1="36" y1="172" x2="608" y2="172" stroke="var(--color-border)" stroke-width="1.5"/>
+                                <text x="36" y="192" font-size="11" fill="var(--color-text-secondary)" font-family="inherit">时间</text>
+                                <text x="608" y="192" text-anchor="end" font-size="11" fill="var(--color-text-secondary)" font-family="inherit">&#8594;</text>
+                            </svg>
+                            <figcaption>20秒的空隙留在片段之内。30秒的静默把它切成两半。</figcaption>
+                        </figure>
+                        <p>片段内的安静时刻也不会丢。片段里超过10秒的安静段会被记为<strong>显著间歇</strong>，让您看得见这些停顿，片段却不会散架。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>显著间歇和呼吸中断不是一回事。只有当前一分钟里听得见的呼吸让位给10秒或更长的完全静默，随后一个鼾声信号打破它时，应用才会标记为呼吸中断。<a href="/zh/support/breathing-disruptions#detection-conditions">呼吸中断</a>页面摆出了全部判定条件。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="episode-details">
+                        <h2>每个片段显示什么</h2>
+                        <p>打开任意片段，您就拿到那一段的完整画面：</p>
+                        <ul>
+                            <li><strong>时长</strong>：片段持续的时间。</li>
+                            <li><strong>鼾声计数</strong>：片段内检测到的鼾声信号总数。</li>
+                            <li><strong>峰值音量</strong>：最响的瞬间，以分贝表示。</li>
+                            <li><strong>平均音量</strong>：整体响度水平。</li>
+                            <li><strong>事件分布</strong>：打鼾、喘气、咳嗽和睡眠说话的各项计数。</li>
+                            <li><strong>每分钟打鼾次数</strong>：该片段的打鼾速率，在超过一分钟的打鼾片段上显示在音量统计旁边。</li>
+                            <li><strong>通俗摘要</strong>：类似"重度打鼾超过20分钟，伴有一次呼吸中断"这样的话。</li>
+                        </ul>
+                        <p>时长超过约五分钟的打鼾片段，会把小小的波形条换成一张<strong>速率图</strong>。那是一条曲线，描出整个片段里每分钟的打鼾次数，标出最密集和最安静的那一分钟，并把呼吸中断按真实位置和宽度画成阴影带。点一下图上任意位置就能从那一刻开始回放，播放时还有一个播放头沿曲线走。您拿到的不是"这个片段很糟"，而是"它在那次中断之前冲到了每分钟 37 次"。</p>
+                        <figure class="support-figure support-figure--phone">
+                            <picture>
+                                <source srcset="/support/img/shot-rate-charts.webp" type="image/webp">
+                                <img src="/support/img/shot-rate-charts.png" alt="带有每分钟打鼾次数速率图的片段卡片，其中一张峰值达到每分钟 37 次打鼾，下方波形的状态栏显示每分钟 17 次打鼾" loading="lazy" width="603" height="1311">
+                            </picture>
+                            <figcaption>片段卡片上的速率图，以及波形下方实时的每分钟打鼾次数读数。</figcaption>
+                        </figure>
+                        <p>音量读数用 dB SPL，应用最高测到 105 dB。把它当音量表来读。每个片段都会拿到一个峰值和一个平均值，这很要紧，因为只响了一次的长片段和自始至终都响的短片段是两码事。<a href="/zh/support/how-detection-works#decibels">声音检测原理</a>讲了分贝刻度。</p>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-episodes.webp" type="image/webp">
+                                    <img src="/support/img/shot-episodes.png" alt="Snore Timeline 片段列表" loading="lazy" width="600" height="1170">
+                                </picture>
+                                <span class="magnify-region" style="left:3.6%;top:42%;width:93%;height:23.6%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 放大查看</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-episode-card.webp" type="image/webp">
+                                    <img src="/support/img/shot-episode-card.png" alt="片段卡片，显示开始和结束时间、时长、峰值和平均分贝，以及鼾声信号标签" loading="lazy" width="1000" height="498">
+                                </picture>
+                                <figcaption>每个片段会显示时长、峰值和平均分贝、事件标签，以及一句通俗摘要，例如"轻度打鼾，伴有多次静默期。"</figcaption>
+                            </div>
+                        </figure>
+                        <p>片段也和音频本身绑在一起。点击时间轴上的任意片段，就能播放录音的那一部分，并有音频增强让睡眠声音更容易听清。<a href="/zh/support/timeline-and-playback#playback">时间轴与回放</a>讲了怎么做。</p>
+                    </div>
+
+                    <div class="privacy-section" id="descriptions">
+                        <h2>描述如何生成</h2>
+                        <p>每个片段上的通俗摘要由应用测量的三样东西搭成。一旦知道这套词汇，任何描述您都能解读。</p>
+                        <p><strong>音量等级</strong>将分贝值转化为文字：</p>
+                        <ul>
+                            <li><strong>极轻</strong>：低于 40 dB</li>
+                            <li><strong>轻度</strong>：40 至 48 dB</li>
+                            <li><strong>清晰可闻</strong>：48 至 56 dB</li>
+                            <li><strong>重度</strong>：56 dB 及以上</li>
+                        </ul>
+                        <p><strong>节律模式</strong>描述信号之间的间距：</p>
+                        <ul>
+                            <li><strong>规律</strong>：鼾声之间间隔一致</li>
+                            <li><strong>均匀</strong>：时间上有轻微变化</li>
+                            <li><strong>间歇</strong>：时停时起</li>
+                        </ul>
+                        <p><strong>趋势</strong>给出走向，也就是鼾声在这个片段里是变响了、减弱了，还是一直没变。</p>
+                        <p>所以像"重度打鼾超过20分钟"这样的摘要，意思是该片段的音量落在 56 dB 以上的档位，而且它跑过了20分钟这条线。每个字都能对回片段自身指标里可以查证的数字。</p>
+                    </div>
+
+                    <div class="privacy-section" id="event-types">
+                        <h2>片段和事件类型</h2>
+                        <p>应用分类的不只是打鼾，片段还带有类型标签，让您扫一遍整晚，跳到想看的部分。共有四种类型：</p>
+                        <ul>
+                            <li><strong>呼吸类</strong>：打鼾、喘气、咳嗽和呼吸中断。</li>
+                            <li><strong>睡眠说话</strong>：睡眠中检测到的语音。</li>
+                            <li><strong>响亮声音</strong>：孤立的响亮声音，通常来自周围环境。</li>
+                            <li><strong>混合</strong>：呼吸类声音和睡眠说话同时出现。</li>
+                        </ul>
+                        <p>最后一个已分类声音都没有的片段，显示为<strong>安静期</strong>。</p>
+                        <p>在呼吸类片段里，喘气和咳嗽在主要鼾声计数旁边各有自己的计数，这样您看到的是每个片段由什么组成，而不是一个囫囵的总数。<a href="/zh/support/how-detection-works#sound-types">声音检测原理</a>介绍了分类器怎么把它们分开。</p>
+                        <p>如果您看到的响亮声音标签比预想的多，原因通常是房间。背景噪音盖住了鼾声分类器所倚仗的呼吸模式，房间在安静状态下一旦超过约 45 dB，就有更多声音被记成响亮声音信号而不是打鼾片段。少开风扇、白噪音机、暖通空调和一直开着的电视，有助于应用更准确地分类打鼾。<a href="/zh/support/how-detection-works#background-noise">背景噪音</a>讲了该先安静下来的是什么。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>想知道昨晚打鼾了多少次？打开那一晚，看每晚总计和片段列表。每个片段显示各自的信号计数，喘气和咳嗽在鼾声旁边单独计数。</p>
+                        </div>
+                        <p>有一件事要记住。Snore Timeline 只分析音频。片段计数和事件标签是给您自己看的，或者带去给医生看的，应用不诊断睡眠呼吸暂停或任何其他状况。</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>相关页面</h2>
+                        <ul>
+                            <li><a href="/zh/support/how-detection-works">声音检测原理</a></li>
+                            <li><a href="/zh/support/timeline-and-playback">读取时间轴与回放音频</a></li>
+                            <li><a href="/zh/support/breathing-disruptions">呼吸中断</a></li>
+                            <li><a href="/zh/support/first-week">指南：使用 Snore Timeline 的第一周</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支持页面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>在您的设备上录制、查看并了解您的打鼾、呼吸和睡眠情况。</p>
+                <p><a href="/zh/support/">支持</a> &middot; <a href="/zh/privacy">隐私政策</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学习</h4>
+                <ul>
+                    <li><a href="/zh/support/getting-started">入门指南</a></li>
+                    <li><a href="/zh/support/how-detection-works">检测原理</a></li>
+                    <li><a href="/zh/support/timeline-and-playback">时间轴与回放</a></li>
+                    <li><a href="/zh/support/breathing-disruptions">呼吸中断</a></li>
+                    <li><a href="/zh/support/sleep-stages">睡眠阶段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh/support/apple-watch">Apple Watch 与健康</a></li>
+                    <li><a href="/zh/support/export-and-sharing">导出与分享</a></li>
+                    <li><a href="/zh/support/troubleshooting">故障排查</a></li>
+                    <li><a href="/zh/support/android">Android</a></li>
+                    <li><a href="/zh/support/faq">常见问题</a></li>
+                    <li><a href="/zh/support/#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 保留所有权利。</div>
+    </footer>
+
+    <script src="/support/support-nav.js?v=2"></script>
+</body>
+</html>

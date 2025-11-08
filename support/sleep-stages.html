@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Sleep Stages from Audio - Snore Timeline Support</title>
+    <meta name="title" content="Sleep Stages from Audio - Snore Timeline Support">
+    <meta name="description" content="How Snore Timeline estimates Awake, Light, Deep, and REM sleep from breathing audio: the hypnogram, the Silence label, accuracy, and troubleshooting.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/support/sleep-stages">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/support/sleep-stages">
+    <meta property="og:title" content="Sleep Stages from Audio - Snore Timeline Support">
+    <meta property="og:description" content="How Snore Timeline estimates Awake, Light, Deep, and REM sleep from breathing audio: the hypnogram, the Silence label, accuracy, and troubleshooting.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/support/sleep-stages">
+    <meta property="twitter:title" content="Sleep Stages from Audio - Snore Timeline Support">
+    <meta property="twitter:description" content="How Snore Timeline estimates Awake, Light, Deep, and REM sleep from breathing audio: the hypnogram, the Silence label, accuracy, and troubleshooting.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Support", "item": "https://snoretimeline.com/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Sleep Stages", "item": "https://snoretimeline.com/support/sleep-stages" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Sleep Stages from Audio",
+      "description": "How Snore Timeline estimates Awake, Light, Deep, and REM sleep from breathing audio: the hypnogram, the Silence label, accuracy, and troubleshooting.",
+      "url": "https://snoretimeline.com/support/sleep-stages",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="sleep-stages" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline logo">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Support</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download</a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/support/">Support</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Sleep Stages</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Your results</span>
+                    <h1 class="privacy-title">Sleep Stages from Audio</h1>
+                    <p class="privacy-updated">How your breathing sounds become stage estimates, and how to read them.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>On this page</summary>
+                        <ul>
+                            <li><a href="#how-it-works">How stage estimation works</a></li>
+                            <li><a href="#stages">The four stages and their breathing signatures</a></li>
+                            <li><a href="#silence">The Silence label</a></li>
+                            <li><a href="#breathing-rate">Respiratory rate and breathing regularity</a></li>
+                            <li><a href="#wearables">Does the app use Apple Watch data?</a></li>
+                            <li><a href="#hypnogram">Reading the hypnogram</a></li>
+                            <li><a href="#distribution">Typical stage distribution</a></li>
+                            <li><a href="#accuracy">How accurate are the estimates?</a></li>
+                            <li><a href="#no-stages">Why no stages were detected</a></li>
+                            <li><a href="#research">Research references</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline estimates which sleep stage you were in at each point of the night. Awake, Light Sleep, Deep Sleep, or REM, plus a fifth label called Silence for stretches where it couldn't hear anything at all. The estimates come from your breathing sounds alone, picked up by the same microphone that does the snore detection. This page goes through the signals behind each stage, how to read the hypnogram in your nightly summary, and what the estimates can and can't tell you.</p>
+
+                    <div class="privacy-section" id="how-it-works">
+                        <h2>How stage estimation works</h2>
+                        <p>Your breathing changes as you move through the stages of sleep, and you can hear the difference. The app looks at how regular your breathing is and how much it varies, using the same recording it already uses for snore detection and <a href="/support/breathing-disruptions">breathing disruption detection</a>. There's nothing extra to set up.</p>
+                        <p>About 15 minutes into a recording, the algorithm works out your personal breathing baseline, meaning your typical rate and regularity. From there it measures the rest of the night against your own baseline instead of a population average, and applies thresholds from published research to sort each period into a stage.</p>
+                        <p>Breathing regularity carries most of the weight, but the algorithm also looks at:</p>
+                        <ul>
+                            <li><strong>Breathing rate</strong>, which tends to slow down as you go into deeper sleep.</li>
+                            <li><strong>Snoring patterns</strong>, since the snoring it detects through the night feeds the same model.</li>
+                            <li><strong>Time of night</strong>, because sleep follows a predictable arc. Deep Sleep bunches up early in the night, and REM grows toward morning.</li>
+                            <li><strong>Movement</strong>, since big changes in sound point to you moving around, which suggests lighter sleep or a brief awakening.</li>
+                        </ul>
+                        <p>The result shows up as a hypnogram in your nightly summary.</p>
+                    </div>
+
+                    <div class="privacy-section" id="stages">
+                        <h2>The four stages and their breathing signatures</h2>
+                        <p>Each stage leaves its own fingerprint in your breathing:</p>
+                        <ul>
+                            <li><strong>Deep Sleep</strong>: steady, regular breathing with low variance. This is the restorative stage, and it has the most metronome-like rhythm of any of them. You get most of it early in the night, especially in the first 90 minutes and the first few hours.</li>
+                            <li><strong>REM Sleep</strong>: irregular breathing with high variance. REM is dream sleep. It tends to start around 40 to 50 minutes after you fall asleep and builds toward morning, which is why cutting a night short costs you more REM than anything else.</li>
+                            <li><strong>Light Sleep</strong>: moderate regularity, somewhere between the other two. Light Sleep is the transition stage and the easiest to wake from.</li>
+                            <li><strong>Awake</strong>: movement, sounds, or breathing that doesn't fit with sleep. The app also flags a long silence as a possible awakening when other signals back it up.</li>
+                        </ul>
+                        <p>Deep Sleep sits at one end of the regularity scale and REM at the other, so the app wants to see consistently low variance before it calls a period Deep Sleep, and it drops out of Deep Sleep as soon as variance climbs. The <a href="/support/how-detection-works#sound-types">sound classification</a> running alongside adds the snore and movement context.</p>
+                    </div>
+
+                    <div class="privacy-section" id="silence">
+                        <h2>The Silence label</h2>
+                        <p>Staging from audio has one built-in limit. It can only classify what it can hear. When your breathing is too soft for the microphone to sort into a stage, and nothing suggests you're awake, the app marks that stretch as <strong>Silence</strong> instead of guessing. This happens a lot for quiet breathers, or when a fan or air conditioner covers the sound.</p>
+                        <p>Silence counts as restful sleep. It goes toward your total sleep time and earns credit toward the restorative part of your <a href="/support/sleep-score#score">sleep score</a>, so a quiet night still reads as a good one. Making up a stage from no evidence would make the data less trustworthy, so the app labels the uncertainty and leaves it at that.</p>
+                    </div>
+
+                    <div class="privacy-section" id="breathing-rate">
+                        <h2>Respiratory rate and breathing regularity</h2>
+                        <p>Two breathing measurements feed the stage model, and both show up in your results:</p>
+                        <ul>
+                            <li><strong>Respiratory rate</strong> is shown in breaths per minute (bpm), worked out from the time between the breaths the app hears. A typical adult range during sleep is 12 to 20 bpm. The app takes a reading every few minutes and shows your average. It sets a personal baseline after roughly the first 10 to 15 minutes of detected sleep, using the middle of those early readings so one stray value can't throw it off. Readings are kept within a plausible range of roughly 6 to 25 bpm, which filters out junk spikes while still allowing the higher rates you can hit during REM or a brief arousal.</li>
+                            <li><strong>Breathing regularity</strong> is how consistent the rhythm between your breaths is, on a scale from irregular to steady. Long stretches of very steady breathing point toward Deep Sleep. A shift into more irregular breathing can mean REM.</li>
+                        </ul>
+                        <p>Both are estimates from audio, for your own insight. If your respiratory rate is well outside the normal range, bring it to a doctor instead of trying to diagnose yourself.</p>
+                    </div>
+
+                    <div class="privacy-section" id="wearables">
+                        <h2>Does the app use Apple Watch data?</h2>
+                        <p>Yes, when it's there. If a wearable like Apple Watch reports sleep stages for the night, Snore Timeline uses the watch's Deep and REM percentages for your sleep score instead of its own audio estimates. A wearable measures those stages better than audio can, so the app defers to it. Without a wearable, it falls back to the breathing and movement estimates. The <a href="/support/apple-watch#biometrics">Apple Watch</a> page covers what the watch adds.</p>
+                    </div>
+
+                    <div class="privacy-section" id="hypnogram">
+                        <h2>Reading the hypnogram</h2>
+                    <figure class="support-diagram" aria-label="Diagram: a hypnogram stepping between Awake, REM, Light, Deep, and Silence across a night">
+                        <svg viewBox="0 0 600 240" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="120" y1="44" x2="580" y2="44"/>
+<text class="dgm-label" x="14" y="48" style="fill:#EC9A4D">Awake</text>
+<line class="dgm-grid" x1="120" y1="80" x2="580" y2="80"/>
+<text class="dgm-label" x="14" y="84" style="fill:#E59ABF">REM</text>
+<line class="dgm-grid" x1="120" y1="116" x2="580" y2="116"/>
+<text class="dgm-label" x="14" y="120" style="fill:#4FB8C9">Light</text>
+<line class="dgm-grid" x1="120" y1="152" x2="580" y2="152"/>
+<text class="dgm-label" x="14" y="156" style="fill:#8B8CEC">Deep</text>
+<line class="dgm-grid" x1="120" y1="188" x2="580" y2="188"/>
+<text class="dgm-label" x="14" y="192" style="fill:#6FBF9C">Silence</text>
+<line class="dgm-grid" x1="152" y1="44" x2="152" y2="116"/>
+<line class="dgm-grid" x1="212" y1="116" x2="212" y2="152"/>
+<line class="dgm-grid" x1="292" y1="152" x2="292" y2="116"/>
+<line class="dgm-grid" x1="330" y1="116" x2="330" y2="80"/>
+<line class="dgm-grid" x1="372" y1="80" x2="372" y2="188"/>
+<line class="dgm-grid" x1="410" y1="188" x2="410" y2="116"/>
+<line class="dgm-grid" x1="462" y1="116" x2="462" y2="152"/>
+<line class="dgm-grid" x1="512" y1="152" x2="512" y2="80"/>
+<line class="dgm-grid" x1="560" y1="80" x2="560" y2="44"/>
+<line x1="120" y1="44" x2="152" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<line x1="152" y1="116" x2="212" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="212" y1="152" x2="292" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="292" y1="116" x2="330" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="330" y1="80" x2="372" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="372" y1="188" x2="410" y2="188" stroke="#6FBF9C" stroke-width="5" stroke-linecap="round"/>
+<line x1="410" y1="116" x2="462" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="462" y1="152" x2="512" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="512" y1="80" x2="560" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="560" y1="44" x2="580" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<text class="dgm-label-sm" x="120" y="216">11 PM</text>
+<text class="dgm-label-sm" x="580" y="216" text-anchor="end">6 AM</text>
+<text class="dgm-label" x="350" y="232" text-anchor="middle">each block is about 5 minutes</text>
+</svg>
+                        <figcaption>A hypnogram steps between stages across the night. Each colored block is about five minutes.</figcaption>
+                    </figure>
+                        <p>The hypnogram in your nightly summary charts how you moved through the stages over the night. Each colored band is 5 minutes in a given stage:</p>
+                        <ul>
+                            <li><strong>Orange</strong>: Awake periods</li>
+                            <li><strong>Cyan (light blue)</strong>: Light Sleep</li>
+                            <li><strong>Indigo (deep blue)</strong>: Deep Sleep</li>
+                            <li><strong>Pink/Cyan</strong>: REM Sleep</li>
+                            <li><strong>Mint (soft green)</strong>: Silence, shown only on nights it occurs</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram-full.png" alt="Nightly summary with the sleep-stage hypnogram" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3.3%;top:53.8%;width:93.6%;height:26.4%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Zoomed in</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram.png" alt="Hypnogram showing Awake, REM, Light, Deep, and Silence across the night with stage percentages" loading="lazy" width="1000" height="567">
+                                </picture>
+                                <figcaption>The hypnogram charts your stages in 5-minute bands across the night.</figcaption>
+                            </div>
+                        </figure>
+                        <p>Read it left to right and you can count how many full sleep cycles you went through, see when you got the most Deep Sleep, and spot where REM landed. Tap any block and a pill shows that stage's full time range, like "Light &middot; 3:50am &ndash; 4:15am", and the <a href="/support/timeline-and-playback#reading-the-waveform">timeline</a> moves to that moment so you can check whether your snoring episodes line up with a particular stage. Scrub the timeline afterward and the hypnogram's selection line follows.</p>
+                        <p>On nights where a wearable synced sleep data but you didn't record audio, the timeline strip draws a stage ribbon in the same colors, and the status bar reads out the stage and your vitals under the center line, like "Light &middot; 57 bpm &middot; 13 br/min &middot; SpO2 96%". Recorded nights keep the plain waveform.</p>
+                    </div>
+
+                    <div class="privacy-section" id="distribution">
+                        <h2>Typical stage distribution</h2>
+                        <p>The nightly summary also shows what percentage of the night you spent in each stage. A typical night might look something like:</p>
+                        <ul>
+                            <li>45% Light Sleep</li>
+                            <li>20% Deep Sleep</li>
+                            <li>27% REM Sleep</li>
+                            <li>8% Awake</li>
+                        </ul>
+                        <p>Those percentages shift with age, health, stress, and plenty else, so compare your own nights against each other and don't worry about matching a textbook. For scoring, the app treats Deep Sleep of roughly 13 to 23 percent as a healthy target, with 20 percent or more earning credit toward your score, and REM of about 20 to 25 percent. Landing in those ranges can add points to your <a href="/support/sleep-score#sleep-factors">sleep score</a>. They're general guidelines and nothing more.</p>
+                    </div>
+
+                    <div class="privacy-section" id="accuracy">
+                        <h2>How accurate are the estimates?</h2>
+                        <p>The classification is based on published research into how breathing regularity relates to sleep stages. Studies that stage sleep from a single physiological signal, like breathing or heart-rate variability, reach roughly 70% agreement with polysomnography, which is the clinical sleep study standard. So the estimates give you a fair picture of your general sleep architecture, and a better one of your trends over time.</p>
+                        <p>A few things push accuracy up or down. Longer recordings help, because several hours of sleep gives the app more complete cycles to look at. A noisy room, a bed partner, pets, or sleeping far from the microphone all make your breathing harder to detect, and the estimates get worse with it.</p>
+                        <div class="callout callout--medical">
+                            <span class="callout-label">Medical note</span>
+                            <p>These are estimates from audio analysis. They aren't clinical measurements. Clinical sleep staging uses brain waves, eye movement, and muscle activity, none of which audio can capture. Snore Timeline hasn't been validated against polysomnography and can't diagnose sleep apnea or any sleep disorder. Treat the stage breakdown as a general guide, and talk to a healthcare professional if you have concerns about your sleep.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="no-stages">
+                        <h2>Why no stages were detected</h2>
+                        <p>Stage estimation needs audible breathing through the recording. If a night shows no stages, it's usually one of these:</p>
+                        <ul>
+                            <li><strong>Breathing too quiet.</strong> Your breathing may not reach the microphone at a level it can work with.</li>
+                            <li><strong>Phone too far away.</strong> Breathing fades fast with distance. 1 to 2 feet from your head works well.</li>
+                            <li><strong>Background noise.</strong> Fans, air conditioners, and other steady sounds can cover the breathing the app is listening for.</li>
+                            <li><strong>Recording too short.</strong> The algorithm needs about 15 minutes to set your baseline before it can classify anything.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Tip</span>
+                            <p>Use the same <a href="/support/getting-started#placement">phone placement</a> every night, quiet the room where you can, and record full nights. Recordings of 6 hours or more give the algorithm the most complete cycles to work with, and keeping the placement the same keeps your nights comparable.</p>
+                        </div>
+                        <p>If the whole timeline came up empty, and it's more than the stages missing, see <a href="/support/troubleshooting#blank-timeline">Troubleshooting</a>.</p>
+                    </div>
+
+                    <div class="privacy-section" id="research">
+                        <h2>Research references</h2>
+                        <p>The stage classification draws on these papers:</p>
+                        <ul class="research-references">
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/" target="_blank" rel="noopener noreferrer">Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages</a> (Schumann et al., 2010). Shows that respiratory scaling exponents differ measurably between sleep stages. Deep sleep has the most regular breathing, and REM the most variable. Those differences are behind the regularity thresholds used for each stage.</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/" target="_blank" rel="noopener noreferrer">Using Spectral Continuity to Extract Breathing Rate from Heart Rate and Its Applications in Sleep Physiology</a> (Orphanides et al., 2024). Confirms that deep sleep (N3) has the most stable and predictable breathing of any stage. This is why the app requires consistently low variance to call a period Deep Sleep, and leaves Deep Sleep when variance rises.</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/" target="_blank" rel="noopener noreferrer">Sleep Stage Classification from Heart-Rate Variability</a>. Reports roughly 70% agreement with polysomnography when staging sleep from a single physiological signal, which is comparable to the breathing-regularity approach used here.</li>
+                        </ul>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Related</h2>
+                        <ul>
+                            <li><a href="/support/sleep-score">Your Sleep Score, Explained</a></li>
+                            <li><a href="/support/apple-watch">Apple Watch &amp; Wearables</a></li>
+                            <li><a href="/support/breathing-disruptions">Breathing Disruption Detection</a></li>
+                            <li><a href="/support/deeper-sleep-data">Guide: Getting Deeper Sleep Data</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="More support pages"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Record, see, and understand your snoring, breathing, and sleep, all on your device.</p>
+                <p><a href="/support/">Support</a> &middot; <a href="/privacy">Privacy</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="/support/getting-started">Getting Started</a></li>
+                    <li><a href="/support/how-detection-works">How Detection Works</a></li>
+                    <li><a href="/support/timeline-and-playback">Timeline &amp; Playback</a></li>
+                    <li><a href="/support/breathing-disruptions">Breathing Disruptions</a></li>
+                    <li><a href="/support/sleep-stages">Sleep Stages</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>More</h4>
+                <ul>
+                    <li><a href="/support/apple-watch">Apple Watch &amp; Health</a></li>
+                    <li><a href="/support/export-and-sharing">Export &amp; Sharing</a></li>
+                    <li><a href="/support/troubleshooting">Troubleshooting</a></li>
+                    <li><a href="/support/android">Android</a></li>
+                    <li><a href="/support/faq">FAQ</a></li>
+                    <li><a href="/support/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js?v=2"></script>
+</body>
+</html>
