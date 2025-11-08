@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Snore Timeline - 鼾声记录器</title>
+    <meta name="title" content="Snore Timeline - 鼾声记录器">
+    <meta name="description" content="精心设计的打鼾跟踪应用，配有交互式时间轴可视化。实时检测，无数据采样，完全保护隐私。免费 iOS 应用。">
+    <meta name="keywords" content="打鼾跟踪, 睡眠跟踪, 打鼾应用, 呼吸暂停检测, 睡眠分析, iOS 应用, 鼾声记录器, 睡眠声音, 呼吸暂停, 时间轴打鼾跟踪, 打鼾事件可视化">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Chinese">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://snoretimeline.com/">
+    <link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/">
+    <link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/">
+    <link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/">
+    <link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/">
+    <link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/">
+    <link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/">
+    <link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/">
+    <link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/">
+    <link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/">
+    <link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/">
+    <link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/">
+    <link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/">
+    <link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/">
+    <link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/">
+    <link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://snoretimeline.com/zh/">
+    <meta property="og:title" content="Snore Timeline - 鼾声记录器">
+    <meta property="og:description" content="精心设计的打鼾跟踪应用，配有交互式时间轴可视化。实时检测，无数据采样，完全保护隐私。免费 iOS 应用。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh/">
+    <meta property="twitter:title" content="Snore Timeline - 鼾声记录器">
+    <meta property="twitter:description" content="精心设计的打鼾跟踪应用，配有交互式时间轴可视化。实时检测，无数据采样，完全保护隐私。免费 iOS 应用。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:app_store_id" content="6751759381">
+    <meta property="al:ios:app_name" content="Snore Timeline">
+    <meta property="al:ios:url" content="snoretimeline://open">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="../logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.png">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Snore Timeline",
+      "description": "精心设计的打鼾跟踪应用，配有交互式时间轴可视化。实时检测，无数据采样。完全保护隐私，所有处理均在设备上完成。",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "3"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Menelik Tucker"
+      },
+      "image": "https://snoretimeline.com/logo.png",
+      "screenshot": "https://snoretimeline.com/app-screenshot.png",
+      "url": "https://apps.apple.com/us/app/snore-timeline/id6751759381",
+      "downloadUrl": "https://apps.apple.com/us/app/snore-timeline/id6751759381",
+      "featureList": [
+        "交互式时间轴可视化",
+        "自动打鼾检测",
+        "梦话检测",
+        "呼吸暂停检测",
+        "事件分组与指标",
+        "增强音频回放",
+        "每夜与每周摘要",
+        "完全隐私 - 设备端处理",
+        "蓝牙设备支持",
+        "智能存储管理",
+        "数据导出 (CSV、音频)",
+        "睡眠阶段估算 (清醒、浅睡、深睡、REM)"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Android Beta Banner -->
+    <div class="android-banner" id="androidBanner" role="alert">
+        <span class="android-banner-icon">🤖</span>
+        <p>Snore Timeline 安卓版正在 Beta 测试中。<a href="https://forms.gle/emaDTMRbAvxhNZ6k9" target="_blank" rel="noopener noreferrer">申请访问</a>。</p>
+        <button class="android-banner-close" aria-label="关闭" onclick="dismissBanner()">✕</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="主图区域">
+        <canvas id="hero-shader" aria-hidden="true"></canvas>
+        <div class="hero-bg-orb hero-bg-orb-1"></div>
+        <div class="hero-bg-orb hero-bg-orb-2"></div>
+        <div class="hero-stars">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+        </div>
+
+        <div class="container hero-content">
+            <article class="hero-text">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    iOS 打鼾跟踪应用
+                </div>
+                <h1 class="hero-title">
+                    <span style="font-family: 'Arial Black', Arial, sans-serif; font-size: clamp(2.2rem, 6.2vw, 4.8rem); font-weight: 900; color: white; line-height: 0.8; letter-spacing: -0.02em; text-shadow: 0 0 50px rgba(255,255,255,0.3); filter: contrast(1.2); display: block;">Snore Timeline</span>
+                    <span class="hero-title-line">前所未有地了解您的睡眠</span>
+                </h1>
+                <p class="hero-subtitle">
+                    交互式时间轴揭示您整夜的每一次打鼾、呼吸暂停和睡眠声音。
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">在 App Store 下载</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="hero-tip-nudge">iOS 免费 · 无订阅 · 觉得有用可以<a href="#tip-jar">留下小费</a></p>
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>100% 隐私</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span>实时检测</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span>无订阅</span>
+                    </div>
+                </div>
+            </article>
+            <aside class="hero-visual" aria-label="应用预览">
+                <div class="phone-mockup-wrapper">
+                    <div class="phone-glow"></div>
+                    <div class="phone-mockup">
+                        <video id="hero-video" src="../hero-recording.mp4" poster="../hero-poster.webp" class="app-screenshot" width="1206" height="2622" fetchpriority="high" muted loop playsinline aria-label="Snore Timeline 应用视频，展示带波形可视化的夜间摘要、打鼾事件和呼吸中断检测"></video>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" aria-labelledby="features-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 id="features-heading" class="section-title">无一遗漏</h2>
+                <p class="section-subtitle">捕捉每个事件，揭示每个规律。</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>开启您的一天</h3>
+                    <p>醒来即可在交互式时间轴上看到整夜情况。滚动浏览睡眠过程，放大查看具体时段，立即发现打鼾规律。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>了解整夜发生的事</h3>
+                    <p>AI 驱动的检测可识别打鼾、喘息、咳嗽、梦话和呼吸暂停 — 全部在您睡觉时实时进行。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>查看事件</h3>
+                    <p>连续的打鼾被分组为事件。查看时长、打鼾次数和简明摘要，例如"3 分钟内打鼾 12 次"。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">04</span>
+                    <h3>亲耳聆听</h3>
+                    <p>点按时间轴上任何时刻即可聆听增强音频。用您自己的耳朵确认所发生的事。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">05</span>
+                    <h3>跟踪进展</h3>
+                    <p>对比夜与夜、周与周。导出详细的 CSV 报告与音频文件，与医生分享或追踪长期改善。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">06</span>
+                    <h3>您的数据，您的设备</h3>
+                    <p>所有数据保留在您的 iPhone 上。无云上传，无服务器，无需账户。隐私从设计之初就被保护。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breathing Disruption Section -->
+    <section id="breathing-disruption" class="breathing-disruption" aria-labelledby="breathing-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="breathing-split">
+                <div class="breathing-visual-side">
+                    <div class="breathing-label">超越打鼾跟踪</div>
+                    <h2 id="breathing-heading" class="breathing-title">检测您何时停止呼吸</h2>
+                    <div class="breathing-screenshot-wrapper">
+                        <div class="screenshot-glow"></div>
+                        <picture>
+                            <source srcset="../breathing-screenshot.webp" type="image/webp">
+                            <img src="../breathing-screenshot.png" alt="呼吸中断检测，时间轴上显示灰蓝色标记" class="breathing-screenshot">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="breathing-content-side">
+                    <div class="detection-methodology">
+                        <div class="detection-header">
+                            <span class="detection-label">AI 驱动分析</span>
+                            <h3 class="detection-heading">我们如何检测呼吸中断</h3>
+                            <p class="detection-intro">除了打鼾检测之外，我们的算法还能识别您停止呼吸 10 秒以上的时刻 — 帮助您发现值得与医生讨论的规律。</p>
+                        </div>
+
+                        <div class="detection-steps">
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>基线观察</h4>
+                                    <p>持续监测可听呼吸至少一分钟，建立准确的基线模式</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5.5 8.5L9 12l-3.5 3.5L2 12l3.5-3.5zM12 2l3.5 3.5L12 9 8.5 5.5 12 2zM18.5 8.5L22 12l-3.5 3.5L15 12l3.5-3.5zM12 15l3.5 3.5L12 22l-3.5-3.5L12 15z"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>静默检测</h4>
+                                    <p>AI 识别持续 10 秒以上的安静期 — 这是呼吸中断的关键指标</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>恢复识别</h4>
+                                    <p>检测在静默期之后出现的响亮突发打鼾、喘息、咳嗽或呼吸声音</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>时间轴标注</h4>
+                                    <p>在准确的时间戳放置标记，形成中断的视觉地图</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Stages Section -->
+    <section id="sleep-stages" class="sleep-stages" aria-labelledby="sleep-stages-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="sleep-stages-split">
+                <div class="sleep-stages-content-side">
+                    <div class="detection-methodology">
+                        <div class="detection-header">
+                            <span class="detection-label">基于音频的估算</span>
+                            <h3 class="detection-heading">我们如何估算您的睡眠阶段</h3>
+                            <p class="detection-intro">仅使用您手机的麦克风，Snore Timeline 根据已发表的睡眠期间呼吸规律性研究，估算您处于浅睡、深睡或 REM 阶段。</p>
+                        </div>
+
+                        <div class="detection-steps">
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>聆听您的呼吸</h4>
+                                    <p>通过您手机的麦克风持续采集音频，识别整夜的呼吸频率、规律性和打鼾模式</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>建立您的基线</h4>
+                                    <p>大约 15 分钟后，算法学习您个人的呼吸频率和规律性基线，根据您独特的模式调整阈值</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>分析呼吸规律</h4>
+                                    <p>基于研究的阈值分析规律性和方差。稳定的、低方差呼吸表明深睡；不规律的、高方差模式表示 REM</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>整夜动态调整</h4>
+                                    <p>时间感知逻辑考虑自然的睡眠架构。深睡在夜晚早期达到峰值，REM 在临近清晨增加</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sleep-stages-visual-side">
+                    <div class="sleep-stages-label">睡眠洞察</div>
+                    <h2 id="sleep-stages-heading" class="sleep-stages-title">了解您的睡眠阶段</h2>
+
+                    <div class="hypnogram-wrapper">
+                        <div class="hypnogram-chart">
+                            <div class="hypnogram-y-axis">
+                                <span class="hypnogram-y-label" style="--level: 0">清醒</span>
+                                <span class="hypnogram-y-label" style="--level: 1">REM</span>
+                                <span class="hypnogram-y-label" style="--level: 2">浅睡</span>
+                                <span class="hypnogram-y-label" style="--level: 3">深睡</span>
+                            </div>
+                            <div class="hypnogram-area">
+                                <div class="hypnogram-grid-lines">
+                                    <div class="hypnogram-grid-line" style="--level: 0"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 1"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 2"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 3"></div>
+                                </div>
+                                <div class="hypnogram-block" style="--start: 0; --width: 4; --level: 0; --color: #FFDAC1" title="清醒"></div>
+                                <div class="hypnogram-block" style="--start: 4; --width: 8; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 12; --width: 12; --level: 3; --color: #B4B4DC" title="深睡"></div>
+                                <div class="hypnogram-block" style="--start: 24; --width: 5; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 29; --width: 8; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 37; --width: 4; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 41; --width: 7; --level: 3; --color: #B4B4DC" title="深睡"></div>
+                                <div class="hypnogram-block" style="--start: 48; --width: 5; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 53; --width: 3; --level: 0; --color: #FFDAC1" title="清醒"></div>
+                                <div class="hypnogram-block" style="--start: 56; --width: 6; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 62; --width: 8; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 70; --width: 6; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 76; --width: 6; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 82; --width: 7; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 89; --width: 4; --level: 2; --color: #B4DCDC" title="浅睡"></div>
+                                <div class="hypnogram-block" style="--start: 93; --width: 3; --level: 0; --color: #FFDAC1" title="清醒"></div>
+                            </div>
+                            <div class="hypnogram-x-axis">
+                                <span>晚 11 点</span>
+                                <span>凌晨 1 点</span>
+                                <span>凌晨 3 点</span>
+                                <span>凌晨 5 点</span>
+                                <span>早 7 点</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage-distribution">
+                        <div class="stage-bar">
+                            <div class="stage-segment" style="--width: 8; --color: #FFDAC1" title="清醒 8%"></div>
+                            <div class="stage-segment" style="--width: 45; --color: #B4DCDC" title="浅睡 45%"></div>
+                            <div class="stage-segment" style="--width: 20; --color: #B4B4DC" title="深睡 20%"></div>
+                            <div class="stage-segment" style="--width: 27; --color: #E6AAC8" title="REM 27%"></div>
+                        </div>
+                        <div class="stage-legend">
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #FFDAC1"></span>
+                                <span>清醒 8%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B4DCDC"></span>
+                                <span>浅睡 45%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B4B4DC"></span>
+                                <span>深睡 20%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #E6AAC8"></span>
+                                <span>REM 27%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="sleep-stages-disclaimer">基于音频分析的估算。非医疗设备。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">用户评价</span>
+                <h2 class="section-title">深受打鼾者信赖</h2>
+                <p class="section-subtitle cursive">他们这样说</p>
+            </div>
+
+            <div class="testimonial-marquee">
+                <div class="testimonial-track">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Incredible — It's simple and genius. I also genuinely appreciate the lack of tracking and data collection. A rare gesture of kindness from an app!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Mustlovepaws23</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Brilliant app — Works extremely well and the UI is very nicely thought out. It's enabled me to identify a lot about my snoring problem."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Rankyhhhh</span>
+                                <span class="testimonial-country">🇬🇧 United Kingdom</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Free tracking that actually WORKS! Super stoked to finally have an app again that records sleep talking."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">LizzardWizard1234</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Love the usability and cost — Finally something that is free, no ads and doesn't drain the battery too much!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pizza kid Martinez</span>
+                                <span class="testimonial-country">🇦🇺 Australia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Man, this app is amazing, beautifully designed, intuitive, everything just works and in real time!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">SaliDay</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/sleep</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very helpful app — Just found this one on Reddit. The app is really helpful, I could not thank you enough."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pastel fans</span>
+                                <span class="testimonial-country">🇹🇭 Thailand</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Just What I was looking for! — I downloaded and used this app last night, couldn't believe how simple and functional it was. I had tried several other apps that were so full of ads that they were not usable without a large ongoing subscription."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">wcw43081254</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">常见问题</span>
+                <h2 class="section-title">常见问题解答</h2>
+                <p class="section-subtitle">关于 Snore Timeline 您需要了解的一切</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><span>我的录音保存在哪里？</span></h3>
+                    <p>您可以将整夜的音频导出为单个文件，或一次性批量下载所有打鼾片段。导出的文件保存在您 iPhone 的"文件"App 中。</p>
+                    <p><strong>查找已导出的文件：</strong></p>
+                    <ol class="export-steps">
+                        <li>打开 iPhone 上的 <strong>文件</strong> App</li>
+                        <li>点按底部的 <strong>浏览</strong></li>
+                        <li>在"位置"下点按 <strong>我的 iPhone</strong></li>
+                        <li>打开 <strong>Snore Timeline</strong> 文件夹</li>
+                    </ol>
+                    <p><strong>您的文件分为：</strong></p>
+                    <div class="file-path-list">
+                        <div class="file-path-item">
+                            <span class="file-path">Recordings</span>
+                            <span class="file-path-desc">整夜录音</span>
+                        </div>
+                        <div class="file-path-item">
+                            <span class="file-path">Snoring Episodes</span>
+                            <span class="file-path-desc">单个打鼾片段</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>我可以与他人分享录音吗？</span></h3>
+                    <p>可以。录音保存在您的"文件"App 中，也可以通过分享菜单分享到任何地方 — AirDrop、信息、电子邮件、ChatGPT 等。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>录音时手机应放在哪里？</span></h3>
+                    <p>对于打鼾检测，距离 1 米左右就可以。要捕捉用于中断检测的呼吸信号，请将手机放在 30-60 厘米外 — 必须能清楚听到呼吸才能检测。理想位置是放在床边的床头柜上，并接通电源充电。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>Snore Timeline 与其他打鼾跟踪应用有何不同？</span></h3>
+                    <p>Snore Timeline 关注最重要的事情：完整、不打折扣的睡眠视图。与其他使用数据采样的应用不同，我们带时间轴可视化的鼾声记录器实时捕捉并分析每一个声音。您将获得显示每个打鼾事件的交互式时间轴 — 没有捷径，只有对细节的精心关注。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>Snore Timeline 需要订阅吗？</span></h3>
+                    <p>不需要。Snore Timeline 完全免费，无需任何订阅。所有功能均已包含：呼吸中断检测、事件分组、夜间摘要和数据导出 — 无隐藏费用，无应用内购买。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>它能检测呼吸暂停吗？</span></h3>
+                    <p>能。Snore Timeline 通过分析您的睡眠音频检测呼吸暂停。它识别持续 10 秒以上的安静期，紧接着喘息或恢复声音。应用在您的时间轴上标记这些呼吸中断，方便您查看规律。注意：这只是音频分析，不是医疗设备。值得与医疗专业人员讨论。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>打鼾检测的准确性如何？</span></h3>
+                    <p>Snore Timeline 使用 Apple 成熟的声音分类技术，在整夜实时持续分析您的音频。检测立即开始，无需校准或设置。应用通过分析每段音频的声音模式和频率特征，识别打鼾、喘息、咳嗽、呼吸和梦话。所有处理完全在您的设备上进行，完全保护隐私。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>我的数据是私密的吗？</span></h3>
+                    <p>绝对私密。所有音频处理完全在您的 iPhone 上进行 — 无云上传，无外部服务器，无需账户。您的录音保留在设备上，只有您可以访问。您可以导出数据与医生分享，同时保持完全隐私。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>我可以在 AirPods 或蓝牙设备上使用吗？</span></h3>
+                    <p>可以！Snore Timeline 支持包括 AirPods 在内的蓝牙音频设备，便于整夜录音而不耗尽手机电池。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>它消耗多少电量？</span></h3>
+                    <p>Snore Timeline 针对整夜录音进行了优化。大多数用户报告 8 小时录音耗电 20-30%。建议录音时让手机保持充电以获得最佳效果。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <p class="contact-label">有问题或反馈？</p>
+            <a href="#" class="contact-email" id="contactBtn">
+                <svg class="contact-email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+                    <path d="M2 7l10 7 10-7"></path>
+                </svg>
+                给我发邮件
+            </a>
+        </div>
+    </section>
+
+    <!-- Tip Jar Section -->
+    <section id="tip-jar" class="tip-jar" aria-label="支持开发者">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">支持开发</span>
+                <h2 class="section-title">给小费</h2>
+                <p class="section-subtitle">
+                    如果您愿意慷慨解囊，我会非常感激！但请不要有压力 — 应用始终免费。
+                </p>
+            </div>
+
+            <p class="tip-instruction">点按下方任一选项发送小费</p>
+
+            <div class="tip-amounts">
+                <a href="https://donate.stripe.com/aFacN54WG3L78x85AJ63K07" class="tip-btn" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">小费</span>
+                    <span class="tip-amount">$1</span>
+                </a>
+                <a href="https://donate.stripe.com/cNidR92Oy3L7eVwfbj63K08" class="tip-btn tip-btn-featured" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">小费</span>
+                    <span class="tip-amount">$2</span>
+                </a>
+                <a href="https://donate.stripe.com/aFa14n0Gq0yV9Bc2ox63K09" class="tip-btn" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">小费</span>
+                    <span class="tip-amount">$5</span>
+                </a>
+            </div>
+
+            <p class="tip-footer-note">
+                由 <strong>Stripe</strong> 安全提供支持。所有交易均使用行业标准加密安全处理。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                </svg>
+                <span class="app-store-text">
+                    <span class="app-store-small">在 App Store 下载</span>
+                    <span class="app-store-large">App Store</span>
+                </span>
+            </a>
+            <div class="footer-links">
+                <a href="/zh/privacy">隐私政策</a>
+                <a href="/zh/support">支持</a>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-switcher-btn" aria-label="更改语言">
+                    <img class="lang-flag" src="/flags/cn.svg" alt="">
+                    <span>中文</span>
+                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="lang-dropdown">
+                    <a href="/"><img class="lang-flag" src="/flags/ca.svg" alt=""><span class="lang-name">English</span></a>
+                    <a href="/fr/"><img class="lang-flag" src="/flags/fr.svg" alt=""><span class="lang-name">Fran&ccedil;ais</span></a>
+                    <a href="/es/"><img class="lang-flag" src="/flags/es.svg" alt=""><span class="lang-name">Espa&ntilde;ol</span></a>
+                    <a href="/zh/" class="active"><img class="lang-flag" src="/flags/cn.svg" alt=""><span class="lang-name">&#20013;&#25991;</span></a>
+                    <a href="/de/"><img class="lang-flag" src="/flags/de.svg" alt=""><span class="lang-name">Deutsch</span></a>
+                    <a href="/tr/"><img class="lang-flag" src="/flags/tr.svg" alt=""><span class="lang-name">T&uuml;rk&ccedil;e</span></a>
+                    <a href="/nl/"><img class="lang-flag" src="/flags/nl.svg" alt=""><span class="lang-name">Nederlands</span></a>
+                    <a href="/ja/"><img class="lang-flag" src="/flags/jp.svg" alt=""><span class="lang-name">&#26085;&#26412;&#35486;</span></a>
+                    <a href="/ru/"><img class="lang-flag" src="/flags/ru.svg" alt=""><span class="lang-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></a>
+                    <a href="/pl/"><img class="lang-flag" src="/flags/pl.svg" alt=""><span class="lang-name">Polski</span></a>
+                    <a href="/sv/"><img class="lang-flag" src="/flags/se.svg" alt=""><span class="lang-name">Svenska</span></a>
+                    <a href="/da/"><img class="lang-flag" src="/flags/dk.svg" alt=""><span class="lang-name">Dansk</span></a>
+                    <a href="/no/"><img class="lang-flag" src="/flags/no.svg" alt=""><span class="lang-name">Norsk</span></a>
+                    <a href="/ko/"><img class="lang-flag" src="/flags/kr.svg" alt=""><span class="lang-name">&#54620;&#44397;&#50612;</span></a>
+                    <a href="/th/"><img class="lang-flag" src="/flags/th.svg" alt=""><span class="lang-name">&#3652;&#3607;&#3618;</span></a>
+                </div>
+            </div>
+            <p>&copy; 2026 Snore Timeline. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

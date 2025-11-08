@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English (default) -->
+  <url>
+    <loc>https://snoretimeline.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://snoretimeline.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://snoretimeline.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://snoretimeline.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/privacy"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://snoretimeline.com/support</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Translated language home pages -->
+  <url><loc>https://snoretimeline.com/fr/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/es/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/zh/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/de/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/tr/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/nl/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/ja/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/ru/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/pl/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/sv/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/da/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/no/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/ko/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/th/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+</urlset>
