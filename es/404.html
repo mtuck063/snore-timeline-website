@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Página no encontrada - Snore Timeline</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="../logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.png">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .error-section {
+            min-height: 100vh;
+            max-height: 100vh;
+            padding-top: calc(80px + var(--spacing-md));
+            padding-bottom: var(--spacing-md);
+            background: linear-gradient(135deg, #0F1419 0%, #1A1F2E 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .error-section::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(91, 127, 255, 0.1) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            border-radius: 50%;
+        }
+
+        .error-section::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 107, 157, 0.08) 0%, transparent 70%);
+            bottom: -100px;
+            left: -100px;
+            border-radius: 50%;
+        }
+
+        .error-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .error-illustration {
+            margin-bottom: var(--spacing-sm);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .error-illustration svg {
+            width: clamp(80px, 15vw, 120px);
+            height: clamp(80px, 15vw, 120px);
+            filter: drop-shadow(0 10px 30px rgba(91, 127, 255, 0.3));
+        }
+
+        .error-code {
+            font-size: clamp(4rem, 15vw, 8rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: -0.05em;
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.2;
+        }
+
+        .error-message {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.6;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-md);
+        }
+
+        @media (max-width: 768px) {
+            .error-section {
+                padding-top: calc(80px + var(--spacing-lg));
+            }
+
+            .error-actions {
+                flex-direction: column;
+                align-items: stretch;
+                gap: var(--spacing-sm);
+            }
+
+            .error-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @keyframes zzz {
+            0% { opacity: 0; transform: translateY(10px); }
+            20% { opacity: 0.8; }
+            80% { opacity: 0.8; transform: translateY(-10px); }
+            100% { opacity: 0; transform: translateY(-10px); }
+        }
+
+        .zzz-1 { animation: zzz 2s ease-in-out infinite; animation-delay: 0s; }
+        .zzz-2 { animation: zzz 2s ease-in-out infinite; animation-delay: 0.3s; }
+        .zzz-3 { animation: zzz 2s ease-in-out infinite; animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Header/Nav -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <a href="/es/" style="display: flex; align-items: center; gap: var(--spacing-xs); text-decoration: none; color: inherit;">
+                    <img src="../logo.svg" alt="Logo Snore Timeline" class="logo-icon">
+                    <span>Snore Timeline</span>
+                </a>
+            </div>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="nav-download-btn" target="_blank" rel="noopener noreferrer">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                </svg>
+                Descargar
+            </a>
+        </nav>
+    </header>
+
+    <!-- Error Section -->
+    <section class="error-section">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-illustration">
+                    <svg viewBox="-10 -10 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="moonGradient404" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#5B7FFF;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF6B9D;stop-opacity:0.8" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="70" r="45" fill="url(#moonGradient404)" opacity="0.95"/>
+                        <circle cx="95" cy="65" r="40" fill="#0F1419" opacity="0.9"/>
+                        <path d="M 65 68 Q 72 71, 79 68" stroke="#E8EAED" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9"/>
+                        <path d="M 85 68 Q 92 71, 99 68" stroke="#E8EAED" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9"/>
+                        <text x="110" y="45" fill="#5B7FFF" font-size="18" font-weight="bold" class="zzz-1">Z</text>
+                        <text x="130" y="32" fill="#FF6B9D" font-size="22" font-weight="bold" class="zzz-2">Z</text>
+                        <text x="148" y="22" fill="#5B7FFF" font-size="26" font-weight="bold" class="zzz-3">Z</text>
+                    </svg>
+                </div>
+
+                <h1 class="error-code">404</h1>
+                <h2 class="error-title">Esta página está durmiendo</h2>
+                <p class="error-message">
+                    La página que buscas no existe o ha sido movida.
+                    Vamos a ponerte de vuelta en camino.
+                </p>
+
+                <div class="error-actions">
+                    <a href="/es/" class="btn btn-secondary btn-large">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        Volver a Snore Timeline
+                    </a>
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        Descargar app
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector('.header');
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrollY = window.scrollY;
+
+                    if (scrollY > 50) {
+                        header.style.background = 'rgba(26, 31, 46, 0.85)';
+                        header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.2)';
+                        header.style.backdropFilter = 'blur(20px)';
+                    } else {
+                        header.style.background = 'rgba(26, 31, 46, 0.7)';
+                        header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
+                        header.style.backdropFilter = 'blur(10px)';
+                    }
+
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+</html>
