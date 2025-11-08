@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Claude Code local tooling
+.claude/
+
+# Wrangler local state (account cache)
+.wrangler/
