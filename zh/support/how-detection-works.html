@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>声音检测原理 - Snore Timeline 支持</title>
+    <meta name="title" content="声音检测原理 - Snore Timeline 支持">
+    <meta name="description" content="了解 Snore Timeline 如何分类睡眠声音：实时设备端分析、分贝级别、频率颜色及噪音处理技巧。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh/support/how-detection-works">
+    <meta property="og:title" content="声音检测原理 - Snore Timeline 支持">
+    <meta property="og:description" content="了解 Snore Timeline 如何分类睡眠声音：实时设备端分析、分贝级别、频率颜色及噪音处理技巧。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh/support/how-detection-works">
+    <meta property="twitter:title" content="声音检测原理 - Snore Timeline 支持">
+    <meta property="twitter:description" content="了解 Snore Timeline 如何分类睡眠声音：实时设备端分析、分贝级别、频率颜色及噪音处理技巧。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支持", "item": "https://snoretimeline.com/zh/support/" },
+        { "@type": "ListItem", "position": 2, "name": "声音检测原理", "item": "https://snoretimeline.com/zh/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline 的声音检测原理",
+      "description": "了解 Snore Timeline 如何分类睡眠声音：实时设备端分析、分贝级别、频率颜色及噪音处理技巧。",
+      "url": "https://snoretimeline.com/zh/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 徽标">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支持</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">打开应用
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="面包屑导航">
+                    <a href="/zh/support/">支持</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">声音检测原理</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">录音</span>
+                    <h1 class="privacy-title">声音检测原理</h1>
+                    <p class="privacy-updated">应用监听的内容、判断方式，以及各项数字的含义。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本页内容</summary>
+                        <ul>
+                            <li><a href="#sound-types">应用分类的声音类型</a></li>
+                            <li><a href="#real-time">实时分析，无采样间隔</a></li>
+                            <li><a href="#confidence">灵敏度与误报</a></li>
+                            <li><a href="#decibels">分贝与频率颜色</a></li>
+                            <li><a href="#loud-sound-detection">响亮声音检测</a></li>
+                            <li><a href="#background-noise">背景噪音对检测的影响</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline 将一整夜的原始音频转化为带标签的事件，让您能够信任这些结果——而了解其生成方式，更能增添这份信任。本页介绍分类流程：应用监听哪些声音、如何决定哪些内容出现在时间线上、分贝数字和橙色波形颜色代表什么，以及为什么嘈杂的房间会影响检测结果。</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>应用分类的声音类型</h2>
+                        <p>应用不会将所有噪音都归为鼾声，而是将所听到的声音分为六大类：</p>
+                        <ul>
+                            <li><strong>鼾声</strong>，主要事件。每次检测到鼾声都会显示在时间线上，并附带音量级别。</li>
+                            <li><strong>喘息</strong>，呼吸暂停后常见的突然吸气声。</li>
+                            <li><strong>咳嗽</strong>，作为独立类别记录，而非归入鼾声。</li>
+                            <li><strong>梦话</strong>：说话声、低语声和喃喃自语。</li>
+                            <li><strong>笑声</strong>，因为睡觉时确实会笑。</li>
+                            <li><strong>响亮声音</strong>，超过您设定阈值的突然噪音（详见<a href="#loud-sound-detection">下文</a>）。</li>
+                        </ul>
+                        <p>鼾声、喘息和咳嗽构成呼吸组。应用还会全程监测呼吸模式；如果出现约 10 秒或以上的静默，随后紧跟明显比静默前更响的恢复声音，则会被标记为呼吸暂停。<a href="/zh/support/breathing-disruptions">呼吸暂停</a>页面对此有详细介绍。</p>
+                        <p>应用如何区分鼾声和咳嗽？每种声音都有其可识别的声学特征。鼾声的能量主要集中在低频和中频范围，大约 50 Hz 至 3 kHz，这使其有别于说话声、咳嗽声和环境噪音。分类器在为每段音频赋予标签之前，会综合考量声音模式和频率特征。大多数环境噪音会被忽略。</p>
+                        <p>没有任何检测系统是完美的。当两种声音重叠或被床上用品遮挡时，事件可能会归入错误类别。如果标签看起来不对，请回放该时刻的音频，亲耳听听发生了什么。这里的一切都是用于个人参考的音频分析；应用不能诊断睡眠呼吸暂停或任何其他疾病。</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>实时分析，无采样间隔</h2>
+                    <figure class="support-diagram" aria-label="示意图：在您的设备内部，麦克风将声音传给设备端 AI 进行标记，全程不向任何地方发送数据">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">仅限您的设备</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">麦克风</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">整夜监听</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">设备端 AI</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">实时处理</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">鼾声</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">喘息</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">咳嗽</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">梦话</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">呼吸</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">已检测事件</text>
+</svg>
+                        <figcaption>音频在产生的瞬间即完成分类，全程在您的手机上进行。每种声音都经过实时处理并加以标记；不进行采样，也不上传至任何地方。</figcaption>
+                    </figure>
+                        <p>部分应用通过采样来节省电量：它们定时唤醒、监听片刻后再进入休眠，这意味着间隔期间发生的声音可能被遗漏。Snore Timeline 使用运行在您手机上的 Apple Sound Analysis 框架，持续分析音频。每种声音都在发生时即时处理，不跳过、不采样、不上传。</p>
+                        <p>持续分析带来两个您会注意到的结果：</p>
+                        <ul>
+                            <li><strong>检测立即开始。</strong>无需校准或设置步骤；当晚的第一声鼾声与第一百声同等重要。</li>
+                            <li><strong>时间线完整无缺。</strong>由于应用从不停止监听，时间线上的安静间隙意味着房间确实安静，这些间隙本身也成为呼吸和<a href="/zh/support/sleep-stages">睡眠阶段</a>分析的数据。</li>
+                        </ul>
+                        <p>所有这些都在设备端运行。您的音频从不离开手机，<a href="/zh/privacy">隐私政策</a>详细说明了这在实践中意味着什么。</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>灵敏度与误报</h2>
+                        <p>并非每种声音都会被记录。只有当声音与某个类别的匹配度足够高时，应用才会将其记录为事件——这就是为什么嘎吱作响的暖气片不会让您的夜晚充斥虚假鼾声。</p>
+                        <p>您可以通过灵敏度设置控制这一标准的严格程度，共有五个档位：<strong>最低、低、均衡、高、最高</strong>。默认为均衡。</p>
+                        <ul>
+                            <li><strong>最低</strong>仅捕捉清晰响亮的鼾声，几乎忽略其他一切。适用于嘈杂的房间，或同伴的鼾声不断触发检测器时。</li>
+                            <li><strong>最高</strong>能捕捉极微弱的鼾声，但也会拾取更多背景噪音，记录更多误报。</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>让您的时间线告诉您该如何调整。播放后发现大量无实际声音的杂乱事件？降低灵敏度。录音中能听到但应用未检测到的鼾声？提高灵敏度。对大多数人来说，均衡是不错的起点。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>分贝与频率颜色</h2>
+                        <p>应用中的音量以 dB SPL 显示，范围从约 28 dB（近乎安静的参考值）到 105 dB（极响亮的声音）。将其视为音量计：数字越大，声音越响。以下是鼾声音量的粗略参考：</p>
+                        <ul>
+                            <li><strong>约 40 dB 以下</strong>：轻微鼾声</li>
+                            <li><strong>40 至 48 dB</strong>：轻度鼾声</li>
+                            <li><strong>48 至 56 dB</strong>：明显鼾声</li>
+                            <li><strong>56 dB 及以上</strong>：重度鼾声</li>
+                        </ul>
+                        <p>应用会记录每个片段的峰值和平均分贝级别。这些数字仅供个人参考，不是临床测量结果。</p>
+                        <p>应用会检测当前使用的麦克风，并在手机播放音频（如音乐或播客）时调整读数。</p>
+                        <p>每种声音都是多种频率的混合，而频率不过是空气振动的快慢，以赫兹（Hz）为单位。低音振动慢，高音振动快。点击播放并拖动滑块，亲耳听一听，看看波形如何变密：</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="低频" data-band-mid="中频" data-band-high="高频"
+                                aria-label="拖动以改变音高，看看更高的频率如何振动得更快">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="拖动以改变音高">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="播放" data-label-stop="停止">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">播放</span>
+                                </button>
+                                <span class="pitch-hint">拖动滑块 &mdash; 音高越高，振动越快</span>
+                            </div>
+                            <figcaption>这正是下方各频段所基于的同一尺度：缓慢的振动属于低频段，快速的振动属于高频段。鼾声落在低频，呼气的微弱嘶声落在高频。需使用耳机或扬声器才能听到。</figcaption>
+                        </figure>
+                        <p>将波形完全放大，条形图会分裂为橙色叠加色块，显示每种声音的能量在各频率范围的分布：</p>
+                        <ul>
+                            <li><strong>深橙色</strong>：低频，约 50 至 250 Hz，鼾声的低沉隆隆声。</li>
+                            <li><strong>中橙色</strong>：中频，约 250 至 1500 Hz，泛音和元音。</li>
+                            <li><strong>亮橙色</strong>：高频，约 1500 至 8000 Hz，如"嘶"声中的齿擦音。</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="播放真实录音，观察其频段如何呈现在波形上，与应用中的显示方式相同">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">呼吸</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">鼾声</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="吸气" data-exhale="呼气 &mdash; 高频段能量更多" data-idle="点击播放，跟随每次呼吸"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="播放" data-label-stop="暂停">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">播放</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">高频</span>
+                                    <span class="wave-key" data-band="mid">中频</span>
+                                    <span class="wave-key" data-band="low">低频</span>
+                                </span>
+                            </div>
+                            <figcaption>真实录音，按照应用绘制波形的方式着色：每个条形图分为低频、中频和高频能量。点击播放，跟随这条线。播放呼吸时，留意每次呼气时亮色高频段如何跳动，而声音始终轻柔。播放鼾声时，深色低频段占主导。高频段节奏中的一处间断，正是可能存在<a href="/zh/support/breathing-disruptions">呼吸暂停</a>的迹象。</figcaption>
+                        </figure>
+                        <p>对呼吸最重要的是亮色高频频段。每次呼气都会产生微弱的嘶嘶声，类似轻柔的"嘶"，这种声音落在高频段。Snore Timeline 通过监听这种声音来追踪整夜的呼吸，这正是<a href="/zh/support/breathing-disruptions">呼吸暂停检测</a>和<a href="/zh/support/sleep-stages">睡眠阶段估算</a>的基础。这也是为什么手机放得太远或房间嘈杂会削弱这些功能：嘶嘶声非常微弱，最先消失的就是它。</p>
+                        <p>频率细节仅在最大缩放视图下显示；在较宽的缩放级别下，条形图显示为纯色。<a href="/zh/support/timeline-and-playback#reading-the-waveform">时间线与回放</a>页面介绍了整体波形的读取方法。</p>
+                        <div class="callout callout--tip"><span class="callout-label">试试看</span><p>将您的夜晚安静片段完全放大，寻找底部几乎没有颜色的短暂亮橙色脉冲。那就是您的呼吸，通过声音呈现。</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="完整应用界面" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 已放大</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="鼾声片段中带有叠加橙色频率频段的放大波形" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>最大缩放视图下的频率颜色。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>响亮声音检测</h2>
+                        <p>分类器负责处理鼾声和梦话。响亮声音检测则针对其他一切情况：只要声音超过您设定的音量阈值，无论是什么声音，都会创建一个事件。这能捕捉分类器无法命名的噪音，例如轻声梦话（太轻而无法识别为语音）、翻身时发出的声音、磨牙声，或其他无法识别的夜间噪音。</p>
+                        <p>默认阈值为 <strong>55 dB</strong>。要选择适合您房间的阈值：</p>
+                        <ol>
+                            <li>开始录音，保持安静。</li>
+                            <li>观察时间线显示的房间基础噪音分贝级别。</li>
+                            <li>将阈值设置在该级别略高处。</li>
+                        </ol>
+                        <p>越安静的房间允许您使用越低的阈值，捕捉更多声音。</p>
+                        <p>您可能还会看到一些原本预期应归为鼾声的声音落入了响亮声音类别。这发生在背景噪音掩盖了鼾声分类器所依赖的呼吸模式时；分类器需要清晰的信号才能识别鼾声，当房间基础噪音超过约 45 dB 时，更多声音会被归为响亮声音信号而非鼾声事件。下一节将介绍应对方法。</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>背景噪音对检测的影响</h2>
+                        <p>持续的背景噪音（如空调、风扇、交通噪音、音乐、雨声或海浪声）会被单独追踪，不会在时间线上创建鼾声事件。应用将这些视为连续的环境噪音而非离散的鼾声，因此嗡嗡作响的空调本身不会让您的夜晚充斥虚假鼾声。</p>
+                        <p>持续噪音的真正代价是遮蔽效应。嘈杂的噪声底层会淹没微弱的呼吸声和轻微的鼾声，使分类器可用的信号减少。由此带来两个后果：</p>
+                        <ul>
+                            <li>微弱的声音变得更难检测。</li>
+                            <li>在基础噪音超过约 <strong>45 dB</strong> 的房间中，原本会被归类为鼾声的声音会转移到响亮声音类别。</li>
+                        </ul>
+                        <p>要获得更准确的分类，尽量让房间安静下来。常见的噪音来源包括：风扇和白噪音机、暖通空调和空气净化器、面向交通道路的开放窗户，以及持续播放的电视或音频。房间越安静，检测整体越准确。</p>
+                        <p>当无法控制噪音时（例如在酒店房间），尽力利用现有条件：</p>
+                        <ul>
+                            <li><strong>将手机移近头部</strong>，使呼吸声在嗡嗡声中仍清晰可闻。<a href="/zh/support/getting-started#placement">入门指南</a>详细介绍了放置方法。</li>
+                            <li><strong>提高<a href="#confidence">灵敏度</a></strong>，使应用仍能在背景噪音中拾取较轻的声音。</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="完整应用界面" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 已放大</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="检测到的响亮声音事件，显示峰值和平均分贝以及响亮声音信号徽章" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>在 45 dB 噪声底层以上录制的一夜。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>相关页面</h2>
+                        <ul>
+                            <li><a href="/zh/support/episodes-and-events">事件与片段</a></li>
+                            <li><a href="/zh/support/timeline-and-playback">读取时间线与回放音频</a></li>
+                            <li><a href="/zh/support/breathing-disruptions">呼吸暂停</a></li>
+                            <li><a href="/zh/support/getting-started">入门指南</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支持页面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>在您的设备上录制、查看并了解您的鼾声、呼吸和睡眠状况。</p>
+                <p><a href="/zh/support/">支持</a> &middot; <a href="/zh/privacy">隐私</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学习</h4>
+                <ul>
+                    <li><a href="/zh/support/getting-started">入门指南</a></li>
+                    <li><a href="/zh/support/how-detection-works">声音检测原理</a></li>
+                    <li><a href="/zh/support/timeline-and-playback">时间线与回放</a></li>
+                    <li><a href="/zh/support/breathing-disruptions">呼吸暂停</a></li>
+                    <li><a href="/zh/support/sleep-stages">睡眠阶段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh/support/apple-watch">Apple Watch 与健康</a></li>
+                    <li><a href="/zh/support/export-and-sharing">导出与分享</a></li>
+                    <li><a href="/zh/support/troubleshooting">故障排除</a></li>
+                    <li><a href="/zh/support/android">Android</a></li>
+                    <li><a href="/zh/support/faq">常见问题</a></li>
+                    <li><a href="/zh/support/#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 保留所有权利。</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

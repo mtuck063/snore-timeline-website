@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>呼吸の乱れ - Snore Timeline サポート</title>
+    <meta name="title" content="呼吸の乱れ - Snore Timeline サポート">
+    <meta name="description" content="Snore Timelineが音声から呼吸の一時停止を検出する仕組み：3つの検出条件、タイムラインマーカー、1時間あたりの指標。医療診断ではありません。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ja/support/breathing-disruptions">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/ja/support/breathing-disruptions">
+    <meta property="og:title" content="呼吸の乱れ - Snore Timeline サポート">
+    <meta property="og:description" content="Snore Timelineが音声から呼吸の一時停止を検出する仕組み：3つの検出条件、タイムラインマーカー、1時間あたりの指標。医療診断ではありません。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ja/support/breathing-disruptions">
+    <meta property="twitter:title" content="呼吸の乱れ - Snore Timeline サポート">
+    <meta property="twitter:description" content="Snore Timelineが音声から呼吸の一時停止を検出する仕組み：3つの検出条件、タイムラインマーカー、1時間あたりの指標。医療診断ではありません。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "サポート", "item": "https://snoretimeline.com/ja/support/" },
+        { "@type": "ListItem", "position": 2, "name": "呼吸の乱れ", "item": "https://snoretimeline.com/ja/support/breathing-disruptions" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timelineにおける呼吸乱れ検出",
+      "description": "Snore Timelineが音声から呼吸の一時停止を検出する仕組み：3つの検出条件、タイムラインマーカー、1時間あたりの指標。医療診断ではありません。",
+      "url": "https://snoretimeline.com/ja/support/breathing-disruptions",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="breathing-disruptions" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ja/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline ロゴ">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">サポート</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">アプリを開く
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="パンくずリスト">
+                    <a href="/ja/support/">サポート</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">呼吸の乱れ</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">結果について</span>
+                    <h1 class="privacy-title">呼吸乱れ検出</h1>
+                    <p class="privacy-updated">アプリが何を聴いているか、グレーブルーのマーカーの意味、数値の読み方について。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>このページの内容</summary>
+                        <ul>
+                            <li><a href="#what-is-a-disruption">呼吸の乱れとは？</a></li>
+                            <li><a href="#detection-conditions">3つの検出条件</a></li>
+                            <li><a href="#timeline-markers">タイムライン上のマーカー</a></li>
+                            <li><a href="#metrics">サマリーの指標</a></li>
+                            <li><a href="#gasps">あえぎと呼吸の乱れの違い</a></li>
+                            <li><a href="#cpap">CPAPを使う夜と静かな呼吸の方</a></li>
+                            <li><a href="#medical-disclaimer">医療上の免責事項</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timelineはスマートフォンのマイクを使って呼吸の停止を検知します。安定した呼吸が長時間の無音に変わり、その後に回復音が聞こえると、呼吸の乱れとして記録されます。このページでは各フラグの背景にある正確な条件、タイムラインとサマリーへの表示方法、そして音響検出の限界について説明します。</p>
+
+                    <div class="privacy-section" id="what-is-a-disruption">
+                        <h2>呼吸の乱れとは？</h2>
+                        <p>呼吸の乱れとは、特定の音響パターンです。聴こえる呼吸音が続いた後、長時間の無音が訪れ、その後に回復音が聞こえるというパターンです。このパターンは睡眠中の呼吸停止を示す可能性があるため、アプリはいびきとは区別して独自のイベントタイプとして記録します。</p>
+                        <p>各乱れはタイムスタンプ、無音の継続時間、回復呼吸の強さと共に記録されます。アプリは無音の継続時間に基づいて各イベントを評価します。12秒未満は「軽度」、12〜20秒は「中程度」、20秒超は「重度」です。夜間サマリーでは、その夜の最長の停止が独自の重症度評価と共に強調表示されるため、乱れが少ない夜でも長いイベントが目立ちます。</p>
+                    </div>
+
+                    <div class="privacy-section" id="detection-conditions">
+                        <h2>3つの検出条件</h2>
+                    <figure class="support-diagram" aria-label="図：呼吸音、続いて無音の停止、その後より大きな回復呼吸">
+                        <svg viewBox="0 0 600 200" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="20" y1="120" x2="580" y2="120"/>
+<path class="dgm-accent" stroke-width="2" stroke-linecap="round" d="M30 120 Q45 104 60 120 T90 120 T120 120 T150 120 T180 120 T206 120"/>
+<path class="dgm-accent" stroke-width="2" stroke-linecap="round" d="M206 120 L398 120"/>
+<path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M398 120 L430 46 L452 120 Q467 110 482 120 T512 120 T542 120 T570 120"/>
+<line class="dgm-grid" x1="206" y1="40" x2="206" y2="148" stroke-dasharray="4 4"/>
+<line class="dgm-grid" x1="398" y1="40" x2="398" y2="148" stroke-dasharray="4 4"/>
+<path class="dgm-ctx" d="M446 120 L462 120 M446 46 L462 46 M454 120 L454 46"/>
+<text class="dgm-label-strong" x="470" y="87">+15 dB</text>
+<text class="dgm-label" x="34" y="172">1 · 聴こえる呼吸音</text>
+<text class="dgm-label-sm" x="34" y="186">最低1分間</text>
+<text class="dgm-label" x="246" y="172">2 · 無音</text>
+<text class="dgm-label-sm" x="246" y="186">10秒以上</text>
+<text class="dgm-label" x="420" y="172">3 · 回復呼吸</text>
+<text class="dgm-label-sm" x="420" y="186">無音より大きな音</text>
+</svg>
+                        <figcaption>乱れを検出するには3つの条件をすべて順番に満たす必要があります。1分間の聴こえる呼吸音、10秒以上の無音、そして無音より少なくとも15dB大きな回復音。</figcaption>
+                    </figure>
+                        <p>アプリは3つの条件が順に発生した場合にのみ乱れとしてフラグを立てます。</p>
+                        <ol>
+                            <li><strong>ベースラインの呼吸音。</strong>アプリは無音期間の前に少なくとも1分間の聴こえる呼吸音を検出する必要があります。5秒間の窓を12個チェックし、そのうち少なくとも11個で呼吸音が確認される必要があります。このベースラインにより、呼吸音が十分に聞こえていたことが証明されるため、その後の無音に意味が生まれます。このベースラインがなければ、もともと呼吸音が聞こえない睡眠者の静かな時間帯が、実際の停止と区別できません。</li>
+                            <li><strong>長時間の無音。</strong>10秒以上続く完全な無音の期間。これより短いギャップは対象外となり、呼吸間の通常の間隔が除外されます。</li>
+                            <li><strong>回復音。</strong>無音がガスプ（あえぎ）、鼻息、突然の大きな呼吸など、無音期間中の平均音量より少なくとも15dB大きな回復音によって破られる必要があります。この回復音は、呼吸がマイクの感度から外れて消えたのではなく、勢いよく再開したことを確認します。</li>
+                        </ol>
+                        <svg viewBox="0 0 680 180" role="img" aria-labelledby="disruption-diagram-title" style="width:100%; height:auto; display:block; margin:var(--spacing-md) 0; background:var(--color-bg-light); border:1px solid var(--color-border); border-radius:var(--radius-md);">
+                            <title id="disruption-diagram-title">3条件の順序を示す図：規則的な呼吸波、次に10秒以上の無音期間、最後に高い回復スパイク。</title>
+                            <line x1="30" y1="110" x2="650" y2="110" stroke="var(--color-border)" stroke-width="2"/>
+                            <!-- Phase 1: baseline breathing -->
+                            <path d="M 40 110 Q 52 80 64 110 Q 76 80 88 110 Q 100 80 112 110 Q 124 80 136 110 Q 148 80 160 110 Q 172 80 184 110 Q 196 80 208 110 Q 220 80 232 110" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round"/>
+                            <!-- Phase 2: silence -->
+                            <line x1="232" y1="110" x2="440" y2="110" stroke="var(--color-text-secondary)" stroke-width="3" stroke-dasharray="6 6"/>
+                            <!-- Phase 3: recovery spike -->
+                            <path d="M 440 110 L 458 30 L 476 110 Q 488 90 500 110 Q 512 88 524 110 Q 536 86 548 110" fill="none" stroke="var(--color-secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Labels -->
+                            <text x="136" y="145" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="600">1. 呼吸音</text>
+                            <text x="136" y="164" text-anchor="middle" fill="var(--color-text-secondary)" font-size="12">&#8805; 1分間聴こえる</text>
+                            <text x="336" y="145" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="600">2. 無音</text>
+                            <text x="336" y="164" text-anchor="middle" fill="var(--color-text-secondary)" font-size="12">&#8805; 10秒間</text>
+                            <text x="494" y="145" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="600">3. 回復</text>
+                            <text x="494" y="164" text-anchor="middle" fill="var(--color-text-secondary)" font-size="12">&#8805; 無音より15dB大きい</text>
+                        </svg>
+                        <p>この厳格さには意味があります。各条件はそれぞれ異なる誤検知を排除します。ベースラインは聞こえない呼吸者を除外し、10秒の下限は通常の呼吸間隔を除外し、回復要件は電話機から離れたことによる無音を除外します。この仕組みの影響は一方向です。アプリが誤る場合、イベントを見落とす方向に誤るのであり、架空のイベントを作り出すことはありません。<a href="#cpap">静かな呼吸者に関するセクション</a>では、カウントへの影響を説明しています。<a href="/ja/support/how-detection-works#decibels">検出の仕組み</a>では、条件3の背景にあるデシベル測定について詳しく説明しています。</p>
+                    </div>
+
+                    <div class="privacy-section" id="timeline-markers">
+                        <h2>タイムライン上のマーカー</h2>
+                        <p>呼吸の乱れはタイムライン上に控えめなグレーブルーのマーカーとして表示されます。この落ち着いた色はいびきのエピソードと競合せず視認性を保つため、一晩全体を見渡してクラスターをひと目で確認できます。夜の一部に集中している乱れは、同じカウントが均等に分散している場合とは異なるストーリーを伝えます。</p>
+                        <p>夜間サマリーで呼吸乱れイベントをタップすると、タイムライン上のその瞬間に直接ジャンプして<a href="/ja/support/timeline-and-playback#playback">録音を聴く</a>こともできます。あえぎで無音が終わる音を実際に聴くことは、数字を読むより重みがあり、そのオーディオこそが医師と共有する価値のあるデータです。</p>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-breathing-markers.webp" type="image/webp">
+                                    <img src="/support/img/shot-breathing-markers.png" alt="呼吸乱れ画面" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:22.7%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 拡大表示</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-breathing-wave.webp" type="image/webp">
+                                    <img src="/support/img/shot-breathing-wave.png" alt="グレーブルーの呼吸乱れシグナルの凡例が表示された拡大波形" loading="lazy" width="900" height="442">
+                                </picture>
+                                <figcaption>グレーブルーのマーカーがアプリで呼吸の乱れを検出した場所を示しています。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="metrics">
+                        <h2>サマリーの指標</h2>
+                        <p><strong>1時間あたりの乱れ回数</strong>が主要な指標です。アプリは検出した乱れの回数を睡眠時間数で割り、結果を評価します。1時間あたり1回未満は「最小限」、1〜3回は「軽度」、3〜5回は「注目」、5回超は「著明」です。各レベルには短いサマリーメッセージとカラーインジケーターが付きます。音響検出は聴こえるイベントのみを捉えるため、低い数値でも注意を要することがあり、高い割合は医療専門家への相談に値するかもしれません。この割合は医療上のスコアではありません。</p>
+                        <p><strong>回復呼吸の強さ</strong>は+16 dBのようなデシベル値で表示されます。これは回復音がその直前の無音より16デシベル大きかったことを意味します。数値が高いほど力強い回復を示し、気道を回復させるために体がより努力した可能性を示唆します。サマリーにはその夜の最大回復強度が表示されます。</p>
+                        <p><strong>夜間評価</strong>の計算には少なくとも2時間の睡眠が必要です。録音が2時間未満だった場合、またはアプリが処理に十分な聴こえる呼吸音を捉えられなかった場合、その夜の評価は表示されません。電話機を近くに置いて一晩しっかり録音することで、必要なデータが得られます。</p>
+                        <p>サマリーには以下も表示される場合があります：</p>
+                        <ul>
+                            <li><strong>平均呼吸数</strong>（1分あたりの呼吸回数。成人の正常範囲である12〜20回が参考として表示されます）</li>
+                            <li><strong>平均いびき強度</strong>（デシベル単位）</li>
+                            <li><strong>最長停止</strong>（その夜の最長停止と重症度評価）</li>
+                            <li><strong>あえぎ</strong>（総回数と1時間あたりの回数）</li>
+                            <li><strong>血中酸素</strong>（血中酸素を記録する<a href="/ja/support/apple-watch#biometrics">Apple Watch</a>を連携している場合。95%未満の飽和度で過ごした夜の割合と最低値）</li>
+                        </ul>
+                        <p>呼吸の乱れは<a href="/ja/support/sleep-score#sleep-factors">睡眠スコア</a>にも影響します。検出されたいびきと乱れは、睡眠時間、深睡眠・REM睡眠、睡眠効率、覚醒回数と並んで、スコアを下げる要因の一つです。呼吸セクションでは乱れ活動の詳細ビューが確認でき、スコアは総合的な睡眠の質を反映します。乱れのカウントは<a href="/ja/support/sleep-score#weekly-trends">週間サマリー</a>や要因比較カードにも表示されます。アプリの呼吸セクションにある「これはどのように機能しますか？」ボタンをタップすると、検出の詳細と限界についての説明が表示されます。</p>
+                    </div>
+
+                    <div class="privacy-section" id="gasps">
+                        <h2>あえぎと呼吸の乱れの違い</h2>
+                        <p>アプリはあえぎと呼吸の乱れを別々に追跡しており、この区別は重要です。あえぎは単一の音です。停止の後に発生する可能性がある突然の力強い吸気で、気道を回復させようとする体の反応を示す場合があります。呼吸の乱れは、ベースラインの呼吸音、10秒以上の無音ギャップ、回復音という3パターンすべてを含む完全なパターンです。あえぎはその周囲のパターンなしに発生することがあるため、2つのカウントは一致しません。あえぎは総回数と1時間あたりの回数で報告され、乱れは1時間あたりの乱れ回数として報告されます。これらは夜間サマリーの別々の項目として表示されます。<a href="/ja/support/episodes-and-events#event-types">エピソードとイベント</a>では、あえぎと他のイベントタイプをまとめて説明しています。</p>
+                    </div>
+
+                    <div class="privacy-section" id="cpap">
+                        <h2>CPAPを使う夜と静かな呼吸の方</h2>
+                        <p>検出はすべてリスニングによって行われるため、呼吸音と回復音の両方を聴こえることが必要です。静かな呼吸、静音CPAP機器、または電話機が遠すぎる場合、検出の信頼性が低下し、静かな乱れが記録されないことがあります。最初の条件を覚えておいてください。アプリは停止を監視し始める前に、1分間の安定した聴こえる呼吸音が必要です。一晩中呼吸音がほとんど聞こえない場合、ベースラインが形成されず、アプリはイベントを見落とすか過少カウントします。</p>
+                        <p>カウントは実際のイベント数より少なくなると考えてください。音響検出が見逃すもの：</p>
+                        <ul>
+                            <li>マイクが拾えなかった静かな乱れ</li>
+                            <li>呼吸努力が全くないイベント（聞こえる音がないため）</li>
+                            <li>聴こえる回復音なしに終わるイベント</li>
+                            <li>扇風機、ホワイトノイズマシン、空調などの背景雑音に隠されたもの</li>
+                        </ul>
+                        <p>カウントは完全な記録というよりも保守的な推定として扱い、夜ごとのトレンド追跡に活用してください。数週間にわたる増減の傾向は、個別の一夜の合計よりも意味があります。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">ヒント</span>
+                            <p>検出の精度を上げるには、電話機を約30〜60cm以内に置き、部屋を静かに保ちましょう。<a href="/ja/support/getting-started#placement">設置ガイド</a>で詳しい設定方法を確認できます。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="medical-disclaimer">
+                        <h2>医療上の免責事項</h2>
+                        <div class="callout callout--medical">
+                            <span class="callout-label">医療上の免責事項</span>
+                            <p><strong>これは音声解析のみであり、医療機器ではありません。</strong> Snore Timelineは睡眠時無呼吸症候群やその他の医療状態を診断することはできません。専門的な睡眠評価における重要な要素である血中酸素、気流、胸部の動き、脳活動ではなく、音のパターンを測定します。頻繁な呼吸の乱れに気づいた場合、または日中の眠気、朝の頭痛、パートナーから呼吸停止を指摘された場合は、医療専門家に結果を相談してください。</p>
+                        </div>
+                        <p>結果は会話のきっかけとしてよく機能します。<a href="/ja/support/doctor-ready-data">医師への持参データガイド</a>では、録音を医師が活用できる形式にする方法を説明しています。<a href="/ja/support/export-and-sharing#doctor">エクスポートと共有</a>では、診察に持参できるレポートとオーディオファイルについて説明しています。すべてのデータは共有を選択するまでデバイス上に保持されます。詳しくは<a href="/ja/privacy">プライバシーポリシー</a>をご覧ください。</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>関連ページ</h2>
+                        <ul>
+                            <li><a href="/ja/support/doctor-ready-data">ガイド：医師への持参データ</a></li>
+                            <li><a href="/ja/support/how-detection-works">音声検出の仕組み</a></li>
+                            <li><a href="/ja/support/episodes-and-events">エピソードとイベント</a></li>
+                            <li><a href="/ja/support/sleep-score">睡眠スコア</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="その他のサポートページ"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ja/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>いびき、呼吸、睡眠を録音・可視化・理解する。すべてデバイス上で。</p>
+                <p><a href="/ja/support/">サポート</a> &middot; <a href="/ja/privacy">プライバシー</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学ぶ</h4>
+                <ul>
+                    <li><a href="/ja/support/getting-started">はじめに</a></li>
+                    <li><a href="/ja/support/how-detection-works">検出の仕組み</a></li>
+                    <li><a href="/ja/support/timeline-and-playback">タイムラインと再生</a></li>
+                    <li><a href="/ja/support/breathing-disruptions">呼吸の乱れ</a></li>
+                    <li><a href="/ja/support/sleep-stages">睡眠ステージ</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>その他</h4>
+                <ul>
+                    <li><a href="/ja/support/apple-watch">Apple Watch &amp; ヘルス</a></li>
+                    <li><a href="/ja/support/export-and-sharing">エクスポートと共有</a></li>
+                    <li><a href="/ja/support/troubleshooting">トラブルシューティング</a></li>
+                    <li><a href="/ja/support/android">Android</a></li>
+                    <li><a href="/ja/support/faq">よくある質問</a></li>
+                    <li><a href="/ja/support/#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

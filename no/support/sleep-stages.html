@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Søvnfaser fra lyd - Snore Timeline støtte</title>
+    <meta name="title" content="Søvnfaser fra lyd - Snore Timeline støtte">
+    <meta name="description" content="Hvordan Snore Timeline estimerer Våken, Lett, Dyp og REM-søvn fra pustelyd: hypnogrammet, Stillhet-etiketten, nøyaktighet og feilsøking.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/no/support/sleep-stages">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/no/support/sleep-stages">
+    <meta property="og:title" content="Søvnfaser fra lyd - Snore Timeline støtte">
+    <meta property="og:description" content="Hvordan Snore Timeline estimerer Våken, Lett, Dyp og REM-søvn fra pustelyd: hypnogrammet, Stillhet-etiketten, nøyaktighet og feilsøking.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/no/support/sleep-stages">
+    <meta property="twitter:title" content="Søvnfaser fra lyd - Snore Timeline støtte">
+    <meta property="twitter:description" content="Hvordan Snore Timeline estimerer Våken, Lett, Dyp og REM-søvn fra pustelyd: hypnogrammet, Stillhet-etiketten, nøyaktighet og feilsøking.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Støtte", "item": "https://snoretimeline.com/no/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Søvnfaser", "item": "https://snoretimeline.com/no/support/sleep-stages" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Søvnfaser fra lyd",
+      "description": "Hvordan Snore Timeline estimerer Våken, Lett, Dyp og REM-søvn fra pustelyd: hypnogrammet, Stillhet-etiketten, nøyaktighet og feilsøking.",
+      "url": "https://snoretimeline.com/no/support/sleep-stages",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="sleep-stages" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/no/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline-logo">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Støtte</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">Åpne appen
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Brødsmulesti">
+                    <a href="/no/support/">Støtte</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Søvnfaser</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Resultatene dine</span>
+                    <h1 class="privacy-title">Søvnfaser fra lyd</h1>
+                    <p class="privacy-updated">Hvordan pustelydene dine blir til faseestimater, og hvordan du leser dem.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>På denne siden</summary>
+                        <ul>
+                            <li><a href="#how-it-works">Slik fungerer faseestimering</a></li>
+                            <li><a href="#stages">De fire fasene og deres pustemønstre</a></li>
+                            <li><a href="#silence">Stillhet-etiketten</a></li>
+                            <li><a href="#breathing-rate">Åndedrettsfrekvens og pustemønster-regelmessighet</a></li>
+                            <li><a href="#wearables">Bruker appen Apple Watch-data?</a></li>
+                            <li><a href="#hypnogram">Lese hypnogrammet</a></li>
+                            <li><a href="#distribution">Typisk fasefordeling</a></li>
+                            <li><a href="#accuracy">Hvor nøyaktige er estimatene?</a></li>
+                            <li><a href="#no-stages">Hvorfor ingen faser ble oppdaget</a></li>
+                            <li><a href="#research">Forskningsreferanser</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline estimerer hvilken søvnfase du var i på hvert tidspunkt av natten: Våken, Lett søvn, Dyp søvn eller REM, pluss en femte etikett kalt Stillhet for perioder der appen ikke hørte noe i det hele tatt. Estimatene er basert utelukkende på pustelydene dine, fanget opp av mikrofonen du allerede bruker til snorkeregistrering. Denne siden forklarer signalene bak hver fase, hvordan du leser hypnogrammet i nattoppsummeringen din, og hva estimatene kan og ikke kan fortelle deg.</p>
+
+                    <div class="privacy-section" id="how-it-works">
+                        <h2>Slik fungerer faseestimering</h2>
+                        <p>Pusten din endrer karakter etter hvert som du beveger deg gjennom søvnfasene, og disse endringene er hørbare. Appen analyserer regelmessigheten og variasjonen i pustemønstrene dine fanget opp av mikrofonen – den samme opptaket som driver snorkeregistrering og <a href="/no/support/breathing-disruptions">oppdagelse av pustestans</a> – så faseestimering krever ingen ekstra oppsett.</p>
+                        <p>Etter omtrent 15 minutters opptak etablerer algoritmen din personlige pustebasislinje: din typiske frekvens og regelmessighet. Deretter måler den resten av natten mot din egen basislinje i stedet for befolkningsgjennomsnitt, og bruker forskningsbaserte terskler til å klassifisere hver periode i en fase.</p>
+                        <p>Pustemønster-regelmessighet bærer det meste av signalet, men algoritmen veier også:</p>
+                        <ul>
+                            <li><strong>Åndedrettsfrekvens</strong>, som har en tendens til å avta etter hvert som du går inn i dypere søvn.</li>
+                            <li><strong>Snorkemønstre</strong>, siden snorking registrert gjennom natten mater den samme modellen.</li>
+                            <li><strong>Tidspunkt på natten</strong>, fordi søvnarkitekturen følger en forutsigbar bue: Dyp søvn konsentrerer seg tidlig på natten, mens REM vokser mot morgen.</li>
+                            <li><strong>Bevegelse</strong>, siden store endringer i lyd peker mot kroppsbevegelse, noe som tyder på lettere søvn eller en kort oppvåkning.</li>
+                        </ul>
+                        <p>Resultatet vises som fargede bånd bak tidslinjen din og som et hypnogramdiagram i nattoppsummeringen din.</p>
+                    </div>
+
+                    <div class="privacy-section" id="stages">
+                        <h2>De fire fasene og deres pustemønstre</h2>
+                        <p>Hver fase etterlater et distinkt fingeravtrykk i pusten din:</p>
+                        <ul>
+                            <li><strong>Dyp søvn</strong>: jevn, regelmessig pust med lav variasjon. Dette er restituerende søvn, og den produserer den mest metronom-lignende rytmen av alle fasene. Den er vanligst tidlig på natten, særlig i de første 90 minuttene og de første timene.</li>
+                            <li><strong>REM-søvn</strong>: uregelmessige pustemønstre med høy variasjon. REM er drømmesøvn. Den begynner vanligvis rundt 40 til 50 minutter etter at du sovner og øker mot morgen, noe som er grunnen til at å kutte en natt kort koster deg mer REM enn noe annet.</li>
+                            <li><strong>Lett søvn</strong>: moderat pustemønster-regelmessighet, mellom de to ytterpunktene. Lett søvn er overgangsfasen og den det er lettest å våkne fra.</li>
+                            <li><strong>Våken</strong>: bevegelse, lyder eller pustemønstre som er uforenlige med søvn. Appen flagger også lengre stillhet som en mulig oppvåkning når andre signaler støtter det.</li>
+                        </ul>
+                        <p>Siden Dyp søvn befinner seg i den ene enden av regelmessighetsskalaen og REM i den andre, krever appen konsekvent lav pustevariasjon før den klassifiserer en periode som Dyp søvn, og den forlater Dyp søvn når variasjonen stiger. <a href="/no/support/how-detection-works#sound-types">Lydklassifiseringen</a> som kjører parallelt leverer kontekst om snorking og bevegelse.</p>
+                    </div>
+
+                    <div class="privacy-section" id="silence">
+                        <h2>Stillhet-etiketten</h2>
+                        <p>Lydbasert faseinndeling har en ærlig begrensning: den kan bare klassifisere det den kan høre. Når pusten din er for svak for mikrofonen til å løse opp til en fase, men ingenting tyder på at du er våken, merker appen den perioden som <strong>Stillhet</strong> i stedet for å gjette. Dette skjer ofte for stille pustere, eller når en vifte eller klimaanlegg maskerer lyden.</p>
+                        <p>Stillhet behandles som hvilende søvn. Det teller mot din totale sovetid, og det bidrar til den restituerende delen av <a href="/no/support/sleep-score#score">søvnpoengsummen</a> din, slik at en genuint stille natt fremdeles leses som god søvn. Å finne opp en fase uten bevis ville gjøre dataene mindre pålitelige, så appen merker usikkerheten i stedet.</p>
+                    </div>
+
+                    <div class="privacy-section" id="breathing-rate">
+                        <h2>Åndedrettsfrekvens og pustemønster-regelmessighet</h2>
+                        <p>To pustemålinger mater fasemodellen, og begge vises i resultatene dine:</p>
+                        <ul>
+                            <li><strong>Åndedrettsfrekvens</strong> vises i åndedrag per minutt (bpm), beregnet ut fra tiden mellom de registrerte åndedragene dine. Et typisk område for voksne under søvn er 12 til 20 bpm. Appen registrerer en avlesning hvert par minutter og viser gjennomsnittet. Den setter en personlig basislinje etter omtrent de første 10 til 15 minuttene med registrert søvn, ved å bruke midten av disse tidlige avlesningene slik at én avvikende verdi ikke kan skjeve den. Avlesningene holdes innenfor fysiologiske grenser på omtrent 6 til 25 bpm, noe som filtrerer ut falske topper mens det tillater de høyere frekvensene som kan forekomme under REM eller korte oppvåkninger.</li>
+                            <li><strong>Pustemønster-regelmessighet</strong> beskriver hvor konsekvent rytmen mellom åndedragene dine er, på en skala fra uregelmessig til jevn. Vedvarende, svært jevn pust peker mot Dyp søvn, mens en overgang til mer uregelmessig pust kan indikere REM.</li>
+                        </ul>
+                        <p>Begge er lydbaserte estimater for personlig innsikt. En åndedrettsfrekvens langt utenfor normalområdet er noe du bør diskutere med en lege i stedet for å selvdiagnostisere.</p>
+                    </div>
+
+                    <div class="privacy-section" id="wearables">
+                        <h2>Bruker appen Apple Watch-data?</h2>
+                        <p>Ja, når det er tilgjengelig. Hvis en wearable som Apple Watch rapporterer søvnfasedata for natten, bruker Snore Timeline klokkens Dyp søvn- og REM-prosentandeler for søvnpoengsummen din i stedet for sine egne lydbaserte estimater. En wearable måler disse fasene mer nøyaktig enn lydanalyse kan, så appen overlater til den. Uten en tilkoblet wearable faller appen tilbake på sine puste- og bevegelsesbaserte estimater. <a href="/no/support/apple-watch#biometrics">Apple Watch</a>-siden dekker hva klokken bidrar med.</p>
+                    </div>
+
+                    <div class="privacy-section" id="hypnogram">
+                        <h2>Lese hypnogrammet</h2>
+                    <figure class="support-diagram" aria-label="Diagram: et hypnogram som stiger og synker mellom Våken, REM, Lett, Dyp og Stillhet gjennom en natt">
+                        <svg viewBox="0 0 600 240" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="120" y1="44" x2="580" y2="44"/>
+<text class="dgm-label" x="14" y="48" style="fill:#EC9A4D">Våken</text>
+<line class="dgm-grid" x1="120" y1="80" x2="580" y2="80"/>
+<text class="dgm-label" x="14" y="84" style="fill:#E59ABF">REM</text>
+<line class="dgm-grid" x1="120" y1="116" x2="580" y2="116"/>
+<text class="dgm-label" x="14" y="120" style="fill:#4FB8C9">Lett</text>
+<line class="dgm-grid" x1="120" y1="152" x2="580" y2="152"/>
+<text class="dgm-label" x="14" y="156" style="fill:#8B8CEC">Dyp</text>
+<line class="dgm-grid" x1="120" y1="188" x2="580" y2="188"/>
+<text class="dgm-label" x="14" y="192" style="fill:#6FBF9C">Stillhet</text>
+<line class="dgm-grid" x1="152" y1="44" x2="152" y2="116"/>
+<line class="dgm-grid" x1="212" y1="116" x2="212" y2="152"/>
+<line class="dgm-grid" x1="292" y1="152" x2="292" y2="116"/>
+<line class="dgm-grid" x1="330" y1="116" x2="330" y2="80"/>
+<line class="dgm-grid" x1="372" y1="80" x2="372" y2="188"/>
+<line class="dgm-grid" x1="410" y1="188" x2="410" y2="116"/>
+<line class="dgm-grid" x1="462" y1="116" x2="462" y2="152"/>
+<line class="dgm-grid" x1="512" y1="152" x2="512" y2="80"/>
+<line class="dgm-grid" x1="560" y1="80" x2="560" y2="44"/>
+<line x1="120" y1="44" x2="152" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<line x1="152" y1="116" x2="212" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="212" y1="152" x2="292" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="292" y1="116" x2="330" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="330" y1="80" x2="372" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="372" y1="188" x2="410" y2="188" stroke="#6FBF9C" stroke-width="5" stroke-linecap="round"/>
+<line x1="410" y1="116" x2="462" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="462" y1="152" x2="512" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="512" y1="80" x2="560" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="560" y1="44" x2="580" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<text class="dgm-label-sm" x="120" y="216">23:00</text>
+<text class="dgm-label-sm" x="580" y="216" text-anchor="end">06:00</text>
+<text class="dgm-label" x="350" y="232" text-anchor="middle">hvert blokk er omtrent 5 minutter</text>
+</svg>
+                        <figcaption>Et hypnogram stiger og synker mellom faser gjennom natten. Hvert farget blokk er omtrent fem minutter; fargene matcher båndene på tidslinjen din.</figcaption>
+                    </figure>
+                        <p>Hypnogrammet i nattoppsummeringen din viser utviklingen din gjennom fasene gjennom natten. Hvert farget bånd representerer 5 minutter i en bestemt fase:</p>
+                        <ul>
+                            <li><strong>Oransje</strong>: Våkne perioder</li>
+                            <li><strong>Cyan (lyseblå)</strong>: Lett søvn</li>
+                            <li><strong>Indigo (mørkeblå)</strong>: Dyp søvn</li>
+                            <li><strong>Rosa/cyan</strong>: REM-søvn</li>
+                            <li><strong>Mint (myk grønn)</strong>: Stillhet, vises kun på netter det forekommer</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram-full.png" alt="Nattoppsummering med søvnfase-hypnogrammet" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3.3%;top:53.8%;width:93.6%;height:26.4%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Forstørret</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram.png" alt="Hypnogram som viser Våken, REM, Lett, Dyp og Stillhet gjennom natten med faseprosentandeler" loading="lazy" width="1000" height="567">
+                                </picture>
+                                <figcaption>Hypnogrammet viser fasene dine i 5-minutters bånd gjennom natten.</figcaption>
+                            </div>
+                        </figure>
+                        <p>Les det fra venstre til høyre og du kan telle hvor mange komplette søvnsykluser du gikk gjennom, se når du fikk mest Dyp søvn, og finne ut når REM oppstod. Fasebånd vises også bak bølgeformen på <a href="/no/support/timeline-and-playback#reading-the-waveform">tidslinjen</a> din, noe som lar deg sjekke om snorkeepisoder faller sammen med en bestemt fase.</p>
+                    </div>
+
+                    <div class="privacy-section" id="distribution">
+                        <h2>Typisk fasefordeling</h2>
+                        <p>Nattoppsummeringen viser også prosentandelen av tiden du tilbrakte i hver fase. En typisk natt kan se slik ut:</p>
+                        <ul>
+                            <li>45 % Lett søvn</li>
+                            <li>20 % Dyp søvn</li>
+                            <li>27 % REM-søvn</li>
+                            <li>8 % Våken</li>
+                        </ul>
+                        <p>Disse prosentandelene varierer med alder, helse, stressnivå og andre faktorer, så sammenlign nettene dine med hverandre fremfor mot en lærebok. For poengsetting bruker appen Dyp søvn på omtrent 13 til 23 prosent som et sunt mål, der 20 prosent eller mer gir poeng mot scoren din, og et REM-mål på omtrent 20 til 25 prosent. Å nå disse områdene kan legge til poeng på <a href="/no/support/sleep-score#sleep-factors">søvnpoengsummen</a> din. De er generelle retningslinjer, ikke en medisinsk vurdering.</p>
+                    </div>
+
+                    <div class="privacy-section" id="accuracy">
+                        <h2>Hvor nøyaktige er estimatene?</h2>
+                        <p>Klassifiseringen bygger på publisert forskning om forholdet mellom pustemønster-regelmessighet og søvnfaser. Forskning som inndeler søvn fra ett enkelt fysiologisk signal, som pust eller hjertefrekvensvaribilitet, oppnår omtrent 70 % samsvar med polysomnografi, den kliniske søvnstudiestandarden. Estimatene gir deg et nyttig bilde av din generelle søvnarkitektur og, enda mer verdifullt, trendene dine over tid.</p>
+                        <p>Flere ting påvirker nøyaktigheten opp eller ned. Lengre opptak hjelper, fordi flere timers søvn lar appen observere mer fullstendige søvnsykluser. Støyende omgivelser, en sengepartner, kjæledyr eller å sove langt fra mikrofonen reduserer alle hvor pålitelig pusten din registreres, og estimatene forringes dermed.</p>
+                        <div class="callout callout--medical">
+                            <span class="callout-label">Medisinsk merknad</span>
+                            <p>Dette er estimater fra lydanalyse, ikke kliniske målinger. Klinisk søvnfaseinndeling bruker hjernebølger, øyebevegelse og muskelaktivitet – signaler som lyd ikke kan fange opp. Snore Timeline er ikke validert mot polysomnografi og kan ikke diagnostisere søvnapné eller noen søvnlidelse. Behandle faseoversikten som en generell veiledning, og snakk med en helsepersonell hvis du er bekymret for søvnen din.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="no-stages">
+                        <h2>Hvorfor ingen faser ble oppdaget</h2>
+                        <p>Faseestimering krever hørbar pust gjennom hele opptaket. Hvis en natt ikke viser noen faser, er én av disse vanligvis årsaken:</p>
+                        <ul>
+                            <li><strong>Pusten for stille.</strong> Pusten din når kanskje ikke mikrofonen med et nivå den kan analysere.</li>
+                            <li><strong>Telefonen for langt unna.</strong> Pust avtar raskt med avstand; 30 til 60 cm fra hodet fungerer bra.</li>
+                            <li><strong>Bakgrunnsstøy.</strong> Vifter, klimaanlegg og andre jevne lyder kan maskere pusten appen lytter etter.</li>
+                            <li><strong>Opptaket for kort.</strong> Algoritmen trenger omtrent 15 minutter for å etablere basislinjen din før den kan klassifisere noe.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Tips</span>
+                            <p>Bruk den samme <a href="/no/support/getting-started#placement">telefonplasseringen</a> hver natt, gjør rommet stille der du kan, og ta opp hele netter. Opptak på 6 timer eller mer gir algoritmen de mest fullstendige syklusene å jobbe med, og konsekvent plassering gjør nettene dine sammenlignbare.</p>
+                        </div>
+                        <p>Hvis hele tidslinjen var tom, ikke bare fasene, se <a href="/no/support/troubleshooting#blank-timeline">Feilsøking</a>.</p>
+                    </div>
+
+                    <div class="privacy-section" id="research">
+                        <h2>Forskningsreferanser</h2>
+                        <p>Søvnfaseklassifiseringsalgoritmen er informert av:</p>
+                        <ul class="research-references">
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/" target="_blank" rel="noopener noreferrer">Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages</a> (Schumann mfl., 2010). Demonstrerer at respiratoriske skaleringseksponenter er målbart forskjellige mellom søvnfaser: dyp søvn viser den mest regelmessige pusten, mens REM produserer mer variabel og uregelmessig pust. Disse distinksjonene informerer regelmessighetstreskler brukt til å klassifisere hver fase.</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/" target="_blank" rel="noopener noreferrer">Using Spectral Continuity to Extract Breathing Rate from Heart Rate and Its Applications in Sleep Physiology</a> (Orphanides mfl., 2024). Bekrefter at dyp søvn (N3) har den mest stabile og forutsigbare pusten av alle faser. Dette funnet brukes til å kreve konsekvent lav pustevariasjon for Dyp søvn-klassifisering, og til å forlate Dyp søvn når variasjonen øker.</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/" target="_blank" rel="noopener noreferrer">Sleep Stage Classification from Heart-Rate Variability</a>. Rapporterer omtrent 70 % samsvar med polysomnografi når søvn inndeles fra ett enkelt fysiologisk signal, sammenlignbart med pustemønster-regelmessighetstilnærmingen som brukes her.</li>
+                        </ul>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Relatert</h2>
+                        <ul>
+                            <li><a href="/no/support/sleep-score">Søvnpoengsummen din, forklart</a></li>
+                            <li><a href="/no/support/apple-watch">Apple Watch og wearables</a></li>
+                            <li><a href="/no/support/breathing-disruptions">Oppdagelse av pustestans</a></li>
+                            <li><a href="/no/support/deeper-sleep-data">Guide: Få dypere søvndata</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Flere støttesider"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/no/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Ta opp, se og forstå snorkingen, pusten og søvnen din – alt på enheten din.</p>
+                <p><a href="/no/support/">Støtte</a> &middot; <a href="/no/privacy">Personvern</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Lær</h4>
+                <ul>
+                    <li><a href="/no/support/getting-started">Kom i gang</a></li>
+                    <li><a href="/no/support/how-detection-works">Slik fungerer registrering</a></li>
+                    <li><a href="/no/support/timeline-and-playback">Tidslinje og avspilling</a></li>
+                    <li><a href="/no/support/breathing-disruptions">Pustestans</a></li>
+                    <li><a href="/no/support/sleep-stages">Søvnfaser</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Mer</h4>
+                <ul>
+                    <li><a href="/no/support/apple-watch">Apple Watch og helse</a></li>
+                    <li><a href="/no/support/export-and-sharing">Eksport og deling</a></li>
+                    <li><a href="/no/support/troubleshooting">Feilsøking</a></li>
+                    <li><a href="/no/support/android">Android</a></li>
+                    <li><a href="/no/support/faq">FAQ</a></li>
+                    <li><a href="/no/support/#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Alle rettigheter forbeholdt.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

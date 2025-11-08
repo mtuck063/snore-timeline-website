@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Как работает распознавание звуков — Поддержка Snore Timeline</title>
+    <meta name="title" content="Как работает распознавание звуков — Поддержка Snore Timeline">
+    <meta name="description" content="Узнайте, как Snore Timeline классифицирует звуки сна: анализ в реальном времени на устройстве, уровни децибел, цвета частот и советы по шуму.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ru/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/ru/support/how-detection-works">
+    <meta property="og:title" content="Как работает распознавание звуков — Поддержка Snore Timeline">
+    <meta property="og:description" content="Узнайте, как Snore Timeline классифицирует звуки сна: анализ в реальном времени на устройстве, уровни децибел, цвета частот и советы по шуму.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ru/support/how-detection-works">
+    <meta property="twitter:title" content="Как работает распознавание звуков — Поддержка Snore Timeline">
+    <meta property="twitter:description" content="Узнайте, как Snore Timeline классифицирует звуки сна: анализ в реальном времени на устройстве, уровни децибел, цвета частот и советы по шуму.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Поддержка", "item": "https://snoretimeline.com/ru/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Как работает распознавание", "item": "https://snoretimeline.com/ru/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Как работает распознавание звуков в Snore Timeline",
+      "description": "Узнайте, как Snore Timeline классифицирует звуки сна: анализ в реальном времени на устройстве, уровни децибел, цвета частот и советы по шуму.",
+      "url": "https://snoretimeline.com/ru/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ru/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Логотип Snore Timeline">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Поддержка</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">Открыть приложение
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Хлебные крошки">
+                    <a href="/ru/support/">Поддержка</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Как работает распознавание</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Запись</span>
+                    <h1 class="privacy-title">Как работает распознавание звуков</h1>
+                    <p class="privacy-updated">Что слушает приложение, как оно принимает решения и что означают числа.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>На этой странице</summary>
+                        <ul>
+                            <li><a href="#sound-types">Звуки, которые классифицирует приложение</a></li>
+                            <li><a href="#real-time">Анализ в реальном времени без семплирования</a></li>
+                            <li><a href="#confidence">Чувствительность и ложные срабатывания</a></li>
+                            <li><a href="#decibels">Децибелы и цвета частот</a></li>
+                            <li><a href="#loud-sound-detection">Обнаружение громких звуков</a></li>
+                            <li><a href="#background-noise">Как фоновый шум влияет на распознавание</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline превращает ночную запись сырого звука в помеченные события, которым можно доверять, — а доверять им проще, когда понимаешь, как они создаются. На этой странице объясняется конвейер классификации: какие звуки слушает приложение, как оно решает, что попадает на вашу шкалу времени, что означают числа в децибелах и оранжевые цвета волновой формы, и почему шумная комната меняет результаты.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>Звуки, которые классифицирует приложение</h2>
+                        <p>Вместо того чтобы считать каждый шум храпом, приложение сортирует услышанное по шести основным категориям:</p>
+                        <ul>
+                            <li><strong>Храп</strong> — главное событие. Каждое обнаружение отображается на шкале времени с уровнем громкости.</li>
+                            <li><strong>Всхрапывания</strong> — резкие вдохи, которые часто следуют за остановкой дыхания.</li>
+                            <li><strong>Кашель</strong> — отслеживается как отдельная категория, а не входит в храп.</li>
+                            <li><strong>Разговор во сне</strong>: речь, шёпот и бормотание.</li>
+                            <li><strong>Смех</strong> — потому что спящие люди действительно смеются.</li>
+                            <li><strong>Громкие звуки</strong> — внезапные шумы выше установленного вами порога (подробнее <a href="#loud-sound-detection">ниже</a>).</li>
+                        </ul>
+                        <p>Храп, всхрапывания и кашель образуют респираторную группу. Приложение также следит за паттернами дыхания в течение ночи: тихий промежуток около 10 и более секунд, за которым следует звук восстановления, заметно громче предшествующей тишины, помечается как нарушение дыхания. Подробнее об этом — в разделе <a href="/ru/support/breathing-disruptions">«Нарушения дыхания»</a>.</p>
+                        <p>Как приложение отличает храп от кашля? Каждый тип звука имеет узнаваемую акустическую сигнатуру. Храп несёт основную энергию в низком и среднем диапазоне частот — примерно от 50 Гц до 3 кГц, — что отделяет его от речи, кашля и фонового шума. Классификатор взвешивает как паттерн звука, так и частотные характеристики каждого аудиосегмента перед тем, как присвоить метку. Большинство фоновых шумов игнорируется.</p>
+                        <p>Ни одна система распознавания не является совершенной. Когда два звука накладываются или постельные принадлежности заглушают один из них, событие может попасть в неправильную категорию. Если метка кажется неверной, воспроизведите запись для этого момента и послушайте, что произошло. Всё здесь — аудиоанализ для личного понимания; приложение не диагностирует апноэ сна или любое другое состояние.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>Анализ в реальном времени без семплирования</h2>
+                    <figure class="support-diagram" aria-label="Схема: внутри вашего устройства микрофон передаёт данные в ИИ на устройстве, который маркирует каждый звук, и ничего никуда не отправляется">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">ТОЛЬКО НА ВАШЕМ УСТРОЙСТВЕ</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">Микрофон</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">слушает всю ночь</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">ИИ на устройстве</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">в реальном времени</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Храп</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Всхрапывание</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Кашель</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Разговор во сне</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Дыхание</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">Обнаруженные события</text>
+</svg>
+                        <figcaption>Звук классифицируется в момент возникновения — полностью на вашем телефоне. Каждый звук обрабатывается в реальном времени и получает метку; ничего не семплируется и никуда не отправляется.</figcaption>
+                    </figure>
+                        <p>Некоторые приложения экономят заряд с помощью семплирования: они периодически просыпаются, прослушивают момент и снова засыпают, а значит, пропускают всё, что происходит между сеансами. Snore Timeline непрерывно анализирует звук, используя фреймворк Apple Sound Analysis, работающий на вашем телефоне. Каждый звук обрабатывается по мере возникновения. Ничего не пропускается, не семплируется и не загружается.</p>
+                        <p>Непрерывный анализ имеет два следствия, которые вы заметите:</p>
+                        <ul>
+                            <li><strong>Распознавание начинается немедленно.</strong> Не требуется ни калибровки, ни настройки; первый храп ночи засчитывается так же, как сотый.</li>
+                            <li><strong>Шкала времени полна.</strong> Поскольку приложение никогда не прекращает слушать, тихий промежуток на шкале времени означает, что в комнате было тихо, — а сами паузы становятся данными для анализа дыхания и <a href="/ru/support/sleep-stages">фаз сна</a>.</li>
+                        </ul>
+                        <p>Всё это работает на устройстве. Ваш звук никогда не покидает телефон, а <a href="/ru/privacy">Политика конфиденциальности</a> объясняет, что это означает на практике.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>Чувствительность и ложные срабатывания</h2>
+                        <p>Не каждый звук проходит проверку. Приложение фиксирует звук как событие только тогда, когда совпадение с одной из его категорий достаточно сильное, — именно так скрипящий радиатор не заполняет вашу ночь мнимым храпом.</p>
+                        <p>Вы управляете строгостью этого порога с помощью настройки чувствительности, которая имеет пять уровней: <strong>Минимальная, Низкая, Сбалансированная, Высокая и Максимальная</strong>. По умолчанию установлена «Сбалансированная».</p>
+                        <ul>
+                            <li><strong>Минимальная</strong> фиксирует только явный громкий храп и игнорирует почти всё остальное. Выбирайте её для шумной комнаты или когда храп партнёра постоянно срабатывает как ваш.</li>
+                            <li><strong>Максимальная</strong> улавливает очень тихий храп, но также регистрирует больше фонового шума и чаще даёт ложные срабатывания.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Совет</span>
+                            <p>Дайте шкале времени подсказать, в какую сторону корректировать. Слишком много посторонних событий, которые при воспроизведении оказываются ничем? Снизьте чувствительность. Храп слышен в записи, но приложение его пропустило? Повысьте её. Для большинства людей «Сбалансированная» — хорошая отправная точка.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>Децибелы и цвета частот</h2>
+                        <p>Громкость отображается во всём приложении в дБ ЗД, по шкале примерно от 28 дБ — эталона почти полной тишины — до 105 дБ для чрезвычайно громкого звука. Читайте его как шкалу громкости: более высокие числа означают более громкие звуки. Приблизительный ориентир для вашего храпа:</p>
+                        <ul>
+                            <li><strong>Ниже примерно 40 дБ</strong>: едва слышный храп</li>
+                            <li><strong>40–48 дБ</strong>: лёгкий храп</li>
+                            <li><strong>48–56 дБ</strong>: отчётливый храп</li>
+                            <li><strong>56 дБ и выше</strong>: сильный храп</li>
+                        </ul>
+                        <p>Приложение отслеживает пиковые и средние уровни децибел для каждого эпизода. Эти числа предназначены для личного ориентира, а не для клинического измерения.</p>
+                        <p>Приложение определяет, какой микрофон используется, и корректирует показания, когда телефон воспроизводит звук — например, музыку или подкаст.</p>
+                        <p>Каждый звук — это смесь частот, а частота — это просто скорость вибрации воздуха, измеряемая в герцах (Гц). Низкие звуки вибрируют медленно; высокие — быстро. Нажмите «Играть» и перетащите ползунок, чтобы услышать это и посмотреть, как волна уплотняется:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="Низкие" data-band-mid="Средние" data-band-high="Высокие"
+                                aria-label="Перетащите ползунок, чтобы изменить высоту тона и увидеть, как более высокая частота вибрирует быстрее">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Гц</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="Перетащите, чтобы изменить высоту тона">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="Играть" data-label-stop="Стоп">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">Играть</span>
+                                </button>
+                                <span class="pitch-hint">Перетащите ползунок &mdash; более высокий тон вибрирует быстрее</span>
+                            </div>
+                            <figcaption>Это та же шкала, на которой построены полосы ниже: медленные вибрации — низкая полоса, быстрые вибрации — высокая полоса. Храп живёт внизу; едва слышный шелест выдоха — вверху. Для воспроизведения необходимы наушники или колонки.</figcaption>
+                        </figure>
+                        <p>Увеличьте волновую форму до максимума — и столбики разобьются на наложенные оттенки оранжевого, показывающие, где энергия каждого звука располагается по частотам:</p>
+                        <ul>
+                            <li><strong>Тёмно-оранжевый</strong>: низкие частоты, примерно 50–250 Гц, глубокое рокотание храпа.</li>
+                            <li><strong>Средний оранжевый</strong>: средние частоты, около 250–1500 Гц, обертоны и гласные звуки.</li>
+                            <li><strong>Ярко-оранжевый</strong>: высокие частоты, около 1500–8000 Гц, шипящие звуки вроде «с» в «ссс».</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="Воспроизведите реальную запись и следите за частотными полосами на волновой форме так, как их показывает приложение">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">Дыхание</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">Храп</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="Вдох" data-exhale="Выдох &mdash; больше энергии в высокой полосе" data-idle="Нажмите «Играть» и следите за каждым вдохом"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="Играть" data-label-stop="Пауза">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">Играть</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">Высокие</span>
+                                    <span class="wave-key" data-band="mid">Средние</span>
+                                    <span class="wave-key" data-band="low">Низкие</span>
+                                </span>
+                            </div>
+                            <figcaption>Реальные записи, раскрашенные так, как приложение рисует волновую форму: каждый столбик разделён на энергию низких, средних и высоких частот. Нажмите «Играть» и следите за линией. При дыхании смотрите, как яркая высокая полоса вспыхивает на каждом выдохе, пока звук остаётся тихим. При храпе доминирует тёмная низкая полоса. Пробел в ритме этой высокой полосы — то, что указывает на возможное <a href="/ru/support/breathing-disruptions">нарушение дыхания</a>.</figcaption>
+                        </figure>
+                        <p>Яркая высокочастотная полоса — самая важная для дыхания. Каждый выдох создаёт едва слышный шелест, похожий на тихое «сссс», — и этот шелест располагается в высокой полосе. Snore Timeline прислушивается к нему, чтобы следить за вашим дыханием в течение ночи, — именно это лежит в основе <a href="/ru/support/breathing-disruptions">обнаружения нарушений дыхания</a> и <a href="/ru/support/sleep-stages">оценки фаз сна</a>. Поэтому телефон, расположенный слишком далеко, или шумная комната ослабляют эти функции: шелест тихий, и он теряется первым.</p>
+                        <p>Детализация частот видна только при максимальном увеличении; при более широком масштабе столбики отображаются сплошным цветом. Раздел <a href="/ru/support/timeline-and-playback#reading-the-waveform">«Шкала времени и воспроизведение»</a> объясняет, как читать волновую форму целиком.</p>
+                        <div class="callout callout--tip"><span class="callout-label">Попробуйте</span><p>Увеличьте до максимума тихий отрезок вашей ночи и поищите короткие вспышки ярко-оранжевого цвета почти без цвета под ними. Это ваше дыхание, увиденное только через звук.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="Полный экран приложения" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Увеличено</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="Увеличенная волновая форма с наложенными оранжевыми частотными полосами во время эпизода храпа" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>Цвета частот при максимальном увеличении.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>Обнаружение громких звуков</h2>
+                        <p>Классификатор самостоятельно обрабатывает храп и разговор во сне. Обнаружение громких звуков предназначено для всего остального: оно создаёт эпизод всякий раз, когда звук превышает выбранный вами порог громкости, независимо от того, что это за звук. Это позволяет фиксировать шумы, которые классификатор не может назвать, — например, тихий разговор во сне, слишком тихий, чтобы регистрироваться как речь, скрежет зубов, звуки при движении или другие неопознанные ночные шумы.</p>
+                        <p>Порог по умолчанию составляет <strong>55 дБ</strong>. Чтобы выбрать подходящий для вашей комнаты порог:</p>
+                        <ol>
+                            <li>Начните запись и оставайтесь в тишине.</li>
+                            <li>Посмотрите на уровень дБ, который шкала времени показывает для базового шума вашей комнаты.</li>
+                            <li>Установите порог чуть выше этого уровня.</li>
+                        </ol>
+                        <p>В более тихой комнате можно использовать более низкий порог и фиксировать больше звуков.</p>
+                        <p>Вы также можете заметить, что звуки, которые вы ожидали увидеть как храп, попадают в категорию «Громкие звуки». Это происходит, когда фоновый шум маскирует паттерны дыхания, на которые ориентируется классификатор храпа; классификатору нужен чёткий сигнал для идентификации храпа, и когда базовый уровень шума в комнате превышает около 45 дБ, больше звуков регистрируется как сигналы громких звуков, а не как эпизоды храпа. В следующем разделе объясняется, что с этим делать.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>Как фоновый шум влияет на распознавание</h2>
+                        <p>Постоянный фоновый шум — кондиционер, вентилятор, транспорт, музыка, дождь или звуки океана — отслеживается отдельно и не создаёт события храпа на вашей шкале времени. Приложение распознаёт их как непрерывный фоновый шум, а не как отдельные эпизоды храпа, поэтому гудящий кондиционер сам по себе не заполнит вашу ночь ложным храпом.</p>
+                        <p>Реальная цена постоянного шума — маскировка. Высокий шумовой фон заглушает тихое дыхание и едва слышный храп, оставляя классификатору меньше сигнала для работы. Из этого следует два последствия:</p>
+                        <ul>
+                            <li>Тихие звуки становится труднее обнаружить вообще.</li>
+                            <li>В комнатах с базовым уровнем шума выше примерно <strong>45 дБ</strong> звуки, которые иначе классифицировались бы как храп, переходят в категорию «Громкие звуки».</li>
+                        </ul>
+                        <p>Для более чёткой классификации приглушите шум там, где это возможно. Обычные источники — вентиляторы и генераторы белого шума, системы вентиляции и очистители воздуха, открытые окна с видом на оживлённую улицу, работающие телевизоры или аудиоустройства. В более тихой комнате точность обнаружения в целом выше.</p>
+                        <p>Когда контролировать шум невозможно — например, в гостиничном номере — работайте с тем, что есть:</p>
+                        <ul>
+                            <li><strong>Положите телефон ближе к голове</strong>, чтобы звуки дыхания оставались слышимыми на фоне шума. Раздел <a href="/ru/support/getting-started#placement">«Начало работы»</a> подробно описывает размещение устройства.</li>
+                            <li><strong>Повысьте <a href="#confidence">чувствительность</a></strong>, чтобы приложение улавливало более тихие звуки на фоне фонового шума.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="Полный экран приложения" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Увеличено</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="Эпизод обнаруженных громких звуков с пиковыми и средними децибелами и значком «Сигналы громких звуков»" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>Ночь, записанная при шумовом фоне выше 45 дБ.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Связанные страницы</h2>
+                        <ul>
+                            <li><a href="/ru/support/episodes-and-events">Эпизоды и события</a></li>
+                            <li><a href="/ru/support/timeline-and-playback">Чтение шкалы времени и воспроизведение записи</a></li>
+                            <li><a href="/ru/support/breathing-disruptions">Нарушения дыхания</a></li>
+                            <li><a href="/ru/support/getting-started">Начало работы</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Другие страницы поддержки"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ru/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Записывайте, наблюдайте и понимайте свой храп, дыхание и сон — всё на вашем устройстве.</p>
+                <p><a href="/ru/support/">Поддержка</a> &middot; <a href="/ru/privacy">Конфиденциальность</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Изучить</h4>
+                <ul>
+                    <li><a href="/ru/support/getting-started">Начало работы</a></li>
+                    <li><a href="/ru/support/how-detection-works">Как работает распознавание</a></li>
+                    <li><a href="/ru/support/timeline-and-playback">Шкала времени и воспроизведение</a></li>
+                    <li><a href="/ru/support/breathing-disruptions">Нарушения дыхания</a></li>
+                    <li><a href="/ru/support/sleep-stages">Фазы сна</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Ещё</h4>
+                <ul>
+                    <li><a href="/ru/support/apple-watch">Apple Watch и здоровье</a></li>
+                    <li><a href="/ru/support/export-and-sharing">Экспорт и совместный доступ</a></li>
+                    <li><a href="/ru/support/troubleshooting">Устранение неполадок</a></li>
+                    <li><a href="/ru/support/android">Android</a></li>
+                    <li><a href="/ru/support/faq">FAQ</a></li>
+                    <li><a href="/ru/support/#contact">Контакт</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Все права защищены.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

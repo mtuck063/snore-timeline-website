@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>故障排查 - Snore Timeline 支持</title>
+    <meta name="title" content="故障排查 - Snore Timeline 支持">
+    <meta name="description" content="修复 Snore Timeline 常见问题：夜间录音中断、时间线空白、麦克风冲突、蓝牙、耗电过快、存储空间已满和应用重启。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/support/troubleshooting">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh/support/troubleshooting">
+    <meta property="og:title" content="故障排查 - Snore Timeline 支持">
+    <meta property="og:description" content="修复 Snore Timeline 常见问题：夜间录音中断、时间线空白、麦克风冲突、蓝牙、耗电过快、存储空间已满和应用重启。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh/support/troubleshooting">
+    <meta property="twitter:title" content="故障排查 - Snore Timeline 支持">
+    <meta property="twitter:description" content="修复 Snore Timeline 常见问题：夜间录音中断、时间线空白、麦克风冲突、蓝牙、耗电过快、存储空间已满和应用重启。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支持", "item": "https://snoretimeline.com/zh/support/" },
+        { "@type": "ListItem", "position": 2, "name": "故障排查", "item": "https://snoretimeline.com/zh/support/troubleshooting" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline 故障排查",
+      "description": "修复 Snore Timeline 常见问题：夜间录音中断、时间线空白、麦克风冲突、蓝牙、耗电过快、存储空间已满和应用重启。",
+      "url": "https://snoretimeline.com/zh/support/troubleshooting",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="troubleshooting" data-group="help">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 徽标">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支持</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">打开应用
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="面包屑导航">
+                    <a href="/zh/support/">支持</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">故障排查</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">帮助</span>
+                    <h1 class="privacy-title">故障排查</h1>
+                    <p class="privacy-updated">原因分析与解决方法。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本页内容</summary>
+                        <ul>
+                            <li><a href="#stopped-recording">录音在夜间中断</a></li>
+                            <li><a href="#blank-timeline">醒来后时间线为空</a></li>
+                            <li><a href="#focus-setup">防止来电和提醒打断录音</a></li>
+                            <li><a href="#mic-busy">状态消息说明</a></li>
+                            <li><a href="#bluetooth">蓝牙与 AirPods</a></li>
+                            <li><a href="#battery">电池与充电</a></li>
+                            <li><a href="#storage-full">存储空间已满</a></li>
+                            <li><a href="#detection-off">检测结果似乎有误</a></li>
+                            <li><a href="#quiet-audio">音频比预期更安静</a></li>
+                            <li><a href="#restart">重启应用</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">大多数录音问题可归结为几个原因：其他应用占用麦克风、电池耗尽或存储空间不足。本页将每种常见症状与其背后的原因和解决方法一一对应，让你在下次录音前知道该如何调整。</p>
+
+                    <div class="privacy-section" id="stopped-recording">
+                        <h2>录音在夜间中断</h2>
+                        <p>最常见的原因是其他应用占用了音频。当其他应用播放声音或抢占麦克风时，Snore Timeline 会暂停录音，例如音乐、播客、电话或系统闹钟。此时你会看到<strong>录音已暂停</strong>，应用会自动尝试恢复。它会以 1、3、7、12 和 20 秒的递增间隔最多重试五次。如果五次之后仍无法重新获得麦克风，则会显示<strong>无法恢复录音</strong>并停止。</p>
+                        <p>其他原因：</p>
+                        <ul>
+                            <li><strong>低电量模式或电池电量过低。</strong>应用会整夜保持麦克风活跃，若电池耗尽，录音可能提前结束。电量低时，iOS 也可能关闭后台应用。</li>
+                            <li><strong>录音过程中存储空间耗尽。</strong>当设备没有足够空间保存音频时，会显示<strong>存储已满 - 录音已停止</strong>。</li>
+                            <li><strong>其他音频应用</strong>未完全关闭，在夜间开始播放。</li>
+                        </ul>
+                        <p>减少夜间中断的方法：</p>
+                        <ul>
+                            <li>保持手机<strong>充电</strong>，将其<strong>面朝下</strong>放置于距你 30 至 60 厘米处。面朝下可关闭支持全天候显示屏的 iPhone 的屏幕，而充电则能防止电量不足导致录音提前结束。</li>
+                            <li>在睡眠时段开启<strong>睡眠专注模式或勿扰模式</strong>，让来电和通知保持静音，避免抢占麦克风。</li>
+                            <li>开始录音前<strong>完全关闭其他音频应用</strong>。</li>
+                            <li>确认有足够的可用空间，或设置存储限制（参见<a href="/zh/support/storage-and-quality#freeing-space">存储与录音质量</a>）。</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>短暂的中断通常能通过五次恢复尝试自动修复。上述习惯对于持续时间超过应用等待上限的中断最为重要。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="blank-timeline">
+                        <h2>醒来后时间线为空</h2>
+                        <p>时间线为空通常意味着录音从未捕获到音频，或在夜间早期就停止了。请逐项排查以下内容：</p>
+                        <ol>
+                            <li><strong>麦克风权限。</strong>在 iOS 设置 &gt; Snore Timeline &gt; 麦克风中确认已授权。若未授权，应用无法录音，并会显示<strong>麦克风不可用。请检查权限。</strong></li>
+                            <li><strong>录音延迟。</strong>在延迟时间窗口内不会录制任何音频，该时间最长可设置为 180 分钟。若录音在此期间中断或停止，则不会保存任何内容。</li>
+                            <li><strong>可用空间。</strong>若存储空间不足，应用不会开始录音，并显示<strong>无法录音 - 仅剩 [X]MB 可用空间</strong>。</li>
+                            <li><strong>其他应用占用麦克风。</strong>若其他应用一直持有麦克风，录音可能从一开始就被阻止了。</li>
+                        </ol>
+                        <p>放置位置也很重要：将手机放在距头部 30 至 60 厘米处，以便清晰捕捉你的声音。回顾应用显示的任何状态消息，然后在下次录音前确认权限和可用空间。你也可能只是经历了一个安静的夜晚，没有太多声音可供检测，这是正常结果而非故障。</p>
+                    </div>
+
+                    <div class="privacy-section" id="focus-setup">
+                        <h2>防止来电和提醒打断录音</h2>
+                        <p>每当其他应用或系统播放音频时，Snore Timeline 就会暂停录音，包括电话和某些提醒。为保持夜间录音不受干扰：</p>
+                        <ul>
+                            <li>在睡眠时段开启<strong>睡眠专注模式或勿扰模式</strong>，让来电和通知保持静音，避免抢占麦克风。</li>
+                            <li>开始录音前完全关闭音乐、播客和视频应用。</li>
+                        </ul>
+                        <p>如果确实发生了中断，应用会显示<strong>录音已暂停</strong>并最多尝试恢复五次，因此短暂的中断通常可以自动恢复。可选的就寝提醒被标记为时效性通知，因此在睡眠专注模式下仍可出现在锁定屏幕上。该提醒仅提示你开始录音，不会打断已在进行中的录音。<a href="/zh/support/getting-started#through-the-night">入门指南</a>页面涵盖了新安装时的相同设置步骤。</p>
+                    </div>
+
+                    <div class="privacy-section" id="mic-busy">
+                        <h2>状态消息说明</h2>
+                        <p>Snore Timeline 会显示简短的状态消息，让你了解当前发生的情况：</p>
+                        <ul>
+                            <li><strong>录音已暂停</strong>：其他应用或来电占用了音频，录音已临时停止。</li>
+                            <li><strong>正在尝试恢复录音……</strong>和<strong>正在重试恢复……</strong>：应用正在尝试重新获取麦克风。</li>
+                            <li><strong>录音已恢复！</strong>：恢复成功。</li>
+                            <li><strong>无法恢复录音</strong>：五次尝试后放弃。</li>
+                            <li><strong>麦克风被占用 - 请关闭其他应用</strong>：其他应用正在占用麦克风，请关闭该应用后重试。</li>
+                            <li><strong>被通话或音频阻止</strong>：电话或系统音频（如闹钟）正在使用麦克风。</li>
+                            <li><strong>存储已满 - 录音已停止</strong>和<strong>无法录音 - 仅剩 [X]MB 可用空间</strong>：两者均表示需要释放更多存储空间。</li>
+                            <li><strong>已切换至 [设备名称]</strong>：你的音频输入发生了变化，例如切换到耳机或蓝牙麦克风，录音未中断并继续进行。</li>
+                        </ul>
+                        <p>这里有一个常见疑问：如果录音被中断后又恢复，录音延迟会重新计时吗？不会。延迟是一次性的入睡计时器，仅在录音开始时生效。中断后，应用会立即重新开始捕获音频，而不会再次进入延迟静默期。</p>
+                    </div>
+
+                    <div class="privacy-section" id="bluetooth">
+                        <h2>蓝牙与 AirPods</h2>
+                        <p>如果开始录音时已连接蓝牙麦克风（如 AirPods），Snore Timeline 会自动检测并使用它。如果夜间输入设备发生切换——无论是内置麦克风、有线耳机还是蓝牙麦克风——应用会显示<strong>已切换至 [设备名称]</strong>，录音将继续进行而不会中断。</p>
+                        <p>整夜使用时需注意以下两点：</p>
+                        <ul>
+                            <li><strong>蓝牙耳机有自己的电池</strong>，电量耗尽后可能断开连接，从而导致输入设备切换。</li>
+                            <li><strong>AirPods 戴在耳朵里或附近</strong>，与手机麦克风相比，声音的响度和清晰度有所不同。</li>
+                        </ul>
+                        <p>为获得最稳定的整夜录音效果，建议将手机面朝下放置于距你 30 至 60 厘米处，使用内置麦克风进行录音。这是检测算法针对的标准放置位置，能够最稳定地捕捉呼吸声。</p>
+                    </div>
+
+                    <div class="privacy-section" id="battery">
+                        <h2>电池与充电</h2>
+                        <p>整夜录音确实会消耗电量，因为麦克风在你睡觉时始终保持活跃。对于许多 iPhone 来说，屏幕是最大的耗电因素：</p>
+                        <ul>
+                            <li><strong>面朝下可减少一半耗电量。</strong>支持全天候显示屏的 iPhone 整夜面朝上放置的耗电量约为面朝下放置的两倍，因为面朝下会关闭屏幕。</li>
+                            <li><strong>录音时充电完全正常。</strong>无论手机是否插电，应用都会在屏幕锁定的情况下在后台继续录音，因此整夜充电可以保持电量充足。</li>
+                        </ul>
+                        <p>使用足够长的充电线，这样在充电的同时可以将手机放在距你 30 至 60 厘米处。如果录音完全没有内容而不是提前停止，还需检查麦克风权限和可用存储空间，因为任何一项都可能阻止录音开始。</p>
+                    </div>
+
+                    <div class="privacy-section" id="storage-full">
+                        <h2>存储空间已满</h2>
+                        <p>Snore Timeline 需要可用空间来保存音频。录音开始时，如果空间不足，会显示<strong>无法录音 - 仅剩 [X]MB 可用空间</strong>，录音将无法开始。如果录音过程中空间耗尽，会显示<strong>存储已满 - 录音已停止</strong>。应用至少需要约 100 MB 的可用空间才能开始录音。</p>
+                        <p>预防方法：</p>
+                        <ul>
+                            <li>设置<strong>存储限制</strong>（1、2、4 或 8 GB），当达到上限时，应用会自动删除最早夜晚的音频。</li>
+                            <li>开启<strong>保留历史记录</strong>，这样只会删除音频文件，而片段、睡眠分析和时间线历史记录会保留。</li>
+                            <li>开启<strong>仅存储片段</strong>，以去除静音部分，只保留检测到片段的音频段落。</li>
+                            <li>降低录音质量以缩小文件大小，并释放 iPhone 的常规存储空间。</li>
+                        </ul>
+                        <p><a href="/zh/support/storage-and-quality#freeing-space">存储与录音质量</a>页面详细介绍了上述每项设置。</p>
+                    </div>
+
+                    <div class="privacy-section" id="detection-off">
+                        <h2>检测结果似乎有误</h2>
+                        <p>Snore Timeline 将咳嗽作为独立类别进行检测，与打鼾和喘气并列，因此咳嗽通常会被标记为咳嗽而非打鼾。检测基于声学模式和置信度分数，因此偶尔会有声音被归入错误类别，尤其是两个声音重叠或被床上用品遮挡时。误分类是自动声音检测的正常局限，并不意味着录音本身出现了问题。</p>
+                        <p>如果某个事件看起来有误，可以回放该时刻的音频，听听实际发生了什么。提高灵敏度可以捕捉更多微弱声音，但也会带来更多误检；降低灵敏度则只保留更清晰、更响亮的事件。<a href="/zh/support/how-detection-works#confidence">检测原理</a>页面解释了每个标签背后的置信度阈值。</p>
+                    </div>
+
+                    <div class="privacy-section" id="quiet-audio">
+                        <h2>音频比预期更安静</h2>
+                        <p>有几种情况会导致回放声音更安静或更模糊：</p>
+                        <ul>
+                            <li><strong>录音质量。</strong>在基础（打鼾专注）质量下，较安静的鼾声听起来更模糊，较轻的声音细节更少，因为该设置会压缩录音以专注于打鼾的低频部分。在设置中切换到标准或高保真模式可以捕捉更多细节和清晰度。</li>
+                            <li><strong>麦克风距离。</strong>手机离你越远，录音越微弱。将手机保持在距你约 30 至 60 厘米处，并确保麦克风没有被遮挡。</li>
+                        </ul>
+                        <p>关于开始录音还有一点需要注意：如果录音已在进行中（会显示<strong>录音已在进行中</strong>）、存储空间不足或麦克风访问权限已关闭，Siri 或小组件将无法开始新的录音。<a href="/zh/support/siri-and-shortcuts#siri">Siri、快捷指令和小组件</a>页面介绍了这些启动条件。</p>
+                    </div>
+
+                    <div class="privacy-section" id="restart">
+                        <h2>重启应用</h2>
+                        <p>当应用出现异常时，强制退出并重新打开：</p>
+                        <ol>
+                            <li>从屏幕底部向上轻扫并在中间暂停，打开应用切换器。在有 Home 键的旧款 iPhone 上，请双击 Home 键。</li>
+                            <li>在 Snore Timeline 卡片上向上轻扫以关闭它。</li>
+                            <li>点按主屏幕上的图标重新启动，然后开始新的录音。</li>
+                        </ol>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">仍然遇到问题？</span>
+                            <p>如果问题持续存在，请通过<a href="/zh/support/#contact">支持中心</a>联系我们。请提供你的<strong>手机型号和 iOS 版本</strong>、问题发生时<strong>你正在做什么</strong>，以及你看到的<strong>任何错误消息</strong>。这三项信息能帮助开发者快速重现问题。</p>
+                        </div>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>相关内容</h2>
+                        <ul>
+                            <li><a href="/zh/support/getting-started#through-the-night">整夜稳定录音</a></li>
+                            <li><a href="/zh/support/storage-and-quality">存储与录音质量</a></li>
+                            <li><a href="/zh/support/siri-and-shortcuts">Siri、快捷指令和小组件</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支持页面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>在你的设备上录制、查看并了解你的鼾声、呼吸状况和睡眠情况。</p>
+                <p><a href="/zh/support/">支持</a> &middot; <a href="/zh/privacy">隐私政策</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学习</h4>
+                <ul>
+                    <li><a href="/zh/support/getting-started">入门指南</a></li>
+                    <li><a href="/zh/support/how-detection-works">检测原理</a></li>
+                    <li><a href="/zh/support/timeline-and-playback">时间线与回放</a></li>
+                    <li><a href="/zh/support/breathing-disruptions">呼吸中断</a></li>
+                    <li><a href="/zh/support/sleep-stages">睡眠阶段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh/support/apple-watch">Apple Watch 与健康</a></li>
+                    <li><a href="/zh/support/export-and-sharing">导出与分享</a></li>
+                    <li><a href="/zh/support/troubleshooting">故障排查</a></li>
+                    <li><a href="/zh/support/android">Android</a></li>
+                    <li><a href="/zh/support/faq">常见问题</a></li>
+                    <li><a href="/zh/support/#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 保留所有权利。</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>
