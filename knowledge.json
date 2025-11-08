@@ -1,0 +1,682 @@
+[
+  {
+    "title": "How do I start my first recording?",
+    "text": "Tap the microphone button at the top of the waveform view to begin recording. It sits on a green circle when idle. When you want to stop, tap the same button, which turns into a red stop button while recording. Before your first recording, Snore Timeline needs permission to use the microphone, so allow access when prompted. The record button stays disabled until microphone permission is granted. You also need at least 500 MB of free storage to start a new recording. If space is low, the app shows how many megabytes you have free and prevents recording until you free some up."
+  },
+  {
+    "title": "I just installed Snore Timeline, what do all these things on the screen mean?",
+    "text": "The main screen shows a waveform timeline of your recording. At the top is the microphone button you tap to start recording (green circle), which becomes a red stop button while recording. Above the waveform is the date for the night you are viewing; tap it to open a calendar and jump to any recorded night, where nights with recorded snoring are marked with a dot. The waveform itself plots sound over time, and you can change the zoom to view it in 1-second, 5-second, 1-minute, 10-minute, or 1-hour intervals. Snore Timeline measures loudness in dB SPL (decibels), with a maximum of 105 dB, so think of it like a volume meter where higher numbers mean louder sounds. Snoring sounds that happen close together are grouped into episodes, and a new episode begins after a 30-second gap with no snoring."
+  },
+  {
+    "title": "Where should I put my phone when I go to sleep?",
+    "text": "Keep your phone about 1 to 2 feet away from you for the best results. The closer the phone is, the louder and clearer sounds are captured. Distance reduces accuracy, and breathing sounds in particular are hard to pick up from far away. Try to reduce background noise in the room too, since fans, white noise machines, HVAC, air purifiers, open windows, TVs, or audio left playing can mask the breathing patterns the app listens for. When the room sits above 45 dB at baseline, more sounds tend to be detected as Loud Sound signals rather than snoring episodes, so a quieter room gives more accurate detection."
+  },
+  {
+    "title": "Do I have to leave the app open all night for it to work?",
+    "text": "Start a recording before you go to sleep by tapping the microphone button, then leave your phone running. Snore Timeline records continuously through the night and saves your audio. If a phone call or another audio interruption stops the recording, the app tries to resume automatically several times. If another app starts playing audio, the recording mode switches so it does not interfere with that audio, and if you change your microphone (for example switching to a Bluetooth device), recording restarts on the new device. The main thing is to start the recording and keep the phone powered and nearby."
+  },
+  {
+    "title": "What's the best way to set this up to record my partner and not me?",
+    "text": "Place the phone about 1 to 2 feet from the person you want to record, since the app captures the loudest, clearest sound from whatever is closest. Position it on their side of the bed rather than centered or on your side. Keep the room quiet by reducing background noise from fans, white noise machines, HVAC, air purifiers, open windows, and any TVs or audio left playing, because a quieter room gives more accurate detection. Note that Snore Timeline records all the audio in the room, so it cannot fully separate two sleepers; placing the phone closest to the person you want to track gives the best chance of capturing their sounds."
+  },
+  {
+    "title": "Can I delay recording so it doesn't capture me falling asleep?",
+    "text": "Yes. Snore Timeline has a Recording Delay that waits a set amount of time before it actually starts listening, giving you time to fall asleep first. Audio during the delay period is not recorded. By default the delay is Off, so recording starts immediately. You can turn it on in Settings under Recording Delay and choose a wait time in 5-minute steps, up to three hours. When a delay is active, the app counts down and begins listening once the timer ends."
+  },
+  {
+    "title": "Is there an easier way to start recording each night?",
+    "text": "You have two hands-free options. You can schedule a bedtime recording reminder in Settings under Recording Reminder, which sends a notification at your chosen time; it is marked time-sensitive so it appears on your lock screen even during Sleep Focus, and tapping it starts recording with one tap. This is the most reliable way to start at a consistent time each night. You can also use Siri by saying \"Hey Siri, start recording with Snore Timeline\" or \"Hey Siri, stop recording in Snore Timeline.\" Siri works from your lock screen, CarPlay, HomePod, or Apple Watch."
+  },
+  {
+    "title": "What is an episode and what counts as a breathing disruption?",
+    "text": "An episode is a group of snoring signals that happen close together. If no snoring is detected for 30 seconds, the current episode ends, and a new episode starts the next time snoring is detected. A breathing disruption is flagged only when three things happen in sequence: breathing sounds are detected in the minute before, there is complete silence for 10 or more seconds, and that silence is then broken by a snoring signal. Snore Timeline analyzes audio only. These results are for your own insight or for discussing with a doctor, and the app does not diagnose sleep apnea or any medical condition."
+  },
+  {
+    "title": "How do I find a specific night or jump to an episode in the timeline?",
+    "text": "Tap the date shown above the waveform to open the calendar, then pick any night you have recorded; nights with recorded snoring are marked with a dot. To change how much of the night you see at once, switch the waveform zoom between 1-second, 5-second, 1-minute, 10-minute, and 1-hour intervals. To jump to a specific snoring episode, long press on the timeline and the app moves to the nearest episode in your episode list."
+  },
+  {
+    "title": "What happens if my phone runs out of storage while recording?",
+    "text": "Snore Timeline needs at least 500 MB of free storage to start a new recording, and it will not begin if you are below that, showing how many megabytes you have free so you know how much space is available. If your phone runs out of storage in the middle of a recording, the recording automatically stops and the app shows \"Storage full - recording stopped.\" To save space, you can enable Episode-Only Storage in Settings, which automatically removes silent portions when a recording ends so only the segments with detected episodes are kept. You can also manually trim past recordings from Settings."
+  },
+  {
+    "title": "How does the app know the difference between snoring and other noises?",
+    "text": "Snore Timeline runs on-device sound analysis that sorts the audio it picks up during the night into categories rather than treating every noise as a snore. It listens specifically for snoring, gasps, coughs, sleep talking, laughter, and loud sounds, and it ignores most ambient noise. Each detection comes with a confidence score, and the app only logs a sound as an event when that score clears the sensitivity threshold you have set. Snoring has a recognizable acoustic signature, with most of its energy in the low and mid frequency range, which helps separate it from other sounds. No detection system is perfect, so you may occasionally see a misclassified event, but the category system is designed to keep your timeline focused on real snoring and breathing events. This is for personal insight only and is not a medical diagnosis."
+  },
+  {
+    "title": "Will the app pick up my partner's snoring instead of mine?",
+    "text": "Snore Timeline records whatever sound reaches the microphone, so it cannot tell whose body a snore came from. If your partner snores loudly and is close to the phone, those sounds can show up on your timeline. For the cleanest results, place the phone on your side of the bed, close to your head (for example on a nightstand or pillow next to you) and farther from your partner. Because sound gets quieter with distance, keeping the mic close to you and using a lower sensitivity setting helps the app favor your snoring over a partner across the bed. Listening back to the recorded audio for any episode is the surest way to confirm who a given snore belongs to."
+  },
+  {
+    "title": "Why did the app mark a cough as a snore, or miss something?",
+    "text": "Snore Timeline detects coughs as their own category, alongside snoring and gasps, so a cough is normally labeled as a cough rather than a snore. That said, detection is based on acoustic patterns and confidence scores, so an occasional sound can land in the wrong category, especially when two sounds overlap or a sound is muffled by bedding. If you see an event that looks off, play back the audio for that moment to hear what actually happened. Raising the sensitivity catches more faint sounds but also lets in more false detections, while lowering it keeps only clearer, louder events. Misclassifications are a normal limitation of automated sound detection and do not mean anything is wrong with your recording."
+  },
+  {
+    "title": "Does the app detect gasps and choking-type sounds too?",
+    "text": "Yes. Along with snoring, Snore Timeline detects gasps and coughs as part of its respiratory sound categories, and it also flags breathing disruptions. A breathing disruption is logged when the app hears a silent stretch of about 10 or more seconds followed by a recovery sound that is clearly louder than the silence before it. These pauses and recovery sounds appear on your timeline so you can review them and listen back. Important: this is audio analysis for personal awareness only. Snore Timeline does not diagnose sleep apnea or any other condition. If you notice frequent pauses or gasping, share the recordings with a doctor rather than relying on the app for any medical conclusion."
+  },
+  {
+    "title": "Will a loud hotel air conditioner or fan mess up the detection?",
+    "text": "Constant background noise like an air conditioner, fan, traffic, music, rain, or ocean is tracked separately and does not create snore events on your timeline. The app recognizes these as continuous ambient noise rather than discrete snoring, so a humming AC by itself will not fill your night with false snores. The real effect of loud, steady noise is masking: it can drown out quiet breathing and faint snores, making them harder to detect. If you are sleeping somewhere noisy, try moving the phone closer to your head and, if needed, raising the sensitivity so the app can still pick up softer sounds over the background hum."
+  },
+  {
+    "title": "What sounds can Snore Timeline detect?",
+    "text": "Snore Timeline listens for six main sound categories during sleep: snoring, gasps, coughs, sleep talking, laughter, and loud sounds. Snoring, gasps, and coughs are grouped as respiratory sounds, sleep talking is its own type, and loud sounds capture sudden noises above a threshold you can set. Breathing patterns are also monitored to help identify pauses and recovery sounds. Each detected sound is timestamped and placed on your interactive timeline so you can scrub through the night and play back the audio for any moment. Everything is for personal insight, not medical diagnosis."
+  },
+  {
+    "title": "How do I make the app more or less sensitive to snoring?",
+    "text": "Snore Timeline has an adjustable sensitivity setting with five tiers: Minimal, Low, Balanced, High, and Maximum. Balanced is the default. At Minimal, the app captures only clear, loud snoring and ignores almost everything else, which is good for a noisy room or a snoring partner. At Maximum, it catches very faint snores but also picks up more background noise and is more likely to log false detections. If your timeline has too many stray events, lower the sensitivity; if it is missing snores you can hear in the recordings, raise it. Balanced works well for most people as a starting point."
+  },
+  {
+    "title": "How does the app group snores into episodes?",
+    "text": "Instead of listing every single snore as a separate entry, Snore Timeline groups related sounds into episodes. Events that occur within 30 seconds of each other are treated as one continuous episode, and a gap longer than 30 seconds starts a new one. Within an episode, a quiet stretch of more than 10 seconds is tracked as a significant gap so you can see pauses in the activity. Episodes are also labeled by type, such as respiratory (snoring, gasps, coughs), sleep talking, loud sounds, or a mix, which makes it easier to scan the night at a glance and jump straight to the parts you want to review."
+  },
+  {
+    "title": "What do the decibel numbers mean, and how loud is my snoring?",
+    "text": "Snore Timeline shows loudness on a scale from about 28 dB, used as a reference for near-silence, up to 105 dB for an extremely loud sound. As a rough guide, the app describes quieter snoring below about 40 dB as faint, snoring around 40 to 48 dB as light, around 48 to 56 dB as audible, and 56 dB and above as heavy. When the app reports an average loudness for an episode, it uses power averaging rather than a simple average so the number reflects overall loudness more accurately, since a few loud peaks carry more weight than a plain average would give them. These numbers are for personal reference, not a clinical measurement."
+  },
+  {
+    "title": "Does using AirPods or a Bluetooth mic change accuracy?",
+    "text": "Snore Timeline works with the phone's built-in microphone as well as Bluetooth and external mics, and it automatically detects and reports which microphone is in use. Because Bluetooth microphones have different hardware characteristics, the app applies a calibration adjustment to their loudness readings so the decibel numbers stay consistent with the built-in mic. It also adjusts loudness readings when your phone is playing audio, such as music or a podcast, to keep the measurements calibrated. By default the app uses the most accurate microphone input mode, and it briefly switches modes only when another audio app is playing so it does not turn that app down."
+  },
+  {
+    "title": "Does recording quality affect detection, and how much storage does it use?",
+    "text": "Snore Timeline offers three recording quality levels. Basic is tuned specifically for snoring frequencies and uses the least storage, around 8 MB per hour. Standard captures full speech detail and uses about 15 MB per hour. High Fidelity records uncompressed audio across the widest frequency range and uses roughly 25 MB per hour. For most people focused on snoring, Basic captures the relevant sounds while keeping files small; choose a higher level if you want clearer playback of speech or fine detail. Snore detection works across all three levels. All recordings stay on your device and are never uploaded."
+  },
+  {
+    "title": "How long should I record to get useful results?",
+    "text": "For meaningful patterns, aim for at least about four hours of sleep in a session. Shorter recordings still work, but they capture less of the night and give the app less to work with, so a single short nap may not be very representative. A full night gives the clearest picture of how your snoring and breathing change over time. Remember that everything Snore Timeline shows is for personal awareness and for sharing with a doctor if you choose, not for diagnosing any sleep condition on its own."
+  },
+  {
+    "title": "What counts as one snoring episode versus another?",
+    "text": "An episode is a group of snoring signals that happen close together. Snore Timeline keeps adding signals to the same episode as long as snoring continues. If no snoring is detected for 30 seconds, the current episode ends. The next time snoring is detected, a new episode begins. So the gap between sounds, not the total length, is what separates one episode from the next."
+  },
+  {
+    "title": "Why are two snores 20 seconds apart counted as the same episode?",
+    "text": "Snore Timeline only ends an episode after 30 full seconds with no detected snoring. Two snores 20 seconds apart fall inside that window, so they stay grouped in the same episode. The gap has to reach 30 seconds before the app closes the episode and opens a new one for the next snore. This keeps a single stretch of on-and-off snoring as one episode instead of splitting it into many tiny ones."
+  },
+  {
+    "title": "How many times did I snore last night?",
+    "text": "Snore Timeline counts a snoring signal every time it hears a snoring sound, so more signals mean more snoring activity. Open the night you want to review and check the per-night totals and the episode list. Each episode shows its own signal count, and gasps and coughs are tracked as separate counts alongside the main snoring count. An episode that ended up with no classified sounds is labeled a quiet period."
+  },
+  {
+    "title": "How do I find the loudest moments without scrubbing through everything?",
+    "text": "You don't have to scrub the whole night. Open the episode list to jump straight to detected episodes, then tap one to see its details and play it back. On the timeline, long press anywhere to jump to the nearest episode, and the episode list scrolls to the one closest to where you held. Each episode also shows volume in dB, so you can scan for the loudest stretches. Sounds are measured in dB SPL up to a maximum of 105 dB."
+  },
+  {
+    "title": "What are the different episode types?",
+    "text": "Snore Timeline sorts episodes into four types. Respiratory episodes cover snoring, gasps, coughs, and breathing disruptions. Sleep Talking episodes cover speech detected during sleep. Loud Sound episodes capture isolated loud sounds, often from your environment. Mixed episodes contain both respiratory sounds and sleep talking together. An episode with no classified sounds shows as a quiet period."
+  },
+  {
+    "title": "What is a snoring signal?",
+    "text": "Every time Snore Timeline hears a snoring sound, it counts as one snoring signal. More signals mean more snoring. Signals are the building blocks of episodes: the app groups signals that happen close together into a single episode, and a 30-second gap with no snoring ends the current episode."
+  },
+  {
+    "title": "How does sleep talking detection work?",
+    "text": "Snore Timeline listens for speech and whispers while you sleep and marks detected moments as sleep talking events. Like snoring, these events are grouped into episodes, and they appear with a cream-colored indicator on the timeline. Tap a sleep talking event in the episode view to play back what was recorded. You can turn snoring detection and sleep talking detection on or off independently in Settings. For whispers and mumbles too quiet to be classified as speech, enable Loud Sound Detection."
+  },
+  {
+    "title": "What is Loud Sound Detection and how do I set the threshold?",
+    "text": "Loud Sound Detection creates an episode whenever a sound goes above a volume threshold you choose, so it can catch sounds that aren't classified as snoring or speech, such as whispered sleep talking, sounds made while moving, or other unidentified nighttime noises. The default threshold is 55 dB. To pick a good threshold, start a recording, look at the dB level the timeline shows for your room's baseline noise, then set the threshold just above that level. A quieter room lets you use a lower threshold and catch more."
+  },
+  {
+    "title": "Do gasps and coughs get counted too?",
+    "text": "Yes. Snore Timeline classifies snoring, gasps, and coughs as respiratory events and groups them together in episodes. Gasps and coughs are tracked as their own separate counts within an episode, in addition to the main snoring count, so you can see what made up each respiratory episode."
+  },
+  {
+    "title": "Why are some of my sounds labeled Loud Sound instead of snoring?",
+    "text": "Background noise can mask the breathing patterns the snoring classifier listens for, and the classifier needs a clear signal to identify snoring. When a room sits above about 45 dB at baseline, more sounds tend to land as Loud Sound signals rather than snoring episodes. Reducing common noise sources like fans and white noise machines, HVAC and air purifiers, open windows facing traffic, and TVs or audio left playing helps the app classify snoring more accurately. A quieter room gives more accurate detection overall."
+  },
+  {
+    "title": "What do the frequency colors on the waveform mean?",
+    "text": "When you zoom in, the waveform bars show how sound energy is spread across frequencies using stacked shades of orange. Darker shades are lower frequencies and brighter shades are higher frequencies. Snoring is mostly between 50 Hz and 3 kHz: low frequencies (50 to 250 Hz) are the deep rumble, mid frequencies (250 to 1500 Hz) are harmonics and vowel sounds, and high frequencies (1500 to 8000 Hz) are sibilant sounds like \"sss\" and \"tsss\". Brighter orange during inhales and exhales is normal breathing. Enable Loud Sound Detection in Settings to see frequency bands on the waveform."
+  },
+  {
+    "title": "Can Snore Timeline tell me if I have sleep apnea?",
+    "text": "No. Snore Timeline analyzes audio only and does not diagnose sleep apnea or any other medical condition. Episodes, signals, breathing disruptions, and loud sound detection are meant for personal insight and for sharing objective recordings with a doctor, not as a medical diagnosis."
+  },
+  {
+    "title": "Can Snore Timeline detect when I stop breathing during the night?",
+    "text": "Snore Timeline listens for pauses in your breathing using your phone's microphone. It flags a breathing disruption when three things happen in sequence: it hears consistent breathing for a full minute, then complete silence lasting 10 seconds or more, and then a recovery sound (a gasp, snort, or sudden loud breath) that breaks the silence. Each event is logged with its timestamp, silence duration, and recovery strength. Keep in mind this is acoustic detection only. It analyzes sound, so it can flag pauses that come with audible breathing and recovery, but it cannot confirm what is happening inside your airway. The results are for personal insight and for discussing with a healthcare provider, not a diagnosis."
+  },
+  {
+    "title": "What do the breathing disruption marks on the timeline mean?",
+    "text": "Breathing disruption indicators mark moments where Snore Timeline heard consistent breathing, then a silent gap of 10 seconds or more, followed by a recovery sound. You can tap a breathing disruption event in the nightly summary to jump straight to that moment on the recording timeline and listen to what happened. Every event is logged with its silence duration and the strength of the recovery breath."
+  },
+  {
+    "title": "Does Snore Timeline diagnose sleep apnea?",
+    "text": "No. Snore Timeline does not diagnose sleep apnea or any medical condition. It analyzes audio only and identifies patterns consistent with disrupted breathing, which is useful for tracking trends over time. It cannot measure blood oxygen, airflow, or chest movement, which are key factors in a professional sleep assessment. Use the results for your own insight and to start a conversation with a healthcare provider. If your results suggest disrupted breathing, or you experience daytime sleepiness, morning headaches, or a partner reports pauses in your breathing, consult a healthcare provider for a professional evaluation."
+  },
+  {
+    "title": "How long does a pause have to be before it's flagged as a breathing disruption?",
+    "text": "A silent gap has to last 10 seconds or more to be flagged, and it only counts as a disruption when consistent breathing came before it and a recovery sound follows it. Snore Timeline grades each disruption by how long the silence lasted: under 12 seconds is mild, 12 to 20 seconds is moderate, and over 20 seconds is severe. Your nightly summary also shows your single longest pause of the night with its own severity rating."
+  },
+  {
+    "title": "My CPAP is quiet. Will Snore Timeline still detect my breathing pauses correctly?",
+    "text": "Snore Timeline works entirely by listening, so it depends on hearing both your breathing and the recovery sound. Quiet breathing, very soft equipment, or a phone placed far away can make detection less reliable, and quiet disruptions may be missed entirely. The app needs to hear consistent breathing for a full minute before it starts watching for a pause. If your breathing is barely audible during the night, the app may undercount events or miss them. For the best chance of detection, keep your phone close (about 1 to 2 feet away) and the room quiet."
+  },
+  {
+    "title": "Why might Snore Timeline undercount my breathing disruptions?",
+    "text": "Because detection is acoustic, Snore Timeline likely underestimates the true number of events. It can miss quiet disruptions, events where no breathing effort occurs, and events that end without an audible recovery sound. Background noise like fans, white noise machines, or HVAC can also mask the breathing patterns the app listens for. Treat the count as a conservative estimate rather than a complete record, and use it for tracking trends night to night."
+  },
+  {
+    "title": "What is the disruptions per hour number on my summary?",
+    "text": "Disruptions per hour is the primary metric for assessing breathing disruption activity. Snore Timeline divides the number of detected disruptions by your hours of sleep and rates the result: fewer than 1 per hour is Minimal, 1 to 3 is Mild, 3 to 5 is Notable, and more than 5 is Significant. Each level comes with a short summary message and a color indicator. Because acoustic detection only captures audible events, even low numbers may be worth paying attention to, and a higher rate may be worth discussing with a healthcare provider, especially alongside other symptoms. The rate is not a medical score or diagnosis."
+  },
+  {
+    "title": "What does the recovery breath value (like +16 dB) mean?",
+    "text": "After a breathing pause, Snore Timeline listens for the sound of breathing resuming and measures how much louder that recovery breath was compared to the silence right before it. A value like +16 dB means the recovery was 16 decibels louder than the preceding quiet. A higher number means a more forceful recovery, which may suggest the body had to work harder to restore airflow. Your summary shows the peak recovery breath strength of the night."
+  },
+  {
+    "title": "What is the difference between gasps and breathing disruptions?",
+    "text": "Snore Timeline tracks gasps separately from breathing disruptions. A gasp is a sudden, forceful inhalation that may follow a pause and can indicate the body struggling to restore airflow after an obstruction. A breathing disruption is the full pattern of consistent breathing, a silent gap of 10 seconds or more, and a recovery sound. Gasps are reported as a total count and a per-hour rate, while breathing disruptions are reported as disruptions per hour. They appear as distinct items on your nightly summary."
+  },
+  {
+    "title": "Why don't I see a breathing disruption assessment for last night?",
+    "text": "The breathing disruption assessment needs at least 2 hours of sleep to calculate and display. If a recording is shorter than that, or if the app did not capture enough audible breathing to work from, the assessment may not appear for that night. Recording a full night with your phone close by gives the app the data it needs."
+  },
+  {
+    "title": "What other breathing metrics does Snore Timeline show?",
+    "text": "Alongside disruptions per hour, your summary can show your average breathing rate in breaths per minute (the normal adult range of 12 to 20 is shown for reference), your average snoring intensity in decibels, the longest pause of the night, gasps, and the recovery breath strength. If you pair an Apple Watch that records blood oxygen, the app can also display the percentage of the night spent below 95% oxygen saturation and your lowest reading. Tap the 'How does this work?' button in the breathing section for a full explanation of how detection works and its limitations."
+  },
+  {
+    "title": "Can breathing disruptions affect my sleep score?",
+    "text": "Yes. Detected snoring and breathing disruptions are among the factors that can lower your overall sleep score, along with sleep duration, deep and REM sleep, efficiency, and awakenings. The breathing section gives you a more detailed view focused specifically on disruption activity, while the sleep score reflects overall sleep quality. Both are for personal insight, not medical assessment."
+  },
+  {
+    "title": "How accurate is the sleep stage estimate in Snore Timeline?",
+    "text": "Snore Timeline estimates your sleep stages from sound alone, so treat the results as a reasonable estimate and a way to track trends over time, not a clinical measurement. Clinical sleep staging uses brain waves, eye movement, and muscle activity, signals that audio cannot capture. The estimate gets better with longer recordings: several hours of sleep lets the app observe more complete sleep cycles. Noisy environments, a bed partner, pets, or sleeping far from the microphone can all affect how reliably your breathing is detected. If a wearable like Apple Watch provides sleep stage data for the night, the app uses the watch's Deep and REM percentages instead of its own audio-derived estimates, since a wearable is more accurate for those stages. Use the stage breakdown as a general guide for understanding your sleep habits, not a diagnosis. If you have concerns about your sleep, talk to a healthcare professional."
+  },
+  {
+    "title": "What sleep stages does Snore Timeline track?",
+    "text": "Snore Timeline tracks four sleep stages through the night. Light Sleep is the transition stage and the easiest to wake from. Deep Sleep is restorative sleep and is most common early in the night. REM Sleep is dream sleep and increases toward morning. Awake is detected through movement or extended silence. There is also a fifth label, Silence, used for quiet, undisturbed stretches where your breathing is too soft to resolve into a stage and there is no sign you are awake. This can happen if you are a very quiet breather or a fan or air conditioner is masking the sound. Silence is treated as restful sleep and counts toward your total sleep time."
+  },
+  {
+    "title": "How does Snore Timeline figure out which sleep stage I'm in?",
+    "text": "The app estimates stages from your breathing patterns, breathing regularity, and movement. It listens for the rhythm between your breaths: Deep Sleep tends to produce the most regular, steady breathing, Light Sleep is moderately regular, and REM Sleep shows more irregular breathing. Your breathing rate also tends to slow as you move into deeper sleep. Large changes in sound can signal body movement, which usually means lighter sleep or a brief awakening. During the first part of your recording the app establishes your personal breathing baseline, your typical rate and regularity, and measures the rest of the night against your own baseline rather than population averages. Timing matters too: Deep Sleep is most likely in the first part of the night, and REM becomes more likely toward morning."
+  },
+  {
+    "title": "What does my sleep score actually mean?",
+    "text": "Your sleep score is shown on a 0 to 100 scale and reflects your overall sleep quality for the night. The bands are Excellent (90 to 100), Good (75 to 89), Fair (60 to 74), and Poor (below 60). The single most important factor is how long you slept, with 7 or more hours treated as ideal. Beyond duration, the score considers your Deep and REM sleep percentages, sleep efficiency (time asleep versus total time recording), how long it took you to fall asleep, time spent awake after first falling asleep, the number of times you woke up, how close your bedtime was to your usual one, and your snoring and breathing disruptions. Tap the score badge to see a detailed breakdown of how each factor affected your night. The score is a general guide for understanding your sleep habits, not a clinical diagnosis."
+  },
+  {
+    "title": "What hurts or lowers my sleep score?",
+    "text": "Several things can pull your sleep score down. Sleeping less than 7 hours starts to reduce it, with bigger drops the shorter the night. Taking longer than 30 minutes to fall asleep, low sleep efficiency (a lot of recording time spent not asleep), and time spent awake after you first fell asleep all lower the score. Waking up many times during the night reduces it, as does a bedtime that is far from your usual one. Snoring counts against the score based on how often it happens per hour, and breathing disruptions can lower it noticeably, with more disruptions causing larger reductions. Deep and REM sleep work the other way: healthy amounts can add points. Because audio-based Deep and REM detection is hard, the app is gentle about penalizing low readings and credits quiet, restful Silence toward your restorative sleep."
+  },
+  {
+    "title": "What's a good amount of Deep and REM sleep according to Snore Timeline?",
+    "text": "Snore Timeline uses Deep Sleep of roughly 13 to 23 percent of your sleep as a healthy target, with 20 percent or more earning credit toward your score. For REM Sleep the target is about 20 to 25 percent. Hitting these ranges can add points to your sleep score. Deep Sleep is most likely in the first part of the night, especially the first 90 minutes and first few hours, then becomes less common. REM Sleep usually starts around 40 to 50 minutes after you fall asleep and grows toward morning, which is why cutting sleep short tends to cost you more REM. If you connect a wearable like Apple Watch, the app uses its Deep and REM percentages for the score because they are more accurate than audio estimates. These ranges are general guidelines, not a medical assessment."
+  },
+  {
+    "title": "How does Snore Timeline measure my respiratory rate?",
+    "text": "Respiratory rate is shown in breaths per minute (bpm) and is calculated from the time between your detected breaths. A typical adult range during sleep is 12 to 20 bpm. The app records a reading every few minutes through the night and shows your average. It establishes a personal baseline after roughly the first 10 to 15 minutes of detected sleep, using the middle of those early readings so a stray value does not skew it. To stay realistic, readings are kept within physiological bounds (roughly 6 to 25 bpm), which filters out spurious spikes while still allowing the higher rates that can occur during REM or brief arousals. Respiratory rate is an audio-based estimate for personal insight, not a medical measurement. Rates well outside the normal range are worth discussing with a doctor rather than self-diagnosing."
+  },
+  {
+    "title": "Can I get a simple summary of how I slept last night?",
+    "text": "Yes. After each recording, Snore Timeline gives you a nightly summary with your sleep score and its band (Excellent, Good, Fair, or Poor), a breakdown of time spent in Light, Deep, REM, and Awake stages, your average respiratory rate in breaths per minute, and your snoring and breathing disruption activity. Tap the score badge to expand a factor-by-factor breakdown showing what helped and what hurt the night. The summary is meant as an at-a-glance guide to your sleep habits and trends over time, not a medical report."
+  },
+  {
+    "title": "What is breathing regularity in Snore Timeline?",
+    "text": "Breathing regularity describes how consistent the rhythm between your breaths is, on a scale from irregular to steady. Deep sleep tends to produce the most regular, metronome-like breathing, light sleep is moderately regular, and REM sleep shows noticeably more irregular breathing. The app sets a personal regularity baseline during the first part of the night, then compares the rest of your night against it. Sustained, very steady breathing points toward Deep Sleep, while a drop into more irregular breathing can indicate REM Sleep. This is one of the signals, alongside breathing rate and movement, that the app uses to estimate your stages."
+  },
+  {
+    "title": "Does Snore Timeline use my Apple Watch for sleep stages?",
+    "text": "If a wearable such as Apple Watch reports sleep stage data for the night, Snore Timeline uses the watch's Deep and REM sleep percentages for your sleep score instead of its own audio-derived estimates. A wearable measures those stages more accurately than audio analysis can, so the app defers to it when the data is available. Without a connected wearable, the app falls back to its own breathing- and movement-based estimates."
+  },
+  {
+    "title": "Can Snore Timeline detect sleep apnea or diagnose a sleep disorder?",
+    "text": "No. Snore Timeline analyzes audio only and is not a medical device. It cannot diagnose sleep apnea or any sleep disorder. Clinical sleep evaluations use brain wave, eye movement, and muscle activity signals that audio cannot capture. The sleep stages, sleep score, respiratory rate, and breathing disruption counts are estimates meant for personal insight and for spotting trends you might want to discuss with a doctor. If you have concerns about your breathing or sleep, consult a healthcare professional."
+  },
+  {
+    "title": "Why is part of my night marked as Silence instead of a sleep stage?",
+    "text": "Silence appears when the app cannot pick up your breathing clearly enough to resolve a stage, yet sees no sign that you are awake. This often happens if you breathe very softly or a fan, air conditioner, or other background noise masks the sound. Rather than guessing at a stage or penalizing the gap, the app marks the stretch as Silence, treats it as restful sleep, and counts it toward your total sleep time. It is also credited toward your restorative sleep when calculating your score, so a genuinely quiet night still reads as good sleep."
+  },
+  {
+    "title": "How do I read the timeline and jump to a specific time?",
+    "text": "Snore Timeline shows your night as an interactive waveform. A centered time indicator displays the exact time at the middle of the display, and it updates as you scroll or as a recording progresses. To move through the night, drag the waveform left or right. The timeline supports inertial scrolling, so a quick flick keeps gliding and slows to a stop. To jump straight to a particular night, tap the date label above the waveform to open the calendar and pick any recorded night. To land on a specific snoring episode, long-press the waveform and the app scrolls the episode list to the episode closest to where you pressed."
+  },
+  {
+    "title": "The text on the timeline is too small. Can I make it bigger?",
+    "text": "Yes. Snore Timeline supports Dynamic Type, so it follows the text size you set for your iPhone. To make the text larger, go to your iPhone's Settings, then Accessibility, then Display & Text Size, then Larger Text, and increase the size. The app's labels and status text scale to match, including the recording countdown, which shortens to fit at larger sizes."
+  },
+  {
+    "title": "What do the different colors on the timeline represent?",
+    "text": "The waveform uses color-coded bars to show the types of sound it detected. Dusty rose marks snoring, cream/beige marks sleep talking, and pale purple marks breathing disruptions. Regular audio data appears in orange/apricot. Sections with no audio are shown in faded gray and skip the mirrored bottom half of the waveform, so silent stretches stand out. Episodes from before your current recording session started appear in a lighter, semi-transparent gray to set them apart from live data. When you move over a bar, the status bar below the waveform names the signal type and shows the peak volume for that moment."
+  },
+  {
+    "title": "What do the shades of orange on the waveform mean?",
+    "text": "When Loud Sound Detection is turned on in Settings, the orange bars show how sound energy is spread across frequencies, stacked in shades of orange. Darker orange is low frequencies (roughly 50 to 250 Hz), the deep rumble of snoring. Medium orange is mid frequencies (about 250 to 1500 Hz), harmonics and vowel sounds. Bright orange is high frequencies (about 1500 to 8000 Hz), sibilants like the 's' in 'sss'. This frequency detail appears on the most zoomed-in view; at wider zoom levels the bars show as simpler solid color bars. It is for personal insight, not a medical diagnosis."
+  },
+  {
+    "title": "Can I zoom into one part of the night on the chart?",
+    "text": "Yes. Snore Timeline has five zoom levels, from most detailed to widest: 1-second, 5-second, 1-minute, 10-minute, and 1-hour intervals. Use the plus and minus magnifying-glass buttons in the top-right corner of the timeline. A single tap moves one level in or out. Hold a button for about a third of a second to jump all the way to the most detailed or the widest view in that direction. To focus on one stretch of the night, scroll to that part, then zoom in to see second-by-second detail."
+  },
+  {
+    "title": "How do I jump to a specific night using the calendar?",
+    "text": "Tap the date label above the waveform to open the calendar. It shows the current month and past months; future dates are grayed out and can't be selected. Swipe left or right to move between months. The right arrow is disabled when you're already viewing the current month, since there are no future months to show. Nights that have recorded audio are marked with a small dot. Tap any past date with data to jump to 10 PM on that night. Tapping today's date jumps to the current time instead."
+  },
+  {
+    "title": "How do I play back the audio at a certain point?",
+    "text": "When audio is available to play and you're not recording, a play button appears at the top right. Scroll the waveform so the moment you want sits in the center, then tap play to hear the audio at that center point; tap again to stop. If there's no playable audio at the center, the play button searches forward and plays the next available episode. While audio plays, the timeline scrolls to keep the playback position centered. If you drag the waveform during playback, it pauses automatically and resumes shortly after you stop, unless you tapped stop yourself."
+  },
+  {
+    "title": "Why does the timeline keep scrolling on its own, and how do I stop it?",
+    "text": "During a recording the timeline is live by default and scrolls automatically to keep the newest audio in view, refreshing about once a second. As soon as you scroll backward to look at earlier audio, it enters frozen mode and stops auto-scrolling so you can browse freely. If you scroll back past the oldest data already loaded, the app quietly loads the previous stretch and keeps the time you were looking at centered."
+  },
+  {
+    "title": "Why did the zoom level change by itself?",
+    "text": "Snore Timeline picks a sensible zoom for the moment. When a recording starts, it switches to the most detailed 1-second view and goes live so you can watch in real time. When recording stops, it switches to the 1-minute view to give an overview of the whole night. If you leave the app and come back an hour or more later, it resets to live mode at the current date with a wider 10-minute view. You can always adjust the zoom yourself with the magnifying-glass buttons."
+  },
+  {
+    "title": "What does the status bar under the waveform tell me?",
+    "text": "The status bar below the waveform shows real-time context. While recording, it displays the current input device and the live decibel level. When you move over a bar on the timeline, it shows that window's peak volume in dB along with the detected signal type, such as a snoring or sleep talking signal. If you try to play from an empty stretch, it tells you no playable audio is nearby. When a recording delay is set, it counts down until recording begins. Decibel readings are measured up to a maximum of 105 dB SPL, and each bar's height reflects the peak average level for that slice of time."
+  },
+  {
+    "title": "Where are my recordings so I can listen back?",
+    "text": "Your recordings live right inside the timeline. Open the night you want to review and tap any point on the timeline, or tap an episode, to start playing the audio from that moment. There are no separate files or folders to manage. When you tap an episode, Snore Timeline starts playback about 2 seconds before the episode begins, so you get a little context before the sound you tapped."
+  },
+  {
+    "title": "Where's my audio from last night?",
+    "text": "Open last night's session and tap anywhere on the timeline to hear that part of the recording. Each tap starts playback at the point you touched, so you can jump straight to the moments that interest you. If a whole night was captured across several recording segments, Snore Timeline chains them together automatically, so a single tap can carry you through hours of audio without switching files. Playback can continue across an entire night, 7+ hours, with no extra taps."
+  },
+  {
+    "title": "Can I play back just specific sounds and skip the rest?",
+    "text": "You can jump directly to the moments you care about instead of listening to the whole night. Each episode is labeled by the type of sound detected, and episode cards show badges for snoring, sleep talking, breathing disruptions, and loud sounds. Tap the episode you want and playback starts about 2 seconds before it begins. To skip ahead or back, tap any point on the timeline and playback moves there. You can also drag along the timeline to scrub: playback pauses while you drag and resumes when you release if it was playing before."
+  },
+  {
+    "title": "Why does the playback sound clearer than the actual room was?",
+    "text": "For recordings captured in a quiet environment, Snore Timeline gently shapes the audio during playback so quiet breathing and speech are easier to hear. It boosts the low and mid frequencies where snoring, breathing, and speech sit, eases back the higher frequencies where hiss and fan noise live, and evens out the volume so soft sounds come up while loud snores stay controlled. That is why a recording can sound clearer and fuller than the room felt at the time. Recordings made while other audio was playing are kept at normal levels and skip this shaping, since they were already captured at full volume."
+  },
+  {
+    "title": "Can I turn off the audio enhancement during playback?",
+    "text": "There is no on or off switch for playback enhancement. Snore Timeline decides automatically based on how the recording was captured. Recordings made in a quiet room get the clarity boost so faint breathing is audible; recordings made while other audio was playing are kept near their original levels. In both cases the goal is to play your audio back as clearly as possible without you adjusting anything."
+  },
+  {
+    "title": "How do I scrub or move to a different part of the recording?",
+    "text": "Tap any point on the timeline to jump there, or press and drag to scrub through the audio. While you drag, playback pauses so you can find the exact spot; when you let go, it picks back up from where you landed if it was playing before. You can also tap a specific episode to jump straight to it, and playback begins about 2 seconds ahead of it for context."
+  },
+  {
+    "title": "Does the night play back without gaps between recordings?",
+    "text": "Yes. When a night is stored as several recording segments, Snore Timeline lines up the next segment while the current one is still playing, so the audio continues smoothly with no audible gap. It looks for the next compatible segment within about 10 minutes of the one playing, and if the formats match it continues automatically. This lets a single session play back across many hours with no manual switching."
+  },
+  {
+    "title": "What information is shown while a recording plays?",
+    "text": "While audio plays, Snore Timeline shows details about the episode you are listening to: a label for the episode type, its start time, how long it lasted, and its end time (on most text sizes; the end time is hidden at the largest accessibility text sizes to save space). It also shows the peak volume and average volume in decibels, plus a waveform of the sound. As playback moves through the night, the app highlights whichever episode is currently playing and clears the highlight once it moves past that episode."
+  },
+  {
+    "title": "Can I save or share the audio from an episode?",
+    "text": "Yes. Each episode has a download icon you can tap to save and share that episode's audio file. After the first download, Snore Timeline keeps a copy ready so sharing it again is instant. This makes it easy to keep a clip or send one to someone, for example as personal context for a conversation with your doctor. Snore Timeline analyzes audio only and does not diagnose any condition."
+  },
+  {
+    "title": "Why won't a recording play back?",
+    "text": "A few situations can stop playback. Snore Timeline will not start playback while a recording is in progress, so finish or stop recording first. It also skips files that are too small to contain meaningful audio. Playback stops on its own when the audio reaches the end or when you leave the app, and stopping resets the position to the beginning so your next tap starts fresh from wherever you choose."
+  },
+  {
+    "title": "How loud were my snores during playback?",
+    "text": "Snore Timeline shows the peak and average volume in decibels for every episode, so you can see how loud a given stretch was while you listen. Sound is measured in dB SPL (sound pressure level) with a maximum measurable level of 105 dB. These numbers help you track volume patterns over time. They are for personal insight, not a medical measurement or a diagnosis."
+  },
+  {
+    "title": "How do I export all my data to a spreadsheet?",
+    "text": "Snore Timeline can export your data as CSV spreadsheet files bundled inside a single ZIP archive. When you create an export, you pick a date range and choose which categories of data to include. The available categories are Nightly Summary (aggregated stats per night), Sleep Stages (sleep stages over time from phone and watch sources), Detected Events (snoring, sleep talking, coughs, gasps, and breathing disruptions), and Watch Biometrics (heart rate, HRV, SpO2, and respiratory rate). Each category becomes its own CSV file inside the ZIP. The CSV files open in any spreadsheet app, including Numbers, Excel, and Google Sheets."
+  },
+  {
+    "title": "What date ranges can I choose for an export?",
+    "text": "When you set up an export you can pick one of three date range presets: Last 7 days, Last 30 days, or All time. The range you choose controls how much of your CSV data is included. One thing to note: if you choose to include audio recordings, the audio only covers the night you are currently viewing, even if you selected a wider date range for the CSV data. This applies to both full-night recordings and per-episode clips."
+  },
+  {
+    "title": "Can I send a report to my doctor?",
+    "text": "Yes. After you generate an export, tap the Share Export button to open the standard iOS Share Sheet, where you can send the ZIP report by email, Messages, AirDrop, or save it to another app. The report contains CSV spreadsheets of your nightly summaries, sleep stages, detected events, and watch biometrics, and can optionally include audio recordings. Keep in mind that Snore Timeline analyzes audio and sleep data for your personal insight. It is not a medical device and does not diagnose sleep apnea or any other condition, so treat the report as information to discuss with a doctor rather than a diagnosis."
+  },
+  {
+    "title": "What columns and units are in the Nightly Summary CSV?",
+    "text": "The Nightly Summary CSV has one row per night with these columns: Night, Notes, Total Recording Duration (s), Total Size (MB), First Recording Start, Last Recording End, Sleep Score, Sleep Efficiency, Total Sleep (s), Time to Sleep (s), Sleep Detected Via, Light Sleep (s), Deep Sleep (s), REM Sleep (s), Silence (s), Awake (s), WASO (s), Awakenings, Avg Respiratory Rate (bpm), First Episode Start, Last Episode End, Episode Count, Total Snore Time (s), Loudest Peak (dB), Average Peak (dB), Total Snore Events, Total Gasp Events, Total Cough Events, Total Sleep Talking Events, and Total Breathing Disruptions. Durations are in seconds, sizes in megabytes, respiratory rate in breaths per minute, and Loudest Peak and Average Peak are the maximum and average decibel levels across all detected episodes that night."
+  },
+  {
+    "title": "What columns are in the Sleep Stages and Detected Events CSVs?",
+    "text": "The Sleep Stages CSV has these columns: Night, Source, Stage, Start Time, End Time, Duration (s), Reason, and Breathing Rate (bpm). The Source shows whether the stage came from Snore Timeline or from a connected watch or Apple Health source. The Detected Events CSV has these columns: Type, Timestamp, End Time, Peak dB, Source, Silence Start, Silence Duration (s), and Recovery Strength (dB). Type indicates the kind of event, such as snoring, sleep talking, cough, gasp, or breathing disruption. The silence and recovery columns are filled in for breathing disruption events."
+  },
+  {
+    "title": "What is in the Watch Biometrics export?",
+    "text": "If you include Watch Biometrics, the export contains two CSV files. Watch Biometrics Samples lists individual readings with the columns Night, Source, Metric, Timestamp, Value, and Unit, covering metrics like heart rate, HRV, SpO2, and respiratory rate. Watch Biometrics Aggregates gives a per-night summary with columns covering total sleep and time in bed, sleep stage durations, heart rate averages with minimum, maximum, and resting estimates, HRV, SpO2 averages and minimums, respiratory rate, and wrist temperature. This data comes from a connected Apple Watch via Apple Health."
+  },
+  {
+    "title": "How are timestamps and dates formatted in the CSV files?",
+    "text": "Snore Timeline uses ISO 8601 timestamps that include timezone information, for example 2024-01-15T22:30:45-08:00. Night identifiers use plain ISO dates in YYYY-MM-DD format. Text values that contain commas, quotes, or line breaks are properly quoted so the files open cleanly in spreadsheet apps. This makes the exports easy to sort, filter, and analyze in Numbers, Excel, or Google Sheets."
+  },
+  {
+    "title": "How do I save the audio files off my phone?",
+    "text": "You can include audio recordings in an export in two ways. Per-Episode Clips packages a separate clip for each detected episode of the night, and Full-Night Recording packages one continuous file for the whole night. The audio is added to the ZIP report alongside the CSV files. After generating the export, tap Share Export to send the ZIP off your phone by email, AirDrop, Messages, or save it to another app or cloud service. Note that the audio always comes from the night you are currently viewing, even if you picked a wider date range for the CSV data."
+  },
+  {
+    "title": "How do I download a single snore episode's audio?",
+    "text": "In the episode list, tap the download button next to an episode to save its audio clip. The icon shows the current state: a download icon means it is ready to download, a spinning progress circle means it is in progress, a clock icon means it is queued, a share icon means it finished and is saved, and an X means it failed. When the clip is saved you will see a message like \"Saved episode '[start time]' to Files folder.\" Each clip includes 2 seconds of padding before and after the episode for context. Snore Timeline downloads up to 2 clips at once; if you request more while two are running, the extras wait in a queue and start as the earlier ones finish. Once a clip shows the share icon, tap it to open the iOS Share Sheet and send the audio file."
+  },
+  {
+    "title": "Where do my exported files go, and how do I find them?",
+    "text": "Your files live in the Snore Timeline folder, which you can browse in the Files app. Open the Files app, tap Browse, under Locations tap \"On My iPhone,\" then open the Snore Timeline folder. ZIP reports from the export screen are kept together and named by their date range, such as \"SnoreTimeline Report 2024-01-15\" for a single day or \"SnoreTimeline Report 2024-01-08 to 2024-01-15\" for a range, using YYYY-MM-DD format. You can also reopen this folder directly with the \"View previous exports in Files app\" link on the export screen. Audio you download per night is organized into Exported Recordings (full-night exports) and Snoring Episodes (individual episode clips), with each night's folder containing a Nightly Summary.csv of overall stats and a Snoring Episodes.csv of per-episode metrics."
+  },
+  {
+    "title": "How long does an export take, and can I cancel it?",
+    "text": "While an export runs, Snore Timeline shows progress on screen as a percentage from 0 to 100 with status messages such as \"Writing nightly summaries…,\" \"Writing sleep stages…,\" \"Writing detected events…,\" \"Writing watch biometrics…,\" \"Preparing audio…,\" and \"Packaging archive…\" Exports that include audio take longer than data-only exports. If the estimated audio size is over 1 GB, you will see a warning that the large export may take several minutes and use significant temporary storage. You can stop an export in progress at any time by tapping the button, which shows \"Tap to cancel\" while generating; this halts generation and resets to the idle state."
+  },
+  {
+    "title": "Why does my export say \"No data in selected range\"?",
+    "text": "If you choose a date range that has no recordings or data, Snore Timeline shows the error \"No data in selected range\" and does not create a file. This usually means you did not record on any night within the selected window. Try widening the range, for example choosing Last 30 days or All time, or pick a date range that includes nights you actually recorded."
+  },
+  {
+    "title": "How much storage does a full night of recording take up?",
+    "text": "It depends on the recording quality you choose in Settings. Snore Timeline shows an estimated file size for each level: Basic (Snore-Focused) uses about 8 MB per hour, Standard (Clear Audio) about 15 MB per hour, and High Fidelity (Full Detail) about 25 MB per hour. So a typical 8-hour night ranges from roughly 64 MB on Basic to about 200 MB on High Fidelity. Actual size varies with how long you record. You can keep usage down with the Storage Limit and Episode-Only Storage features described below."
+  },
+  {
+    "title": "Can I lower the recording quality to save space?",
+    "text": "Yes. Open Settings and choose one of three recording quality levels. Basic (Snore-Focused) saves the most space, around 8 MB per hour, by compressing recordings to emphasize lower-frequency sounds (below 4,000 Hz) where snoring lives. Standard (Clear Audio) uses about 15 MB per hour and captures a wider frequency range up to 8,000 Hz, the full range of everyday speech, which helps tell snores apart from other room noises. High Fidelity (Full Detail) records the full audible spectrum up to 24,000 Hz in raw, uncompressed quality and uses the most space, around 25 MB per hour. Each option in the app lists its frequency range and estimated file size so you can pick the right balance."
+  },
+  {
+    "title": "If I use a lower recording quality, will snoring detection still work?",
+    "text": "Yes. Snoring detection works at all three quality levels, and choosing a lower quality does not reduce detection accuracy. Basic quality is designed to reliably capture and replay the fundamental sounds of snoring, which fall mostly between 50 Hz and 3 kHz. The main trade-off at lower quality is the listening experience, not detection: softer or higher-frequency sounds carry less detail, and quieter snores may sound more muffled on playback. Higher quality levels mainly give you a richer, clearer recording to listen back to."
+  },
+  {
+    "title": "Why was last night's audio quieter and harder to hear?",
+    "text": "A few things can make playback sound quieter or more muffled. On Basic (Snore-Focused) quality, the app notes that quieter snores may sound more muffled and there is less detail in softer sounds, because that setting compresses the recording to focus on the lower frequencies of snoring. Switching to Standard or High Fidelity in Settings captures more detail and clarity. Microphone distance also matters: the farther your phone is from you, the fainter the recording. Keep your phone about 1-2 feet away with the microphone unobstructed for louder, clearer audio."
+  },
+  {
+    "title": "How do I delete old recordings so my phone doesn't fill up?",
+    "text": "You have a few options in Settings. To clear a single night, use the delete option for that date, which removes all of that night's data including the audio recordings, snoring signals, and episodes. To automate cleanup, turn on Storage Limit so the app removes data from your oldest nights once usage passes your chosen limit. You can also turn on Episode-Only Storage to automatically trim out silent stretches and keep only the parts with detected episodes. For a complete reset, the Delete All Data option (hold to confirm) permanently removes every recording, snoring signal, episode, sleep analysis, and exported file. This cannot be undone."
+  },
+  {
+    "title": "What is Episode-Only Storage and how do I use it?",
+    "text": "Episode-Only Storage automatically removes the silent portions of a recording after each session, keeping only the segments that contain detected episodes such as snoring or sleep talking. As the app describes it, this can significantly reduce storage usage while preserving all your episode data. Turn it on in Settings to have it run automatically after each night. You can also trim a single past night manually: in Settings, choose the night and tap the option to trim that night's recordings to keep only the episode segments."
+  },
+  {
+    "title": "How does the Storage Limit feature work?",
+    "text": "When you enable Storage Limit in Settings, the app automatically deletes the oldest nights once your total usage exceeds the limit you pick. Available limits are 1 GB, 2 GB, 4 GB, and 8 GB. The app shows roughly how much each holds at high quality: about 3-5 days at 1 GB, 1-2 weeks at 2 GB, 2-3 weeks at 4 GB, and 4-6 weeks at 8 GB. A usage bar shows your current size against the limit. Cleanup runs in the background after recording stops, and you'll see progress messages like 'Freeing up X MB' and 'Freed X MB'."
+  },
+  {
+    "title": "Can I keep my episodes and history but delete the audio to save space?",
+    "text": "Yes. When Storage Limit is on, turn on the Keep History toggle in Settings. With it enabled, the app deletes only the audio files from your oldest nights and preserves your episodes, sleep analysis, and timeline history. As the app puts it, only playback is removed for those nights. With Keep History off, the app instead permanently deletes all data from your oldest nights, including recordings, snoring signals, episodes, and sleep analysis, to make room for new recordings. Choose Keep History if you want to keep your long-term stats and timeline while still freeing up space."
+  },
+  {
+    "title": "I'm over my storage limit. How do I free up space right now?",
+    "text": "When your usage goes over the limit you set, Settings shows an 'Over Limit - Tap to Clean Up' button. Tap it to start cleanup immediately rather than waiting for the automatic background pass. As it runs, the app shows progress like 'Freeing up X MB' and then 'Freed X MB' so you can see what's being removed. Cleanup follows your Keep History setting: it either deletes only audio files from the oldest nights or removes all data from the oldest nights, starting with the oldest first, until you're back under the limit."
+  },
+  {
+    "title": "Will the app delete my recordings automatically without asking?",
+    "text": "Automatic deletion only happens if you turn on Storage Limit in Settings. With it off, nothing is removed on its own and your recordings stay until you delete them yourself. With Storage Limit on, the app clears the oldest nights in the background after recording stops, once usage passes your chosen limit, and you control whether that removes just the audio (Keep History on) or all data for those nights (Keep History off). Episode-Only Storage, if enabled, also trims silent portions automatically but preserves all your episode data."
+  },
+  {
+    "title": "How do I compare this week to last week in Snore Timeline?",
+    "text": "The Weekly Summary gives you a 7-day overview of your snoring and sleep data and compares it against the previous week. Each metric shows a week-over-week change so you can see at a glance whether things moved up or down. For most metrics the change is shown as a percentage, while the Peak Volume metric, measured in decibels, shows the difference in dB instead. When the previous week had no data to compare against, the change reads 0% in a neutral color rather than highlighting an up or down trend. The summary also plots daily charts across the last 7 days so you can see the trend day by day, not just the weekly total."
+  },
+  {
+    "title": "Is my snoring getting better or worse over time?",
+    "text": "The Weekly Summary is built to answer exactly this. It averages your key snoring metrics across the week and shows the week-over-week change for each one: Snore Time (total time spent snoring during the night), Snoring Signals (the total count of snore-related events including snoring, coughs, gasps, and disruptions), and Signals Per Hour (how many signals are detected per hour of recording). A downward trend in these numbers from one week to the next means less snoring activity overall. Daily charts for the last 7 days let you spot which nights were better or worse. Keep in mind these are personal-insight metrics for tracking patterns, not a medical assessment."
+  },
+  {
+    "title": "Can I see whether my CPAP nights have fewer breathing disruptions than nights without it?",
+    "text": "Yes. CPAP is one of Snore Timeline's built-in sleep factors. Tag CPAP on your nightly summaries for the nights you used it, and leave it untagged on nights you did not. Once you have enough nights, the 'What Affected Your Sleep' section of the Weekly Summary shows a CPAP correlation card. Tap it to expand a side-by-side comparison of nights with the factor versus nights without it, including snore time, events per hour, breathing disruptions, sleep talking, sleep score, and sleep efficiency. The card also gives a plain-language verdict (Better sleep, No clear effect, or Worse sleep). To unlock the comparison you need at least 5 total recorded nights, with at least 2 nights tagged CPAP and at least 2 nights without it. Note that correlations show patterns in your own data and may reflect other habits; they are for personal insight and discussing with your doctor, not a diagnosis."
+  },
+  {
+    "title": "Does the app show weekly averages for my sleep score?",
+    "text": "Yes. The Weekly Summary shows your average Sleep Score for the week along with the week-over-week change. The Sleep Score ranges from 0 to 100 and reflects overall sleep quality based on sleep duration, deep and REM sleep percentages, sleep efficiency, time to fall asleep, awakenings, and bedtime consistency. Scores fall into categories: Excellent (90-100), Good (75-89), Fair (60-74), and Poor (below 60). A daily chart for the last 7 days lets you see how the score moved across each night of the week."
+  },
+  {
+    "title": "What sleep factors can I track in Snore Timeline?",
+    "text": "Snore Timeline includes 23 built-in sleep factors across four categories. Substances: Alcohol, Caffeine, Medication, Smoking. Lifestyle: Exercise, Late Meal, Stress, Late Screen Time, Nap, Fatigue. Environment: Slept on Back, Slept on Side, Elevated Pillow, Hot Room, Cold Room. Health: Nasal Strips, Congestion, Allergies, Cold/Flu, CPAP, Mouth Guard, Oral Appliance, Mouth Taping. You tag these on your nightly summaries. You can also create your own custom factor by giving it a name and choosing a category (Lifestyle, Substances, Environment, or Health) if the built-in list does not cover something you want to track."
+  },
+  {
+    "title": "How do I get sleep factor correlations to show up?",
+    "text": "Tag sleep factors on your nightly summaries over time and the app will build correlations automatically. To unlock the comparison for a factor, you need at least 5 total recorded nights, at least 2 nights with the factor tagged, and at least 2 nights without it. The app looks back over the last 8 weeks of your data to build these patterns, and the more nights you record, the more confident the results become. For useful results, only tag a factor on the nights you actually had it. If you tag a factor every single night, there are no factor-free nights to compare against, so no correlation can be shown."
+  },
+  {
+    "title": "What does the 'Building Insights' message mean?",
+    "text": "The 'Building Insights' state appears when you have started tagging sleep factors but have not yet met the minimum requirements to show correlations. It shows a progress bar toward unlocking insights, how many more nights are still needed, and a list of the factors you have tracked so far. It also reminds you that each factor needs at least 2 nights tagged and 2 nights without it so the app can compare the difference. Keep recording and tagging, and the comparison cards will appear once you cross the thresholds."
+  },
+  {
+    "title": "What do the 'Better sleep', 'No clear effect', and 'Worse sleep' labels mean on factor cards?",
+    "text": "Each sleep factor correlation card carries a short verdict based on an impact score. 'Better sleep' means the factor is associated with improvement in your data. 'Worse sleep' means it is associated with a decline. 'No clear effect' means the difference between your nights with and without the factor was too small to call either way. These verdicts summarize patterns in your own recordings and may reflect other habits happening at the same time, so treat them as personal insight rather than cause-and-effect or a diagnosis."
+  },
+  {
+    "title": "What metrics does an expanded sleep factor card show?",
+    "text": "When you tap a factor card to expand it, Snore Timeline shows a side-by-side comparison of nights with the factor versus nights without it. It compares Snore Time, Events per Hour, Disruptions, and Sleep Talking time, then under a Sleep Quality heading it compares Sleep Score and Sleep Efficiency. Each metric is shown for both the 'with' and 'without' groups with small bars so you can see which set of nights came out ahead. The card also lists how many nights fell into each group (for example, '4 nights with · 6 without')."
+  },
+  {
+    "title": "What sleep metrics appear in the Weekly Summary?",
+    "text": "The Weekly Summary averages a range of metrics across the week, each with a week-over-week comparison and 7-day daily charts. Snoring-related metrics include Snore Time, Snoring Signals, and Signals Per Hour, plus breathing disruptions and sleep talking (Sleep Talking Time and Talking Signals). Sleep-quality metrics include Sleep Score, Time Asleep (the app considers 7+ hours ideal), Sleep Efficiency, Sleep Deficit versus the 7-hour nightly target, Deep Sleep (ideal 13-23%), REM Sleep (ideal 20-25%), Awakenings, Bedtime, and a Consistency Score. The summary also surfaces the Top 5 Notable Episodes from the week."
+  },
+  {
+    "title": "What is Sleep Efficiency and how is it rated?",
+    "text": "Sleep Efficiency is the percentage of your time in bed that you actually spent asleep (time asleep divided by total time in bed). In the Weekly Summary it is shown as a weekly average. Snore Timeline interprets it as Excellent at 90% or above, Optimal at 85-90%, Good at 80-85%, Fair at 75-80%, and Poor below 75%. Higher is better, meaning you fell asleep quickly and stayed asleep with little time awake in bed."
+  },
+  {
+    "title": "What is WASO and how does the app rate it?",
+    "text": "WASO stands for Wake After Sleep Onset, the total time you spent awake after first falling asleep. Snore Timeline rates it as Minimal disruption (under 15 minutes), Normal (15-30 minutes), Moderate disruption (30-45 minutes), High disruption (45-60 minutes), and Severe fragmentation (60 minutes or more). Lower WASO points to more continuous sleep. This is a personal-insight metric, not a clinical measurement."
+  },
+  {
+    "title": "How is my bedtime Consistency Score calculated?",
+    "text": "The Consistency Score reflects how regular your bedtime has been over the last 14 days. It is based on how much your bedtime varies from night to night. A 1-hour buffer applies, so variation up to about an hour still scores 100, with the score dropping as your bedtimes become more spread out. Bedtime each night is taken from your earliest recording start time. The Weekly Summary also shows your average Bedtime across the week."
+  },
+  {
+    "title": "What is Sleep Deficit in the Weekly Summary?",
+    "text": "Sleep Deficit shows the gap between how much you actually slept and a 7-hour nightly target, totaled across the whole week. A positive number means you fell short of the target over the week. A negative number means you slept more than the target, which is a sleep surplus. It works alongside Time Asleep, which shows your average nightly sleep duration for the week."
+  },
+  {
+    "title": "How does Snore Timeline detect breathing disruptions and snore episodes?",
+    "text": "A breathing disruption is flagged only when three things happen in sequence: breathing sounds are detected in the minute before, there is complete silence for 10 or more seconds, and that silence is then broken by a snoring signal. These appear as a count in the Weekly Summary and as part of the factor comparison cards. Separately, a snore episode is a group of snoring signals that occur close together. If no snoring is detected for 30 seconds, the current episode ends, and a new episode begins the next time snoring is detected. Breathing disruption counts come from audio analysis for personal insight only and are not a diagnosis of any condition."
+  },
+  {
+    "title": "How do I connect Snore Timeline to Apple Health?",
+    "text": "Open Settings in Snore Timeline and find the Health Integration section. Tap the Apple Health toggle to turn it on, then approve the permissions sheet that iOS shows. That single sheet covers everything Snore Timeline uses, so you only make the decision once. When you enable it for the first time, the app automatically pulls in the last 30 days of sleep data from Apple Health in one pass, so your recent nights are filled in right away. You can turn the toggle off at any time to stop syncing."
+  },
+  {
+    "title": "What does Snore Timeline write to Apple Health?",
+    "text": "When Apple Health is enabled, Snore Timeline saves three things after a recording: sleep analysis (time asleep and time in bed), sleep stages (light, deep, REM, and awake), and respiratory rate measured during sleep. You can see this list in Settings under Apple Health. Snore Timeline only writes its own analysis. It never writes data that came from other apps or devices, and it never overwrites readings from your Apple Watch or other wearables."
+  },
+  {
+    "title": "Will my respiratory rate show up in the Health app?",
+    "text": "Yes. When Apple Health is enabled, Snore Timeline writes your respiratory rate from each recording into the Health app, measured in breaths per minute. The value it stores is the average respiratory rate across all the samples taken during that night. You can view it in the Health app alongside your other respiratory rate data. This is for your own insight and for sharing with a doctor, not a diagnosis of any condition."
+  },
+  {
+    "title": "Does Snore Timeline use my Apple Watch data while I sleep?",
+    "text": "Yes, if you wear your Apple Watch to bed and have Apple Health enabled. Snore Timeline reads six types of data your watch records: sleep stages, heart rate, heart rate variability (HRV), respiratory rate, blood oxygen (SpO2), and wrist temperature. It combines this with its own audio analysis to give you broader context on your night. Snore Timeline reads this data through Apple Health; it does not require you to keep any app open. Wearing the watch is optional, and the app still works from audio alone if you don't have one."
+  },
+  {
+    "title": "What heart rate, HRV, and SpO2 numbers does it show from my Apple Watch?",
+    "text": "From your Apple Watch overnight data, Snore Timeline shows heart rate as your average, minimum, maximum, and a resting estimate for the night. HRV is shown as the average across the night's measurements (SDNN, in milliseconds). Blood oxygen (SpO2) is shown as the average and minimum saturation for the night. These come from the watch's own sensors, read through Apple Health, and are meant for personal insight rather than medical diagnosis."
+  },
+  {
+    "title": "Does Snore Timeline read wrist temperature, and which watches support it?",
+    "text": "Yes. Snore Timeline reads your nightly wrist temperature as a single average for the night when it's available. Wrist temperature requires iOS 16 or later and an Apple Watch Series 8 or newer. On older devices that don't record it, the app simply leaves it out and everything else keeps working. The temperature value updates only when new readings arrive, so a partial sync won't replace a complete reading you already have."
+  },
+  {
+    "title": "Why isn't my full sleep data there right after I wake up?",
+    "text": "Apple Watch usually finalizes its sleep staging 1 to 3 hours after you wake up, so the complete breakdown may not be ready immediately. Snore Timeline watches Apple Health in the background and syncs automatically once the watch pushes the finalized sleep stages, even if you never open the Health app. If you want to refresh sooner, you can use the Re-import history button in Settings under Apple Health."
+  },
+  {
+    "title": "Can I re-import my older sleep history?",
+    "text": "Yes. In Settings, under Apple Health, tap Re-import history. This pulls every available night from Apple Health across all your sources, going back up to 2 years. It fills in gaps without overwriting your existing data. When it finishes, the app shows a short summary of how many nights were imported, which sources they came from, and the date range, for example imported 12 nights from Apple Watch, Apr 1 to May 30. If no sleep data is found, it tells you that too."
+  },
+  {
+    "title": "Does Snore Timeline work with Oura, Whoop, or Garmin?",
+    "text": "Yes, as long as that device writes its sleep data to Apple Health. Snore Timeline can read sleep data from Apple Watch, Oura Ring, Whoop, Garmin, and other wearables that store data in Apple Health. It only reads what they've written; it never writes data on their behalf. If a night has data from more than one source, Snore Timeline keeps each source's sleep stage timeline separate so you can compare them side by side rather than blending them into one."
+  },
+  {
+    "title": "Can I see live heart rate from my watch while recording?",
+    "text": "Yes. While a recording session is active and your Apple Watch is in use, Snore Timeline can display live readings, including your current heart rate and recent HRV samples, with a rolling view of roughly the last 10 to 30 minutes of heart rate. When a session starts, the app looks back a short while for your most recent heart rate so it can show a value immediately instead of waiting for the next sensor reading. HRV readings are uncommon from Apple Watch (often just a handful per night), so the app may show a recent baseline value when the session itself hasn't produced a new one yet."
+  },
+  {
+    "title": "Does syncing wearable data change my sleep score?",
+    "text": "It can. When Snore Timeline syncs sleep data from Apple Health, any nights that also have a recording are re-analyzed so the app can update the sleep score using the deep and REM sleep stages from your wearable. This means a night's score may refine itself once your Apple Watch finishes finalizing its staging and that data reaches the app."
+  },
+  {
+    "title": "Is there a way to schedule a reminder so I don't forget to start a recording?",
+    "text": "Yes. Snore Timeline has a Bedtime reminder you can turn on in Settings under the Sleep Schedule section. Pick any time of day with the time picker (it defaults to 10:00 PM) and the app sends you a daily notification titled \"Start Tonight's Recording\" with the message \"Tap to begin tracking your sleep sounds.\" Tapping the notification opens the app so you can begin a session. The reminder repeats every day at the time you set. You'll need to allow notifications for Snore Timeline the first time you enable it."
+  },
+  {
+    "title": "Can the app start recording automatically when I go to bed?",
+    "text": "Snore Timeline doesn't detect that you've gotten into bed and start on its own, but it gives you two ways to make starting hands-off. First, the Bedtime reminder sends you a daily notification at your chosen time so you only have to tap to begin. Second, the Recording Delay feature lets you start a session and have actual recording begin later, after a delay you set (0 to 180 minutes in 5-minute steps), which gives you time to fall asleep before listening starts. You can also use a Siri phrase or an iOS Shortcut to start a session by voice or on a schedule you build in the Shortcuts app."
+  },
+  {
+    "title": "Can I set up a Shortcut or use Siri to start a recording by voice?",
+    "text": "Yes. Snore Timeline supports Siri and the Shortcuts app. To start a session by voice, say a phrase like \"Start recording with Snore Timeline\" or \"Begin sleep recording in Snore Timeline.\" The app appears in the Shortcuts app too, so you can add the Start Recording action to your own shortcuts and automations. Because recording needs the microphone, starting a session opens the app. If a session is already running, Siri replies that recording is already in progress and asks you to stop the current one first."
+  },
+  {
+    "title": "What Siri commands does Snore Timeline support?",
+    "text": "Snore Timeline offers four Siri actions. Start Recording: say \"Start recording with Snore Timeline\" or \"Begin sleep recording in Snore Timeline.\" Stop Recording: say \"Stop recording with Snore Timeline\" or \"End sleep recording in Snore Timeline.\" Episode Count: ask \"How many snoring episodes in Snore Timeline\" or \"Get my episode count with Snore Timeline\" to hear the number of episodes for a date (it defaults to yesterday). Open Date: say \"Show today in Snore Timeline\" or \"Open Snore Timeline to today\" to open the app to a specific day. These same actions are available as building blocks in the Shortcuts app."
+  },
+  {
+    "title": "Can I delay when recording actually starts after I tap Start?",
+    "text": "Yes. The Recording Delay feature lets you wait before listening begins, which is handy if you want time to fall asleep first. Set the delay with the slider in Settings under the Recording section, anywhere from 0 to 180 minutes in 5-minute increments. While the delay counts down, the Live Activity shows a \"Recording delayed\" status with a timer for the minutes remaining, and recording begins automatically when the countdown reaches zero. When you start a session through Siri or a widget, you can include a delay of up to 120 minutes, and the app shows a notification confirming the delay."
+  },
+  {
+    "title": "What does the Live Activity show while I'm recording?",
+    "text": "During an active session, the Live Activity on your iPhone lock screen shows the app name, a \"Sleep Recording\" label, a running timer of how long you've been recording, the number of detected episodes, the number of detected signals, and a red Stop button. As sounds are picked up, it shows the current detection with an icon and label, such as Snoring, Sleep Talking, Gasp, Cough, Loud Sound, Laughter, Screaming, or Crying. After about 8 seconds with no new sound, the status returns to \"Listening\" to keep the display uncluttered. If a recording delay is active, it shows a \"Recording delayed\" countdown instead."
+  },
+  {
+    "title": "Does Snore Timeline work with my Apple Watch?",
+    "text": "Yes. While a session is recording, a Live Activity appears in your Apple Watch Smart Stack with a red REC indicator, a live timer, and either \"Listening\" or a count of detected signals. Snore Timeline also offers watch face widgets: a Sleep Score widget (circular, corner, and rectangular styles) that shows last night's score in a color gauge, and an inline widget that reads \"Score [value] · [duration]\" (for example \"Score 84 · 6h 42m\") or \"Recording sleep\" when a session is in progress."
+  },
+  {
+    "title": "Are there home screen widgets for Snore Timeline?",
+    "text": "Yes. The Sleep Score widget comes in small and medium sizes for your iPhone home screen. It shows last night's sleep score along with Start and Stop recording controls and your episode count, so you can begin or end a session right from the home screen. The widget labels yesterday's data as \"Last night\" and, before noon, labels the current day's data as \"Tonight\" so the context matches the time of day."
+  },
+  {
+    "title": "Can the app wake me up in the morning?",
+    "text": "Yes. Snore Timeline includes a Wake Up feature in Settings under the Sleep Schedule section. Turn it on, set a wake-up time (it defaults to 7:00 AM), and at that time the app stops your current recording. You can also switch on \"Play alarm sound\" to have an alarm go off at the same time, and choose the sound from Radar (the default), Classic, Pulse, Bright, or Alert. When the alarm sounds, you'll see an \"Alarm Ringing\" notification that says \"Tap to dismiss.\" with a Stop button. Playing the alarm sound needs notifications enabled for Snore Timeline."
+  },
+  {
+    "title": "Why can't Siri or a widget start a recording?",
+    "text": "A few things can stop a session from starting. If a recording is already running, you'll see \"Recording is already in progress. Stop the current recording before starting a new one.\" If your device is low on storage, you'll see \"Storage is full. Please free up space in Settings before recording.\" The app needs roughly 100 MB free to begin; you can free space by adjusting your storage limit or enabling auto-trim in Settings. If microphone access is off, you'll see a prompt to enable it under Settings, Privacy and Security, Microphone for Snore Timeline. Trying to stop when nothing is recording returns \"No recording is currently active.\""
+  },
+  {
+    "title": "What's the difference between episodes and signals shown during recording?",
+    "text": "On the Live Activity, the episode count (shown with a waveform icon) is the number of snoring episodes detected so far, while the signal count (shown with a moon icon) is the number of individual audio detections. These give you a quick sense of activity at a glance during the night. The full breakdown is available in the app afterward. Snore Timeline analyzes audio only and is meant for personal insight or for sharing with a doctor, not for diagnosing any condition."
+  },
+  {
+    "title": "Does any of my audio get uploaded to the cloud?",
+    "text": "No. Snore Timeline records and analyzes everything directly on your device. None of your audio is sent to cloud servers or any external service. The sound analysis that detects snoring, sleep talking, and breathing sounds runs entirely on your iPhone using Apple's built-in on-device sound analysis. There is no account to create, and nothing leaves your phone unless you choose to export and share a file yourself."
+  },
+  {
+    "title": "Where exactly is my data stored and who can access it?",
+    "text": "Your recordings and analysis are stored only in Snore Timeline's own private storage on your iPhone. Recording files are kept in a private area that does not show up in the Files app and cannot be opened by other apps. The only way to get a recording out of the app is to export it yourself. Nobody else can access this data unless they have your unlocked phone, and Snore Timeline never transmits it anywhere."
+  },
+  {
+    "title": "If I delete a recording, is it gone for good?",
+    "text": "Yes. When you delete data in Snore Timeline, it is removed from your device permanently. You can delete a single night's data from Settings, which removes that night's audio, snoring signals, episodes, and sleep analysis. You can also permanently erase everything, including all recordings, episodes, sleep analysis, and exported files, using the hold-to-confirm delete-all button. Because the data lives only on your device and is not backed up to any Snore Timeline server, deletion is final."
+  },
+  {
+    "title": "Do you collect any analytics or tracking on me?",
+    "text": "No. Snore Timeline does not collect analytics, usage tracking, or any personal data about you. There are no third-party trackers and no advertising. The app simply records and analyzes your sleep audio on your own device for your personal insight."
+  },
+  {
+    "title": "What permissions does Snore Timeline ask for and why?",
+    "text": "Snore Timeline asks for microphone access so it can capture and analyze audio while you sleep. If you turn on Apple Health integration, it also asks for Health permissions to read your sleep data and write its own sleep analysis back. If you use Siri Shortcuts to start or stop recordings or check your sleep summary by voice, it asks for Siri access. You stay in control of each permission through iOS settings and the app's own settings, and the app works fully for recording and analyzing audio even if you grant only microphone access."
+  },
+  {
+    "title": "What sleep data does Snore Timeline read from and write to Apple Health?",
+    "text": "If you enable Apple Health integration, Snore Timeline can read sleep data recorded by your Apple Watch, including sleep stages, heart rate, heart rate variability, oxygen saturation, respiratory rate, and wrist temperature (on supported devices). After a recording session it can write its own sleep analysis back to Apple Health, specifically sleep stages and respiratory rate measurements. You see a single Health permission screen listing every data type the app reads and writes, with a checkbox for each so you decide exactly what to allow."
+  },
+  {
+    "title": "How do I turn Apple Health integration on or off?",
+    "text": "Apple Health integration is controlled by a single toggle in Snore Timeline's settings. Turning it off disables all reading from and writing to Apple Health at once. You can also fine-tune individual data types in the iOS Health app's privacy settings at any time. The app works fully for recording and analyzing audio even if you never connect it to Apple Health."
+  },
+  {
+    "title": "Can I delete only my audio files and keep my snore episodes and insights?",
+    "text": "Yes. Snore Timeline offers a recordings-only deletion mode that removes your audio files while keeping the episodes and sleep analysis, so you preserve your insights and free up space. There is also an episode-only cleanup option that keeps your full audio recordings but removes the oldest episodes and analysis. These give you control over what to remove and what to keep."
+  },
+  {
+    "title": "Can Snore Timeline automatically manage storage so old recordings get deleted?",
+    "text": "Yes. You can set a storage limit of 1, 2, 4, or 8 GB. When your data passes that limit, the app automatically deletes the oldest days to stay under it. You can choose whether auto-cleanup removes entire days of data or only the audio recordings (keeping your episodes and analysis), depending on what you want to keep. All of this happens on your device."
+  },
+  {
+    "title": "Does Snore Timeline send my data to my Apple Watch or other devices?",
+    "text": "If you enable Apple Watch sync, Snore Timeline shares your recorded sleep data with the companion app on your own Apple Watch so you can view it there. This stays within Apple's own sync between your devices and is not sent to Snore Timeline servers. The app can also detect other health apps and wearables, such as Apple Watch, Oura, Whoop, and Garmin, that have written sleep data to Apple Health, so you can compare them, but it only reads what you have allowed in Apple Health."
+  },
+  {
+    "title": "Is the snore and breathing analysis a medical diagnosis?",
+    "text": "No. Snore Timeline analyzes audio on your device to identify sounds like snoring, sleep talking, and breathing patterns. It is for personal insight and for sharing objective data with your doctor if you choose. It does not diagnose sleep apnea or any other medical condition, and it is not a medical device."
+  },
+  {
+    "title": "Why did my recording stop in the middle of the night?",
+    "text": "The most common reason a recording stops overnight is another app taking over the microphone or audio. Snore Timeline automatically pauses when something else plays audio or grabs the mic, such as music, a podcast, a phone call, or a system alarm. When this happens you'll see 'Recording paused,' and the app automatically tries to resume on its own. It retries up to five times with increasing waits (1, 3, 7, 12, and 20 seconds). If it still can't get the microphone back after all five tries, it shows 'Can't resume recording' and stops. Recording can also stop if your device runs out of storage, in which case you'll see 'Storage full - recording stopped.' To reduce mid-night stops, close or quiet other audio apps before bed, make sure your phone has enough free space, and use Sleep Focus or Do Not Disturb so calls and alerts don't interrupt the session."
+  },
+  {
+    "title": "I woke up and the timeline is completely blank. What happened?",
+    "text": "A blank timeline usually means recording never actually captured audio, or it stopped very early in the night. Check a few things. First, confirm microphone permission is granted under iOS Settings > Snore Timeline > Microphone; if it's off, the app can't record and shows 'Microphone unavailable. Please check permissions.' Second, check whether you had a Recording Delay set. During the delay window (which you can set up to 180 minutes) no audio is recorded, so if recording was interrupted or stopped during that period, nothing gets saved. Third, the app won't start if storage is too low; it shows 'Cannot record - only [X]MB free' in that case. Finally, if another app held the microphone the whole time, recording may have been blocked from the start. Look back at any status messages the app showed and verify your permissions and free space before the next session."
+  },
+  {
+    "title": "Did Low Power Mode or low battery stop my recording?",
+    "text": "Snore Timeline records by holding the microphone active through the night, so the most reliable setup is to keep your phone plugged in while you sleep. If the battery runs down, the recording can end early. One simple way to cut overnight battery use is to place the phone face-down. iPhones with Always-On Display keep the screen lit even when locked, and leaving the phone face-up overnight can use about twice as much battery as placing it face-down, which turns the display off and roughly halves overnight drain. Keep the phone within one to two feet of you for the best detection while still being able to charge it. If you saw no recording at all rather than an early stop, also check microphone permission and available storage, since both can prevent recording from starting."
+  },
+  {
+    "title": "How do I keep notifications and calls from interrupting the recording overnight?",
+    "text": "Snore Timeline pauses recording whenever another app or the system plays audio, which includes phone calls and some alerts. To avoid interruptions, turn on Sleep Focus or Do Not Disturb for your sleep hours so calls and notifications stay silent and don't grab the microphone. Keep other audio apps (music, podcasts, videos) fully closed before you start recording. If an interruption does happen, the app shows 'Recording paused' and automatically tries to resume up to five times, so a brief interruption usually recovers on its own. If you've set up the optional reminder to start recording, it's marked time-sensitive so it can still reach your lock screen during Sleep Focus; that reminder only prompts you to begin a session and does not interrupt one already in progress."
+  },
+  {
+    "title": "What do the recording status messages mean (paused, resumed, mic busy)?",
+    "text": "Snore Timeline shows short status messages so you know what's happening. 'Recording paused' means another app or call took over audio and recording stopped temporarily. 'Attempting to resume recording...' and 'Retrying resume...' mean the app is trying to get the microphone back. 'Recording resumed!' confirms it succeeded. 'Can't resume recording' means it gave up after five tries. 'Mic busy - close other apps' means another app is holding the microphone, so close it and try again. 'Blocked by call or audio' means a phone call or system audio like an alarm is using the mic. 'Storage full - recording stopped' and 'Cannot record - only [X]MB free' both point to needing more free space on your device. 'Switched to [device name]' simply means your input changed (for example to headphones or a Bluetooth mic) and recording kept going without stopping."
+  },
+  {
+    "title": "Does Snore Timeline work with AirPods or other Bluetooth microphones?",
+    "text": "Yes. If a Bluetooth microphone such as AirPods is connected, Snore Timeline detects it and uses it automatically, applying a small calibration adjustment so the volume readings stay consistent. If your input changes during the night, for example switching between the built-in mic, wired headphones, or a Bluetooth mic, the app shows 'Switched to [device name]' and recording continues without stopping. For overnight use, keep in mind that Bluetooth earbuds can run their own battery down and may disconnect when they do, which would change the input. For the most consistent all-night results, many people simply place the phone face-down one to two feet away and let the built-in microphone handle the recording."
+  },
+  {
+    "title": "Recording got interrupted and resumed. Will the recording delay start over?",
+    "text": "No. The Recording Delay is a one-time 'time to fall asleep' timer that only applies at the start of a session. If recording is interrupted during the night and then resumes, the delay is not re-applied, so the app starts capturing audio again right away instead of going silent for another delay period. You can set the delay from 0 to 180 minutes in 5-minute increments under Recording Delay in Settings; during that initial window no audio is recorded, which gives you time to fall asleep without capturing the start of the night."
+  },
+  {
+    "title": "What should I do if the app says it can't record because storage is full?",
+    "text": "Snore Timeline needs free space to save audio. If your device is low on space at the start it shows 'Cannot record - only [X]MB free' and won't begin; if space runs out mid-session it shows 'Storage full - recording stopped.' To prevent this, set a Storage Limit (1, 2, 4, or 8 GB) so the app automatically deletes audio from the oldest nights when the limit is reached. You can also enable Keep History so only audio files are removed while your episodes, sleep analysis, and timeline history are preserved, or turn on Episode-Only Storage to automatically strip silent portions and keep just the segments with detected episodes. Lowering the recording quality also shrinks file sizes. Freeing up general storage on your iPhone helps too."
+  },
+  {
+    "title": "How do I get the most reliable all-night recording?",
+    "text": "A few habits make overnight recordings far more dependable. Keep the phone plugged in and place it face-down one to two feet away, which protects battery and turns off the Always-On Display while still capturing audio well. Turn on Sleep Focus or Do Not Disturb so calls and alerts don't pause recording, and close other audio apps before you start. Make sure microphone permission is granted in iOS Settings > Snore Timeline > Microphone, and confirm you have enough free space or have set a Storage Limit. Reduce constant background noise where you can, since fans, white noise machines, HVAC, air purifiers, open windows facing traffic, and TVs left playing can mask the sounds the app listens for."
+  },
+  {
+    "title": "What iPhone and iOS version do I need to use Snore Timeline?",
+    "text": "Snore Timeline runs on iPhone and requires iOS 17.6 or later. The app is designed for portrait orientation and runs full screen. If your iPhone is on an older version of iOS, update it from Settings > General > Software Update before installing."
+  },
+  {
+    "title": "Does Snore Timeline work with Apple Watch?",
+    "text": "Yes. Snore Timeline includes a companion Apple Watch app that lets you start and stop recordings from your wrist, so you do not have to reach for your iPhone after you are already in bed."
+  },
+  {
+    "title": "Can I start and stop recordings hands-free with Siri?",
+    "text": "Yes. Snore Timeline supports Siri so you can start or stop a recording without touching your phone. Try saying \"Hey Siri, start recording with Snore Timeline\" or \"Hey Siri, stop recording in Snore Timeline.\" This works from your lock screen, CarPlay, HomePod, or Apple Watch. You can also set a Bedtime Recording Reminder in Settings, which sends a time-sensitive notification at your chosen time so you can start tonight's recording with one tap, even during Sleep Focus."
+  },
+  {
+    "title": "Does recording all night drain my battery a lot?",
+    "text": "Recording through the night does use battery since the microphone stays active while you sleep. On many iPhones the screen is a big factor. If your iPhone has an Always-On Display, leaving it face-up overnight can use about twice the battery of placing it face-down, because face-down automatically turns the display off. Snore Timeline suggests setting your phone face-down on the nightstand to cut overnight drain roughly in half. Many people also keep the phone plugged in while recording so it is fully charged in the morning."
+  },
+  {
+    "title": "Is it safe to charge my phone while it records all night?",
+    "text": "Charging your iPhone while Snore Timeline records is a normal way to use the app, and it keeps your battery topped up through the whole night. Snore Timeline keeps recording in the background with the screen locked whether or not the phone is plugged in. For best detection, keep the phone about 1 to 2 feet from you, so use a cable that reaches your nightstand or bedside surface at that distance."
+  },
+  {
+    "title": "Can I record using my AirPods instead of the phone mic?",
+    "text": "Yes. If AirPods or another Bluetooth microphone are connected when you start a recording, Snore Timeline uses that microphone automatically instead of the built-in iPhone mic. Keep in mind that AirPods sit in or near your ears, which changes how loud and clear sounds are captured compared to the phone mic. For the most consistent results, many people record with the iPhone placed 1 to 2 feet away, since that is the placement the detection is tuned around."
+  },
+  {
+    "title": "How does the app handle different time zones when I travel?",
+    "text": "Snore Timeline uses your iPhone's current local time zone to label and organize recordings. When you travel and your phone updates to a new time zone, new recordings appear in that local time, so a night recorded in a new location shows at the local clock time you went to bed there."
+  },
+  {
+    "title": "Can I make the text bigger in Snore Timeline?",
+    "text": "Yes. Snore Timeline supports Dynamic Type, so the app's text follows the size you set on your iPhone. To change it, go to Settings > Accessibility > Display & Text Size > Larger Text and adjust the slider. The app's text scales to match your choice."
+  },
+  {
+    "title": "Does Snore Timeline work with VoiceOver and other accessibility features?",
+    "text": "Snore Timeline includes accessibility labels on its interface elements to support VoiceOver and other assistive technologies, alongside Dynamic Type for adjustable text sizes. This helps make navigating the timeline and settings more accessible."
+  },
+  {
+    "title": "What languages is Snore Timeline available in?",
+    "text": "Snore Timeline is localized into English, German, Spanish, French, Turkish, and Simplified Chinese. The app follows your iPhone's language setting and shows a supported language automatically when one matches."
+  },
+  {
+    "title": "Can Snore Timeline sync with Apple Health?",
+    "text": "Yes. Snore Timeline can integrate with Apple Health. It can read your sleep data to show insights and trends, and after a recording it can write sleep analysis, sleep stages (light, deep, REM, awake), and respiratory rate during sleep back to Apple Health. You enable this in Settings under Apple Health. These figures are for personal insight, not a medical diagnosis."
+  },
+  {
+    "title": "How much free storage do I need to record with Snore Timeline?",
+    "text": "You need at least 100 MB of free space to open the app, and about 500 MB free to start a new recording. If your device storage gets critically low, Snore Timeline falls back to in-memory operation to help prevent data loss. To keep storage use down over time, you can turn on Episode-Only Storage in Settings, which automatically removes silent stretches after each session while keeping all of your episode data, and you can choose a lower recording quality (low, standard, or high) in Settings."
+  }
+]

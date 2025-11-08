@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>从音频识别睡眠阶段 - Snore Timeline 支持</title>
+    <meta name="title" content="从音频识别睡眠阶段 - Snore Timeline 支持">
+    <meta name="description" content="Snore Timeline 如何从呼吸音频估算清醒、浅睡、深睡和快速眼动睡眠：睡眠图、静默标签、准确性及问题排查。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh/support/sleep-stages">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh/support/sleep-stages">
+    <meta property="og:title" content="从音频识别睡眠阶段 - Snore Timeline 支持">
+    <meta property="og:description" content="Snore Timeline 如何从呼吸音频估算清醒、浅睡、深睡和快速眼动睡眠：睡眠图、静默标签、准确性及问题排查。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh/support/sleep-stages">
+    <meta property="twitter:title" content="从音频识别睡眠阶段 - Snore Timeline 支持">
+    <meta property="twitter:description" content="Snore Timeline 如何从呼吸音频估算清醒、浅睡、深睡和快速眼动睡眠：睡眠图、静默标签、准确性及问题排查。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支持", "item": "https://snoretimeline.com/zh/support/" },
+        { "@type": "ListItem", "position": 2, "name": "睡眠阶段", "item": "https://snoretimeline.com/zh/support/sleep-stages" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "从音频识别睡眠阶段",
+      "description": "Snore Timeline 如何从呼吸音频估算清醒、浅睡、深睡和快速眼动睡眠：睡眠图、静默标签、准确性及问题排查。",
+      "url": "https://snoretimeline.com/zh/support/sleep-stages",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="sleep-stages" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 标志">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支持</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">打开应用
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="面包屑导航">
+                    <a href="/zh/support/">支持</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">睡眠阶段</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">你的结果</span>
+                    <h1 class="privacy-title">从音频识别睡眠阶段</h1>
+                    <p class="privacy-updated">了解你的呼吸声音如何转化为睡眠阶段估算，以及如何解读这些数据。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本页内容</summary>
+                        <ul>
+                            <li><a href="#how-it-works">睡眠阶段估算的工作原理</a></li>
+                            <li><a href="#stages">四个阶段及其呼吸特征</a></li>
+                            <li><a href="#silence">静默标签</a></li>
+                            <li><a href="#breathing-rate">呼吸频率与呼吸规律性</a></li>
+                            <li><a href="#wearables">应用是否使用 Apple Watch 数据？</a></li>
+                            <li><a href="#hypnogram">解读睡眠图</a></li>
+                            <li><a href="#distribution">典型阶段分布</a></li>
+                            <li><a href="#accuracy">估算的准确性如何？</a></li>
+                            <li><a href="#no-stages">为何未检测到睡眠阶段</a></li>
+                            <li><a href="#research">研究参考文献</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline 会估算你在夜晚每个时刻所处的睡眠阶段：清醒、浅睡、深睡或快速眼动睡眠，同时还有第五个标签"静默"，用于标记完全听不到任何声音的时段。这些估算仅来自你的呼吸声音，由你用于鼾声检测的麦克风采集。本页介绍每个阶段背后的信号特征、如何解读每晚摘要中的睡眠图，以及这些估算能和不能告诉你什么。</p>
+
+                    <div class="privacy-section" id="how-it-works">
+                        <h2>睡眠阶段估算的工作原理</h2>
+                        <p>随着你经历不同的睡眠阶段，呼吸的特征也会随之变化，而这些变化是可以被听到的。应用会通过麦克风分析你呼吸模式的规律性和变化幅度——这与驱动鼾声检测和<a href="/zh/support/breathing-disruptions">呼吸中断检测</a>的录音相同，因此睡眠阶段估算无需额外设置。</p>
+                        <p>录音约 15 分钟后，算法会建立你的个人呼吸基线：即你的典型呼吸频率和规律性。随后，它会以你自己的基线（而非人群平均值）为参照来衡量整个夜晚，并应用基于研究的阈值将每个时段分类到对应的睡眠阶段。</p>
+                        <p>呼吸规律性承载了大部分信号，但算法还会综合考量以下因素：</p>
+                        <ul>
+                            <li><strong>呼吸频率</strong>：随着进入更深的睡眠，呼吸频率通常会减慢。</li>
+                            <li><strong>鼾声模式</strong>：夜间检测到的鼾声数据会同步输入到同一模型中。</li>
+                            <li><strong>夜间时段</strong>：睡眠结构遵循可预测的规律——深睡集中在夜晚前段，而快速眼动睡眠则随着天亮逐渐增多。</li>
+                            <li><strong>体动</strong>：声音的大幅变化往往指向身体运动，提示较浅的睡眠或短暂觉醒。</li>
+                        </ul>
+                        <p>分析结果以彩色色带的形式显示在你的时间线背景中，同时以睡眠图的形式呈现在每晚摘要里。</p>
+                    </div>
+
+                    <div class="privacy-section" id="stages">
+                        <h2>四个阶段及其呼吸特征</h2>
+                        <p>每个睡眠阶段在呼吸上都有独特的印记：</p>
+                        <ul>
+                            <li><strong>深睡</strong>：呼吸平稳规律，变化幅度低。这是恢复性睡眠阶段，呼吸节律最接近节拍器。深睡最常出现在夜晚前段，尤其是前 90 分钟和前几个小时。</li>
+                            <li><strong>快速眼动睡眠</strong>：呼吸模式不规则，变化幅度高。快速眼动睡眠是做梦的阶段，通常在入睡约 40 至 50 分钟后开始出现，并随着天亮逐渐增多——这也是睡眠不足时快速眼动睡眠损失最多的原因。</li>
+                            <li><strong>浅睡</strong>：呼吸规律性适中，介于两个极端之间。浅睡是过渡阶段，也是最容易被唤醒的阶段。</li>
+                            <li><strong>清醒</strong>：出现体动、声音，或呼吸模式与睡眠不符。当其他信号支持时，应用也会将长时间静默标记为可能的觉醒。</li>
+                        </ul>
+                        <p>由于深睡处于规律性量表的一端，而快速眼动睡眠处于另一端，应用需要持续的低呼吸变化幅度才能将某段时间归类为深睡，一旦变化幅度上升，便会退出深睡分类。同步运行的<a href="/zh/support/how-detection-works#sound-types">声音分类</a>功能还会提供鼾声和体动的背景信息。</p>
+                    </div>
+
+                    <div class="privacy-section" id="silence">
+                        <h2>静默标签</h2>
+                        <p>基于音频的睡眠阶段分析有一个客观局限：它只能对能听到的内容进行分类。当你的呼吸声太轻，麦克风无法解析出具体阶段，但又没有迹象表明你处于清醒状态时，应用会将该时段标记为<strong>静默</strong>，而不是随意猜测。这种情况在呼吸较轻的人群中很常见，或者在风扇、空调等环境噪音掩盖呼吸声时也会出现。</p>
+                        <p>静默被视为有效的休息睡眠，计入总睡眠时长，并在你的<a href="/zh/support/sleep-score#score">睡眠评分</a>中获得恢复性部分的加分——因此真正安静的夜晚同样会被判读为良好睡眠。在没有依据的情况下臆造睡眠阶段只会降低数据的可信度，所以应用选择如实标记不确定性。</p>
+                    </div>
+
+                    <div class="privacy-section" id="breathing-rate">
+                        <h2>呼吸频率与呼吸规律性</h2>
+                        <p>有两项呼吸测量指标输入睡眠阶段模型，两者都会显示在你的结果中：</p>
+                        <ul>
+                            <li><strong>呼吸频率</strong>以每分钟呼吸次数（bpm）表示，根据检测到的相邻呼吸之间的时间间隔计算得出。成人睡眠时的典型范围为每分钟 12 至 20 次。应用每隔几分钟记录一次读数，并显示平均值。在检测到睡眠的最初约 10 至 15 分钟后，应用会建立个人基线，取这段时间读数的中位值，以避免个别异常值产生影响。读数会被限制在约每分钟 6 至 25 次的生理范围内，以过滤虚假峰值，同时允许快速眼动睡眠或短暂觉醒时可能出现的较高频率。</li>
+                            <li><strong>呼吸规律性</strong>描述呼吸节律的一致性，从不规则到稳定，以量表呈现。持续且非常平稳的呼吸倾向于指向深睡，而规律性下降、呼吸变得不规则则可能提示快速眼动睡眠。</li>
+                        </ul>
+                        <p>两者都是基于音频的估算，仅供个人参考。如果呼吸频率明显偏离正常范围，建议与医生沟通，而不要自行诊断。</p>
+                    </div>
+
+                    <div class="privacy-section" id="wearables">
+                        <h2>应用是否使用 Apple Watch 数据？</h2>
+                        <p>是的，如果有可用数据的话。若 Apple Watch 等可穿戴设备上报了当晚的睡眠阶段数据，Snore Timeline 会采用手表提供的深睡和快速眼动睡眠百分比来计算睡眠评分，而非使用自身的音频推算结果。可穿戴设备对这些阶段的检测比音频分析更为准确，因此应用会优先采用其数据。在没有连接可穿戴设备的情况下，应用会退回到基于呼吸和体动的自有估算。<a href="/zh/support/apple-watch#biometrics">Apple Watch</a> 页面详细介绍了手表所能提供的数据内容。</p>
+                    </div>
+
+                    <div class="privacy-section" id="hypnogram">
+                        <h2>解读睡眠图</h2>
+                    <figure class="support-diagram" aria-label="示意图：睡眠图在一夜之间于清醒、快速眼动、浅睡、深睡和静默之间交替变化">
+                        <svg viewBox="0 0 600 240" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="120" y1="44" x2="580" y2="44"/>
+<text class="dgm-label" x="14" y="48" style="fill:#EC9A4D">清醒</text>
+<line class="dgm-grid" x1="120" y1="80" x2="580" y2="80"/>
+<text class="dgm-label" x="14" y="84" style="fill:#E59ABF">REM</text>
+<line class="dgm-grid" x1="120" y1="116" x2="580" y2="116"/>
+<text class="dgm-label" x="14" y="120" style="fill:#4FB8C9">浅睡</text>
+<line class="dgm-grid" x1="120" y1="152" x2="580" y2="152"/>
+<text class="dgm-label" x="14" y="156" style="fill:#8B8CEC">深睡</text>
+<line class="dgm-grid" x1="120" y1="188" x2="580" y2="188"/>
+<text class="dgm-label" x="14" y="192" style="fill:#6FBF9C">静默</text>
+<line class="dgm-grid" x1="152" y1="44" x2="152" y2="116"/>
+<line class="dgm-grid" x1="212" y1="116" x2="212" y2="152"/>
+<line class="dgm-grid" x1="292" y1="152" x2="292" y2="116"/>
+<line class="dgm-grid" x1="330" y1="116" x2="330" y2="80"/>
+<line class="dgm-grid" x1="372" y1="80" x2="372" y2="188"/>
+<line class="dgm-grid" x1="410" y1="188" x2="410" y2="116"/>
+<line class="dgm-grid" x1="462" y1="116" x2="462" y2="152"/>
+<line class="dgm-grid" x1="512" y1="152" x2="512" y2="80"/>
+<line class="dgm-grid" x1="560" y1="80" x2="560" y2="44"/>
+<line x1="120" y1="44" x2="152" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<line x1="152" y1="116" x2="212" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="212" y1="152" x2="292" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="292" y1="116" x2="330" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="330" y1="80" x2="372" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="372" y1="188" x2="410" y2="188" stroke="#6FBF9C" stroke-width="5" stroke-linecap="round"/>
+<line x1="410" y1="116" x2="462" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="462" y1="152" x2="512" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="512" y1="80" x2="560" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="560" y1="44" x2="580" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<text class="dgm-label-sm" x="120" y="216">晚上11点</text>
+<text class="dgm-label-sm" x="580" y="216" text-anchor="end">早上6点</text>
+<text class="dgm-label" x="350" y="232" text-anchor="middle">每个色块约为5分钟</text>
+</svg>
+                        <figcaption>睡眠图在整夜中逐步切换睡眠阶段。每个彩色色块约为五分钟，颜色与时间线上的色带对应。</figcaption>
+                    </figure>
+                        <p>每晚摘要中的睡眠图呈现了你整晚经历各睡眠阶段的变化过程。每个彩色色带代表 5 分钟的特定阶段：</p>
+                        <ul>
+                            <li><strong>橙色</strong>：清醒时段</li>
+                            <li><strong>青色（浅蓝色）</strong>：浅睡</li>
+                            <li><strong>靛蓝色（深蓝色）</strong>：深睡</li>
+                            <li><strong>粉色/青色</strong>：快速眼动睡眠</li>
+                            <li><strong>薄荷色（柔和绿色）</strong>：静默，仅在当晚出现时显示</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram-full.png" alt="包含睡眠阶段睡眠图的每晚摘要" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3.3%;top:53.8%;width:93.6%;height:26.4%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 放大查看</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram.png" alt="睡眠图，显示整晚的清醒、快速眼动、浅睡、深睡和静默阶段及各阶段占比" loading="lazy" width="1000" height="567">
+                                </picture>
+                                <figcaption>睡眠图以 5 分钟为单位，用彩色色带呈现整晚的睡眠阶段变化。</figcaption>
+                            </div>
+                        </figure>
+                        <p>从左到右阅读睡眠图，你可以数出完整的睡眠周期次数、看到深睡最集中的时间段，以及快速眼动睡眠的出现时机。睡眠阶段色带也会显示在你<a href="/zh/support/timeline-and-playback#reading-the-waveform">时间线</a>波形图的背景中，让你能够直观地判断鼾声片段是否与特定睡眠阶段重叠。</p>
+                    </div>
+
+                    <div class="privacy-section" id="distribution">
+                        <h2>典型阶段分布</h2>
+                        <p>每晚摘要还会显示你在各睡眠阶段所占的时间百分比。一个典型的夜晚大致如下：</p>
+                        <ul>
+                            <li>浅睡 45%</li>
+                            <li>深睡 20%</li>
+                            <li>快速眼动睡眠 27%</li>
+                            <li>清醒 8%</li>
+                        </ul>
+                        <p>这些百分比会随年龄、健康状况、压力水平及其他因素而变化，因此建议将你的每晚数据相互对比，而非与教科书数值进行比较。在评分方面，应用将深睡约 13% 至 23% 视为健康目标，达到 20% 或以上可为你的评分加分；快速眼动睡眠目标约为 20% 至 25%。达到这些范围可为你的<a href="/zh/support/sleep-score#sleep-factors">睡眠评分</a>加分。这些只是一般性参考，并非医学评估。</p>
+                    </div>
+
+                    <div class="privacy-section" id="accuracy">
+                        <h2>估算的准确性如何？</h2>
+                        <p>睡眠阶段分类基于已发表的研究成果，这些研究探讨了呼吸规律性与睡眠阶段之间的关系。利用单一生理信号（如呼吸或心率变异性）进行睡眠分期的研究，与多导睡眠图（临床睡眠研究标准）的一致性约为 70%。这些估算能为你提供关于总体睡眠结构的有效参考，以及更有价值的——你随时间变化的趋势。</p>
+                        <p>多种因素会影响准确性。较长的录音时间有助于提升准确性，因为数小时的睡眠数据让应用能够观察到更完整的睡眠周期。嘈杂的环境、同床伴侣、宠物，或手机距离麦克风太远，都会降低呼吸检测的可靠性，进而影响估算质量。</p>
+                        <div class="callout callout--medical">
+                            <span class="callout-label">医疗说明</span>
+                            <p>这些是基于音频分析的估算结果，并非临床测量。临床睡眠分期使用脑电波、眼球运动和肌肉活动等信号，而这些是音频无法捕捉的。Snore Timeline 未经多导睡眠图验证，无法诊断睡眠呼吸暂停或任何睡眠障碍。请将睡眠阶段分析作为一般性参考，如果你对自己的睡眠有疑虑，请咨询医疗专业人员。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="no-stages">
+                        <h2>为何未检测到睡眠阶段</h2>
+                        <p>睡眠阶段估算需要在整个录音过程中保持可听的呼吸声。如果某晚没有显示任何阶段，通常是以下原因之一：</p>
+                        <ul>
+                            <li><strong>呼吸声太轻。</strong> 你的呼吸可能无法以可分析的音量到达麦克风。</li>
+                            <li><strong>手机放置太远。</strong> 呼吸声随距离衰减很快；距头部 30 至 60 厘米效果最佳。</li>
+                            <li><strong>背景噪音。</strong> 风扇、空调及其他持续性噪音可能掩盖应用所监听的呼吸声。</li>
+                            <li><strong>录音时间太短。</strong> 算法需要约 15 分钟来建立你的基线，之后才能进行分类。</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>每晚保持相同的<a href="/zh/support/getting-started#placement">手机放置位置</a>，尽量保持房间安静，并录制完整的整夜睡眠。录音时长达到 6 小时或以上，能让算法获取最完整的睡眠周期数据；固定放置位置也能让不同夜晚的数据更具可比性。</p>
+                        </div>
+                        <p>如果整个时间线都是空白，而不仅仅是缺少睡眠阶段数据，请参阅<a href="/zh/support/troubleshooting#blank-timeline">问题排查</a>。</p>
+                    </div>
+
+                    <div class="privacy-section" id="research">
+                        <h2>研究参考文献</h2>
+                        <p>睡眠阶段分类算法参考了以下研究：</p>
+                        <ul class="research-references">
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/" target="_blank" rel="noopener noreferrer">Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages</a>（Schumann 等，2010 年）。该研究表明，不同睡眠阶段的呼吸标度指数存在可测量的差异：深睡时呼吸最为规律，而快速眼动睡眠时呼吸变化最大、最不规律。这些差异为各睡眠阶段分类所使用的规律性阈值提供了依据。</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/" target="_blank" rel="noopener noreferrer">Using Spectral Continuity to Extract Breathing Rate from Heart Rate and Its Applications in Sleep Physiology</a>（Orphanides 等，2024 年）。该研究证实，深睡（N3）阶段的呼吸在所有睡眠阶段中最为稳定和规律。这一发现支持了对深睡分类要求持续低呼吸变化幅度、并在变化幅度升高时退出深睡分类的设计。</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/" target="_blank" rel="noopener noreferrer">Sleep Stage Classification from Heart-Rate Variability</a>。该研究报告，使用单一生理信号进行睡眠分期时，与多导睡眠图的一致性约为 70%，与本应用所采用的呼吸规律性方法具有可比性。</li>
+                        </ul>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>相关内容</h2>
+                        <ul>
+                            <li><a href="/zh/support/sleep-score">睡眠评分详解</a></li>
+                            <li><a href="/zh/support/apple-watch">Apple Watch 与可穿戴设备</a></li>
+                            <li><a href="/zh/support/breathing-disruptions">呼吸中断检测</a></li>
+                            <li><a href="/zh/support/deeper-sleep-data">指南：获取更深度的睡眠数据</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支持页面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>在你的设备上录制、查看并了解你的鼾声、呼吸状况和睡眠情况。</p>
+                <p><a href="/zh/support/">支持</a> &middot; <a href="/zh/privacy">隐私政策</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>了解更多</h4>
+                <ul>
+                    <li><a href="/zh/support/getting-started">入门指南</a></li>
+                    <li><a href="/zh/support/how-detection-works">检测原理</a></li>
+                    <li><a href="/zh/support/timeline-and-playback">时间线与回放</a></li>
+                    <li><a href="/zh/support/breathing-disruptions">呼吸中断</a></li>
+                    <li><a href="/zh/support/sleep-stages">睡眠阶段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh/support/apple-watch">Apple Watch 与健康</a></li>
+                    <li><a href="/zh/support/export-and-sharing">导出与分享</a></li>
+                    <li><a href="/zh/support/troubleshooting">问题排查</a></li>
+                    <li><a href="/zh/support/android">Android</a></li>
+                    <li><a href="/zh/support/faq">常见问题</a></li>
+                    <li><a href="/zh/support/#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 保留所有权利。</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

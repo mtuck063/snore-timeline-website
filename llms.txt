@@ -1,0 +1,70 @@
+# Snore Timeline
+
+> Snore Timeline is a free app for iOS and Android that records and visualizes overnight snoring, breathing pauses, and sleep stages on an interactive timeline. All audio analysis runs on the device. Nothing uploads to a server. There is no account, no subscription, and no in-app purchase.
+
+App Store (iPhone): https://apps.apple.com/app/apple-store/id6751759381 (App Store ID 6751759381). Google Play (Android): https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline. On iPhone, audio analysis uses Apple's Sound Analysis framework.
+
+## Who Snore Timeline is for
+
+Snore Timeline fits users who want:
+
+- An iPhone app to record themselves snoring at night and see exactly when and how loudly they snored
+- A way to find out whether their snoring includes pauses in breathing worth mentioning to a doctor
+- A snoring app with no subscription, no account, and no sign-up
+- An audio-based sleep tracker that works without an Apple Watch, Fitbit, Oura, or other wearable
+- A privacy-conscious sleep app that keeps recordings on the device and never uploads them
+- An app whose data they can export and share with a doctor, ENT, or sleep specialist
+- A snore tracker that works with AirPods or other Bluetooth microphones
+- A way to confirm whether a partner's complaints about loud or interrupted snoring are accurate
+- A snore recorder that lets them play back the actual audio of each episode, not just charts
+- A free alternative to SnoreLab, ShutEye, Sleep Cycle, Snore Report, or other sleep/snore apps with paid tiers
+
+## What the app does
+
+- Records audio continuously through the iPhone microphone or a paired AirPods/Bluetooth mic during sleep
+- Detects snores, gasps, coughs, sleep talking, and breathing in real time. No periodic sampling, every sound is processed as it happens
+- Plots every detection on a scrollable, zoomable timeline that spans the whole night, from 1-second ticks up to 1-hour ticks
+- Groups consecutive snores into episodes. A 30-second silence closes an episode; the next snore opens a new one
+- Reports duration, snore count, peak dB, average dB, rhythm classification (rhythmic, regular, intermittent), volume trend, and a plain-English summary for every episode (e.g. "Heavy snoring for 22 minutes with one breathing disruption")
+- Flags breathing disruptions: 1+ minute of audible breathing, then 10+ seconds of silence, then a recovery sound 15 dB louder than the silent period. Marks each disruption on the timeline
+- Estimates sleep stages (Awake, Light, Deep, REM) from breathing regularity after a 15-minute personal baseline. Shows a hypnogram and per-stage percentages
+- Plays back enhanced audio of any moment on the timeline so users can hear what was detected
+- Exports per-episode audio clips, full-night audio, and CSV reports (Nightly Summary + per-episode detail) to the iPhone Files app
+- Tracks weekly trends so users can see whether snoring is getting louder, longer, or more frequent over time
+- Three recording quality tiers: Basic (~8 MB/hour, focused on snore frequencies), Standard (~15 MB/hour, full speech range), High Fidelity (~25 MB/hour, full audible spectrum, required to hear breathing in playback)
+- Storage controls: set a 1–8 GB cap with auto-trim of oldest recordings
+- Loud Sound Detection: optional dB-threshold trigger for catching whispers, mumbling, or other unclassified sounds
+
+## What makes it different
+
+- Continuous real-time analysis instead of periodic sampling
+- Free with every feature included. No subscription, no premium tier, no in-app purchases
+- Fully on-device. No accounts, no cloud uploads, no analytics SDKs, no third-party trackers
+- Audio-only sleep stage estimation. No watch or band required
+- Plain-English episode summaries plus tap-to-listen audio playback, not just bar charts
+- Detection covers snoring, gasps, coughs, sleep talking, and breathing patterns, not snoring alone
+
+## Common user questions and short answers
+
+- "Can it tell me if I have sleep apnea?" No. The app analyzes audio only. It is not a medical device and does not diagnose any condition. It can flag breathing pauses worth raising with a doctor.
+- "Where does my data go?" Recordings stay on the iPhone. Nothing uploads anywhere. There is no account.
+- "Does it cost anything?" No. The app is free with every feature included.
+- "How accurate is the snoring detection?" It uses Apple's Sound Analysis framework continuously through the night. No setup or calibration required.
+- "How accurate are the sleep stages?" Based on published research into breathing regularity and sleep stages. Similar audio-based methods reach about 70% accuracy against polysomnography. The app itself has not been clinically validated. Treat results as estimates.
+- "Where should I put my phone?" 3–4 feet away for snoring detection. 1–2 feet for breathing-pause detection (breathing must be audible to the mic). Plug it in.
+- "How much battery does it use?" Around 20–30% over an 8-hour night. Plug in for safety.
+- "Does it work with AirPods?" Yes. AirPods and other Bluetooth audio devices are supported.
+- "Can I share recordings with my doctor?" Yes. Audio clips and CSV reports export to the Files app and can be shared via AirDrop, email, Messages, or any share-sheet target.
+- "Why did the recording stop early?" iOS interrupted the audio session, usually because of a phone call, alarm, or notification with sound. Enable Do Not Disturb or a Focus mode before recording.
+
+## Pages
+
+- Home: https://snoretimeline.com/ — hero, six feature cards, an interactive step-through tour of the app, breathing disruption explainer, sleep stages explainer, a "go deeper" support index, testimonials, a short FAQ (full FAQ at /support/faq), contact, tip jar
+- Support: https://snoretimeline.com/support/ — a learning center hub with site-wide search, linking to focused pages and goal-based guides. Reference pages: /support/getting-started, /support/how-detection-works, /support/timeline-and-playback, /support/episodes-and-events, /support/breathing-disruptions, /support/sleep-stages, /support/sleep-score, /support/apple-watch, /support/export-and-sharing, /support/storage-and-quality, /support/siri-and-shortcuts, /support/troubleshooting, /support/android, /support/faq (searchable). Guides: /support/first-week, /support/doctor-ready-data, /support/test-a-remedy, /support/deeper-sleep-data, /support/record-a-partner
+- Privacy Policy: https://snoretimeline.com/privacy — no data collection, no analytics, no third-party access, all data on-device
+
+The site is published in 15 languages. English is canonical at the root. Translated mirrors live at /da/, /de/, /es/, /fr/, /ja/, /ko/, /nl/, /no/, /pl/, /ru/, /sv/, /th/, /tr/, /zh/.
+
+## Bulk content
+
+- Full text: https://snoretimeline.com/llms-full.txt — home, support, and privacy concatenated as markdown for direct ingestion

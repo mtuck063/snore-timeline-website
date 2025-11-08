@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Wie die Geräuscherkennung funktioniert - Snore Timeline Support</title>
+    <meta name="title" content="Wie die Geräuscherkennung funktioniert - Snore Timeline Support">
+    <meta name="description" content="Erfahre, wie Snore Timeline Schlafgeräusche klassifiziert: Echtzeit-Analyse auf dem Gerät, Dezibel-Werte, Frequenzfarben und Tipps bei Hintergrundgeräuschen.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/de/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/de/support/how-detection-works">
+    <meta property="og:title" content="Wie die Geräuscherkennung funktioniert - Snore Timeline Support">
+    <meta property="og:description" content="Erfahre, wie Snore Timeline Schlafgeräusche klassifiziert: Echtzeit-Analyse auf dem Gerät, Dezibel-Werte, Frequenzfarben und Tipps bei Hintergrundgeräuschen.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/de/support/how-detection-works">
+    <meta property="twitter:title" content="Wie die Geräuscherkennung funktioniert - Snore Timeline Support">
+    <meta property="twitter:description" content="Erfahre, wie Snore Timeline Schlafgeräusche klassifiziert: Echtzeit-Analyse auf dem Gerät, Dezibel-Werte, Frequenzfarben und Tipps bei Hintergrundgeräuschen.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Support", "item": "https://snoretimeline.com/de/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Wie die Erkennung funktioniert", "item": "https://snoretimeline.com/de/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Wie die Geräuscherkennung in Snore Timeline funktioniert",
+      "description": "Erfahre, wie Snore Timeline Schlafgeräusche klassifiziert: Echtzeit-Analyse auf dem Gerät, Dezibel-Werte, Frequenzfarben und Tipps bei Hintergrundgeräuschen.",
+      "url": "https://snoretimeline.com/de/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/de/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline Logo">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Support</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">App öffnen
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Brotkrumen-Navigation">
+                    <a href="/de/support/">Support</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Wie die Erkennung funktioniert</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Aufnahme</span>
+                    <h1 class="privacy-title">Wie die Geräuscherkennung funktioniert</h1>
+                    <p class="privacy-updated">Worauf die App hört, wie sie entscheidet und was die Zahlen bedeuten.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>Auf dieser Seite</summary>
+                        <ul>
+                            <li><a href="#sound-types">Die Geräusche, die die App klassifiziert</a></li>
+                            <li><a href="#real-time">Echtzeit-Analyse ohne Sampling</a></li>
+                            <li><a href="#confidence">Empfindlichkeit und Fehlerkennungen</a></li>
+                            <li><a href="#decibels">Dezibel und Frequenzfarben</a></li>
+                            <li><a href="#loud-sound-detection">Lautgeräusch-Erkennung</a></li>
+                            <li><a href="#background-noise">Wie Hintergrundgeräusche die Erkennung beeinflussen</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline verwandelt eine Nacht voller Rohaufnahmen in beschriftete Ereignisse, denen du vertrauen kannst – und dieses Vertrauen fällt leichter, wenn du weißt, wie sie entstehen. Diese Seite erklärt die Klassifizierungspipeline: welche Geräusche die App erkennt, wie sie entscheidet, was auf deiner Zeitachse landet, was die Dezibel-Werte und die orangefarbenen Wellenformfarben bedeuten und warum ein lauter Raum die Ergebnisse verändert.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>Die Geräusche, die die App klassifiziert</h2>
+                        <p>Anstatt jedes Geräusch als Schnarchen zu werten, ordnet die App das Gehörte in sechs Hauptkategorien ein:</p>
+                        <ul>
+                            <li><strong>Schnarchen</strong>, das Hauptereignis. Jede Erkennung landet mit ihrem Lautstärkewert auf der Zeitachse.</li>
+                            <li><strong>Keuchen</strong>, plötzliche Atemzüge, die oft auf eine Atempause folgen.</li>
+                            <li><strong>Husten</strong>, wird als eigene Kategorie erfasst und nicht dem Schnarchen zugerechnet.</li>
+                            <li><strong>Schlafrede</strong>: Sprache, Flüstern und Murmeln.</li>
+                            <li><strong>Lachen</strong>, denn Schlafende lachen tatsächlich.</li>
+                            <li><strong>Laute Geräusche</strong>, plötzliche Geräusche über einem Schwellenwert, den du festlegst (mehr dazu <a href="#loud-sound-detection">unten</a>).</li>
+                        </ul>
+                        <p>Schnarchen, Keuchen und Husten bilden die Atemgruppe. Die App überwacht außerdem die Atemmuster während der Nacht. Eine Stille von etwa 10 oder mehr Sekunden, gefolgt von einem Erholungsgeräusch, das deutlich lauter als die vorangegangene Stille ist, wird als Atemaussetzer markiert. <a href="/de/support/breathing-disruptions">Atemaussetzer</a> behandelt das Thema ausführlich.</p>
+                        <p>Wie unterscheidet die App ein Schnarchen von einem Husten? Jeder Geräuschtyp hat eine charakteristische akustische Signatur. Schnarchen trägt den Großteil seiner Energie im tiefen und mittleren Frequenzbereich, grob zwischen 50 Hz und 3 kHz, was es von Sprache, Husten und Umgebungsgeräuschen unterscheidet. Der Klassifikator gewichtet sowohl das Klangmuster als auch die Frequenzeigenschaften jedes Audiosegments, bevor er eine Kategorie zuweist. Die meisten Umgebungsgeräusche werden ignoriert.</p>
+                        <p>Kein Erkennungssystem ist perfekt. Wenn zwei Geräusche sich überlagern oder Bettzeug ein Geräusch dämpft, kann ein Ereignis in die falsche Kategorie geraten. Wirkt eine Beschriftung falsch, spiele das Audio für diesen Moment ab und höre nach, was passiert ist. Alles hier dient der persönlichen Auswertung per Audioanalyse. Die App diagnostiziert keine Schlafapnoe oder andere Erkrankungen.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>Echtzeit-Analyse ohne Sampling</h2>
+                    <figure class="support-diagram" aria-label="Diagramm: Im Inneren deines Geräts speist das Mikrofon eine KI auf dem Gerät, die jedes Geräusch beschriftet, ohne dass etwas irgendwohin gesendet wird">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">NUR AUF DEINEM GERÄT</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">Mikrofon</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">hört die ganze Nacht</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">KI auf dem Gerät</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">in Echtzeit</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Schnarchen</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Keuchen</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Husten</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Schlafrede</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Atmung</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">Erkannte Ereignisse</text>
+</svg>
+                        <figcaption>Audio wird in dem Moment klassifiziert, in dem es entsteht, vollständig auf deinem Telefon. Jedes Geräusch wird in Echtzeit verarbeitet und beschriftet; nichts davon wird gesampelt oder irgendwohin gesendet.</figcaption>
+                    </figure>
+                        <p>Manche Apps sparen Akku durch Sampling: Sie wachen periodisch auf, hören kurz hin und schlafen wieder ein. Dabei verpassen sie alles, was dazwischen passiert. Snore Timeline analysiert dein Audio kontinuierlich mithilfe von Apples Sound Analysis Framework, das auf deinem Telefon läuft. Jedes Geräusch wird verarbeitet, sobald es entsteht. Nichts wird übersprungen, gesampelt oder hochgeladen.</p>
+                        <p>Die kontinuierliche Analyse hat zwei Folgen, die du bemerken wirst:</p>
+                        <ul>
+                            <li><strong>Die Erkennung beginnt sofort.</strong> Es gibt keinen Kalibrierungs- oder Einrichtungsschritt. Das erste Schnarchen der Nacht zählt genauso wie das hundertste.</li>
+                            <li><strong>Die Zeitachse ist vollständig.</strong> Da die App nie aufhört zu hören, bedeutet eine stille Lücke auf deiner Zeitachse, dass es im Raum still war. Diese Lücken werden selbst zu Daten für die Atem- und <a href="/de/support/sleep-stages">Schlafphasen</a>-Analyse.</li>
+                        </ul>
+                        <p>All das läuft auf dem Gerät. Dein Audio verlässt dein Telefon nie, und die <a href="/de/privacy">Datenschutzerklärung</a> erläutert, was das in der Praxis bedeutet.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>Empfindlichkeit und Fehlerkennungen</h2>
+                        <p>Nicht jedes Geräusch schafft es in die Auswertung. Die App protokolliert ein Geräusch nur dann als Ereignis, wenn es stark genug mit einer ihrer Kategorien übereinstimmt. So verhindert sie, dass ein knarzendes Heizkörperventil deine Nacht mit Phantomschnarchen füllt.</p>
+                        <p>Mit der Empfindlichkeitseinstellung kannst du steuern, wie streng dieser Schwellenwert ist. Sie hat fünf Stufen: <strong>Minimal, Niedrig, Ausgewogen, Hoch und Maximum</strong>. Ausgewogen ist die Standardeinstellung.</p>
+                        <ul>
+                            <li><strong>Minimal</strong> erfasst nur klares, lautes Schnarchen und ignoriert nahezu alles andere. Geeignet für laute Räume oder wenn das Schnarchen eines Partners ständig den Detektor auslöst.</li>
+                            <li><strong>Maximum</strong> erkennt sehr leises Schnarchen, nimmt aber auch mehr Hintergrundgeräusche auf und protokolliert mehr Fehlerkennungen.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Tipp</span>
+                            <p>Lass deine Zeitachse dir sagen, in welche Richtung du anpassen solltest. Zu viele Fremdgeräusche, die beim Abspielen nichts zeigen? Empfindlichkeit verringern. Schnarchen, das in der Aufnahme hörbar ist, aber von der App nicht erfasst wurde? Empfindlichkeit erhöhen. Ausgewogen eignet sich für die meisten Menschen als Ausgangspunkt.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>Dezibel und Frequenzfarben</h2>
+                        <p>Die Lautstärke wird in der gesamten App in dB SPL angezeigt, auf einer Skala von etwa 28 dB als Referenz für nahezu absolute Stille bis zu 105 dB für einen extrem lauten Klang. Lies es wie einen Lautstärkemesser: Höhere Werte bedeuten lautere Geräusche. Als grobe Orientierung für dein Schnarchen:</p>
+                        <ul>
+                            <li><strong>Unter etwa 40 dB</strong>: leises Schnarchen</li>
+                            <li><strong>40 bis 48 dB</strong>: sanftes Schnarchen</li>
+                            <li><strong>48 bis 56 dB</strong>: deutlich hörbares Schnarchen</li>
+                            <li><strong>56 dB und darüber</strong>: starkes Schnarchen</li>
+                        </ul>
+                        <p>Die App erfasst sowohl den Spitzen- als auch den Durchschnitts-Dezibel-Wert für jede Episode. Diese Werte dienen persönlicher Orientierung und sind keine klinischen Messungen.</p>
+                        <p>Die App erkennt, welches Mikrofon verwendet wird, und passt die Messwerte an, während dein Telefon Audio abspielt, z. B. Musik oder einen Podcast.</p>
+                        <p>Jedes Geräusch ist eine Mischung aus Frequenzen, und eine Frequenz ist einfach, wie schnell die Luft schwingt, gemessen in Hertz (Hz). Tiefe Klänge schwingen langsam, hohe Klänge schwingen schnell. Drücke auf Wiedergabe und ziehe den Regler, um es zu hören und zu sehen, wie sich die Welle verdichtet:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="Tief" data-band-mid="Mittel" data-band-high="Hoch"
+                                aria-label="Ziehe den Regler, um die Tonhöhe zu ändern, und sieh, wie eine höhere Frequenz schneller schwingt">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="Ziehen, um die Tonhöhe zu ändern">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="Abspielen" data-label-stop="Stopp">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">Abspielen</span>
+                                </button>
+                                <span class="pitch-hint">Ziehe den Regler &mdash; eine höhere Tonhöhe schwingt schneller</span>
+                            </div>
+                            <figcaption>Das ist dieselbe Skala, auf der die Bänder unten aufgebaut sind: langsame Schwingungen sind das tiefe Band, schnelle Schwingungen das hohe Band. Schnarchen liegt tief, das leise Zischen beim Ausatmen liegt hoch. Kopfhörer oder Lautsprecher erforderlich, um es zu hören.</figcaption>
+                        </figure>
+                        <p>Wenn du ganz in die Wellenform hineinzoomst, teilen sich die Balken in gestapelte Orangetöne auf, die zeigen, wo die Energie eines Geräuschs über die Frequenzen verteilt ist:</p>
+                        <ul>
+                            <li><strong>Dunkles Orange</strong>: Tiefe Frequenzen, grob 50 bis 250 Hz, das tiefe Grollen des Schnarchens.</li>
+                            <li><strong>Mittleres Orange</strong>: Mittlere Frequenzen, etwa 250 bis 1500 Hz, Obertöne und Vokalklänge.</li>
+                            <li><strong>Helles Orange</strong>: Hohe Frequenzen, etwa 1500 bis 8000 Hz, Zischlaute wie das „s" in „sss".</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="Spiele eine echte Aufnahme ab und beobachte ihre Frequenzbänder auf der Wellenform, so wie die App sie darstellt">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">Atmung</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">Schnarchen</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="Einatmen" data-exhale="Ausatmen &mdash; mehr Energie im hohen Band" data-idle="Drücke auf Wiedergabe und folge jedem Atemzug"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="Abspielen" data-label-stop="Pause">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">Abspielen</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">Hoch</span>
+                                    <span class="wave-key" data-band="mid">Mittel</span>
+                                    <span class="wave-key" data-band="low">Tief</span>
+                                </span>
+                            </div>
+                            <figcaption>Echte Aufnahmen, eingefärbt so, wie die App die Wellenform zeichnet: jeder Balken aufgeteilt in tiefe, mittlere und hohe Frequenzenergie. Drücke auf Wiedergabe und folge der Linie. Bei der Atmung siehst du, wie das helle hohe Band bei jedem Ausatmen aufblitzt, während das Geräusch leise bleibt. Beim Schnarchen dominiert das dunkle tiefe Band. Eine Lücke in diesem Rhythmus des hohen Bandes deutet auf einen möglichen <a href="/de/support/breathing-disruptions">Atemaussetzer</a> hin.</figcaption>
+                        </figure>
+                        <p>Das helle, hochfrequente Band ist das wichtigste für die Atmung. Jedes Ausatmen erzeugt ein leises Zischen, ähnlich einem sanften &#8220;sss&#8221;, und dieses Zischen liegt im hohen Band. Snore Timeline hört darauf, um deine Atmung die ganze Nacht zu verfolgen. Das ist die Grundlage für die <a href="/de/support/breathing-disruptions">Atemaussetzer-Erkennung</a> und die <a href="/de/support/sleep-stages">Schlafphasenschätzung</a>. Es erklärt auch, warum ein zu weit entferntes Telefon oder ein lauter Raum diese Funktionen beeinträchtigt: Das Zischen ist leise und geht als Erstes verloren.</p>
+                        <p>Das Frequenzdetail erscheint nur in der maximalen Zoom-Ansicht. Bei weiteren Zoom-Stufen werden die Balken in einfarbigem Orange angezeigt. <a href="/de/support/timeline-and-playback#reading-the-waveform">Zeitachse &amp; Wiedergabe</a> erklärt das Lesen der gesamten Wellenform.</p>
+                        <div class="callout callout--tip"><span class="callout-label">Probier es aus</span><p>Zoome ganz in einen ruhigen Abschnitt deiner Nacht und achte auf kurze Ausschläge in hellem Orange mit wenig Farbe darunter. Das ist deine Atmung, sichtbar gemacht durch den Klang allein.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="Vollständiger App-Bildschirm" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Herangezoomt</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="Herangezoomte Wellenform mit gestapelten orangefarbenen Frequenzbändern während einer Schnarchepisode" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>Frequenzfarben in der maximalen Zoom-Ansicht.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>Lautgeräusch-Erkennung</h2>
+                        <p>Der Klassifikator kümmert sich eigenständig um Schnarchen und Schlafrede. Die Lautgeräusch-Erkennung ist für alles andere da: Sie erstellt eine Episode, sobald ein Geräusch einen von dir gewählten Lautstärkeschwellenwert überschreitet, unabhängig davon, was das Geräusch ist. Damit werden Geräusche erfasst, die der Klassifikator nicht benennen kann, wie z. B. geflüstertes Schlafrede, das zu leise für Spracherkennung ist, Zähneknirschen, Geräusche beim Bewegen oder andere nicht identifizierbare Nachtgeräusche.</p>
+                        <p>Der Standardschwellenwert liegt bei <strong>55 dB</strong>. So findest du einen geeigneten Schwellenwert für deinen Raum:</p>
+                        <ol>
+                            <li>Starte eine Aufnahme und bleibe ruhig.</li>
+                            <li>Beobachte den dB-Wert, den die Zeitachse für den Grundrauschen deines Raums anzeigt.</li>
+                            <li>Setze den Schwellenwert knapp über diesem Wert.</li>
+                        </ol>
+                        <p>Ein ruhigerer Raum erlaubt einen niedrigeren Schwellenwert und erfasst mehr.</p>
+                        <p>Es kann vorkommen, dass Geräusche in der Kategorie „Lautes Geräusch" landen, obwohl du Schnarchen erwartet hättest. Das passiert, wenn Hintergrundgeräusche die Atemmuster verdecken, auf die der Schnarchklassifikator hört. Der Klassifikator braucht ein klares Signal, um Schnarchen zu erkennen. Wenn ein Raum einen Grundlärm von etwa 45 dB überschreitet, werden mehr Geräusche als Lautgeräusch-Signale statt als Schnarchepisoden registriert. Der nächste Abschnitt erklärt, was dagegen zu tun ist.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>Wie Hintergrundgeräusche die Erkennung beeinflussen</h2>
+                        <p>Konstante Hintergrundgeräusche wie Klimaanlage, Ventilator, Verkehr, Musik, Regen oder Meeresrauschen werden separat erfasst und erzeugen keine Schnarchereignisse auf deiner Zeitachse. Die App erkennt diese als kontinuierliches Umgebungsrauschen und nicht als einzelne Schnarchereignisse, sodass ein summender Ventilator allein deine Nacht nicht mit falschen Schnarchereignissen füllt.</p>
+                        <p>Der eigentliche Nachteil von konstantem Rauschen ist die Maskierung. Ein hoher Geräuschpegel übertönt leise Atemgeräusche und schwaches Schnarchen und lässt dem Klassifikator weniger Signal zum Arbeiten. Das hat zwei Folgen:</p>
+                        <ul>
+                            <li>Leise Geräusche werden schwerer erkennbar.</li>
+                            <li>In Räumen mit einem Grundlärm von über etwa <strong>45 dB</strong> werden Geräusche, die sonst als Schnarchen klassifiziert würden, in die Kategorie „Lautes Geräusch" verschoben.</li>
+                        </ul>
+                        <p>Für eine sauberere Klassifizierung empfiehlt es sich, den Raum so ruhig wie möglich zu halten. Die häufigsten Störquellen sind Ventilatoren und Weißrauschgeräte, Klimaanlagen und Luftreiniger, offene Fenster zur Straße sowie laufende Fernseher oder Tonwiedergaben. Ein ruhigerer Raum ermöglicht insgesamt genauere Erkennungen.</p>
+                        <p>Wenn du den Lärm nicht kontrollieren kannst, zum Beispiel in einem Hotelzimmer, arbeite mit dem, was du hast:</p>
+                        <ul>
+                            <li><strong>Platziere das Telefon näher an deinem Kopf</strong>, damit Atemgeräusche über dem Rauschen hörbar bleiben. <a href="/de/support/getting-started#placement">Erste Schritte</a> behandelt die Platzierung ausführlich.</li>
+                            <li><strong>Erhöhe die <a href="#confidence">Empfindlichkeit</a></strong>, damit die App auch leisere Geräusche über dem Hintergrund noch erfasst.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="Vollständiger App-Bildschirm" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Herangezoomt</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="Erkannte Lautgeräusch-Episode mit Spitzen- und Durchschnitts-Dezibel sowie einem Lautgeräusch-Signale-Badge" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>Eine Nacht, aufgezeichnet oberhalb des 45-dB-Grundrauschens.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Verwandte Themen</h2>
+                        <ul>
+                            <li><a href="/de/support/episodes-and-events">Episoden &amp; Ereignisse</a></li>
+                            <li><a href="/de/support/timeline-and-playback">Deine Zeitachse lesen &amp; Audio abspielen</a></li>
+                            <li><a href="/de/support/breathing-disruptions">Atemaussetzer</a></li>
+                            <li><a href="/de/support/getting-started">Erste Schritte</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Weitere Support-Seiten"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/de/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Schnarchen, Atmung und Schlaf aufzeichnen, sehen und verstehen – alles auf deinem Gerät.</p>
+                <p><a href="/de/support/">Support</a> &middot; <a href="/de/privacy">Datenschutz</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Lernen</h4>
+                <ul>
+                    <li><a href="/de/support/getting-started">Erste Schritte</a></li>
+                    <li><a href="/de/support/how-detection-works">Wie die Erkennung funktioniert</a></li>
+                    <li><a href="/de/support/timeline-and-playback">Zeitachse &amp; Wiedergabe</a></li>
+                    <li><a href="/de/support/breathing-disruptions">Atemaussetzer</a></li>
+                    <li><a href="/de/support/sleep-stages">Schlafphasen</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Mehr</h4>
+                <ul>
+                    <li><a href="/de/support/apple-watch">Apple Watch &amp; Gesundheit</a></li>
+                    <li><a href="/de/support/export-and-sharing">Export &amp; Teilen</a></li>
+                    <li><a href="/de/support/troubleshooting">Fehlerbehebung</a></li>
+                    <li><a href="/de/support/android">Android</a></li>
+                    <li><a href="/de/support/#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Alle Rechte vorbehalten.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

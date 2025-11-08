@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>エピソードとイベント - Snore Timeline サポート</title>
+    <meta name="title" content="エピソードとイベント - Snore Timeline サポート">
+    <meta name="description" content="Snore Timelineがいびき信号をエピソードに変換する仕組みを学びましょう：30秒のグルーピングルール、エピソード指標、わかりやすい説明、イベントタイプについて解説します。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ja/support/episodes-and-events">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/ja/support/episodes-and-events">
+    <meta property="og:title" content="エピソードとイベント - Snore Timeline サポート">
+    <meta property="og:description" content="Snore Timelineがいびき信号をエピソードに変換する仕組みを学びましょう：30秒のグルーピングルール、エピソード指標、わかりやすい説明、イベントタイプについて解説します。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ja/support/episodes-and-events">
+    <meta property="twitter:title" content="エピソードとイベント - Snore Timeline サポート">
+    <meta property="twitter:description" content="Snore Timelineがいびき信号をエピソードに変換する仕組みを学びましょう：30秒のグルーピングルール、エピソード指標、わかりやすい説明、イベントタイプについて解説します。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "サポート", "item": "https://snoretimeline.com/ja/support/" },
+        { "@type": "ListItem", "position": 2, "name": "エピソードとイベント", "item": "https://snoretimeline.com/ja/support/episodes-and-events" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timelineのエピソード、信号、イベント",
+      "description": "Snore Timelineがいびき信号をエピソードに変換する仕組みを学びましょう：30秒のグルーピングルール、エピソード指標、わかりやすい説明、イベントタイプについて解説します。",
+      "url": "https://snoretimeline.com/ja/support/episodes-and-events",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="episodes-and-events" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ja/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline ロゴ">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">サポート</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">アプリを開く
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="パンくずリスト">
+                    <a href="/ja/support/">サポート</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">エピソードとイベント</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">記録の結果</span>
+                    <h1 class="privacy-title">エピソード、信号、イベント</h1>
+                    <p class="privacy-updated">個々のいびき音が、毎朝確認するエピソードになるまでの仕組み。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>このページの内容</summary>
+                        <ul>
+                            <li><a href="#signals-vs-episodes">信号とエピソードの違い</a></li>
+                            <li><a href="#grouping">信号がエピソードにまとまる仕組み</a></li>
+                            <li><a href="#episode-details">各エピソードに表示される情報</a></li>
+                            <li><a href="#descriptions">説明文の生成方法</a></li>
+                            <li><a href="#event-types">エピソードとイベントのタイプ</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">一晩のいびきには何百もの個別の音が含まれることがあります。それをすべて列挙すると情報が多すぎるため、Snore Timelineは階層構造で整理しています。単独の音が「信号」となり、近い時間帯に発生した信号がまとまって「エピソード」になります。この2つの層と、それを分ける1つのルールを理解すれば、アプリ内のすべての数値やサマリーをひと目で読み取れるようになります。</p>
+
+                    <div class="privacy-section" id="signals-vs-episodes">
+                        <h2>信号とエピソードの違い</h2>
+                        <p>Snore Timelineがいびきの音を検知するたびに、1つの<strong>いびき信号</strong>としてカウントされます。信号はアプリが追跡する最小単位で、検出されたいびきが1回分にあたります。信号が多いほど、いびきの活動が活発だったことを示します。</p>
+                        <p><strong>エピソード</strong>とは、時間的に近い場所で発生した信号のグループです。信号が構成要素であり、エピソードはそれが語るストーリーです。たとえば午前2時ごろの断続的ないびきは、数十の信号を含む1つのエピソードとして表示され、活動がどのくらい続いたか、どれほど密集していたかがわかります。</p>
+                        <p>夜間の記録中も、両方の層をリアルタイムで確認できます。録音中のLive Activityには、波形アイコンの隣に<strong>エピソード数</strong>、月アイコンの隣に<strong>信号数</strong>という2つの累計数が表示されます。これにより活動の状況をひと目で把握できます。詳細な内訳は翌朝アプリで確認できます。設定方法については<a href="/ja/support/siri-and-shortcuts#live-activity">Live Activity</a>をご覧ください。</p>
+                    </div>
+
+                    <div class="privacy-section" id="grouping">
+                        <h2>信号がエピソードにまとまる仕組み</h2>
+                    <figure class="support-diagram" aria-label="図：いびき信号が30秒の無音を境にエピソードへグループ化される様子">
+                        <svg viewBox="0 0 600 170" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="20" y1="120" x2="580" y2="120"/>
+<g class="dgm-accent-fill"><rect x="70" y="78" width="6" height="42" rx="2"/><rect x="92" y="64" width="6" height="56" rx="2"/><rect x="114" y="72" width="6" height="48" rx="2"/><rect x="136" y="60" width="6" height="60" rx="2"/><rect x="158" y="82" width="6" height="38" rx="2"/></g>
+<g class="dgm-accent-fill"><rect x="375" y="70" width="6" height="50" rx="2"/><rect x="397" y="78" width="6" height="42" rx="2"/><rect x="419" y="62" width="6" height="58" rx="2"/><rect x="441" y="74" width="6" height="46" rx="2"/></g>
+<line class="dgm-grid" x1="178" y1="120" x2="366" y2="120" stroke-dasharray="4 4"/>
+<path class="dgm-ctx" d="M178 106 L178 120 M366 106 L366 120"/>
+<text class="dgm-label" x="272" y="100" text-anchor="middle">30秒の無音</text>
+<text class="dgm-label-sm" x="272" y="114" text-anchor="middle">エピソード終了</text>
+<path class="dgm-ctx" d="M66 134 L66 140 L166 140 L166 134"/>
+<text class="dgm-label-strong" x="116" y="158" text-anchor="middle">エピソード 1</text>
+<path class="dgm-ctx" d="M371 134 L371 140 L449 140 L449 134"/>
+<text class="dgm-label-strong" x="410" y="158" text-anchor="middle">エピソード 2</text>
+</svg>
+                        <figcaption>各バーは1つのいびき信号を表します。近い信号がまとまって1つのエピソードになり、30秒の無音でエピソードが終了し、次の信号から新しいエピソードが始まります。</figcaption>
+                    </figure>
+                        <p>すべてを制御するルールは1つです。<strong>30秒間の無音でエピソードが終了します</strong>。アプリがいびきを検知するとエピソードを開始し、いびきが続く限り信号を追加し続けます。30秒間いびきが検知されなければ、エピソードは終了します。その後に検知された最初の信号から新しいエピソードが始まります。</p>
+                        <p>エピソードを分けるのは、音の間隔であって合計の長さではありません。よくある疑問として「20秒空いた2つのいびきが同じエピソードに含まれるのはなぜ？」と思うかもしれません。答えは、20秒は30秒の窓の中に収まるからです。アプリがエピソードを終了させるには、静かな時間が30秒に達する必要があります。これにより、断続的ないびきの一続きが複数の小さなエピソードに分割されずに、1つのエピソードとして記録されます。</p>
+                        <figure class="support-figure" role="img" aria-label="図：時間軸上のいびき信号。20秒の空白は同じエピソードに含まれ、30秒以上の空白は新しいエピソードが始まる。">
+                            <svg viewBox="0 0 640 200" width="100%" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                                <!-- Episode 1 region -->
+                                <rect x="36" y="56" width="262" height="84" rx="12" fill="var(--color-primary)" opacity="0.12"/>
+                                <rect x="36" y="56" width="262" height="84" rx="12" fill="none" stroke="var(--color-primary)" stroke-opacity="0.5"/>
+                                <text x="167" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="var(--color-primary)" font-family="inherit">エピソード 1</text>
+                                <!-- Episode 1 signals -->
+                                <rect x="56" y="84" width="8" height="44" rx="4" fill="var(--color-primary)"/>
+                                <rect x="84" y="78" width="8" height="50" rx="4" fill="var(--color-primary)"/>
+                                <rect x="112" y="88" width="8" height="40" rx="4" fill="var(--color-primary)"/>
+                                <rect x="140" y="80" width="8" height="48" rx="4" fill="var(--color-primary)"/>
+                                <rect x="232" y="86" width="8" height="42" rx="4" fill="var(--color-primary)"/>
+                                <rect x="260" y="80" width="8" height="48" rx="4" fill="var(--color-primary)"/>
+                                <!-- 20s gap annotation -->
+                                <line x1="152" y1="118" x2="228" y2="118" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="3 3"/>
+                                <text x="190" y="158" text-anchor="middle" font-size="12" fill="var(--color-text-secondary)" font-family="inherit">20秒の空白：同じエピソード</text>
+                                <!-- 30s+ gap annotation -->
+                                <line x1="306" y1="98" x2="394" y2="98" stroke="var(--color-secondary)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                                <text x="350" y="84" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-secondary)" font-family="inherit">30秒以上の無音</text>
+                                <text x="350" y="118" text-anchor="middle" font-size="11" fill="var(--color-text-secondary)" font-family="inherit">エピソード終了</text>
+                                <!-- Episode 2 region -->
+                                <rect x="402" y="56" width="206" height="84" rx="12" fill="var(--color-secondary)" opacity="0.1"/>
+                                <rect x="402" y="56" width="206" height="84" rx="12" fill="none" stroke="var(--color-secondary)" stroke-opacity="0.5"/>
+                                <text x="505" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="var(--color-secondary)" font-family="inherit">エピソード 2</text>
+                                <!-- Episode 2 signals -->
+                                <rect x="424" y="82" width="8" height="46" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="452" y="88" width="8" height="40" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="480" y="78" width="8" height="50" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="508" y="84" width="8" height="44" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="536" y="90" width="8" height="38" rx="4" fill="var(--color-secondary)"/>
+                                <rect x="564" y="82" width="8" height="46" rx="4" fill="var(--color-secondary)"/>
+                                <!-- Time axis -->
+                                <line x1="36" y1="172" x2="608" y2="172" stroke="var(--color-border)" stroke-width="1.5"/>
+                                <text x="36" y="192" font-size="11" fill="var(--color-text-secondary)" font-family="inherit">時間</text>
+                                <text x="608" y="192" text-anchor="end" font-size="11" fill="var(--color-text-secondary)" font-family="inherit">&#8594;</text>
+                            </svg>
+                            <figcaption>20秒の空白はエピソード内に収まり、30秒の無音が一夜を2つに分割します。</figcaption>
+                        </figure>
+                        <p>エピソード内の静かな時間も消えるわけではありません。エピソード内で10秒を超える静寂は<strong>有意な間隔</strong>として記録されるため、エピソードが分割されることなく、活動の中の休止を確認できます。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">ヒント</span>
+                            <p>有意な間隔は呼吸の中断とは異なります。中断は、直前の1分間に聞こえていた呼吸音が10秒以上の完全な無音に変わり、いびき信号によって回復が確認された場合にのみフラグが立てられます。詳しい条件については<a href="/ja/support/breathing-disruptions#detection-conditions">呼吸の中断</a>をご覧ください。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="episode-details">
+                        <h2>各エピソードに表示される情報</h2>
+                        <p>エピソードを開くと、その時間帯に起きたことの全体像が表示されます：</p>
+                        <ul>
+                            <li><strong>継続時間</strong>：エピソードがどのくらい続いたか。</li>
+                            <li><strong>いびき回数</strong>：エピソード内のいびき信号の総数。</li>
+                            <li><strong>ピーク音量</strong>：最も大きかった瞬間のデシベル値。</li>
+                            <li><strong>平均音量</strong>：全体的な音量レベル。</li>
+                            <li><strong>イベント内訳</strong>：いびき、あえぎ、咳、寝言のそれぞれの回数。</li>
+                            <li><strong>わかりやすい説明</strong>：「20分以上の激しいいびき、呼吸の中断あり」といった説明文。</li>
+                        </ul>
+                        <p>音量の読み取り値はdB SPLで表示され、アプリは最大105dBを計測します。音量メーターと同様に読み取ってください。数値が高いほど音が大きいことを意味します。アプリはエピソードごとにピーク値と平均値の両方を追跡します。大きな音が1回だけあった長いエピソードと、全体を通して大きな音が続いた短いエピソードでは、意味が異なるからです。デシベルスケールの詳細については<a href="/ja/support/how-detection-works#decibels">検出の仕組み</a>をご覧ください。</p>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-episodes.webp" type="image/webp">
+                                    <img src="/support/img/shot-episodes.png" alt="Snore Timeline エピソードリスト" loading="lazy" width="600" height="1170">
+                                </picture>
+                                <span class="magnify-region" style="left:3.6%;top:42%;width:93%;height:23.6%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 拡大表示</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-episode-card.webp" type="image/webp">
+                                    <img src="/support/img/shot-episode-card.png" alt="開始・終了時刻、継続時間、ピーク・平均デシベル値、いびき信号タグが表示されたエピソードカード" loading="lazy" width="1000" height="498">
+                                </picture>
+                                <figcaption>各エピソードには継続時間、ピーク・平均dB値、イベントタグ、そして「軽いいびき、複数回の無音あり」といったわかりやすい説明文が表示されます。</figcaption>
+                            </div>
+                        </figure>
+                        <p>エピソードは録音音声とも連携しています。タイムライン上の任意のエピソードをタップすると、録音のその部分を再生でき、睡眠中の音を聞きやすくする音声強調機能も使用されます。操作方法については<a href="/ja/support/timeline-and-playback#playback">タイムラインと再生</a>をご覧ください。</p>
+                    </div>
+
+                    <div class="privacy-section" id="descriptions">
+                        <h2>説明文の生成方法</h2>
+                        <p>各エピソードのわかりやすい説明文は、アプリが計測する3つの特性から生成されます。語彙を理解すれば、どんな説明文も解読できます。</p>
+                        <p><strong>音量帯域</strong>はデシベル値を言葉に変換します：</p>
+                        <ul>
+                            <li><strong>かすかな</strong>：40dB未満</li>
+                            <li><strong>軽い</strong>：40〜48dB</li>
+                            <li><strong>聞こえる</strong>：48〜56dB</li>
+                            <li><strong>激しい</strong>：56dB以上</li>
+                        </ul>
+                        <p><strong>リズムパターン</strong>は信号間の間隔を表します：</p>
+                        <ul>
+                            <li><strong>規則的</strong>：いびき間隔が一定</li>
+                            <li><strong>ほぼ規則的</strong>：タイミングにわずかなばらつきあり</li>
+                            <li><strong>断続的</strong>：断続的な活動</li>
+                        </ul>
+                        <p><strong>傾向</strong>はエピソードの経過とともにいびきが大きくなったか、小さくなったか、一定だったかを表します。</p>
+                        <p>まとめると、「20分以上の激しいいびき」という説明は、エピソードの音量が56dB以上の帯域に入り、20分を超えて続いたことを意味します。説明文の言葉はエピソード自体の指標で確認できる数値に対応しています。</p>
+                    </div>
+
+                    <div class="privacy-section" id="event-types">
+                        <h2>エピソードとイベントのタイプ</h2>
+                        <p>アプリが分類するのはいびきだけではありません。エピソードにはタイプラベルが付き、一夜をひと目でスキャンして確認したい部分にすぐ移動できます。タイプは4種類あります：</p>
+                        <ul>
+                            <li><strong>呼吸系</strong>：いびき、あえぎ、咳、呼吸の中断。</li>
+                            <li><strong>寝言</strong>：睡眠中に検出された発話。</li>
+                            <li><strong>大きな音</strong>：主に周囲の環境からの孤立した大きな音。</li>
+                            <li><strong>複合</strong>：呼吸系の音と寝言が混在。</li>
+                        </ul>
+                        <p>分類された音が含まれなかったエピソードは<strong>静かな時間帯</strong>として表示されます。</p>
+                        <p>呼吸系のエピソード内では、あえぎと咳がメインのいびき回数とは別にそれぞれカウントされるため、各エピソードの内訳を一括した合計数ではなく個別に確認できます。分類器がこれらの音を区別する方法については<a href="/ja/support/how-detection-works#sound-types">検出の仕組み</a>をご覧ください。</p>
+                        <p>「大きな音」ラベルが予想より多い場合、原因は通常お部屋の環境にあります。背景ノイズがいびき分類器が聞き取ろうとする呼吸パターンを覆い隠すことがあり、部屋の基準騒音が約45dBを超えると、より多くの音がいびきエピソードではなく「大きな音」信号として分類されます。扇風機、ホワイトノイズマシン、空調、つけっぱなしのテレビなどのノイズ源を減らすことで、アプリのいびき分類の精度が向上します。まず何を静かにすべきかについては<a href="/ja/support/how-detection-works#background-noise">背景ノイズ</a>をご覧ください。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">ヒント</span>
+                            <p>昨夜何回いびきをかいたか知りたいですか？その夜を開いて、一夜の合計数とエピソードリストを確認してください。各エピソードには独自の信号数が表示され、あえぎと咳はいびき回数とは別のカウントとして表示されます。</p>
+                        </div>
+                        <p>一点注意が必要です。Snore Timelineが分析するのは音声のみです。エピソード数やイベントラベルは、ご自身の理解や医師との相談に役立てるためのものであり、アプリは睡眠時無呼吸症候群やその他の医療的状態を診断するものではありません。</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>関連ページ</h2>
+                        <ul>
+                            <li><a href="/ja/support/how-detection-works">音の検出の仕組み</a></li>
+                            <li><a href="/ja/support/timeline-and-playback">タイムラインの見方と音声再生</a></li>
+                            <li><a href="/ja/support/breathing-disruptions">呼吸の中断</a></li>
+                            <li><a href="/ja/support/first-week">ガイド：Snore Timelineを使う最初の1週間</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="その他のサポートページ"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ja/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>いびき、呼吸、睡眠をすべてデバイス上で録音・可視化・理解できます。</p>
+                <p><a href="/ja/support/">サポート</a> &middot; <a href="/ja/privacy">プライバシー</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>学ぶ</h4>
+                <ul>
+                    <li><a href="/ja/support/getting-started">はじめに</a></li>
+                    <li><a href="/ja/support/how-detection-works">検出の仕組み</a></li>
+                    <li><a href="/ja/support/timeline-and-playback">タイムラインと再生</a></li>
+                    <li><a href="/ja/support/breathing-disruptions">呼吸の中断</a></li>
+                    <li><a href="/ja/support/sleep-stages">睡眠段階</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>その他</h4>
+                <ul>
+                    <li><a href="/ja/support/apple-watch">Apple Watch &amp; ヘルスケア</a></li>
+                    <li><a href="/ja/support/export-and-sharing">エクスポートと共有</a></li>
+                    <li><a href="/ja/support/troubleshooting">トラブルシューティング</a></li>
+                    <li><a href="/ja/support/android">Android</a></li>
+                    <li><a href="/ja/support/faq">よくある質問</a></li>
+                    <li><a href="/ja/support/#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Snore Timeline: monitora il sonno</title>
+    <meta name="title" content="Snore Timeline: monitora il sonno">
+    <meta name="description" content="Monitoraggio di russamento e sonniloquio su una timeline interattiva, con fasi del sonno, rilevamento delle pause respiratorie e un punteggio notturno del sonno e del recupero dai parametri di Apple Watch. Sincronizzazione con Apple Health, sul dispositivo, senza abbonamento.">
+    <meta name="keywords" content="monitoraggio russamento, monitoraggio sonno, app russamento, rilevamento pause respiratorie, analisi del sonno, app iOS, registratore di russamento, suoni del sonno, rilevamento apnee, timeline del russamento, app che mostra gli episodi di russamento, visualizzazione degli episodi di russamento, punteggio di recupero, punteggio di prontezza al sonno, recupero HRV, punteggio di recupero Apple Watch">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Italian">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0E1116">
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/it/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://snoretimeline.com/">
+    <link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/">
+    <link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/">
+    <link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/">
+    <link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/">
+    <link rel="alternate" hreflang="fil" href="https://snoretimeline.com/fil/">
+    <link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/">
+    <link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/">
+    <link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/">
+    <link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/">
+    <link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/">
+    <link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/">
+    <link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/">
+    <link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/">
+    <link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/">
+    <link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/">
+    <link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/">
+    <link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/">
+    <link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/">
+    <link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/">
+    <link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://snoretimeline.com/it/">
+    <meta property="og:title" content="Snore Timeline: monitora il sonno">
+    <meta property="og:description" content="Monitoraggio di russamento e sonniloquio su una timeline interattiva, con fasi del sonno, rilevamento delle pause respiratorie e un punteggio notturno del sonno e del recupero dai parametri di Apple Watch. Sincronizzazione con Apple Health, sul dispositivo, senza abbonamento.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/it/">
+    <meta property="twitter:title" content="Snore Timeline: monitora il sonno">
+    <meta property="twitter:description" content="Monitoraggio di russamento e sonniloquio su una timeline interattiva, con fasi del sonno, rilevamento delle pause respiratorie e un punteggio notturno del sonno e del recupero dai parametri di Apple Watch. Sincronizzazione con Apple Health, sul dispositivo, senza abbonamento.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:app_store_id" content="6751759381">
+    <meta property="al:ios:app_name" content="Snore Timeline">
+    <meta property="al:ios:url" content="snoretimeline://open">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="../logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.png">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Snore Timeline",
+      "description": "Monitoraggio di russamento e sonniloquio su una timeline interattiva, con rilevamento delle pause respiratorie, fasi del sonno e un punteggio notturno del sonno e del recupero dai parametri di Apple Watch. Sincronizzazione Apple Health con Apple Watch, Oura, Garmin, Whoop e Ultrahuman. Privacy totale, tutta l'elaborazione avviene sul dispositivo.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "22"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Menelik Tucker"
+      },
+      "image": "https://snoretimeline.com/logo.png",
+      "screenshot": "https://snoretimeline.com/app-screenshot.png",
+      "url": "https://apps.apple.com/it/app/snore-timeline/id6751759381",
+      "downloadUrl": "https://apps.apple.com/it/app/snore-timeline/id6751759381",
+      "featureList": [
+        "Visualizzazione interattiva su timeline",
+        "Rilevamento automatico del russamento",
+        "Rilevamento del sonniloquio",
+        "Rilevamento delle pause respiratorie",
+        "Raggruppamento degli episodi con metriche",
+        "Riproduzione audio migliorata",
+        "Riepiloghi notturni e settimanali",
+        "Privacy totale — Elaborazione sul dispositivo",
+        "Compatibile con dispositivi Bluetooth",
+        "Gestione intelligente dello spazio",
+        "Esportazione dei dati (CSV, Audio)",
+        "Stima delle fasi del sonno (Sveglio, Leggero, Profondo, REM)",
+        "Punteggio di recupero notturno (HRV, frequenza cardiaca a riposo, SpO2, temperatura del polso, durata del sonno)",
+        "Stato combinato di sonno e recupero",
+        "Dettaglio dell'andamento per singolo parametro su Apple Watch",
+        "Cronologia del sonno di 60 notti su Apple Watch"
+      ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Cosa distingue Snore Timeline dalle altre app di monitoraggio del russamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Snore Timeline conserva l'audio completo della notte e lo dispone su una timeline interattiva che puoi scorrere e toccare per ascoltare. La registrazione è continua, non campionata, quindi un'ora tranquilla risulta un'ora tranquilla. L'app classifica tosse, rantoli, sonniloquio e pause respiratorie come categorie distinte e raggruppa i suoni consecutivi in episodi che puoi riascoltare. I dati delle fasi del sonno si sincronizzano da Apple Watch, Oura Ring, Whoop, Garmin e Ultrahuman. Il rilevamento avviene sul tuo telefono. Niente cloud, niente account, niente abbonamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è la differenza tra il punteggio del sonno e il punteggio di recupero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il punteggio del sonno valuta come hai dormito, a partire dalla tua registrazione: durata, efficienza, fasi del sonno, russamento e regolarità dell'orario di coricarsi su una scala da 0 a 100. Il punteggio di recupero indica come ha reagito il tuo corpo durante la notte, a partire dai parametri del tuo Apple Watch: variabilità della frequenza cardiaca, frequenza cardiaca a riposo, frequenza respiratoria, ossigeno nel sangue, temperatura del polso e tempo di sonno, ciascuno confrontato con la tua linea di base personale. Il riepilogo del mattino unisce entrambi in un unico stato in linguaggio semplice, ad esempio Ben recuperato. Il punteggio di recupero richiede un dispositivo indossabile che scriva su Apple Health; il punteggio del sonno funziona con il solo audio. Entrambi sono punteggi a scopo di informazione personale, non valutazioni mediche."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Snore Timeline richiede un abbonamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Snore Timeline è completamente gratuito, senza alcun abbonamento. Tutte le funzioni sono incluse: rilevamento delle interruzioni respiratorie, raggruppamento degli episodi, riepiloghi notturni ed esportazione dei dati, senza costi nascosti né acquisti in-app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I miei dati sono al sicuro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Assolutamente. Tutta l'elaborazione audio avviene interamente sul tuo iPhone, senza caricamenti sul cloud, senza server esterni e senza account richiesti. Le tue registrazioni restano sul tuo dispositivo e solo tu vi hai accesso. Puoi esportare i dati per condividerli con il medico mantenendo una privacy totale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Rileva le pause respiratorie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, Snore Timeline rileva le pause respiratorie analizzando l'audio del tuo sonno. Individua i periodi di silenzio prolungati (10 secondi e oltre) seguiti da rantoli o suoni di ripresa e segnala queste interruzioni respiratorie sulla tua timeline, così puoi osservarne gli andamenti. Si tratta soltanto di analisi audio, non di un dispositivo medico. Vale la pena parlare delle pause respiratorie con un professionista sanitario."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto è preciso il rilevamento del russamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Snore Timeline utilizza la collaudata tecnologia di classificazione dei suoni di Apple per analizzare in continuo il tuo audio in tempo reale per tutta la notte. Il rilevamento parte subito, senza calibrazione né configurazione. L'app identifica russamento, rantoli, tosse, respiro e sonniloquio analizzando le caratteristiche sonore e di frequenza di ogni segmento audio. Tutta l'elaborazione avviene interamente sul tuo dispositivo per una privacy totale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso usarlo con gli AirPods o con dispositivi Bluetooth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Snore Timeline supporta i dispositivi audio Bluetooth, AirPods compresi, rendendo facile registrare per tutta la notte senza scaricare la batteria del telefono."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dove vengono salvate le mie registrazioni?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I file esportati vengono salvati sul tuo dispositivo in due cartelle: Exported Recordings (notti complete) e Snoring Episodes (singoli estratti degli episodi). Su iPhone, apri l'app File, tocca Sfoglia, scegli Su iPhone, poi apri la cartella Snore Timeline. Su Android, apri File, vai in Download, poi apri Exported Recordings o Snoring Episodes."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Sticky header (shares the support-center chrome) -->
+    <header class="support-topbar home-topbar">
+        <div class="support-topbar-inner">
+            <a href="/it/" class="support-topbar-brand"><img src="../logo.png" alt="">Snore Timeline</a>
+            <span class="support-topbar-eyebrow">Monitora il sonno</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="/it/support/" class="home-topbar-link">Supporto</a>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta home-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Scarica</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Sezione principale">
+        <!-- Shader background -->
+        <canvas id="hero-shader" aria-hidden="true"></canvas>
+        <!-- Animated background elements -->
+        <div class="hero-bg-orb hero-bg-orb-1"></div>
+        <div class="hero-bg-orb hero-bg-orb-2"></div>
+        <div class="hero-stars">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+        </div>
+
+        <div class="container hero-content">
+            <article class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Tutta la tua notte su un'unica timeline da scorrere e ascoltare.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Registrazione continua, non campionata. Russamento, sonniloquio e pause respiratorie su una timeline interattiva che puoi riascoltare.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">Scarica su</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">Disponibile su</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="hero-rating"><span class="hero-rating-stars">★★★★★</span> Amato su App Store e Google Play</p>
+                <p class="hero-tip-nudge">Gratis su iOS e Android · Senza abbonamento</p>
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>100% privato</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span>Rilevamento in tempo reale</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span>Senza abbonamento</span>
+                    </div>
+                </div>
+            </article>
+            <aside class="hero-visual" aria-label="Anteprima dell'app">
+                <div class="phone-scene" id="phone-scene">
+                    <div class="phone-glow"></div>
+                    <span class="phone-contact-shadow" aria-hidden="true"></span>
+                    <div class="phone-float">
+                        <div class="phone-swing">
+                            <div class="phone-3d">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <video id="hero-video" poster="../hero-poster.webp" class="app-screenshot" width="720" height="1566" fetchpriority="high" muted loop playsinline aria-label="Video dell'app Snore Timeline che mostra il riepilogo notturno con visualizzazione delle onde sonore, episodi di russamento e rilevamento delle pause respiratorie">
+                            <source src="../hero-recording.mp4" type="video/mp4">
+                            <source src="../hero-recording.webm" type="video/webm">
+                        </video>
+                                        <span class="phone-island" aria-hidden="true"></span>
+                                        <span class="phone-glare" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+
+        <!-- Interactive Tour -->
+    <section id="tour" class="home-tour" aria-labelledby="tour-heading">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Fai un tour</span>
+                <h2 id="tour-heading" class="section-title">Una notte, dall'inizio alla fine</h2>
+                <p class="section-subtitle">Sfoglia le schermate che trovi al risveglio.</p>
+            </div>
+            <div class="app-tour" id="home-tour-widget">
+                <div class="app-tour-stage">
+                    <div class="app-tour-phone">
+                        <video class="app-tour-clip" muted loop playsinline autoplay preload="auto" width="720" height="1404"></video>
+                    </div>
+                    <div class="app-tour-dots" role="tablist"></div>
+                </div>
+                <div class="app-tour-panel">
+                    <div class="app-tour-progress">PASSO <b class="app-tour-cur">1</b> / <span class="app-tour-total">5</span></div>
+                    <span class="app-tour-eyebrow"></span>
+                    <h3 class="app-tour-title"></h3>
+                    <p class="app-tour-caption"></p>
+                    <div class="app-tour-teach"></div>
+                    <div class="app-tour-controls">
+                        <button class="app-tour-btn app-tour-prev" type="button">Indietro</button>
+                        <button class="app-tour-btn app-tour-next" type="button">Avanti</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        (function () {
+            var STEPS = [
+                {
+                    clip: "timeline",
+                    eyebrow: "La timeline",
+                    title: "Tutta la tua notte, da scorrere",
+                    caption: "Ogni secondo di audio si trova su un'unica timeline. Trascina fino a qualsiasi momento e tocca per sentire esattamente ciò che l'app ha rilevato.",
+                    teach: "L'analisi è <b>continua, mai campionata</b>, quindi un'ora tranquilla risulta un'ora tranquilla. <a href=\"/it/support/timeline-and-playback\">Leggere la timeline &rarr;</a>"
+                },
+                {
+                    clip: "episodes",
+                    eyebrow: "Episodi di russamento e sonniloquio",
+                    title: "Russamento e sonniloquio, ciascuno nei propri episodi",
+                    caption: "Il russamento si raggruppa in episodi di russamento, il sonniloquio in episodi di sonniloquio. Riascolta qualsiasi episodio con orario, durata e intensità.",
+                    teach: "Una <b>pausa di silenzio di 30 secondi</b> chiude un episodio e ne avvia uno nuovo. <a href=\"/it/support/episodes-and-events\">Come funzionano gli episodi &rarr;</a>"
+                },
+                {
+                    clip: "breathing",
+                    eyebrow: "Interruzioni respiratorie",
+                    title: "Pause che meritano un'occhiata più attenta",
+                    caption: "Quando l'app sente la respirazione fermarsi e poi riprendere, segnala un'interruzione e valuta la notte.",
+                    teach: "Si tratta di analisi audio a scopo informativo, <b>non di una diagnosi medica</b>. <a href=\"/it/support/breathing-disruptions\">Come funziona il rilevamento &rarr;</a>"
+                },
+                {
+                    clip: "stages",
+                    eyebrow: "Fasi del sonno",
+                    title: "Le fasi del sonno dal suono",
+                    caption: "Un ipnogramma del sonno leggero, profondo e REM, stimato a partire dal tuo respiro, senza alcun dispositivo indossabile.",
+                    teach: "Le stime delle fasi raggiungono circa il <b>70% di concordanza</b> con un laboratorio del sonno. Leggi l'andamento della notte, non la singola barra. <a href=\"/it/support/sleep-stages\">Informazioni sulle fasi del sonno &rarr;</a>"
+                },
+                {
+                    clip: "week",
+                    eyebrow: "Panoramiche settimanali",
+                    title: "Osserva l'andamento nelle settimane",
+                    caption: "Tempo di sonno, punteggio del sonno ed efficienza monitorati notte dopo notte, così una notte storta si legge nel suo contesto.",
+                    teach: "Il valore sta nell'<b>andamento</b>, non in un singolo numero. <a href=\"/it/support/sleep-score\">Punteggio del sonno e panoramiche &rarr;</a>"
+                }
+            ];
+            var root = document.getElementById("home-tour-widget");
+            if (!root) return;
+            var i = 0;
+            var clip = root.querySelector(".app-tour-clip");
+            var eyebrow = root.querySelector(".app-tour-eyebrow");
+            var title = root.querySelector(".app-tour-title");
+            var caption = root.querySelector(".app-tour-caption");
+            var teach = root.querySelector(".app-tour-teach");
+            var cur = root.querySelector(".app-tour-cur");
+            var prev = root.querySelector(".app-tour-prev");
+            var next = root.querySelector(".app-tour-next");
+            var dotsWrap = root.querySelector(".app-tour-dots");
+            root.querySelector(".app-tour-total").textContent = STEPS.length;
+
+            STEPS.forEach(function (s, n) {
+                var d = document.createElement("button");
+                d.className = "app-tour-dot";
+                d.type = "button";
+                d.setAttribute("aria-label", "Passo " + (n + 1));
+                d.addEventListener("click", function () { show(n); });
+                dotsWrap.appendChild(d);
+            });
+
+            function render() {
+                var s = STEPS[i];
+                if (clip.getAttribute("data-src") !== s.clip) {
+                    clip.poster = "/support/img/clips/" + s.clip + "-poster.webp";
+                    clip.src = "/support/img/clips/" + s.clip + ".webm?v=3";
+                    clip.setAttribute("data-src", s.clip);
+                }
+                var p = clip.play(); if (p && p.catch) { p.catch(function () {}); }
+                eyebrow.textContent = s.eyebrow;
+                title.textContent = s.title;
+                caption.textContent = s.caption;
+                teach.innerHTML = s.teach;
+                cur.textContent = i + 1;
+                prev.disabled = i === 0;
+                next.textContent = i === STEPS.length - 1 ? "Ricomincia" : "Avanti";
+                Array.prototype.forEach.call(dotsWrap.children, function (d, n) {
+                    d.classList.toggle("is-active", n === i);
+                });
+            }
+            // Animate between steps: fade + slight slide in the swipe direction,
+            // swap content at the midpoint so the video never blinks.
+            var stage = root.querySelector(".app-tour-stage");
+            var panel = root.querySelector(".app-tour-panel");
+            var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            var animating = false;
+            function show(n, dir) {
+                n = (n + STEPS.length) % STEPS.length;
+                if (n === i || animating) return;
+                dir = dir || (n > i ? 1 : -1);
+                if (reduce || !stage) { i = n; render(); return; }
+                animating = true;
+                stage.style.opacity = "0";
+                stage.style.transform = "translateX(" + (-dir * 10) + "px)";
+                panel.style.opacity = "0";
+                setTimeout(function () {
+                    i = n; render();
+                    stage.style.transition = "none";
+                    stage.style.transform = "translateX(" + (dir * 10) + "px)";
+                    void stage.offsetWidth;
+                    stage.style.transition = "";
+                    stage.style.opacity = "1";
+                    stage.style.transform = "translateX(0)";
+                    panel.style.opacity = "1";
+                    animating = false;
+                }, 200);
+            }
+            prev.addEventListener("click", function () { show(i - 1, -1); });
+            next.addEventListener("click", function () { show(i + 1, 1); });
+
+            // Swipe on touch devices: left = next, right = back.
+            if (stage) {
+                var sx = null;
+                stage.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
+                stage.addEventListener("touchend", function (e) {
+                    if (sx === null) return;
+                    var dx = e.changedTouches[0].clientX - sx; sx = null;
+                    if (Math.abs(dx) < 40) return;
+                    show(i + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
+                });
+            }
+            render();
+        })();
+        </script>
+    </section>
+
+    <!-- Body & Wearables (merged: Apple Watch + Apple Health + Nightly Biometrics) -->
+    <section id="wearables" class="wn" aria-label="Oltre il russamento: il tuo corpo e i tuoi dispositivi indossabili">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+
+            <!-- PART B — Convergence flow: any wearable → Apple Health → your stages -->
+            <div class="wn-flow">
+                <div class="wn-flow-head">
+                    <span class="wn-flow-eyebrow">Funziona con ciò che già indossi</span>
+                    <h3 class="wn-flow-title">Collega una volta. Ottieni le tue fasi del sonno.</h3>
+                    <p class="wn-flow-sub">Snore Timeline stima le tue fasi a partire dall'audio del respiro, in autonomia. Collega un dispositivo indossabile tramite Apple Health e l'app importa anche le fasi del sonno, la frequenza cardiaca, l'HRV, l'ossigeno nel sangue e la temperatura di quel dispositivo, recuperando 30 giorni di dati la prima volta.</p>
+                </div>
+
+                <!-- Sleep Vitals showcase: the same card, any wearable (auto-crossfade) -->
+                <div class="wn-vitalshow" aria-label="Your nightly Sleep Vitals, pulled from any connected wearable">
+                    <div class="wn-vs-device">
+                        <div class="wn-vs-panel">
+                            <picture class="wn-vs-frame is-active" data-i="0">
+                                <source srcset="../vitals-rec-applewatch.webp" type="image/webp">
+                                <img src="../vitals-rec-applewatch.png" alt="Snore Timeline Sleep Insights con un riepilogo del recupero ricavato da Apple Watch, che valuta frequenza cardiaca a riposo, HRV, respirazione, ossigeno nel sangue e sonno, ciascuno rispetto alla tua media" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="1">
+                                <source srcset="../vitals-rec-garmin.webp" type="image/webp">
+                                <img src="../vitals-rec-garmin.png" alt="Snore Timeline Sleep Insights con un riepilogo del recupero ricavato da Garmin" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="2">
+                                <source srcset="../vitals-rec-oura.webp" type="image/webp">
+                                <img src="../vitals-rec-oura.png" alt="Snore Timeline Sleep Insights con un riepilogo del recupero ricavato da Oura" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="3">
+                                <source srcset="../vitals-rec-whoop.webp" type="image/webp">
+                                <img src="../vitals-rec-whoop.png" alt="Snore Timeline Sleep Insights con un riepilogo del recupero ricavato da Whoop" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="4">
+                                <source srcset="../vitals-rec-ultrahuman.webp" type="image/webp">
+                                <img src="../vitals-rec-ultrahuman.png" alt="Snore Timeline Sleep Insights con un riepilogo del recupero ricavato da Ultrahuman" loading="lazy" width="1206" height="1622">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wn-flow-diagram" aria-hidden="true">
+                    <div class="wn-flow-col wn-flow-sources">
+                        <span class="wn-wm wn-wm-applewatch"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Watch</span>
+                        <span class="wn-wm wn-wm-oura">OURA</span>
+                        <span class="wn-wm wn-wm-whoop">WHOOP</span>
+                        <span class="wn-wm wn-wm-garmin">GARMIN</span>
+                        <span class="wn-wm wn-wm-any">+ qualsiasi dispositivo HealthKit</span>
+                    </div>
+
+                    <svg class="wn-wire wn-wire-in" viewBox="0 0 120 220" preserveAspectRatio="none" fill="none">
+                        <path d="M0 22 C60 22 60 110 120 110" class="wn-wire-path"/>
+                        <path d="M0 70 C60 70 60 110 120 110" class="wn-wire-path"/>
+                        <path d="M0 110 H120" class="wn-wire-path"/>
+                        <path d="M0 150 C60 150 60 110 120 110" class="wn-wire-path"/>
+                        <path d="M0 198 C60 198 60 110 120 110" class="wn-wire-path"/>
+                    </svg>
+
+                    <div class="wn-flow-col wn-flow-hub">
+                        <div class="wn-hub-node">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                            <span>Apple Health</span>
+                            <small>un solo posto, sul dispositivo</small>
+                        </div>
+                    </div>
+
+                    <svg class="wn-wire wn-wire-out" viewBox="0 0 120 220" preserveAspectRatio="none" fill="none">
+                        <path d="M0 110 H120" class="wn-wire-path wn-wire-bright"/>
+                    </svg>
+
+                    <div class="wn-flow-col wn-flow-out">
+                        <div class="wn-out-node">
+                            <span class="wn-out-brand">Snore Timeline</span>
+                            <div class="wn-hypno" aria-hidden="true">
+                                <span style="--h:1;--c:#FFDAC1"></span>
+                                <span style="--h:3;--c:#B4DCDC"></span>
+                                <span style="--h:4;--c:#B4B4DC"></span>
+                                <span style="--h:2;--c:#E6AAC8"></span>
+                                <span style="--h:3;--c:#B4DCDC"></span>
+                                <span style="--h:4;--c:#B4B4DC"></span>
+                                <span style="--h:2;--c:#E6AAC8"></span>
+                                <span style="--h:1;--c:#B7DFC4"></span>
+                            </div>
+                            <small>Fasi del sonno · FC · HRV · SpO₂ · Temp.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wn-chips">
+                    <span class="wn-chip">Fasi del sonno</span>
+                    <span class="wn-chip">Frequenza cardiaca e HRV</span>
+                    <span class="wn-chip">Frequenza respiratoria</span>
+                    <span class="wn-chip">Ossigeno nel sangue</span>
+                    <span class="wn-chip">Temperatura del polso</span>
+                </div>
+                <p class="wn-flow-note">Apple Health è un archivio locale cifrato sul tuo dispositivo. Nulla viene caricato sul cloud né condiviso con noi.</p>
+            </div><!-- PART A — Pinned Apple Watch, screens scrub as you scroll -->
+            <div class="wn-scrolly">
+                <div class="wn-stage">
+                    <div class="wn-watch">
+                        <div class="wn-watch-glow"></div>
+                        <div class="wn-watch-screens">
+                            <picture class="wn-screen is-active" data-i="0">
+                                <source srcset="../watch-recovery.webp" type="image/webp">
+                                <img src="../watch-recovery.png" alt="Dashboard mattutina di Apple Watch con un anello del punteggio del sonno di 72, un'etichetta Recuperato, tempo di sonno di 6h 6m e una barra di carica del recupero Buono" loading="lazy">
+                            </picture>
+                            <picture class="wn-screen" data-i="1">
+                                <source srcset="../watch-hrv.webp" type="image/webp">
+                                <img src="../watch-hrv.png" alt="Elenco dei parametri su Apple Watch con frequenza cardiaca a riposo, HRV, respirazione e ossigeno nel sangue, ciascuno con un confronto in linguaggio semplice rispetto alla tua media" loading="lazy">
+                            </picture>
+                            <picture class="wn-screen" data-i="2">
+                                <source srcset="../watch-hypnogram.webp" type="image/webp">
+                                <img src="../watch-hypnogram.png" alt="Ipnogramma delle fasi del sonno su Apple Watch dall'1:25 alle 7:04 con durate e percentuali di Sveglio, REM e Leggero" loading="lazy">
+                            </picture>
+                            <picture class="wn-screen" data-i="3">
+                                <source srcset="../watch-sleep-bank.webp" type="image/webp">
+                                <img src="../watch-sleep-bank.png" alt="Apple Watch che mostra il grafico settimanale della banca del sonno con tempo di sonno medio e deficit di sonno" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="wn-dots" role="tablist" aria-label="Schermate dell'orologio">
+                        <button class="wn-dot is-active" type="button" data-i="0" aria-label="Punteggio e recupero"></button>
+                        <button class="wn-dot" type="button" data-i="1" aria-label="Parametri notturni"></button>
+                        <button class="wn-dot" type="button" data-i="2" aria-label="Fasi del sonno"></button>
+                        <button class="wn-dot" type="button" data-i="3" aria-label="Tendenze settimanali"></button>
+                    </div>
+                </div>
+                <div class="wn-steps">
+                    <article class="wn-step is-active" data-i="0">
+                        <span class="wn-step-eyebrow">Mattina · 01</span>
+                        <h3>Svegliati con punteggio e recupero</h3>
+                        <p>Il punteggio del sonno della scorsa notte e una barra di carica del recupero al polso, nell'istante in cui alzi il braccio. Fissa il punteggio sul quadrante come complication e consultalo senza aprire l'app.</p>
+                    </article>
+                    <article class="wn-step" data-i="1">
+                        <span class="wn-step-eyebrow">Parametri · 02</span>
+                        <h3>Monitora ogni parametro</h3>
+                        <p>Frequenza cardiaca, HRV, respirazione, ossigeno e temperatura, ciascuno tracciato lungo tutta la notte e confrontato con la tua media recente, con una lettura in linguaggio semplice del suo significato.</p>
+                    </article>
+                    <article class="wn-step" data-i="2">
+                        <span class="wn-step-eyebrow">Fasi · 03</span>
+                        <h3>Vedi la tua notte, illustrata</h3>
+                        <p>Il tuo ipnogramma completo sulla Watch: blocchi Sveglio, REM, Leggero e Profondo lungo tutta la notte, con le percentuali in primo piano.</p>
+                    </article>
+                    <article class="wn-step" data-i="3">
+                        <span class="wn-step-eyebrow">Tendenze · 04</span>
+                        <h3>Costruisci la tua banca del sonno</h3>
+                        <p>Il tempo di sonno illustrato su tutta la settimana. Individua gli andamenti, monitora il recupero e guarda la tua banca del sonno riempirsi notte dopo notte.</p>
+                    </article>
+                </div>
+            </div>
+
+
+
+            <!-- PART C — Living nightly vitals -->
+            <div class="wn-vitals">
+                <div class="wn-vitals-head">
+                    <span class="section-label">Biometria notturna · iOS</span>
+                    <h3 class="wn-vitals-title">Molto più del russamento</h3>
+                    <p class="wn-vitals-sub">Un numero da solo non dice nulla. Snore Timeline legge ogni parametro notturno rispetto alla tua linea di base personale e ne spiega il significato in linguaggio semplice, così scopri perché conta, non solo quanto valeva.</p>
+                </div>
+                <div class="wn-vitals-grid">
+                    <div class="wn-vital" data-tone="breath">
+                        <div class="wn-vital-viz">
+                            <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="wn-breath-wave" d="M0 20 Q12 4 24 20 T48 20 T72 20 T96 20 L100 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="14.6" data-dp="1">0</span><span class="wn-vital-unit">resp/min</span></div>
+                            <span class="biometrics-rating-pill rating-typical">Stabile</span>
+                        </div>
+                        <span class="wn-vital-name">Frequenza respiratoria</span>
+                        <p class="wn-vital-insight"><strong>Calma e regolare.</strong> Una frequenza costante per tutta la notte è il segno di un sonno rilassato e indisturbato. I picchi possono segnalare stress o disturbi.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="heart">
+                        <div class="wn-vital-viz">
+                            <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="wn-ecg" d="M0 20 H30 L34 20 L38 8 L42 32 L46 20 L50 20 L54 14 L58 26 L62 20 H100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="64">0</span><span class="wn-vital-unit">bpm</span></div>
+                            <span class="biometrics-rating-pill rating-good">Buono</span>
+                        </div>
+                        <span class="wn-vital-name">Frequenza cardiaca</span>
+                        <p class="wn-vital-insight"><strong>Scesa in basso.</strong> Il cuore scende al suo minimo di riposo mentre dormi. Più scende sotto la tua media, più il corpo ha recuperato.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="hrv">
+                        <div class="wn-vital-viz">
+                            <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><polyline class="wn-spark" points="0,28 14,22 28,30 42,12 56,24 70,8 84,20 100,14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="66">0</span><span class="wn-vital-unit">ms</span></div>
+                            <span class="biometrics-rating-pill rating-good">Buono</span>
+                        </div>
+                        <span class="wn-vital-name">HRV</span>
+                        <p class="wn-vital-insight"><strong>Sopra la tua media.</strong> Intervalli più ampi tra i battiti indicano che il sistema nervoso si è ricaricato durante la notte anziché lavorare sotto sforzo.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="spo2">
+                        <div class="wn-vital-viz wn-vital-ring">
+                            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-opacity="0.18" stroke-width="3"/><circle class="wn-ring-arc" cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" transform="rotate(-90 20 20)"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="96">0</span><span class="wn-vital-unit">SpO₂ %</span></div>
+                            <span class="biometrics-rating-pill rating-typical">Tipico</span>
+                        </div>
+                        <span class="wn-vital-name">Ossigeno nel sangue</span>
+                        <p class="wn-vital-insight"><strong>Ben ossigenato.</strong> Restare al 95 percento o oltre significa che la respirazione ha mantenuto il sangue riccamente ossigenato per tutta la notte.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="temp">
+                        <div class="wn-vital-viz wn-vital-temp">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M23 23V9a3 3 0 0 0-6 0v14a5 5 0 1 0 6 0z"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="-0.2" data-dp="1" data-sign="1">0</span><span class="wn-vital-unit">°C vs base</span></div>
+                            <span class="biometrics-rating-pill rating-typical">Tipico</span>
+                        </div>
+                        <span class="wn-vital-name">Temperatura del polso</span>
+                        <p class="wn-vital-insight"><strong>Vicina alla linea di base.</strong> La temperatura cutanea varia con malattie, ciclo e sforzo, quindi restare vicino alla tua norma è un discreto segnale di tranquillità.</p>
+                    </div>
+                </div>
+                <div class="wn-ratings">
+                    <span class="wn-ratings-label">Ogni lettura è valutata</span>
+                    <span class="biometrics-rating-pill rating-good">Buono</span>
+                    <span class="biometrics-rating-pill rating-typical">Tipico</span>
+                    <span class="biometrics-rating-pill rating-low">Basso</span>
+                    <span class="biometrics-rating-pill rating-elevated">Elevato</span>
+                </div>
+                <p class="wn-vitals-note">Le valutazioni sono fornite solo a scopo informativo. Snore Timeline non è un dispositivo medico e non diagnostica alcuna condizione.</p>
+            </div>
+        </div>
+
+        <script>
+        (function () {
+            var root = document.getElementById('wearables');
+            if (!root) return;
+            var screens = root.querySelectorAll('.wn-screen');
+            var dots = root.querySelectorAll('.wn-dot');
+            var steps = root.querySelectorAll('.wn-step');
+            var count = steps.length, cur = 0;
+            function setActive(i) {
+                i = Math.max(0, Math.min(count - 1, i));
+                cur = i;
+                screens.forEach(function (s) { s.classList.toggle('is-active', +s.dataset.i === i); });
+                dots.forEach(function (d) { d.classList.toggle('is-active', +d.dataset.i === i); });
+                steps.forEach(function (s) { s.classList.toggle('is-active', +s.dataset.i === i); });
+            }
+            // Scrollytelling: activate the step nearest the middle of the viewport.
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) setActive(+e.target.dataset.i);
+                    });
+                }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+                steps.forEach(function (s) { io.observe(s); });
+            }
+            var isNarrow = function () { return window.matchMedia('(max-width: 900px)').matches; };
+            dots.forEach(function (d) {
+                d.addEventListener('click', function () {
+                    var i = +d.dataset.i;
+                    setActive(i);
+                    // On mobile it's a tap carousel (active step shown in place); don't scroll-jump.
+                    if (!isNarrow()) steps[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            });
+
+            // Mobile: swipe the watch left/right to move between screens.
+            var carousel = root.querySelector('.wn-scrolly');
+            if (carousel) {
+                var sx = 0, sy = 0, swiping = false;
+                carousel.addEventListener('touchstart', function (e) {
+                    if (!isNarrow()) return;
+                    var t = e.changedTouches[0]; sx = t.clientX; sy = t.clientY; swiping = true;
+                }, { passive: true });
+                carousel.addEventListener('touchend', function (e) {
+                    if (!swiping || !isNarrow()) return;
+                    swiping = false;
+                    var t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+                    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) setActive(cur + (dx < 0 ? 1 : -1));
+                }, { passive: true });
+            }
+
+            // Count-up numbers when the vitals grid first enters view.
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var nums = root.querySelectorAll('.wn-vital-num');
+            function runCounts() {
+                nums.forEach(function (n) {
+                    var to = parseFloat(n.dataset.to), dp = +(n.dataset.dp || 0), sign = n.dataset.sign;
+                    if (reduce) { n.textContent = (sign && to > 0 ? '+' : '') + to.toFixed(dp); return; }
+                    var start = null, dur = 1100;
+                    function tick(t) {
+                        if (start === null) start = t;
+                        var p = Math.min((t - start) / dur, 1);
+                        var e = 1 - Math.pow(1 - p, 3);
+                        var v = to * e;
+                        n.textContent = (sign && to > 0 ? '+' : '') + v.toFixed(dp);
+                        if (p < 1) requestAnimationFrame(tick);
+                    }
+                    requestAnimationFrame(tick);
+                });
+            }
+            var grid = root.querySelector('.wn-vitals-grid');
+            if (grid && 'IntersectionObserver' in window) {
+                var go = new IntersectionObserver(function (entries, obs) {
+                    entries.forEach(function (e) { if (e.isIntersecting) { runCounts(); obs.disconnect(); } });
+                }, { threshold: 0.3 });
+                go.observe(grid);
+            } else { runCounts(); }
+        }());
+
+        // Sleep Vitals crossfade: cycle the wearable-sourced screenshots while in view.
+        (function () {
+            var panel = document.querySelector('#wearables .wn-vs-panel');
+            if (!panel) return;
+            var frames = panel.querySelectorAll('.wn-vs-frame');
+            if (frames.length < 2) return;
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var i = 0, timer = null;
+            function step() {
+                frames[i].classList.remove('is-active');
+                i = (i + 1) % frames.length;
+                frames[i].classList.add('is-active');
+            }
+            function start() { if (!timer) timer = setInterval(step, 2600); }
+            function stop() { if (timer) { clearInterval(timer); timer = null; } }
+            if ('IntersectionObserver' in window) {
+                new IntersectionObserver(function (es) {
+                    es.forEach(function (e) { e.isIntersecting ? start() : stop(); });
+                }, { threshold: 0.2 }).observe(panel);
+            } else { start(); }
+        }());
+        </script>
+    </section>
+
+    <!-- Sleep Stages Section -->
+    <section id="sleep-stages" class="sleep-stages" aria-labelledby="sleep-stages-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="sleep-stages-split">
+                <!-- Left: How It Works -->
+                <div class="sleep-stages-content-side">
+                    <div class="detection-methodology">
+                        <div class="detection-header">
+                            <span class="detection-label">Stima basata sull'audio</span>
+                            <h3 class="detection-heading">Come stimiamo le tue fasi del sonno</h3>
+                            <p class="detection-intro">Usando solo il microfono del tuo telefono, Snore Timeline stima quando sei in sonno leggero, profondo o REM, basandosi su ricerche pubblicate sulla regolarità del respiro durante il sonno. E quando il tuo respiro è troppo flebile per essere udito, l'app non tira a indovinare: quei tratti tranquilli vengono etichettati come Silenzio e contati come sonno riposante.</p>
+                        </div>
+
+                        <div class="detection-steps">
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Ascolta il tuo respiro</h4>
+                                    <p>L'acquisizione audio continua tramite il microfono del telefono rileva la frequenza respiratoria, la regolarità e il russamento per tutta la notte</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Stabilisci la tua linea di base</h4>
+                                    <p>Dopo circa 15 minuti l'algoritmo apprende la tua frequenza e regolarità respiratoria di riferimento, adattando le soglie ai tuoi schemi unici</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Analizza la regolarità del respiro</h4>
+                                    <p>Soglie basate sulla ricerca analizzano regolarità e varianza. Un respiro stabile e a bassa varianza suggerisce sonno profondo; schemi irregolari ad alta varianza indicano il REM</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Adattamento durante la notte</h4>
+                                    <p>Una logica sensibile al tempo tiene conto dell'architettura naturale del sonno. Il sonno profondo raggiunge il picco a inizio notte, il REM aumenta verso il mattino</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Onesti con chi dorme in silenzio</h4>
+                                    <p>Poiché tutto proviene solo dall'audio, un respiro molto lieve — o un ventilatore che lo copre — può risultare inudibile. Invece di indovinare una fase, quei tratti indisturbati vengono etichettati come Silenzio e accreditati come sonno riposante. Una notte silenziosa è proprio l'obiettivo, dopotutto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual -->
+                <div class="sleep-stages-visual-side">
+                    <div class="sleep-stages-label">Analisi del sonno</div>
+                    <h2 id="sleep-stages-heading" class="sleep-stages-title">Comprendi le tue fasi del sonno</h2>
+
+                    <!-- CSS-only Hypnogram -->
+                    <div class="hypnogram-wrapper">
+                        <div class="hypnogram-chart">
+                            <div class="hypnogram-y-axis">
+                                <span class="hypnogram-y-label" style="--level: 0">Sveglio</span>
+                                <span class="hypnogram-y-label" style="--level: 1">REM</span>
+                                <span class="hypnogram-y-label" style="--level: 2">Leggero</span>
+                                <span class="hypnogram-y-label" style="--level: 3">Profondo</span>
+                                <span class="hypnogram-y-label" style="--level: 4">Silenzio</span>
+                            </div>
+                            <div class="hypnogram-area">
+                                <div class="hypnogram-grid-lines">
+                                    <div class="hypnogram-grid-line" style="--level: 0"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 1"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 2"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 3"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 4"></div>
+                                </div>
+                                <!-- Sleep stage blocks (Silence sits at the restful end, below Deep) -->
+                                <div class="hypnogram-block" style="--start: 0; --width: 4; --level: 0; --color: #FFDAC1" title="Sveglio"></div>
+                                <div class="hypnogram-block" style="--start: 4; --width: 8; --level: 2; --color: #B4DCDC" title="Sonno leggero"></div>
+                                <div class="hypnogram-block" style="--start: 12; --width: 12; --level: 3; --color: #B4B4DC" title="Sonno profondo"></div>
+                                <div class="hypnogram-block" style="--start: 24; --width: 5; --level: 2; --color: #B4DCDC" title="Sonno leggero"></div>
+                                <div class="hypnogram-block" style="--start: 29; --width: 8; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 37; --width: 4; --level: 2; --color: #B4DCDC" title="Sonno leggero"></div>
+                                <div class="hypnogram-block" style="--start: 41; --width: 7; --level: 3; --color: #B4B4DC" title="Sonno profondo"></div>
+                                <div class="hypnogram-block" style="--start: 48; --width: 5; --level: 4; --color: #B7DFC4" title="Silenzio — respiro troppo flebile per essere udito"></div>
+                                <div class="hypnogram-block" style="--start: 53; --width: 3; --level: 0; --color: #FFDAC1" title="Sveglio"></div>
+                                <div class="hypnogram-block" style="--start: 56; --width: 6; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 62; --width: 8; --level: 2; --color: #B4DCDC" title="Sonno leggero"></div>
+                                <div class="hypnogram-block" style="--start: 70; --width: 6; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 76; --width: 6; --level: 4; --color: #B7DFC4" title="Silenzio — respiro troppo flebile per essere udito"></div>
+                                <div class="hypnogram-block" style="--start: 82; --width: 7; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 89; --width: 4; --level: 2; --color: #B4DCDC" title="Sonno leggero"></div>
+                                <div class="hypnogram-block" style="--start: 93; --width: 3; --level: 0; --color: #FFDAC1" title="Sveglio"></div>
+                            </div>
+                            <div class="hypnogram-x-axis">
+                                <span>23:00</span>
+                                <span>1:00</span>
+                                <span>3:00</span>
+                                <span>5:00</span>
+                                <span>7:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage Distribution Bar -->
+                    <div class="stage-distribution">
+                        <div class="stage-bar">
+                            <div class="stage-segment" style="--width: 8; --color: #FFDAC1" title="Sveglio 8%"></div>
+                            <div class="stage-segment" style="--width: 38; --color: #B4DCDC" title="Leggero 38%"></div>
+                            <div class="stage-segment" style="--width: 19; --color: #B4B4DC" title="Profondo 19%"></div>
+                            <div class="stage-segment" style="--width: 24; --color: #E6AAC8" title="REM 24%"></div>
+                            <div class="stage-segment" style="--width: 11; --color: #B7DFC4" title="Silenzio 11%"></div>
+                        </div>
+                        <div class="stage-legend">
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #FFDAC1"></span>
+                                <span>Sveglio 8%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B4DCDC"></span>
+                                <span>Leggero 38%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B4B4DC"></span>
+                                <span>Profondo 19%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #E6AAC8"></span>
+                                <span>REM 24%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B7DFC4"></span>
+                                <span>Silenzio 11%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="sleep-stages-disclaimer">Stima basata sull'analisi audio. I tratti tranquilli in cui il respiro è troppo flebile per essere classificato vengono accreditati come Silenzio — sonno riposante, non dati mancanti. Non è un dispositivo medico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breathing Disruption Section -->
+    <section id="breathing-disruption" class="breathing-disruption" aria-labelledby="breathing-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="breathing-split">
+                <!-- Left: Screenshot -->
+                <div class="breathing-visual-side">
+                    <div class="breathing-label">Oltre il monitoraggio del russamento</div>
+                    <h2 id="breathing-heading" class="breathing-title">Rileva quando smetti di respirare</h2>
+                    <div class="breathing-screenshot-wrapper">
+                        <div class="phone-scene phone-scene--static">
+                            <div class="phone-glow"></div>
+                            <span class="phone-contact-shadow" aria-hidden="true"></span>
+                            <div class="phone-float">
+                                <div class="phone-3d phone-3d--static">
+                                    <div class="phone-frame">
+                                        <div class="phone-screen">
+                                            <picture>
+                            <source srcset="../breathing-screenshot.webp" type="image/webp">
+                            <img src="../breathing-screenshot.png" alt="Rilevamento delle pause respiratorie con marcatori grigio-blu sulla timeline" class="app-screenshot">
+                        </picture>
+                                            <span class="phone-island" aria-hidden="true"></span>
+                                            <span class="phone-glare" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: How Detection Works -->
+                <div class="breathing-content-side">
+                    <div class="detection-methodology">
+                        <div class="detection-header">
+                            <span class="detection-label">Analisi basata sull'IA</span>
+                            <h3 class="detection-heading">Come rileviamo le interruzioni</h3>
+                            <p class="detection-intro">Oltre al rilevamento del russamento, il nostro algoritmo individua i momenti in cui smetti di respirare per più di 10 secondi, aiutandoti a notare andamenti di cui parlare con il medico.</p>
+                        </div>
+
+                        <div class="detection-steps">
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Osservazione di base</h4>
+                                    <p>Monitora il respiro udibile per almeno un minuto per stabilire schemi di riferimento precisi</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5.5 8.5L9 12l-3.5 3.5L2 12l3.5-3.5zM12 2l3.5 3.5L12 9 8.5 5.5 12 2zM18.5 8.5L22 12l-3.5 3.5L15 12l3.5-3.5zM12 15l3.5 3.5L12 22l-3.5-3.5L12 15z"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Rilevamento del silenzio</h4>
+                                    <p>L'IA individua i periodi di silenzio prolungati che durano più di 10 secondi, un indicatore chiave di interruzioni respiratorie</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Riconoscimento della ripresa</h4>
+                                    <p>Rileva russamenti improvvisi e forti, rantoli, colpi di tosse o suoni del respiro che seguono il periodo di silenzio</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Segnalazione sulla timeline</h4>
+                                    <p>Inserisce marcatori in corrispondenza degli orari esatti, creando una mappa visiva delle interruzioni</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Go deeper: Support Center -->
+    <section id="learn-more" class="learn-more" aria-labelledby="learn-more-heading">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Approfondisci</span>
+                <h2 id="learn-more-heading" class="section-title">Tutto, spiegato</h2>
+                <p class="section-subtitle">Il centro assistenza illustra ogni funzione, con guide orientate agli obiettivi qualunque sia il motivo che ti ha portato qui.</p>
+            </div>
+            <div class="learn-more-grid">
+                <a class="learn-more-link" href="/it/support/getting-started"><span>Primi passi</span><span class="learn-more-desc">La tua prima notte, il posizionamento e la schermata principale</span></a>
+                <a class="learn-more-link" href="/it/support/how-detection-works"><span>Come funziona il rilevamento</span><span class="learn-more-desc">IA sul dispositivo, decibel e colori della forma d'onda</span></a>
+                <a class="learn-more-link" href="/it/support/timeline-and-playback"><span>Timeline e riproduzione</span><span class="learn-more-desc">Leggi la forma d'onda e riascolta qualsiasi momento</span></a>
+                <a class="learn-more-link" href="/it/support/breathing-disruptions"><span>Interruzioni respiratorie</span><span class="learn-more-desc">Le 3 condizioni dietro ogni pausa segnalata</span></a>
+                <a class="learn-more-link" href="/it/support/sleep-stages"><span>Fasi del sonno</span><span class="learn-more-desc">Come l'audio del respiro diventa un ipnogramma</span></a>
+                <a class="learn-more-link" href="/it/support/apple-watch"><span>Apple Watch e Health</span><span class="learn-more-desc">Biometria, l'app per l'orologio e HealthKit</span></a>
+                <a class="learn-more-link" href="/it/support/export-and-sharing"><span>Esportazione e condivisione</span><span class="learn-more-desc">Crea un rapporto da consegnare al medico</span></a>
+                <a class="learn-more-link" href="/it/support/faq"><span>FAQ</span><span class="learn-more-desc">Risposte consultabili alle domande comuni</span></a>
+                <a class="learn-more-link" href="/it/support/troubleshooting"><span>Risoluzione dei problemi</span><span class="learn-more-desc">Registrazione interrotta, timeline vuota e soluzioni</span></a>
+            </div>
+            <div class="learn-more-cta">
+                <a href="/it/support/" class="btn btn-primary btn-large">Esplora il centro assistenza</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonianze</span>
+                <h2 class="section-title">Scelto da chi russa</h2>
+                <p class="section-subtitle cursive">Le loro parole</p>
+            </div>
+
+            <!-- Row 1: Scrolls Left -->
+            <div class="testimonial-marquee">
+                <div class="testimonial-track">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Incredible — It's simple and genius. I also genuinely appreciate the lack of tracking and data collection. A rare gesture of kindness from an app!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Mustlovepaws23</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Brilliant app — Works extremely well and the UI is very nicely thought out. It's enabled me to identify a lot about my snoring problem."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Rankyhhhh</span>
+                                <span class="testimonial-country">🇬🇧 United Kingdom</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Free tracking that actually WORKS! Super stoked to finally have an app again that records sleep talking."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">LizzardWizard1234</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Love the usability and cost — Finally something that is free, no ads and doesn't drain the battery too much!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pizza kid Martinez</span>
+                                <span class="testimonial-country">🇦🇺 Australia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Man, this app is amazing, beautifully designed, intuitive, everything just works and in real time!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">SaliDay</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/sleep</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very helpful app — Just found this one on Reddit. The app is really helpful, I could not thank you enough."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pastel fans</span>
+                                <span class="testimonial-country">🇹🇭 Thailand</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Just What I was looking for! — I downloaded and used this app last night, couldn't believe how simple and functional it was. I had tried several other apps that were so full of ads that they were not usable without a large ongoing subscription."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">wcw43081254</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <!-- Duplicate for seamless loop -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Incredible — It's simple and genius. I also genuinely appreciate the lack of tracking and data collection. A rare gesture of kindness from an app!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Mustlovepaws23</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Brilliant app — Works extremely well and the UI is very nicely thought out. It's enabled me to identify a lot about my snoring problem."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Rankyhhhh</span>
+                                <span class="testimonial-country">🇬🇧 United Kingdom</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Free tracking that actually WORKS! Super stoked to finally have an app again that records sleep talking."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">LizzardWizard1234</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Love the usability and cost — Finally something that is free, no ads and doesn't drain the battery too much!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pizza kid Martinez</span>
+                                <span class="testimonial-country">🇦🇺 Australia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Man, this app is amazing, beautifully designed, intuitive, everything just works and in real time!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">SaliDay</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/sleep</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very helpful app — Just found this one on Reddit. The app is really helpful, I could not thank you enough."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pastel fans</span>
+                                <span class="testimonial-country">🇹🇭 Thailand</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Just What I was looking for! — I downloaded and used this app last night, couldn't believe how simple and functional it was. I had tried several other apps that were so full of ads that they were not usable without a large ongoing subscription."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">wcw43081254</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Row 2: Scrolls Right -->
+            <div class="testimonial-marquee reverse">
+                <div class="testimonial-track">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Une pépite (A gem) — Je suis absolument ravi d'avoir découvert cette application. Elle est ultra-performante: la détection est précise, et les enregistrements sont d'une clarté impressionnante. L'interface est top, tout est bien pensé."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Tom certes</span>
+                                <span class="testimonial-country">🇫🇷 France</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Sve što mi treba, a besplatno (Everything I need, and free) — Dugo mi je trebalo da nađem jednostavnu aplikaciju za detektiranje i snimanje hrkanja a da ne moram mjesečno plaćati. Ova aplikacija ima sve opcije koje mi trebaju, potpuno besplatno."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Svantevid</span>
+                                <span class="testimonial-country">🇭🇷 Croatia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"The best ever — Please never take it off of appstore"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">joejack65427</span>
+                                <span class="testimonial-country">🇨🇦 Canada</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Wow thanks I've just dl and opened it. I'm Impressed. Measuring my snoring tonight!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">frozenelsa2</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/snoring</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Amazing — Great app with lots of functionality and settings"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Valtias</span>
+                                <span class="testimonial-country">🇪🇪 Estonia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Recommend — Great app, I really appreciate no ads, and the fact that it's free. I've been looking for an app that will record my sleep talking before for free and gave up. Now I finally found one!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">lenicat8</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very Good — Very cool, is silent and record all. Try it. No pay no propaganda."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">N</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <!-- Duplicate for seamless loop -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Une pépite (A gem) — Je suis absolument ravi d'avoir découvert cette application. Elle est ultra-performante: la détection est précise, et les enregistrements sont d'une clarté impressionnante. L'interface est top, tout est bien pensé."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Tom certes</span>
+                                <span class="testimonial-country">🇫🇷 France</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Sve što mi treba, a besplatno (Everything I need, and free) — Dugo mi je trebalo da nađem jednostavnu aplikaciju za detektiranje i snimanje hrkanja a da ne moram mjesečno plaćati. Ova aplikacija ima sve opcije koje mi trebaju, potpuno besplatno."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Svantevid</span>
+                                <span class="testimonial-country">🇭🇷 Croatia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"The best ever — Please never take it off of appstore"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">joejack65427</span>
+                                <span class="testimonial-country">🇨🇦 Canada</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Wow thanks I've just dl and opened it. I'm Impressed. Measuring my snoring tonight!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">frozenelsa2</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/snoring</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Amazing — Great app with lots of functionality and settings"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Valtias</span>
+                                <span class="testimonial-country">🇪🇪 Estonia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Recommend — Great app, I really appreciate no ads, and the fact that it's free. I've been looking for an app that will record my sleep talking before for free and gave up. Now I finally found one!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">lenicat8</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very Good — Very cool, is silent and record all. Try it. No pay no propaganda."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">N</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Domande frequenti</h2>
+                <p class="section-subtitle">Tutto ciò che devi sapere su Snore Timeline</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" id="faq-different">
+                    <h3><span>Cosa distingue Snore Timeline dalle altre app di monitoraggio del russamento?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Snore Timeline conserva l'audio completo della notte e lo dispone su una timeline interattiva che puoi scorrere e toccare per ascoltare. La registrazione è continua, non campionata, quindi un'ora tranquilla risulta un'ora tranquilla. L'app classifica tosse, rantoli, sonniloquio e pause respiratorie come categorie distinte e raggruppa i suoni consecutivi in episodi che puoi riascoltare.</p>
+                    <p>I dati delle fasi del sonno si sincronizzano da Apple Watch, Oura Ring, Whoop, Garmin e Ultrahuman. Il rilevamento avviene sul tuo telefono. Niente cloud, niente account, niente abbonamento.</p>
+                    <p class="faq-learn-more"><a href="/it/support/how-detection-works#real-time">Come funziona il rilevamento in tempo reale &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-recovery-score">
+                    <h3><span>Qual è la differenza tra il punteggio del sonno e il punteggio di recupero?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Il punteggio del sonno valuta come hai dormito, a partire dalla tua registrazione: durata, efficienza, fasi del sonno, russamento e regolarità dell'orario di coricarsi su una scala da 0 a 100. Il punteggio di recupero indica come ha reagito il tuo corpo durante la notte, a partire dai parametri del tuo Apple Watch: variabilità della frequenza cardiaca, frequenza cardiaca a riposo, frequenza respiratoria, ossigeno nel sangue, temperatura del polso e tempo di sonno, ciascuno confrontato con la tua linea di base personale.</p>
+                    <p>Il riepilogo del mattino unisce entrambi in un unico stato in linguaggio semplice, ad esempio "Ben recuperato". Il punteggio di recupero richiede un dispositivo indossabile che scriva su Apple Health; il punteggio del sonno funziona con il solo audio. Entrambi sono punteggi a scopo di informazione personale, non valutazioni mediche.</p>
+                    <p class="faq-learn-more"><a href="/it/support/sleep-score#recovery-score">Come funziona il punteggio di recupero &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-subscription">
+                    <h3><span>Snore Timeline richiede un abbonamento?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>No. Snore Timeline è completamente gratuito, senza alcun abbonamento. Tutte le funzioni sono incluse: rilevamento delle interruzioni respiratorie, raggruppamento degli episodi, riepiloghi notturni ed esportazione dei dati — senza costi nascosti né acquisti in-app.</p>
+                </div>
+
+                <div class="faq-item" id="faq-privacy">
+                    <h3><span>I miei dati sono al sicuro?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Assolutamente. Tutta l'elaborazione audio avviene interamente sul tuo iPhone — nessun caricamento sul cloud, nessun server esterno, nessun account richiesto. Le tue registrazioni restano sul tuo dispositivo e solo tu vi hai accesso. Puoi esportare i dati per condividerli con il medico mantenendo una privacy totale.</p>
+                    <p class="faq-learn-more"><a href="/it/support/getting-started#requirements">Privacy ed elaborazione sul dispositivo &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-breathing">
+                    <h3><span>Rileva le pause respiratorie?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Sì, Snore Timeline rileva le pause respiratorie analizzando l'audio del tuo sonno. Individua i periodi di silenzio prolungati (10 secondi e oltre) seguiti da rantoli o suoni di ripresa. L'app segnala queste interruzioni respiratorie sulla tua timeline, così puoi osservarne gli andamenti. Nota: si tratta soltanto di analisi audio, non di un dispositivo medico. Vale la pena parlare delle pause respiratorie con un professionista sanitario.</p>
+                    <p class="faq-learn-more"><a href="/it/support/breathing-disruptions">Come funziona il rilevamento delle interruzioni respiratorie &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-accuracy">
+                    <h3><span>Quanto è preciso il rilevamento del russamento?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Snore Timeline utilizza la collaudata tecnologia di classificazione dei suoni di Apple per analizzare in continuo il tuo audio in tempo reale per tutta la notte. Il rilevamento parte subito, senza calibrazione né configurazione. L'app identifica russamento, rantoli, tosse, respiro e sonniloquio analizzando sia le caratteristiche sonore sia quelle di frequenza di ogni segmento audio. Tutta l'elaborazione avviene interamente sul tuo dispositivo per una privacy totale.</p>
+                    <p class="faq-learn-more"><a href="/it/support/how-detection-works#confidence">Come funziona la precisione del rilevamento &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-bluetooth">
+                    <h3><span>Posso usarlo con gli AirPods o con dispositivi Bluetooth?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Sì! Snore Timeline supporta i dispositivi audio Bluetooth, AirPods compresi, rendendo facile registrare per tutta la notte senza scaricare la batteria del telefono.</p>
+                    <p class="faq-learn-more"><a href="/it/support/troubleshooting#bluetooth">Usare AirPods e microfoni Bluetooth &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-recordings">
+                    <h3><span>Dove vengono salvate le mie registrazioni?</span><button class="faq-link-btn" aria-label="Copia il link a questa domanda"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Puoi esportare l'audio dell'intera notte in un unico file, oppure scaricare in blocco tutti i tuoi episodi di russamento. Per un'esportazione più completa, tocca l'icona di download per aprire la scheda <strong>Export Report</strong> — scegli un intervallo di date e includi riepiloghi, fasi del sonno, eventi, biometria e (facoltativo) audio. Il rapporto viene esportato in CSV insieme a tutto l'audio che hai scelto di includere.</p>
+                    <p>I file esportati vengono salvati sul tuo dispositivo, organizzati in due cartelle:</p>
+                    <div class="file-path-list">
+                        <div class="file-path-item">
+                            <span class="file-path">Exported Recordings</span>
+                            <span class="file-path-desc">Registrazioni della notte completa</span>
+                        </div>
+                        <div class="file-path-item">
+                            <span class="file-path">Snoring Episodes</span>
+                            <span class="file-path-desc">Singoli estratti degli episodi</span>
+                        </div>
+                    </div>
+                    <p><strong>Su iPhone:</strong></p>
+                    <ol class="export-steps">
+                        <li>Apri l'app <strong>File</strong></li>
+                        <li>Tocca <strong>Sfoglia</strong> in fondo allo schermo</li>
+                        <li>In Posizioni, tocca <strong>Su iPhone</strong></li>
+                        <li>Apri la cartella <strong>Snore Timeline</strong></li>
+                    </ol>
+                    <p><strong>Su Android:</strong></p>
+                    <ol class="export-steps">
+                        <li>Apri l'app <strong>File</strong></li>
+                        <li>Vai in <strong>Download</strong></li>
+                        <li>Apri <strong>Exported Recordings</strong> o <strong>Snoring Episodes</strong></li>
+                    </ol>
+                    <p class="faq-learn-more"><a href="/it/support/export-and-sharing#file-locations">Dove vengono salvati i tuoi file &rarr;</a></p>
+                </div>
+
+            </div>
+            <div class="faq-browse"><a href="/it/support/faq" class="btn btn-secondary">Sfoglia tutte le domande</a></div>
+        </div>
+    </section>
+
+
+    <!-- Closing Download CTA -->
+    <section id="get-app" class="download-cta" aria-labelledby="download-cta-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="download-cta-card">
+                <span class="download-cta-eyebrow">Gratis · Senza abbonamento</span>
+                <h2 id="download-cta-heading" class="download-cta-title">Vedi la tua notte con i tuoi occhi</h2>
+                <p class="download-cta-sub">Registra stanotte e svegliati con tutta la tua notte su una timeline. Sul dispositivo, privato e gratis su iOS e Android.</p>
+                <div class="download-cta-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">Scarica su</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">Disponibile su</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="download-cta-note">★★★★★ Senza account, senza cloud, senza pubblicità</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <p class="contact-label">Domande o commenti?</p>
+            <a href="#" class="contact-email" id="contactBtn">
+                <svg class="contact-email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+                    <path d="M2 7l10 7 10-7"></path>
+                </svg>
+                Scrivimi un'e-mail
+            </a>
+        </div>
+    </section>
+
+    <!-- Tip Jar Section -->
+    <section id="tip-jar" class="tip-jar" aria-label="Sostieni lo sviluppatore">
+        <!-- Decorative animated stars (consistent with other sections) -->
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-label">SOSTIENI LO SVILUPPO</span>
+                <h2 class="section-title">Lascia una mancia</h2>
+                <p class="section-subtitle">
+                    Se ti va di essere generoso, lo apprezzerei molto! Ma nessuna pressione: l'app resta gratuita in ogni caso.
+                </p>
+            </div>
+
+            <p class="tip-instruction">Clicca una delle opzioni qui sotto per inviare una mancia</p>
+
+            <!-- Tip Amount Buttons Grid -->
+            <div class="tip-amounts">
+                <a href="https://donate.stripe.com/aFacN54WG3L78x85AJ63K07" class="tip-btn" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">Mancia</span>
+                    <span class="tip-amount">$1</span>
+                </a>
+                <a href="https://donate.stripe.com/cNidR92Oy3L7eVwfbj63K08" class="tip-btn tip-btn-featured" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">Mancia</span>
+                    <span class="tip-amount">$2</span>
+                </a>
+                <a href="https://donate.stripe.com/aFa14n0Gq0yV9Bc2ox63K09" class="tip-btn" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">Mancia</span>
+                    <span class="tip-amount">$5</span>
+                </a>
+            </div>
+
+            <!-- Optional: Additional context -->
+            <p class="tip-footer-note">
+                Gestito in sicurezza da <strong>Stripe</strong>. Tutte le transazioni sono elaborate in sicurezza con crittografia standard di settore.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/it/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Registra, visualizza e comprendi il tuo russamento, il tuo respiro e il tuo sonno, interamente sul tuo dispositivo.</p>
+                <p><a href="/it/support/">Aiuto</a> &middot; <a href="/it/privacy">Privacy</a></p>
+                <div class="lang-switcher">
+                    <button class="lang-switcher-btn" aria-label="Change language">
+                        <img class="lang-flag" src="/flags/it.svg" alt="">
+                        <span>Italiano</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/"><img class="lang-flag" src="/flags/ca.svg" alt=""><span class="lang-name">English</span></a>
+                        <a href="/ar/"><img class="lang-flag" src="/flags/sa.svg" alt=""><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></a>
+                        <a href="/zh/"><img class="lang-flag" src="/flags/cn.svg" alt=""><span class="lang-name">&#20013;&#25991;</span></a>
+                        <a href="/zh-Hant/"><img class="lang-flag" src="/flags/tw.svg" alt=""><span class="lang-name">&#32321;&#39636;&#20013;&#25991;</span></a>
+                        <a href="/da/"><img class="lang-flag" src="/flags/dk.svg" alt=""><span class="lang-name">Dansk</span></a>
+                        <a href="/nl/"><img class="lang-flag" src="/flags/nl.svg" alt=""><span class="lang-name">Nederlands</span></a>
+                        <a href="/fil/"><img class="lang-flag" src="/flags/ph.svg" alt=""><span class="lang-name">Filipino</span></a>
+                        <a href="/fr/"><img class="lang-flag" src="/flags/fr.svg" alt=""><span class="lang-name">Fran&ccedil;ais</span></a>
+                        <a href="/de/"><img class="lang-flag" src="/flags/de.svg" alt=""><span class="lang-name">Deutsch</span></a>
+                        <a href="/hi/"><img class="lang-flag" src="/flags/in.svg" alt=""><span class="lang-name">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</span></a>
+                        <a href="/id/"><img class="lang-flag" src="/flags/id.svg" alt=""><span class="lang-name">Bahasa Indonesia</span></a>
+                        <a href="/it/" class="active"><img class="lang-flag" src="/flags/it.svg" alt=""><span class="lang-name">Italiano</span></a>
+                        <a href="/ja/"><img class="lang-flag" src="/flags/jp.svg" alt=""><span class="lang-name">&#26085;&#26412;&#35486;</span></a>
+                        <a href="/ko/"><img class="lang-flag" src="/flags/kr.svg" alt=""><span class="lang-name">&#54620;&#44397;&#50612;</span></a>
+                        <a href="/ms/"><img class="lang-flag" src="/flags/my.svg" alt=""><span class="lang-name">Bahasa Melayu</span></a>
+                        <a href="/no/"><img class="lang-flag" src="/flags/no.svg" alt=""><span class="lang-name">Norsk</span></a>
+                        <a href="/pl/"><img class="lang-flag" src="/flags/pl.svg" alt=""><span class="lang-name">Polski</span></a>
+                        <a href="/pt/"><img class="lang-flag" src="/flags/pt.svg" alt=""><span class="lang-name">Portugu&ecirc;s</span></a>
+                        <a href="/ru/"><img class="lang-flag" src="/flags/ru.svg" alt=""><span class="lang-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></a>
+                        <a href="/es/"><img class="lang-flag" src="/flags/es.svg" alt=""><span class="lang-name">Espa&ntilde;ol</span></a>
+                        <a href="/sv/"><img class="lang-flag" src="/flags/se.svg" alt=""><span class="lang-name">Svenska</span></a>
+                        <a href="/th/"><img class="lang-flag" src="/flags/th.svg" alt=""><span class="lang-name">&#3652;&#3607;&#3618;</span></a>
+                        <a href="/tr/"><img class="lang-flag" src="/flags/tr.svg" alt=""><span class="lang-name">T&uuml;rk&ccedil;e</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="support-footer-col">
+                <h4>Impara</h4>
+                <ul>
+                    <li><a href="/it/support/getting-started">Primi passi</a></li>
+                    <li><a href="/it/support/how-detection-works">Come funziona il rilevamento</a></li>
+                    <li><a href="/it/support/timeline-and-playback">Timeline e riproduzione</a></li>
+                    <li><a href="/it/support/breathing-disruptions">Pause respiratorie</a></li>
+                    <li><a href="/it/support/sleep-stages">Fasi del sonno</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Altro</h4>
+                <ul>
+                    <li><a href="/it/support/apple-watch">Apple Watch e Health</a></li>
+                    <li><a href="/it/support/export-and-sharing">Esportazione e condivisione</a></li>
+                    <li><a href="/it/support/troubleshooting">Risoluzione dei problemi</a></li>
+                    <li><a href="/it/support/android">Android</a></li>
+                    <li><a href="/it/support/faq">FAQ</a></li>
+                    <li><a href="/it/support/#contact">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Tutti i diritti riservati.</div>
+    </footer>
+
+    <div class="mobile-cta-bar is-tucked">
+        <div class="mobile-cta-copy">
+            <strong>Snore Timeline</strong>
+            <span>Gratis · iOS e Android</span>
+        </div>
+        <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Scarica</a>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

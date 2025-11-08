@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>時間軸與播放 - Snore Timeline 支援</title>
+    <meta name="title" content="時間軸與播放 - Snore Timeline 支援">
+    <meta name="description" content="學會解讀 Snore Timeline 的波形：顏色、縮放層級、行事曆導覽，以及如何用清晰的音訊回放夜裡的任何時刻。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh-Hant/support/timeline-and-playback">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh-Hant/support/timeline-and-playback">
+    <meta property="og:title" content="時間軸與播放 - Snore Timeline 支援">
+    <meta property="og:description" content="學會解讀 Snore Timeline 的波形：顏色、縮放層級、行事曆導覽，以及如何用清晰的音訊回放夜裡的任何時刻。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh-Hant/support/timeline-and-playback">
+    <meta property="twitter:title" content="時間軸與播放 - Snore Timeline 支援">
+    <meta property="twitter:description" content="學會解讀 Snore Timeline 的波形：顏色、縮放層級、行事曆導覽，以及如何用清晰的音訊回放夜裡的任何時刻。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支援", "item": "https://snoretimeline.com/zh-Hant/support/" },
+        { "@type": "ListItem", "position": 2, "name": "時間軸與播放", "item": "https://snoretimeline.com/zh-Hant/support/timeline-and-playback" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "解讀你的時間軸並回放音訊",
+      "description": "學會解讀 Snore Timeline 的波形：顏色、縮放層級、行事曆導覽，以及如何用清晰的音訊回放夜裡的任何時刻。",
+      "url": "https://snoretimeline.com/zh-Hant/support/timeline-and-playback",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="timeline-and-playback" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh-Hant/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 標誌">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支援</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">開啟 App
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="麵包屑導覽">
+                    <a href="/zh-Hant/support/">支援</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">時間軸與播放</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">你的結果</span>
+                    <h1 class="privacy-title">解讀你的時間軸並回放音訊</h1>
+                    <p class="privacy-updated">波形上的每一種顏色、每一個縮放層級、每一次點按，逐一說明。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本頁內容</summary>
+                        <ul>
+                            <li><a href="#reading-the-waveform">解讀波形</a></li>
+                            <li><a href="#zoom-levels">縮放層級與自動捲動</a></li>
+                            <li><a href="#finding-moments">尋找特定時刻</a></li>
+                            <li><a href="#calendar">在不同夜晚之間切換</a></li>
+                            <li><a href="#status-bar">狀態列</a></li>
+                            <li><a href="#playback">回放你的夜晚</a></li>
+                            <li><a href="#audio-enhancement">音訊增強</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">時間軸讓一整夜的音訊變成你可以探索的內容。一旦你了解每種顏色的意義、各縮放層級之間的關係，以及播放如何跟著你的點按移動，你就能在幾秒內從「我好像打鼾了」轉為聆聽那個確切的時刻。本頁教你整個流程：解讀、導覽、聆聽。</p>
+
+                    <div class="privacy-section" id="reading-the-waveform">
+                        <h2>解讀波形</h2>
+                        <p>Snore Timeline 將你的夜晚繪製成一條互動式波形：聲音隨時間變化，每根長條的高度反映該夜晚切片的峰值平均音量。置中的時間指示器顯示畫面正中央的確切時間，並會隨你捲動或錄音進行而更新。將波形向左或向右拖曳即可在夜晚中移動；快速一甩會持續滑行，再逐漸減速停下。</p>
+                        <p>長條帶有顏色，讓你一眼就能辨識聲音類型：</p>
+                        <ul>
+                            <li><strong>橘色／杏色</strong>代表一般音訊。</li>
+                            <li><strong>暗玫瑰色</strong>代表打鼾。</li>
+                            <li><strong>奶油色／米色</strong>代表夢話。</li>
+                            <li><strong>淡紫色</strong>代表<a href="/zh-Hant/support/breathing-disruptions#timeline-markers">呼吸中斷</a>。</li>
+                            <li><strong>淡灰色</strong>代表沒有聲音的時段。這些長條會省略波形下半部的鏡像，讓靜默與微弱聲音有所區別。</li>
+                            <li><strong>較淺的半透明灰色</strong>代表本次錄音工作階段之前的事件，讓它們在視覺上與即時資料分開。</li>
+                        </ul>
+                        <p>如果 App 偵測到<a href="/zh-Hant/support/sleep-stages#hypnogram">睡眠階段</a>，背景的彩色色帶會顯示你在每個時間點處於哪個階段，讓你能把打鼾事件對應到特定階段。</p>
+                        <p><strong>橘色的深淺</strong>帶有額外的意義。橘色長條會疊成不同深淺，顯示聲音能量在各頻率間的分布。深橘色涵蓋低頻，約 50 至 250 Hz，也就是打鼾的低沉隆隆聲。中橘色涵蓋中頻，約 250 至 1500 Hz，是泛音與母音所在的範圍。亮橘色涵蓋高頻，約 1500 至 8000 Hz，例如「sss」中的「s」這類齒擦音。這個頻率細節只出現在最放大的檢視中；在較寬的縮放層級，長條會以單色顯示。它的用途是個人洞察，而非醫療診斷。<a href="/zh-Hant/support/how-detection-works#decibels">偵測如何運作</a>解釋了這些頻率顏色。</p>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-nightly.webp" type="image/webp">
+                                    <img src="/support/img/shot-nightly.png" alt="App 完整畫面" loading="lazy" width="600" height="1170">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:10%;width:94%;height:22.5%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 放大檢視</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-waveform.webp" type="image/webp">
+                                    <img src="/support/img/shot-waveform.png" alt="放大的波形，含暗玫瑰色打鼾長條、淡灰色靜默，以及打鼾訊號圖例" loading="lazy" width="900" height="417">
+                                </picture>
+                                <figcaption>在你按下播放之前，顏色就告訴你 App 聽到了什麼。</figcaption>
+                            </div>
+                        </figure>
+                        <p>如果時間軸的文字看起來太小，App 支援動態字型。在 iPhone 的「設定」中前往「輔助使用」、「顯示與文字大小」、「放大文字」調高字級，App 的標籤就會隨之縮放。</p>
+                    </div>
+
+                    <div class="privacy-section" id="zoom-levels">
+                        <h2>縮放層級與自動捲動</h2>
+                    <figure class="support-diagram" aria-label="示意圖：五個縮放層級，每一級都展開上一級的一個切片">
+                        <svg viewBox="0 0 600 252" role="img" xmlns="http://www.w3.org/2000/svg">
+<text class="dgm-label-strong" x="10" y="38">1 小時</text>
+<line class="dgm-grid" x1="120" y1="34" x2="580" y2="34"/>
+<line class="dgm-grid" x1="120.0" y1="30" x2="120.0" y2="38"/>
+<line class="dgm-grid" x1="177.5" y1="30" x2="177.5" y2="38"/>
+<line class="dgm-grid" x1="235.0" y1="30" x2="235.0" y2="38"/>
+<line class="dgm-grid" x1="292.5" y1="30" x2="292.5" y2="38"/>
+<line class="dgm-grid" x1="350.0" y1="30" x2="350.0" y2="38"/>
+<line class="dgm-grid" x1="407.5" y1="30" x2="407.5" y2="38"/>
+<line class="dgm-grid" x1="465.0" y1="30" x2="465.0" y2="38"/>
+<line class="dgm-grid" x1="522.5" y1="30" x2="522.5" y2="38"/>
+<line class="dgm-grid" x1="580.0" y1="30" x2="580.0" y2="38"/>
+<rect class="dgm-accent" x="300" y="26" width="60" height="16" rx="4"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="300" y1="42" x2="120" y2="74"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="360" y1="42" x2="580" y2="74"/>
+<text class="dgm-label-strong" x="10" y="86">10 分鐘</text>
+<line class="dgm-grid" x1="120" y1="82" x2="580" y2="82"/>
+<line class="dgm-grid" x1="120.0" y1="78" x2="120.0" y2="86"/>
+<line class="dgm-grid" x1="161.8" y1="78" x2="161.8" y2="86"/>
+<line class="dgm-grid" x1="203.6" y1="78" x2="203.6" y2="86"/>
+<line class="dgm-grid" x1="245.5" y1="78" x2="245.5" y2="86"/>
+<line class="dgm-grid" x1="287.3" y1="78" x2="287.3" y2="86"/>
+<line class="dgm-grid" x1="329.1" y1="78" x2="329.1" y2="86"/>
+<line class="dgm-grid" x1="370.9" y1="78" x2="370.9" y2="86"/>
+<line class="dgm-grid" x1="412.7" y1="78" x2="412.7" y2="86"/>
+<line class="dgm-grid" x1="454.5" y1="78" x2="454.5" y2="86"/>
+<line class="dgm-grid" x1="496.4" y1="78" x2="496.4" y2="86"/>
+<line class="dgm-grid" x1="538.2" y1="78" x2="538.2" y2="86"/>
+<line class="dgm-grid" x1="580.0" y1="78" x2="580.0" y2="86"/>
+<rect class="dgm-accent" x="300" y="74" width="60" height="16" rx="4"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="300" y1="90" x2="120" y2="122"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="360" y1="90" x2="580" y2="122"/>
+<text class="dgm-label-strong" x="10" y="134">1 分鐘</text>
+<line class="dgm-grid" x1="120" y1="130" x2="580" y2="130"/>
+<line class="dgm-grid" x1="120.0" y1="126" x2="120.0" y2="134"/>
+<line class="dgm-grid" x1="148.8" y1="126" x2="148.8" y2="134"/>
+<line class="dgm-grid" x1="177.5" y1="126" x2="177.5" y2="134"/>
+<line class="dgm-grid" x1="206.2" y1="126" x2="206.2" y2="134"/>
+<line class="dgm-grid" x1="235.0" y1="126" x2="235.0" y2="134"/>
+<line class="dgm-grid" x1="263.8" y1="126" x2="263.8" y2="134"/>
+<line class="dgm-grid" x1="292.5" y1="126" x2="292.5" y2="134"/>
+<line class="dgm-grid" x1="321.2" y1="126" x2="321.2" y2="134"/>
+<line class="dgm-grid" x1="350.0" y1="126" x2="350.0" y2="134"/>
+<line class="dgm-grid" x1="378.8" y1="126" x2="378.8" y2="134"/>
+<line class="dgm-grid" x1="407.5" y1="126" x2="407.5" y2="134"/>
+<line class="dgm-grid" x1="436.2" y1="126" x2="436.2" y2="134"/>
+<line class="dgm-grid" x1="465.0" y1="126" x2="465.0" y2="134"/>
+<line class="dgm-grid" x1="493.8" y1="126" x2="493.8" y2="134"/>
+<line class="dgm-grid" x1="522.5" y1="126" x2="522.5" y2="134"/>
+<line class="dgm-grid" x1="551.2" y1="126" x2="551.2" y2="134"/>
+<line class="dgm-grid" x1="580.0" y1="126" x2="580.0" y2="134"/>
+<rect class="dgm-accent" x="300" y="122" width="60" height="16" rx="4"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="300" y1="138" x2="120" y2="170"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="360" y1="138" x2="580" y2="170"/>
+<text class="dgm-label-strong" x="10" y="182">5 秒</text>
+<line class="dgm-grid" x1="120" y1="178" x2="580" y2="178"/>
+<line class="dgm-grid" x1="120.0" y1="174" x2="120.0" y2="182"/>
+<line class="dgm-grid" x1="139.2" y1="174" x2="139.2" y2="182"/>
+<line class="dgm-grid" x1="158.3" y1="174" x2="158.3" y2="182"/>
+<line class="dgm-grid" x1="177.5" y1="174" x2="177.5" y2="182"/>
+<line class="dgm-grid" x1="196.7" y1="174" x2="196.7" y2="182"/>
+<line class="dgm-grid" x1="215.8" y1="174" x2="215.8" y2="182"/>
+<line class="dgm-grid" x1="235.0" y1="174" x2="235.0" y2="182"/>
+<line class="dgm-grid" x1="254.2" y1="174" x2="254.2" y2="182"/>
+<line class="dgm-grid" x1="273.3" y1="174" x2="273.3" y2="182"/>
+<line class="dgm-grid" x1="292.5" y1="174" x2="292.5" y2="182"/>
+<line class="dgm-grid" x1="311.7" y1="174" x2="311.7" y2="182"/>
+<line class="dgm-grid" x1="330.8" y1="174" x2="330.8" y2="182"/>
+<line class="dgm-grid" x1="350.0" y1="174" x2="350.0" y2="182"/>
+<line class="dgm-grid" x1="369.2" y1="174" x2="369.2" y2="182"/>
+<line class="dgm-grid" x1="388.3" y1="174" x2="388.3" y2="182"/>
+<line class="dgm-grid" x1="407.5" y1="174" x2="407.5" y2="182"/>
+<line class="dgm-grid" x1="426.7" y1="174" x2="426.7" y2="182"/>
+<line class="dgm-grid" x1="445.8" y1="174" x2="445.8" y2="182"/>
+<line class="dgm-grid" x1="465.0" y1="174" x2="465.0" y2="182"/>
+<line class="dgm-grid" x1="484.2" y1="174" x2="484.2" y2="182"/>
+<line class="dgm-grid" x1="503.3" y1="174" x2="503.3" y2="182"/>
+<line class="dgm-grid" x1="522.5" y1="174" x2="522.5" y2="182"/>
+<line class="dgm-grid" x1="541.7" y1="174" x2="541.7" y2="182"/>
+<line class="dgm-grid" x1="560.8" y1="174" x2="560.8" y2="182"/>
+<line class="dgm-grid" x1="580.0" y1="174" x2="580.0" y2="182"/>
+<rect class="dgm-accent" x="300" y="170" width="60" height="16" rx="4"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="300" y1="186" x2="120" y2="218"/>
+<line class="dgm-grid" stroke-dasharray="3 3" x1="360" y1="186" x2="580" y2="218"/>
+<text class="dgm-label-strong" x="10" y="230">1 秒</text>
+<line class="dgm-grid" x1="120" y1="226" x2="580" y2="226"/>
+<line class="dgm-grid" x1="120.0" y1="222" x2="120.0" y2="230"/>
+<line class="dgm-grid" x1="133.5" y1="222" x2="133.5" y2="230"/>
+<line class="dgm-grid" x1="147.1" y1="222" x2="147.1" y2="230"/>
+<line class="dgm-grid" x1="160.6" y1="222" x2="160.6" y2="230"/>
+<line class="dgm-grid" x1="174.1" y1="222" x2="174.1" y2="230"/>
+<line class="dgm-grid" x1="187.6" y1="222" x2="187.6" y2="230"/>
+<line class="dgm-grid" x1="201.2" y1="222" x2="201.2" y2="230"/>
+<line class="dgm-grid" x1="214.7" y1="222" x2="214.7" y2="230"/>
+<line class="dgm-grid" x1="228.2" y1="222" x2="228.2" y2="230"/>
+<line class="dgm-grid" x1="241.8" y1="222" x2="241.8" y2="230"/>
+<line class="dgm-grid" x1="255.3" y1="222" x2="255.3" y2="230"/>
+<line class="dgm-grid" x1="268.8" y1="222" x2="268.8" y2="230"/>
+<line class="dgm-grid" x1="282.4" y1="222" x2="282.4" y2="230"/>
+<line class="dgm-grid" x1="295.9" y1="222" x2="295.9" y2="230"/>
+<line class="dgm-grid" x1="309.4" y1="222" x2="309.4" y2="230"/>
+<line class="dgm-grid" x1="322.9" y1="222" x2="322.9" y2="230"/>
+<line class="dgm-grid" x1="336.5" y1="222" x2="336.5" y2="230"/>
+<line class="dgm-grid" x1="350.0" y1="222" x2="350.0" y2="230"/>
+<line class="dgm-grid" x1="363.5" y1="222" x2="363.5" y2="230"/>
+<line class="dgm-grid" x1="377.1" y1="222" x2="377.1" y2="230"/>
+<line class="dgm-grid" x1="390.6" y1="222" x2="390.6" y2="230"/>
+<line class="dgm-grid" x1="404.1" y1="222" x2="404.1" y2="230"/>
+<line class="dgm-grid" x1="417.6" y1="222" x2="417.6" y2="230"/>
+<line class="dgm-grid" x1="431.2" y1="222" x2="431.2" y2="230"/>
+<line class="dgm-grid" x1="444.7" y1="222" x2="444.7" y2="230"/>
+<line class="dgm-grid" x1="458.2" y1="222" x2="458.2" y2="230"/>
+<line class="dgm-grid" x1="471.8" y1="222" x2="471.8" y2="230"/>
+<line class="dgm-grid" x1="485.3" y1="222" x2="485.3" y2="230"/>
+<line class="dgm-grid" x1="498.8" y1="222" x2="498.8" y2="230"/>
+<line class="dgm-grid" x1="512.4" y1="222" x2="512.4" y2="230"/>
+<line class="dgm-grid" x1="525.9" y1="222" x2="525.9" y2="230"/>
+<line class="dgm-grid" x1="539.4" y1="222" x2="539.4" y2="230"/>
+<line class="dgm-grid" x1="552.9" y1="222" x2="552.9" y2="230"/>
+<line class="dgm-grid" x1="566.5" y1="222" x2="566.5" y2="230"/>
+<line class="dgm-grid" x1="580.0" y1="222" x2="580.0" y2="230"/>
+</svg>
+                        <figcaption>每個縮放層級都展開上一級的一個切片，從一整夜一路細到單秒。按住縮放按鈕即可一次放到最大或縮到最小。</figcaption>
+                    </figure>
+                        <p>時間軸提供五個縮放層級，從最細到最寬：<strong>1 秒、5 秒、1 分鐘、10 分鐘與 1 小時</strong>的間隔。1 秒檢視顯示個別聲音；1 小時檢視則把整夜塞進螢幕。使用時間軸右上角的放大鏡加號與減號按鈕。輕點一下即可往內或往外移動一個層級。</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>按住縮放按鈕約三分之一秒，就能往該方向一次跳到最細或最寬的檢視。不必逐級點按。</p>
+                        </div>
+                        <p>App 也會自行調整縮放與捲動，了解規則可以省去不少困惑：</p>
+                        <ul>
+                            <li><strong>當錄音開始時</strong>，時間軸會切換到 1 秒檢視並進入即時模式，讓你即時看到聲音傳入。</li>
+                            <li><strong>在即時模式下</strong>，它會自行捲動以維持最新的音訊在畫面中，大約每秒更新一次。</li>
+                            <li><strong>當錄音停止時</strong>，它會切換到 1 分鐘檢視，提供整夜的概覽。</li>
+                            <li><strong>如果你離開一小時以上再回來</strong>，它會以較寬的 10 分鐘檢視重設為目前日期的即時模式。</li>
+                        </ul>
+                        <p>要停止自動捲動，就往回捲動。一旦你朝較早的音訊移動，時間軸就會進入凍結模式，停留在你放下的位置，讓你慢慢瀏覽。如果你往回捲動超過已載入的最舊資料，App 會在背景載入前一段時間，並讓你正在檢視的時間保持置中。你隨時都可以用放大鏡按鈕自行更改縮放。</p>
+                    </div>
+
+                    <div class="privacy-section" id="finding-moments">
+                        <h2>尋找特定時刻</h2>
+                        <p>要前往某個特定時間，拖曳波形直到該時間落在正中央；時間指示器會確認你所在的位置。要前往某個特定事件，<strong>長按波形</strong>，App 就會跳到最近的事件，並把事件清單捲動到最接近你按住處的那一個。</p>
+                        <p>你不必把整夜刷過一遍才能找到最大聲的段落。打開事件清單即可直接跳到偵測到的事件，再點按其中一個來查看細節並回放。每個事件都以 dB 顯示其音量，讓你能掃視清單尋找最大的數字。聲音以 dB SPL 測量，上限為 105 dB。<a href="/zh-Hant/support/episodes-and-events#episode-details">事件與動態</a>解釋了事件卡片中的所有內容。</p>
+                    </div>
+
+                    <div class="privacy-section" id="calendar">
+                        <h2>在不同夜晚之間切換</h2>
+                        <p>點按波形上方的日期標籤即可開啟行事曆。它會顯示本月與過去的月份；向左或向右滑動即可切換。未來的日期會變灰，當你回到本月時右箭頭會自行停用，因為沒有未來的月份可顯示。</p>
+                        <p>有錄音的夜晚會帶有一個<strong>小圓點</strong>，讓你不必猜測就能找到自己的資料。點按任何有資料的過去日期，時間軸就會跳到那晚的晚上 10 點，這是夜間錄音合理的起點。點按今天的日期則會跳到目前時間，因為今晚還沒過去。</p>
+                        <p>你也可以略過行事曆來切換相鄰的夜晚：在「每夜總覽」畫面上向左或向右滑動即可在夜晚之間移動，在「每週總覽」畫面上用同樣的手勢即可在週與週之間移動。</p>
+                    </div>
+
+                    <div class="privacy-section" id="status-bar">
+                        <h2>狀態列</h2>
+                        <p>波形下方的長條會即時提供時間軸當下狀態的脈絡：</p>
+                        <ul>
+                            <li><strong>錄音期間</strong>，它會顯示目前的輸入裝置與即時分貝值。</li>
+                            <li><strong>當你移過某根長條時</strong>，它會說出偵測到的訊號類型，例如打鼾或夢話訊號，並以 dB 顯示該視窗的峰值音量。</li>
+                            <li><strong>如果你嘗試從空白段落播放</strong>，它會告訴你附近沒有可播放的音訊。</li>
+                            <li><strong>當設定了錄音延遲時</strong>，它會倒數計時直到錄音開始。</li>
+                        </ul>
+                        <p>這裡的分貝讀數與 App 中各處一樣，都以 dB SPL 測量，上限為 105 dB。<a href="/zh-Hant/support/how-detection-works#decibels">偵測如何運作</a>解釋了這些數字的意義。</p>
+                    </div>
+
+                    <div class="privacy-section" id="playback">
+                        <h2>回放你的夜晚</h2>
+                        <p>你的錄音就存在時間軸本身裡。沒有需要管理的獨立檔案或資料夾：打開某一晚，音訊就在波形下方。（若要把片段儲存到 App 之外，請參閱<a href="/zh-Hant/support/export-and-sharing#audio-export">匯出與分享</a>。）</p>
+                        <p>當有音訊可用且你並未在錄音時，右上角會出現一個<strong>播放按鈕</strong>。捲動波形讓你想聽的時刻落在正中央，再點按播放即可聽到該中心點的音訊；再次點按即可停止。如果中心點沒有可播放的音訊，播放按鈕會往前搜尋並播放下一個可用的事件。播放音訊時，時間軸會捲動以維持播放位置置中，因此你看到的長條始終與你聽到的內容相符。</p>
+                        <p>要在各處跳轉，點按時間軸上的任一點，播放就會移到那裡。按住並拖曳即可刷動：拖曳時播放會暫停，讓你找到確切的位置，放開時若先前正在播放就會繼續。播放途中拖曳也一樣；它會暫停，並在你停下後不久接著播放，除非是你自己按下停止。</p>
+                        <p><strong>若只想聽特定聲音</strong>，請改用事件清單而非波形。事件卡片帶有打鼾、夢話、呼吸中斷與大聲響的標記，讓你能挑選你在意的類型。點按某個事件，播放會在它開始前約 2 秒就啟動，讓你在聲音本身之前先有一點脈絡。</p>
+                        <p><strong>播放是無縫的。</strong>當一個夜晚橫跨多個錄音片段時，App 會在目前片段還在播放時就排好下一個片段，在播放中片段約 10 分鐘範圍內尋找下一個相容的片段。如果格式吻合，音訊會繼續而沒有可聽見的間隙，讓單一工作階段能跨越長達 7 小時以上的整夜播放，而你不必切換檔案。</p>
+                        <p>當某個事件播放時，App 會顯示它的類型標籤、開始時間、持續時間與結束時間（在最大的輔助使用文字大小下，結束時間會隱藏以節省空間），以及<strong>峰值與平均音量（以分貝計）</strong>和該聲音的波形。你就是這樣得知自己的鼾聲有多大：邊聽邊掃視 dB 數字。這些數字用於個人洞察，而非醫療測量。App 也會把目前正在播放的事件標示出來，並在播放越過它後清除標示。</p>
+                        <p><strong>如果某段錄音無法播放</strong>，有幾條規則能解釋原因。App 不會在錄音進行中開始播放，所以請先停止工作階段。它會略過太小、不足以含有有意義音訊的檔案。播放會在音訊用盡或你離開 App 時自行結束；停止會把位置重設到開頭，因此你下次點按就會從你選的任何位置重新開始。</p>
+                    </div>
+
+                    <div class="privacy-section" id="audio-enhancement">
+                        <h2>音訊增強</h2>
+                        <p>回放聽起來可能比當時房間裡的感覺更清晰、更飽滿。這是刻意的。對於在安靜環境中擷取的錄音，App 會在回放時塑形音訊：它會提升打鼾、呼吸與說話所在的低頻和中頻，減弱嘶聲與風扇噪音所在的高頻，並讓音量平均，使微弱的聲音浮現，同時讓響亮的鼾聲維持受控。你在原始音訊中會錯過的微弱呼吸，因而變得可聽見。</p>
+                        <p>這項增強沒有開關。App 會根據錄音擷取的方式決定：安靜房間的錄音會獲得清晰度提升，而在播放其他音訊時錄製的錄音則會略過塑形、維持在接近原始的音量，因為它們本來就以全音量擷取。無論哪種情況，目標都是在你不必做任何調整的前提下提供最清晰的回放。</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>相關內容</h2>
+                        <ul>
+                            <li><a href="/zh-Hant/support/episodes-and-events">事件與動態</a></li>
+                            <li><a href="/zh-Hant/support/how-detection-works">聲音偵測如何運作</a></li>
+                            <li><a href="/zh-Hant/support/export-and-sharing">匯出與分享</a></li>
+                            <li><a href="/zh-Hant/support/sleep-stages">睡眠階段</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支援頁面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh-Hant/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>錄製、檢視並了解你的打鼾、呼吸與睡眠，全部都在你的裝置上。</p>
+                <p><a href="/zh-Hant/support/">支援</a> &middot; <a href="/zh-Hant/privacy">隱私權</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>學習</h4>
+                <ul>
+                    <li><a href="/zh-Hant/support/getting-started">開始使用</a></li>
+                    <li><a href="/zh-Hant/support/how-detection-works">偵測如何運作</a></li>
+                    <li><a href="/zh-Hant/support/timeline-and-playback">時間軸與播放</a></li>
+                    <li><a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a></li>
+                    <li><a href="/zh-Hant/support/sleep-stages">睡眠階段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh-Hant/support/apple-watch">Apple Watch 與健康</a></li>
+                    <li><a href="/zh-Hant/support/export-and-sharing">匯出與分享</a></li>
+                    <li><a href="/zh-Hant/support/troubleshooting">疑難排解</a></li>
+                    <li><a href="/zh-Hant/support/android">Android</a></li>
+                    <li><a href="/zh-Hant/support/faq">常見問題</a></li>
+                    <li><a href="/zh-Hant/support/#contact">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 版權所有。</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

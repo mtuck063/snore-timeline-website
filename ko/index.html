@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Snore Timeline: 수면 추적기</title>
+    <meta name="title" content="Snore Timeline: 수면 추적기">
+    <meta name="description" content="인터랙티브 타임라인으로 코골이와 잠꼬대를 추적하고, 수면 단계, 호흡 정지 감지, 그리고 Apple Watch 생체 지표 기반의 야간 수면 및 회복 점수까지 확인하세요. Apple Health 동기화, 온디바이스 처리, 구독 없음.">
+    <meta name="keywords" content="snore tracking, sleep tracking, snoring app, breathing disruption detection, sleep analysis, iOS app, snore recorder, sleep sounds, breathing pause detection, snore recorder with timeline, snoring app that shows episodes, timeline snore tracker, snoring episode visualization, recovery score, sleep readiness score, hrv recovery, apple watch recovery score">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Korean">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0E1116">
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ko/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://snoretimeline.com/">
+    <link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/">
+    <link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/">
+    <link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/">
+    <link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/">
+    <link rel="alternate" hreflang="fil" href="https://snoretimeline.com/fil/">
+    <link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/">
+    <link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/">
+    <link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/">
+    <link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/">
+    <link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/">
+    <link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/">
+    <link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/">
+    <link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/">
+    <link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/">
+    <link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/">
+    <link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/">
+    <link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/">
+    <link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/">
+    <link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/">
+    <link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://snoretimeline.com/ko/">
+    <meta property="og:title" content="Snore Timeline: 수면 추적기">
+    <meta property="og:description" content="인터랙티브 타임라인으로 코골이와 잠꼬대를 추적하고, 수면 단계, 호흡 정지 감지, 그리고 Apple Watch 생체 지표 기반의 야간 수면 및 회복 점수까지 확인하세요. Apple Health 동기화, 온디바이스 처리, 구독 없음.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ko/">
+    <meta property="twitter:title" content="Snore Timeline: 수면 추적기">
+    <meta property="twitter:description" content="인터랙티브 타임라인으로 코골이와 잠꼬대를 추적하고, 수면 단계, 호흡 정지 감지, 그리고 Apple Watch 생체 지표 기반의 야간 수면 및 회복 점수까지 확인하세요. Apple Health 동기화, 온디바이스 처리, 구독 없음.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:app_store_id" content="6751759381">
+    <meta property="al:ios:app_name" content="Snore Timeline">
+    <meta property="al:ios:url" content="snoretimeline://open">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="../logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.png">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Snore Timeline",
+      "description": "인터랙티브 타임라인으로 코골이와 잠꼬대를 추적하고, 호흡 정지 감지, 수면 단계, 그리고 Apple Watch 생체 지표 기반의 야간 수면 및 회복 점수를 확인할 수 있습니다. Apple Watch, Oura, Garmin, Whoop, Ultrahuman과 함께 Apple Health 동기화를 지원합니다. 모든 처리는 온디바이스에서 이루어지며 완전한 개인정보 보호를 제공합니다.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "22"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Menelik Tucker"
+      },
+      "image": "https://snoretimeline.com/logo.png",
+      "screenshot": "https://snoretimeline.com/app-screenshot.png",
+      "url": "https://apps.apple.com/us/app/snore-timeline/id6751759381",
+      "downloadUrl": "https://apps.apple.com/us/app/snore-timeline/id6751759381",
+      "featureList": [
+        "Interactive Timeline Visualization",
+        "Automatic Snoring Detection",
+        "Sleep Talking Detection",
+        "Breathing Disruption Detection",
+        "Episode Grouping with Metrics",
+        "Enhanced Audio Playback",
+        "Nightly and Weekly Summaries",
+        "Complete Privacy - On-Device Processing",
+        "Bluetooth Device Support",
+        "Smart Storage Management",
+        "Data Export (CSV, Audio)",
+        "Sleep Stage Estimation (Awake, Light, Deep, REM)",
+        "Nightly Recovery Score (HRV, Resting Heart Rate, SpO2, Wrist Temperature, Sleep Duration)",
+        "Combined Sleep and Recovery Status",
+        "Per-Vital Trend Detail on Apple Watch",
+        "60-Night Sleep History on Apple Watch"
+      ]
+    }
+    </script>
+
+    <!-- 자주 묻는 질문 Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Snore Timeline은 다른 코골이 추적 앱과 어떻게 다른가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Snore Timeline은 밤새 녹음한 오디오 전체를 보관하고, 스크럽하며 탭해서 들을 수 있는 인터랙티브 타임라인 위에 펼쳐 보여줍니다. 녹음은 샘플링이 아닌 연속 방식이라 조용했던 시간은 조용한 그대로 기록됩니다. 앱은 기침, 헐떡임, 잠꼬대, 호흡 정지를 각각의 카테고리로 태깅하고, 연속된 소리는 재생할 수 있는 에피소드로 묶습니다. 수면 단계 데이터는 Apple Watch, Oura Ring, Whoop, Garmin, Ultrahuman에서 가져와 통합됩니다. 감지는 휴대폰에서 직접 실행됩니다. 클라우드, 계정, 구독 모두 필요 없습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "수면 점수와 회복 점수의 차이는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "수면 점수는 녹음을 바탕으로 당신이 얼마나 잘 잤는지를 평가합니다. 수면 시간, 효율, 수면 단계, 코골이, 취침 시간의 규칙성을 0에서 100점 척도로 나타냅니다. 회복 점수는 Apple Watch 생체 지표를 바탕으로 밤새 몸이 어떻게 반응했는지를 읽어냅니다. 심박 변이도, 안정 시 심박수, 호흡수, 혈중 산소, 손목 체온, 수면 시간을 각각 당신 자신의 기준선과 비교합니다. 아침 요약은 둘을 하나의 알기 쉬운 상태로 합쳐 '충분히 회복됨'처럼 표시합니다. 회복 점수에는 Apple Health에 기록하는 웨어러블이 필요하지만, 수면 점수는 오디오만으로 작동합니다. 둘 다 개인적인 인사이트 점수일 뿐, 의학적 진단이 아닙니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Snore Timeline은 구독이 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. Snore Timeline은 구독이 필요 없는 완전 무료 앱입니다. 호흡 정지 감지, 에피소드 그룹화, 야간 요약, 데이터 내보내기 등 모든 기능이 포함되어 있으며, 숨겨진 비용이나 앱 내 결제도 없습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "데이터는 비공개인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "물론입니다. 모든 오디오 처리는 iPhone 내에서만 이루어집니다. 클라우드 업로드, 외부 서버, 계정이 모두 필요 없습니다. 녹음 파일은 기기에 저장되며 본인만 접근할 수 있습니다. 완전한 비공개를 유지하면서 의사와 공유하기 위해 데이터를 내보낼 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "호흡 정지를 감지하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, Snore Timeline은 수면 중 오디오를 분석해 호흡 정지를 감지합니다. 10초 이상의 긴 무음 구간 뒤에 헐떡임이나 회복 소리가 이어지는지 식별합니다. 앱은 이러한 호흡 정지를 타임라인에 표시해 패턴을 확인할 수 있도록 합니다. 참고: 이것은 오디오 분석일 뿐이며 의료 기기가 아닙니다. 호흡 정지는 의료 전문가와 상담할 가치가 있을 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "코골이 감지는 얼마나 정확한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Snore Timeline은 Apple의 검증된 사운드 분류 기술을 사용해 밤새 오디오를 실시간으로 지속해서 분석합니다. 보정이나 설정 없이 즉시 감지가 시작됩니다. 앱은 각 오디오 구간의 소리 패턴과 주파수 특성을 모두 분석해 코골이, 헐떡임, 기침, 호흡, 잠꼬대를 식별합니다. 모든 처리는 완전한 비공개를 위해 기기 내에서만 이루어집니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AirPods나 Bluetooth 기기와 함께 사용할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네! Snore Timeline은 AirPods를 포함한 Bluetooth 오디오 기기를 지원합니다. 덕분에 휴대폰 배터리를 소모하지 않고 밤새 손쉽게 녹음할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "녹음 파일은 어디에 저장되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "밤 전체의 오디오를 하나의 파일로 내보내거나 모든 코골이 에피소드를 한 번에 일괄 다운로드할 수 있습니다. 더 풍부한 내보내기를 원한다면 다운로드 아이콘을 탭해 Export Report 시트를 엽니다. 날짜 범위를 선택하고 요약, 수면 단계, 이벤트, 생체 신호, (선택적으로) 오디오를 포함할 수 있습니다. 보고서는 CSV로 내보내지며, 함께 묶기로 한 오디오도 같이 저장됩니다. 내보낸 파일은 기기의 두 폴더에 정리되어 저장됩니다: Exported Recordings(밤 전체 녹음)와 Snoring Episodes(개별 에피소드 클립). iPhone에서: 파일 앱을 열고, 화면 하단의 둘러보기를 탭한 다음, 위치 아래에서 나의 iPhone을 탭하고, Snore Timeline 폴더를 엽니다. Android에서: 파일 앱을 열고, 다운로드로 이동한 다음, Exported Recordings 또는 Snoring Episodes를 엽니다."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Sticky header (shares the support-center chrome) -->
+    <header class="support-topbar home-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ko/" class="support-topbar-brand"><img src="../logo.png" alt="">Snore Timeline</a>
+            <span class="support-topbar-eyebrow">수면 추적기</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="/ko/support/" class="home-topbar-link">지원</a>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta home-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>다운로드</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="히어로 섹션">
+        <!-- Shader background -->
+        <canvas id="hero-shader" aria-hidden="true"></canvas>
+        <!-- Animated background elements -->
+        <div class="hero-bg-orb hero-bg-orb-1"></div>
+        <div class="hero-bg-orb hero-bg-orb-2"></div>
+        <div class="hero-stars">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+        </div>
+
+        <div class="container hero-content">
+            <article class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">스크럽하고 직접 들을 수 있는, 하나의 타임라인 위에 담긴 밤 전체.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    샘플링이 아닌 연속 녹음. 코골이, 잠꼬대, 호흡 정지를 다시 재생할 수 있는 인터랙티브 타임라인에 담았습니다.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">다음에서 다운로드:</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">다음에서 다운로드:</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="hero-rating"><span class="hero-rating-stars">★★★★★</span> App Store와 Google Play에서 사랑받고 있습니다</p>
+                <p class="hero-tip-nudge">iOS 및 Android에서 무료 · 구독 없음</p>
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>100% 비공개</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span>실시간 감지</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span>구독 없음</span>
+                    </div>
+                </div>
+            </article>
+            <aside class="hero-visual" aria-label="앱 미리보기">
+                <div class="phone-scene" id="phone-scene">
+                    <div class="phone-glow"></div>
+                    <span class="phone-contact-shadow" aria-hidden="true"></span>
+                    <div class="phone-float">
+                        <div class="phone-swing">
+                            <div class="phone-3d">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <video id="hero-video" poster="../hero-poster.webp" class="app-screenshot" width="720" height="1566" fetchpriority="high" muted loop playsinline aria-label="Snore Timeline 앱 동영상: 야간 요약, 파형 시각화, 코골이 에피소드 및 호흡 정지 감지 표시">
+                            <source src="../hero-recording.mp4" type="video/mp4">
+                            <source src="../hero-recording.webm" type="video/webm">
+                        </video>
+                                        <span class="phone-island" aria-hidden="true"></span>
+                                        <span class="phone-glare" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Interactive Tour -->
+    <section id="tour" class="home-tour" aria-labelledby="tour-heading">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">둘러보기</span>
+                <h2 id="tour-heading" class="section-title">하룻밤을 처음부터 끝까지</h2>
+                <p class="section-subtitle">아침에 마주하는 화면들을 하나씩 살펴보세요.</p>
+            </div>
+            <div class="app-tour" id="home-tour-widget">
+                <div class="app-tour-stage">
+                    <div class="app-tour-phone">
+                        <video class="app-tour-clip" muted loop playsinline autoplay preload="auto" width="720" height="1404"></video>
+                    </div>
+                    <div class="app-tour-dots" role="tablist"></div>
+                </div>
+                <div class="app-tour-panel">
+                    <div class="app-tour-progress">단계 <b class="app-tour-cur">1</b> / <span class="app-tour-total">5</span></div>
+                    <span class="app-tour-eyebrow"></span>
+                    <h3 class="app-tour-title"></h3>
+                    <p class="app-tour-caption"></p>
+                    <div class="app-tour-teach"></div>
+                    <div class="app-tour-controls">
+                        <button class="app-tour-btn app-tour-prev" type="button">뒤로</button>
+                        <button class="app-tour-btn app-tour-next" type="button">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        (function () {
+            var STEPS = [
+                {
+                    clip: "timeline",
+                    eyebrow: "타임라인",
+                    title: "스크럽할 수 있는 밤 전체",
+                    caption: "오디오의 모든 순간이 하나의 타임라인 위에 놓입니다. 원하는 지점으로 드래그하고 탭하면 앱이 들은 소리를 그대로 들을 수 있습니다.",
+                    teach: "분석은 <b>샘플링이 아닌 연속</b> 방식이라 조용했던 시간은 조용한 그대로 기록됩니다. <a href=\"/ko/support/timeline-and-playback\">타임라인 읽기 &rarr;</a>"
+                },
+                {
+                    clip: "episodes",
+                    eyebrow: "코골이 & 잠꼬대 에피소드",
+                    title: "코골이와 잠꼬대, 각각의 에피소드로",
+                    caption: "코골이는 코골이 에피소드로, 잠꼬대는 잠꼬대 에피소드로 묶입니다. 시각, 길이, 음량과 함께 어느 것이든 다시 재생할 수 있습니다.",
+                    teach: "<b>30초의 조용한 간격</b>이 한 에피소드를 끝내고 다음 에피소드를 시작합니다. <a href=\"/ko/support/episodes-and-events\">에피소드 작동 방식 &rarr;</a>"
+                },
+                {
+                    clip: "breathing",
+                    eyebrow: "호흡 정지",
+                    title: "좀 더 살펴볼 만한 멈춤",
+                    caption: "앱이 호흡이 멈췄다가 다시 회복되는 것을 들으면 정지를 표시하고 그날 밤을 평가합니다.",
+                    teach: "이것은 인식을 돕기 위한 오디오 분석이며, <b>의학적 진단이 아닙니다</b>. <a href=\"/ko/support/breathing-disruptions\">감지 작동 방식 &rarr;</a>"
+                },
+                {
+                    clip: "stages",
+                    eyebrow: "수면 단계",
+                    title: "소리로 추정하는 수면 단계",
+                    caption: "호흡을 토대로 추정한 얕은 수면, 깊은 수면, REM의 히프노그램. 웨어러블이 필요 없습니다.",
+                    teach: "단계 추정치는 수면 검사실과 <b>약 70% 일치</b> 수준입니다. 개별 막대 하나가 아니라 밤 전체의 흐름을 읽으세요. <a href=\"/ko/support/sleep-stages\">수면 단계에 대하여 &rarr;</a>"
+                },
+                {
+                    clip: "week",
+                    eyebrow: "주간 인사이트",
+                    title: "여러 주에 걸친 추세 확인",
+                    caption: "수면 시간, 수면 점수, 효율을 밤마다 추적해 하루의 힘든 밤도 맥락 속에서 읽을 수 있습니다.",
+                    teach: "가치는 개별 수치 하나가 아니라 <b>추세</b>에 있습니다. <a href=\"/ko/support/sleep-score\">수면 점수 & 인사이트 &rarr;</a>"
+                }
+            ];
+            var root = document.getElementById("home-tour-widget");
+            if (!root) return;
+            var i = 0;
+            var clip = root.querySelector(".app-tour-clip");
+            var eyebrow = root.querySelector(".app-tour-eyebrow");
+            var title = root.querySelector(".app-tour-title");
+            var caption = root.querySelector(".app-tour-caption");
+            var teach = root.querySelector(".app-tour-teach");
+            var cur = root.querySelector(".app-tour-cur");
+            var prev = root.querySelector(".app-tour-prev");
+            var next = root.querySelector(".app-tour-next");
+            var dotsWrap = root.querySelector(".app-tour-dots");
+            root.querySelector(".app-tour-total").textContent = STEPS.length;
+
+            STEPS.forEach(function (s, n) {
+                var d = document.createElement("button");
+                d.className = "app-tour-dot";
+                d.type = "button";
+                d.setAttribute("aria-label", "단계 " + (n + 1));
+                d.addEventListener("click", function () { show(n); });
+                dotsWrap.appendChild(d);
+            });
+
+            function render() {
+                var s = STEPS[i];
+                if (clip.getAttribute("data-src") !== s.clip) {
+                    clip.poster = "/support/img/clips/" + s.clip + "-poster.webp";
+                    clip.src = "/support/img/clips/" + s.clip + ".webm?v=3";
+                    clip.setAttribute("data-src", s.clip);
+                }
+                var p = clip.play(); if (p && p.catch) { p.catch(function () {}); }
+                eyebrow.textContent = s.eyebrow;
+                title.textContent = s.title;
+                caption.textContent = s.caption;
+                teach.innerHTML = s.teach;
+                cur.textContent = i + 1;
+                prev.disabled = i === 0;
+                next.textContent = i === STEPS.length - 1 ? "처음부터" : "다음";
+                Array.prototype.forEach.call(dotsWrap.children, function (d, n) {
+                    d.classList.toggle("is-active", n === i);
+                });
+            }
+            // Animate between steps: fade + slight slide in the swipe direction,
+            // swap content at the midpoint so the video never blinks.
+            var stage = root.querySelector(".app-tour-stage");
+            var panel = root.querySelector(".app-tour-panel");
+            var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            var animating = false;
+            function show(n, dir) {
+                n = (n + STEPS.length) % STEPS.length;
+                if (n === i || animating) return;
+                dir = dir || (n > i ? 1 : -1);
+                if (reduce || !stage) { i = n; render(); return; }
+                animating = true;
+                stage.style.opacity = "0";
+                stage.style.transform = "translateX(" + (-dir * 10) + "px)";
+                panel.style.opacity = "0";
+                setTimeout(function () {
+                    i = n; render();
+                    stage.style.transition = "none";
+                    stage.style.transform = "translateX(" + (dir * 10) + "px)";
+                    void stage.offsetWidth;
+                    stage.style.transition = "";
+                    stage.style.opacity = "1";
+                    stage.style.transform = "translateX(0)";
+                    panel.style.opacity = "1";
+                    animating = false;
+                }, 200);
+            }
+            prev.addEventListener("click", function () { show(i - 1, -1); });
+            next.addEventListener("click", function () { show(i + 1, 1); });
+
+            // Swipe on touch devices: left = next, right = back.
+            if (stage) {
+                var sx = null;
+                stage.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
+                stage.addEventListener("touchend", function (e) {
+                    if (sx === null) return;
+                    var dx = e.changedTouches[0].clientX - sx; sx = null;
+                    if (Math.abs(dx) < 40) return;
+                    show(i + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
+                });
+            }
+            render();
+        })();
+        </script>
+    </section>
+
+    <!-- Body & Wearables (merged: Apple Watch + Apple Health + Nightly Biometrics) -->
+    <section id="wearables" class="wn" aria-label="코골이를 넘어: 당신의 몸과 웨어러블">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+
+            <!-- PART B — Convergence flow: any wearable → Apple Health → your stages -->
+            <div class="wn-flow">
+                <div class="wn-flow-head">
+                    <span class="wn-flow-eyebrow">이미 착용 중인 기기와 함께</span>
+                    <h3 class="wn-flow-title">한 번만 연결하세요. 수면 단계를 확인할 수 있습니다.</h3>
+                    <p class="wn-flow-sub">Snore Timeline은 호흡 오디오만으로 수면 단계를 자체적으로 추정합니다. 웨어러블을 Apple Health를 통해 연결하면 해당 기기의 수면 단계, 심박수, HRV, 혈중 산소, 체온까지 가져오며, 처음 연결할 때는 지난 30일치를 채워 넣습니다.</p>
+                </div>
+
+                <!-- Sleep Vitals showcase: the same card, any wearable (auto-crossfade) -->
+                <div class="wn-vitalshow" aria-label="Your nightly Sleep Vitals, pulled from any connected wearable">
+                    <div class="wn-vs-device">
+                        <div class="wn-vs-panel">
+                            <picture class="wn-vs-frame is-active" data-i="0">
+                                <source srcset="../vitals-rec-applewatch.webp" type="image/webp">
+                                <img src="../vitals-rec-applewatch.png" alt="Apple Watch에서 가져온 데이터로 안정 시 심박수, HRV, 호흡, 혈중 산소, 수면을 각각 평균과 비교해 평가하는 Snore Timeline 수면 인사이트의 회복 분석" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="1">
+                                <source srcset="../vitals-rec-garmin.webp" type="image/webp">
+                                <img src="../vitals-rec-garmin.png" alt="Garmin에서 가져온 데이터로 구성된 Snore Timeline 수면 인사이트의 회복 분석" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="2">
+                                <source srcset="../vitals-rec-oura.webp" type="image/webp">
+                                <img src="../vitals-rec-oura.png" alt="Oura에서 가져온 데이터로 구성된 Snore Timeline 수면 인사이트의 회복 분석" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="3">
+                                <source srcset="../vitals-rec-whoop.webp" type="image/webp">
+                                <img src="../vitals-rec-whoop.png" alt="Whoop에서 가져온 데이터로 구성된 Snore Timeline 수면 인사이트의 회복 분석" loading="lazy" width="1206" height="1622">
+                            </picture>
+                            <picture class="wn-vs-frame" data-i="4">
+                                <source srcset="../vitals-rec-ultrahuman.webp" type="image/webp">
+                                <img src="../vitals-rec-ultrahuman.png" alt="Ultrahuman에서 가져온 데이터로 구성된 Snore Timeline 수면 인사이트의 회복 분석" loading="lazy" width="1206" height="1622">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wn-flow-diagram" aria-hidden="true">
+                    <div class="wn-flow-col wn-flow-sources">
+                        <span class="wn-wm wn-wm-applewatch"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Watch</span>
+                        <span class="wn-wm wn-wm-oura">OURA</span>
+                        <span class="wn-wm wn-wm-whoop">WHOOP</span>
+                        <span class="wn-wm wn-wm-garmin">GARMIN</span>
+                        <span class="wn-wm wn-wm-any">+ 모든 HealthKit 기기</span>
+                    </div>
+
+                    <svg class="wn-wire wn-wire-in" viewBox="0 0 120 220" preserveAspectRatio="none" fill="none">
+                        <path d="M0 22 C60 22 60 110 120 110" class="wn-wire-path"/>
+                        <path d="M0 70 C60 70 60 110 120 110" class="wn-wire-path"/>
+                        <path d="M0 110 H120" class="wn-wire-path"/>
+                        <path d="M0 150 C60 150 60 110 120 110" class="wn-wire-path"/>
+                        <path d="M0 198 C60 198 60 110 120 110" class="wn-wire-path"/>
+                    </svg>
+
+                    <div class="wn-flow-col wn-flow-hub">
+                        <div class="wn-hub-node">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                            <span>Apple Health</span>
+                            <small>한 곳에서, 온디바이스로</small>
+                        </div>
+                    </div>
+
+                    <svg class="wn-wire wn-wire-out" viewBox="0 0 120 220" preserveAspectRatio="none" fill="none">
+                        <path d="M0 110 H120" class="wn-wire-path wn-wire-bright"/>
+                    </svg>
+
+                    <div class="wn-flow-col wn-flow-out">
+                        <div class="wn-out-node">
+                            <span class="wn-out-brand">Snore Timeline</span>
+                            <div class="wn-hypno" aria-hidden="true">
+                                <span style="--h:1;--c:#FFDAC1"></span>
+                                <span style="--h:3;--c:#B4DCDC"></span>
+                                <span style="--h:4;--c:#B4B4DC"></span>
+                                <span style="--h:2;--c:#E6AAC8"></span>
+                                <span style="--h:3;--c:#B4DCDC"></span>
+                                <span style="--h:4;--c:#B4B4DC"></span>
+                                <span style="--h:2;--c:#E6AAC8"></span>
+                                <span style="--h:1;--c:#B7DFC4"></span>
+                            </div>
+                            <small>수면 단계 · HR · HRV · SpO₂ · 체온</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wn-chips">
+                    <span class="wn-chip">수면 단계</span>
+                    <span class="wn-chip">심박수 & HRV</span>
+                    <span class="wn-chip">호흡수</span>
+                    <span class="wn-chip">혈중 산소</span>
+                    <span class="wn-chip">손목 체온</span>
+                </div>
+                <p class="wn-flow-note">Apple Health는 기기 내 암호화된 로컬 저장소입니다. 어떤 것도 클라우드에 업로드되거나 우리와 공유되지 않습니다.</p>
+            </div><!-- PART A — Pinned Apple Watch, screens scrub as you scroll -->
+            <div class="wn-scrolly">
+                <div class="wn-stage">
+                    <div class="wn-watch">
+                        <div class="wn-watch-glow"></div>
+                        <div class="wn-watch-screens">
+                            <picture class="wn-screen is-active" data-i="0">
+                                <source srcset="../watch-recovery.webp" type="image/webp">
+                                <img src="../watch-recovery.png" alt="수면 점수 링 72, '회복됨' 라벨, 수면 시간 6h 6m, '좋음' 회복 충전 막대가 표시된 Apple Watch 아침 대시보드" loading="lazy">
+                            </picture>
+                            <picture class="wn-screen" data-i="1">
+                                <source srcset="../watch-hrv.webp" type="image/webp">
+                                <img src="../watch-hrv.png" alt="안정 시 심박수, HRV, 호흡, 혈중 산소를 각각 평균과 비교해 알기 쉽게 설명하는 Apple Watch 생체 지표 목록" loading="lazy">
+                            </picture>
+                            <picture class="wn-screen" data-i="2">
+                                <source srcset="../watch-hypnogram.webp" type="image/webp">
+                                <img src="../watch-hypnogram.png" alt="오전 1시 25분부터 오전 7시 4분까지 깨어 있음, REM, 얕은 수면의 지속 시간과 비율을 보여주는 Apple Watch 수면 단계 히프노그램" loading="lazy">
+                            </picture>
+                            <picture class="wn-screen" data-i="3">
+                                <source srcset="../watch-sleep-bank.webp" type="image/webp">
+                                <img src="../watch-sleep-bank.png" alt="Apple Watch에 표시된 Sleep Bank 주간 막대 차트, 평균 수면 시간과 수면 부족" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="wn-dots" role="tablist" aria-label="Watch 화면">
+                        <button class="wn-dot is-active" type="button" data-i="0" aria-label="점수와 회복"></button>
+                        <button class="wn-dot" type="button" data-i="1" aria-label="야간 생체 지표"></button>
+                        <button class="wn-dot" type="button" data-i="2" aria-label="수면 단계"></button>
+                        <button class="wn-dot" type="button" data-i="3" aria-label="주간 추세"></button>
+                    </div>
+                </div>
+                <div class="wn-steps">
+                    <article class="wn-step is-active" data-i="0">
+                        <span class="wn-step-eyebrow">아침 · 01</span>
+                        <h3>점수와 회복과 함께 깨어나세요</h3>
+                        <p>손목을 들어 올리는 순간 지난밤 수면 점수와 회복 충전 막대가 나타납니다. 점수를 컴플리케이션으로 워치 페이스에 고정해 앱을 열지 않고도 확인하세요.</p>
+                    </article>
+                    <article class="wn-step" data-i="1">
+                        <span class="wn-step-eyebrow">생체 지표 · 02</span>
+                        <h3>모든 생체 지표를 추적하세요</h3>
+                        <p>심박수, HRV, 호흡, 산소, 체온을 각각 밤새 차트로 기록하고 최근 평균과 비교해 추세를 보여주며, 그 의미를 알기 쉽게 설명합니다.</p>
+                    </article>
+                    <article class="wn-step" data-i="2">
+                        <span class="wn-step-eyebrow">단계 · 03</span>
+                        <h3>차트로 보는 당신의 밤</h3>
+                        <p>Watch에 담긴 전체 히프노그램: 밤새 깨어 있음, REM, 얕은 수면, 깊은 수면 블록과 함께 비율까지 바로 표시됩니다.</p>
+                    </article>
+                    <article class="wn-step" data-i="3">
+                        <span class="wn-step-eyebrow">추세 · 04</span>
+                        <h3>당신만의 Sleep Bank 쌓기</h3>
+                        <p>한 주에 걸쳐 수면 시간을 차트로 보여줍니다. 패턴을 발견하고, 회복을 추적하며, 밤마다 채워지는 sleep bank를 지켜보세요.</p>
+                    </article>
+                </div>
+            </div>
+
+
+
+            <!-- PART C — Living nightly vitals -->
+            <div class="wn-vitals">
+                <div class="wn-vitals-head">
+                    <span class="section-label">야간 생체 지표 · iOS</span>
+                    <h3 class="wn-vitals-title">코골이 그 이상</h3>
+                    <p class="wn-vitals-sub">숫자 하나만으로는 아무것도 알 수 없습니다. Snore Timeline은 밤새 측정한 각 생체 지표를 당신 자신의 기준선과 비교해 읽어내고, 그 의미를 알기 쉬운 말로 설명합니다. 그래서 단순한 수치가 아니라 왜 중요한지를 알게 됩니다.</p>
+                </div>
+                <div class="wn-vitals-grid">
+                    <div class="wn-vital" data-tone="breath">
+                        <div class="wn-vital-viz">
+                            <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="wn-breath-wave" d="M0 20 Q12 4 24 20 T48 20 T72 20 T96 20 L100 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="14.6" data-dp="1">0</span><span class="wn-vital-unit">br/min</span></div>
+                            <span class="biometrics-rating-pill rating-typical">안정적</span>
+                        </div>
+                        <span class="wn-vital-name">호흡수</span>
+                        <p class="wn-vital-insight"><strong>차분하고 고른 상태.</strong> 밤새 안정적인 호흡수는 편안하고 방해받지 않은 수면의 특징입니다. 급격한 상승은 스트레스나 방해를 나타낼 수 있습니다.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="heart">
+                        <div class="wn-vital-viz">
+                            <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="wn-ecg" d="M0 20 H30 L34 20 L38 8 L42 32 L46 20 L50 20 L54 14 L58 26 L62 20 H100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="64">0</span><span class="wn-vital-unit">bpm</span></div>
+                            <span class="biometrics-rating-pill rating-good">좋음</span>
+                        </div>
+                        <span class="wn-vital-name">심박수</span>
+                        <p class="wn-vital-insight"><strong>낮게 안정됨.</strong> 잠든 사이 심박수는 안정 시 최저치까지 내려갑니다. 평균보다 낮게 내려갈수록 몸이 더 많이 회복한 것입니다.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="hrv">
+                        <div class="wn-vital-viz">
+                            <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><polyline class="wn-spark" points="0,28 14,22 28,30 42,12 56,24 70,8 84,20 100,14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="66">0</span><span class="wn-vital-unit">ms</span></div>
+                            <span class="biometrics-rating-pill rating-good">좋음</span>
+                        </div>
+                        <span class="wn-vital-name">HRV</span>
+                        <p class="wn-vital-insight"><strong>평균보다 높음.</strong> 박동 사이 간격이 넓다는 것은 신경계가 긴장 상태로 지내는 대신 밤새 재충전되었다는 뜻입니다.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="spo2">
+                        <div class="wn-vital-viz wn-vital-ring">
+                            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-opacity="0.18" stroke-width="3"/><circle class="wn-ring-arc" cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" transform="rotate(-90 20 20)"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="96">0</span><span class="wn-vital-unit">SpO₂ %</span></div>
+                            <span class="biometrics-rating-pill rating-typical">평소</span>
+                        </div>
+                        <span class="wn-vital-name">혈중 산소</span>
+                        <p class="wn-vital-insight"><strong>충분히 공급됨.</strong> 95퍼센트 이상을 유지했다는 것은 밤새 호흡이 혈액에 산소를 풍부하게 공급했다는 뜻입니다.</p>
+                    </div>
+                    <div class="wn-vital" data-tone="temp">
+                        <div class="wn-vital-viz wn-vital-temp">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M23 23V9a3 3 0 0 0-6 0v14a5 5 0 1 0 6 0z"/></svg>
+                        </div>
+                        <div class="wn-vital-row">
+                            <div class="wn-vital-meta"><span class="wn-vital-num" data-to="-0.2" data-dp="1" data-sign="1">0</span><span class="wn-vital-unit">°C vs base</span></div>
+                            <span class="biometrics-rating-pill rating-typical">평소</span>
+                        </div>
+                        <span class="wn-vital-name">손목 체온</span>
+                        <p class="wn-vital-insight"><strong>기준선에 근접.</strong> 피부 온도는 질병, 생리 주기, 피로에 따라 변하므로, 평소 수준에 가깝다는 것은 조용한 이상 없음 신호입니다.</p>
+                    </div>
+                </div>
+                <div class="wn-ratings">
+                    <span class="wn-ratings-label">각 측정값이 평가됩니다</span>
+                    <span class="biometrics-rating-pill rating-good">좋음</span>
+                    <span class="biometrics-rating-pill rating-typical">평소</span>
+                    <span class="biometrics-rating-pill rating-low">낮음</span>
+                    <span class="biometrics-rating-pill rating-elevated">높음</span>
+                </div>
+                <p class="wn-vitals-note">평가는 참고용일 뿐입니다. Snore Timeline은 의료 기기가 아니며 어떤 질환도 진단하지 않습니다.</p>
+            </div>
+        </div>
+
+        <script>
+        (function () {
+            var root = document.getElementById('wearables');
+            if (!root) return;
+            var screens = root.querySelectorAll('.wn-screen');
+            var dots = root.querySelectorAll('.wn-dot');
+            var steps = root.querySelectorAll('.wn-step');
+            var count = steps.length, cur = 0;
+            function setActive(i) {
+                i = Math.max(0, Math.min(count - 1, i));
+                cur = i;
+                screens.forEach(function (s) { s.classList.toggle('is-active', +s.dataset.i === i); });
+                dots.forEach(function (d) { d.classList.toggle('is-active', +d.dataset.i === i); });
+                steps.forEach(function (s) { s.classList.toggle('is-active', +s.dataset.i === i); });
+            }
+            // Scrollytelling: activate the step nearest the middle of the viewport.
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) setActive(+e.target.dataset.i);
+                    });
+                }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+                steps.forEach(function (s) { io.observe(s); });
+            }
+            var isNarrow = function () { return window.matchMedia('(max-width: 900px)').matches; };
+            dots.forEach(function (d) {
+                d.addEventListener('click', function () {
+                    var i = +d.dataset.i;
+                    setActive(i);
+                    // On mobile it's a tap carousel (active step shown in place); don't scroll-jump.
+                    if (!isNarrow()) steps[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            });
+
+            // Mobile: swipe the watch left/right to move between screens.
+            var carousel = root.querySelector('.wn-scrolly');
+            if (carousel) {
+                var sx = 0, sy = 0, swiping = false;
+                carousel.addEventListener('touchstart', function (e) {
+                    if (!isNarrow()) return;
+                    var t = e.changedTouches[0]; sx = t.clientX; sy = t.clientY; swiping = true;
+                }, { passive: true });
+                carousel.addEventListener('touchend', function (e) {
+                    if (!swiping || !isNarrow()) return;
+                    swiping = false;
+                    var t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+                    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) setActive(cur + (dx < 0 ? 1 : -1));
+                }, { passive: true });
+            }
+
+            // Count-up numbers when the vitals grid first enters view.
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var nums = root.querySelectorAll('.wn-vital-num');
+            function runCounts() {
+                nums.forEach(function (n) {
+                    var to = parseFloat(n.dataset.to), dp = +(n.dataset.dp || 0), sign = n.dataset.sign;
+                    if (reduce) { n.textContent = (sign && to > 0 ? '+' : '') + to.toFixed(dp); return; }
+                    var start = null, dur = 1100;
+                    function tick(t) {
+                        if (start === null) start = t;
+                        var p = Math.min((t - start) / dur, 1);
+                        var e = 1 - Math.pow(1 - p, 3);
+                        var v = to * e;
+                        n.textContent = (sign && to > 0 ? '+' : '') + v.toFixed(dp);
+                        if (p < 1) requestAnimationFrame(tick);
+                    }
+                    requestAnimationFrame(tick);
+                });
+            }
+            var grid = root.querySelector('.wn-vitals-grid');
+            if (grid && 'IntersectionObserver' in window) {
+                var go = new IntersectionObserver(function (entries, obs) {
+                    entries.forEach(function (e) { if (e.isIntersecting) { runCounts(); obs.disconnect(); } });
+                }, { threshold: 0.3 });
+                go.observe(grid);
+            } else { runCounts(); }
+        }());
+
+        // Sleep Vitals crossfade: cycle the wearable-sourced screenshots while in view.
+        (function () {
+            var panel = document.querySelector('#wearables .wn-vs-panel');
+            if (!panel) return;
+            var frames = panel.querySelectorAll('.wn-vs-frame');
+            if (frames.length < 2) return;
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var i = 0, timer = null;
+            function step() {
+                frames[i].classList.remove('is-active');
+                i = (i + 1) % frames.length;
+                frames[i].classList.add('is-active');
+            }
+            function start() { if (!timer) timer = setInterval(step, 2600); }
+            function stop() { if (timer) { clearInterval(timer); timer = null; } }
+            if ('IntersectionObserver' in window) {
+                new IntersectionObserver(function (es) {
+                    es.forEach(function (e) { e.isIntersecting ? start() : stop(); });
+                }, { threshold: 0.2 }).observe(panel);
+            } else { start(); }
+        }());
+        </script>
+    </section>
+
+    <!-- Sleep Stages Section -->
+    <section id="sleep-stages" class="sleep-stages" aria-labelledby="sleep-stages-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="sleep-stages-split">
+                <!-- Left: How It Works -->
+                <div class="sleep-stages-content-side">
+                    <div class="detection-methodology">
+                        <div class="detection-header">
+                            <span class="detection-label">오디오 기반 추정</span>
+                            <h3 class="detection-heading">수면 단계를 추정하는 방법</h3>
+                            <p class="detection-intro">Snore Timeline은 휴대폰 마이크만을 사용해, 수면 중 호흡 규칙성에 관한 발표된 연구를 바탕으로 얕은 수면, 깊은 수면, REM 단계를 추정합니다. 그리고 호흡이 너무 조용해서 들리지 않을 때는 추측하지 않습니다 — 그런 고요한 구간은 무음으로 표시되어 편안한 수면으로 계산됩니다.</p>
+                        </div>
+
+                        <div class="detection-steps">
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>호흡을 듣습니다</h4>
+                                    <p>휴대폰 마이크를 통한 연속 오디오 캡처가 밤새 호흡 속도, 규칙성, 코골이 패턴을 포착</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>기준선 설정</h4>
+                                    <p>약 15분 후 알고리즘이 개인의 호흡 속도와 규칙성 기준선을 학습하고, 임계값을 고유한 패턴에 맞게 조정</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>호흡 규칙성 분석</h4>
+                                    <p>연구 기반 임계값으로 규칙성과 분산을 분석. 안정적이고 낮은 분산 호흡은 깊은 수면을, 높은 분산의 불규칙한 패턴은 REM을 시사</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>밤새 적응</h4>
+                                    <p>시간 인식 로직이 자연스러운 수면 구조를 반영. 깊은 수면은 밤 초반에 정점에 도달하고 REM은 아침이 가까워지면 증가</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step sleep-stages-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>조용히 주무시는 분들에게 정직하게</h4>
+                                    <p>모든 것이 오디오에서만 나오기 때문에 아주 작은 호흡은 — 선풍기 소리에 가려질 때도 — 들리지 않을 수 있습니다. 단계를 추측하는 대신, 그런 방해 없는 구간은 무음으로 표시되어 편안한 수면으로 인정됩니다. 결국 조용한 밤이야말로 우리가 바라는 것이니까요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual -->
+                <div class="sleep-stages-visual-side">
+                    <div class="sleep-stages-label">수면 인사이트</div>
+                    <h2 id="sleep-stages-heading" class="sleep-stages-title">수면 단계를 이해하세요</h2>
+
+                    <!-- CSS-only Hypnogram -->
+                    <div class="hypnogram-wrapper">
+                        <div class="hypnogram-chart">
+                            <div class="hypnogram-y-axis">
+                                <span class="hypnogram-y-label" style="--level: 0">깨어 있음</span>
+                                <span class="hypnogram-y-label" style="--level: 1">REM</span>
+                                <span class="hypnogram-y-label" style="--level: 2">얕은</span>
+                                <span class="hypnogram-y-label" style="--level: 3">깊은</span>
+                                <span class="hypnogram-y-label" style="--level: 4">무음</span>
+                            </div>
+                            <div class="hypnogram-area">
+                                <div class="hypnogram-grid-lines">
+                                    <div class="hypnogram-grid-line" style="--level: 0"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 1"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 2"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 3"></div>
+                                    <div class="hypnogram-grid-line" style="--level: 4"></div>
+                                </div>
+                                <!-- Sleep stage blocks (Silence sits at the restful end, below Deep) -->
+                                <div class="hypnogram-block" style="--start: 0; --width: 4; --level: 0; --color: #FFDAC1" title="Awake"></div>
+                                <div class="hypnogram-block" style="--start: 4; --width: 8; --level: 2; --color: #B4DCDC" title="Light Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 12; --width: 12; --level: 3; --color: #B4B4DC" title="Deep Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 24; --width: 5; --level: 2; --color: #B4DCDC" title="Light Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 29; --width: 8; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 37; --width: 4; --level: 2; --color: #B4DCDC" title="Light Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 41; --width: 7; --level: 3; --color: #B4B4DC" title="Deep Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 48; --width: 5; --level: 4; --color: #B7DFC4" title="무음 — 너무 작아 들리지 않는 호흡"></div>
+                                <div class="hypnogram-block" style="--start: 53; --width: 3; --level: 0; --color: #FFDAC1" title="Awake"></div>
+                                <div class="hypnogram-block" style="--start: 56; --width: 6; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 62; --width: 8; --level: 2; --color: #B4DCDC" title="Light Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 70; --width: 6; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 76; --width: 6; --level: 4; --color: #B7DFC4" title="무음 — 너무 작아 들리지 않는 호흡"></div>
+                                <div class="hypnogram-block" style="--start: 82; --width: 7; --level: 1; --color: #E6AAC8" title="REM"></div>
+                                <div class="hypnogram-block" style="--start: 89; --width: 4; --level: 2; --color: #B4DCDC" title="Light Sleep"></div>
+                                <div class="hypnogram-block" style="--start: 93; --width: 3; --level: 0; --color: #FFDAC1" title="Awake"></div>
+                            </div>
+                            <div class="hypnogram-x-axis">
+                                <span>오후 11시</span>
+                                <span>오전 1시</span>
+                                <span>오전 3시</span>
+                                <span>오전 5시</span>
+                                <span>오전 7시</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage Distribution Bar -->
+                    <div class="stage-distribution">
+                        <div class="stage-bar">
+                            <div class="stage-segment" style="--width: 8; --color: #FFDAC1" title="깨어 있음 8%"></div>
+                            <div class="stage-segment" style="--width: 38; --color: #B4DCDC" title="얕은 38%"></div>
+                            <div class="stage-segment" style="--width: 19; --color: #B4B4DC" title="깊은 19%"></div>
+                            <div class="stage-segment" style="--width: 24; --color: #E6AAC8" title="REM 24%"></div>
+                            <div class="stage-segment" style="--width: 11; --color: #B7DFC4" title="무음 11%"></div>
+                        </div>
+                        <div class="stage-legend">
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #FFDAC1"></span>
+                                <span>깨어 있음 8%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B4DCDC"></span>
+                                <span>얕은 38%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B4B4DC"></span>
+                                <span>깊은 19%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #E6AAC8"></span>
+                                <span>REM 24%</span>
+                            </div>
+                            <div class="stage-legend-item">
+                                <span class="stage-dot" style="--color: #B7DFC4"></span>
+                                <span>무음 11%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="sleep-stages-disclaimer">오디오 분석에서 추정. 호흡이 너무 작아 분류할 수 없는 조용한 구간은 무음으로 인정됩니다 — 누락된 데이터가 아니라 편안한 수면입니다. 의료 기기가 아닙니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breathing Disruption Section -->
+    <section id="breathing-disruption" class="breathing-disruption" aria-labelledby="breathing-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="breathing-split">
+                <!-- Left: Screenshot -->
+                <div class="breathing-visual-side">
+                    <div class="breathing-label">코골이 추적을 넘어</div>
+                    <h2 id="breathing-heading" class="breathing-title">숨이 멈추는 순간을 감지</h2>
+                    <div class="breathing-screenshot-wrapper">
+                        <div class="phone-scene phone-scene--static">
+                            <div class="phone-glow"></div>
+                            <span class="phone-contact-shadow" aria-hidden="true"></span>
+                            <div class="phone-float">
+                                <div class="phone-3d phone-3d--static">
+                                    <div class="phone-frame">
+                                        <div class="phone-screen">
+                                            <picture>
+                            <source srcset="../breathing-screenshot.webp" type="image/webp">
+                            <img src="../breathing-screenshot.png" alt="Breathing disruption detection showing gray-blue markers on timeline" class="app-screenshot">
+                        </picture>
+                                            <span class="phone-island" aria-hidden="true"></span>
+                                            <span class="phone-glare" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: How Detection Works -->
+                <div class="breathing-content-side">
+                    <div class="detection-methodology">
+                        <div class="detection-header">
+                            <span class="detection-label">AI 기반 분석</span>
+                            <h3 class="detection-heading">중단을 감지하는 방법</h3>
+                            <p class="detection-intro">코골이 감지에 더해, 알고리즘은 10초 이상 호흡이 멈추는 순간을 식별합니다 — 의사와 상의할 만한 패턴을 찾는 데 도움이 됩니다.</p>
+                        </div>
+
+                        <div class="detection-steps">
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>기준선 관찰</h4>
+                                    <p>정확한 기준선 패턴을 만들기 위해 들리는 호흡을 최소 1분 이상 관찰</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5.5 8.5L9 12l-3.5 3.5L2 12l3.5-3.5zM12 2l3.5 3.5L12 9 8.5 5.5 12 2zM18.5 8.5L22 12l-3.5 3.5L15 12l3.5-3.5zM12 15l3.5 3.5L12 22l-3.5-3.5L12 15z"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>정적 감지</h4>
+                                    <p>AI가 10초 이상 지속되는 긴 정적을 식별 — 호흡 중단의 핵심 지표</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>회복 인식</h4>
+                                    <p>정적 이후의 큰 갑작스러운 코골이, 헐떡임, 기침, 호흡 소리를 감지</p>
+                                </div>
+                            </div>
+
+                            <div class="detection-step">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4>타임라인 표시</h4>
+                                    <p>정확한 시점에 마커를 배치해 중단의 시각적 지도를 만듭니다</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Go deeper: Support Center -->
+    <section id="learn-more" class="learn-more" aria-labelledby="learn-more-heading">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">더 깊이 알아보기</span>
+                <h2 id="learn-more-heading" class="section-title">모든 것을 자세히</h2>
+                <p class="section-subtitle">지원 센터는 모든 기능을 차근차근 안내하며, 무엇 때문에 찾아오셨든 목표별 가이드를 제공합니다.</p>
+            </div>
+            <div class="learn-more-grid">
+                <a class="learn-more-link" href="/ko/support/getting-started"><span>시작하기</span><span class="learn-more-desc">첫날 밤, 휴대폰 위치, 그리고 메인 화면</span></a>
+                <a class="learn-more-link" href="/ko/support/how-detection-works"><span>감지 작동 방식</span><span class="learn-more-desc">온디바이스 AI, 데시벨, 그리고 파형 색상</span></a>
+                <a class="learn-more-link" href="/ko/support/timeline-and-playback"><span>타임라인 & 재생</span><span class="learn-more-desc">파형을 읽고 어느 순간이든 다시 들어보세요</span></a>
+                <a class="learn-more-link" href="/ko/support/breathing-disruptions"><span>호흡 정지</span><span class="learn-more-desc">표시된 모든 멈춤 뒤의 3가지 조건</span></a>
+                <a class="learn-more-link" href="/ko/support/sleep-stages"><span>수면 단계</span><span class="learn-more-desc">호흡 오디오가 히프노그램이 되는 방법</span></a>
+                <a class="learn-more-link" href="/ko/support/apple-watch"><span>Apple Watch & Health</span><span class="learn-more-desc">생체 지표, 워치 앱, 그리고 HealthKit</span></a>
+                <a class="learn-more-link" href="/ko/support/export-and-sharing"><span>내보내기 & 공유</span><span class="learn-more-desc">의사에게 건넬 보고서를 만드세요</span></a>
+                <a class="learn-more-link" href="/ko/support/faq"><span>자주 묻는 질문</span><span class="learn-more-desc">자주 묻는 질문에 대한 검색 가능한 답변</span></a>
+                <a class="learn-more-link" href="/ko/support/troubleshooting"><span>문제 해결</span><span class="learn-more-desc">녹음 중단, 빈 타임라인, 그리고 해결 방법</span></a>
+            </div>
+            <div class="learn-more-cta">
+                <a href="/ko/support/" class="btn btn-primary btn-large">지원 센터 둘러보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 후기 Section -->
+    <section class="testimonials">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">후기</span>
+                <h2 class="section-title">코골이 사용자들의 신뢰</h2>
+                <p class="section-subtitle cursive">사용자의 말</p>
+            </div>
+
+            <!-- Row 1: Scrolls Left -->
+            <div class="testimonial-marquee">
+                <div class="testimonial-track">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Incredible — It's simple and genius. I also genuinely appreciate the lack of tracking and data collection. A rare gesture of kindness from an app!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Mustlovepaws23</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Brilliant app — Works extremely well and the UI is very nicely thought out. It's enabled me to identify a lot about my snoring problem."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Rankyhhhh</span>
+                                <span class="testimonial-country">🇬🇧 United Kingdom</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Free tracking that actually WORKS! Super stoked to finally have an app again that records sleep talking."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">LizzardWizard1234</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Love the usability and cost — Finally something that is free, no ads and doesn't drain the battery too much!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pizza kid Martinez</span>
+                                <span class="testimonial-country">🇦🇺 Australia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Man, this app is amazing, beautifully designed, intuitive, everything just works and in real time!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">SaliDay</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/sleep</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very helpful app — Just found this one on Reddit. The app is really helpful, I could not thank you enough."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pastel fans</span>
+                                <span class="testimonial-country">🇹🇭 Thailand</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Just What I was looking for! — I downloaded and used this app last night, couldn't believe how simple and functional it was. I had tried several other apps that were so full of ads that they were not usable without a large ongoing subscription."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">wcw43081254</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <!-- Duplicate for seamless loop -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Incredible — It's simple and genius. I also genuinely appreciate the lack of tracking and data collection. A rare gesture of kindness from an app!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Mustlovepaws23</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Brilliant app — Works extremely well and the UI is very nicely thought out. It's enabled me to identify a lot about my snoring problem."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Rankyhhhh</span>
+                                <span class="testimonial-country">🇬🇧 United Kingdom</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Free tracking that actually WORKS! Super stoked to finally have an app again that records sleep talking."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">LizzardWizard1234</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Love the usability and cost — Finally something that is free, no ads and doesn't drain the battery too much!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pizza kid Martinez</span>
+                                <span class="testimonial-country">🇦🇺 Australia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Man, this app is amazing, beautifully designed, intuitive, everything just works and in real time!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">SaliDay</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/sleep</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very helpful app — Just found this one on Reddit. The app is really helpful, I could not thank you enough."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Pastel fans</span>
+                                <span class="testimonial-country">🇹🇭 Thailand</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Just What I was looking for! — I downloaded and used this app last night, couldn't believe how simple and functional it was. I had tried several other apps that were so full of ads that they were not usable without a large ongoing subscription."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">wcw43081254</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Row 2: Scrolls Right -->
+            <div class="testimonial-marquee reverse">
+                <div class="testimonial-track">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Une pépite (A gem) — Je suis absolument ravi d'avoir découvert cette application. Elle est ultra-performante: la détection est précise, et les enregistrements sont d'une clarté impressionnante. L'interface est top, tout est bien pensé."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Tom certes</span>
+                                <span class="testimonial-country">🇫🇷 France</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Sve što mi treba, a besplatno (Everything I need, and free) — Dugo mi je trebalo da nađem jednostavnu aplikaciju za detektiranje i snimanje hrkanja a da ne moram mjesečno plaćati. Ova aplikacija ima sve opcije koje mi trebaju, potpuno besplatno."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Svantevid</span>
+                                <span class="testimonial-country">🇭🇷 Croatia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"The best ever — Please never take it off of appstore"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">joejack65427</span>
+                                <span class="testimonial-country">🇨🇦 Canada</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Wow thanks I've just dl and opened it. I'm Impressed. Measuring my snoring tonight!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">frozenelsa2</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/snoring</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Amazing — Great app with lots of functionality and settings"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Valtias</span>
+                                <span class="testimonial-country">🇪🇪 Estonia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Recommend — Great app, I really appreciate no ads, and the fact that it's free. I've been looking for an app that will record my sleep talking before for free and gave up. Now I finally found one!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">lenicat8</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very Good — Very cool, is silent and record all. Try it. No pay no propaganda."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">N</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <!-- Duplicate for seamless loop -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Une pépite (A gem) — Je suis absolument ravi d'avoir découvert cette application. Elle est ultra-performante: la détection est précise, et les enregistrements sont d'une clarté impressionnante. L'interface est top, tout est bien pensé."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Tom certes</span>
+                                <span class="testimonial-country">🇫🇷 France</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Sve što mi treba, a besplatno (Everything I need, and free) — Dugo mi je trebalo da nađem jednostavnu aplikaciju za detektiranje i snimanje hrkanja a da ne moram mjesečno plaćati. Ova aplikacija ima sve opcije koje mi trebaju, potpuno besplatno."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Svantevid</span>
+                                <span class="testimonial-country">🇭🇷 Croatia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"The best ever — Please never take it off of appstore"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">joejack65427</span>
+                                <span class="testimonial-country">🇨🇦 Canada</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <blockquote class="testimonial-quote">"Wow thanks I've just dl and opened it. I'm Impressed. Measuring my snoring tonight!"</blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-author">frozenelsa2</span>
+                            <span class="testimonial-source-badge reddit"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>r/snoring</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Amazing — Great app with lots of functionality and settings"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">Valtias</span>
+                                <span class="testimonial-country">🇪🇪 Estonia</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Recommend — Great app, I really appreciate no ads, and the fact that it's free. I've been looking for an app that will record my sleep talking before for free and gave up. Now I finally found one!"</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">lenicat8</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">"Very Good — Very cool, is silent and record all. Try it. No pay no propaganda."</blockquote>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-author">N</span>
+                                <span class="testimonial-country">🇺🇸 United States</span>
+                            </div>
+                            <span class="testimonial-source-badge"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 자주 묻는 질문 Section -->
+    <section id="faq" class="faq">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">자주 묻는 질문</span>
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <p class="section-subtitle">Snore Timeline에 대해 알아야 할 모든 것</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" id="faq-different">
+                    <h3><span>Snore Timeline은 다른 코골이 추적 앱과 어떻게 다른가요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Snore Timeline은 밤새 녹음한 오디오 전체를 보관하고, 스크럽하며 탭해서 들을 수 있는 인터랙티브 타임라인 위에 펼쳐 보여줍니다. 녹음은 샘플링이 아닌 연속 방식이라 조용했던 시간은 조용한 그대로 기록됩니다. 앱은 기침, 헐떡임, 잠꼬대, 호흡 정지를 각각의 카테고리로 태깅하고, 연속된 소리는 재생할 수 있는 에피소드로 묶습니다.</p>
+                    <p>수면 단계 데이터는 Apple Watch, Oura Ring, Whoop, Garmin, Ultrahuman에서 가져와 통합됩니다. 감지는 휴대폰에서 직접 실행됩니다. 클라우드, 계정, 구독 모두 필요 없습니다.</p>
+                    <p class="faq-learn-more"><a href="/ko/support/how-detection-works#real-time">실시간 감지 작동 방식 &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-recovery-score">
+                    <h3><span>수면 점수와 회복 점수의 차이는 무엇인가요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>수면 점수는 녹음을 바탕으로 당신이 얼마나 잘 잤는지를 평가합니다. 수면 시간, 효율, 수면 단계, 코골이, 취침 시간의 규칙성을 0에서 100점 척도로 나타냅니다. 회복 점수는 Apple Watch 생체 지표를 바탕으로 밤새 몸이 어떻게 반응했는지를 읽어냅니다. 심박 변이도, 안정 시 심박수, 호흡수, 혈중 산소, 손목 체온, 수면 시간을 각각 당신 자신의 기준선과 비교합니다.</p>
+                    <p>아침 요약은 둘을 하나의 알기 쉬운 상태로 합쳐 "충분히 회복됨"처럼 표시합니다. 회복 점수에는 Apple Health에 기록하는 웨어러블이 필요하지만, 수면 점수는 오디오만으로 작동합니다. 둘 다 개인적인 인사이트 점수일 뿐, 의학적 진단이 아닙니다.</p>
+                    <p class="faq-learn-more"><a href="/ko/support/sleep-score#recovery-score">회복 점수 작동 방식 &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-subscription">
+                    <h3><span>Snore Timeline은 구독이 필요한가요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>아니요. Snore Timeline은 구독이 필요 없는 완전 무료 앱입니다. 호흡 정지 감지, 에피소드 그룹화, 야간 요약, 데이터 내보내기 등 모든 기능이 포함되어 있으며, 숨겨진 비용이나 앱 내 결제도 없습니다.</p>
+                </div>
+
+                <div class="faq-item" id="faq-privacy">
+                    <h3><span>데이터는 비공개인가요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>물론입니다. 모든 오디오 처리는 iPhone 내에서만 이루어집니다. 클라우드 업로드, 외부 서버, 계정이 모두 필요 없습니다. 녹음 파일은 기기에 저장되며 본인만 접근할 수 있습니다. 완전한 비공개를 유지하면서 의사와 공유하기 위해 데이터를 내보낼 수 있습니다.</p>
+                    <p class="faq-learn-more"><a href="/ko/support/getting-started#requirements">개인정보 보호와 온디바이스 처리 &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-breathing">
+                    <h3><span>호흡 정지를 감지하나요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>네, Snore Timeline은 수면 중 오디오를 분석해 호흡 정지를 감지합니다. 10초 이상의 긴 무음 구간 뒤에 헐떡임이나 회복 소리가 이어지는지 식별합니다. 앱은 이러한 호흡 정지를 타임라인에 표시해 패턴을 확인할 수 있도록 합니다. 참고: 이것은 오디오 분석일 뿐이며 의료 기기가 아닙니다. 호흡 정지는 의료 전문가와 상담할 가치가 있을 수 있습니다.</p>
+                    <p class="faq-learn-more"><a href="/ko/support/breathing-disruptions">호흡 정지 감지 작동 방식 &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-accuracy">
+                    <h3><span>코골이 감지는 얼마나 정확한가요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>Snore Timeline은 Apple의 검증된 사운드 분류 기술을 사용해 밤새 오디오를 실시간으로 지속해서 분석합니다. 보정이나 설정 없이 즉시 감지가 시작됩니다. 앱은 각 오디오 구간의 소리 패턴과 주파수 특성을 모두 분석해 코골이, 헐떡임, 기침, 호흡, 잠꼬대를 식별합니다. 모든 처리는 완전한 비공개를 위해 기기 내에서만 이루어집니다.</p>
+                    <p class="faq-learn-more"><a href="/ko/support/how-detection-works#confidence">감지 정확도 작동 방식 &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-bluetooth">
+                    <h3><span>AirPods나 Bluetooth 기기와 함께 사용할 수 있나요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>네! Snore Timeline은 AirPods를 포함한 Bluetooth 오디오 기기를 지원합니다. 덕분에 휴대폰 배터리를 소모하지 않고 밤새 손쉽게 녹음할 수 있습니다.</p>
+                    <p class="faq-learn-more"><a href="/ko/support/troubleshooting#bluetooth">AirPods 및 Bluetooth 마이크 사용 &rarr;</a></p>
+                </div>
+
+                <div class="faq-item" id="faq-recordings">
+                    <h3><span>녹음 파일은 어디에 저장되나요?</span><button class="faq-link-btn" aria-label="이 질문에 대한 링크 복사"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></h3>
+                    <p>밤 전체의 오디오를 하나의 파일로 내보내거나 모든 코골이 에피소드를 한 번에 일괄 다운로드할 수 있습니다. 더 풍부한 내보내기를 원한다면 다운로드 아이콘을 탭해 <strong>Export Report</strong> 시트를 엽니다. 날짜 범위를 선택하고 요약, 수면 단계, 이벤트, 생체 신호, (선택적으로) 오디오를 포함할 수 있습니다. 보고서는 CSV로 내보내지며, 함께 묶기로 한 오디오도 같이 저장됩니다.</p>
+                    <p>내보낸 파일은 기기에 저장되며, 두 폴더로 정리됩니다:</p>
+                    <div class="file-path-list">
+                        <div class="file-path-item">
+                            <span class="file-path">Exported Recordings</span>
+                            <span class="file-path-desc">밤 전체 녹음</span>
+                        </div>
+                        <div class="file-path-item">
+                            <span class="file-path">Snoring Episodes</span>
+                            <span class="file-path-desc">개별 에피소드 클립</span>
+                        </div>
+                    </div>
+                    <p><strong>iPhone에서:</strong></p>
+                    <ol class="export-steps">
+                        <li><strong>파일</strong> 앱을 엽니다</li>
+                        <li>화면 하단의 <strong>둘러보기</strong>를 탭합니다</li>
+                        <li>위치 아래에서 <strong>나의 iPhone</strong>을 탭합니다</li>
+                        <li><strong>Snore Timeline</strong> 폴더를 엽니다</li>
+                    </ol>
+                    <p><strong>Android에서:</strong></p>
+                    <ol class="export-steps">
+                        <li><strong>파일</strong> 앱을 엽니다</li>
+                        <li><strong>다운로드</strong>로 이동합니다</li>
+                        <li><strong>Exported Recordings</strong> 또는 <strong>Snoring Episodes</strong>를 엽니다</li>
+                    </ol>
+                    <p class="faq-learn-more"><a href="/ko/support/export-and-sharing#file-locations">파일이 저장되는 위치 &rarr;</a></p>
+                </div>
+
+            </div>
+            <div class="faq-browse"><a href="/ko/support/faq" class="btn btn-secondary">모든 질문 보기</a></div>
+        </div>
+    </section>
+
+    <!-- Closing Download CTA -->
+    <section id="get-app" class="download-cta" aria-labelledby="download-cta-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="download-cta-card">
+                <span class="download-cta-eyebrow">무료 · 구독 없음</span>
+                <h2 id="download-cta-heading" class="download-cta-title">당신의 밤을 직접 확인하세요</h2>
+                <p class="download-cta-sub">오늘 밤 녹음하고, 아침에 깨어나 타임라인 위에 펼쳐진 밤 전체를 확인하세요. 기기 내에서 처리되고, 비공개이며, iOS와 Android에서 무료입니다.</p>
+                <div class="download-cta-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">다음에서 다운로드:</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">다음에서 다운로드:</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="download-cta-note">★★★★★ 계정 없음, 클라우드 없음, 광고 없음</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <p class="contact-label">질문이나 피드백이 있으신가요?</p>
+            <a href="#" class="contact-email" id="contactBtn">
+                <svg class="contact-email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+                    <path d="M2 7l10 7 10-7"></path>
+                </svg>
+                이메일 보내기
+            </a>
+        </div>
+    </section>
+
+    <!-- Tip Jar Section -->
+    <section id="tip-jar" class="tip-jar" aria-label="개발자 후원하기">
+        <!-- Decorative animated stars (consistent with other sections) -->
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-label">개발 지원</span>
+                <h2 class="section-title">팁 남기기</h2>
+                <p class="section-subtitle">
+                    관대하게 도와주시면 감사하겠습니다! 부담 갖지 마세요 — 앱은 그대로 무료입니다.
+                </p>
+            </div>
+
+            <p class="tip-instruction">팁을 보내려면 아래 옵션 중 하나를 클릭하세요</p>
+
+            <!-- Tip Amount Buttons Grid -->
+            <div class="tip-amounts">
+                <a href="https://donate.stripe.com/aFacN54WG3L78x85AJ63K07" class="tip-btn" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">팁</span>
+                    <span class="tip-amount">$1</span>
+                </a>
+                <a href="https://donate.stripe.com/cNidR92Oy3L7eVwfbj63K08" class="tip-btn tip-btn-featured" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">팁</span>
+                    <span class="tip-amount">$2</span>
+                </a>
+                <a href="https://donate.stripe.com/aFa14n0Gq0yV9Bc2ox63K09" class="tip-btn" rel="noopener noreferrer" target="_blank">
+                    <span class="tip-label">팁</span>
+                    <span class="tip-amount">$5</span>
+                </a>
+            </div>
+
+            <!-- Optional: Additional context -->
+            <p class="tip-footer-note">
+                안전하게 처리: <strong>Stripe</strong>. 모든 거래는 업계 표준 암호화로 안전하게 처리됩니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ko/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>코골이, 호흡, 수면을 기기에서 직접 녹음하고, 확인하고, 이해하세요.</p>
+                <p><a href="/ko/support/">지원</a> &middot; <a href="/ko/privacy">개인 정보</a></p>
+                <div class="lang-switcher">
+                    <button class="lang-switcher-btn" aria-label="Change language">
+                        <img class="lang-flag" src="/flags/kr.svg" alt="">
+                        <span>한국어</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/"><img class="lang-flag" src="/flags/ca.svg" alt=""><span class="lang-name">English</span></a>
+                        <a href="/ar/"><img class="lang-flag" src="/flags/sa.svg" alt=""><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></a>
+                        <a href="/zh/"><img class="lang-flag" src="/flags/cn.svg" alt=""><span class="lang-name">&#20013;&#25991;</span></a>
+                        <a href="/zh-Hant/"><img class="lang-flag" src="/flags/tw.svg" alt=""><span class="lang-name">&#32321;&#39636;&#20013;&#25991;</span></a>
+                        <a href="/da/"><img class="lang-flag" src="/flags/dk.svg" alt=""><span class="lang-name">Dansk</span></a>
+                        <a href="/nl/"><img class="lang-flag" src="/flags/nl.svg" alt=""><span class="lang-name">Nederlands</span></a>
+                        <a href="/fil/"><img class="lang-flag" src="/flags/ph.svg" alt=""><span class="lang-name">Filipino</span></a>
+                        <a href="/fr/"><img class="lang-flag" src="/flags/fr.svg" alt=""><span class="lang-name">Fran&ccedil;ais</span></a>
+                        <a href="/de/"><img class="lang-flag" src="/flags/de.svg" alt=""><span class="lang-name">Deutsch</span></a>
+                        <a href="/hi/"><img class="lang-flag" src="/flags/in.svg" alt=""><span class="lang-name">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</span></a>
+                        <a href="/id/"><img class="lang-flag" src="/flags/id.svg" alt=""><span class="lang-name">Bahasa Indonesia</span></a>
+                        <a href="/it/"><img class="lang-flag" src="/flags/it.svg" alt=""><span class="lang-name">Italiano</span></a>
+                        <a href="/ja/"><img class="lang-flag" src="/flags/jp.svg" alt=""><span class="lang-name">&#26085;&#26412;&#35486;</span></a>
+                        <a href="/ko/" class="active"><img class="lang-flag" src="/flags/kr.svg" alt=""><span class="lang-name">&#54620;&#44397;&#50612;</span></a>
+                        <a href="/ms/"><img class="lang-flag" src="/flags/my.svg" alt=""><span class="lang-name">Bahasa Melayu</span></a>
+                        <a href="/no/"><img class="lang-flag" src="/flags/no.svg" alt=""><span class="lang-name">Norsk</span></a>
+                        <a href="/pl/"><img class="lang-flag" src="/flags/pl.svg" alt=""><span class="lang-name">Polski</span></a>
+                        <a href="/pt/"><img class="lang-flag" src="/flags/pt.svg" alt=""><span class="lang-name">Portugu&ecirc;s</span></a>
+                        <a href="/ru/"><img class="lang-flag" src="/flags/ru.svg" alt=""><span class="lang-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></a>
+                        <a href="/es/"><img class="lang-flag" src="/flags/es.svg" alt=""><span class="lang-name">Espa&ntilde;ol</span></a>
+                        <a href="/sv/"><img class="lang-flag" src="/flags/se.svg" alt=""><span class="lang-name">Svenska</span></a>
+                        <a href="/th/"><img class="lang-flag" src="/flags/th.svg" alt=""><span class="lang-name">&#3652;&#3607;&#3618;</span></a>
+                        <a href="/tr/"><img class="lang-flag" src="/flags/tr.svg" alt=""><span class="lang-name">T&uuml;rk&ccedil;e</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="support-footer-col">
+                <h4>배우기</h4>
+                <ul>
+                    <li><a href="/ko/support/getting-started">시작하기</a></li>
+                    <li><a href="/ko/support/how-detection-works">감지 작동 방식</a></li>
+                    <li><a href="/ko/support/timeline-and-playback">타임라인 &amp; 재생</a></li>
+                    <li><a href="/ko/support/breathing-disruptions">호흡 중단</a></li>
+                    <li><a href="/ko/support/sleep-stages">수면 단계</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>더 보기</h4>
+                <ul>
+                    <li><a href="/ko/support/apple-watch">Apple Watch &amp; 건강</a></li>
+                    <li><a href="/ko/support/export-and-sharing">내보내기 &amp; 공유</a></li>
+                    <li><a href="/ko/support/troubleshooting">문제 해결</a></li>
+                    <li><a href="/ko/support/android">Android</a></li>
+                    <li><a href="/ko/support/faq">자주 묻는 질문</a></li>
+                    <li><a href="/ko/support/#contact">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 모든 권리 보유.</div>
+    </footer>
+
+    <!-- Mobile sticky download bar (hidden until the user scrolls up) -->
+    <div class="mobile-cta-bar is-tucked">
+        <div class="mobile-cta-copy">
+            <strong>Snore Timeline</strong>
+            <span>무료 · iOS & Android</span>
+        </div>
+        <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>다운로드</a>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

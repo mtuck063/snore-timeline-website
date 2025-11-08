@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>聲音偵測的原理 - Snore Timeline 支援中心</title>
+    <meta name="title" content="聲音偵測的原理 - Snore Timeline 支援中心">
+    <meta name="description" content="了解 Snore Timeline 如何分類睡眠聲音：即時的裝置端分析、分貝等級、頻率色彩，以及降噪訣竅。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh-Hant/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/zh-Hant/support/how-detection-works">
+    <meta property="og:title" content="聲音偵測的原理 - Snore Timeline 支援中心">
+    <meta property="og:description" content="了解 Snore Timeline 如何分類睡眠聲音：即時的裝置端分析、分貝等級、頻率色彩，以及降噪訣竅。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh-Hant/support/how-detection-works">
+    <meta property="twitter:title" content="聲音偵測的原理 - Snore Timeline 支援中心">
+    <meta property="twitter:description" content="了解 Snore Timeline 如何分類睡眠聲音：即時的裝置端分析、分貝等級、頻率色彩，以及降噪訣竅。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "支援中心", "item": "https://snoretimeline.com/zh-Hant/support/" },
+        { "@type": "ListItem", "position": 2, "name": "偵測原理", "item": "https://snoretimeline.com/zh-Hant/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline 中的聲音偵測原理",
+      "description": "了解 Snore Timeline 如何分類睡眠聲音：即時的裝置端分析、分貝等級、頻率色彩，以及降噪訣竅。",
+      "url": "https://snoretimeline.com/zh-Hant/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh-Hant/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 標誌">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">支援中心</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">開啟 App
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="麵包屑導覽">
+                    <a href="/zh-Hant/support/">支援中心</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">偵測原理</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">錄音</span>
+                    <h1 class="privacy-title">聲音偵測的原理</h1>
+                    <p class="privacy-updated">App 聆聽什麼、如何判斷，以及那些數字代表什麼。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>本頁內容</summary>
+                        <ul>
+                            <li><a href="#sound-types">App 分類的各種聲音</a></li>
+                            <li><a href="#real-time">即時分析，不取樣</a></li>
+                            <li><a href="#confidence">靈敏度與誤判</a></li>
+                            <li><a href="#decibels">分貝與頻率色彩</a></li>
+                            <li><a href="#loud-sound-detection">大音量偵測</a></li>
+                            <li><a href="#background-noise">背景噪音如何影響偵測</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline 把一夜的原始音訊化為你可以信賴的已標記事件，而當你知道它們是怎麼產生的，信賴它們就更容易了。本頁說明這套分類流程：App 聆聽哪些聲音、它如何決定什麼會落在你的時間軸上、那些分貝數字與橙色波形色彩代表什麼，以及為什麼吵雜的房間會改變結果。</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>App 分類的各種聲音</h2>
+                        <p>App 並不會把每一個噪音都當成打鼾，而是把聽到的聲音歸入六大類別：</p>
+                        <ul>
+                            <li><strong>打鼾</strong>，主要事件。每次偵測都會帶著它的音量等級落在時間軸上。</li>
+                            <li><strong>喘息</strong>，常在呼吸停頓之後出現的突然吸氣。</li>
+                            <li><strong>咳嗽</strong>，以自成一類的方式追蹤，而非併入打鼾。</li>
+                            <li><strong>夢話</strong>：說話、低語與含糊的喃喃自語。</li>
+                            <li><strong>笑聲</strong>，因為睡著的人確實會笑。</li>
+                            <li><strong>大音量聲響</strong>，超過你所設定門檻的突發噪音（詳見<a href="#loud-sound-detection">下文</a>）。</li>
+                        </ul>
+                        <p>打鼾、喘息與咳嗽構成呼吸類別。App 也會整夜監測呼吸型態；當一段約 10 秒以上的靜默之後，接著出現明顯比先前靜默更大聲的恢復聲響，就會被標記為一次呼吸中斷。<a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a>對此有深入說明。</p>
+                        <p>它怎麼分辨打鼾與咳嗽呢？每一種聲音類型都有可辨識的聲學特徵。打鼾的能量大多集中在中低頻範圍，約 50 Hz 到 3 kHz，這使它有別於說話、咳嗽與環境噪音。分類器在指派標籤之前，會同時權衡每個音訊片段的聲音型態與頻率特性。大多數環境噪音都會被忽略。</p>
+                        <p>沒有任何偵測系統是完美的。當兩個聲音重疊，或被被褥蓋住其中一個時，事件可能落入錯誤的類別。如果某個標籤看起來不對，回放那一刻的音訊，聽聽看發生了什麼。這裡的一切都是供個人洞察用的音訊分析；App 並不診斷睡眠呼吸中止症或任何其他病症。</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>即時分析，不取樣</h2>
+                    <figure class="support-diagram" aria-label="示意圖：在你的裝置內部，麥克風將聲音送入裝置端 AI 進行標記，全程不對外傳送任何內容">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">僅留在你的裝置上</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">麥克風</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">整夜聆聽</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">裝置端 AI</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">即時</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">打鼾</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">喘息</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">咳嗽</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">夢話</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">呼吸</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">已偵測的事件</text>
+</svg>
+                        <figcaption>音訊在發生的當下就被分類，完全在你的手機上進行。每個聲音都即時處理並標記；沒有任何內容被取樣或對外傳送。</figcaption>
+                    </figure>
+                        <p>有些 App 靠取樣來省電：它們週期性地喚醒、聆聽片刻，然後再次休眠，這代表它們可能會錯過這之間發生的一切。Snore Timeline 運用在你手機上執行的 Apple Sound Analysis 框架，持續不間斷地分析你的音訊。每個聲音都在發生的當下被處理。沒有任何內容被略過、取樣或上傳。</p>
+                        <p>持續分析帶來你會注意到的兩項結果：</p>
+                        <ul>
+                            <li><strong>偵測立即開始。</strong>沒有校準或設定步驟；當夜的第一次打鼾和第一百次打鼾同樣重要。</li>
+                            <li><strong>時間軸是完整的。</strong>因為 App 從不停止聆聽，你時間軸上的一段安靜空白就代表房間當時是安靜的，而這些空白本身也成為呼吸與<a href="/zh-Hant/support/sleep-stages">睡眠階段</a>分析的資料。</li>
+                        </ul>
+                        <p>這一切都在裝置上執行。你的音訊絕不會離開你的手機，<a href="/zh-Hant/privacy">隱私權政策</a>說明了這在實務上代表什麼。</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>靈敏度與誤判</h2>
+                        <p>並非每個聲音都會被收錄。只有當某個聲音與其某一類別足夠吻合時，App 才會把它記為一個事件，這正是它如何避免一台嘎吱作響的暖氣機把你的整夜填滿幽靈打鼾。</p>
+                        <p>你可以透過靈敏度設定來控制那道門檻有多嚴格，它共有五個層級：<strong>極低、低、平衡、高與最高</strong>。「平衡」為預設值。</p>
+                        <ul>
+                            <li><strong>極低</strong>只擷取清晰、響亮的打鼾，幾乎忽略其他所有聲音。當房間吵雜，或伴侶的打鼾不斷觸發偵測時，可選擇它。</li>
+                            <li><strong>最高</strong>能捕捉非常微弱的打鼾，但也會收進更多背景噪音，並記下更多誤判。</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">提示</span>
+                            <p>讓你的時間軸告訴你該往哪個方向調整。回放起來什麼都沒有的雜散事件太多？把靈敏度調低。錄音裡聽得到、App 卻漏掉的打鼾？把它調高。對大多數人來說，「平衡」是個很不錯的起點。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>分貝與頻率色彩</h2>
+                        <p>音量會以 dB SPL 顯示在 App 各處，刻度從約 28 dB（近乎靜默的參考值）一路到 105 dB（極為響亮的聲音）。把它當作音量計來看：數字愈高，聲音愈大。以下是你打鼾的粗略對照：</p>
+                        <ul>
+                            <li><strong>低於約 40 dB</strong>：微弱打鼾</li>
+                            <li><strong>40 至 48 dB</strong>：輕微打鼾</li>
+                            <li><strong>48 至 56 dB</strong>：可聽見的打鼾</li>
+                            <li><strong>56 dB 以上</strong>：嚴重打鼾</li>
+                        </ul>
+                        <p>App 會追蹤每個段落的峰值與平均分貝等級。這些數字僅供個人參考，並非臨床測量。</p>
+                        <p>App 會偵測正在使用哪支麥克風，並在你的手機播放音訊（例如音樂或 podcast）時調整讀數。</p>
+                        <p>每個聲音都是頻率的混合，而頻率就是空氣振動的快慢，以赫茲（Hz）為單位。低音振動得慢；高音振動得快。按下播放並拖曳，就能聽見它，並看著波形收緊：</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="低" data-band-mid="中" data-band-high="高"
+                                aria-label="拖曳以改變音高，看看更高的頻率如何振動得更快">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="拖曳以改變音高">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="播放" data-label-stop="停止">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">播放</span>
+                                </button>
+                                <span class="pitch-hint">拖曳滑桿 &mdash; 音高愈高，振動愈快</span>
+                            </div>
+                            <figcaption>這正是下方各頻帶所依據的同一套刻度：慢速振動屬於低頻帶，快速振動屬於高頻帶。打鼾位於低頻；吐氣那輕微的嘶聲則位於高頻。需要耳機或喇叭才聽得到。</figcaption>
+                        </figure>
+                        <p>把波形放到最大，長條就會分裂成層層堆疊的橙色深淺，顯示每個聲音的能量在各頻率上的分布位置：</p>
+                        <ul>
+                            <li><strong>深橙色</strong>：低頻，約 50 至 250 Hz，打鼾深沉的隆隆聲。</li>
+                            <li><strong>中橙色</strong>：中頻，約 250 至 1,500 Hz，泛音與母音。</li>
+                            <li><strong>亮橙色</strong>：高頻，約 1,500 至 8,000 Hz，像「sss」中的「s」這類齒擦音。</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="播放一段真實錄音，並依 App 顯示的方式觀察它在波形上的頻帶">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">呼吸</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">打鼾</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="吸氣" data-exhale="吐氣 &mdash; 高頻帶有更多能量" data-idle="按下播放並跟隨每一次呼吸"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="播放" data-label-stop="暫停">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">播放</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">高</span>
+                                    <span class="wave-key" data-band="mid">中</span>
+                                    <span class="wave-key" data-band="low">低</span>
+                                </span>
+                            </div>
+                            <figcaption>真實的錄音，依 App 描繪波形的方式上色：每根長條都分為低、中、高頻能量。按下播放並跟隨那條線。聽呼吸時，注意每一次吐氣時亮起的高頻帶向上跳動，而聲音本身仍然輕柔。聽打鼾時，深色的低頻帶占主導。這個高頻帶節奏中的一道斷裂，正是指向可能的<a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a>的線索。</figcaption>
+                        </figure>
+                        <p>明亮的高頻帶正是對呼吸最關鍵的那一個。每一次吐氣都會發出輕微的嘶聲，像柔和的「sss」，而這道嘶聲就位於高頻帶。Snore Timeline 整夜聆聽它，藉以追蹤你的呼吸，這正是<a href="/zh-Hant/support/breathing-disruptions">呼吸中斷偵測</a>與<a href="/zh-Hant/support/sleep-stages">睡眠階段推估</a>的動力來源。這也是為什麼手機放得太遠或房間吵雜會削弱這些功能：嘶聲很微弱，而它正是最先消失的東西。</p>
+                        <p>頻率細節只會出現在放到最大的檢視中；在更寬的縮放層級下，長條會顯示為單一純色。<a href="/zh-Hant/support/timeline-and-playback#reading-the-waveform">時間軸與回放</a>會帶你整體解讀波形。</p>
+                        <div class="callout callout--tip"><span class="callout-label">動手試試</span><p>把你某段安靜的夜晚放到最大，找找看那些下方幾乎沒有色彩、卻有短促亮橙色爆發的地方。那就是你的呼吸，僅憑聲音看見的呼吸。</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="App 完整畫面" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 放大檢視</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="放大的波形，在一次打鼾段落中帶有層層堆疊的橙色頻帶" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>放到最大的檢視中的頻率色彩。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>大音量偵測</h2>
+                        <p>分類器會自行處理打鼾與夢話。大音量偵測則存在於其餘的一切：每當某個聲音超過你所選的音量門檻，無論那是什麼聲音，它都會建立一個段落。這能捕捉分類器無法命名的噪音，例如輕到不足以被辨識為說話的低語夢話、磨牙、你移動時發出的聲音，或其他無法辨識的夜間噪音。</p>
+                        <p>預設門檻為 <strong>55 dB</strong>。要挑一個適合你房間的門檻：</p>
+                        <ol>
+                            <li>開始錄音並保持安靜。</li>
+                            <li>觀察時間軸針對你房間背景噪音所顯示的 dB 等級。</li>
+                            <li>把門檻設在剛好高於那個等級的位置。</li>
+                        </ol>
+                        <p>較安靜的房間能讓你使用較低的門檻，捕捉到更多聲音。</p>
+                        <p>你也可能看到某些原本以為是打鼾的聲音落入大音量類別。這發生於背景噪音蓋過打鼾分類器所聆聽的呼吸型態時；分類器需要清晰的訊號才能辨識打鼾，而當房間的基準音量超過約 45 dB 時，更多聲音往往會被記為大音量訊號，而非打鼾段落。下一節會說明該如何處理。</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>背景噪音如何影響偵測</h2>
+                        <p>持續的背景噪音，例如冷氣、電風扇、車流、音樂、雨聲或海浪聲，會被分開追蹤，不會在你的時間軸上建立打鼾事件。App 會把這些辨識為連續的環境噪音，而非個別的打鼾，因此一台嗡嗡作響的冷氣本身並不會把你的整夜填滿假打鼾。</p>
+                        <p>持續噪音真正的代價是遮蔽。偏高的噪音底會淹沒安靜的呼吸與微弱的打鼾，讓分類器能運用的訊號變少。隨之會有兩項後果：</p>
+                        <ul>
+                            <li>微弱的聲音根本變得更難偵測。</li>
+                            <li>在基準噪音超過約 <strong>45 dB</strong> 的房間裡，原本會被歸類為打鼾的聲音會轉入大音量類別。</li>
+                        </ul>
+                        <p>為了得到更乾淨的分類，盡可能讓房間安靜。常見的元兇是電風扇與白噪音機、暖通空調與空氣清淨機、面向車流的開窗，以及持續播放的電視或音訊。較安靜的房間能讓整體偵測更準確。</p>
+                        <p>當你無法控制噪音時，例如在旅館房間裡，就善用你手邊現有的條件：</p>
+                        <ul>
+                            <li><strong>把手機移近你的頭部</strong>，讓呼吸聲在嗡嗡聲之上仍清晰可聞。<a href="/zh-Hant/support/getting-started#placement">開始使用</a>詳細說明擺放方式。</li>
+                            <li><strong>調高<a href="#confidence">靈敏度</a></strong>，讓 App 在背景噪音之上仍能擷取較柔和的聲音。</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="App 完整畫面" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 放大檢視</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="偵測到的大音量聲響段落，帶有峰值與平均分貝以及大音量訊號標章" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>在 45 dB 噪音底之上錄製的一夜。</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>延伸閱讀</h2>
+                        <ul>
+                            <li><a href="/zh-Hant/support/episodes-and-events">段落與事件</a></li>
+                            <li><a href="/zh-Hant/support/timeline-and-playback">解讀你的時間軸並回放音訊</a></li>
+                            <li><a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a></li>
+                            <li><a href="/zh-Hant/support/getting-started">開始使用</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="更多支援頁面"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh-Hant/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>錄製、檢視並理解你的打鼾、呼吸與睡眠，全部都在你的裝置上完成。</p>
+                <p><a href="/zh-Hant/support/">支援中心</a> &middot; <a href="/zh-Hant/privacy">隱私權</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>學習</h4>
+                <ul>
+                    <li><a href="/zh-Hant/support/getting-started">開始使用</a></li>
+                    <li><a href="/zh-Hant/support/how-detection-works">偵測原理</a></li>
+                    <li><a href="/zh-Hant/support/timeline-and-playback">時間軸與回放</a></li>
+                    <li><a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a></li>
+                    <li><a href="/zh-Hant/support/sleep-stages">睡眠階段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>更多</h4>
+                <ul>
+                    <li><a href="/zh-Hant/support/apple-watch">Apple Watch 與健康</a></li>
+                    <li><a href="/zh-Hant/support/export-and-sharing">匯出與分享</a></li>
+                    <li><a href="/zh-Hant/support/troubleshooting">疑難排解</a></li>
+                    <li><a href="/zh-Hant/support/android">Android</a></li>
+                    <li><a href="/zh-Hant/support/faq">常見問題</a></li>
+                    <li><a href="/zh-Hant/support/#contact">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 版權所有。</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

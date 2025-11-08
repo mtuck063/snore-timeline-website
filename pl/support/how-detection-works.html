@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Jak działa wykrywanie dźwięków - Wsparcie Snore Timeline</title>
+    <meta name="title" content="Jak działa wykrywanie dźwięków - Wsparcie Snore Timeline">
+    <meta name="description" content="Dowiedz się, jak Snore Timeline klasyfikuje dźwięki snu: analiza w czasie rzeczywistym na urządzeniu, poziomy decybeli, kolory częstotliwości i porady dotyczące hałasu.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/pl/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/pl/support/how-detection-works">
+    <meta property="og:title" content="Jak działa wykrywanie dźwięków - Wsparcie Snore Timeline">
+    <meta property="og:description" content="Dowiedz się, jak Snore Timeline klasyfikuje dźwięki snu: analiza w czasie rzeczywistym na urządzeniu, poziomy decybeli, kolory częstotliwości i porady dotyczące hałasu.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/pl/support/how-detection-works">
+    <meta property="twitter:title" content="Jak działa wykrywanie dźwięków - Wsparcie Snore Timeline">
+    <meta property="twitter:description" content="Dowiedz się, jak Snore Timeline klasyfikuje dźwięki snu: analiza w czasie rzeczywistym na urządzeniu, poziomy decybeli, kolory częstotliwości i porady dotyczące hałasu.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Wsparcie", "item": "https://snoretimeline.com/pl/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Jak działa wykrywanie", "item": "https://snoretimeline.com/pl/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Jak działa wykrywanie dźwięków w Snore Timeline",
+      "description": "Dowiedz się, jak Snore Timeline klasyfikuje dźwięki snu: analiza w czasie rzeczywistym na urządzeniu, poziomy decybeli, kolory częstotliwości i porady dotyczące hałasu.",
+      "url": "https://snoretimeline.com/pl/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/pl/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Logo Snore Timeline">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Wsparcie</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">Otwórz aplikację
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+                    <a href="/pl/support/">Wsparcie</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Jak działa wykrywanie</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Nagrywanie</span>
+                    <h1 class="privacy-title">Jak działa wykrywanie dźwięków</h1>
+                    <p class="privacy-updated">Czego słucha aplikacja, jak podejmuje decyzje i co oznaczają poszczególne liczby.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>Na tej stronie</summary>
+                        <ul>
+                            <li><a href="#sound-types">Dźwięki, które aplikacja klasyfikuje</a></li>
+                            <li><a href="#real-time">Analiza w czasie rzeczywistym, bez próbkowania</a></li>
+                            <li><a href="#confidence">Czułość i fałszywe wykrycia</a></li>
+                            <li><a href="#decibels">Decybele i kolory częstotliwości</a></li>
+                            <li><a href="#loud-sound-detection">Wykrywanie głośnych dźwięków</a></li>
+                            <li><a href="#background-noise">Wpływ hałasu tła na wykrywanie</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline przekształca noc pełną surowego dźwięku w oznaczone zdarzenia, którym można zaufać — a zaufanie jest łatwiejsze, gdy wiesz, jak powstają. Ta strona wyjaśnia mechanizm klasyfikacji: jakich dźwięków aplikacja nasłuchuje, jak decyduje, co trafia na oś czasu, co oznaczają liczby decybeli i pomarańczowe kolory przebiegu dźwięku, a także dlaczego głośne otoczenie wpływa na wyniki.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>Dźwięki, które aplikacja klasyfikuje</h2>
+                        <p>Zamiast traktować każdy dźwięk jak chrapanie, aplikacja sortuje to, co słyszy, na sześć głównych kategorii:</p>
+                        <ul>
+                            <li><strong>Chrapanie</strong> — główne zdarzenie. Każde wykrycie trafia na oś czasu wraz z poziomem głośności.</li>
+                            <li><strong>Westchnienia</strong> — nagłe wdechy, które często następują po przerwie w oddychaniu.</li>
+                            <li><strong>Kaszel</strong> — śledzony jako osobna kategoria, a nie podciągany pod chrapanie.</li>
+                            <li><strong>Mówienie przez sen</strong>: mowa, szepty i mamrotanie.</li>
+                            <li><strong>Śmiech</strong> — bo śpiący też się śmieją.</li>
+                            <li><strong>Głośne dźwięki</strong> — nagłe hałasy powyżej progu, który sam ustawiasz (opisane <a href="#loud-sound-detection">poniżej</a>).</li>
+                        </ul>
+                        <p>Chrapanie, westchnienia i kaszel tworzą grupę oddechową. Aplikacja monitoruje też wzorce oddychania przez całą noc; cicha przerwa trwająca około 10 sekund lub dłużej, po której następuje dźwięk przebudzeniowy wyraźnie głośniejszy niż poprzedzająca go cisza, zostaje oznaczona jako zakłócenie oddechu. <a href="/pl/support/breathing-disruptions">Zakłócenia oddechu</a> opisują to szczegółowo.</p>
+                        <p>Jak aplikacja odróżnia chrapanie od kaszlu? Każdy rodzaj dźwięku ma charakterystyczny akustyczny wzorzec. Chrapanie skupia większość energii w niskim i średnim zakresie częstotliwości — mniej więcej od 50 Hz do 3 kHz — co odróżnia je od mowy, kaszlu i hałasu otoczenia. Klasyfikator uwzględnia zarówno wzorzec dźwięku, jak i charakterystykę częstotliwościową każdego segmentu audio przed przypisaniem etykiety. Większość szumów otoczenia jest ignorowana.</p>
+                        <p>Żaden system wykrywania nie jest doskonały. Gdy dwa dźwięki nakładają się lub pościel tłumi jeden z nich, zdarzenie może trafić do niewłaściwej kategorii. Jeśli etykieta wydaje się błędna, odtwórz nagranie z tego momentu i posłuchaj, co się stało. Wszystko tutaj to analiza audio dla osobistego wglądu — aplikacja nie diagnozuje bezdechu sennego ani żadnego innego schorzenia.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>Analiza w czasie rzeczywistym, bez próbkowania</h2>
+                    <figure class="support-diagram" aria-label="Diagram: wewnątrz urządzenia mikrofon zasila lokalną sztuczną inteligencję, która etykietuje każdy dźwięk — nic nie jest wysyłane na zewnątrz">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">PRYWATNE NA TWOIM URZĄDZENIU</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">Mikrofon</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">nasłuchuje przez całą noc</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">Lokalna AI</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">w czasie rzeczywistym</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Chrapanie</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Westchnienie</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Kaszel</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Mówienie przez sen</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Oddychanie</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">Wykryte zdarzenia</text>
+</svg>
+                        <figcaption>Dźwięk jest klasyfikowany w momencie, gdy się pojawia — w całości na Twoim telefonie. Każdy dźwięk jest przetwarzany w czasie rzeczywistym i etykietowany; nic nie jest próbkowane ani wysyłane gdziekolwiek.</figcaption>
+                    </figure>
+                        <p>Niektóre aplikacje oszczędzają baterię przez próbkowanie: budzą się co pewien czas, chwilę nasłuchują, a następnie usypiają ponownie — co oznacza, że mogą przegapić wszystko, co dzieje się między nimi. Snore Timeline analizuje dźwięk ciągłe, korzystając ze środowiska Apple Sound Analysis działającego na Twoim telefonie. Każdy dźwięk jest przetwarzany w momencie, gdy się pojawia. Nic nie jest pomijane, próbkowane ani przesyłane.</p>
+                        <p>Ciągła analiza ma dwie konsekwencje, które zauważysz:</p>
+                        <ul>
+                            <li><strong>Wykrywanie zaczyna się natychmiast.</strong> Nie ma kroku kalibracji ani konfiguracji — pierwsze chrapanie w nocy liczy się tak samo jak setne.</li>
+                            <li><strong>Oś czasu jest kompletna.</strong> Ponieważ aplikacja nigdy nie przestaje nasłuchiwać, cicha przerwa na osi czasu oznacza, że w pokoju panowała cisza — a same przerwy stają się danymi do analizy oddychania i <a href="/pl/support/sleep-stages">faz snu</a>.</li>
+                        </ul>
+                        <p>Wszystko to działa na urządzeniu. Twój dźwięk nigdy nie opuszcza telefonu, a <a href="/pl/privacy">Polityka prywatności</a> wyjaśnia, co to oznacza w praktyce.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>Czułość i fałszywe wykrycia</h2>
+                        <p>Nie każdy dźwięk przechodzi przez filtr. Aplikacja rejestruje dźwięk jako zdarzenie tylko wtedy, gdy jest wystarczająco dobrym dopasowaniem do jednej z kategorii — w ten sposób skrzypiący kaloryfer nie zapełnia nocy fałszywymi chrapnięciami.</p>
+                        <p>Surowość tego progu kontrolujesz ustawieniem czułości, które ma pięć poziomów: <strong>Minimalna, Niska, Zrównoważona, Wysoka i Maksymalna</strong>. Domyślna to Zrównoważona.</p>
+                        <ul>
+                            <li><strong>Minimalna</strong> rejestruje tylko wyraźne, głośne chrapanie i niemal wszystko inne ignoruje. Wybierz ją w głośnym pokoju lub gdy chrapanie partnera ciągle wyzwala detektor.</li>
+                            <li><strong>Maksymalna</strong> wychwytuje bardzo ciche chrapnięcia, ale też więcej szumów tła i rejestruje więcej fałszywych wykryć.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Wskazówka</span>
+                            <p>Pozwól osi czasu powiedzieć, w którą stronę dostosować ustawienie. Zbyt wiele przypadkowych zdarzeń, które po odtworzeniu okazują się ciszą? Obniż czułość. Chrapania, które słyszysz w nagraniu, ale aplikacja pominęła? Podnieś ją. Zrównoważona sprawdza się dobrze dla większości ludzi jako punkt wyjścia.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>Decybele i kolory częstotliwości</h2>
+                        <p>Głośność pojawia się w aplikacji w dB SPL, na skali od około 28 dB — punktu odniesienia dla prawie ciszy — do 105 dB dla bardzo głośnego dźwięku. Odczytaj to jak miernik głośności: wyższe liczby oznaczają głośniejsze dźwięki. Jako przybliżony przewodnik po chrapaniu:</p>
+                        <ul>
+                            <li><strong>Poniżej ok. 40 dB</strong>: ledwie słyszalne chrapanie</li>
+                            <li><strong>40–48 dB</strong>: lekkie chrapanie</li>
+                            <li><strong>48–56 dB</strong>: wyraźne chrapanie</li>
+                            <li><strong>56 dB i powyżej</strong>: ciężkie chrapanie</li>
+                        </ul>
+                        <p>Aplikacja śledzi zarówno szczytowy, jak i średni poziom decybeli dla każdego epizodu. Te liczby służą do osobistego odniesienia, a nie jako pomiar kliniczny.</p>
+                        <p>Aplikacja wykrywa, który mikrofon jest używany, i dostosowuje odczyty, gdy telefon odtwarza dźwięk, na przykład muzykę lub podcast.</p>
+                        <p>Każdy dźwięk to mieszanina częstotliwości, a częstotliwość to po prostu szybkość drgań powietrza, mierzona w hercach (Hz). Niskie dźwięki drgają wolno; wysokie dźwięki drgają szybko. Naciśnij odtwarzanie i przeciągnij, aby to usłyszeć i zobaczyć, jak fala się zagęszcza:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="Niskie" data-band-mid="Średnie" data-band-high="Wysokie"
+                                aria-label="Przeciągnij, aby zmienić wysokość tonu i zobaczyć, jak wyższa częstotliwość drgaje szybciej">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="Przeciągnij, aby zmienić wysokość tonu">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="Odtwórz" data-label-stop="Zatrzymaj">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">Odtwórz</span>
+                                </button>
+                                <span class="pitch-hint">Przeciągnij suwak &mdash; wyższy ton drgaje szybciej</span>
+                            </div>
+                            <figcaption>To ta sama skala, na której zbudowane są poniższe pasma: wolne drgania to pasmo niskie, szybkie drgania to pasmo wysokie. Chrapanie leży nisko; delikatny syk wydechu leży wysoko. Do odsłuchu wymagane są słuchawki lub głośniki.</figcaption>
+                        </figure>
+                        <p>Przybliż maksymalnie widok przebiegu dźwięku, a słupki rozdzielą się na ułożone warstwy pomarańczowego koloru, pokazując, gdzie energia każdego dźwięku rozkłada się na częstotliwości:</p>
+                        <ul>
+                            <li><strong>Ciemniejszy pomarańczowy</strong>: niskie częstotliwości, mniej więcej 50–250 Hz — głęboki pomruk chrapania.</li>
+                            <li><strong>Średni pomarańczowy</strong>: średnie częstotliwości, około 250–1500 Hz — harmoniczne i dźwięki samogłoskowe.</li>
+                            <li><strong>Jasny pomarańczowy</strong>: wysokie częstotliwości, około 1500–8000 Hz — sybilantne dźwięki jak „s" w „ssss".</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="Odtwórz prawdziwe nagranie i obserwuj jego pasma częstotliwości na przebiegu dźwięku, tak jak pokazuje je aplikacja">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">Oddychanie</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">Chrapanie</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="Wdech" data-exhale="Wydech &mdash; więcej energii w paśmie wysokim" data-idle="Naciśnij odtwarzanie i śledź każdy oddech"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="Odtwórz" data-label-stop="Pauza">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">Odtwórz</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">Wysokie</span>
+                                    <span class="wave-key" data-band="mid">Średnie</span>
+                                    <span class="wave-key" data-band="low">Niskie</span>
+                                </span>
+                            </div>
+                            <figcaption>Prawdziwe nagrania, pokolorowane tak jak aplikacja maluje przebieg dźwięku: każdy słupek podzielony na energię niskich, średnich i wysokich częstotliwości. Naciśnij odtwarzanie i śledź linię. Przy oddychaniu obserwuj, jak jasne pasmo wysokie miga przy każdym wydechu, gdy dźwięk pozostaje cichy. Przy chrapaniu dominuje ciemne pasmo niskie. Przerwa w tym rytmie pasma wysokiego wskazuje na możliwe <a href="/pl/support/breathing-disruptions">zakłócenie oddechu</a>.</figcaption>
+                        </figure>
+                        <p>Jasne, wysokoczęstotliwościowe pasmo to to, które ma największe znaczenie dla oddychania. Każdy wydech wydaje delikatny syk, coś jak ciche „sss" — i ten syk leży w paśmie wysokim. Snore Timeline nasłuchuje go, by śledzić Twoje oddychanie przez całą noc, co zasila <a href="/pl/support/breathing-disruptions">wykrywanie zakłóceń oddechu</a> i <a href="/pl/support/sleep-stages">szacowanie faz snu</a>. Dlatego też telefon umieszczony zbyt daleko lub głośne otoczenie osłabia te funkcje: syk jest cichy i jako pierwszy ginie w hałasie.</p>
+                        <p>Szczegółowe informacje o częstotliwościach pojawiają się tylko przy maksymalnym przybliżeniu; przy szerszym poziomie powiększenia słupki wyświetlają się w jednolitym kolorze. <a href="/pl/support/timeline-and-playback#reading-the-waveform">Oś czasu i odtwarzanie</a> przeprowadza przez czytanie całego przebiegu dźwięku.</p>
+                        <div class="callout callout--tip"><span class="callout-label">Wypróbuj</span><p>Przybliż maksymalnie cichy fragment swojej nocy i poszukaj krótkich błysków jasnego pomarańczowego z niewielką ilością koloru poniżej. To Twoje oddychanie widziane wyłącznie przez dźwięk.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="Pełny ekran aplikacji" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Przybliżony widok</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="Przybliżony przebieg dźwięku z ułożonymi warstwami pomarańczowych pasm częstotliwości podczas epizodu chrapania" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>Kolory częstotliwości przy maksymalnym przybliżeniu.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>Wykrywanie głośnych dźwięków</h2>
+                        <p>Klasyfikator samodzielnie obsługuje chrapanie i mówienie przez sen. Wykrywanie głośnych dźwięków istnieje dla wszystkiego innego: tworzy epizod za każdym razem, gdy dźwięk przekroczy wybrany przez Ciebie próg głośności, niezależnie od tego, czym jest ten dźwięk. Wychwytuje to hałasy, których klasyfikator nie potrafi nazwać — takie jak szeptane mówienie przez sen zbyt ciche, by zarejestrować się jako mowa, zgrzytanie zębami, dźwięki wydawane podczas ruchów lub inne niezidentyfikowane nocne hałasy.</p>
+                        <p>Domyślny próg to <strong>55 dB</strong>. Aby wybrać próg odpowiedni dla Twojego pokoju:</p>
+                        <ol>
+                            <li>Rozpocznij nagrywanie i pozostań cicho.</li>
+                            <li>Obserwuj poziom dB pokazywany przez oś czasu dla bazowego hałasu Twojego pokoju.</li>
+                            <li>Ustaw próg nieco powyżej tego poziomu.</li>
+                        </ol>
+                        <p>Cichszy pokój pozwala używać niższego progu i wychwytywać więcej.</p>
+                        <p>Możesz też zauważyć, że dźwięki, które spodziewałeś się zobaczyć jako chrapanie, trafiają do kategorii Głośne dźwięki. Dzieje się tak, gdy hałas tła maskuje wzorce oddychania, których klasyfikator chrapania nasłuchuje — klasyfikator potrzebuje wyraźnego sygnału, by zidentyfikować chrapanie, a gdy pokój utrzymuje baseline powyżej około 45 dB, więcej dźwięków rejestruje się jako sygnały Głośnych dźwięków zamiast epizodów chrapania. Następna sekcja wyjaśnia, co z tym zrobić.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>Wpływ hałasu tła na wykrywanie</h2>
+                        <p>Stały hałas tła, taki jak klimatyzator, wentylator, ruch uliczny, muzyka, deszcz czy dźwięki oceanu, jest śledzony oddzielnie i nie tworzy zdarzeń chrapania na osi czasu. Aplikacja rozpoznaje je jako ciągły szum otoczenia, a nie dyskretne chrapanie — dlatego sam szumiący klimatyzator nie wypełni nocy fałszywymi chrapnięciami.</p>
+                        <p>Prawdziwym kosztem stałego hałasu jest maskowanie. Głośna podłoga szumów zagłusza ciche oddychanie i ledwie słyszalne chrapanie, pozostawiając klasyfikatorowi mniej sygnału do pracy. Wynikają z tego dwie rzeczy:</p>
+                        <ul>
+                            <li>Ciche dźwięki stają się trudniejsze do wykrycia.</li>
+                            <li>W pokojach powyżej około <strong>45 dB</strong> na poziomie bazowym dźwięki, które inaczej zostałyby sklasyfikowane jako chrapanie, przesuwają się do kategorii Głośne dźwięki.</li>
+                        </ul>
+                        <p>Aby uzyskać czystszą klasyfikację, wycisz pokój tam, gdzie to możliwe. Najczęstsi winowajcy to wentylatory i urządzenia z białym szumem, klimatyzacja i oczyszczacze powietrza, otwarte okna wychodzące na ruch uliczny oraz telewizory lub odtwarzany dźwięk. Cichszy pokój zapewnia dokładniejsze wykrywanie ogólnie.</p>
+                        <p>Gdy nie możesz kontrolować hałasu, na przykład w pokoju hotelowym, pracuj z tym, co masz:</p>
+                        <ul>
+                            <li><strong>Przesuń telefon bliżej głowy</strong>, aby dźwięki oddychania pozostały słyszalne ponad szumem. <a href="/pl/support/getting-started#placement">Pierwsze kroki</a> omawiają rozmieszczenie szczegółowo.</li>
+                            <li><strong>Podnieś <a href="#confidence">czułość</a></strong>, aby aplikacja nadal wychwytywała cichsze dźwięki na tle szumu.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="Pełny ekran aplikacji" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Przybliżony widok</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="Epizod wykrytych głośnych dźwięków ze szczytowymi i średnimi decybelami oraz oznaczeniem Sygnały głośnych dźwięków" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>Noc nagrana powyżej progu szumów 45 dB.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Powiązane</h2>
+                        <ul>
+                            <li><a href="/pl/support/episodes-and-events">Epizody i zdarzenia</a></li>
+                            <li><a href="/pl/support/timeline-and-playback">Czytanie osi czasu i odtwarzanie audio</a></li>
+                            <li><a href="/pl/support/breathing-disruptions">Zakłócenia oddechu</a></li>
+                            <li><a href="/pl/support/getting-started">Pierwsze kroki</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Więcej stron wsparcia"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/pl/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Nagrywaj, oglądaj i rozumiej swoje chrapanie, oddychanie i sen — wszystko na Twoim urządzeniu.</p>
+                <p><a href="/pl/support/">Wsparcie</a> &middot; <a href="/pl/privacy">Prywatność</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Nauka</h4>
+                <ul>
+                    <li><a href="/pl/support/getting-started">Pierwsze kroki</a></li>
+                    <li><a href="/pl/support/how-detection-works">Jak działa wykrywanie</a></li>
+                    <li><a href="/pl/support/timeline-and-playback">Oś czasu i odtwarzanie</a></li>
+                    <li><a href="/pl/support/breathing-disruptions">Zakłócenia oddechu</a></li>
+                    <li><a href="/pl/support/sleep-stages">Fazy snu</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Więcej</h4>
+                <ul>
+                    <li><a href="/pl/support/apple-watch">Apple Watch i zdrowie</a></li>
+                    <li><a href="/pl/support/export-and-sharing">Eksport i udostępnianie</a></li>
+                    <li><a href="/pl/support/troubleshooting">Rozwiązywanie problemów</a></li>
+                    <li><a href="/pl/support/android">Android</a></li>
+                    <li><a href="/pl/support/faq">FAQ</a></li>
+                    <li><a href="/pl/support/#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Wszelkie prawa zastrzeżone.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

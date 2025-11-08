@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Ses Algılama Nasıl Çalışır - Snore Timeline Destek</title>
+    <meta name="title" content="Ses Algılama Nasıl Çalışır - Snore Timeline Destek">
+    <meta name="description" content="Snore Timeline'ın uyku seslerini nasıl sınıflandırdığını öğrenin: gerçek zamanlı cihaz üstü analiz, desibel seviyeleri, frekans renkleri ve gürültü ipuçları.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/tr/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/tr/support/how-detection-works">
+    <meta property="og:title" content="Ses Algılama Nasıl Çalışır - Snore Timeline Destek">
+    <meta property="og:description" content="Snore Timeline'ın uyku seslerini nasıl sınıflandırdığını öğrenin: gerçek zamanlı cihaz üstü analiz, desibel seviyeleri, frekans renkleri ve gürültü ipuçları.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/tr/support/how-detection-works">
+    <meta property="twitter:title" content="Ses Algılama Nasıl Çalışır - Snore Timeline Destek">
+    <meta property="twitter:description" content="Snore Timeline'ın uyku seslerini nasıl sınıflandırdığını öğrenin: gerçek zamanlı cihaz üstü analiz, desibel seviyeleri, frekans renkleri ve gürültü ipuçları.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Destek", "item": "https://snoretimeline.com/tr/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Algılama Nasıl Çalışır", "item": "https://snoretimeline.com/tr/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline'da Ses Algılama Nasıl Çalışır",
+      "description": "Snore Timeline'ın uyku seslerini nasıl sınıflandırdığını öğrenin: gerçek zamanlı cihaz üstü analiz, desibel seviyeleri, frekans renkleri ve gürültü ipuçları.",
+      "url": "https://snoretimeline.com/tr/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/tr/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline logosu">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Destek</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">Uygulamayı aç
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Gezinti yolu">
+                    <a href="/tr/support/">Destek</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Algılama Nasıl Çalışır</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Kayıt</span>
+                    <h1 class="privacy-title">Ses Algılama Nasıl Çalışır</h1>
+                    <p class="privacy-updated">Uygulamanın neleri dinlediği, nasıl karar verdiği ve sayıların ne anlama geldiği.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>Bu sayfada</summary>
+                        <ul>
+                            <li><a href="#sound-types">Uygulamanın sınıflandırdığı sesler</a></li>
+                            <li><a href="#real-time">Gerçek zamanlı analiz, örnekleme yok</a></li>
+                            <li><a href="#confidence">Hassasiyet ve yanlış tespitler</a></li>
+                            <li><a href="#decibels">Desibeller ve frekans renkleri</a></li>
+                            <li><a href="#loud-sound-detection">Yüksek Ses Algılama</a></li>
+                            <li><a href="#background-noise">Arka plan gürültüsü algılamayı nasıl etkiler</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline, bir gecelük ham sesi güvenebileceğiniz etiketli olaylara dönüştürür; bu olaylara güvenmek ise nasıl oluşturulduklarını bilince daha kolay olur. Bu sayfa sınıflandırma sürecini açıklar: uygulamanın hangi sesleri dinlediği, zaman çizelgenize nelerin düştüğüne nasıl karar verdiği, desibel sayılarının ve turuncu dalga formu renklerinin ne anlama geldiği ve gürültülü bir odanın sonuçları neden değiştirdiği.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>Uygulamanın sınıflandırdığı sesler</h2>
+                        <p>Uygulama, her gürültüyü horlama olarak değerlendirmek yerine duyduklarını altı ana kategoriye ayırır:</p>
+                        <ul>
+                            <li><strong>Horlama</strong>, asıl olay. Her tespit, ses seviyesiyle birlikte zaman çizelgesine iner.</li>
+                            <li><strong>Nefes tutma sonrası sesler (hırıltılar)</strong>, genellikle bir nefes durmasının ardından gelen ani nefes alışlar.</li>
+                            <li><strong>Öksürükler</strong>, horlamaya dahil edilmek yerine ayrı bir kategori olarak takip edilir.</li>
+                            <li><strong>Uyku konuşması</strong>: konuşma, fısıltılar ve mırıldanmalar.</li>
+                            <li><strong>Gülme</strong>, çünkü uyuyanlar gerçekten güler.</li>
+                            <li><strong>Yüksek sesler</strong>, sizin belirlediğiniz eşiğin üzerindeki ani gürültüler (aşağıda <a href="#loud-sound-detection">ele alınmaktadır</a>).</li>
+                        </ul>
+                        <p>Horlama, hırıltılar ve öksürükler solunum grubunu oluşturur. Uygulama aynı zamanda gece boyunca nefes alma düzenlerini de izler; yaklaşık 10 saniye veya daha uzun süren sessiz bir aralığın ardından öncesindeki sessizlikten belirgin biçimde daha yüksek sesli bir toparlanma sesi geldiğinde bu durum solunumu bozucu olay olarak işaretlenir. <a href="/tr/support/breathing-disruptions">Solunum Bozulmaları</a> sayfası bu konuyu ayrıntılı ele alır.</p>
+                        <p>Uygulama bir horlamayı öksürükten nasıl ayırt eder? Her ses türünün tanınabilir bir akustik imzası vardır. Horlama, enerjisinin büyük bölümünü yaklaşık 50 Hz ile 3 kHz arasındaki düşük ve orta frekans aralığında taşır; bu da onu konuşmadan, öksürüklerden ve ortam gürültüsünden ayırır. Sınıflandırıcı, bir etiket atamadan önce her ses segmentinin hem ses desenini hem de frekans özelliklerini değerlendirir. Çoğu ortam gürültüsü göz ardı edilir.</p>
+                        <p>Hiçbir algılama sistemi mükemmel değildir. İki ses üst üste geldiğinde ya da yatak örtüsü birini bastırdığında bir olay yanlış kategoriye düşebilir. Bir etiket yanlış görünüyorsa o anın sesini dinleyin ve ne olduğunu kendiniz duyun. Buradaki her şey kişisel değerlendirme için ses analizidir; uygulama uyku apnesi veya başka herhangi bir durumu teşhis etmez.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>Gerçek zamanlı analiz, örnekleme yok</h2>
+                    <figure class="support-diagram" aria-label="Diyagram: cihazınızın içinde, mikrofon cihaz üstü yapay zekayı besleyerek her sesi etiketler; hiçbir şey dışarıya gönderilmez">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">YALNIZCA CİHAZINIZDA</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">Mikrofon</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">gece boyunca dinler</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">Cihaz üstü YZ</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">gerçek zamanlı</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Horlama</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Hırıltı</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Öksürük</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Uyku konuşması</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Nefes alma</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">Tespit edilen olaylar</text>
+</svg>
+                        <figcaption>Ses, gerçekleştiği anda sınıflandırılır ve bu işlem tamamen telefonunuzda yapılır. Her ses gerçek zamanlı olarak işlenir ve etiketlenir; hiçbiri örneklenmez veya dışarıya gönderilmez.</figcaption>
+                    </figure>
+                        <p>Bazı uygulamalar pili korumak amacıyla örnekleme yapar: belirli aralıklarla uyandırır, bir süre dinler ve tekrar uyuturlar; bu da aradaki her şeyin kaçırılabileceği anlamına gelir. Snore Timeline, telefonunuzda çalışan Apple'ın Ses Analizi çerçevesini kullanarak sesinizi sürekli olarak analiz eder. Her ses gerçekleştiği anda işlenir. Hiçbir şey atlanmaz, örneklenmez veya yüklenmez.</p>
+                        <p>Sürekli analizin fark edeceğiniz iki sonucu vardır:</p>
+                        <ul>
+                            <li><strong>Algılama hemen başlar.</strong> Kalibrasyon veya kurulum adımı yoktur; gecenin ilk horlaması yüzüncü kadar önemlidir.</li>
+                            <li><strong>Zaman çizelgesi eksiksizdir.</strong> Uygulama dinlemeyi hiç durdurmadığından zaman çizelgenizdeki sessiz bir boşluk odanın sessiz olduğu anlamına gelir; bu boşluklar da solunum ve <a href="/tr/support/sleep-stages">uyku evresi</a> analizi için veri haline gelir.</li>
+                        </ul>
+                        <p>Bunların tamamı cihaz üzerinde çalışır. Sesiniz telefonunuzdan çıkmaz; <a href="/tr/privacy">Gizlilik Politikası</a> bunun pratikte ne anlama geldiğini kapsamaktadır.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>Hassasiyet ve yanlış tespitler</h2>
+                        <p>Her ses kaydedilmez. Uygulama, bir sesi ancak kategorilerinden biriyle yeterince güçlü bir eşleşme sağladığında olay olarak kaydeder; bu sayede gıcırdayan bir radyatör geceyi hayalet horlamalarla doldurmaz.</p>
+                        <p>Bu eşiğin ne kadar katı olduğunu hassasiyet ayarıyla siz belirlersiniz. Beş kademesi vardır: <strong>Minimum, Düşük, Dengeli, Yüksek ve Maksimum</strong>. Varsayılan değer Dengeli'dir.</p>
+                        <ul>
+                            <li><strong>Minimum</strong>, yalnızca açık ve yüksek sesli horlamaları yakalar, neredeyse her şeyi görmezden gelir. Gürültülü bir odada veya bir partnerinizin horlaması algılayıcıyı sürekli tetiklediğinde tercih edin.</li>
+                            <li><strong>Maksimum</strong>, çok hafif horlamaları yakalar ama aynı zamanda daha fazla arka plan gürültüsü alır ve daha fazla yanlış tespit kaydeder.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">İpucu</span>
+                            <p>Hangı yönde ayarlayacağınızı zaman çizelgeniz söylesin. Çalındığında hiçbir şey çıkmayan çok fazla rastgele olay mı var? Hassasiyeti düşürün. Kayıtta duyabileceğiniz ama uygulamanın kaçırdığı horlamalar mı var? Yükseltin. Dengeli, çoğu kişi için iyi bir başlangıç noktasıdır.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>Desibeller ve frekans renkleri</h2>
+                        <p>Ses yüksekliği uygulama genelinde dB SPL cinsinden görünür; yaklaşık 28 dB'den (neredeyse sessizlik referansı) son derece yüksek sesler için 105 dB'e kadar uzanan bir ölçekte. Bunu bir ses ölçer gibi okuyun: yüksek sayılar daha yüksek seslere karşılık gelir. Horlamanız için kaba bir kılavuz olarak:</p>
+                        <ul>
+                            <li><strong>Yaklaşık 40 dB altı</strong>: hafif horlama</li>
+                            <li><strong>40 ile 48 dB arası</strong>: orta horlama</li>
+                            <li><strong>48 ile 56 dB arası</strong>: belirgin horlama</li>
+                            <li><strong>56 dB ve üzeri</strong>: ağır horlama</li>
+                        </ul>
+                        <p>Uygulama, her bölüm için hem tepe hem de ortalama desibel seviyelerini takip eder. Bu sayılar kişisel referans içindir, klinik ölçüm değildir.</p>
+                        <p>Uygulama hangi mikrofonun kullanıldığını algılar ve telefonunuz müzik veya podcast gibi sesler çalarken okumaları buna göre ayarlar.</p>
+                        <p>Her ses, frekansların bir karışımıdır; frekans ise havanın ne kadar hızlı titreştiğidir, hertz (Hz) cinsinden ölçülür. Düşük sesler yavaş titreşir; yüksek sesler hızlı titreşir. Çal'a basın ve teli sıkılaşırken görmek ve duymak için sürükleyin:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="Düşük" data-band-mid="Orta" data-band-high="Yüksek"
+                                aria-label="Perdeyi değiştirmek ve daha yüksek bir frekansın nasıl daha hızlı titreştiğini görmek için sürükleyin">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="Perdeyi değiştirmek için sürükleyin">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="Oynat" data-label-stop="Durdur">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">Oynat</span>
+                                </button>
+                                <span class="pitch-hint">Kaydırıcıyı sürükleyin &mdash; daha yüksek perde daha hızlı titreşir</span>
+                            </div>
+                            <figcaption>Bu, aşağıdaki bantların üzerine inşa edildiği ölçeğin aynısıdır: yavaş titreşimler düşük bant, hızlı titreşimler yüksek banttır. Horlama düşükte yaşar; bir nefes verişin hafif vızıltısı yükseğe aittir. Duymak için kulaklık veya hoparlör gerekir.</figcaption>
+                        </figure>
+                        <p>Dalga formunu en fazla yakınlaştırdığınızda çubuklar, her sesin enerjisinin frekanslar arasında nerede durduğunu gösteren yığılmış turuncu tonlara ayrılır:</p>
+                        <ul>
+                            <li><strong>Koyu turuncu</strong>: düşük frekanslar, yaklaşık 50 ila 250 Hz, horlamanın derin uğultusu.</li>
+                            <li><strong>Orta turuncu</strong>: orta frekanslar, yaklaşık 250 ila 1500 Hz, harmonikler ve ünlü sesler.</li>
+                            <li><strong>Parlak turuncu</strong>: yüksek frekanslar, yaklaşık 1500 ila 8000 Hz, "sss" gibi sibilant sesler.</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="Gerçek bir kayıt çalın ve dalga formunda frekans bantlarını izleyin, uygulamanın onları gösterdiği şekliyle">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">Nefes alma</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">Horlama</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="Nefes al" data-exhale="Nefes ver &mdash; yüksek bantta daha fazla enerji" data-idle="Çal'a basın ve her nefesi takip edin"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="Oynat" data-label-stop="Duraklat">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">Oynat</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">Yüksek</span>
+                                    <span class="wave-key" data-band="mid">Orta</span>
+                                    <span class="wave-key" data-band="low">Düşük</span>
+                                </span>
+                            </div>
+                            <figcaption>Gerçek kayıtlar, uygulamanın dalga formunu boyadığı şekilde renklendirilmiştir: her çubuk düşük, orta ve yüksek frekans enerjisine bölünmüştür. Çal'a basın ve çizgiyi takip edin. Nefes almada, ses yumuşak kalırken her nefes verişte parlak yüksek bandın yukarı fırladığını izleyin. Horlamada ise koyu düşük bant baskın olur. Bu yüksek bant ritmindeki boşluk, olası bir <a href="/tr/support/breathing-disruptions">solunum bozulmasına</a> işaret eder.</figcaption>
+                        </figure>
+                        <p>Parlak, yüksek frekanslı bant, nefes alma için en önemli olandır. Her nefes verişte hafif bir vızıltı çıkar, yumuşak bir "sss" gibi, ve bu vızıltı yüksek bantta yer alır. Snore Timeline, gece boyunca nefes almanızı takip etmek için bunu dinler; bu özellik <a href="/tr/support/breathing-disruptions">solunum bozulması tespitini</a> ve <a href="/tr/support/sleep-stages">uyku evresi tahminlerini</a> destekler. Ayrıca telefonun çok uzağa yerleştirilmesinin veya gürültülü bir odanın bu özellikleri neden zayıflattığını açıklar: vızıltı sessizdir ve kaybedilen ilk şeydir.</p>
+                        <p>Frekans detayı yalnızca en fazla yakınlaştırılmış görünümde ortaya çıkar; daha geniş yakınlaştırma seviyelerinde çubuklar düz renk olarak görünür. <a href="/tr/support/timeline-and-playback#reading-the-waveform">Zaman Çizelgesi &amp; Oynatma</a> sayfası, dalga formunu bütün olarak okumayı adım adım anlatır.</p>
+                        <div class="callout callout--tip"><span class="callout-label">Deneyin</span><p>Gecenizin sessiz bir bölümünü en fazla yakınlaştırın ve altında çok az renk olan kısa parlak turuncu patlamalar arayın. Bu, yalnızca ses aracılığıyla görülen nefes almanızdır.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="Tam uygulama ekranı" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Yakınlaştırılmış</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="Horlama bölümünde yığılmış turuncu frekans bantlarıyla yakınlaştırılmış dalga formu" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>En fazla yakınlaştırılmış görünümde frekans renkleri.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>Yüksek Ses Algılama</h2>
+                        <p>Sınıflandırıcı, horlamayı ve uyku konuşmasını kendi başına ele alır. Yüksek Ses Algılama, geri kalan her şey için vardır: sesin ne olduğundan bağımsız olarak, sizin seçtiğiniz bir ses eşiğini aştığında bir bölüm oluşturur. Bu, sınıflandırıcının adlandıramadığı gürültüleri yakalar: konuşma olarak kaydedilmek için çok sessiz fısıltılı uyku konuşması, diş gıcırdatma, hareket ederken çıkardığınız sesler veya tanımlanamayan diğer gece gürültüleri gibi.</p>
+                        <p>Varsayılan eşik <strong>55 dB</strong>'dir. Odanıza uygun bir eşik seçmek için:</p>
+                        <ol>
+                            <li>Bir kayıt başlatın ve sessiz kalın.</li>
+                            <li>Zaman çizelgesinin odanızın temel gürültüsü için gösterdiği dB seviyesini izleyin.</li>
+                            <li>Eşiği o seviyenin biraz üstüne ayarlayın.</li>
+                        </ol>
+                        <p>Daha sessiz bir oda, daha düşük bir eşik kullanmanıza ve daha fazlasını yakalamanıza olanak tanır.</p>
+                        <p>Ayrıca, horlama beklediğiniz bazı seslerin Yüksek Ses kategorisine düştüğünü görebilirsiniz. Bu, arka plan gürültüsünün horlama sınıflandırıcısının dinlediği nefes alma düzenlerini maskelemesi durumunda gerçekleşir; sınıflandırıcının horlamayı tanımlamak için net bir sinyal gerekmektedir ve bir oda temel seviyede yaklaşık 45 dB'nin üzerinde olduğunda daha fazla ses horlama bölümü yerine Yüksek Ses sinyali olarak kaydedilme eğilimindedir. Bir sonraki bölüm bununla ne yapılacağını açıklar.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>Arka plan gürültüsü algılamayı nasıl etkiler</h2>
+                        <p>Klima, fan, trafik, müzik, yağmur veya okyanus sesleri gibi sürekli arka plan gürültüsü ayrıca takip edilir ve zaman çizelgenizde horlama olayları oluşturmaz. Uygulama bunları ayrık horlama değil sürekli ortam gürültüsü olarak tanır; dolayısıyla uğultuyla çalışan bir klima geceyi yanlış horlamalarla doldurmaz.</p>
+                        <p>Sabit gürültünün asıl bedeli maskelemedir. Yüksek bir gürültü tabanı sessiz nefes almayı ve hafif horlamaları bastırır; sınıflandırıcıya daha az sinyal bırakır. İki sonuç ortaya çıkar:</p>
+                        <ul>
+                            <li>Hafif sesler artık hiç algılanamaz hale gelir.</li>
+                            <li>Temel seviyede yaklaşık <strong>45 dB</strong>'nin üzerindeki odalarda, aksi halde horlama olarak sınıflandırılacak sesler Yüksek Ses kategorisine kayar.</li>
+                        </ul>
+                        <p>Daha temiz bir sınıflandırma elde etmek için yapabildiğiniz kadar odayı sessizleştirin. Baş suçlular genellikle fanlar ve beyaz gürültü cihazları, iklimlendirme ve hava temizleyiciler, trafiğe bakan açık pencereler ile açık kalan TV veya seslerdir. Daha sessiz bir oda genel olarak daha doğru algılama sağlar.</p>
+                        <p>Gürültüyü kontrol edemediğinizde, örneğin bir otel odasında, elinizdekileri kullanın:</p>
+                        <ul>
+                            <li><strong>Telefonu başınıza daha yakın yerleştirin</strong>; böylece nefes alma sesleri uğultu içinde duyulabilir kalır. <a href="/tr/support/getting-started#placement">Başlarken</a> sayfası yerleştirmeyi ayrıntılı ele alır.</li>
+                            <li><strong><a href="#confidence">Hassasiyeti</a> artırın</strong>; böylece uygulama arka plan üzerinde daha yumuşak sesleri yine de algılayabilir.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="Tam uygulama ekranı" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Yakınlaştırılmış</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="Tepe ve ortalama desibellerin ve Yüksek Ses Sinyalleri rozetinin gösterildiği tespit edilmiş yüksek ses bölümü" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>45 dB gürültü tabanının üzerinde kaydedilen bir gece.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>İlgili</h2>
+                        <ul>
+                            <li><a href="/tr/support/episodes-and-events">Bölümler &amp; Olaylar</a></li>
+                            <li><a href="/tr/support/timeline-and-playback">Zaman Çizelgenizi Okuma &amp; Sesi Oynatma</a></li>
+                            <li><a href="/tr/support/breathing-disruptions">Solunum Bozulmaları</a></li>
+                            <li><a href="/tr/support/getting-started">Başlarken</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Diğer destek sayfaları"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/tr/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Horlamanızı, nefes almanızı ve uykunuzu kaydedin, görün ve anlayın; hepsi cihazınızda.</p>
+                <p><a href="/tr/support/">Destek</a> &middot; <a href="/tr/privacy">Gizlilik</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Öğrenin</h4>
+                <ul>
+                    <li><a href="/tr/support/getting-started">Başlarken</a></li>
+                    <li><a href="/tr/support/how-detection-works">Algılama Nasıl Çalışır</a></li>
+                    <li><a href="/tr/support/timeline-and-playback">Zaman Çizelgesi &amp; Oynatma</a></li>
+                    <li><a href="/tr/support/breathing-disruptions">Solunum Bozulmaları</a></li>
+                    <li><a href="/tr/support/sleep-stages">Uyku Evreleri</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Daha fazla</h4>
+                <ul>
+                    <li><a href="/tr/support/apple-watch">Apple Watch &amp; Sağlık</a></li>
+                    <li><a href="/tr/support/export-and-sharing">Dışa Aktarma &amp; Paylaşım</a></li>
+                    <li><a href="/tr/support/troubleshooting">Sorun Giderme</a></li>
+                    <li><a href="/tr/support/android">Android</a></li>
+                    <li><a href="/tr/support/faq">SSS</a></li>
+                    <li><a href="/tr/support/#contact">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Tüm hakları saklıdır.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

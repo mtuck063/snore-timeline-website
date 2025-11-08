@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>音声から推定する睡眠ステージ - Snore Timeline サポート</title>
+    <meta name="title" content="音声から推定する睡眠ステージ - Snore Timeline サポート">
+    <meta name="description" content="Snore Timeline が呼吸音から覚醒・浅い睡眠・深い睡眠・REMを推定する仕組み：ハイプノグラム、サイレンスラベル、精度、トラブルシューティング。">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ja/support/sleep-stages">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/ja/support/sleep-stages">
+    <meta property="og:title" content="音声から推定する睡眠ステージ - Snore Timeline サポート">
+    <meta property="og:description" content="Snore Timeline が呼吸音から覚醒・浅い睡眠・深い睡眠・REMを推定する仕組み：ハイプノグラム、サイレンスラベル、精度、トラブルシューティング。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ja/support/sleep-stages">
+    <meta property="twitter:title" content="音声から推定する睡眠ステージ - Snore Timeline サポート">
+    <meta property="twitter:description" content="Snore Timeline が呼吸音から覚醒・浅い睡眠・深い睡眠・REMを推定する仕組み：ハイプノグラム、サイレンスラベル、精度、トラブルシューティング。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "サポート", "item": "https://snoretimeline.com/ja/support/" },
+        { "@type": "ListItem", "position": 2, "name": "睡眠ステージ", "item": "https://snoretimeline.com/ja/support/sleep-stages" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "音声から推定する睡眠ステージ",
+      "description": "Snore Timeline が呼吸音から覚醒・浅い睡眠・深い睡眠・REMを推定する仕組み：ハイプノグラム、サイレンスラベル、精度、トラブルシューティング。",
+      "url": "https://snoretimeline.com/ja/support/sleep-stages",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="sleep-stages" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ja/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline ロゴ">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">サポート</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">アプリを開く
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="パンくずリスト">
+                    <a href="/ja/support/">サポート</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">睡眠ステージ</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">あなたの結果</span>
+                    <h1 class="privacy-title">音声から推定する睡眠ステージ</h1>
+                    <p class="privacy-updated">呼吸音がどのようにしてステージ推定値になるか、その読み方。</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>このページの内容</summary>
+                        <ul>
+                            <li><a href="#how-it-works">ステージ推定の仕組み</a></li>
+                            <li><a href="#stages">4つのステージと呼吸パターンの特徴</a></li>
+                            <li><a href="#silence">サイレンスラベル</a></li>
+                            <li><a href="#breathing-rate">呼吸数と呼吸の規則性</a></li>
+                            <li><a href="#wearables">Apple Watchのデータを使用するか？</a></li>
+                            <li><a href="#hypnogram">ハイプノグラムの読み方</a></li>
+                            <li><a href="#distribution">典型的なステージ分布</a></li>
+                            <li><a href="#accuracy">推定の精度は？</a></li>
+                            <li><a href="#no-stages">ステージが検出されなかった理由</a></li>
+                            <li><a href="#research">研究参考文献</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline は、夜間の各時点でどの睡眠ステージにいたかを推定します。覚醒、浅い睡眠、深い睡眠、REMの4種類に加え、何も聞こえなかった時間帯には「サイレンス」という5番目のラベルを付与します。推定はすでにいびき検出に使用しているマイクで収録した呼吸音のみを根拠としています。このページでは、各ステージの背景にある信号、夜間サマリーのハイプノグラムの読み方、そして推定でわかること・わからないことを説明します。</p>
+
+                    <div class="privacy-section" id="how-it-works">
+                        <h2>ステージ推定の仕組み</h2>
+                        <p>睡眠のステージが変わると呼吸の性質も変わり、その変化は音に現れます。アプリはマイクで収録した呼吸パターンの規則性と変動を分析します。これはいびき検出や<a href="/ja/support/breathing-disruptions">呼吸障害検出</a>と同じ録音データを使うため、ステージ推定のために別途セットアップは不要です。</p>
+                        <p>録音開始からおよそ15分後、アルゴリズムはあなた自身の呼吸ベースライン（典型的な呼吸数と規則性）を確立します。その後は集団平均ではなく、あなた自身のベースラインを基準として夜間の残りを測定し、研究に基づく閾値を適用して各区間をステージに分類します。</p>
+                        <p>呼吸の規則性が最も重要な信号ですが、アルゴリズムは以下も考慮します：</p>
+                        <ul>
+                            <li><strong>呼吸数</strong>：深い睡眠に移行するにつれて遅くなる傾向があります。</li>
+                            <li><strong>いびきのパターン</strong>：夜間に検出されたいびきも同じモデルに入力されます。</li>
+                            <li><strong>時刻</strong>：睡眠構造は予測可能なパターンを描くためです。深い睡眠は夜の前半に集中し、REMは朝方に向けて増加します。</li>
+                            <li><strong>体の動き</strong>：音の大きな変化は体動を示し、浅い睡眠や一時的な覚醒を示唆します。</li>
+                        </ul>
+                        <p>結果はタイムライン上の色付きの帯と、夜間サマリーのハイプノグラムチャートとして表示されます。</p>
+                    </div>
+
+                    <div class="privacy-section" id="stages">
+                        <h2>4つのステージと呼吸パターンの特徴</h2>
+                        <p>各ステージは呼吸に独自の特徴を残します：</p>
+                        <ul>
+                            <li><strong>深い睡眠</strong>：変動が少なく、安定した規則的な呼吸。これは回復睡眠であり、すべてのステージの中で最もメトロノームのような呼吸リズムを生み出します。夜の前半、特に最初の90分から数時間に多く見られます。</li>
+                            <li><strong>REM睡眠</strong>：変動が大きく、不規則な呼吸パターン。REMは夢を見る睡眠です。入眠後およそ40〜50分で始まり、朝方に向けて増加します。夜を途中で切り上げると、他のどのステージよりもREMが失われやすいのはこのためです。</li>
+                            <li><strong>浅い睡眠</strong>：2つの極端の中間程度の呼吸規則性。浅い睡眠は移行段階であり、最も目覚めやすいステージです。</li>
+                            <li><strong>覚醒</strong>：体動、音、または睡眠と一致しない呼吸パターン。他の信号が支持する場合、長い沈黙も一時的な覚醒としてフラグが立てられます。</li>
+                        </ul>
+                        <p>深い睡眠が規則性スケールの一端に、REMがもう一端に位置するため、アプリは呼吸変動が継続して低い場合にのみ深い睡眠と分類し、変動が上昇すると深い睡眠を終了します。並行して動作する<a href="/ja/support/how-detection-works#sound-types">音声分類</a>がいびきと体動のコンテキストを提供します。</p>
+                    </div>
+
+                    <div class="privacy-section" id="silence">
+                        <h2>サイレンスラベル</h2>
+                        <p>音声ベースのステージ分類には正直な限界があります。聞こえるものしか分類できないのです。マイクが呼吸をステージに分解できないほど静かでありながら、覚醒を示す兆候もない場合、アプリは推測する代わりにその区間を<strong>サイレンス</strong>としてマークします。これは静かな呼吸をする人や、扇風機やエアコンが音を遮る場合によく起こります。</p>
+                        <p>サイレンスは休息中の睡眠として扱われます。総睡眠時間に加算され、<a href="/ja/support/sleep-score#score">睡眠スコア</a>の回復部分にもカウントされるため、本当に静かな夜でも良質な睡眠として評価されます。根拠のない推測でデータの信頼性を下げるより、不確実性をラベルとして明示する方が誠実だと考えています。</p>
+                    </div>
+
+                    <div class="privacy-section" id="breathing-rate">
+                        <h2>呼吸数と呼吸の規則性</h2>
+                        <p>ステージモデルには2つの呼吸測定値が入力され、どちらも結果に表示されます：</p>
+                        <ul>
+                            <li><strong>呼吸数</strong>：検出した呼吸間隔から計算した1分あたりの呼吸回数（bpm）で表示されます。成人の睡眠中の典型的な範囲は12〜20 bpmです。アプリは数分ごとに値を記録し、平均値を表示します。検出された睡眠の最初の10〜15分間の中央値を使用してあなた専用のベースラインを設定するため、1つの外れ値が影響しません。生理学的に妥当な範囲（おおよそ6〜25 bpm）内に収められるため、REM中や短時間の覚醒で生じることのある高い呼吸数は許容しつつ、不正なスパイクを除去します。</li>
+                            <li><strong>呼吸の規則性</strong>：呼吸間隔のリズムがどれだけ一定かを、不規則から安定までのスケールで表します。持続的に非常に安定した呼吸は深い睡眠を示し、より不規則な呼吸への移行はREMを示すことがあります。</li>
+                        </ul>
+                        <p>どちらも個人的な洞察のための音声ベースの推定値です。正常範囲を大きく外れた呼吸数は、自己診断するのではなく医師に相談することをお勧めします。</p>
+                    </div>
+
+                    <div class="privacy-section" id="wearables">
+                        <h2>Apple Watchのデータを使用するか？</h2>
+                        <p>利用可能な場合は使用します。Apple Watchなどのウェアラブルがその夜の睡眠ステージデータを報告している場合、Snore Timeline は音声ベースの推定ではなく、ウォッチの深い睡眠とREMのパーセンテージを睡眠スコアに使用します。ウェアラブルは音声分析よりもこれらのステージをより正確に測定できるため、アプリはそちらを優先します。ウェアラブルが接続されていない場合は、呼吸と体動ベースの推定にフォールバックします。ウォッチが提供する情報の詳細は<a href="/ja/support/apple-watch#biometrics">Apple Watch</a>ページをご覧ください。</p>
+                    </div>
+
+                    <div class="privacy-section" id="hypnogram">
+                        <h2>ハイプノグラムの読み方</h2>
+                    <figure class="support-diagram" aria-label="図：覚醒、REM、浅い睡眠、深い睡眠、サイレンスの間を夜間にわたってステップするハイプノグラム">
+                        <svg viewBox="0 0 600 240" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="120" y1="44" x2="580" y2="44"/>
+<text class="dgm-label" x="14" y="48" style="fill:#EC9A4D">覚醒</text>
+<line class="dgm-grid" x1="120" y1="80" x2="580" y2="80"/>
+<text class="dgm-label" x="14" y="84" style="fill:#E59ABF">REM</text>
+<line class="dgm-grid" x1="120" y1="116" x2="580" y2="116"/>
+<text class="dgm-label" x="14" y="120" style="fill:#4FB8C9">浅い</text>
+<line class="dgm-grid" x1="120" y1="152" x2="580" y2="152"/>
+<text class="dgm-label" x="14" y="156" style="fill:#8B8CEC">深い</text>
+<line class="dgm-grid" x1="120" y1="188" x2="580" y2="188"/>
+<text class="dgm-label" x="14" y="192" style="fill:#6FBF9C">サイレンス</text>
+<line class="dgm-grid" x1="152" y1="44" x2="152" y2="116"/>
+<line class="dgm-grid" x1="212" y1="116" x2="212" y2="152"/>
+<line class="dgm-grid" x1="292" y1="152" x2="292" y2="116"/>
+<line class="dgm-grid" x1="330" y1="116" x2="330" y2="80"/>
+<line class="dgm-grid" x1="372" y1="80" x2="372" y2="188"/>
+<line class="dgm-grid" x1="410" y1="188" x2="410" y2="116"/>
+<line class="dgm-grid" x1="462" y1="116" x2="462" y2="152"/>
+<line class="dgm-grid" x1="512" y1="152" x2="512" y2="80"/>
+<line class="dgm-grid" x1="560" y1="80" x2="560" y2="44"/>
+<line x1="120" y1="44" x2="152" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<line x1="152" y1="116" x2="212" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="212" y1="152" x2="292" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="292" y1="116" x2="330" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="330" y1="80" x2="372" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="372" y1="188" x2="410" y2="188" stroke="#6FBF9C" stroke-width="5" stroke-linecap="round"/>
+<line x1="410" y1="116" x2="462" y2="116" stroke="#4FB8C9" stroke-width="5" stroke-linecap="round"/>
+<line x1="462" y1="152" x2="512" y2="152" stroke="#8B8CEC" stroke-width="5" stroke-linecap="round"/>
+<line x1="512" y1="80" x2="560" y2="80" stroke="#E59ABF" stroke-width="5" stroke-linecap="round"/>
+<line x1="560" y1="44" x2="580" y2="44" stroke="#EC9A4D" stroke-width="5" stroke-linecap="round"/>
+<text class="dgm-label-sm" x="120" y="216">午後11時</text>
+<text class="dgm-label-sm" x="580" y="216" text-anchor="end">午前6時</text>
+<text class="dgm-label" x="350" y="232" text-anchor="middle">各ブロックは約5分</text>
+</svg>
+                        <figcaption>ハイプノグラムは夜間にわたってステージ間をステップします。各色のブロックは約5分を表し、色はタイムラインの帯と対応しています。</figcaption>
+                    </figure>
+                        <p>夜間サマリーのハイプノグラムは、夜間を通じたステージの推移をグラフで示します。各色の帯は特定のステージでの5分間を表します：</p>
+                        <ul>
+                            <li><strong>オレンジ</strong>：覚醒期間</li>
+                            <li><strong>シアン（水色）</strong>：浅い睡眠</li>
+                            <li><strong>インディゴ（濃い青）</strong>：深い睡眠</li>
+                            <li><strong>ピンク／シアン</strong>：REM睡眠</li>
+                            <li><strong>ミント（薄緑）</strong>：サイレンス（発生した夜のみ表示）</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram-full.png" alt="睡眠ステージのハイプノグラムが表示された夜間サマリー" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3.3%;top:53.8%;width:93.6%;height:26.4%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 拡大表示</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-hypnogram.webp" type="image/webp">
+                                    <img src="/support/img/shot-hypnogram.png" alt="夜間を通じた覚醒・REM・浅い睡眠・深い睡眠・サイレンスとステージ割合を示すハイプノグラム" loading="lazy" width="1000" height="567">
+                                </picture>
+                                <figcaption>ハイプノグラムは夜間のステージを5分単位の帯でグラフ化します。</figcaption>
+                            </div>
+                        </figure>
+                        <p>左から右へ読むと、完全な睡眠サイクルをいくつ経たか、最も深い睡眠を得た時間帯、REMが現れた時刻を確認できます。ステージの帯は<a href="/ja/support/timeline-and-playback#reading-the-waveform">タイムライン</a>の波形の背後にも表示されるため、いびきのエピソードが特定のステージと重なっているかどうか確認できます。</p>
+                    </div>
+
+                    <div class="privacy-section" id="distribution">
+                        <h2>典型的なステージ分布</h2>
+                        <p>夜間サマリーには各ステージで過ごした時間の割合も表示されます。典型的な夜は次のようになります：</p>
+                        <ul>
+                            <li>浅い睡眠 45%</li>
+                            <li>深い睡眠 20%</li>
+                            <li>REM睡眠 27%</li>
+                            <li>覚醒 8%</li>
+                        </ul>
+                        <p>これらの割合は年齢、健康状態、ストレスレベルなどさまざまな要因によって変わります。教科書の数値と比べるより、自分の夜を互いに比較することが大切です。スコアリングにあたり、アプリは深い睡眠をおおよそ13〜23%を健康的な目標として使用し、20%以上でスコアへの加点が得られます。REMの目標はおよそ20〜25%です。これらの範囲に入ると<a href="/ja/support/sleep-score#sleep-factors">睡眠スコア</a>にポイントが加算されます。あくまで一般的なガイドラインであり、医学的評価ではありません。</p>
+                    </div>
+
+                    <div class="privacy-section" id="accuracy">
+                        <h2>推定の精度は？</h2>
+                        <p>分類は、呼吸の規則性と睡眠ステージの関係に関する公開研究を根拠としています。呼吸や心拍変動などの単一の生理的信号から睡眠をステージ分けする研究では、臨床的な睡眠検査の標準である終夜睡眠ポリグラフ検査（ポリソムノグラフィー）との一致率がおおよそ70%に達します。この推定値は、全体的な睡眠構造の把握と、さらに価値のある時間的な傾向の把握に役立ちます。</p>
+                        <p>精度を上下させる要因がいくつかあります。長い録音が有利です。数時間の睡眠があると、アプリはより完全な睡眠サイクルを観察できます。騒がしい環境、同床のパートナー、ペット、またはマイクから遠い位置で寝ることはいずれも呼吸の検出精度を下げ、推定値も低下します。</p>
+                        <div class="callout callout--medical">
+                            <span class="callout-label">医療に関するご注意</span>
+                            <p>これらは音声分析による推定値であり、臨床的な測定値ではありません。臨床的な睡眠ステージ判定には脳波、眼球運動、筋活動が必要であり、音声では取得できない信号です。Snore Timeline は終夜睡眠ポリグラフ検査での検証を受けておらず、睡眠時無呼吸症候群やその他の睡眠障害を診断することはできません。ステージの内訳は一般的な目安として捉え、睡眠に不安がある場合は医療専門家にご相談ください。</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="no-stages">
+                        <h2>ステージが検出されなかった理由</h2>
+                        <p>ステージ推定には録音全体を通じて聞こえる呼吸が必要です。夜間にステージが表示されない場合、通常は以下のいずれかが原因です：</p>
+                        <ul>
+                            <li><strong>呼吸が静かすぎる。</strong>呼吸がマイクで分析できるレベルに達していない可能性があります。</li>
+                            <li><strong>スマートフォンが遠すぎる。</strong>呼吸音は距離が離れると急速に小さくなります。頭から30〜60センチ程度が適切です。</li>
+                            <li><strong>背景ノイズ。</strong>扇風機、エアコン、その他の一定した音がアプリの聴く呼吸音を遮ることがあります。</li>
+                            <li><strong>録音時間が短すぎる。</strong>アルゴリズムが分類を開始する前に、ベースラインを確立するためにおよそ15分が必要です。</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">ヒント</span>
+                            <p>毎晩同じ<a href="/ja/support/getting-started#placement">スマートフォンの配置</a>を使い、できる限り部屋を静かにして、一晩中録音してください。6時間以上の録音があると、アルゴリズムがより完全なサイクルを処理でき、一定の配置を保つことで夜間の比較がしやすくなります。</p>
+                        </div>
+                        <p>ステージだけでなくタイムライン全体が空だった場合は、<a href="/ja/support/troubleshooting#blank-timeline">トラブルシューティング</a>をご覧ください。</p>
+                    </div>
+
+                    <div class="privacy-section" id="research">
+                        <h2>研究参考文献</h2>
+                        <p>睡眠ステージ分類アルゴリズムは以下の研究を参考にしています：</p>
+                        <ul class="research-references">
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/" target="_blank" rel="noopener noreferrer">Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages</a>（Schumann et al., 2010）。呼吸スケーリング指数が睡眠ステージ間で測定可能なほど異なることを実証しています。深い睡眠は最も規則的な呼吸を示し、REMはより変動が大きく不規則な呼吸を生みます。これらの特徴が各ステージの分類に使用する規則性閾値の根拠となっています。</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/" target="_blank" rel="noopener noreferrer">Using Spectral Continuity to Extract Breathing Rate from Heart Rate and Its Applications in Sleep Physiology</a>（Orphanides et al., 2024）。深い睡眠（N3）がすべてのステージの中で最も安定した予測可能な呼吸をもつことを確認しています。この知見は、深い睡眠の分類に呼吸変動の継続的な低さを要求し、変動が増加したときに深い睡眠を終了させる根拠として使用されています。</li>
+                            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/" target="_blank" rel="noopener noreferrer">Sleep Stage Classification from Heart-Rate Variability</a>。単一の生理的信号から睡眠をステージ分けする際に終夜睡眠ポリグラフ検査とおおよそ70%一致することを報告しており、ここで使用する呼吸規則性アプローチと同等の結果です。</li>
+                        </ul>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>関連ページ</h2>
+                        <ul>
+                            <li><a href="/ja/support/sleep-score">睡眠スコアの説明</a></li>
+                            <li><a href="/ja/support/apple-watch">Apple Watch とウェアラブル</a></li>
+                            <li><a href="/ja/support/breathing-disruptions">呼吸障害検出</a></li>
+                            <li><a href="/ja/support/deeper-sleep-data">ガイド：より詳細な睡眠データを取得する</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="その他のサポートページ"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ja/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>いびき、呼吸、睡眠を録音・可視化・理解する。すべてあなたのデバイスで。</p>
+                <p><a href="/ja/support/">サポート</a> &middot; <a href="/ja/privacy">プライバシー</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>使い方を学ぶ</h4>
+                <ul>
+                    <li><a href="/ja/support/getting-started">はじめに</a></li>
+                    <li><a href="/ja/support/how-detection-works">検出の仕組み</a></li>
+                    <li><a href="/ja/support/timeline-and-playback">タイムラインと再生</a></li>
+                    <li><a href="/ja/support/breathing-disruptions">呼吸障害</a></li>
+                    <li><a href="/ja/support/sleep-stages">睡眠ステージ</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>その他</h4>
+                <ul>
+                    <li><a href="/ja/support/apple-watch">Apple Watch とヘルスケア</a></li>
+                    <li><a href="/ja/support/export-and-sharing">エクスポートと共有</a></li>
+                    <li><a href="/ja/support/troubleshooting">トラブルシューティング</a></li>
+                    <li><a href="/ja/support/android">Android</a></li>
+                    <li><a href="/ja/support/faq">よくある質問</a></li>
+                    <li><a href="/ja/support/#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

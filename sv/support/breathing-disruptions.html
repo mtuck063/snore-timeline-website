@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Andningsavbrott - Snore Timeline Support</title>
+    <meta name="title" content="Andningsavbrott - Snore Timeline Support">
+    <meta name="description" content="Hur Snore Timeline identifierar andningspauser från ljud: de tre detektionsvillkoren, tidslinjemarkörerna och värden per timme. Ingen medicinsk diagnos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/sv/support/breathing-disruptions">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/sv/support/breathing-disruptions">
+    <meta property="og:title" content="Andningsavbrott - Snore Timeline Support">
+    <meta property="og:description" content="Hur Snore Timeline identifierar andningspauser från ljud: de tre detektionsvillkoren, tidslinjemarkörerna och värden per timme. Ingen medicinsk diagnos.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/sv/support/breathing-disruptions">
+    <meta property="twitter:title" content="Andningsavbrott - Snore Timeline Support">
+    <meta property="twitter:description" content="Hur Snore Timeline identifierar andningspauser från ljud: de tre detektionsvillkoren, tidslinjemarkörerna och värden per timme. Ingen medicinsk diagnos.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Support", "item": "https://snoretimeline.com/sv/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Andningsavbrott", "item": "https://snoretimeline.com/sv/support/breathing-disruptions" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Detektering av andningsavbrott i Snore Timeline",
+      "description": "Hur Snore Timeline identifierar andningspauser från ljud: de tre detektionsvillkoren, tidslinjemarkörerna och värden per timme. Ingen medicinsk diagnos.",
+      "url": "https://snoretimeline.com/sv/support/breathing-disruptions",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="breathing-disruptions" data-group="results">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/sv/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline-logotyp">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Support</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">Öppna appen
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Brödsmulor">
+                    <a href="/sv/support/">Support</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Andningsavbrott</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Dina resultat</span>
+                    <h1 class="privacy-title">Detektering av andningsavbrott</h1>
+                    <p class="privacy-updated">Vad appen lyssnar efter, vad de gråblå markörerna betyder och hur du tolkar siffrorna.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>På den här sidan</summary>
+                        <ul>
+                            <li><a href="#what-is-a-disruption">Vad är ett andningsavbrott?</a></li>
+                            <li><a href="#detection-conditions">De tre detektionsvillkoren</a></li>
+                            <li><a href="#timeline-markers">Markörer på din tidslinje</a></li>
+                            <li><a href="#metrics">Värdena i din sammanfattning</a></li>
+                            <li><a href="#gasps">Hickor jämfört med andningsavbrott</a></li>
+                            <li><a href="#cpap">CPAP-nätter och tysta andare</a></li>
+                            <li><a href="#medical-disclaimer">Medicinskt ansvarsfriskrivande</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline lyssnar efter pauser i din andning via telefonens mikrofon. När appen hör jämn andning övergå i utdragen tystnad och sedan brytas av ett återhämtningsljud loggas ett andningsavbrott. Den här sidan förklarar de exakta villkoren bakom varje markering, hur avbrott visas på din tidslinje och sammanfattning, samt var akustisk detektering når sina gränser.</p>
+
+                    <div class="privacy-section" id="what-is-a-disruption">
+                        <h2>Vad är ett andningsavbrott?</h2>
+                        <p>Ett andningsavbrott är ett specifikt akustiskt mönster: hörbar andning följt av utdragen tystnad följt av ett återhämtningsljud. Mönstret kan tyda på en andningspaus under sömnen, vilket är anledningen till att appen visar det som en egen händelsetyp i stället för att blanda ihop det med snarkning.</p>
+                        <p>Varje avbrott loggas med tidsstämpel, hur länge tystnaden varade och hur kraftigt återhämtningsandetaget var. Appen betygsätter även varje händelse efter tystnadens längd: under 12 sekunder räknas som mild, 12 till 20 sekunder som måttlig och över 20 sekunder som allvarlig. Din nattliga sammanfattning lyfter fram nattens längsta paus med ett eget allvarlighetsbetyg, så att ett enstaka långt avbrott syns tydligt även på en natt med få avbrott totalt.</p>
+                    </div>
+
+                    <div class="privacy-section" id="detection-conditions">
+                        <h2>De tre detektionsvillkoren</h2>
+                    <figure class="support-diagram" aria-label="Diagram: andning, sedan en tyst paus, sedan ett kraftigare återhämtningsandetag">
+                        <svg viewBox="0 0 600 200" role="img" xmlns="http://www.w3.org/2000/svg">
+<line class="dgm-grid" x1="20" y1="120" x2="580" y2="120"/>
+<path class="dgm-accent" stroke-width="2" stroke-linecap="round" d="M30 120 Q45 104 60 120 T90 120 T120 120 T150 120 T180 120 T206 120"/>
+<path class="dgm-accent" stroke-width="2" stroke-linecap="round" d="M206 120 L398 120"/>
+<path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M398 120 L430 46 L452 120 Q467 110 482 120 T512 120 T542 120 T570 120"/>
+<line class="dgm-grid" x1="206" y1="40" x2="206" y2="148" stroke-dasharray="4 4"/>
+<line class="dgm-grid" x1="398" y1="40" x2="398" y2="148" stroke-dasharray="4 4"/>
+<path class="dgm-ctx" d="M446 120 L462 120 M446 46 L462 46 M454 120 L454 46"/>
+<text class="dgm-label-strong" x="470" y="87">+15 dB</text>
+<text class="dgm-label" x="34" y="172">1 · Hörbar andning</text>
+<text class="dgm-label-sm" x="34" y="186">minst 1 minut</text>
+<text class="dgm-label" x="246" y="172">2 · Tystnad</text>
+<text class="dgm-label-sm" x="246" y="186">10 sekunder eller mer</text>
+<text class="dgm-label" x="420" y="172">3 · Återhämtningsandetag</text>
+<text class="dgm-label-sm" x="420" y="186">starkare än tystnaden</text>
+</svg>
+                        <figcaption>Ett avbrott kräver alla tre i ordning: en minut hörbar andning, sedan 10 sekunder eller mer av tystnad, sedan ett återhämtningsljud som är minst 15 dB starkare än tystnaden.</figcaption>
+                    </figure>
+                        <p>Appen markerar ett avbrott endast när tre villkor uppfylls i följd:</p>
+                        <ol>
+                            <li><strong>Baslinjeandning.</strong> Appen måste registrera hörbar andning i minst en minut innan den tysta perioden. Den kontrollerar tolv 5-sekunders-fönster och kräver andning i minst 11 av dem. Den här baslinjen bekräftar att din andning var tillräckligt hörbar, så att tystnaden som följer faktiskt betyder något. Utan den skulle en lugn stund från någon vars andning aldrig registrerades se identisk ut med en riktig paus.</li>
+                            <li><strong>Utdragen tystnad.</strong> En period av fullständig tystnad som varar 10 sekunder eller mer. Kortare glapp kvalificerar aldrig, vilket filtrerar bort de normala pauserna mellan andetag.</li>
+                            <li><strong>Återhämtningsljud.</strong> Tystnaden måste brytas av ett återhämtningsljud, till exempel en hicka, ett fnysande eller ett plötsligt kraftigt andetag, som mäter minst 15 dB starkare än genomsnittsnivån under den tysta perioden. Återhämtningen bekräftar att andningen återupptas med kraft i stället för att tona ut ur mikrofonens räckvidd.</li>
+                        </ol>
+                        <svg viewBox="0 0 680 180" role="img" aria-labelledby="disruption-diagram-title" style="width:100%; height:auto; display:block; margin:var(--spacing-md) 0; background:var(--color-bg-light); border:1px solid var(--color-border); border-radius:var(--radius-md);">
+                            <title id="disruption-diagram-title">Diagram över trekonditionssekvensen: regelbundna andningsvågor, sedan en plan tystnad på tio sekunder eller mer, sedan en hög återhämtningssignal.</title>
+                            <line x1="30" y1="110" x2="650" y2="110" stroke="var(--color-border)" stroke-width="2"/>
+                            <!-- Phase 1: baseline breathing -->
+                            <path d="M 40 110 Q 52 80 64 110 Q 76 80 88 110 Q 100 80 112 110 Q 124 80 136 110 Q 148 80 160 110 Q 172 80 184 110 Q 196 80 208 110 Q 220 80 232 110" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round"/>
+                            <!-- Phase 2: silence -->
+                            <line x1="232" y1="110" x2="440" y2="110" stroke="var(--color-text-secondary)" stroke-width="3" stroke-dasharray="6 6"/>
+                            <!-- Phase 3: recovery spike -->
+                            <path d="M 440 110 L 458 30 L 476 110 Q 488 90 500 110 Q 512 88 524 110 Q 536 86 548 110" fill="none" stroke="var(--color-secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Labels -->
+                            <text x="136" y="145" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="600">1. Andning</text>
+                            <text x="136" y="164" text-anchor="middle" fill="var(--color-text-secondary)" font-size="12">&#8805; 1 min hörbar</text>
+                            <text x="336" y="145" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="600">2. Tystnad</text>
+                            <text x="336" y="164" text-anchor="middle" fill="var(--color-text-secondary)" font-size="12">&#8805; 10 sekunder</text>
+                            <text x="494" y="145" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="600">3. Återhämtning</text>
+                            <text x="494" y="164" text-anchor="middle" fill="var(--color-text-secondary)" font-size="12">&#8805; 15 dB över tystnaden</text>
+                        </svg>
+                        <p>Striktheten är poängen. Varje villkor utesluter en annan typ av falskt larm: baslinjen utesluter ohörbara andare, 10-sekunders-golvet utesluter vanliga glapp och återhämtningskravet utesluter tystnad som beror på att man rullar bort från telefonen. Kompromissen lutar åt ett håll: när appen missar rätt, missar den händelser snarare än att hitta på dem. <a href="#cpap">Avsnittet om tysta andare</a> förklarar vad det innebär för dina räkningar och <a href="/sv/support/how-detection-works#decibels">Hur detektering fungerar</a> förklarar decibelvärdena bakom villkor tre.</p>
+                    </div>
+
+                    <div class="privacy-section" id="timeline-markers">
+                        <h2>Markörer på din tidslinje</h2>
+                        <p>Andningsavbrott visas som diskreta gråblå markörer på din tidslinje. Den dämpade färgen gör dem synliga utan att konkurrera med snarkningsepisoderna, så att du kan överblicka hela natten och snabbt se om de klustrar sig. Avbrott som hopar sig i ett visst tidsintervall berättar en annan historia än samma antal jämnt fördelade över natten.</p>
+                        <p>Du kan också trycka på ett andningsavbrott i din nattliga sammanfattning för att hoppa direkt till det ögonblicket på tidslinjen och <a href="/sv/support/timeline-and-playback#playback">lyssna på inspelningen</a>. Att höra tystnaden brytas av en hicka ger mer insikt än att bara läsa en siffra, och ljudet är det som gör informationen värd att dela med en läkare.</p>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-breathing-markers.webp" type="image/webp">
+                                    <img src="/support/img/shot-breathing-markers.png" alt="Skärm med andningsavbrott" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:22.7%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Inzoomat</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-breathing-wave.webp" type="image/webp">
+                                    <img src="/support/img/shot-breathing-wave.png" alt="Inzoomad vågform med den gråblå förklaringen Andningsavbrottssignal" loading="lazy" width="900" height="442">
+                                </picture>
+                                <figcaption>Gråblå markörer visar var appen detekterade andningsavbrott.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="metrics">
+                        <h2>Värdena i din sammanfattning</h2>
+                        <p><strong>Avbrott per timme</strong> är det primära måttet. Appen delar dina detekterade avbrott med dina sömntimmar och betygsätter resultatet: färre än 1 per timme är Minimalt, 1 till 3 är Mildt, 3 till 5 är Märkbart och mer än 5 är Betydande. Varje nivå kommer med ett kort sammanfattningsmeddelande och en färgindikator. Eftersom akustisk detektering bara fångar hörbara händelser kan även låga siffror förtjäna uppmärksamhet, och en högre frekvens kan vara värd att ta upp med en vårdgivare. Frekvensen är inte ett medicinskt mått.</p>
+                        <p><strong>Återhämtningsandetagens styrka</strong> visas som ett decibelvärde, till exempel +16 dB, vilket betyder att återhämtningsljudet mättes 16 decibel starkare än tystnaden omedelbart före det. Ett högre värde innebär ett kraftigare återhämtningsandetag, vilket kan tyda på att kroppen behövde anstränga sig mer för att återställa luftflödet. Din sammanfattning visar nattens högsta återhämtningsstyrka.</p>
+                        <p><strong>Nattbedömningen</strong> kräver minst 2 timmars sömn för att beräknas. Om din inspelning var kortare än så, eller om appen inte fångade tillräckligt med hörbar andning att arbeta med, visas inte bedömningen för den natten. En hel natt med telefonen nära till hands ger den de data den behöver.</p>
+                        <p>Din sammanfattning kan också visa:</p>
+                        <ul>
+                            <li><strong>Genomsnittlig andningsfrekvens</strong> i andetag per minut, med det normala vuxenintervallet 12 till 20 som referens</li>
+                            <li><strong>Genomsnittlig snarkningsintensitet</strong> i decibel</li>
+                            <li><strong>Längsta paus</strong> under natten med dess allvarlighetsbetyg</li>
+                            <li><strong>Hickor</strong> som totalt antal och frekvens per timme</li>
+                            <li><strong>Syremättnad i blodet</strong>, om du parar ihop en <a href="/sv/support/apple-watch#biometrics">Apple Watch</a> som registrerar det: andelen av natten med under 95 % mättnad och ditt lägsta värde</li>
+                        </ul>
+                        <p>Andningsavbrott bidrar också till ditt <a href="/sv/support/sleep-score#sleep-factors">sömnpoäng</a>. Detekterad snarkning och avbrott hör till de faktorer som kan sänka det, tillsammans med sömnduration, djupsömn och REM-sömn, sömneffektivitet och uppvaknanden. Andningsavsnittet ger dig den detaljerade vyn av avbrottsaktiviteten; poängen speglar den övergripande sömnkvaliteten. Avbrottsräkningar visas också i din <a href="/sv/support/sleep-score#weekly-trends">Veckosammanfattning</a> och i faktorkortens jämförelser, och knappen "Hur fungerar det här?" i appens andningsavsnitt öppnar en fullständig förklaring av detektering och dess begränsningar.</p>
+                    </div>
+
+                    <div class="privacy-section" id="gasps">
+                        <h2>Hickor jämfört med andningsavbrott</h2>
+                        <p>Appen spårar hickor separat från andningsavbrott, och skillnaden är viktig. En hicka är ett enstaka ljud: ett plötsligt, kraftfullt inandningsljud som kan följa en paus och kan tyda på att kroppen kämpar för att återställa luftflödet. Ett andningsavbrott är det fullständiga trefasmönstret av baslinjeandning, ett tyst glapp på 10 sekunder eller mer och ett återhämtningsljud. En hicka kan förekomma utan mönstret runt sig, så de två räkningarna skiljer sig åt. Hickor redovisas som totalt antal och frekvens per timme; avbrott redovisas som avbrott per timme. De visas som separata poster i din nattliga sammanfattning, och <a href="/sv/support/episodes-and-events#event-types">Episoder och händelser</a> behandlar hickor tillsammans med de övriga händelsetyperna.</p>
+                    </div>
+
+                    <div class="privacy-section" id="cpap">
+                        <h2>CPAP-nätter och tysta andare</h2>
+                        <p>Detektering fungerar helt genom att lyssna, så den är beroende av att höra både din andning och återhämtningsljudet. Tyst andning, tyst CPAP-utrustning eller en telefon placerad för långt bort kan göra detekteringen mindre tillförlitlig, och tysta avbrott kan gå oregistrerade. Kom ihåg det första villkoret: appen behöver en hel minut med konsekvent hörbar andning innan den börjar bevaka pauser. Om din andning knappt är hörbar hela natten bildas aldrig baslinjen och appen underskatta eller missar händelser.</p>
+                        <p>Räkna med att antalet underskattar det verkliga antalet händelser. Akustisk detektering missar:</p>
+                        <ul>
+                            <li>Tysta avbrott som mikrofonen aldrig fångar upp</li>
+                            <li>Händelser där inget andningsförsök sker, eftersom det inte finns något ljud att höra</li>
+                            <li>Händelser som slutar utan ett hörbart återhämtningsljud</li>
+                            <li>Allt som maskeras av bakgrundsljud som fläktar, vitbrusmaskiner eller ventilationssystem</li>
+                        </ul>
+                        <p>Betrakta antalet som en försiktig uppskattning snarare än ett fullständigt register, och använd det för att följa trender natt för natt. En stigande eller sjunkande frekvens över veckor är mer meningsfull än en enskild natts totalsumma.</p>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Tips</span>
+                            <p>För bästa möjliga detektering, håll telefonen ungefär 30 till 60 cm bort och se till att rummet är tyst. <a href="/sv/support/getting-started#placement">Placeringsguiden</a> förklarar inställningen i detalj.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="medical-disclaimer">
+                        <h2>Medicinskt ansvarsfriskrivande</h2>
+                        <div class="callout callout--medical">
+                            <span class="callout-label">Medicinskt ansvarsfriskrivande</span>
+                            <p><strong>Det här är enbart ljudanalys, inte en medicinsk enhet.</strong> Snore Timeline kan inte diagnostisera sömnapné eller något annat medicinskt tillstånd. Appen mäter ljudmönster, inte syremättnad i blodet, luftflöde, brörörelser eller hjärnaktivitet, som är centrala faktorer i en professionell sömnbedömning. Om du märker täta andningsavbrott, eller om du upplever sömnighet på dagen, morgonhuvudvärk eller om en partner berättar om pauser i din andning, bör du diskutera resultaten med en vårdgivare.</p>
+                        </div>
+                        <p>Resultaten fungerar bra som underlag för ett samtal. <a href="/sv/support/doctor-ready-data">Guiden Läkarklart underlag</a> visar hur du omvandlar dina inspelningar till något en läkare kan använda, och <a href="/sv/support/export-and-sharing#doctor">Export och delning</a> förklarar rapporten och ljudfilerna du kan ta med till ett läkarbesök. Allt stannar på din enhet tills du väljer att dela det; se <a href="/sv/privacy">Integritetspolicyn</a>.</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Relaterat</h2>
+                        <ul>
+                            <li><a href="/sv/support/doctor-ready-data">Guide: Läkarklart underlag</a></li>
+                            <li><a href="/sv/support/how-detection-works">Hur ljuddetektering fungerar</a></li>
+                            <li><a href="/sv/support/episodes-and-events">Episoder och händelser</a></li>
+                            <li><a href="/sv/support/sleep-score">Sömnpoäng</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Fler supportsidor"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/sv/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Spela in, se och förstå din snarkning, andning och sömn, allt på din enhet.</p>
+                <p><a href="/sv/support/">Support</a> &middot; <a href="/sv/privacy">Integritetspolicy</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Lär dig mer</h4>
+                <ul>
+                    <li><a href="/sv/support/getting-started">Kom igång</a></li>
+                    <li><a href="/sv/support/how-detection-works">Hur detektering fungerar</a></li>
+                    <li><a href="/sv/support/timeline-and-playback">Tidslinje och uppspelning</a></li>
+                    <li><a href="/sv/support/breathing-disruptions">Andningsavbrott</a></li>
+                    <li><a href="/sv/support/sleep-stages">Sömnfaser</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Mer</h4>
+                <ul>
+                    <li><a href="/sv/support/apple-watch">Apple Watch och hälsa</a></li>
+                    <li><a href="/sv/support/export-and-sharing">Export och delning</a></li>
+                    <li><a href="/sv/support/troubleshooting">Felsökning</a></li>
+                    <li><a href="/sv/support/android">Android</a></li>
+                    <li><a href="/sv/support/faq">Vanliga frågor</a></li>
+                    <li><a href="/sv/support/#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Alla rättigheter förbehållna.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English (default) -->
+  <url>
+    <loc>https://snoretimeline.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://snoretimeline.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://snoretimeline.com/fil/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/"/>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://snoretimeline.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://snoretimeline.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://snoretimeline.com/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://snoretimeline.com/fil/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/privacy"/>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://snoretimeline.com/support/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://snoretimeline.com/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+
+  <!-- Translated support centers (da de es fr ja ko zh) -->
+  <url><loc>https://snoretimeline.com/da/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/da/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/de/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/es/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fr/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ja/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ko/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/getting-started</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/how-detection-works</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/timeline-and-playback</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/episodes-and-events</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/breathing-disruptions</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/sleep-stages</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/sleep-score</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/apple-watch</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/export-and-sharing</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/storage-and-quality</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/siri-and-shortcuts</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/troubleshooting</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/faq</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/android</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/first-week</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/doctor-ready-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/test-a-remedy</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/deeper-sleep-data</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh/support/record-a-partner</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Translated support centers (nl no pl ru sv th tr) -->
+  <url><loc>https://snoretimeline.com/nl/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/nl/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/no/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pl/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ru/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/sv/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/th/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/tr/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Translated language home pages -->
+  <url><loc>https://snoretimeline.com/fr/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/es/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/zh/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/de/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/tr/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/nl/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/ja/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/ru/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/pl/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/sv/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/da/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/no/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/ko/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://snoretimeline.com/th/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- ar -->
+  <url><loc>https://snoretimeline.com/ar/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ar/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- fil -->
+  <url><loc>https://snoretimeline.com/fil/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/fil/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- hi -->
+  <url><loc>https://snoretimeline.com/hi/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/hi/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- id -->
+  <url><loc>https://snoretimeline.com/id/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/id/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- it -->
+  <url><loc>https://snoretimeline.com/it/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/it/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- ms -->
+  <url><loc>https://snoretimeline.com/ms/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/ms/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- pt -->
+  <url><loc>https://snoretimeline.com/pt/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/pt/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- zh-Hant -->
+  <url><loc>https://snoretimeline.com/zh-Hant/support/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/getting-started</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/how-detection-works</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/timeline-and-playback</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/episodes-and-events</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/breathing-disruptions</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/sleep-stages</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/sleep-score</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/apple-watch</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/export-and-sharing</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/storage-and-quality</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/siri-and-shortcuts</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/troubleshooting</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/faq</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/android</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/first-week</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/doctor-ready-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/test-a-remedy</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/deeper-sleep-data</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/support/record-a-partner</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://snoretimeline.com/zh-Hant/</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+</urlset>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>How Sound Detection Works - Snore Timeline Support</title>
+    <meta name="title" content="How Sound Detection Works - Snore Timeline Support">
+    <meta name="description" content="Learn how Snore Timeline classifies sleep sounds: real-time on-device analysis, decibel levels, frequency colors, and noise tips.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/support/how-detection-works">
+    <meta property="og:title" content="How Sound Detection Works - Snore Timeline Support">
+    <meta property="og:description" content="Learn how Snore Timeline classifies sleep sounds: real-time on-device analysis, decibel levels, frequency colors, and noise tips.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/support/how-detection-works">
+    <meta property="twitter:title" content="How Sound Detection Works - Snore Timeline Support">
+    <meta property="twitter:description" content="Learn how Snore Timeline classifies sleep sounds: real-time on-device analysis, decibel levels, frequency colors, and noise tips.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Support", "item": "https://snoretimeline.com/support/" },
+        { "@type": "ListItem", "position": 2, "name": "How Detection Works", "item": "https://snoretimeline.com/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "How Sound Detection Works in Snore Timeline",
+      "description": "Learn how Snore Timeline classifies sleep sounds: real-time on-device analysis, decibel levels, frequency colors, and noise tips.",
+      "url": "https://snoretimeline.com/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline logo">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Support</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download</a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/support/">Support</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">How Detection Works</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Recording</span>
+                    <h1 class="privacy-title">How Sound Detection Works</h1>
+                    <p class="privacy-updated">What the app listens for, how it decides, and what the numbers mean.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>On this page</summary>
+                        <ul>
+                            <li><a href="#sound-types">The sounds the app classifies</a></li>
+                            <li><a href="#real-time">Real-time analysis, no sampling</a></li>
+                            <li><a href="#confidence">Sensitivity and false positives</a></li>
+                            <li><a href="#decibels">Decibels and frequency colors</a></li>
+                            <li><a href="#loud-sound-detection">Loud Sound Detection</a></li>
+                            <li><a href="#background-noise">How background noise affects detection</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline turns a night of raw audio into labeled events you can trust, and trusting them is easier when you know how they're made. This page explains the classification pipeline: which sounds the app listens for, how it decides what lands on your timeline, what the decibel numbers and orange waveform colors mean, and why a noisy room changes the results.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>The sounds the app classifies</h2>
+                        <p>Rather than treating every noise as a snore, the app sorts what it hears into six main categories:</p>
+                        <ul>
+                            <li><strong>Snoring</strong>, the main event. Each detection lands on the timeline with its volume level.</li>
+                            <li><strong>Gasps</strong>, sudden intakes of breath that often follow a breathing pause.</li>
+                            <li><strong>Coughs</strong>, tracked as their own category rather than folded into snoring.</li>
+                            <li><strong>Sleep talking</strong>: speech, whispers, and mumbling.</li>
+                            <li><strong>Laughter</strong>, because sleepers do laugh.</li>
+                            <li><strong>Loud sounds</strong>, sudden noises above a threshold you set (covered <a href="#loud-sound-detection">below</a>).</li>
+                        </ul>
+                        <p>Snoring, gasps, and coughs form the respiratory group. The app also monitors breathing patterns throughout the night; a silent stretch of about 10 or more seconds followed by a recovery sound that is clearly louder than the silence before it gets flagged as a breathing disruption. <a href="/support/breathing-disruptions">Breathing Disruptions</a> covers those in depth.</p>
+                        <p>How does it tell a snore from a cough? Each sound type has a recognizable acoustic signature. Snoring carries most of its energy in the low and mid frequency range, roughly 50 Hz to 3 kHz, which separates it from speech, coughs, and ambient noise. The classifier weighs both the sound pattern and the frequency characteristics of each audio segment before assigning a label. Most ambient noise gets ignored.</p>
+                        <p>No detection system is perfect. When two sounds overlap or bedding muffles one, an event can land in the wrong category. If a label looks off, play back the audio for that moment and hear what happened. Everything here is audio analysis for personal insight; the app does not diagnose sleep apnea or any other condition.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>Real-time analysis, no sampling</h2>
+                    <figure class="support-diagram" aria-label="Diagram: inside your device, the microphone feeds on-device AI that labels each sound, with nothing sent anywhere">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">PRIVATE TO YOUR DEVICE</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">Microphone</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">listens all night</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">On-device AI</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">real time</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Snore</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Gasp</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Cough</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Sleep talk</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Breathing</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">Detected events</text>
+</svg>
+                        <figcaption>Audio is classified the moment it happens, entirely on your phone. Every sound is processed in real time and labeled; none of it is sampled or sent anywhere.</figcaption>
+                    </figure>
+                        <p>Some apps save battery by sampling: they wake up periodically, listen for a moment, and sleep again, which means they can miss whatever happens in between. Snore Timeline analyzes your audio continuously, using Apple's Sound Analysis framework running on your phone. Every sound is processed as it happens. Nothing is skipped, sampled, or uploaded.</p>
+                        <p>Continuous analysis has two consequences you'll notice:</p>
+                        <ul>
+                            <li><strong>Detection starts immediately.</strong> There is no calibration or setup step; the first snore of the night counts as much as the hundredth.</li>
+                            <li><strong>The timeline is complete.</strong> Because the app never stops listening, a quiet gap on your timeline means the room was quiet, and the gaps themselves become data for breathing and <a href="/support/sleep-stages">sleep stage</a> analysis.</li>
+                        </ul>
+                        <p>All of this runs on-device. Your audio never leaves your phone, and the <a href="/privacy">Privacy Policy</a> covers what that means in practice.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>Sensitivity and false positives</h2>
+                        <p>Not every sound makes the cut. The app logs a sound as an event only when it's a strong enough match for one of its categories, which is how it keeps a creaking radiator from filling your night with phantom snores.</p>
+                        <p>You control how strict that bar is with the sensitivity setting, which has five tiers: <strong>Minimal, Low, Balanced, High, and Maximum</strong>. Balanced is the default.</p>
+                        <ul>
+                            <li><strong>Minimal</strong> captures only clear, loud snoring and ignores almost everything else. Choose it for a noisy room or when a partner's snoring keeps tripping the detector.</li>
+                            <li><strong>Maximum</strong> catches very faint snores but also picks up more background noise and logs more false detections.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Tip</span>
+                            <p>Let your timeline tell you which way to adjust. Too many stray events that play back as nothing? Lower the sensitivity. Snores you can hear in the recording but the app missed? Raise it. Balanced works well for most people as a starting point.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>Decibels and frequency colors</h2>
+                        <p>Loudness appears throughout the app in dB SPL, on a scale from about 28 dB, the reference for near-silence, up to 105 dB for an extremely loud sound. Read it like a volume meter: higher numbers mean louder sounds. As a rough guide to your snoring:</p>
+                        <ul>
+                            <li><strong>Below about 40 dB</strong>: faint snoring</li>
+                            <li><strong>40 to 48 dB</strong>: light snoring</li>
+                            <li><strong>48 to 56 dB</strong>: audible snoring</li>
+                            <li><strong>56 dB and above</strong>: heavy snoring</li>
+                        </ul>
+                        <p>The app tracks both peak and average decibel levels for each episode. These numbers are for personal reference, not a clinical measurement.</p>
+                        <p>The app detects which microphone is in use, and it adjusts readings while your phone plays audio, such as music or a podcast.</p>
+                        <p>Every sound is a blend of frequencies, and a frequency is simply how fast the air vibrates, measured in hertz (Hz). Low sounds vibrate slowly; high sounds vibrate fast. Press play and drag to hear it and watch the wave tighten:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="Low" data-band-mid="Mid" data-band-high="High"
+                                aria-label="Drag to change the pitch and see how a higher frequency vibrates faster">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="Drag to change pitch">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="Play" data-label-stop="Stop">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">Play</span>
+                                </button>
+                                <span class="pitch-hint">Drag the slider &mdash; higher pitch vibrates faster</span>
+                            </div>
+                            <figcaption>This is the same scale the bands below are built on: slow vibrations are the low band, fast vibrations are the high band. Snoring lives low; the faint hiss of an exhale lives high. Headphones or speakers required to hear it.</figcaption>
+                        </figure>
+                        <p>Zoom all the way in on the waveform and the bars split into stacked shades of orange showing where each sound's energy sits across frequencies:</p>
+                        <ul>
+                            <li><strong>Darker orange</strong>: low frequencies, roughly 50 to 250 Hz, the deep rumble of snoring.</li>
+                            <li><strong>Medium orange</strong>: mid frequencies, about 250 to 1500 Hz, harmonics and vowel sounds.</li>
+                            <li><strong>Bright orange</strong>: high frequencies, about 1500 to 8000 Hz, sibilants like the "s" in "sss".</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="Play a real recording and watch its frequency bands on the waveform, the way the app shows them">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">Breathing</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">Snoring</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="Inhale" data-exhale="Exhale &mdash; more energy in the high band" data-idle="Press play and follow each breath"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="Play" data-label-stop="Pause">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">Play</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">High</span>
+                                    <span class="wave-key" data-band="mid">Mid</span>
+                                    <span class="wave-key" data-band="low">Low</span>
+                                </span>
+                            </div>
+                            <figcaption>Real recordings, colored the way the app paints the waveform: each bar split into low, mid, and high frequency energy. Press play and follow the line. With breathing, watch the bright high band flick up on each exhale while the sound stays soft. With snoring, the dark low band dominates. A gap in that high-band rhythm is what points to a possible <a href="/support/breathing-disruptions">breathing disruption</a>.</figcaption>
+                        </figure>
+                        <p>The bright, high-frequency band is the one that matters most for breathing. Every exhale makes a faint hiss, like a soft &#8220;sss&#8221;, and that hiss sits in the high band. Snore Timeline listens for it to follow your breathing through the night, which is what powers <a href="/support/breathing-disruptions">breathing-disruption detection</a> and <a href="/support/sleep-stages">sleep stage estimates</a>. It is also why a phone placed too far away or a noisy room weakens those features: the hiss is quiet, and it is the first thing lost.</p>
+                        <p>The frequency detail appears only on the most zoomed-in view; at wider zoom levels the bars show as solid color. <a href="/support/timeline-and-playback#reading-the-waveform">Timeline &amp; Playback</a> walks through reading the waveform as a whole.</p>
+                        <div class="callout callout--tip"><span class="callout-label">Try it</span><p>Zoom all the way in on a quiet stretch of your night and look for short bursts of bright orange with little color beneath them. That is your breathing, seen through sound alone.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="Full app screen" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Zoomed in</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="Zoomed-in waveform with stacked orange frequency bands during a snoring episode" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>Frequency colors on the most zoomed-in view.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>Loud Sound Detection</h2>
+                        <p>The classifier handles snoring and sleep talking on its own. Loud Sound Detection exists for everything else: it creates an episode whenever a sound rises above a volume threshold you choose, regardless of what the sound is. That catches noises the classifier can't name, such as whispered sleep talking too quiet to register as speech, teeth grinding, sounds you make while moving, or other unidentified nighttime noises.</p>
+                        <p>The default threshold is <strong>55 dB</strong>. To pick a threshold suited to your room:</p>
+                        <ol>
+                            <li>Start a recording and stay quiet.</li>
+                            <li>Watch the dB level the timeline shows for your room's baseline noise.</li>
+                            <li>Set the threshold just above that level.</li>
+                        </ol>
+                        <p>A quieter room lets you use a lower threshold and catch more.</p>
+                        <p>You may also see sounds land in the Loud Sound category that you expected to be snores. That happens when background noise masks the breathing patterns the snoring classifier listens for; the classifier needs a clear signal to identify snoring, and when a room sits above about 45 dB at baseline, more sounds tend to register as Loud Sound signals rather than snoring episodes. The next section explains what to do about it.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>How background noise affects detection</h2>
+                        <p>Constant background noise such as an air conditioner, fan, traffic, music, rain, or ocean sounds is tracked separately and does not create snore events on your timeline. The app recognizes these as continuous ambient noise rather than discrete snoring, so a humming AC by itself will not fill your night with false snores.</p>
+                        <p>The real cost of steady noise is masking. A loud noise floor drowns out quiet breathing and faint snores, leaving the classifier less signal to work with. Two things follow:</p>
+                        <ul>
+                            <li>Faint sounds become harder to detect at all.</li>
+                            <li>In rooms above roughly <strong>45 dB</strong> at baseline, sounds that would otherwise classify as snoring shift into the Loud Sound category.</li>
+                        </ul>
+                        <p>To get cleaner classification, quiet the room where you can. The usual suspects are fans and white noise machines, HVAC and air purifiers, open windows facing traffic, and TVs or audio left playing. A quieter room gives more accurate detection overall.</p>
+                        <p>When you can't control the noise, in a hotel room for example, work with what you have:</p>
+                        <ul>
+                            <li><strong>Move the phone closer to your head</strong> so breathing sounds stay audible over the hum. <a href="/support/getting-started#placement">Getting Started</a> covers placement in detail.</li>
+                            <li><strong>Raise the <a href="#confidence">sensitivity</a></strong> so the app still picks up softer sounds over the background.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="Full app screen" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Zoomed in</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="Loud sounds detected episode with peak and average decibels and a Loud Sound Signals badge" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>A night recorded above the 45 dB noise floor.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Related</h2>
+                        <ul>
+                            <li><a href="/support/episodes-and-events">Episodes &amp; Events</a></li>
+                            <li><a href="/support/timeline-and-playback">Reading Your Timeline &amp; Playing Back Audio</a></li>
+                            <li><a href="/support/breathing-disruptions">Breathing Disruptions</a></li>
+                            <li><a href="/support/getting-started">Getting Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="More support pages"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Record, see, and understand your snoring, breathing, and sleep, all on your device.</p>
+                <p><a href="/support/">Support</a> &middot; <a href="/privacy">Privacy</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="/support/getting-started">Getting Started</a></li>
+                    <li><a href="/support/how-detection-works">How Detection Works</a></li>
+                    <li><a href="/support/timeline-and-playback">Timeline &amp; Playback</a></li>
+                    <li><a href="/support/breathing-disruptions">Breathing Disruptions</a></li>
+                    <li><a href="/support/sleep-stages">Sleep Stages</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>More</h4>
+                <ul>
+                    <li><a href="/support/apple-watch">Apple Watch &amp; Health</a></li>
+                    <li><a href="/support/export-and-sharing">Export &amp; Sharing</a></li>
+                    <li><a href="/support/troubleshooting">Troubleshooting</a></li>
+                    <li><a href="/support/android">Android</a></li>
+                    <li><a href="/support/faq">FAQ</a></li>
+                    <li><a href="/support/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>

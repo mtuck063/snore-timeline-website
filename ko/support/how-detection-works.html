@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>소리 감지 작동 방식 - Snore Timeline 지원</title>
+    <meta name="title" content="소리 감지 작동 방식 - Snore Timeline 지원">
+    <meta name="description" content="Snore Timeline이 수면 중 소리를 분류하는 방법을 알아보세요: 실시간 기기 내 분석, 데시벨 수준, 주파수 색상, 소음 관련 팁.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/ko/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/ko/support/how-detection-works">
+    <meta property="og:title" content="소리 감지 작동 방식 - Snore Timeline 지원">
+    <meta property="og:description" content="Snore Timeline이 수면 중 소리를 분류하는 방법을 알아보세요: 실시간 기기 내 분석, 데시벨 수준, 주파수 색상, 소음 관련 팁.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/ko/support/how-detection-works">
+    <meta property="twitter:title" content="소리 감지 작동 방식 - Snore Timeline 지원">
+    <meta property="twitter:description" content="Snore Timeline이 수면 중 소리를 분류하는 방법을 알아보세요: 실시간 기기 내 분석, 데시벨 수준, 주파수 색상, 소음 관련 팁.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "지원", "item": "https://snoretimeline.com/ko/support/" },
+        { "@type": "ListItem", "position": 2, "name": "소리 감지 작동 방식", "item": "https://snoretimeline.com/ko/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Snore Timeline의 소리 감지 작동 방식",
+      "description": "Snore Timeline이 수면 중 소리를 분류하는 방법을 알아보세요: 실시간 기기 내 분석, 데시벨 수준, 주파수 색상, 소음 관련 팁.",
+      "url": "https://snoretimeline.com/ko/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/ko/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline 로고">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">지원</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">앱 열기
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="탐색 경로">
+                    <a href="/ko/support/">지원</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">소리 감지 작동 방식</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">녹음</span>
+                    <h1 class="privacy-title">소리 감지 작동 방식</h1>
+                    <p class="privacy-updated">앱이 무엇을 듣는지, 어떻게 판단하는지, 숫자가 무엇을 의미하는지 설명합니다.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>이 페이지의 내용</summary>
+                        <ul>
+                            <li><a href="#sound-types">앱이 분류하는 소리</a></li>
+                            <li><a href="#real-time">실시간 분석, 샘플링 없음</a></li>
+                            <li><a href="#confidence">민감도와 오탐</a></li>
+                            <li><a href="#decibels">데시벨과 주파수 색상</a></li>
+                            <li><a href="#loud-sound-detection">큰 소리 감지</a></li>
+                            <li><a href="#background-noise">배경 소음이 감지에 미치는 영향</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline은 하룻밤의 원시 오디오를 신뢰할 수 있는 라벨이 붙은 이벤트로 변환합니다. 그리고 그 결과를 신뢰하려면 어떻게 만들어지는지를 알면 더욱 쉽습니다. 이 페이지에서는 분류 파이프라인을 설명합니다: 앱이 어떤 소리를 듣는지, 무엇이 타임라인에 기록되는지, 데시벨 수치와 주황색 파형 색상이 무엇을 의미하는지, 그리고 시끄러운 방이 결과에 어떤 영향을 미치는지 알아봅니다.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>앱이 분류하는 소리</h2>
+                        <p>모든 소음을 코골이로 처리하는 대신, 앱은 감지한 소리를 여섯 가지 주요 카테고리로 분류합니다:</p>
+                        <ul>
+                            <li><strong>코골이</strong>: 주요 이벤트입니다. 감지될 때마다 볼륨 수준과 함께 타임라인에 기록됩니다.</li>
+                            <li><strong>헐떡임</strong>: 호흡 일시 정지 후 자주 발생하는 갑작스러운 숨 들이쉬기입니다.</li>
+                            <li><strong>기침</strong>: 코골이와 구분하여 별도 카테고리로 추적합니다.</li>
+                            <li><strong>잠꼬대</strong>: 말소리, 속삭임, 중얼거림입니다.</li>
+                            <li><strong>웃음</strong>: 수면 중에도 웃음이 나올 수 있기 때문입니다.</li>
+                            <li><strong>큰 소리</strong>: 사용자가 설정한 임계값을 초과하는 갑작스러운 소음입니다 (<a href="#loud-sound-detection">아래</a> 참조).</li>
+                        </ul>
+                        <p>코골이, 헐떡임, 기침은 호흡기 그룹을 구성합니다. 앱은 밤새 호흡 패턴도 모니터링합니다. 약 10초 이상의 무음 구간 후에 그 이전의 침묵보다 분명히 큰 회복 소리가 나오면 호흡 장애로 표시됩니다. 자세한 내용은 <a href="/ko/support/breathing-disruptions">호흡 장애</a> 페이지를 참조하세요.</p>
+                        <p>코골이와 기침을 어떻게 구별할까요? 각 소리 유형에는 고유한 음향 특성이 있습니다. 코골이는 에너지가 대략 50Hz에서 3kHz 사이의 저중주파 대역에 집중되어 있어, 말소리나 기침, 주변 소음과 구분됩니다. 분류기는 각 오디오 세그먼트에 라벨을 부여하기 전에 소리 패턴과 주파수 특성을 모두 분석합니다. 대부분의 주변 소음은 무시됩니다.</p>
+                        <p>어떤 감지 시스템도 완벽하지 않습니다. 두 소리가 겹치거나 침구가 소리를 흡수하면 이벤트가 잘못된 카테고리에 분류될 수 있습니다. 라벨이 이상하다면 해당 순간의 오디오를 재생하여 실제로 무슨 일이 있었는지 확인해보세요. 여기의 모든 기능은 개인적인 인사이트를 위한 오디오 분석이며, 앱은 수면 무호흡증이나 다른 질환을 진단하지 않습니다.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>실시간 분석, 샘플링 없음</h2>
+                    <figure class="support-diagram" aria-label="다이어그램: 기기 내부에서 마이크가 기기 내 AI에 소리를 전달하여 각 소리에 라벨을 붙이며, 어디로도 전송되지 않음">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">PRIVATE TO YOUR DEVICE</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">마이크</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">밤새 청취</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">기기 내 AI</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">실시간</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">코골이</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">헐떡임</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">기침</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">잠꼬대</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">호흡</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">감지된 이벤트</text>
+</svg>
+                        <figcaption>오디오는 발생하는 즉시 완전히 폰에서 분류됩니다. 모든 소리는 실시간으로 처리되고 라벨이 붙습니다. 샘플링되거나 외부로 전송되는 것은 없습니다.</figcaption>
+                    </figure>
+                        <p>일부 앱은 배터리를 아끼기 위해 샘플링을 사용합니다. 주기적으로 깨어나 잠깐 듣고 다시 잠드는 방식이라, 그 사이에 일어나는 소리를 놓칠 수 있습니다. Snore Timeline은 폰에서 실행되는 Apple의 Sound Analysis 프레임워크를 사용하여 오디오를 지속적으로 분석합니다. 모든 소리는 발생하는 순간에 처리됩니다. 건너뛰거나 샘플링하거나 업로드하는 것은 없습니다.</p>
+                        <p>지속적인 분석에는 두 가지 눈에 띄는 효과가 있습니다:</p>
+                        <ul>
+                            <li><strong>감지가 즉시 시작됩니다.</strong> 보정이나 설정 단계가 없습니다. 그날 밤 첫 번째 코골이도 백 번째 코골이만큼 중요하게 기록됩니다.</li>
+                            <li><strong>타임라인이 완전합니다.</strong> 앱이 청취를 멈추지 않기 때문에, 타임라인의 조용한 구간은 실제로 방이 조용했다는 의미이며, 이 공백 자체가 호흡 및 <a href="/ko/support/sleep-stages">수면 단계</a> 분석을 위한 데이터가 됩니다.</li>
+                        </ul>
+                        <p>이 모든 것은 기기 내에서 실행됩니다. 오디오는 절대 폰 밖으로 나가지 않으며, <a href="/ko/privacy">개인정보 처리방침</a>에서 실제로 무엇을 의미하는지 확인할 수 있습니다.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>민감도와 오탐</h2>
+                        <p>모든 소리가 기록되는 것은 아닙니다. 앱은 카테고리 중 하나와 충분히 일치하는 소리만 이벤트로 기록합니다. 이렇게 해서 삐걱거리는 라디에이터가 밤새 가짜 코골이로 가득 차지 않도록 합니다.</p>
+                        <p>민감도 설정으로 그 기준을 조절할 수 있으며, 다섯 단계가 있습니다: <strong>최소, 낮음, 균형, 높음, 최대</strong>. 기본값은 균형입니다.</p>
+                        <ul>
+                            <li><strong>최소</strong>는 크고 명확한 코골이만 캡처하고 거의 모든 것을 무시합니다. 시끄러운 방이거나 파트너의 코골이가 감지기를 자꾸 울릴 때 선택하세요.</li>
+                            <li><strong>최대</strong>는 매우 작은 코골이도 잡아내지만, 더 많은 배경 소음을 포착하여 오탐이 늘어날 수 있습니다.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">팁</span>
+                            <p>타임라인을 보고 어느 방향으로 조정할지 결정하세요. 재생해보면 아무 소리도 없는 엉뚱한 이벤트가 너무 많다면? 민감도를 낮추세요. 녹음에서 들리는 코골이를 앱이 놓쳤다면? 높이세요. 균형은 대부분의 사람에게 좋은 시작점입니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>데시벨과 주파수 색상</h2>
+                        <p>음량은 앱 전반에 걸쳐 dB SPL로 표시되며, 거의 무음에 해당하는 약 28dB에서 매우 큰 소리인 105dB까지의 범위를 사용합니다. 볼륨 미터처럼 읽으세요. 숫자가 높을수록 더 큰 소리입니다. 코골이 수준을 대략 가늠하는 기준은 다음과 같습니다:</p>
+                        <ul>
+                            <li><strong>약 40dB 미만</strong>: 거의 들리지 않는 코골이</li>
+                            <li><strong>40~48dB</strong>: 가벼운 코골이</li>
+                            <li><strong>48~56dB</strong>: 들릴 정도의 코골이</li>
+                            <li><strong>56dB 이상</strong>: 심한 코골이</li>
+                        </ul>
+                        <p>앱은 각 에피소드의 최고 데시벨과 평균 데시벨을 모두 추적합니다. 이 수치는 개인적인 참고용이며 임상적 측정값이 아닙니다.</p>
+                        <p>앱은 사용 중인 마이크를 감지하며, 음악이나 팟캐스트 같은 오디오를 폰으로 재생 중일 때도 수치를 조정합니다.</p>
+                        <p>모든 소리는 여러 주파수가 섞인 것이며, 주파수란 단순히 공기가 얼마나 빠르게 진동하는지를 헤르츠(Hz) 단위로 나타낸 것입니다. 낮은 소리는 천천히 진동하고, 높은 소리는 빠르게 진동합니다. 재생을 누르고 드래그하여 직접 듣고 파형이 촘촘해지는 것을 확인해 보세요:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="저주파" data-band-mid="중주파" data-band-high="고주파"
+                                aria-label="드래그하여 음높이를 바꾸고 높은 주파수가 어떻게 더 빠르게 진동하는지 확인해 보세요">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="드래그하여 음높이 변경">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="재생" data-label-stop="정지">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">재생</span>
+                                </button>
+                                <span class="pitch-hint">슬라이더를 드래그하세요 &mdash; 음높이가 높을수록 더 빠르게 진동합니다</span>
+                            </div>
+                            <figcaption>이것은 아래 대역이 만들어지는 것과 동일한 척도입니다: 느린 진동은 저주파 대역, 빠른 진동은 고주파 대역입니다. 코골이는 저주파에, 날숨의 희미한 치찰음은 고주파에 위치합니다. 소리를 들으려면 헤드폰이나 스피커가 필요합니다.</figcaption>
+                        </figure>
+                        <p>파형을 최대로 확대하면 각 소리의 에너지가 주파수별로 여러 주황색 음영으로 나뉘어 표시됩니다:</p>
+                        <ul>
+                            <li><strong>어두운 주황색</strong>: 저주파, 대략 50~250Hz, 코골이의 깊은 울림입니다.</li>
+                            <li><strong>중간 주황색</strong>: 중주파, 약 250~1500Hz, 배음과 모음 소리입니다.</li>
+                            <li><strong>밝은 주황색</strong>: 고주파, 약 1500~8000Hz, "sss" 같은 치찰음입니다.</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="실제 녹음을 재생하고 앱이 표시하는 방식 그대로 파형에서 주파수 대역을 확인해 보세요">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">호흡</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">코골이</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="들숨" data-exhale="날숨 &mdash; 고주파 대역에 더 많은 에너지" data-idle="재생을 누르고 각 호흡을 따라가 보세요"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="재생" data-label-stop="일시정지">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">재생</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">고주파</span>
+                                    <span class="wave-key" data-band="mid">중주파</span>
+                                    <span class="wave-key" data-band="low">저주파</span>
+                                </span>
+                            </div>
+                            <figcaption>실제 녹음으로, 앱이 파형을 칠하는 방식 그대로 표현되어 있습니다: 각 막대가 저주파, 중주파, 고주파 에너지로 나뉩니다. 재생을 누르고 선을 따라가 보세요. 호흡에서는 소리가 부드럽게 유지되는 동안 날숨마다 밝은 고주파 대역이 튀어 오르는 것을 확인해 보세요. 코골이에서는 어두운 저주파 대역이 지배적입니다. 그 고주파 리듬에 생기는 공백이 가능한 <a href="/ko/support/breathing-disruptions">호흡 장애</a>를 가리키는 신호입니다.</figcaption>
+                        </figure>
+                        <p>밝은 고주파 대역은 호흡 추적에 가장 중요합니다. 모든 날숨은 부드러운 &#8220;sss&#8221; 소리처럼 희미한 소리를 냅니다. 이 소리가 고주파 대역에 위치합니다. Snore Timeline은 이 소리를 들으며 밤새 호흡을 추적하는데, 이것이 <a href="/ko/support/breathing-disruptions">호흡 장애 감지</a>와 <a href="/ko/support/sleep-stages">수면 단계 추정</a>의 기반입니다. 폰이 너무 멀리 놓여 있거나 방이 시끄러우면 이러한 기능이 약해지는 이유도 바로 이 때문입니다. 날숨 소리는 조용하고, 가장 먼저 사라지는 소리입니다.</p>
+                        <p>주파수 세부 정보는 가장 크게 확대한 보기에서만 나타납니다. 넓은 확대 수준에서는 막대가 단색으로 표시됩니다. <a href="/ko/support/timeline-and-playback#reading-the-waveform">타임라인 및 재생</a>에서 파형 전체를 읽는 방법을 안내합니다.</p>
+                        <div class="callout callout--tip"><span class="callout-label">해보기</span><p>밤 중 조용한 구간을 최대로 확대하고 아래 색상이 거의 없는 짧은 밝은 주황색 버스트를 찾아보세요. 그것이 소리만으로 보이는 당신의 호흡입니다.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="앱 전체 화면" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 확대</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="코골이 에피소드 중 주황색 주파수 대역이 겹쳐 표시된 확대된 파형" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>가장 크게 확대한 보기의 주파수 색상.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>큰 소리 감지</h2>
+                        <p>분류기는 코골이와 잠꼬대를 자체적으로 처리합니다. 큰 소리 감지는 그 외 모든 것을 위한 기능입니다. 소리의 종류에 관계없이 사용자가 선택한 볼륨 임계값을 초과할 때마다 에피소드를 생성합니다. 이를 통해 분류기가 이름을 붙이지 못하는 소음, 예를 들어 말소리로 등록되기에는 너무 조용한 속삭임 같은 잠꼬대, 이갈이, 움직이는 중에 내는 소리, 또는 기타 식별되지 않는 야간 소음을 잡아냅니다.</p>
+                        <p>기본 임계값은 <strong>55dB</strong>입니다. 방에 맞는 임계값을 설정하려면:</p>
+                        <ol>
+                            <li>녹음을 시작하고 조용히 있습니다.</li>
+                            <li>타임라인이 방의 기준 소음에 대해 표시하는 dB 수준을 확인합니다.</li>
+                            <li>임계값을 그 수준보다 약간 높게 설정합니다.</li>
+                        </ol>
+                        <p>방이 조용할수록 더 낮은 임계값을 사용하여 더 많은 소리를 포착할 수 있습니다.</p>
+                        <p>코골이라고 예상했던 소리가 큰 소리 카테고리에 기록되는 경우도 있습니다. 배경 소음이 코골이 분류기가 감지하는 호흡 패턴을 가리기 때문입니다. 분류기는 코골이를 식별하려면 명확한 신호가 필요한데, 방의 기준 소음이 약 45dB 이상이면 더 많은 소리가 코골이 에피소드 대신 큰 소리 신호로 등록되는 경향이 있습니다. 이를 어떻게 처리할지는 다음 섹션에서 설명합니다.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>배경 소음이 감지에 미치는 영향</h2>
+                        <p>에어컨, 선풍기, 교통 소음, 음악, 빗소리, 파도 소리 같은 지속적인 배경 소음은 별도로 추적되며 타임라인에 코골이 이벤트를 생성하지 않습니다. 앱은 이런 소리를 개별적인 코골이가 아닌 연속적인 주변 소음으로 인식하므로, 에어컨 소리만으로 밤새 가짜 코골이가 채워지지 않습니다.</p>
+                        <p>지속적인 소음의 실제 문제는 마스킹입니다. 큰 소음 기준선은 조용한 호흡과 작은 코골이를 묻어버려, 분류기에게 전달되는 신호가 줄어듭니다. 두 가지 결과가 따릅니다:</p>
+                        <ul>
+                            <li>작은 소리는 감지 자체가 더 어려워집니다.</li>
+                            <li>기준 소음이 약 <strong>45dB</strong>를 초과하는 방에서는, 그렇지 않았다면 코골이로 분류됐을 소리가 큰 소리 카테고리로 이동합니다.</li>
+                        </ul>
+                        <p>더 깔끔한 분류를 위해 가능하면 방을 조용하게 만드세요. 주요 원인으로는 선풍기와 백색 소음 기계, 공조기 및 공기 청정기, 교통 소음이 들어오는 열린 창문, 켜져 있는 TV나 오디오가 있습니다. 방이 조용할수록 전반적으로 더 정확한 감지가 가능합니다.</p>
+                        <p>예를 들어 호텔 방처럼 소음을 제어할 수 없는 경우에는, 주어진 상황에서 최선을 다하세요:</p>
+                        <ul>
+                            <li><strong>폰을 머리에 더 가까이 두어</strong> 배경 소음 속에서도 호흡 소리가 잘 들리도록 합니다. 배치 방법에 대한 자세한 내용은 <a href="/ko/support/getting-started#placement">시작하기</a>를 참조하세요.</li>
+                            <li><strong><a href="#confidence">민감도</a>를 높여</strong> 배경 소음 위로 더 작은 소리도 잡을 수 있도록 합니다.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="앱 전체 화면" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> 확대</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="최고 및 평균 데시벨과 큰 소리 신호 배지가 표시된 감지된 큰 소리 에피소드" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>45dB 소음 기준선을 초과하는 환경에서 녹음된 밤.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>관련 항목</h2>
+                        <ul>
+                            <li><a href="/ko/support/episodes-and-events">에피소드 &amp; 이벤트</a></li>
+                            <li><a href="/ko/support/timeline-and-playback">타임라인 읽기 &amp; 오디오 재생</a></li>
+                            <li><a href="/ko/support/breathing-disruptions">호흡 장애</a></li>
+                            <li><a href="/ko/support/getting-started">시작하기</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="더 많은 지원 페이지"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/ko/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>코골이, 호흡, 수면을 모두 기기에서 녹음하고, 확인하고, 이해하세요.</p>
+                <p><a href="/ko/support/">지원</a> &middot; <a href="/ko/privacy">개인정보 처리방침</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>배우기</h4>
+                <ul>
+                    <li><a href="/ko/support/getting-started">시작하기</a></li>
+                    <li><a href="/ko/support/how-detection-works">소리 감지 작동 방식</a></li>
+                    <li><a href="/ko/support/timeline-and-playback">타임라인 &amp; 재생</a></li>
+                    <li><a href="/ko/support/breathing-disruptions">호흡 장애</a></li>
+                    <li><a href="/ko/support/sleep-stages">수면 단계</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>더 보기</h4>
+                <ul>
+                    <li><a href="/ko/support/apple-watch">Apple Watch &amp; 건강</a></li>
+                    <li><a href="/ko/support/export-and-sharing">내보내기 &amp; 공유</a></li>
+                    <li><a href="/ko/support/troubleshooting">문제 해결</a></li>
+                    <li><a href="/ko/support/android">Android</a></li>
+                    <li><a href="/ko/support/faq">자주 묻는 질문</a></li>
+                    <li><a href="/ko/support/#contact">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/support/support-nav.js"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>
