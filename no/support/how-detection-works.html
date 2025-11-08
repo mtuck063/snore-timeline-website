@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Slik fungerer lyddeteksjon - Snore Timeline støtte</title>
+    <meta name="title" content="Slik fungerer lyddeteksjon - Snore Timeline støtte">
+    <meta name="description" content="Lær hvordan Snore Timeline klassifiserer søvnlyder: sanntidsanalyse på enheten, desibelnivåer, frekvensfarger og tips mot støy.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/no/support/how-detection-works">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/no/support/how-detection-works">
+    <meta property="og:title" content="Slik fungerer lyddeteksjon - Snore Timeline støtte">
+    <meta property="og:description" content="Lær hvordan Snore Timeline klassifiserer søvnlyder: sanntidsanalyse på enheten, desibelnivåer, frekvensfarger og tips mot støy.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/no/support/how-detection-works">
+    <meta property="twitter:title" content="Slik fungerer lyddeteksjon - Snore Timeline støtte">
+    <meta property="twitter:description" content="Lær hvordan Snore Timeline klassifiserer søvnlyder: sanntidsanalyse på enheten, desibelnivåer, frekvensfarger og tips mot støy.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Støtte", "item": "https://snoretimeline.com/no/support/" },
+        { "@type": "ListItem", "position": 2, "name": "Slik fungerer deteksjon", "item": "https://snoretimeline.com/no/support/how-detection-works" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Slik fungerer lyddeteksjon i Snore Timeline",
+      "description": "Lær hvordan Snore Timeline klassifiserer søvnlyder: sanntidsanalyse på enheten, desibelnivåer, frekvensfarger og tips mot støy.",
+      "url": "https://snoretimeline.com/no/support/how-detection-works",
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "author": { "@type": "Person", "name": "Menelik Tucker" },
+      "publisher": { "@type": "Organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } }
+    }
+    </script>
+</head>
+<body data-support-page="how-detection-works" data-group="recording">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/no/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline-logo">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Støtte</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" target="_blank" rel="noopener noreferrer">Åpne appen
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <aside class="support-sidebar">
+                <nav class="support-nav"></nav>
+            </aside>
+
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Brødsmule">
+                    <a href="/no/support/">Støtte</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Slik fungerer deteksjon</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">Opptak</span>
+                    <h1 class="privacy-title">Slik fungerer lyddeteksjon</h1>
+                    <p class="privacy-updated">Hva appen lytter etter, hvordan den avgjør, og hva tallene betyr.</p>
+                </header>
+
+                <div class="privacy-content">
+                    <details class="toc-box">
+                        <summary>På denne siden</summary>
+                        <ul>
+                            <li><a href="#sound-types">Lydene appen klassifiserer</a></li>
+                            <li><a href="#real-time">Sanntidsanalyse uten sampling</a></li>
+                            <li><a href="#confidence">Sensitivitet og falske treff</a></li>
+                            <li><a href="#decibels">Desibel og frekvensfarger</a></li>
+                            <li><a href="#loud-sound-detection">Høylydt lyd-deteksjon</a></li>
+                            <li><a href="#background-noise">Slik påvirker bakgrunnsstøy deteksjonen</a></li>
+                        </ul>
+                    </details>
+
+                    <p class="privacy-intro">Snore Timeline gjør en hel natt med rålyd om til merkede hendelser. Det er lettere å stole på merkelappene når du vet hvor de kommer fra, så denne siden går gjennom pipelinen. Hvilke lyder appen lytter etter, hvordan den bestemmer hva som havner på tidslinjen din, hva desibeltallene og de oransje bølgeformfargene betyr, og hvorfor et støyete rom endrer resultatene.</p>
+
+                    <div class="privacy-section" id="sound-types">
+                        <h2>Lydene appen klassifiserer</h2>
+                        <p>Appen behandler ikke all støy som snorking. Den sorterer det den hører i seks hovedkategorier:</p>
+                        <ul>
+                            <li><strong>Snorking</strong>, hovedhendelsen. Hver enkelt havner på tidslinjen med volumet sitt.</li>
+                            <li><strong>Gisp</strong>, skarpe innpust som ofte kommer rett etter et pusteopphold.</li>
+                            <li><strong>Hoste</strong>, talt for seg så den ikke blandes inn i snorkingen.</li>
+                            <li><strong>Søvnsnakk</strong>: tale, hvisking og mumling.</li>
+                            <li><strong>Latter</strong>. Folk ler i søvne.</li>
+                            <li><strong>Høye lyder</strong>, alt som er høyere enn bakgrunnsstøyen i rommet ditt, eller et nivå du selv setter. Mer om det <a href="#loud-sound-detection">nedenfor</a>.</li>
+                        </ul>
+                        <p>Snorking, gisp og hoste utgjør pustegruppen. Appen følger også pusten din gjennom natten. Blir det stille i omtrent 10 sekunder eller mer, og det så kommer en gjenopprettingslyd som er tydelig høyere enn stillheten før, blir det flagget som et pusteavbrudd. <a href="/no/support/breathing-disruptions">Pusteavbrudd</a> går ordentlig inn på dem.</p>
+                        <p>Så hvordan skiller den en snork fra en hoste? Hver lydtype har sitt eget akustiske fingeravtrykk. Snorking bærer mesteparten av energien i det lave og mellomste området, omtrent 50 Hz til 3 kHz, og det skiller den fra tale, hosting og romstøy. Klassifikatoren ser på både formen på lyden og frekvenssammensetningen før den binder seg til en merkelapp. Det meste av bakgrunnsstøyen får ingen i det hele tatt.</p>
+                        <p>Den bommer av og til. Når to lyder overlapper, eller en dyne demper den ene, kan en hendelse havne i feil kategori. Ser en merkelapp feil ut, spill av det øyeblikket og hør selv. Og en påminnelse: alt dette er lydanalyse for din egen innsikt. Appen diagnostiserer ikke søvnapné eller noe annet.</p>
+                    </div>
+
+                    <div class="privacy-section" id="real-time">
+                        <h2>Sanntidsanalyse uten sampling</h2>
+                    <figure class="support-diagram" aria-label="Diagram: inne i enheten din mates kunstig intelligens på enheten av mikrofonen og merker hver lyd, uten at noe sendes noe sted">
+                        <svg viewBox="0 0 640 268" role="img" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, monospace">
+  <!-- "your device" boundary: everything happens inside it -->
+  <rect x="14" y="40" width="612" height="198" rx="22" class="dgm-accent" stroke-opacity="0.3" stroke-dasharray="2 7" stroke-width="1.6" fill="rgba(236,154,77,0.022)"/>
+  <!-- legend straddling the top border -->
+  <rect x="196" y="29" width="248" height="22" style="fill:var(--sup-surface)"/>
+  <g class="dgm-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(214,40)">
+    <rect x="-5.5" y="-1.5" width="11" height="8" rx="2"/><path d="M-3 -1.5 v-2.5 a3 3 0 0 1 6 0 v2.5"/>
+  </g>
+  <text class="dgm-label" x="230" y="44" style="letter-spacing:0.14em">PRIVAT PÅ DIN ENHET</text>
+
+  <!-- Step 1: Microphone -->
+  <rect x="62" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(102,118)" class="dgm-accent" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-10" y="-24" width="20" height="31" rx="10"/><path d="M-17 -2 a17 17 0 0 0 34 0"/><path d="M0 15 v8 M-9 23 h18"/>
+  </g>
+  <text class="dgm-label-strong" x="102" y="186" text-anchor="middle">Mikrofon</text>
+  <text class="dgm-label-sm" x="102" y="203" text-anchor="middle">lytter hele natten</text>
+
+  <!-- flow 1 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M150 118 q7 -8 14 0 t14 0 t14 0 t14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M236 113 l7 5 -7 5"/>
+
+  <!-- Step 2: On-device AI -->
+  <rect x="254" y="78" width="80" height="80" rx="22" class="dgm-ctx" fill="rgba(236,154,77,0.045)"/>
+  <g transform="translate(294,116)">
+    <path class="dgm-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M-26 -8 h6 l4 -11 7 21 4 -15 3 8 h5"/>
+    <rect x="-15" y="6" width="9" height="13" rx="2.5" fill="#C8641E"/>
+    <rect x="-3" y="1" width="9" height="18" rx="2.5" fill="#EA8B38"/>
+    <rect x="9" y="-3" width="9" height="22" rx="2.5" fill="#FFBE82"/>
+  </g>
+  <text class="dgm-label-strong" x="294" y="186" text-anchor="middle">KI på enheten</text>
+  <text class="dgm-label-sm" x="294" y="203" text-anchor="middle">sanntid</text>
+
+  <!-- flow 2 -->
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7" d="M342 118 q7 -8 14 0 t14 0 t14 0"/>
+  <path class="dgm-accent" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M388 113 l7 5 -7 5"/>
+
+  <!-- Step 3: Detected events -->
+  <g font-size="12.5">
+    <g transform="translate(404,62)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Snorking</text></g>
+    <g transform="translate(404,88)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Gisp</text></g>
+    <g transform="translate(404,114)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Hoste</text></g>
+    <g transform="translate(404,140)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Søvnsnakk</text></g>
+    <g transform="translate(404,166)"><rect width="196" height="20" rx="10" fill="rgba(236,154,77,0.09)" stroke="currentColor" stroke-opacity="0.4" class="dgm-accent"/><circle cx="16" cy="10" r="2.7" class="dgm-accent-fill"/><text x="30" y="14.5" style="fill:var(--sup-ink)">Pust</text></g>
+  </g>
+  <text class="dgm-label-strong" x="502" y="208" text-anchor="middle">Oppdagede hendelser</text>
+</svg>
+                        <figcaption>Lyd klassifiseres i det øyeblikket den oppstår, på telefonen din. Hver lyd merkes i sanntid, og ingenting av det går noe sted.</figcaption>
+                    </figure>
+                        <p>Noen apper sparer batteri ved å sample. De våkner nå og da, lytter et øyeblikk og sovner igjen, så alt som skjer i mellomtiden går tapt. Snore Timeline lytter hele tiden, med Apples Sound Analysis-rammeverk på selve telefonen. Hver lyd behandles i det den oppstår, og ingenting lastes opp.</p>
+                        <p>Du kommer til å merke to ting som følge av det:</p>
+                        <ul>
+                            <li><strong>Deteksjonen starter med en gang.</strong> Det er ingen kalibrering eller oppsett. Nattens første snork teller like mye som den hundrede.</li>
+                            <li><strong>Tidslinjen har ingen hull.</strong> Fordi appen aldri slutter å lytte, betyr et stille gap at rommet var stille, og disse gapene mater puste- og <a href="/no/support/sleep-stages">søvnfaseanalysen</a>.</li>
+                        </ul>
+                        <p>Alt sammen kjører på enheten. Lyden din forlater aldri telefonen. <a href="/no/privacy">Personvernreglene</a> forklarer hva det betyr i praksis.</p>
+                        <p>Deteksjon i sanntid betyr også at appen kan gjøre noe med snorkingen mens den pågår. <a href="/no/support/snore-nudge">Snork-dult</a> spiller av en kort tone fra iPhonen, eller dytter deg på håndleddet via Apple Watch, så snart snorking er bekreftet, og det holder ofte til at du ruller over. De fleste sporere kan bare fortelle deg om det om morgenen.</p>
+                    </div>
+
+                    <div class="privacy-section" id="confidence">
+                        <h2>Sensitivitet og falske treff</h2>
+                        <p>Ikke enhver lyd slipper gjennom. Appen registrerer bare en hendelse når lyden er et godt nok treff for en av kategoriene. Det er dét som hindrer en knirkende radiator i å fylle natten din med falske snork.</p>
+                        <p>Du bestemmer hvor streng den terskelen er med sensitivitetsinnstillingen. Det er fem nivåer, <strong>Minimal, Lav, Balansert, Høy og Maksimal</strong>, og Balansert er standard.</p>
+                        <ul>
+                            <li><strong>Minimal</strong> fanger bare tydelig, høy snorking og ignorerer nesten alt annet. Bruk den i et støyete rom, eller når partneren din snorker så mye at det stadig utløser detektoren.</li>
+                            <li><strong>Maksimal</strong> fanger svært svak snorking, mot mer bakgrunnsstøy og flere falske treff.</li>
+                        </ul>
+                        <div class="callout callout--tip">
+                            <span class="callout-label">Tips</span>
+                            <p>La tidslinjen fortelle deg hvilken vei du skal gå. Mange løse hendelser som spilles av som ingenting? Senk sensitiviteten. Snork du hører i opptaket, men som appen gikk glipp av? Hev den. Balansert er et godt utgangspunkt for de fleste.</p>
+                        </div>
+                    </div>
+
+                    <div class="privacy-section" id="decibels">
+                        <h2>Desibel og frekvensfarger</h2>
+                        <p>Lydstyrke vises overalt i appen i dB SPL, på en skala som går fra omtrent 28 dB (nesten stillhet) opp til 105 dB (smertefullt høyt). Les den som et volummeter. Som en grov veiledning til snorking:</p>
+                        <ul>
+                            <li><strong>Under omtrent 40 dB</strong>: svak snorking</li>
+                            <li><strong>40 til 48 dB</strong>: lett snorking</li>
+                            <li><strong>48 til 56 dB</strong>: hørbar snorking</li>
+                            <li><strong>56 dB og over</strong>: kraftig snorking</li>
+                        </ul>
+                        <p>Hver episode får både et topp- og et gjennomsnittsnivå. Se på tallene som personlig referanse. En telefon på nattbordet er ikke et kalibrert måleinstrument.</p>
+                        <p>Appen vet hvilken mikrofon som er i bruk, og korrigerer avlesningene mens telefonen spiller av lyd, for eksempel musikk eller en podkast.</p>
+                        <p>Alle lyder er en blanding av frekvenser. Frekvens er hvor fort luften vibrerer, målt i hertz (Hz). Lave lyder vibrerer sakte og høye lyder vibrerer fort. Trykk på spill av, dra i glidebryteren, og se bølgen stramme seg til når tonen stiger:</p>
+                        <figure class="pitch-demo" id="pitch-demo" data-band-low="Lav" data-band-mid="Mid" data-band-high="Høy"
+                                aria-label="Dra for å endre tonehøyde og se hvordan en høyere frekvens vibrerer raskere">
+                            <div class="pitch-stage"><canvas class="pitch-canvas" width="960" height="170"></canvas></div>
+                            <div class="pitch-head">
+                                <span class="pitch-hz">160 Hz</span>
+                                <span class="pitch-band" data-band="low"></span>
+                            </div>
+                            <input type="range" class="pitch-slider" min="0" max="1000" value="300" aria-label="Dra for å endre tonehøyde">
+                            <div class="pitch-controls">
+                                <button type="button" class="pitch-play" aria-pressed="false" data-label-play="Spill" data-label-stop="Stopp">
+                                    <svg class="pitch-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="pitch-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="pitch-play-label">Spill</span>
+                                </button>
+                                <span class="pitch-hint">Dra glidebryteren &mdash; høyere tonehøyde vibrerer raskere</span>
+                            </div>
+                            <figcaption>Båndene nedenfor bruker den samme skalaen. Langsomme vibrasjoner er det lave båndet, raske er det høye. Snorking ligger langt nede. Den svake susen fra et utpust ligger langt oppe. Du trenger hodetelefoner eller høyttalere for å høre det.</figcaption>
+                        </figure>
+                        <p>Zoom helt inn på bølgeformen, og hver søyle deler seg i stablede nyanser av oransje som viser hvor den lydens energi ligger over frekvensområdet:</p>
+                        <ul>
+                            <li><strong>Mørkere oransje</strong>: lave frekvenser, omtrent 50 til 250 Hz, den dype brummingen ved snorking.</li>
+                            <li><strong>Mellom-oransje</strong>: middelfrekvenser, omtrent 250 til 1500 Hz, overtoner og vokallyder.</li>
+                            <li><strong>Lys oransje</strong>: høye frekvenser, omtrent 1500 til 8000 Hz, sibilanter som "s"-lyden i "sss".</li>
+                        </ul>
+                        <figure class="wave-demo" id="wave-demo" data-audio-base="/support/audio/"
+                                aria-label="Spill et ekte opptak og se frekvensene i bølgeformen, slik appen viser dem">
+                            <div class="wave-tabs" role="tablist">
+                                <button class="wave-tab is-active" type="button" data-clip="breathing">Pust</button>
+                                <button class="wave-tab" type="button" data-clip="snoring">Snorking</button>
+                            </div>
+                            <div class="wave-stage"><canvas class="wave-canvas" width="960" height="240"></canvas></div>
+                            <div class="wave-status" aria-live="polite" data-inhale="Innpust" data-exhale="Utpust &mdash; mer energi i det høye båndet" data-idle="Trykk spill og følg hvert åndedrag"></div>
+                            <div class="wave-bar">
+                                <button type="button" class="wave-play" aria-pressed="false" data-label-play="Spill" data-label-stop="Pause">
+                                    <svg class="wave-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                                    <svg class="wave-pause-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                                    <span class="wave-play-label">Spill</span>
+                                </button>
+                                <span class="wave-time">0:00</span>
+                                <span class="wave-legend">
+                                    <span class="wave-key" data-band="high">Høy</span>
+                                    <span class="wave-key" data-band="mid">Mid</span>
+                                    <span class="wave-key" data-band="low">Lav</span>
+                                </span>
+                            </div>
+                            <figcaption>To ekte opptak, fargelagt slik appen maler bølgeformen, med hver søyle delt i lav, mellom og høy energi. Trykk på spill av og følg linjen. På pusteklippet blinker det lyse høye båndet opp ved hvert utpust selv om lyden holder seg svak. På snorkeklippet tar det mørke lave båndet over. Når den rytmen i det høye båndet stopper, er det dét som peker mot et mulig <a href="/no/support/breathing-disruptions">pusteavbrudd</a>.</figcaption>
+                        </figure>
+                        <p>For pusten er det lyse høye båndet det som betyr mest. Hvert utpust lager et svakt sus, et mykt &#8220;sss&#8221;, og det suset sitter oppe i det høye båndet. Snore Timeline følger det for å spore pusten din gjennom hele natten, og den sporingen er det <a href="/no/support/breathing-disruptions">deteksjon av pusteavbrudd</a> og <a href="/no/support/sleep-stages">estimatene for søvnfaser</a> bygger på. Det er også derfor en telefon som ligger for langt unna, eller et støyete rom, svekker begge funksjonene. Suset er svakt, så det er det første som forsvinner.</p>
+                        <p>Frekvensdetaljene får du bare på 1-sekunds-søylene, ett trinn utenfor <a href="/no/support/timeline-and-playback#real-time-view">sanntidsvisningen</a>. Ved bredere zoomnivåer er søylene ensfargede. <a href="/no/support/timeline-and-playback#reading-the-waveform">Tidslinje og avspilling</a> dekker det å lese bølgeformen som helhet.</p>
+                        <div class="callout callout--tip"><span class="callout-label">Prøv det</span><p>Zoom helt inn på en stille del av natten din og se etter korte glimt av lys oransje med nesten ingenting under. Det er pusten din.</p></div>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency-full.png" alt="Fullskjerm i appen" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:3%;top:8%;width:94%;height:20%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Inzoomet</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-frequency.webp" type="image/webp">
+                                    <img src="/support/img/shot-frequency.png" alt="Inzoomet bølgeform med stablede oransje frekvensbånd under en snorkeepisode" loading="lazy" width="900" height="385">
+                                </picture>
+                                <figcaption>Frekvensfarger på 1-sekunds-søylene.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="privacy-section" id="loud-sound-detection">
+                        <h2>Høylydt lyd-deteksjon</h2>
+                        <p>Klassifikatoren tar seg av snorking og søvnsnakk på egen hånd. Deteksjon av høye lyder er til alt det andre. Den oppretter en episode når en lyd stiger over en lydstyrketerskel, uansett hva lyden viser seg å være. Det plukker opp lydene klassifikatoren ikke kan navngi, som hvisket søvnsnakk som er for stille til å telle som tale, tanngnissing, raslingen når du snur deg, eller hva som ellers skjedde i rommet.</p>
+                        <p>Terskelen har to modus, satt under <strong>Terskelmodus</strong> i Innstillinger:</p>
+                        <ul>
+                            <li><strong>Automatisk</strong>, standarden. Appen måler bakgrunnsstøyen i rommet ditt mens du tar opp og holder terskelen så vidt over den. Den måler på nytt hvert minutt, så en vifte som slår seg på eller et vindu som åpnes hever terskelen og et stillere rom senker den, og hver natt starter fra den siste natten den målte. Innstillinger viser det målte nivået, hvilken natt det kom fra, og hvilken dB det gir.</li>
+                            <li><strong>Fast</strong>. En dB-skyver du setter selv, for når du vil ha den samme grensen hver natt. Hadde du satt et nivå før Automatisk fantes, står du fortsatt på Fast med det nivået.</li>
+                        </ul>
+                        <p>Jo stillere rommet er, desto lavere ligger terskelen, og desto mer fanger du opp.</p>
+                        <p>Noen ganger ser du ting under Høy lyd som du var sikker på var snork. Det skjer når bakgrunnsstøy dekker over pustemønstrene snorkeklassifikatoren støtter seg på. Den trenger et rent signal for å kalle noe snorking, og når først et rom ligger over omtrent 45 dB i ro, blir flere lyder loggført som Høy lyd-signaler i stedet for snorking. Neste avsnitt tar for seg hva du kan gjøre med det.</p>
+                    </div>
+
+                    <div class="privacy-section" id="background-noise">
+                        <h2>Slik påvirker bakgrunnsstøy deteksjonen</h2>
+                        <p>Jevn bakgrunnsstøy som aircondition, vifte, trafikk, musikk, regn eller havlyder spores separat og lager ikke snorkehendelser på tidslinjen din. Appen gjenkjenner det som kontinuerlig omgivelseslyd, så en summende AC alene fyller ikke natten din med falske snork.</p>
+                        <p>Det jevn støy koster deg, er maskering. Et høyt støygulv drukner stille pust og svak snorking, og klassifikatoren har mindre å jobbe med. To ting skjer:</p>
+                        <ul>
+                            <li>Svake lyder blir vanskeligere å oppdage i det hele tatt.</li>
+                            <li>I rom over omtrent <strong>45 dB</strong> i ro flyttes lyder som normalt ville telle som snorking, over i kategorien Høy lyd.</li>
+                        </ul>
+                        <p>For renere klassifisering bør du roe ned rommet der du kan. De vanlige synderne er vifter og hvit støy-maskiner, ventilasjon og luftrensere, et vindu som står åpent mot trafikken, og en TV eller høyttaler som står på. Et stillere rom gir mer nøyaktig deteksjon over hele linjen.</p>
+                        <p>Når du ikke får gjort noe med støyen, på et hotellrom for eksempel, jobb med det du har:</p>
+                        <ul>
+                            <li><strong>Flytt telefonen nærmere hodet</strong> slik at pusten din holder seg hørbar over summingen. <a href="/no/support/getting-started#placement">Kom i gang</a> dekker plassering.</li>
+                            <li><strong>Hev <a href="#confidence">sensitiviteten</a></strong> slik at appen fortsatt plukker opp de svakere lydene gjennom bakgrunnsstøyen.</li>
+                        </ul>
+                        <figure class="feature-magnify">
+                            <div class="feature-magnify-phone">
+                                <picture>
+                                    <source srcset="/support/img/shot-loud-full.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud-full.png" alt="Fullskjerm i appen" loading="lazy" width="600" height="1207">
+                                </picture>
+                                <span class="magnify-region" style="left:5%;top:40%;width:90%;height:22%"></span>
+                            </div>
+                            <div class="magnify-detail">
+                                <span class="magnify-lens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg> Inzoomet</span>
+                                <picture>
+                                    <source srcset="/support/img/shot-loud.webp" type="image/webp">
+                                    <img src="/support/img/shot-loud.png" alt="Oppdaget episode med høy lyd med topp- og gjennomsnittlig desibel og et Høy lyd-signaler-merke" loading="lazy" width="1000" height="500">
+                                </picture>
+                                <figcaption>En natt tatt opp over 45 dB-støygulvet.</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>Relatert</h2>
+                        <ul>
+                            <li><a href="/no/support/episodes-and-events">Episoder og hendelser</a></li>
+                            <li><a href="/no/support/timeline-and-playback">Les tidslinjen din og spill av lyd</a></li>
+                            <li><a href="/no/support/breathing-disruptions">Pusteavbrudd</a></li>
+                            <li><a href="/no/support/getting-started">Kom i gang</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="support-pager" id="support-pager" aria-label="Flere støttesider"></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/no/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Ta opp, se og forstå snorkingen, pusten og søvnen din, alt på enheten din.</p>
+                <p><a href="/no/support/">Støtte</a> &middot; <a href="/no/privacy">Personvern</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Lær</h4>
+                <ul>
+                    <li><a href="/no/support/getting-started">Kom i gang</a></li>
+                    <li><a href="/no/support/how-detection-works">Slik fungerer deteksjon</a></li>
+                    <li><a href="/no/support/timeline-and-playback">Tidslinje og avspilling</a></li>
+                    <li><a href="/no/support/breathing-disruptions">Pusteavbrudd</a></li>
+                    <li><a href="/no/support/sleep-stages">Søvnfaser</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>Mer</h4>
+                <ul>
+                    <li><a href="/no/support/apple-watch">Apple Watch og helse</a></li>
+                    <li><a href="/no/support/export-and-sharing">Eksport og deling</a></li>
+                    <li><a href="/no/support/troubleshooting">Feilsøking</a></li>
+                    <li><a href="/no/support/android">Android</a></li>
+                    <li><a href="/no/support/faq">Vanlige spørsmål</a></li>
+                    <li><a href="/no/support/#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Alle rettigheter forbeholdt.</div>
+    </footer>
+
+    <script src="/support/support-nav.js?v=2"></script>
+    <script src="/support/pitch-demo.js"></script>
+    <script>SnorePitch.init('#pitch-demo');</script>
+    <script src="/support/breath-demo.js"></script>
+    <script>SnoreWave.init('#wave-demo', '/support/audio/clips.json');</script>
+</body>
+</html>
