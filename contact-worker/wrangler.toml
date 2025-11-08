@@ -1,0 +1,27 @@
+name = "snore-timeline-contact"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# Served at https://contact.snoretimeline.com. Cloudflare creates the DNS record
+# on deploy; the website's own records are untouched.
+workers_dev = false
+routes = [
+  { pattern = "contact.snoretimeline.com", custom_domain = true }
+]
+
+# Unrestricted binding: Cloudflare still only delivers to verified Email Routing
+# destinations. The destination itself is the DESTINATION secret, so the Gmail
+# address never lands in this public repo:
+#   npx wrangler secret put DESTINATION
+[[send_email]]
+name = "MAILER"
+
+[vars]
+FROM_ADDRESS = "contact-form@snoretimeline.com"
+ALLOWED_ORIGIN = "https://snoretimeline.com"
+# Time zone for the send time in each email subject.
+TIME_ZONE = "America/Toronto"
+
+# No request logs. Messages are relayed, never stored.
+[observability]
+enabled = false
