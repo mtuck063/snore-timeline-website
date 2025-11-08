@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- WRITER NOTES
+Copy this file to blog/<slug>.html and replace every placeholder. Delete this comment when done.
+
+Placeholders:
+  {{SLUG}}         URL slug, e.g. snore-timeline-vs-snorelab (no .html). Appears in canonical, og:url, JSON-LD, body data-blog-page.
+  {{TITLE}}        Page title / h1 / headline. Also used in breadcrumb, og:title, twitter:title.
+  {{DESCRIPTION}}  Meta description, under 155 characters. Reused in og/twitter/Article JSON-LD.
+  {{CATEGORY}}     One of: Compare, Privacy, How-to, Alternatives (header eyebrow + index chip).
+  {{PUBLISHED}}    ISO date, e.g. 2026-09-27 (meta, JSON-LD, <time datetime>). Visible text reads "27 Sep 2026".
+  {{UPDATED}}      ISO date of the last content check. Change the visible date text too.
+  {{QUICK_ANSWER}} 2-3 sentence direct answer in .tldr (read aloud via speakable).
+  {{SOURCE_n_NAME}} / {{SOURCE_n_URL}}  Every source listed in #sources must also appear in the Article "citation" array.
+  {{Qn}} / {{An}}  FAQ questions and answers.
+
+Rules:
+  - FAQPage JSON-LD: each "name" equals the visible <summary> text, and each "text" equals the visible
+    answer paragraphs joined with a single space (plain text, no HTML, exclude any .faq-learn-more link).
+  - Article "citation" lists the same sources, same order, as the visible Sources list.
+  - The "In this article" TOC builds itself from .privacy-section[id] > h2. Give every body section an id.
+  - Privacy labels: say "as declared on the App Store on 27 September 2026". Never claim Snore Timeline is the only
+    Data Not Collected app. Four apps declare it; Snore Timeline is the only one with no purchases as well.
+  - Keep one CTA (the .article-cta block). Keep the medical disclaimer callout as written.
+  - Mark the Snore Timeline row in comparison tables with <tr class="is-us">.
+  - Prose follows /write-clean: no em dashes, no adverbs, active voice, short sentences.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>{{TITLE}} | Snore Timeline</title>
+    <meta name="title" content="{{TITLE}} | Snore Timeline">
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0F1419">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/blog/{{SLUG}}">
+    <link rel="alternate" type="application/rss+xml" title="Snore Timeline Guides" href="https://snoretimeline.com/blog/feed.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://snoretimeline.com/blog/{{SLUG}}">
+    <meta property="og:title" content="{{TITLE}}">
+    <meta property="og:description" content="{{DESCRIPTION}}">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:site_name" content="Snore Timeline">
+    <meta property="article:published_time" content="{{PUBLISHED}}">
+    <meta property="article:modified_time" content="{{UPDATED}}">
+    <meta property="article:author" content="Menelik Tucker">
+    <meta property="article:section" content="{{CATEGORY}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/blog/{{SLUG}}">
+    <meta property="twitter:title" content="{{TITLE}}">
+    <meta property="twitter:description" content="{{DESCRIPTION}}">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://snoretimeline.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://snoretimeline.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "{{TITLE}}", "item": "https://snoretimeline.com/blog/{{SLUG}}" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{TITLE}}",
+      "description": "{{DESCRIPTION}}",
+      "url": "https://snoretimeline.com/blog/{{SLUG}}",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://snoretimeline.com/blog/{{SLUG}}" },
+      "image": "https://snoretimeline.com/app-screenshot.png",
+      "datePublished": "{{PUBLISHED}}",
+      "dateModified": "{{UPDATED}}",
+      "articleSection": "{{CATEGORY}}",
+      "inLanguage": "en",
+      "author": { "@type": "Person", "@id": "https://snoretimeline.com/about#person", "name": "Menelik Tucker", "url": "https://snoretimeline.com/about" },
+      "publisher": { "@type": "Organization", "@id": "https://snoretimeline.com/#organization", "name": "Snore Timeline", "logo": { "@type": "ImageObject", "url": "https://snoretimeline.com/logo.png" } },
+      "citation": [
+        { "@type": "CreativeWork", "name": "{{SOURCE_1_NAME}}", "url": "{{SOURCE_1_URL}}" },
+        { "@type": "CreativeWork", "name": "{{SOURCE_2_NAME}}", "url": "{{SOURCE_2_URL}}" }
+      ],
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".tldr p"] }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "{{Q1}}", "acceptedAnswer": { "@type": "Answer", "text": "{{A1}}" } },
+        { "@type": "Question", "name": "{{Q2}}", "acceptedAnswer": { "@type": "Answer", "text": "{{A2}}" } }
+      ]
+    }
+    </script>
+</head>
+<body data-group="help" data-blog-page="{{SLUG}}">
+    <!-- Support header -->
+    <header class="support-topbar">
+        <div class="support-topbar-inner">
+            <a href="/" class="support-topbar-brand">
+                <img src="/logo.png" alt="Snore Timeline logo">
+                <span>Snore Timeline</span>
+            </a>
+            <span class="support-topbar-eyebrow">Guides</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Download</a>
+        </div>
+        <svg class="support-topbar-wave" viewBox="0 0 1200 6" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3 Q15 0 30 3 T60 3 T90 3 T120 3 T150 3 T180 3 T210 3 T240 3 T270 3 T300 3 T330 3 T360 3 T390 3 T420 3 T450 3 T480 3 T510 3 T540 3 T570 3 T600 3 T630 3 T660 3 T690 3 T720 3 T750 3 T780 3 T810 3 T840 3 T870 3 T900 3 T930 3 T960 3 T990 3 T1020 3 T1050 3 T1080 3 T1110 3 T1140 3 T1170 3 T1200 3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </header>
+
+    <section class="support-page">
+        <div class="support-layout">
+            <div class="support-main">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <a href="/blog/">Guides</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">{{TITLE}}</span>
+                </nav>
+
+                <header class="support-header">
+                    <span class="support-eyebrow">{{CATEGORY}}</span>
+                    <h1 class="privacy-title">{{TITLE}}</h1>
+                    <p class="article-meta">By <a href="/about">Menelik Tucker</a> &middot; Published <time datetime="{{PUBLISHED}}">27 Sep 2026</time> &middot; Updated <time datetime="{{UPDATED}}">27 Sep 2026</time></p>
+                </header>
+
+                <div class="privacy-content">
+                    <div class="tldr">
+                        <span class="tldr-label">Quick answer</span>
+                        <p><!-- {{QUICK_ANSWER}}: 2-3 sentences that answer the title query directly. --></p>
+                    </div>
+
+                    <div class="key-takeaways">
+                        <h2>Key takeaways</h2>
+                        <ul>
+                            <!-- 3-5 bullets. One fact each. Lead with the number or the name. -->
+                            <li>{{TAKEAWAY_1}}</li>
+                            <li>{{TAKEAWAY_2}}</li>
+                            <li>{{TAKEAWAY_3}}</li>
+                        </ul>
+                    </div>
+
+                    <!-- Filled by the script at the end of the page. Leave the list empty. -->
+                    <details class="toc-box" open>
+                        <summary>In this article</summary>
+                        <ul id="article-toc"></ul>
+                    </details>
+
+                    <div class="privacy-section" id="at-a-glance">
+                        <h2>At a glance</h2>
+                        <div role="region" aria-labelledby="cap-1" tabindex="0" class="cmp-table-wrap">
+                            <table class="cmp-table">
+                                <caption id="cap-1">{{TABLE_CAPTION}} e.g. "Privacy labels and prices as declared on the App Store (US) on 27 September 2026."</caption>
+                                <thead>
+                                    <tr><th scope="col">App</th><th scope="col">{{COL_2}}</th><th scope="col">{{COL_3}}</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="is-us"><th scope="row">Snore Timeline</th><td>{{CELL}}</td><td>{{CELL}}</td></tr>
+                                    <tr><th scope="row">{{APP}}</th><td>{{CELL}}</td><td>{{CELL}}</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- BODY SECTIONS: repeat this block. Each needs a unique id and an h2. -->
+                    <div class="privacy-section" id="{{SECTION_ID}}">
+                        <h2>{{SECTION_HEADING}}</h2>
+                        <p>{{SECTION_BODY}}</p>
+                    </div>
+
+                    <!-- Optional App Store-style label cards (flagship privacy page, alternatives pages):
+                    <div class="label-cards">
+                        <div class="label-card label-card--none">
+                            <span class="label-card-app">Snore Timeline</span>
+                            <span class="label-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.8 2.8L16 9.5"/></svg></span>
+                            <h4>Data Not Collected</h4>
+                            <p class="label-card-sub">The developer does not collect any data from this app.</p>
+                        </div>
+                        <div class="label-card">
+                            <span class="label-card-app">{{APP}}</span>
+                            <span class="label-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+                            <h4>Data Linked to You</h4>
+                            <p class="label-card-sub">The following data may be collected and linked to your identity:</p>
+                            <ul class="label-card-cats"><li>Health &amp; Fitness</li><li>Identifiers</li></ul>
+                        </div>
+                    </div>
+                    -->
+
+                    <div class="callout callout--medical">
+                        <span class="callout-label">Medical note</span>
+                        <p>Snore Timeline analyzes audio. It is not a medical device and does not diagnose sleep apnea or any other condition. Bring recordings to a doctor if you suspect breathing pauses.</p>
+                    </div>
+
+                    <div class="privacy-section" id="faq">
+                        <h2>Frequently asked questions</h2>
+                        <!-- 4-5 entries. Mirror each one in the FAQPage JSON-LD in <head>. -->
+                        <details class="faq-entry" id="faq-{{Q1_ID}}">
+                            <summary>{{Q1}}</summary>
+                            <div class="faq-a">
+                                <p>{{A1}}</p>
+                            </div>
+                        </details>
+                        <details class="faq-entry" id="faq-{{Q2_ID}}">
+                            <summary>{{Q2}}</summary>
+                            <div class="faq-a">
+                                <p>{{A2}}</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="privacy-section sources" id="sources">
+                        <h2>Sources</h2>
+                        <ol>
+                            <!-- 6-10 sources. Fetch each URL before citing it. Same order as the "citation" JSON-LD. -->
+                            <li><a href="{{SOURCE_1_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_1_NAME}}</a>. {{PUBLISHER}}. Accessed 27 Sep 2026.</li>
+                            <li><a href="{{SOURCE_2_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_2_NAME}}</a>. {{PUBLISHER}}. Accessed 27 Sep 2026.</li>
+                        </ol>
+                    </div>
+
+                    <div class="article-cta">
+                        <h2>Try Snore Timeline</h2>
+                        <div class="article-cta-buttons">
+                            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn-store" data-store-badge="ios" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="btn-store btn-store--secondary" data-store-badge="android" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.15-.55.4.4 0 0 0-.54.16l-1.86 3.23a11.4 11.4 0 0 0-9.78 0L5.25 5.91a.4.4 0 0 0-.54-.16.4.4 0 0 0-.15.55L6.4 9.48A10.8 10.8 0 0 0 1 17.5h22a10.8 10.8 0 0 0-5.4-8.02zM7 14.75a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>Google Play</a>
+                        </div>
+                        <p class="article-cta-note">Free. No subscription, no account, no in-app purchases.</p>
+                    </div>
+
+                    <div class="related-pages">
+                        <h2>More guides</h2>
+                        <ul>
+                            <!-- 3 links to other /blog/ pages or support pages. -->
+                            <li><a href="/blog/snoring-app-privacy-labels">Which Snoring Apps Collect Your Data? 14 App Store Privacy Labels Compared</a></li>
+                            <li><a href="/blog/{{RELATED_SLUG}}">{{RELATED_TITLE}}</a></li>
+                            <li><a href="/blog/">All guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support footer -->
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>Record, see, and understand your snoring, breathing, and sleep, all on your device.</p>
+                <p><a href="/support/">Support</a> &middot; <a href="/blog/">Guides</a> &middot; <a href="/about">About</a> &middot; <a href="/privacy">Privacy</a></p>
+            </div>
+            <div class="support-footer-col">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="/support/getting-started">Getting Started</a></li>
+                    <li><a href="/support/how-detection-works">How Detection Works</a></li>
+                    <li><a href="/support/timeline-and-playback">Timeline &amp; Playback</a></li>
+                    <li><a href="/support/breathing-disruptions">Breathing Disruptions</a></li>
+                    <li><a href="/support/sleep-stages">Sleep Stages</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h4>More</h4>
+                <ul>
+                    <li><a href="/support/apple-watch">Apple Watch &amp; Health</a></li>
+                    <li><a href="/support/export-and-sharing">Export &amp; Sharing</a></li>
+                    <li><a href="/support/troubleshooting">Troubleshooting</a></li>
+                    <li><a href="/support/android">Android</a></li>
+                    <li><a href="/support/faq">FAQ</a></li>
+                    <li><a href="/blog/">Guides</a></li>
+                    <li><a href="/support/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. All rights reserved.</div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script>
+    // Build the "In this article" list from section headings (skips FAQ and Sources).
+    (function () {
+        var toc = document.getElementById('article-toc');
+        if (!toc) return;
+        var skip = { faq: 1, sources: 1 };
+        document.querySelectorAll('.privacy-content > .privacy-section[id] > h2').forEach(function (h) {
+            var id = h.parentNode.id;
+            if (skip[id]) return;
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = '#' + id;
+            a.textContent = h.textContent;
+            li.appendChild(a);
+            toc.appendChild(li);
+        });
+        if (!toc.children.length) toc.closest('.toc-box').hidden = true;
+    }());
+    </script>
+</body>
+</html>

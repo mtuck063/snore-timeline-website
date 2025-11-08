@@ -1,0 +1,750 @@
+# Snore Timeline
+
+> Snore Timeline is a free iOS app that records, detects, and visualizes nighttime snoring, breathing pauses, and sleep stages on an interactive timeline. All audio analysis happens on-device. No accounts, no cloud uploads, no tracking, no subscription.
+
+- Live site: https://snoretimeline.com
+- App Store: https://apps.apple.com/app/apple-store/id6751759381
+
+---
+
+# Home Page
+
+## Hero
+
+**Snore Timeline — See Your Sleep Like Never Before**
+
+The interactive timeline that reveals every snoring episode, breathing pause, and sleep sound throughout your night.
+
+Free on iOS. No subscription. 100% Private. Real-time Detection.
+
+## Features
+
+**01. Start Your Day** — Wake up and see your entire night on an interactive timeline. Scroll through your sleep, zoom in on specific hours, and instantly spot patterns in your snoring.
+
+**02. See What Happened** — AI-powered detection identifies snores, gasps, coughs, sleep talking, and breathing pauses, all in real time while you sleep.
+
+**03. Review Episodes** — Consecutive snores are grouped into episodes. See duration, snore count, and plain-English summaries like "12 snores over 3 minutes."
+
+**04. Hear It Yourself** — Tap any moment on the timeline to hear enhanced audio. Confirm what happened with your own ears.
+
+**05. Track Your Progress** — Compare nights and weeks. Export detailed CSV reports and audio files to share with your doctor or track improvements over time.
+
+**06. Your Data, Your Device** — Everything stays on your iPhone. No cloud uploads, no servers, no accounts required. Complete privacy by design.
+
+## Detect When You Stop Breathing
+
+In addition to snore detection, the algorithm identifies moments when you stop breathing for 10+ seconds, helping you spot patterns worth discussing with a doctor.
+
+1. **Baseline Observation** — Monitors audible breathing for at least one minute to establish accurate baseline patterns.
+2. **Silence Detection** — Identifies extended quiet periods lasting 10+ seconds, a key indicator of breathing disruptions.
+3. **Recovery Recognition** — Detects loud abrupt snoring, gasps, coughs, or breathing sounds that follow the silent period.
+4. **Timeline Marking** — Places markers at exact timestamps, creating a visual map of disruptions.
+
+## Understand Your Sleep Stages
+
+Using only your phone's microphone, Snore Timeline estimates when you're in light sleep, deep sleep, or REM based on published research into breathing regularity during sleep. Quiet stretches where breathing is too soft to classify are labeled Silence and credited as restful sleep.
+
+1. **Listen to Your Breathing** — Continuous audio capture picks up breathing rate, regularity, and snoring patterns throughout the night.
+2. **Establish Your Baseline** — After ~15 minutes the algorithm learns your personal breathing rate and regularity baseline, adapting thresholds to your unique patterns.
+3. **Analyze Breath Regularity** — Steady, low-variance breathing suggests deep sleep; irregular patterns with high variance indicate REM.
+4. **Adapt Through the Night** — Time-aware logic accounts for natural sleep architecture. Deep sleep peaks early in the night, REM increases toward morning.
+
+Estimated from audio analysis. Not a medical device.
+
+## FAQ
+
+### Where are my recordings saved?
+You can export the entire night's audio as a single file, or bulk download all your snoring episodes at once. Exported files are saved to your iPhone's Files app under On My iPhone > Snore Timeline, organized into Recordings (full night) and Snoring Episodes (individual clips).
+
+### Can I delete the audio but keep my history?
+Yes. In Settings, turn on Storage Limit and pick a cap between 1 GB and 8 GB. Once your recordings pass it, the app clears the oldest nights first. With Keep History switched on, only the playback goes. Your episodes, sleep analysis, and timeline stay, so weekly trends keep working for nights you can no longer hear. To reclaim space right away, set a low cap and tap Over Limit - Tap to Clean Up in Settings. Episode-Only Storage takes a different route: after each night it drops the quiet stretches and keeps the segments with detected episodes, so files shrink while every episode stays playable. Deleting a single night from Settings removes that date's audio and data together.
+
+### Can I share my recordings with others?
+Yes. Recordings are saved to your Files app and can also be shared via the share sheet (AirDrop, Messages, email, ChatGPT, and more). To share the full night, go to that night and tap the download icon at the top of the Snoring Episodes list to open Export Report. Turn on Include audio, choose Full-night recording, tap Generate Export, then Share Export. To share an individual episode, tap the download icon on the episode card.
+
+### Where should I place my phone while recording?
+For snoring detection, 3–4 feet works well. For breathing disruption detection, place the phone 1–2 feet away — breathing must be clearly audible. Ideal placement is on a nightstand near your bed, plugged in.
+
+### What makes Snore Timeline different from other snore tracking apps?
+Unlike apps that sample audio periodically, Snore Timeline captures and analyzes every sound in real time. You get an interactive timeline that shows every snoring episode.
+
+### Does Snore Timeline require a subscription?
+No. The app is free with no subscription. All features are included: breathing disruption detection, episode grouping, nightly summaries, sleep stages, and data export.
+
+### Does it detect breathing pauses?
+Yes. The app identifies extended silent periods (10+ seconds) followed by gasps or recovery sounds, and marks these on the timeline. This is audio analysis only, not a medical device.
+
+### How accurate is the snoring detection?
+The app uses Apple's sound classification technology to analyze audio continuously in real time. Detection starts immediately, no calibration needed. All processing happens on-device.
+
+### How does the app show episodes?
+Consecutive snores are grouped into episodes. When 30 seconds pass with no snoring, the episode ends. The next snore starts a new episode. Each episode displays duration, snore count, and a plain-English summary.
+
+### Is my data private?
+Yes. All audio processing happens on the iPhone — no cloud uploads, no external servers, no accounts. You can export data to share with doctors while keeping the originals on-device.
+
+### Can I use it with AirPods or Bluetooth devices?
+Yes. The app supports Bluetooth audio devices including AirPods.
+
+### How much battery does it use?
+Recording uses roughly 5–7% of battery per hour, about half of what earlier versions used. Keeping the phone plugged in is recommended.
+
+### Why did the app stop recording before morning?
+iOS interrupted the audio session in the background — usually a phone call, alarm, or notification with sound. Enable Do Not Disturb or a Focus mode before recording to prevent this.
+
+### How do I restart the app?
+Force-quit and reopen. Open the App Switcher (swipe up and pause, or double-tap Home on older iPhones), swipe up on the Snore Timeline card to close, then tap the icon to relaunch.
+
+### What dB threshold should I use for Loud Sound Detection?
+Loud Sound Detection creates episodes whenever sounds exceed your chosen dB threshold — useful for catching sounds the classifier doesn't tag (whispers, mumbling). Snoring and sleep talking are detected without this. To pick a threshold: start a recording, watch the live dB meter while quiet (typical room ambient is 30–40 dB), then set the threshold 15–20 dB above that.
+
+### Which audio quality setting should I choose?
+The settings exist to save storage. Use **High Fidelity** (~25 MB/hour) for the best recordings. Choose **Basic** (~8 MB/hour) or **Standard** (~15 MB/hour) only when storage is tight — these trim higher frequencies. To hear yourself breathing in playback, you must use High Fidelity; the lower tiers cut the subtle frequencies where breathing sounds occur.
+
+### How does Snore Timeline estimate sleep stages?
+The app analyzes breathing regularity through your phone's microphone. After ~15 minutes it establishes your personal breathing baseline, then classifies periods into Awake, Light Sleep, Deep Sleep, and REM using research-backed thresholds. A fifth label, Silence, covers stretches where breathing is too soft to resolve into a stage with no sign of wakefulness — because the app collects audio only, very quiet breathers (or masking noise like a fan) can be inaudible; rather than guessing, the app credits these stretches as restful sleep that counts toward total sleep time. Steady, regular breathing suggests deep sleep; irregular patterns indicate REM. The algorithm is time-aware, accounting for the natural progression of sleep stages through the night.
+
+### How accurate are the sleep stage estimates?
+Estimates are based on published research into breathing regularity and sleep stages. They have not been validated against polysomnography and should be treated as estimates, not diagnoses. Research using similar audio-based methods has achieved ~70% accuracy when validated against polysomnography.
+
+Research references:
+- Schumann et al., 2010 — Aging Effects on Cardiac and Respiratory Dynamics in Healthy Subjects across Sleep Stages: https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/
+- Orphanides et al., 2024 — Using Spectral Continuity to Extract Breathing Rate from Heart Rate: https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/
+- Sleep Stage Classification from Heart-Rate Variability: https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/
+
+### Does sleep stage detection require any special setup?
+No. It works automatically using the same audio recording. Place the phone 1–2 feet away on a nightstand. The algorithm needs ~15 minutes to establish a baseline. Use the same placement each night for consistent results.
+
+---
+
+# Support Page
+
+Source: https://snoretimeline.com/support
+
+## Getting Started
+
+### How do I use the app?
+Open the app and press the record button to begin tracking your sleep sounds. Place your phone on a nightstand 1–2 feet away, ideally plugged in. The app records throughout the night and processes audio in real time.
+
+### What does the app detect?
+Using on-device AI, the app categorizes:
+
+- **Snoring** — primary focus, mostly 50 Hz–3 kHz; each detection is marked with a volume level
+- **Gasps** — sudden intake of breath sounds, often associated with breathing disruptions
+- **Coughs** — coughing during sleep, tracked separately from snoring
+- **Sleep talking** — speech, whispers, babbling
+- **Breathing** — regular patterns used for disruption detection and sleep stage classification
+
+All detection runs in real time using Apple's Sound Analysis framework, on-device.
+
+### Do I need an account?
+No. No accounts, no logins, no cloud services.
+
+## How Detection Works
+
+### Real-time AI analysis
+Unlike apps that sample periodically, Snore Timeline analyzes audio continuously using Apple's on-device sound classification. No data is skipped or sampled.
+
+### Confidence thresholds
+The AI assigns a confidence score to each detected sound. Different thresholds apply depending on the sound type and whether the phone is in foreground or background, reducing false positives.
+
+### Decibel measurement
+Sounds are measured in dB SPL up to 105 dB. The app tracks both peak and average decibel levels for each episode.
+
+## Understanding the Timeline
+
+### Interactive timeline visualization
+The entire night displays on a scrollable, zoomable timeline.
+
+### Time scales
+Six zoom levels, from most detailed to widest:
+
+- Real-time — a continuous wave instead of bars, fine enough to watch a single snore rise and fall
+- 1-second intervals — individual sounds, with the frequency shading
+- 5-second intervals — for examining specific episodes
+- 1-minute intervals — for reviewing specific periods
+- 10-minute intervals — overview of sleep patterns
+- 1-hour intervals — full night at a glance
+
+Tip: hold the zoom button to jump fully in or out.
+
+### The real-time view
+The closest zoom draws sound as one continuous shape rather than bars, and the app opens it the moment a recording starts. A dashed line marks the room's measured noise floor, and the wave grows out from that baseline rather than from zero, so quiet breathing stays visible in a silent bedroom and in a room with a fan running. Each swell has a translucent outer shape tracing the peak and a denser bright center showing how much of that slice held sound: the fullest swells are the ones worth playing. Color names the signal, matching the bars (rose for snoring, cream for sleep talking, pale purple for breathing disruptions, cyan for a gasp, green for a cough), and apricot marks a sound the app counted without naming. The wave brightens about a second before a label can appear, so a bright apricot swell often means the app heard something it could not classify. While recording, the wave stops at the center line and never draws ahead of it. The decibel readout reports the instantaneous level at this zoom instead of a window average.
+
+### Post-recording zoom
+When recording stops, the timeline zooms to fit the session: under about 2.5 minutes stays on the real-time view, under 20 minutes lands on 1-second bars, under 100 minutes on 5-second bars, and a full night opens at the 1-minute view.
+
+### Navigating between nights
+Swipe left or right on the Nightly Summary screen. The same gesture on the Weekly Summary screen moves between weeks.
+
+### Calendar view
+Jump to any recorded night. Nights are marked with dots: rose for recorded audio, mint for synced watch sleep data.
+
+### Sleep stages on the timeline
+Tap a stage block on the hypnogram and the timeline jumps to that moment, making it easy to correlate snoring with stages. On nights with synced wearable sleep data and no recording, the timeline draws a stage ribbon in the hypnogram colors with a stage-and-vitals readout.
+
+### The snoring chart in the nightly summary
+Every nightly summary opens with a chart of the night's snoring, headed by the signal count and total snoring time ("1,711 Snoring Signals", "1h 33m of snoring"). Bars cover clock-aligned slices, 5 minutes on a short night stretching to 10 or 15 on a longer one, and each bar's height is the average loudness of the snoring inside it rather than its peak. Loudness runs 32-72 dB in four even bands: Faint under 40, Light 40-48, Audible 48-56, Heavy 56 and above. A Rate mode re-heights the bars to snores per minute and marks the night's busiest minute. A sleep stage ribbon runs under the bars, with a key giving each stage its duration and share.
+
+### Awakening and nudge drill-downs
+Tap Awake in the chart's stage key and a pager steps through every awakening of the night, naming its time and length and writing out how far into the night it came, how hard you were snoring beforehand against your usual rate, and how quickly the snoring returned. On nights with Snore Nudge, a key row counts the nudges; tapping it marks each one on the chart and pages through them with a verdict and the same plain-language reading. The timeline follows either pager, so any moment can be played back.
+
+### Weekly Summary
+Trends across multiple nights:
+
+- Episode count trends
+- Average volumes
+- Total recording time
+- Week-over-week comparisons
+
+## Episodes & Events
+
+### What is a snore signal?
+Each detected snoring sound counts as one snore signal. More signals means more snoring activity.
+
+### What is an episode?
+A group of snore signals close together. When snoring is detected, an episode starts. After 30 seconds of no snoring, the episode ends. The next snore begins a new episode.
+
+### Episode details
+Each episode shows duration, snore count, peak volume, average volume, event breakdown (snoring, gasps, coughs, sleep talking), and a plain-English summary like "Heavy snoring for over 20 minutes, with a breathing disruption."
+
+### Episode descriptions
+- Volume levels: Faint (<40 dB), Light (40–48 dB), Audible (48–56 dB), Heavy (56+ dB)
+- Rhythm patterns: Rhythmic (consistent), Regular (minor variations), Intermittent (stop-and-start)
+- Trends: louder, fading, or stable over time
+
+## Breathing Disruptions
+
+### What is a breathing disruption?
+A specific pattern: audible breathing, then extended silence, then a recovery sound. May indicate pauses in breathing during sleep.
+
+### How are they detected?
+Three conditions in sequence:
+
+1. **Baseline breathing** — audible breathing for at least one minute (11 of 12 five-second windows must have breathing detected)
+2. **Extended silence** — complete silence lasting 10 seconds or more
+3. **Recovery sound** — a sound that breaks the silence, such as a loud snore, gasp or breath
+
+### Timeline markers
+Disruptions appear as subtle gray-blue markers on the timeline.
+
+### Disclaimer
+Audio analysis only, not a medical device. The app cannot diagnose sleep apnea or any other condition. It analyzes sound, not blood oxygen or brain activity. Frequent disruptions are worth discussing with a healthcare professional.
+
+## Sleep Stages
+
+### What are sleep stages?
+The feature estimates which stage you're in throughout the night: Awake, Light Sleep, Deep Sleep, REM — plus Silence for quiet, undisturbed stretches too soft to classify (treated as restful sleep). Estimates appear as a hypnogram in the nightly summary.
+
+### How does it work?
+The app analyzes regularity and variance of breathing patterns. After ~15 minutes the algorithm establishes your personal baseline, then uses research-based thresholds:
+
+- **Deep Sleep** — steady, regular breathing with low variance
+- **REM Sleep** — irregular breathing with high variance
+- **Light Sleep** — moderate regularity
+- **Awake** — movement, sounds, or breathing patterns inconsistent with sleep
+
+The algorithm also considers breathing rate, snoring patterns, and time of night. Deep sleep typically occurs early; REM increases toward morning.
+
+### Understanding the hypnogram
+A chart showing progression through stages. Each colored band represents 5 minutes:
+
+- Orange — Awake
+- Cyan — Light Sleep
+- Indigo — Deep Sleep
+- Pink/Cyan — REM Sleep
+
+### Stage distribution
+A typical night might show:
+
+- 45% Light Sleep
+- 20% Deep Sleep
+- 27% REM Sleep
+- 8% Awake
+
+These vary by age, health, stress, and other factors.
+
+### How accurate are sleep stage estimates?
+Based on published research into breathing regularity and sleep stages. Research using similar audio-based methods has achieved ~70% accuracy against polysomnography. The app has not been validated against polysomnography. Treat results as estimates, not diagnoses.
+
+### Why no sleep stages detected?
+Possible causes:
+
+- Breathing not audible enough to the microphone
+- Phone too far away (try 1–2 feet)
+- Background noise interfering
+- Recording too short (algorithm needs ~15 minutes)
+
+### Research references
+- Schumann et al., 2010: https://pmc.ncbi.nlm.nih.gov/articles/PMC2894436/
+- Orphanides et al., 2024: https://pmc.ncbi.nlm.nih.gov/articles/PMC11327063/
+- Sleep Stage Classification from Heart-Rate Variability: https://pmc.ncbi.nlm.nih.gov/articles/PMC9241996/
+
+## Audio Playback & Export
+
+### Listening to recordings
+Tap any episode or moment on the timeline to play that portion. The app includes audio enhancement to make sleep sounds easier to hear.
+
+### Downloading episode audio
+Tap the download button on any episode to save the clip to the Files app. The app combines all relevant audio segments into a single file.
+
+### Where to find downloads
+- Files > On My iPhone > Snore Timeline > Recordings — full night recordings
+- Files > On My iPhone > Snore Timeline > Snoring Episodes — individual episode clips and CSV exports
+
+### Exporting data
+Two CSV files per night:
+
+**Nightly Summary.csv** — overall statistics:
+- Total recording time and date
+- Episode count, total snore signals, peak and average volumes
+- Breathing disruption count
+- Sleep stage distribution (if detected)
+- Event breakdown (gasps, coughs, sleep talking)
+
+**Snoring Episodes.csv** — per-episode detail:
+- Start, end, duration
+- Snore signal count, peak volume, average volume
+- Event counts (gasps, coughs, sleep talking)
+- Rhythm classification and trend
+- Plain-English description
+- Breathing disruption flag (if applicable)
+- Sleep stage at the time (if detected)
+
+CSV files open in Excel, Numbers, Google Sheets, or any spreadsheet app.
+
+## Storage & Audio Quality
+
+### Recording quality options
+
+**Basic (Snore-Focused) — ~8 MB/hour**
+- Compresses recordings to focus on frequencies below 4,000 Hz
+- Optimized for snoring sounds (50 Hz–3 kHz)
+- Smallest file size
+- Quieter sounds may be less detailed
+
+**Standard (Clear Audio) — ~15 MB/hour**
+- Captures up to 8,000 Hz (full speech range)
+- Balance of quality and storage
+- Better for distinguishing snores from other sounds
+
+**High Fidelity (Full Detail) — ~25 MB/hour**
+- Records full audible spectrum up to 24,000 Hz
+- Preserves all detail including room acoustics
+- Most storage
+
+### Storage management
+- Storage Limit — set a max (1–8 GB) for recordings
+- Auto-trim — automatically delete oldest recordings when limit is reached
+
+## Tips for Better Recordings
+
+### Phone placement
+1–2 feet from you. Closer = louder detection; too far reduces accuracy, especially for breathing. Ideal: nightstand near the bed, plugged in.
+
+### Battery usage
+Roughly 5–7% per hour while recording. Keep the phone plugged in.
+
+### Bluetooth devices
+Supports Bluetooth audio including AirPods. The phone's built-in microphone usually gives more consistent breathing detection.
+
+### Room environment
+For breathing disruption detection and sleep stages, regular breathing must be audible to the microphone. Quiet breathers or distant phones may not get a stable baseline.
+
+### Optimizing for sleep stage detection
+- Consistent placement each night
+- Quiet room (minimize fans, AC, traffic)
+- Full night recording — longer (6+ hours) gives better classification
+- Audible breathing — phone close enough (1–2 feet)
+
+## Troubleshooting
+
+### The app didn't record anything
+The app only saves audio when it detects sleep-related sounds. Possible causes:
+
+- Microphone permission disabled (Settings > Privacy > Microphone)
+- Phone too far away
+- Phone muted or in a Do Not Disturb mode that affects recording
+- Quiet night with minimal snoring
+
+### No breathing disruptions detected
+Detection requires strict conditions:
+
+- Regular breathing audible to the phone for at least one minute before the silent period
+- Phone close enough to pick up breathing
+- Silence lasting at least 10 seconds
+- Recovery sound significantly louder than the silence
+
+### Detection seems inaccurate
+- Adjust phone placement (closer for sensitivity, further for less)
+- Background noise (fans, AC, traffic) affects accuracy
+- Different sensitivity in foreground vs. background reduces false positives from daytime sounds
+
+### Storage filling up
+- Delete old recordings from within the app
+- Enable storage limits
+- Switch to a lower recording quality
+
+### App crashed or closed during recording
+- Enable Background App Refresh for Snore Timeline
+- Keep phone plugged in (iOS may close background apps on low battery)
+- Check that no other apps are competing for audio
+
+## Privacy & Data
+
+### Where is my data stored?
+Locally on the iPhone. Nothing uploaded to any server or cloud.
+
+### Does the app collect any information?
+No. No analytics, no tracking, no accounts.
+
+### How do I delete my data?
+Delete recordings from within the app's timeline, or uninstall the app to remove everything.
+
+### Can I share my data?
+Yes. Use the export feature to save recordings and CSV reports, then share via email, messaging, cloud storage, etc.
+
+For full details, see the Privacy Policy.
+
+---
+
+# Guides and comparisons
+
+Source: https://snoretimeline.com/blog/
+
+Comparison and how-to pages. Every claim on these pages links to a source. App Store privacy labels, prices and ratings were re-checked on 27 September 2026 (US store) and are developer self-declarations.
+
+## Which Snoring Apps Collect Your Data?
+Source: https://snoretimeline.com/blog/snoring-app-privacy-labels
+
+Four of the 14 snoring and sleep apps I checked show “Data Not Collected” on the App Store, as declared on 27 September 2026, and they’re Snore Timeline, AutoSnore, SnoreClock and Somnio+. Snore Timeline is the only one of the 14 with both that label and no purchases of any kind. The other eight declare data linked to your identity: SnoreLab, Sleep Cycle, Pillow, ShutEye, BetterSleep, SleepScore, Snollo and Snore Control, with four of them (SnoreLab, Sleep Cycle, ShutEye and BetterSleep) also declaring data used to track you. Developers write these labels themselves. Check again on install day.
+
+- Four of the 14 apps declare Data Not Collected. They’re Snore Timeline, AutoSnore, SnoreClock and Somnio+.
+- Snore Timeline is the only one of the 14 with Data Not Collected and no purchases. The rest charge. AutoSnore costs $4.99 once and SnoreClock $9.99 once, while Somnio+ sells weekly and annual subscriptions.
+- Eight apps declare data linked to your identity. Four of those also declare Data Used to Track You.
+- Five apps declare Audio Data. SnoreLab and Snollo mark it as linked to you, while ShutEye, Koala Nap and Snore Recorder - Sleep Monitor mark it as not linked.
+- Apple states that developers self-report these labels. They can change them at any time, without an app update.
+- Privacy policies of the ten data-collecting apps were my second source. None says the company sells data for money. One says its ad-network use counts as a sale or share under California law, and four don’t mention selling personal data at all. The four Data Not Collected apps weren’t part of that read.
+
+## Snore Timeline vs SnoreLab: Privacy, Price and Recording
+Source: https://snoretimeline.com/blog/snore-timeline-vs-snorelab
+
+Snore Timeline has no subscription and no in-app purchases, and its App Store privacy label reads Data Not Collected. SnoreLab has a limited free tier, sells Premium for $5.99 to $59.99 on the App Store, and declares data in all three label tiers, including Usage Data used to track you. My app records the whole night and puts every sound, sleep talking included, on a zoomable timeline, then gives the night a 0 to 100 sleep score with snoring as one factor. It also estimates your sleep stages from the recording itself, so you don’t need a wearable or Apple Health, while SnoreLab’s sleep phases come from an Apple Watch through Apple Health. SnoreLab’s answer is the Snore Score. It’s a single snoring intensity number, and Premium adds breathing metrics.
+
+- On price , Snore Timeline charges nothing and sells nothing, while SnoreLab’s free version can’t run on 2 consecutive days once you’re past your first 5 sessions, per its FAQ.
+- The privacy labels differ. As declared on the App Store on 27 September 2026, Snore Timeline’s says Data Not Collected, and SnoreLab’s lists data used to track you, data linked to you and data not linked to you.
+- For audio , SnoreLab saves 20 audio samples per night by default and keeps the full night only on Premium, while Snore Timeline records and plays back the whole night for everyone.
+- SnoreLab’s strengths are 57,000 ratings at 4.7, the Snore Score, and more than 170 million monitored nights, per its site. Both apps let you tag remedies and create your own, and Snore Timeline scores the whole night from 0 to 100 and compares tagged and untagged nights across 23 built-in sleep factors.
+- On breathing , both work from audio. They do not diagnose sleep apnea. SnoreLab reports BreathFlow and a Breathing Disturbance Index (Premium), while Snore Timeline flags 10-second silences followed by a recovery sound.
+- Both run on iPhone and Android, so platform won’t decide it. Snore Timeline includes an Apple Watch app and reads Apple Health data from Apple Watch, Oura, Whoop, Garmin and Ultrahuman, and SnoreLab reads Apple Watch sleep phases through Apple Health.
+
+## Snore Timeline vs Sleep Cycle: Snoring, Alarms and Privacy
+Source: https://snoretimeline.com/blog/snore-timeline-vs-sleep-cycle
+
+Sleep Cycle is a smart alarm and sleep tracker that estimates your sleep stages from the sound of your breathing, and its help center lists snore detection, sound detection and sleep notes as Premium. Snore Timeline is a snore recorder with nothing to buy. It records the whole night, puts every snore, gasp, cough and sleep talking clip on a zoomable timeline, flags breathing pauses, nudges you when you snore and wakes you in light sleep. It estimates sleep stages from the same recording and draws them under your snoring on one chart. Sleep Cycle's App Store privacy label lists Identifiers used to track you and seven categories linked to you, while Snore Timeline's reads Data Not Collected. Go with Sleep Cycle for the alarm, sleep sounds and coaching. Pick Snore Timeline to hear and chart every snore without paying.
+
+- On price , Snore Timeline has no subscription and no in-app purchases. Sleep Cycle sells Premium from $2.99 to $57.99 on the App Store, and its help center puts snore detection, sound detection, Who's Snoring?, sleep notes and heart rate tracking in Premium.
+- The privacy labels differ. Sleep Cycle's puts Identifiers under Data Used to Track You and seven categories, Health & Fitness among them, under Data Linked to You. Snore Timeline's says Data Not Collected.
+- Both have a free smart alarm aimed at light sleep. Sleep Cycle's window runs from 10 to 30 minutes, and Snore Timeline's Smart Wake Up Alarm offers 15, 30 or 45.
+- Both estimate sleep stages from the phone's microphone, with no wearable. Snore Timeline draws them under the snoring chart and also brings in stages from Apple Watch, Oura, Garmin, Whoop and Ultrahuman through Apple Health, each source kept separate.
+- On breathing , both work from audio, and they do not diagnose sleep apnea. Snore Timeline flags 10-second silences ended by a recovery sound at no cost, while Sleep Cycle's breathing disruption data is Premium.
+- For AirPods and other Bluetooth mics, Snore Timeline records through them, while Sleep Cycle's help center tells you to disconnect Bluetooth devices.
+
+## Snore Timeline vs Pillow: Watch Tracking, Audio and Privacy
+Source: https://snoretimeline.com/blog/snore-timeline-vs-pillow
+
+Pillow suits someone who wears an Apple Watch every night and wants a polished tracker with heart rate, blood oxygen, sleep aids and a Watch app that can track a night on its own. Sound recordings, Smart Wake-up and CSV export, though, need Pillow Premium, sold for $19.99 to $59.99 in in-app purchases. Snore Timeline is for the snoring audio itself. It records the whole night on a timeline, groups snores into episodes, flags breathing pauses, and estimates your sleep stages from the same recording with the phone on your nightstand, no watch needed. It runs on iPhone and Android with no subscription or in-app purchases. Its App Store privacy label reads Data Not Collected, while Pillow's lists Identifiers, Usage Data and Diagnostics as linked to you.
+
+- On Pillow's App Store listing, sound recordings, heart rate analysis, sleep notes, Smart Wake-up and CSV export are Premium features, sold as in-app purchases from $19.99 to $59.99.
+- Snore Timeline has no subscription and no in-app purchases. Every feature ships in the download, export included.
+- Pillow records audio only in manual sessions started on the iPhone. Its own help article says the automatic Apple Watch mode can't record sound or ring an alarm.
+- Snore Timeline estimates sleep stages from the recording with the phone on a nightstand. Pillow's iPhone-only stages come from motion with the phone face down on the mattress, and its richest data comes from the Watch.
+- Pillow's privacy label lists three categories linked to you and another four collected but not linked. Snore Timeline's reads Data Not Collected.
+- Snore Timeline runs on iPhone and Android. Pillow's site names iPhone, iPad and Apple Watch.
+
+## Snore Timeline vs ShutEye: Snore Tracking, Sounds, and Privacy
+Source: https://snoretimeline.com/blog/snore-timeline-vs-shuteye
+
+Snore Timeline has no subscription and no in-app purchases, and its App Store privacy label reads Data Not Collected. ShutEye sells Premium for $9.99 to $69.99 on the App Store and declares Identifiers as data used to track you. ShutEye is built to help you fall asleep, with sleep sounds, bedtime stories and guided meditation next to a sleep tracker that saves clips of your snoring. My app records the whole night, puts every snore on a zoomable timeline you can replay, and exports CSV files and the full-night audio at no cost. Both apps estimate sleep stages from the phone with no wearable, and Snore Timeline draws them under your snoring on the same chart. It also has its own Apple Watch app, and ShutEye doesn't.
+
+- On price , Snore Timeline charges nothing and sells nothing. ShutEye's App Store listing shows in-app purchases from $9.99 (1-Month Premium) to $69.99 (ShutEye Annual VIP), and its FAQ puts advanced sleep tracking and personalized insights behind a premium plan.
+- The privacy labels differ. As declared on the App Store on 27 September 2026, Snore Timeline's says Data Not Collected, and ShutEye's lists Identifiers under Data Used to Track You.
+- ShutEye's strengths are 350,000 ratings at 4.8 and a sleep sound library with more than 70 sounds, custom mixes, bedtime stories, meditation and CBT-i programs, per its help center. Snore Timeline has no sound library.
+- For audio , ShutEye keeps clips of the sounds it detects so you can replay and share them, while Snore Timeline records the whole night, plays back any moment, and exports it.
+- For sleep stages , neither app needs a wearable. ShutEye uses the phone's microphone and motion sensors. Snore Timeline estimates stages from audio alone, draws them under your snoring, and keeps stages from Apple Watch, Oura, Garmin, Whoop and Ultrahuman as separate timelines you can compare.
+- On breathing , both apps work from audio, and they do not diagnose sleep apnea. ShutEye gives a sleep apnea risk assessment, while Snore Timeline flags 10-second silences followed by a recovery sound.
+- On Apple Watch , Snore Timeline has its own app with live heart rate and HRV, wrist taps when you snore and for the alarm, and a stop button. ShutEye has no Watch app and reads Watch data through Apple Health, per its FAQ.
+
+## Snore Timeline vs BetterSleep: Sleep Recorder, Sounds, Privacy
+Source: https://snoretimeline.com/blog/snore-timeline-vs-bettersleep
+
+Snore Timeline has no subscription and no in-app purchases, and its App Store privacy label reads Data Not Collected. BetterSleep is a sound, story and meditation app with a sleep recorder attached. It sells Premium for $11.99 to $99.99 on the App Store, and it declares four categories of data used to track you. Its recorder saves 5 to 7 second clips of snoring and sleep talk, and you need Premium to play them or see your sleep score. My app records the whole night, puts every snore on a zoomable timeline, gives the night a 0 to 100 sleep score, and exports CSV files and the full-night audio, all at no cost. Both apps estimate sleep stages from the microphone, and Snore Timeline draws them under your snoring on the same chart.
+
+- On price , Snore Timeline charges nothing and sells nothing. BetterSleep moved to a premium subscription model in 2025, its help center says, and the App Store listing shows in-app purchases from $11.99 to $99.99.
+- The privacy labels differ. As declared on the App Store on 27 September 2026, Snore Timeline’s says Data Not Collected, and BetterSleep lists Purchases, Identifiers, Usage Data and Other Data under Data Used to Track You, the most tracking categories of the 14 apps I compared.
+- BetterSleep’s strengths are 391,000 ratings at 4.7, an Editors’ Choice badge, and a library of more than 300 sounds and music tracks, more than 250 meditations and more than 100 SleepTales. Snore Timeline has no sound library.
+- For audio , BetterSleep’s recorder keeps 5 to 7 second clips for 20 days, plays them only on Premium, and can’t download them, per its help center. Snore Timeline records the whole night, plays back any moment, and exports it.
+- For sleep stages , both apps work from the microphone with no wearable. Snore Timeline draws its stages under your snoring and keeps stages from Apple Watch, Oura, Garmin, Whoop and Ultrahuman as separate timelines you can compare.
+- On Apple Watch , Snore Timeline’s app shows live heart rate and HRV, taps you for nudges and alarms, and stops a recording. BetterSleep’s help center describes its Watch app as mainly a mixer, controller and remote for the phone app.
+
+## SnoreLab Alternatives: 9 Snore Trackers on Price and Privacy
+Source: https://snoretimeline.com/blog/snorelab-alternatives
+
+SnoreLab has 57K ratings at 4.7 and a Snore Score built for testing remedies, so if you don't mind paying for Premium, it's still a strong pick. Not everyone wants to. Snore Timeline (no subscription, no in-app purchases, Data Not Collected label), AutoSnore ($4.99 once) and SnoreClock ($9.99 once) all record the whole night with no paywall. Snore Timeline also gives each night a 0 to 100 sleep score, compares nights tagged with a remedy against nights without, and estimates sleep stages from the recording alone, while SnoreLab's sleep phases come from an Apple Watch. Pillow and Snollo add Apple Watch sleep data, while ShutEye and BetterSleep pair a snore recorder with big sleep-sound libraries and charge a subscription for it.
+
+- According to the SnoreLab FAQ, the free version runs any night for your first 5 sessions and then can't run on 2 consecutive days.
+- SnoreLab Premium runs $5.99 to $59.99 on the App Store, and the app's label puts Usage Data under Data Used to Track You.
+- Snore Timeline, AutoSnore and SnoreClock are the three of the nine that declare Data Not Collected on the App Store, and only Snore Timeline also has no purchase of any kind.
+- Pillow, ShutEye, Sleep Cycle, BetterSleep and Snollo all sell subscriptions, and every one of them declares data linked to your identity.
+- SnoreLab has no snore alarm, no smart alarm and no Apple Watch app, and its FAQ says to disconnect Bluetooth audio devices. Snore Timeline nudges you when you snore, wakes you in light sleep, has a Watch app and records through AirPods.
+
+## Sleep Cycle Alternatives for Snore Tracking: 8 Apps Compared
+Source: https://snoretimeline.com/blog/sleep-cycle-alternatives
+
+If you're leaving Sleep Cycle but still want snore tracking, the options are Snore Timeline, Pillow, ShutEye, BetterSleep, SnoreLab, Snollo, AutoSleep and, on Android, Sleep as Android. Snore Timeline records the whole night, detects snoring and has a smart alarm that wakes you in light sleep, with no subscription, no in-app purchase and a privacy label that says Data Not Collected. Sleep Cycle's help center puts snore detection under Premium. AutoSleep declares Data Not Collected too. It costs $8.99 once and needs an Apple Watch. The other five iPhone apps sell Premium through in-app purchases.
+
+- Sleep Cycle has 4.7 stars from 30K ratings on the US App Store, and its website puts the Smart Alarm on the free plan.
+- Sleep Cycle's label, as declared on the App Store on 27 September 2026, puts Identifiers under Data Used to Track You and seven categories under Data Linked to You.
+- Only two apps on this list carry a Data Not Collected label, Snore Timeline and AutoSleep, and AutoSleep costs $8.99 and requires an Apple Watch.
+- Pillow, ShutEye, BetterSleep, AutoSleep and Sleep as Android each describe a smart alarm that wakes you in lighter sleep, and Snore Timeline's Smart Wake Up Alarm does it inside a 15, 30 or 45 minute window. SnoreLab and Snollo have none.
+- Sleep Cycle's help center lists snore detection, sound detection and sleep notes as Premium features. In Snore Timeline, snore detection, full-night audio, export and sleep factors cost nothing.
+- SnoreLab is all about snoring. It has a Snore Score, remedy testing and 57K ratings, but no smart alarm, and Premium runs $5.99 to $59.99.
+
+## Best Free Snoring Apps for iPhone: What Each Free Tier Includes
+Source: https://snoretimeline.com/blog/best-free-snoring-apps-iphone
+
+Here, "best" means what you can do without paying. Two apps, Snore Timeline and Snore Recorder - Sleep Monitor, list no in-app purchases, and of those two only Snore Timeline declares Data Not Collected. Snore Timeline records the whole night and includes playback, export, a 0 to 100 sleep score, remedy tracking, Snore Nudge and a Smart Wake Up Alarm in the free download. It also estimates your sleep stages from the recording alone, so you don't need a wearable. SnoreLab's free version records and plays back part of each night, then after five sessions stops you from running it two nights in a row. Sleep Cycle, Pillow and BetterSleep put snore detection or recording playback behind Premium.
+
+- Of the 14 snoring apps I track, Snore Timeline is the only one that pairs a Data Not Collected label with no purchases of any kind.
+- Once you're past your first 5 sessions, SnoreLab's free version can't run on 2 consecutive days, per its FAQ, and it limits how many recordings you can play per night.
+- Sleep Cycle keeps its smart alarm free, while snore detection, sound detection and data export are Premium, per its help center and App Store listing. Snore Timeline’s Smart Wake Up Alarm, snore detection and export are all free.
+- Pillow charges for sound recordings, smart wake-up and CSV export, per its help center. Snore Timeline includes all three at no cost.
+- Snore Timeline estimates sleep stages from the phone’s audio and draws them under the snoring chart, so you can see whether snoring clusters in light, deep or REM sleep. SnoreLab’s sleep phases come only from an Apple Watch through Apple Health, per its FAQ.
+- AutoSnore ($4.99) and SnoreClock ($9.99) charge once and sell no subscription. Both declare Data Not Collected.
+
+## Snoring Apps With No Subscription: 14 Apps Sorted by Cost
+Source: https://snoretimeline.com/blog/snoring-app-no-subscription
+
+Of the 14 snore and sleep apps I checked, two, Snore Timeline and Snore Recorder - Sleep Monitor, have nothing to buy at all, while AutoSnore ($4.99) and SnoreClock ($9.99) charge once at download and sell nothing inside the app. The other ten sell subscription plans as in-app purchases, and of all 14, Snore Timeline is the only one with no purchases of any kind and a Data Not Collected privacy label. Its free download covers what other apps sell: full-night audio and export, sleep stages estimated from the recording with no wearable, a sleep score, remedy tracking, Snore Nudge and a Smart Wake Up Alarm.
+
+- Snore Timeline and Snore Recorder - Sleep Monitor list no price on the App Store. No in-app purchases either.
+- AutoSnore costs $4.99 and SnoreClock $9.99. Neither sells anything in the app. Both carry a Data Not Collected label.
+- SnoreLab’s listing includes an item called “SnoreLab Premium One-time Purchase” at $7.99, and neither the listing nor SnoreLab’s FAQ says what it unlocks or for how long.
+- Snore Control lists “Full Version” at $31.99 beside monthly and yearly plans, and nowhere on the listing is the term of that $31.99 item stated.
+- Four of the 14 apps declare Data Not Collected. Somnio+ is the one of those four that sells subscriptions.
+- Features that sit behind a subscription elsewhere come free in Snore Timeline. SnoreLab charges for full-night recording and export, and Pillow for sound recordings, CSV export and smart wake-up, per their own help pages.
+- Cancel an App Store subscription in Settings. Tap your name, then Subscriptions.
+
+## Best Snoring Apps for Android: Free Apps and What They Collect
+Source: https://snoretimeline.com/blog/best-snoring-app-android
+
+Two of the Android snoring apps here declare no data collected and no data shared in their Google Play Data safety sections, Snore Timeline and SnoreClock. Snore Timeline has no in-app purchases. It records the whole night, lets you replay and export any of it, flags breathing pauses, and estimates sleep stages from the phone’s audio alone, with no watch. SnoreClock sells a Plus subscription. SnoreLab, Sleep as Android, Sleep Cycle and ShutEye have larger user bases. All four declare that they may collect some data. Samsung Health detects snoring only when a Galaxy Watch or Galaxy Fit3 is connected to your phone.
+
+- Snore Timeline and SnoreClock both declare in Google Play's Data safety section that they collect no data and share none with third parties.
+- Snore Timeline's Play listing shows no in-app purchases. SnoreLab, SnoreClock, Sleep as Android, Sleep Cycle and ShutEye all carry the In-app purchases tag.
+- SnoreLogic says every feature is free with no ads. It also declares that it may collect personal info, audio and three other data types.
+- Samsung Health only detects snoring with a Galaxy Watch or Galaxy Fit3 connected to your phone. The phone does the recording.
+- Snore Timeline estimates sleep stages from the phone’s audio. SnoreLab’s FAQ says its sleep phases show only on iPhones paired with an Apple Watch, and it points people who want sleep tracking and a smart alarm to its sister app, Sleepwave.
+- Snore Timeline on Android writes your sleep session, stages and respiratory rate to Health Connect. Its Apple Watch app, Siri support and Apple Health stay on iPhone.
+
+## How to Record Snoring on iPhone (Free, No Account)
+Source: https://snoretimeline.com/blog/how-to-record-snoring-on-iphone
+
+Install a snore recorder such as Snore Timeline, plug the iPhone in, and turn on Sleep Focus or Do Not Disturb. Tap record, lock the phone, and set it face-down on your nightstand 1 to 2 feet from your head. In the morning, stop the recording and open the timeline. Every snoring episode, gasp and stretch of sleep talking is labeled there, and your sleep stages are estimated from the same audio, with no watch needed.
+
+- A snore recorder app marks each snore on a timeline, so you can jump straight to the snoring instead of scrubbing through 8 hours of audio.
+- Snore Timeline estimates Light, Deep, REM and Awake from the recording alone, with no wearable or Apple Health needed, and draws those stages under your snoring chart.
+- You can record through AirPods or another Bluetooth mic, and the app keeps going if the input switches overnight.
+- Recording eats about 5 to 7% of the battery per hour. Keep the phone plugged in and face-down.
+- An hour of Snore Timeline audio takes about 8, 15 or 25 MB, depending on which quality tier you pick.
+- Snore Timeline has no subscription and no in-app purchases, so full-night playback and export cost nothing. I declared Data Not Collected on its App Store privacy label.
+
+## Snoring Apps That Flag Breathing Pauses and Their Limits
+Source: https://snoretimeline.com/blog/snoring-app-that-detects-breathing-pauses
+
+Some snoring apps flag possible breathing pauses by listening for a stretch of silence that ends in a gasp or a loud breath. No app can diagnose sleep apnea. That takes a sleep study, read by a clinician. Snore Timeline flags a pause after 1 or more minutes of audible breathing, then 10 or more seconds of silence, then a sound that breaks the silence, such as a loud snore, a gasp or a breath. Each flag is something to show a doctor.
+
+- Snore Timeline, SnoreLab Premium and Somnio+ all describe audio-based breathing features. Each one says it's not a medical device.
+- A phone microphone hears sound. It can't measure airflow, blood oxygen, chest effort or brain waves. Those are the signals a sleep study records.
+- Apple Watch sleep apnea notifications track Breathing Disturbances over 30 days with the accelerometer, and Apple says the feature is not intended to diagnose sleep apnea.
+- A 2022 meta-analysis of 11 studies reported pooled sensitivity of 90.6% and specificity of 88.0% for smartphone methods at moderate-to-severe sleep apnea, though the limits of agreement against polysomnography were wide.
+- STOP-Bang is an eight-question screener. A high score is a reason to ask about testing. A low score doesn't rule sleep apnea out.
+
+## Sleep Talking Recorder App: How to Catch What You Say at Night
+Source: https://snoretimeline.com/blog/sleep-talking-recorder-app
+
+A sleep talking recorder app listens through your phone's microphone all night, picks speech out from snoring and room noise, and saves each clip so you can play it back in the morning. Snore Timeline does this on iPhone and Android. No subscription, no in-app purchases. It labels clear speech as Sleep Talking episodes. Turn on Loud Sound Detection as well and it also saves the whispers and mumbling the classifier can't name. Tap Transcribe on a clip and the app writes out what you said, on the iPhone itself, at no cost. It keeps the whole night's audio on your phone, and declares Data Not Collected on the App Store. The same recording gives you estimated sleep stages, with no wearable needed. For clear words, pick the Standard or High Fidelity quality tier. Put the phone 1 to 2 feet from your head.
+
+- Sleep talking, or somniloquy, is a parasomnia. According to the Sleep Foundation, up to 66% of people have experienced it at least once.
+- The American Academy of Sleep Medicine calls sleep talking benign by itself, and it advises seeing a provider if it grows more frequent, starts later in life, or comes with limb movements or daytime sleepiness.
+- Snore Timeline gives speech its own episode type and marks it in cream on the timeline. Run Loud Sound Detection alongside it, since that switch is off by default and it catches the whispers and mumbling too faint or garbled for the classifier.
+- Snore Timeline can also transcribe your sleep talking. A speech model on the iPhone turns each clip into text, so the audio never leaves the phone, and it's free like the rest of the app. None of the other sixteen apps in this guide mention transcription in their App Store listings.
+- Snore Timeline's Standard tier records up to 8,000 Hz. That's the full range of everyday speech. Basic favors frequencies below 4,000 Hz, and words can come out muffled.
+- Fourteen other apps say in their App Store listings that they record or detect sleep talking. Three are snoring and sleep apps I've compared before (BetterSleep, Pillow and Snore Recorder - Sleep Monitor), and eleven came from searching the App Store for sleep talk and sleep recorder apps, from the dedicated Sleep Talk Recorder and Dream Talk Recorder to trackers like Sleep Cycle and ShutEye. SnoreLab doesn't detect it, and its FAQ says sounds that aren't snoring show up as gray bars. SleepWatch's listing doesn't say it does either.
+- Snore Timeline keeps the whole night's audio and exports it at no cost. SnoreLab's full-night recording is Premium, and Pillow, BetterSleep, Sleep Talk Recorder and Dream Talk Recorder keep clips of detected events rather than the whole night. SnoreClock records the whole night too, for $9.99 up front. SnoreClock and Sleep Talking Recorder declare Data Not Collected, like Snore Timeline.
+
+## Can Your iPhone Detect Sleep Apnea?
+Source: https://snoretimeline.com/blog/can-iphone-detect-sleep-apnea
+
+No. An iPhone has no built-in sleep apnea feature, and no app can diagnose it. A clinician does that from a home sleep test or an in-lab sleep study. What your iPhone can do is collect patterns to show that clinician. Paired with an Apple Watch Series 9 or later, Ultra 2 or later, or SE 3, it shows nightly Breathing Disturbances in the Health app and can notify you of possible sleep apnea after a 30-day review. A microphone app such as Snore Timeline records the whole night and flags silences that end in a gasp or a loud breath, so you can play each one back.
+
+- iOS has no sleep apnea feature that runs on the iPhone alone. Apple's sleep apnea notifications need a supported Apple Watch worn to bed at least 10 nights in a 30-day period.
+- Apple says the notifications aren't meant to diagnose sleep apnea, and that not everyone who has it will get one.
+- Microphone apps hear sound. They can flag silences, gasps and uneven breathing, and they miss events that make no noise.
+- Snore Timeline marks each breathing disruption on a timeline you can play back, rates them per hour, and adds time below 95% blood oxygen when a watch records it. It has no subscription or in-app purchases, and its App Store label reads Data Not Collected.
+- The American Academy of Sleep Medicine says a negative home sleep test can't rule sleep apnea out when your symptoms fit it. A quiet night in an app rules out even less.
+
+## Teeth Grinding Recorder Apps for iPhone in 2026
+Source: https://snoretimeline.com/blog/teeth-grinding-recorder-app
+
+A teeth grinding recorder app listens through your phone's microphone overnight and saves the moments that may be grinding, so you can play them back in the morning. On the US App Store, Bruxa, GrindMute and Do I Snore or Grind are built around grinding, and SnoreLess, Sleep Island and SleepyNight list it among the night sounds they pick up. Snore Timeline has no grinding label. Turn on Loud Sound Detection and it saves any sound above your room's background noise as a Loud Sound episode, grinding included, and keeps the whole night's audio on your phone with nothing to buy. No phone app can hear clenching, which makes no sound, and these apps do not diagnose bruxism.
+
+- About 8% of young to middle-aged adults grind their teeth in sleep, according to the American Academy of Sleep Medicine, and many find out only when a bed partner hears it [1] .
+- A microphone catches grinding, not clenching. Sleep labs pair jaw muscle sensors with audio and video, and a 2026 review notes that home devices without audio can't tell grinding from clenching [5] .
+- Snore Timeline doesn't label grinding. Loud Sound Detection, which is off until you turn it on, saves any sound above a volume threshold as an episode. On iPhone the Automatic threshold sits just above your room's measured background noise and re-measures every minute.
+- Three of the seven apps declare Data Not Collected on the App Store: Snore Timeline, Bruxa and SnoreLess [6] [9] . Of those, Snore Timeline and SnoreLess have no purchases at all.
+- GrindMute, Sleep Island and SleepyNight sell subscriptions [7] [10] [11] . Do I Snore or Grind lists no purchases, and its last update was in March 2019 [8] .
+
+## Does Apple Watch Track Snoring? No. What It Does Instead
+Source: https://snoretimeline.com/blog/does-apple-watch-track-snoring
+
+No. Apple Watch has no snoring feature, and no app can turn it into an automatic snore tracker. On iPhone and Apple Watch, a recording has to start from an app that's open on screen, so nothing can start listening in the background after you fall asleep. Battery is the bigger limit. Recording and analyzing sound all night would drain the watch before morning. On its own, the watch estimates sleep stages and tracks your breathing rate, and on Series 9 or later, Ultra 2 or later, and SE 3, it uses the accelerometer to look for breathing disturbances that can point to sleep apnea over 30 days. For snoring, use an iPhone app that records through the phone's microphone. My app, Snore Timeline, doesn't need the watch at all. You start it with a tap, Siri or a bedtime shortcut, and it estimates your sleep stages from the recording and draws them under the snoring chart. Wear a watch and you add vitals, wrist taps when you snore, and a Watch app that can stop a recording but not start one.
+
+- Apple's own sleep features don't detect snoring. They don't record sound at night either.
+- Overnight, the watch estimates REM, Core, and Deep sleep, gives you a sleep score, and logs breathing rate, heart rate, and wrist temperature.
+- Sleep apnea notifications run on the accelerometer, with no sound involved, and look at breathing disturbances over 30 days on Series 9 or later, Ultra 2 or later, and SE 3.
+- Apple says the feature is not intended to diagnose sleep apnea. Its Newsroom says it launched after FDA 510(k) clearance.
+- The snore recording itself happens on the iPhone. Snore Timeline estimates sleep stages from that audio alone and draws them under your snoring, so you can see which stage it falls in.
+- Pair Snore Timeline with a watch and you add heart rate, HRV, respiratory rate, blood oxygen, and wrist temperature, wrist taps for Snore Nudge and the alarm, and a Watch app that can stop a recording but not start one. If more than one device records your stages, each one's timeline stays separate so you can compare them.
+
+## Track Snoring on iPhone Without an Apple Watch
+Source: https://snoretimeline.com/blog/snore-tracker-without-apple-watch
+
+Apple's Health app gets sleep data from an Apple Watch, another sleep tracker, or entries you type in yourself, so without a watch, a snoring app can be that tracker. It records through the iPhone microphone and flags snoring, sleep talking and breathing pauses. Snore Timeline also estimates your sleep stages from the recording alone, with the phone on the nightstand, and draws them under the snoring chart so you can see which stage your snoring falls in. Heart rate, HRV, blood oxygen and wrist temperature still need a wearable.
+
+- Apple Support says Health sleep history comes from a sleep tracker or monitor, or from data you add by hand, so Health on the iPhone alone records neither snoring nor sleep stages.
+- A phone microphone can pick up snoring, sleep talking and gasps, and it can also measure loudness in decibels and hear gaps in breathing sounds.
+- After a 15-minute baseline, Snore Timeline estimates Awake, Light, Deep and REM from how regular your breathing is. It labels them as estimates and draws them in a band under the snoring chart.
+- In a 2022 study, four-stage staging from nocturnal sounds reached 68 to 70% epoch-by-epoch agreement with polysomnography.
+- For heart rate, HRV, SpO2 and wrist temperature you need a sensor worn on the body, like an Apple Watch, Oura, Garmin, Whoop or Ultrahuman. Snore Timeline reads all of them through Apple Health and keeps each device's stages separate so you can compare them.
+
+## Best Snoring Apps for Apple Watch Wearers (2026)
+Source: https://snoretimeline.com/blog/best-snoring-apps-apple-watch
+
+Apple Watch doesn’t record snoring, and no app can make it. What works is a phone app recording the sound while the watch adds heart rate, blood oxygen, sleep stages and wrist taps, and Snore Timeline, which I built, does that with no subscription or in-app purchases and lines the watch readings up next to the audio. Sleep Cycle merges the two as well, on iOS 18 and Premium; the other four apps here each miss a piece, from a paywall on the recorder to no recorder at all. I based this on 1,162 reviews from Watch owners.
+
+- Microphone: no Apple Watch sleep feature listens. The FDA summary lists the accelerometer as the sleep apnea notification’s sole input [3] .
+- Reviews: I read 1,162 App Store reviews that mention the watch, apnea, oxygen or heart rate. Top wish: sound and wrist data in one night.
+- Same night: of six apps, Snore Timeline and Sleep Cycle alone record phone audio and use the watch on the same night.
+- Apple’s notification: it flagged 66% of people with sleep apnea, 89% of severe cases and 43% of moderate ones, at 98.5% specificity.
+- Deep sleep: two independent lab studies put the watch near 50% there, the most common stage complaint in the reviews.
+- Charging: seven reviewers lost a night because the watch died or sat on the charger. Charge to 30% before bed and wear it an hour.
+
+## Smart Alarm Apps Without a Subscription (2026)
+Source: https://snoretimeline.com/blog/smart-alarm-apps-without-subscription
+
+Five iPhone apps wake you in a light-sleep window without a subscription: Snore Timeline, Sleep Cycle, Sleepwave, Sleep Time and AutoSleep, a one-time Apple Watch app. I make Snore Timeline, and I’d pick it because it sells nothing, backs its alarm with a system alarm, and can wake you by wrist tap while a partner sleeps on. In 5,688 App Store reviews people praise the slow rise in volume and hate the alarm that didn’t fire; the one controlled trial found no drop in grogginess.
+
+- Sleep Cycle: its smart alarm is on the free list, but you start a trial and cancel it to get there.
+- Pillow and SleepWatch: both sell the smart alarm inside Premium; Pillow’s is one annual plan, $49.99 after a seven-day trial.
+- Reviews: of 5,688, about 1,990 raise a subscription or trial, 178 an alarm that never fired, and 32 keep a backup alarm.
+- Science: inertia lasts 15 to 60 minutes, phone apps score stages near chance, and a 2019 review says the deep-sleep link is being challenged.
+- Snore Timeline: fires when you stir or murmur, holds back on a confident deep-sleep reading, and otherwise rings at the set time.
+- Privacy: Snore Timeline and AutoSleep declare Data Not Collected; the other five declare data linked to you or used to track you.
+
+## How to Record Noise From an Upstairs Neighbor at Night
+Source: https://snoretimeline.com/blog/record-noisy-neighbors-at-night
+
+Leave a phone recording all night with an app that lists each loud sound with its time and peak decibel reading, then read the list in the morning instead of scrubbing eight hours of audio. I make Snore Timeline, which does this through its Loud Sound Detection setting, with nothing to buy and the audio kept on your phone. Write the times into a noise diary, because landlords and building managers ask for one first.
+
+- Record all night: noise upstairs comes at random hours, so a clip you start by hand usually misses it.
+- Read the list: Snore Timeline lists every loud sound with its time and peak dB, so you don’t scrub the audio.
+- Accuracy: phone readings are relative. NIOSH found built-in mics 14 dB low to 11 dB high [3] .
+- Diary: a written log of dates and times is what landlords and building managers ask for first.
+
+## Apps That Record Noises While You Sleep (2026)
+Source: https://snoretimeline.com/blog/apps-that-record-noises-while-you-sleep
+
+An app that records noises while you sleep keeps the microphone open all night and either saves everything or saves a clip each time its classifier recognises a sound. If you don’t know what the noise is yet, pick a whole-night recorder, because a clip app keeps only the sounds it can name. I make Snore Timeline, which records the whole night on iPhone and Android, labels snoring, gasps, coughs, sleep talking, laughter and breathing pauses, marks anything it couldn’t name so you can play it, and charges nothing, with the audio kept on your phone. The advice draws on 2,656 recent App Store reviews of nine recorders.
+
+- Clips lose sounds: most recorders save trigger clips, so a sound the classifier can’t label may never be saved; SnoreLab keeps samples unless you pay [13] [17] .
+- Reviews: across 2,656 recent App Store reviews of nine recorders, the subscription wall is the top complaint and a fan the top false trigger.
+- Prevalence: snoring is habitual in 40 percent of adult men and 24 percent of women; 60 to 65 percent of people have talked in their sleep [1] [2] .
+- The gasp: snoring, a silent pause, then a gasp is the AASM’s pattern for sleep apnea; a recording shows it to a doctor and diagnoses nothing [8] .
+- Screen locked: an iPhone app records locked only if its developer enabled background audio [11] ; two apps here say stay open on screen [19] [23] .
+
+## Do I Snore or Grind Alternatives (2026)
+Source: https://snoretimeline.com/blog/do-i-snore-or-grind-alternatives
+
+Do I Snore or Grind is a free SleepScore Labs app that records snoring and teeth grinding, lets you listen the next morning, and compares nights with and without a remedy. Its last iPhone update shipped in March 2019, and of its 25 most recent App Store reviews, 16 say it records nothing on current iPhones and 7 say sign-up fails. I make Snore Timeline, which records the whole night with nothing to buy and no account, labels snoring and sleep talking, and saves grinding as episodes you judge by ear.
+
+- Updates: Version 1.2.4 carries a 2019 date on both stores, and reviews since January 2025 average under two stars, several naming iOS 18 [1] [2] .
+- Account and data: Sign-up is required, the privacy policy never names the app, and Play says it may share audio with third parties [2] [3] .
+- Remedies: 15 of 137 reviews praise its remedy comparison, more than any other feature; Snore Timeline’s 23 sleep factors do that job for snoring.
+- Grinding vs clenching: A microphone hears grinding and misses clenching, and a 2026 review says only audio plus video tells the two apart [9] .
+- Diagnosis: No app diagnoses bruxism. Dentists work from history and an exam, and the AASM calls a sleep study a rare need for grinding alone [6] [10] .
+- Snore Timeline: No grinding label. Loud Sound Detection saves anything above the room’s background as an episode, grinding included, with full-night audio.
+
+## How to Record Someone Snoring: For the Partner Who Can't Sleep
+Source: https://snoretimeline.com/blog/how-to-record-someone-snoring
+
+Put a phone on the snorer’s side of the bed, one to two feet from their head, and record all night. In the morning, play the loudest episodes: loud and full is beside the phone, faint is across the bed. I make Snore Timeline, which does this with nothing to buy and lets you send any episode as a clip.
+
+- Two sleepers: only Sleep Cycle tries to tell them apart, and its Who’s Snoring needs Premium [3] . SnoreLab’s FAQ says it can’t [4] .
+- Placement: the phone hears whoever is closest, so put it on the snorer’s side.
+- Gasping: silent pauses followed by a choke or gasp are a sign of sleep apnea worth taking to a doctor [1] .
+
+## App Store privacy labels, 14 snoring and sleep apps (US store, 27 September 2026)
+
+| App | Rating (count) | Data Used to Track You | Data Linked to You | Data Not Linked to You | Purchases |
+|---|---|---|---|---|---|
+| Snore Timeline | 4.9 (214) | Data Not Collected | Data Not Collected | Data Not Collected | None |
+| SnoreLab | 4.7 (57K) | Usage Data | Health & Fitness, Contact Info, User Content, Identifiers (User ID) | Identifiers (Device ID), Usage Data (Product Interaction), Diagnostics | from $5.99 to $59.99 (subscriptions) |
+| Sleep Cycle | 4.7 (30K) | Identifiers | Health & Fitness, Purchases, Location, Contact Info, Identifiers (Device ID, User ID), Usage Data, Diagnostics | None declared | from $2.99 to $57.99 (subscriptions) |
+| Pillow | 4.4 (96K) | None declared | Identifiers (Device ID), Usage Data, Diagnostics | Purchases, Location, User Content, Identifiers (User ID) | from $19.99 to $59.99 (subscriptions) |
+| ShutEye | 4.8 (350K) | Identifiers | Identifiers (Device ID, User ID) | Health & Fitness, User Content, Usage Data, Diagnostics | from $9.99 to $69.99 (subscriptions) |
+| BetterSleep | 4.7 (391K) | Purchases, Identifiers, Usage Data, Other Data | Purchases (Purchase History), Contact Info, User Content, Identifiers (Device ID, User ID), Usage Data (Other Usage Data, Product Interaction), Diagnostics (Crash Data), Other Data (Other Data Types) | Location, Diagnostics (Performance Data) | from $11.99 to $99.99 (subscriptions) |
+| SleepScore | 4.4 (7.5K) | None declared | Health & Fitness, Purchases, Location, Contact Info, Identifiers, Usage Data, Other Data | Diagnostics | from $9.99 to $59.99 (subscriptions) |
+| Snollo | 2.9 (14) | None declared | Health & Fitness, Purchases, Location, Contact Info, User Content, Identifiers | Usage Data, Diagnostics | from $5.99 to $39.99 (subscriptions) |
+| Koala Nap | 4.4 (342) | None declared | None declared | User Content, Diagnostics | from $6.99 to $39.99 (subscriptions) |
+| Snore Control | 4.4 (608) | None declared | User Content | Usage Data, Diagnostics | from $0.99 to $31.99 (subscriptions) |
+| Snore Recorder - Sleep Monitor | 4.5 (4.2K) | None declared | None declared | User Content, Usage Data | None |
+| AutoSnore | 4.3 (1.3K) | Data Not Collected | Data Not Collected | Data Not Collected | $4.99 one-time |
+| SnoreClock | 4.6 (60) | Data Not Collected | Data Not Collected | Data Not Collected | $9.99 one-time |
+| Somnio+ | 3.8 (16) | Data Not Collected | Data Not Collected | Data Not Collected | from $4.99 to $29.99 (subscriptions) |
+
+Four apps declare Data Not Collected: Snore Timeline, AutoSnore, SnoreClock and Somnio+. Snore Timeline is the only one of the 14 with both that label and no purchases of any kind.
+
+---
+# Privacy Policy
+
+Source: https://snoretimeline.com/privacy
+Last Updated: January 10, 2026
+
+This Privacy Policy explains how Snore Timeline (the App) and the marketing website (snoretimeline.com) handle your information.
+
+## 1. Our Commitment to Your Privacy
+Your privacy is the top priority. The app is designed with a fundamental commitment to not collect any personally identifiable information.
+
+## 2. No Website Tracking
+snoretimeline.com does not use analytics, tracking, or cookies.
+
+## 3. Information the App Does NOT Collect
+The iOS app does not collect, store, or transmit:
+
+- **Personally Identifiable Information** — no name, email, phone number, or other identifying information
+- **Audio Recordings** — recordings are created, processed, and stored exclusively on your device
+- **Usage Data & Analytics** — no third-party analytics, no tracking
+- **Health or Medical Information** — no health data, snore patterns, or medical history collected
+
+## 4. Data Storage
+All app data, including recordings, is processed and stored locally on your device. Nothing is transferred to external servers, third parties, or the developer.
+
+## 5. No Third-Party Access
+No data is collected, so there is nothing to share with third parties.
+
+## 6. Your Control Over Your Data
+All data lives on your device. Delete recordings within the app or uninstall the app to remove everything.
+
+## 7. Changes to This Privacy Policy
+Updates will be posted to this page.
