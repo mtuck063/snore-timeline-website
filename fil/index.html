@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="tl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Snore Timeline: Recorder ng Hilik at Pagsasalita, Smart na Alarma sa Paggising</title>
+    <meta name="title" content="Snore Timeline: Recorder ng Hilik at Pagsasalita, Smart na Alarma sa Paggising">
+    <meta name="description" content="Recorder ng hilik at pagsasalita habang natutulog, may Smart na Alarma sa Paggising at gabing sleep at recovery score. Para sa Apple Watch, Oura, at Garmin. Walang subscription.">
+    <meta name="keywords" content="pagsubaybay ng hilik, pagsubaybay ng tulog, snoring app, pagtukoy ng pagkaabala sa paghinga, pagsusuri ng tulog, iOS app, snore recorder, mga tunog ng tulog, pagtukoy ng paghinto ng paghinga, snore recorder na may timeline, snoring app na nagpapakita ng mga episode, timeline snore tracker, visualization ng snoring episode, recovery score, sleep readiness score, hrv recovery, apple watch recovery score">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Filipino">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0E1116">
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/fil/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://snoretimeline.com/">
+    <link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://snoretimeline.com/zh/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/">
+    <link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/">
+    <link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/">
+    <link rel="alternate" hreflang="tl" href="https://snoretimeline.com/fil/">
+    <link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/">
+    <link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/">
+    <link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/">
+    <link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/">
+    <link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/">
+    <link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/">
+    <link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/">
+    <link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/">
+    <link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/">
+    <link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/">
+    <link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/">
+    <link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/">
+    <link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/">
+    <link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/">
+    <link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://snoretimeline.com/fil/">
+    <meta property="og:title" content="Snore Timeline: Recorder ng Hilik at Pagsasalita, Smart na Alarma sa Paggising">
+    <meta property="og:description" content="Recorder ng hilik at pagsasalita habang natutulog, may Smart na Alarma sa Paggising at gabing sleep at recovery score. Para sa Apple Watch, Oura, at Garmin. Walang subscription.">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:locale" content="fil_PH">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/fil/">
+    <meta property="twitter:title" content="Snore Timeline: Recorder ng Hilik at Pagsasalita, Smart na Alarma sa Paggising">
+    <meta property="twitter:description" content="Recorder ng hilik at pagsasalita habang natutulog, may Smart na Alarma sa Paggising at gabing sleep at recovery score. Para sa Apple Watch, Oura, at Garmin. Walang subscription.">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:app_store_id" content="6751759381">
+    <meta property="al:ios:app_name" content="Snore Timeline">
+    <meta property="al:ios:url" content="snoretimeline://open">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../styles.css?v=28">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://snoretimeline.com/#organization",
+  "name": "Snore Timeline",
+  "url": "https://snoretimeline.com/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://snoretimeline.com/logo.png"
+  },
+  "email": "support@snoretimeline.com",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@snoretimeline.com",
+    "url": "https://snoretimeline.com/support/contact"
+  },
+  "founder": {
+    "@id": "https://snoretimeline.com/about#person",
+    "@type": "Person",
+    "name": "Menelik Tucker",
+    "url": "https://snoretimeline.com/about"
+  },
+  "sameAs": [
+    "https://apps.apple.com/app/id6751759381",
+    "https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "MobileApplication",
+          "name": "Snore Timeline",
+          "description": "Recorder ng hilik at pagsasalita habang natutulog, may Transcription ng Pagsasalita Habang Natutulog sa mismong device, Smart na Alarma sa Paggising na gumigising sa iyo habang magaan ang tulog, gabing sleep score at recovery score, mga yugto ng tulog, pagtukoy ng pagkaabala sa paghinga, at Udyok sa Paghilik sa Apple Watch. Gumagana sa Apple Watch, Oura, Garmin, Whoop, at Ultrahuman sa pamamagitan ng Apple Health. Ganap na privacy, lahat ng pagpoproseso ay nasa device.",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS, Android, watchOS",
+          "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+          },
+          "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "ratingCount": "590",
+                "bestRating": "5",
+                "worstRating": "1"
+          },
+          "author": {
+                "@type": "Person",
+                "name": "Menelik Tucker"
+          },
+          "image": "https://snoretimeline.com/logo.png",
+          "screenshot": "https://snoretimeline.com/app-screenshot.png",
+          "url": "https://apps.apple.com/fil/app/snore-timeline/id6751759381",
+          "downloadUrl": "https://apps.apple.com/fil/app/snore-timeline/id6751759381",
+          "featureList": [
+                "Interactive na Timeline ng Hilik: I-tap ang Kahit Anong Sandali para Marinig Ito",
+                "Awtomatikong Pagtukoy ng Hilik, Nire-record ang Buong Gabi Nang Walang Sampling",
+                "Pagtukoy ng Pagsasalita Habang Natutulog at Transcription sa Device",
+                "Pagtukoy ng Pagkaabala sa Paghinga mula sa Audio (Hindi Medikal na Diagnosis)",
+                "Smart na Alarma sa Paggising na Gumigising sa Iyo Habang Magaan ang Tulog",
+                "Custom na Tunog ng Alarm: Mag-import ng Audio File o Mag-record ng Sarili Mo",
+                "Gabing Sleep Score (0 hanggang 100)",
+                "Gabing Recovery Score mula sa HRV, Resting Heart Rate, SpO2, at Temperatura ng Pulso",
+                "Mga Vital sa Gabi na Sinusukat Laban sa Sarili Mong 28-Gabing Batayan",
+                "Pagtaya ng mga Yugto ng Tulog mula sa Audio ng Paghinga (Gising, Magaan, Mahimbing, REM)",
+                "Udyok sa Paghilik: Tunog, Vibration ng iPhone, o Tapik sa Pulso Kapag Humihilik Ka",
+                "Mga Antas ng Udyok sa Paghilik: Umudyok sa Bawat Hilik o sa Malakas na Paghilik Lang",
+                "Iisang Haba ng Udyok, 2 hanggang 30 Segundo, para sa Tono, Vibration at Tapik sa Pulso",
+                "Tahimik na Tapik sa Pulso sa Apple Watch, Garmin, Fitbit, Huawei, at Iba Pang Relong Nagpapakita ng Mga Notification ng iPhone",
+                "App Store Privacy Label: Data Not Collected (Walang Kinokolektang Datos). Pagpoproseso sa Device, Walang Account",
+                "Gumagana sa Apple Watch, Oura, Garmin, Whoop, at Ultrahuman sa Pamamagitan ng Apple Health",
+                "Apple Watch App na may Sleep Score Complication at Tahimik na Alarm na Tapik sa Pulso",
+                "Mga Episode ng Paghilik na Pinagpangkat ayon sa Tagal at Tindi",
+                "Mga Chart ng Hilik Kada Minuto at Lingguhang Trend",
+                "Pagtukoy ng Malakas na Tunog na may Awtomatikong Threshold na 5 dB sa Itaas ng Iyong Silid",
+                "Status ng Recording sa Dynamic Island at Lock Screen, na may One-Tap na Pagtuloy Pagkatapos ng Abala",
+                "Pahinang Ngayong Gabi na may Countdown sa Oras ng Tulog at Mga Pagsusuri Bago Ka Matulog",
+                "Mga Gabay sa Sleep Factor na may Haba ng Pagsubok para sa Mga Karaniwang Lunas sa Paghilik",
+                "Pinahusay na Pag-playback ng Audio",
+                "Sleep Bank: Lingguhang Kulang sa Tulog Kumpara sa Sarili Mong Sleep Goal (6 hanggang 10 Oras)",
+                "Pag-export ng CSV Data at Audio para sa 7 Araw, 30 Araw, o Lahat ng Panahon",
+                "Live na Heart Rate at HRV Habang Nagre-record",
+                "Suporta sa AirPods at Bluetooth na Mikropono",
+                "Matalinong Pamamahala ng Storage",
+                "Paalala sa Pag-record Bago Matulog",
+                "Suporta sa VoiceOver at Voice Control"
+          ],
+          "review": [
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "mdmorz"
+                      },
+                      "datePublished": "2026-07-27",
+                      "name": "Great App",
+                      "reviewBody": "Everything needed for analysing snoring patterns, no gimmicks app",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "smjtysx"
+                      },
+                      "datePublished": "2026-07-18",
+                      "name": "好用",
+                      "reviewBody": "记录清晰完整准确，值得推荐！",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "MoralSuperiorityComplex"
+                      },
+                      "datePublished": "2026-07-14",
+                      "name": "Thank you for making my life better. CEO in California.",
+                      "reviewBody": "Thank you for making my life better. CEO in California.",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "snap hater lol"
+                      },
+                      "datePublished": "2026-07-02",
+                      "name": "Absolute game changer",
+                      "reviewBody": "It’s really amazing how people can built an actually good app, It’s also all free. nothing locked behind a paywall! it’s so incredibly helpful and incredible",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Jerooskii"
+                      },
+                      "datePublished": "2026-07-02",
+                      "name": "Todo lo necesario!",
+                      "reviewBody": "Graba ronquidos y tiene la opción de que se guarden únicamente los que se detectan.\n\nTiene despertador incluido opcional y el resumen de la noche es completo y me ha ayudado a dar seguimiento a mis hábitos de sueño\n\nSúper recomendada y el diseño de interfaz es impecable",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Mic winter"
+                      },
+                      "datePublished": "2026-06-23",
+                      "name": "👍",
+                      "reviewBody": "❤️￼ best snore app I’ve used yet",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Sasanki124"
+                      },
+                      "datePublished": "2026-06-22",
+                      "name": "Thank you",
+                      "reviewBody": "Thank you for making this free. You are the best",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Jj hiker"
+                      },
+                      "datePublished": "2026-06-16",
+                      "name": "Three thumbs up!",
+                      "reviewBody": "What an impressive app!  \n\nIncredibly robust, long feature list with lots of anticipated needs and corresponding features. Super impressed with what's there!   Kudos to the developer for the level of maturity obtained.  If I had a third hand - it'd be rated three thumbs up!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "DarthMike98"
+                      },
+                      "datePublished": "2026-06-10",
+                      "name": "Amazing app",
+                      "reviewBody": "Well written app. Using it is a delight! Just tracked my first sleep!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "UndertakerActual"
+                      },
+                      "datePublished": "2026-06-09",
+                      "name": "Great App!",
+                      "reviewBody": "I hardly ever write reviews, but I want other people like myself (skeptics by nature) to know that this is an excellent app that preforms exactly as advertised, and most importantly, without ANY additional fees, subscriptions, ads, paywalls, etc. \n\nI learned about this app on Reddit, from the developer himself, I believe. I decided to give it a try, and was pleasantly surprised to find out if it does exactly what it said it would do. A rare find these days! Highly recommend if you’re looking for a solid, straightforward snore app.",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Emma.abcd"
+                      },
+                      "datePublished": "2026-06-07",
+                      "name": "Best app for sleep tracker",
+                      "reviewBody": "I’ve searched and tested a lot of different sleep tracker but this one is honestly the best. The recording settings are very good and so is the sleep analysis. And compared to other apps every features are free! I would definitely recommend this to anyone who wants to understand better their sleep!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Mohammed😀"
+                      },
+                      "datePublished": "2026-06-07",
+                      "name": "Better than other paid apps!",
+                      "reviewBody": "I am surprised this app is free because it works better than other premium snore recording apps that cost money. Much easier to navigate and listen to recordings compared to other apps. Kudos to the developer!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                }
+          ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Bakit tumigil ang recording ko sa kalagitnaan ng gabi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kadalasan dahil sa tawag sa telepono, ibang app na kumukuha ng mikropono, o AirPods na nadiskonekta. Panatilihing naka-charge ang telepono at naka-on ang Sleep Focus. Kapag may umabala, may button na Ituloy ang Recording sa iyong Lock Screen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Nasaan ang mga recording ko, at paano ko ito ibabahagi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I-tap ang download arrow sa isang episode para i-save ang clip na iyon sa Files app. Para sa buong gabi, buksan ang I-export ang Report para makakuha ng ZIP na may audio at mga spreadsheet na puwede mong ipadala sa doktor mo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gumagana ba ito sa Apple Watch ko o sa ibang relo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ang telepono mo ang nagre-record. Nagdadagdag ang relo ng heart rate, HRV, at blood oxygen sa pamamagitan ng Apple Health o Health Connect, at kaya ng Apple Watch, Garmin, Fitbit, at karamihan ng ibang relo na tapikin ang pulso mo kapag humihilik ka."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kaya ba nitong ihiwalay ang hilik ko sa hilik ng partner ko, sa bentilador, o sa musika?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Naririnig nito ang lahat ng tunog sa kuwarto, kaya hindi nito mapaghihiwalay ang dalawang humihilik. Ilagay ang telepono pinakamalapit sa taong sinusubaybayan mo. Background ang turing sa tuloy-tuloy na tunog gaya ng bentilador o musika, at puwede mong i-play ulit ang kahit anong sandali para tingnan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Libre ba talaga? Ano ang nangyayari sa data ko?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oo, libre ang bawat feature, walang ads o subscription. Walang account, tumatakbo ang pagtukoy sa telepono mo, at walang ina-upload. Data Not Collected ang nakasulat sa App Store privacy label."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kaya ba nitong tukuyin ang sleep apnea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minamarkahan nito ang mga paghinto sa paghinga mo at hinahayaan kang i-play ulit ang mga ito, na kapaki-pakinabang na ipakita sa doktor. Hindi ito medical device at wala itong dina-diagnose."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Lumaktaw sa nilalaman</a>
+    <!-- Sticky header (shares the support-center chrome) -->
+    <header class="support-topbar home-topbar">
+        <div class="support-topbar-inner">
+            <a href="/fil/" class="support-topbar-brand"><img src="../logo.png" alt="">Snore Timeline</a>
+            <span class="support-topbar-eyebrow">Sleep Tracker</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="/fil/support/" class="home-topbar-link">Suporta</a>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta home-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>I-download</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main" tabindex="-1">
+    <section class="hero" aria-label="Hero section">
+        <!-- Shader background -->
+        <canvas id="hero-shader" aria-hidden="true"></canvas>
+        <!-- Animated background elements -->
+        <div class="hero-bg-orb hero-bg-orb-1"></div>
+        <div class="hero-bg-orb hero-bg-orb-2"></div>
+        <div class="hero-stars">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+        </div>
+
+        <div class="container hero-content">
+            <article class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Pakinggan ang buong gabi mo, hindi mga sample lang nito.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Hilik, pagsasalita sa tulog, pagngangalit ng ngipin, at paghinto ng paghinga kagabi, sa isang timeline na puwede mong i-tap para i-play. Libre, walang account at walang subscription.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">I-download sa</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">Kunin sa</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="hero-rating"><span class="hero-rating-stars">★★★★★</span> Minamahal sa App Store at Google Play</p>
+                <p class="hero-tip-nudge">Libre sa iOS at Android</p>
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>100% Pribado</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span>Real-time na Pagtukoy</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span>Walang Subscription</span>
+                    </div>
+                </div>
+            </article>
+            <aside class="hero-visual" aria-label="App preview">
+                <div class="phone-scene" id="phone-scene">
+                    <div class="phone-glow"></div>
+                    <span class="phone-contact-shadow" aria-hidden="true"></span>
+                    <div class="phone-float">
+                        <div class="phone-swing">
+                            <div class="phone-3d">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <video id="hero-video" poster="/hero-tour/fil-poster.webp?v=10" class="app-screenshot" width="720" height="1566" fetchpriority="high" muted loop playsinline aria-label="Snore Timeline na nagpapakita ng isang gabi: ang timeline, isang hilik, pagsasalita sa tulog at isang malakas na tunog na pinatugtog, ang sleep score at mga yugto ng tulog, at mga vital mula sa relo">
+                            <source src="/hero-tour/fil.mp4?v=10" type="video/mp4">
+                            <source src="/hero-tour/fil.webm?v=10" type="video/webm">
+                        </video>
+                                        <span class="phone-island" aria-hidden="true"></span>
+                                        <span class="phone-glare" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Mga Review sa App Store</span>
+                <h2 class="section-title" id="reviews-heading">Bawat review, walang pinipili</h2>
+                <p class="section-subtitle cursive">Walang hinalaw</p>
+            </div>
+
+            <div class="rv-panel" id="reviewsPanel" data-rv-state="static"
+                data-rv-nobreakdown="(walang nailathalang breakdown ng bituin)"
+                data-rv-histlabel="Breakdown ng rating: {rows}"
+                data-rv-justnow="ngayon lang"
+                data-rv-updatedpre="Tinitingnan kada oras · huling bagong rating "
+                data-rv-updatedpost=""
+                data-rv-starslabel="{n} sa 5 bituin"
+                data-rv-newtag="Bago"
+                data-rv-readmore="Basahin ang buong review"
+                data-rv-readreply="Basahin ang sagot ng developer"
+                data-rv-translate="Isalin"
+                data-rv-translating="Isinasalin…"
+                data-rv-alreadylang="Nasa wika mo na"
+                data-rv-translated="Naisalin"
+                data-rv-translatefailed="Hindi naisalin, i-tap para subukan ulit"
+                data-rv-empty="Wala pang review na tumutugma sa filter na iyan."
+                data-rv-emptycountry="May {n} rating ang {country}, pero wala pang nakasulat na review."
+                data-rv-showing="Ipinapakita ang {shown} sa {total} nakasulat na review"
+                data-rv-showingone="Ipinapakita ang tanging nakasulat na review"
+                data-rv-showall="Ipakita ang lahat ng {n} review"
+                data-rv-weeknone="Walang bagong nakasulat na review ngayong linggo. Nabibilang sa itaas ang mga rating na walang teksto."
+                data-rv-weekone="{n} bagong nakasulat na review"
+                data-rv-weekmany="{n} bagong nakasulat na review"
+                data-rv-nrating="{n} rating"
+                data-rv-nratings="{n} rating"
+                data-rv-devresponse="Sagot mula sa developer">
+                <div class="rv-summary">
+                    <div class="rv-summary-top">
+                        <label class="rv-select rv-select-scope">
+                            <span class="rv-select-label rv-sr-only">Store</span>
+                            <select data-rv="country" disabled><option value="all">Lahat ng bansa</option></select>
+                        </label>
+                    </div>
+
+                    <div class="rv-score">
+                        <span class="rv-score-num" data-rv="avg">4.9</span>
+                        <span class="rv-score-stars" data-rv="avgstars" aria-hidden="true">★★★★★</span>
+                        <span class="rv-score-count"><strong data-rv="count">590</strong> rating sa App Store</span>
+                        <span class="rv-score-note" data-rv="note" hidden></span>
+                    </div>
+
+                    <div class="rv-histogram" data-rv="histogram" role="img" aria-label="Breakdown ng rating: 320 na five-star, 20 na four-star, 5 na three-star, 0 na two-star, 2 na one-star">
+                        <div class="rv-bar-row"><span class="rv-bar-label">5★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:100%"></span></span><span class="rv-bar-num">320</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">4★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:6.3%"></span></span><span class="rv-bar-num">20</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">3★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:1.6%"></span></span><span class="rv-bar-num">5</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">2★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:0%"></span></span><span class="rv-bar-num">0</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">1★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:0.6%"></span></span><span class="rv-bar-num">2</span></div>
+                    </div>
+                </div>
+
+                <p class="rv-updated" data-rv="updated">
+                    <span class="rv-dot" aria-hidden="true"></span>
+                    <span data-rv="updatedtext">Tinitingnan sa App Store kada oras.</span>
+                </p>
+
+                <section class="rv-week" data-rv="week" aria-labelledby="rv-week-heading" hidden>
+                    <div class="rv-week-head">
+                        <div class="rv-week-stat">
+                            <span class="rv-week-num" data-rv="weeknum">—</span>
+                            <span class="rv-week-label" id="rv-week-heading">bagong rating sa nakaraang 7 araw</span>
+                        </div>
+                        <ul class="rv-week-countries" data-rv="weekcountries" aria-label="Mga bansang pinanggalingan ng mga rating na ito"></ul>
+                    </div>
+                    <div class="rv-week-reviews" data-rv="weekreviews" hidden>
+                        <h3 class="rv-week-subhead" data-rv="weeksubhead"></h3>
+                        <div class="rv-week-list" data-rv="weeklist"></div>
+                    </div>
+                    <p class="rv-week-empty" data-rv="weekempty" hidden></p>
+                </section>
+
+                <div class="rv-controls" data-rv="controls" hidden>
+                    <div class="rv-chips" role="group" aria-label="I-filter ang mga review ayon sa bituin">
+                        <button type="button" class="rv-chip is-active" data-rv-stars="all">Lahat</button>
+                        <button type="button" class="rv-chip" data-rv-stars="5">5★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="4">4★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="3">3★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="2">2★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="1">1★</button>
+                    </div>
+                    <div class="rv-selects">
+                        <label class="rv-select">
+                            <span class="rv-select-label">Ayusin</span>
+                            <select data-rv="sort">
+                                <option value="newest">Pinakabago muna</option>
+                                <option value="oldest">Pinakaluma muna</option>
+                                <option value="lowest">Pinakamababang rating</option>
+                                <option value="highest">Pinakamataas na rating</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <p class="rv-count-line" data-rv="countline" hidden></p>
+
+                <div class="rv-list" data-rv="list">
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-27</span>
+                        </div>
+                        <h3 class="rv-card-title">Great App</h3>
+                        <p class="rv-card-body">Everything needed for analysing snoring patterns, no gimmicks app</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">mdmorz</span>
+                            <span class="rv-card-meta">🇮🇳 India · v4.10</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-18</span>
+                        </div>
+                        <h3 class="rv-card-title">好用</h3>
+                        <p class="rv-card-body">记录清晰完整准确，值得推荐！</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">smjtysx</span>
+                            <span class="rv-card-meta">🇨🇳 China · v4.9</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-14</span>
+                        </div>
+                        <h3 class="rv-card-title">Thank you for making my life better. CEO in California.</h3>
+                        <p class="rv-card-body">Thank you for making my life better. CEO in California.</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">MoralSuperiorityComplex</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.8</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-02</span>
+                        </div>
+                        <h3 class="rv-card-title">Absolute game changer</h3>
+                        <p class="rv-card-body">It’s really amazing how people can built an actually good app, It’s also all free. nothing locked behind a paywall! it’s so incredibly helpful and incredible</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">snap hater lol</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.8</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-02</span>
+                        </div>
+                        <h3 class="rv-card-title">Todo lo necesario!</h3>
+                        <p class="rv-card-body">Graba ronquidos y tiene la opción de que se guarden únicamente los que se detectan.
+
+Tiene despertador incluido opcional y el resumen de la noche es completo y me ha ayudado a dar seguimiento a mis hábitos de sueño
+
+Súper recomendada y el diseño de interfaz es impecable</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Jerooskii</span>
+                            <span class="rv-card-meta">🇲🇽 Mexico · v4.8</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-23</span>
+                        </div>
+                        <h3 class="rv-card-title">👍</h3>
+                        <p class="rv-card-body">❤️￼ best snore app I’ve used yet</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Mic winter</span>
+                            <span class="rv-card-meta">🇨🇦 Canada · v4.6</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-22</span>
+                        </div>
+                        <h3 class="rv-card-title">Thank you</h3>
+                        <p class="rv-card-body">Thank you for making this free. You are the best</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Sasanki124</span>
+                            <span class="rv-card-meta">🇨🇦 Canada · v4.6</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-16</span>
+                        </div>
+                        <h3 class="rv-card-title">Three thumbs up!</h3>
+                        <p class="rv-card-body">What an impressive app!  
+
+Incredibly robust, long feature list with lots of anticipated needs and corresponding features. Super impressed with what's there!   Kudos to the developer for the level of maturity obtained.  If I had a third hand - it'd be rated three thumbs up!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Jj hiker</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.6</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-10</span>
+                        </div>
+                        <h3 class="rv-card-title">Amazing app</h3>
+                        <p class="rv-card-body">Well written app. Using it is a delight! Just tracked my first sleep!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">DarthMike98</span>
+                            <span class="rv-card-meta">🇮🇳 India · v4.5</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-09</span>
+                        </div>
+                        <h3 class="rv-card-title">Great App!</h3>
+                        <p class="rv-card-body">I hardly ever write reviews, but I want other people like myself (skeptics by nature) to know that this is an excellent app that preforms exactly as advertised, and most importantly, without ANY additional fees, subscriptions, ads, paywalls, etc. 
+
+I learned about this app on Reddit, from the developer himself, I believe. I decided to give it a try, and was pleasantly surprised to find out if it does exactly what it said it would do. A rare find these days! Highly recommend if you’re looking for a solid, straightforward snore app.</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">UndertakerActual</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.5</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-07</span>
+                        </div>
+                        <h3 class="rv-card-title">Best app for sleep tracker</h3>
+                        <p class="rv-card-body">I’ve searched and tested a lot of different sleep tracker but this one is honestly the best. The recording settings are very good and so is the sleep analysis. And compared to other apps every features are free! I would definitely recommend this to anyone who wants to understand better their sleep!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Emma.abcd</span>
+                            <span class="rv-card-meta">🇦🇪 United Arab Emirates · v4.5</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-07</span>
+                        </div>
+                        <h3 class="rv-card-title">Better than other paid apps!</h3>
+                        <p class="rv-card-body">I am surprised this app is free because it works better than other premium snore recording apps that cost money. Much easier to navigate and listen to recordings compared to other apps. Kudos to the developer!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Mohammed😀</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.5</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="rv-actions">
+                    <button type="button" class="rv-more" data-rv="more" hidden></button>
+                </div>
+
+                <p class="rv-foot">
+                    Bawat nakasulat na review na inilathala ng App Store, sa sariling salita at wika ng nagsulat. Walang inedit, walang tinanggal. Mga rating lang ito sa iOS. Hindi pa kasama ang mga review sa Google Play.
+                    <a href="https://apps.apple.com/app/id6751759381?action=write-review" target="_blank" rel="noopener noreferrer">Magsulat ng sarili mong review →</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three reasons, one row -->
+    <section class="hv-trust" aria-label="Bakit Snore Timeline">
+        <div class="container hv-trust-grid">
+            <div class="hv-trust-item">
+                <span class="hv-trust-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg></span>
+                <h3>Data Not Collected</h3>
+                <p>Nasa telepono mo lang ang mga recording. Walang account.</p>
+            </div>
+            <div class="hv-trust-item">
+                <span class="hv-trust-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v10H4zM2.5 7h19v4h-19zM12 7v14"/><path d="M12 7c-1.5-3.5-6-3.5-6-1s4 1 6 1zm0 0c1.5-3.5 6-3.5 6-1s-4 1-6 1z"/></svg></span>
+                <h3>Walang subscription</h3>
+                <p>Libre ang bawat feature, salamat sa mga tip.</p>
+            </div>
+            <div class="hv-trust-item">
+                <span class="hv-trust-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h1.5M7 8v8M10.5 5v14M14 9v6M17.5 6.5v11M21 12h-1"/></svg></span>
+                <h3>Nagre-record buong gabi</h3>
+                <p>Walang sampling. Mapapakinggan ang bawat minuto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short FAQ + help links -->
+    <section id="faq" class="hv-faq" aria-labelledby="faq-heading">
+        <div class="container hv-narrow">
+            <h2 class="section-title" id="faq-heading">Mga tanong</h2>
+            <details class="hv-q">
+                <summary>Bakit tumigil ang recording ko sa kalagitnaan ng gabi?</summary>
+                <p>Kadalasan dahil sa tawag sa telepono, ibang app na kumukuha ng mikropono, o AirPods na nadiskonekta. Panatilihing naka-charge ang telepono at naka-on ang Sleep Focus. Kapag may umabala, may button na Ituloy ang Recording sa iyong Lock Screen. <a href="/fil/support/troubleshooting#stopped-recording">Ayusin ang tumigil na recording</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>Nasaan ang mga recording ko, at paano ko ito ibabahagi?</summary>
+                <p>I-tap ang download arrow sa isang episode para i-save ang clip na iyon sa Files app. Para sa buong gabi, buksan ang I-export ang Report para makakuha ng ZIP na may audio at mga spreadsheet na puwede mong ipadala sa doktor mo. <a href="/fil/support/export-and-sharing">Pag-export at pagbabahagi</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>Gumagana ba ito sa Apple Watch ko o sa ibang relo?</summary>
+                <p>Ang telepono mo ang nagre-record. Nagdadagdag ang relo ng heart rate, HRV, at blood oxygen sa pamamagitan ng Apple Health o Health Connect, at kaya ng Apple Watch, Garmin, Fitbit, at karamihan ng ibang relo na tapikin ang pulso mo kapag humihilik ka. <a href="/fil/support/apple-watch">Mga relo at wearable</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>Kaya ba nitong ihiwalay ang hilik ko sa hilik ng partner ko, sa bentilador, o sa musika?</summary>
+                <p>Naririnig nito ang lahat ng tunog sa kuwarto, kaya hindi nito mapaghihiwalay ang dalawang humihilik. Ilagay ang telepono pinakamalapit sa taong sinusubaybayan mo. Background ang turing sa tuloy-tuloy na tunog gaya ng bentilador o musika, at puwede mong i-play ulit ang kahit anong sandali para tingnan. <a href="/fil/support/how-detection-works">Paano gumagana ang pagtukoy</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>Libre ba talaga? Ano ang nangyayari sa data ko?</summary>
+                <p>Oo, libre ang bawat feature, walang ads o subscription. Walang account, tumatakbo ang pagtukoy sa telepono mo, at walang ina-upload. Data Not Collected ang nakasulat sa App Store privacy label.</p>
+            </details>
+            <details class="hv-q">
+                <summary>Kaya ba nitong tukuyin ang sleep apnea?</summary>
+                <p>Minamarkahan nito ang mga paghinto sa paghinga mo at hinahayaan kang i-play ulit ang mga ito, na kapaki-pakinabang na ipakita sa doktor. Hindi ito medical device at wala itong dina-diagnose. <a href="/fil/support/breathing-disruptions">Mga pagkaabala sa paghinga</a></p>
+            </details>
+            <div class="hv-more">
+                <p>May tanong pa?</p>
+                <div class="hv-more-actions">
+                    <a class="hv-more-btn" href="/fil/support/faq">Lahat ng tanong</a>
+                    <a class="hv-more-btn" href="/fil/support/">Help center</a>
+                    <a class="hv-more-btn" href="/fil/support/contact">I-message ako</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tip invite -->
+    <section class="hv-tip" aria-label="Suportahan ang app">
+        <div class="container hv-narrow">
+            <a class="hv-tip-card" href="/fil/tip">
+                <img class="hv-tip-icon" src="/logo.png" alt="" width="56" height="56">
+                <span class="hv-tip-text">
+                    <strong>Libre, at gawa ng isang tao</strong>
+                    <span>Kung nakatulong sa iyo ang Snore Timeline, puwede kang mag-tip nang isang beses. Walang nagre-renew.</span>
+                </span>
+                <span class="hv-tip-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.4h2c.7-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>Mag-tip nang isang beses</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Final download -->
+    <section class="hv-cta" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 class="section-title" id="cta-heading">Alamin mamayang gabi</h2>
+            <p class="section-subtitle">Libre sa iPhone at Android.</p>
+            <div class="hero-buttons hv-cta-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">I-download sa</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">Kunin sa</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    </main>
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/fil/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>I-record, tingnan, at unawain ang iyong hilik, paghinga, at tulog, lahat sa iyong device.</p>
+                <p><a href="/fil/support/">Suporta</a> &middot; <a href="/fil/privacy">Privacy</a></p>
+                <div class="lang-switcher">
+                    <button class="lang-switcher-btn" aria-label="Change language">
+                        <img class="lang-flag" src="/flags/ph.svg" alt="">
+                        <span>Filipino</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/"><img class="lang-flag" src="/flags/ca.svg" alt=""><span class="lang-name">English</span></a>
+                        <a href="/ar/"><img class="lang-flag" src="/flags/sa.svg" alt=""><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></a>
+                        <a href="/zh/"><img class="lang-flag" src="/flags/cn.svg" alt=""><span class="lang-name">&#20013;&#25991;</span></a>
+                        <a href="/zh-Hant/"><img class="lang-flag" src="/flags/tw.svg" alt=""><span class="lang-name">&#32321;&#39636;&#20013;&#25991;</span></a>
+                        <a href="/da/"><img class="lang-flag" src="/flags/dk.svg" alt=""><span class="lang-name">Dansk</span></a>
+                        <a href="/nl/"><img class="lang-flag" src="/flags/nl.svg" alt=""><span class="lang-name">Nederlands</span></a>
+                        <a href="/fil/" class="active"><img class="lang-flag" src="/flags/ph.svg" alt=""><span class="lang-name">Filipino</span></a>
+                        <a href="/fr/"><img class="lang-flag" src="/flags/fr.svg" alt=""><span class="lang-name">Fran&ccedil;ais</span></a>
+                        <a href="/de/"><img class="lang-flag" src="/flags/de.svg" alt=""><span class="lang-name">Deutsch</span></a>
+                        <a href="/hi/"><img class="lang-flag" src="/flags/in.svg" alt=""><span class="lang-name">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</span></a>
+                        <a href="/id/"><img class="lang-flag" src="/flags/id.svg" alt=""><span class="lang-name">Bahasa Indonesia</span></a>
+                        <a href="/it/"><img class="lang-flag" src="/flags/it.svg" alt=""><span class="lang-name">Italiano</span></a>
+                        <a href="/ja/"><img class="lang-flag" src="/flags/jp.svg" alt=""><span class="lang-name">&#26085;&#26412;&#35486;</span></a>
+                        <a href="/ko/"><img class="lang-flag" src="/flags/kr.svg" alt=""><span class="lang-name">&#54620;&#44397;&#50612;</span></a>
+                        <a href="/ms/"><img class="lang-flag" src="/flags/my.svg" alt=""><span class="lang-name">Bahasa Melayu</span></a>
+                        <a href="/no/"><img class="lang-flag" src="/flags/no.svg" alt=""><span class="lang-name">Norsk</span></a>
+                        <a href="/pl/"><img class="lang-flag" src="/flags/pl.svg" alt=""><span class="lang-name">Polski</span></a>
+                        <a href="/pt/"><img class="lang-flag" src="/flags/pt.svg" alt=""><span class="lang-name">Portugu&ecirc;s</span></a>
+                        <a href="/ru/"><img class="lang-flag" src="/flags/ru.svg" alt=""><span class="lang-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></a>
+                        <a href="/es/"><img class="lang-flag" src="/flags/es.svg" alt=""><span class="lang-name">Espa&ntilde;ol</span></a>
+                        <a href="/sv/"><img class="lang-flag" src="/flags/se.svg" alt=""><span class="lang-name">Svenska</span></a>
+                        <a href="/th/"><img class="lang-flag" src="/flags/th.svg" alt=""><span class="lang-name">&#3652;&#3607;&#3618;</span></a>
+                        <a href="/tr/"><img class="lang-flag" src="/flags/tr.svg" alt=""><span class="lang-name">T&uuml;rk&ccedil;e</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="support-footer-col">
+                <h2>Matuto</h2>
+                <ul>
+                    <li><a href="/fil/support/getting-started">Pagsisimula</a></li>
+                    <li><a href="/fil/support/how-detection-works">Paano Gumagana ang Pagtukoy</a></li>
+                    <li><a href="/fil/support/timeline-and-playback">Timeline &amp; Playback</a></li>
+                    <li><a href="/fil/support/breathing-disruptions">Mga Pagkaabala sa Paghinga</a></li>
+                    <li><a href="/fil/support/sleep-stages">Mga Yugto ng Tulog</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h2>Higit Pa</h2>
+                <ul>
+                    <li><a href="/fil/support/apple-watch">Apple Watch &amp; Health</a></li>
+                    <li><a href="/fil/support/export-and-sharing">Export &amp; Pagbabahagi</a></li>
+                    <li><a href="/fil/support/troubleshooting">Pag-troubleshoot</a></li>
+                    <li><a href="/fil/support/android">Android</a></li>
+                    <li><a href="/fil/support/faq">FAQ</a></li>
+                    <li><a href="/fil/support/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. Nakalaan ang lahat ng karapatan.</div>
+    </footer>
+
+    <div class="mobile-cta-bar is-tucked">
+        <div class="mobile-cta-copy">
+            <strong>Snore Timeline</strong>
+            <span>Libre · iOS at Android</span>
+        </div>
+        <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>I-download</a>
+    </div>
+
+    <script src="../script.js?v=33"></script>
+</body>
+</html>

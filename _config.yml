@@ -1,0 +1,12 @@
+# GitHub Pages Jekyll Configuration
+# Files to exclude from the published site
+exclude:
+  - claude.md
+  - README.md
+  - .gitignore
+  - support/_design-guide.md
+  - tools
+  - contact-worker
+# Dot-folders are skipped by Jekyll unless listed. Universal links need this one.
+include:
+  - .well-known

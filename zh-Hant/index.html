@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="zh-TW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Snore Timeline：打鼾與夢話錄音、智慧喚醒鬧鐘</title>
+    <meta name="title" content="Snore Timeline：打鼾與夢話錄音、智慧喚醒鬧鐘">
+    <meta name="description" content="Snore Timeline 是打鼾與夢話錄音 App，具備智慧喚醒鬧鐘以及每夜睡眠分數與恢復狀態。支援 Apple Watch、Oura 與 Garmin。所有分析都在手機上完成，無需訂閱。">
+    <meta name="keywords" content="打鼾追蹤, 睡眠追蹤, 打鼾應用程式, 呼吸中斷偵測, 睡眠分析, iOS 應用程式, 打鼾錄音, 睡眠聲音, 呼吸中斷偵測, 帶時間軸的打鼾錄音, 顯示打鼾事件的應用程式, 打鼾事件視覺化, 恢復分數, 睡眠準備度分數, HRV 恢復, apple watch 恢復分數">
+    <meta name="author" content="Menelik Tucker">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Chinese (Traditional)">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0E1116">
+    <meta name="msapplication-TileColor" content="#5B7FFF">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://snoretimeline.com/zh-Hant/">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://snoretimeline.com/">
+    <link rel="alternate" hreflang="ar" href="https://snoretimeline.com/ar/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://snoretimeline.com/zh/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://snoretimeline.com/zh-Hant/">
+    <link rel="alternate" hreflang="da" href="https://snoretimeline.com/da/">
+    <link rel="alternate" hreflang="nl" href="https://snoretimeline.com/nl/">
+    <link rel="alternate" hreflang="tl" href="https://snoretimeline.com/fil/">
+    <link rel="alternate" hreflang="fr" href="https://snoretimeline.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://snoretimeline.com/de/">
+    <link rel="alternate" hreflang="hi" href="https://snoretimeline.com/hi/">
+    <link rel="alternate" hreflang="id" href="https://snoretimeline.com/id/">
+    <link rel="alternate" hreflang="it" href="https://snoretimeline.com/it/">
+    <link rel="alternate" hreflang="ja" href="https://snoretimeline.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://snoretimeline.com/ko/">
+    <link rel="alternate" hreflang="ms" href="https://snoretimeline.com/ms/">
+    <link rel="alternate" hreflang="no" href="https://snoretimeline.com/no/">
+    <link rel="alternate" hreflang="pl" href="https://snoretimeline.com/pl/">
+    <link rel="alternate" hreflang="pt" href="https://snoretimeline.com/pt/">
+    <link rel="alternate" hreflang="ru" href="https://snoretimeline.com/ru/">
+    <link rel="alternate" hreflang="es" href="https://snoretimeline.com/es/">
+    <link rel="alternate" hreflang="sv" href="https://snoretimeline.com/sv/">
+    <link rel="alternate" hreflang="th" href="https://snoretimeline.com/th/">
+    <link rel="alternate" hreflang="tr" href="https://snoretimeline.com/tr/">
+    <link rel="alternate" hreflang="x-default" href="https://snoretimeline.com/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://snoretimeline.com/zh-Hant/">
+    <meta property="og:title" content="Snore Timeline：打鼾與夢話錄音、智慧喚醒鬧鐘">
+    <meta property="og:description" content="Snore Timeline 是打鼾與夢話錄音 App，具備智慧喚醒鬧鐘以及每夜睡眠分數與恢復狀態。支援 Apple Watch、Oura 與 Garmin。所有分析都在手機上完成，無需訂閱。">
+    <meta property="og:image" content="https://snoretimeline.com/app-screenshot.png">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="Snore Timeline">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://snoretimeline.com/zh-Hant/">
+    <meta property="twitter:title" content="Snore Timeline：打鼾與夢話錄音、智慧喚醒鬧鐘">
+    <meta property="twitter:description" content="Snore Timeline 是打鼾與夢話錄音 App，具備智慧喚醒鬧鐘以及每夜睡眠分數與恢復狀態。支援 Apple Watch、Oura 與 Garmin。所有分析都在手機上完成，無需訂閱。">
+    <meta property="twitter:image" content="https://snoretimeline.com/app-screenshot.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:app_store_id" content="6751759381">
+    <meta property="al:ios:app_name" content="Snore Timeline">
+    <meta property="al:ios:url" content="snoretimeline://open">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../icon-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../styles.css?v=28">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://snoretimeline.com/#organization",
+  "name": "Snore Timeline",
+  "url": "https://snoretimeline.com/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://snoretimeline.com/logo.png"
+  },
+  "email": "support@snoretimeline.com",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@snoretimeline.com",
+    "url": "https://snoretimeline.com/support/contact"
+  },
+  "founder": {
+    "@id": "https://snoretimeline.com/about#person",
+    "@type": "Person",
+    "name": "Menelik Tucker",
+    "url": "https://snoretimeline.com/about"
+  },
+  "sameAs": [
+    "https://apps.apple.com/app/id6751759381",
+    "https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+    {
+          "@context": "https://schema.org",
+          "@type": "MobileApplication",
+          "name": "Snore Timeline",
+          "description": "打鼾與夢話錄音，具備裝置端說夢話轉錄、會在淺層睡眠時叫醒你的智慧喚醒鬧鐘、每夜睡眠分數與恢復狀態、睡眠階段、呼吸中斷偵測，以及 Apple Watch 鼾聲輕推。透過 Apple 健康 與 Apple Watch、Oura、Garmin、Whoop 和 Ultrahuman 同步。完全隱私保護，所有處理皆在裝置上完成。",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS, Android, watchOS",
+          "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+          },
+          "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "ratingCount": "590",
+                "bestRating": "5",
+                "worstRating": "1"
+          },
+          "author": {
+                "@type": "Person",
+                "name": "Menelik Tucker"
+          },
+          "image": "https://snoretimeline.com/logo.png",
+          "screenshot": "https://snoretimeline.com/app-screenshot.png",
+          "url": "https://apps.apple.com/zh-Hant/app/snore-timeline/id6751759381",
+          "downloadUrl": "https://apps.apple.com/zh-Hant/app/snore-timeline/id6751759381",
+          "featureList": [
+                "互動式打鼾時間軸：輕觸任何時刻即可聆聽",
+                "自動打鼾偵測，整夜錄音、不抽樣",
+                "夢話偵測與裝置端轉錄",
+                "從音訊偵測呼吸暫停（非醫療診斷）",
+                "在淺層睡眠時叫醒你的智慧喚醒鬧鐘",
+                "自訂鬧鐘鈴聲：匯入音訊檔或自行錄製",
+                "每夜睡眠分數（0 到 100）",
+                "根據 HRV、靜息心率、血氧與手腕溫度計算的每夜恢復狀態",
+                "以你自己 28 晚基準值評估的夜間生命徵象",
+                "從呼吸音訊估計睡眠階段（清醒、淺層睡眠、深層睡眠、快速動眼期）",
+                "鼾聲輕推：打鼾時以一聲提示音、iPhone 震動或手腕輕點提醒你",
+                "鼾聲輕推等級：每次鼾聲都輕推，或只在響亮鼾聲時輕推",
+                "統一的輕推長度（2 到 30 秒），同時適用於提示音、震動和手腕輕點",
+                "在 Apple Watch、Garmin、Fitbit、Huawei 及其他能顯示 iPhone 通知的手錶上提供無聲手腕輕點",
+                "App Store 隱私標籤：Data Not Collected（未收集資料）。在裝置上處理，無需帳號",
+                "透過 Apple 健康 與 Apple Watch、Oura、Garmin、Whoop 和 Ultrahuman 搭配使用",
+                "Apple Watch App，具備睡眠分數複雜功能與無聲手腕輕點鬧鐘",
+                "打鼾事件分組，附持續時間與強度",
+                "每分鐘鼾聲圖表與每週趨勢",
+                "巨大聲響偵測，自動門檻值設在比房間高 5 dB 的位置",
+                "動態島與鎖定畫面上的錄音狀態，中斷後一點即可繼續錄音",
+                "「今晚」頁面，附就寢倒數與睡前檢查",
+                "睡眠因素指南，附常見止鼾方法的建議試用天數",
+                "增強音訊播放",
+                "睡眠銀行：以你自己的睡眠目標（6 到 10 小時）計算的每週睡眠不足",
+                "匯出 7 天、30 天或全部時間的 CSV 資料與音訊",
+                "錄音期間的即時心率與 HRV",
+                "支援 AirPods 與藍牙麥克風",
+                "智慧儲存空間管理",
+                "就寢錄音提醒",
+                "支援 VoiceOver 與語音控制"
+          ],
+          "review": [
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "mdmorz"
+                      },
+                      "datePublished": "2026-07-27",
+                      "name": "Great App",
+                      "reviewBody": "Everything needed for analysing snoring patterns, no gimmicks app",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "smjtysx"
+                      },
+                      "datePublished": "2026-07-18",
+                      "name": "好用",
+                      "reviewBody": "记录清晰完整准确，值得推荐！",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "MoralSuperiorityComplex"
+                      },
+                      "datePublished": "2026-07-14",
+                      "name": "Thank you for making my life better. CEO in California.",
+                      "reviewBody": "Thank you for making my life better. CEO in California.",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "snap hater lol"
+                      },
+                      "datePublished": "2026-07-02",
+                      "name": "Absolute game changer",
+                      "reviewBody": "It’s really amazing how people can built an actually good app, It’s also all free. nothing locked behind a paywall! it’s so incredibly helpful and incredible",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Jerooskii"
+                      },
+                      "datePublished": "2026-07-02",
+                      "name": "Todo lo necesario!",
+                      "reviewBody": "Graba ronquidos y tiene la opción de que se guarden únicamente los que se detectan.\n\nTiene despertador incluido opcional y el resumen de la noche es completo y me ha ayudado a dar seguimiento a mis hábitos de sueño\n\nSúper recomendada y el diseño de interfaz es impecable",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Mic winter"
+                      },
+                      "datePublished": "2026-06-23",
+                      "name": "👍",
+                      "reviewBody": "❤️￼ best snore app I’ve used yet",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Sasanki124"
+                      },
+                      "datePublished": "2026-06-22",
+                      "name": "Thank you",
+                      "reviewBody": "Thank you for making this free. You are the best",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Jj hiker"
+                      },
+                      "datePublished": "2026-06-16",
+                      "name": "Three thumbs up!",
+                      "reviewBody": "What an impressive app!  \n\nIncredibly robust, long feature list with lots of anticipated needs and corresponding features. Super impressed with what's there!   Kudos to the developer for the level of maturity obtained.  If I had a third hand - it'd be rated three thumbs up!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "DarthMike98"
+                      },
+                      "datePublished": "2026-06-10",
+                      "name": "Amazing app",
+                      "reviewBody": "Well written app. Using it is a delight! Just tracked my first sleep!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "UndertakerActual"
+                      },
+                      "datePublished": "2026-06-09",
+                      "name": "Great App!",
+                      "reviewBody": "I hardly ever write reviews, but I want other people like myself (skeptics by nature) to know that this is an excellent app that preforms exactly as advertised, and most importantly, without ANY additional fees, subscriptions, ads, paywalls, etc. \n\nI learned about this app on Reddit, from the developer himself, I believe. I decided to give it a try, and was pleasantly surprised to find out if it does exactly what it said it would do. A rare find these days! Highly recommend if you’re looking for a solid, straightforward snore app.",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Emma.abcd"
+                      },
+                      "datePublished": "2026-06-07",
+                      "name": "Best app for sleep tracker",
+                      "reviewBody": "I’ve searched and tested a lot of different sleep tracker but this one is honestly the best. The recording settings are very good and so is the sleep analysis. And compared to other apps every features are free! I would definitely recommend this to anyone who wants to understand better their sleep!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                },
+                {
+                      "@type": "Review",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Mohammed😀"
+                      },
+                      "datePublished": "2026-06-07",
+                      "name": "Better than other paid apps!",
+                      "reviewBody": "I am surprised this app is free because it works better than other premium snore recording apps that cost money. Much easier to navigate and listen to recordings compared to other apps. Kudos to the developer!",
+                      "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                      }
+                }
+          ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "為什麼錄音在半夜停了？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常是來電、其他應用程式搶走麥克風，或 AirPods 中斷連線。讓手機插著電源，並開啟睡眠專注模式。萬一還是被中斷，鎖定畫面會出現「繼續錄音」按鈕。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我的錄音在哪裡？要怎麼分享？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "點一下事件上的下載箭頭，就能把那段片段存到「檔案」App。想要整夜的內容，就開啟「匯出報告」，取得包含錄音和試算表的 ZIP，可以直接傳給醫師。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以搭配我的 Apple Watch 或其他手錶使用嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "錄音由手機負責。手錶透過 Apple 健康或 Health Connect 補上心率、HRV 和血氧；Apple Watch、Garmin、Fitbit 和大多數其他手錶，還能在你打鼾時輕點你的手腕。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "它能分辨我的鼾聲和伴侶的鼾聲、電風扇或音樂嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它會聽到房間裡的所有聲音，所以無法分辨兩個人的鼾聲。請把手機放在最靠近你要追蹤的那個人的地方。電風扇或音樂這類穩定的聲音會算作背景音，而且任何時刻都能回放確認。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "真的免費嗎？我的資料會怎樣？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的，所有功能都免費，沒有廣告，也沒有訂閱。不需要帳號，偵測在你的手機上執行，不會上傳任何東西。App Store 隱私權標籤顯示為「未收集資料」。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "它能偵測睡眠呼吸中止症嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它會標出你呼吸暫停的地方，讓你回放，方便拿給醫師看。它不是醫療器材，也不做任何診斷。"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+    <!-- Sticky header (shares the support-center chrome) -->
+    <header class="support-topbar home-topbar">
+        <div class="support-topbar-inner">
+            <a href="/zh-Hant/" class="support-topbar-brand"><img src="../logo.png" alt="">Snore Timeline</a>
+            <span class="support-topbar-eyebrow">睡眠追蹤</span>
+            <span class="support-topbar-spacer"></span>
+            <a href="/zh-Hant/support/" class="home-topbar-link">支援中心</a>
+            <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="support-topbar-cta home-topbar-cta" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>下載</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main" tabindex="-1">
+    <section class="hero" aria-label="主要區塊">
+        <!-- Shader background -->
+        <canvas id="hero-shader" aria-hidden="true"></canvas>
+        <!-- Animated background elements -->
+        <div class="hero-bg-orb hero-bg-orb-1"></div>
+        <div class="hero-bg-orb hero-bg-orb-2"></div>
+        <div class="hero-stars">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+        </div>
+
+        <div class="container hero-content">
+            <article class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">聽完整的一夜，而不是抽樣片段。</span>
+                </h1>
+                <p class="hero-subtitle">
+                    昨晚的打鼾、夢話、磨牙和呼吸暫停，都排在一條時間軸上，點一下就能播放。免費，不需要帳號，也不用訂閱。
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">下載自</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">下載自</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="hero-rating"><span class="hero-rating-stars">★★★★★</span> 深受 App Store 與 Google Play 用戶喜愛</p>
+                <p class="hero-tip-nudge">iOS 與 Android 免費下載</p>
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>100% 私密</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span>即時偵測</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span>無需訂閱</span>
+                    </div>
+                </div>
+            </article>
+            <aside class="hero-visual" aria-label="應用程式預覽">
+                <div class="phone-scene" id="phone-scene">
+                    <div class="phone-glow"></div>
+                    <span class="phone-contact-shadow" aria-hidden="true"></span>
+                    <div class="phone-float">
+                        <div class="phone-swing">
+                            <div class="phone-3d">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <video id="hero-video" poster="/hero-tour/zh-Hant-poster.webp?v=10" class="app-screenshot" width="720" height="1566" fetchpriority="high" muted loop playsinline aria-label="Snore Timeline 呈現一整夜：時間軸，播放一段打鼾、一段夢話和一聲巨響，睡眠分數與睡眠階段，以及手錶生理數據">
+                            <source src="/hero-tour/zh-Hant.mp4?v=10" type="video/mp4">
+                            <source src="/hero-tour/zh-Hant.webm?v=10" type="video/webm">
+                        </video>
+                                        <span class="phone-island" aria-hidden="true"></span>
+                                        <span class="phone-glare" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+        <div class="section-stars">
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+            <div class="section-star"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">App Store 評論</span>
+                <h2 class="section-title" id="reviews-heading">全部評論，未經篩選</h2>
+                <p class="section-subtitle cursive">沒有挑選</p>
+            </div>
+
+            <div class="rv-panel" id="reviewsPanel" data-rv-state="static"
+                data-rv-nobreakdown="（未公布星等分布）"
+                data-rv-histlabel="評分分布：{rows}"
+                data-rv-justnow="剛剛"
+                data-rv-updatedpre="每小時核對 · 最近一次新評分 "
+                data-rv-updatedpost=""
+                data-rv-starslabel="5 星中的 {n} 星"
+                data-rv-newtag="最新"
+                data-rv-readmore="閱讀完整評論"
+                data-rv-readreply="查看開發者回覆"
+                data-rv-translate="翻譯"
+                data-rv-translating="翻譯中…"
+                data-rv-alreadylang="已是你的語言"
+                data-rv-translated="已翻譯"
+                data-rv-translatefailed="翻譯失敗，點一下重試"
+                data-rv-empty="目前沒有符合此篩選條件的評論。"
+                data-rv-emptycountry="{country}有 {n} 則評分，但還沒有文字評論。"
+                data-rv-showing="顯示 {total} 則文字評論中的 {shown} 則"
+                data-rv-showingone="顯示唯一一則文字評論"
+                data-rv-showall="顯示全部 {n} 則評論"
+                data-rv-weeknone="本週沒有新的文字評論。沒有文字的評分已計入上方。"
+                data-rv-weekone="{n} 則新的文字評論"
+                data-rv-weekmany="{n} 則新的文字評論"
+                data-rv-nrating="{n} 則評分"
+                data-rv-nratings="{n} 則評分"
+                data-rv-devresponse="開發者回覆">
+                <div class="rv-summary">
+                    <div class="rv-summary-top">
+                        <label class="rv-select rv-select-scope">
+                            <span class="rv-select-label rv-sr-only">商店</span>
+                            <select data-rv="country" disabled><option value="all">所有國家或地區</option></select>
+                        </label>
+                    </div>
+
+                    <div class="rv-score">
+                        <span class="rv-score-num" data-rv="avg">4.9</span>
+                        <span class="rv-score-stars" data-rv="avgstars" aria-hidden="true">★★★★★</span>
+                        <span class="rv-score-count"><strong data-rv="count">590</strong> 則 App Store 評分</span>
+                        <span class="rv-score-note" data-rv="note" hidden></span>
+                    </div>
+
+                    <div class="rv-histogram" data-rv="histogram" role="img" aria-label="評分分布：五星 320 則、四星 20 則、三星 5 則、二星 0 則、一星 2 則">
+                        <div class="rv-bar-row"><span class="rv-bar-label">5★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:100%"></span></span><span class="rv-bar-num">320</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">4★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:6.3%"></span></span><span class="rv-bar-num">20</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">3★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:1.6%"></span></span><span class="rv-bar-num">5</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">2★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:0%"></span></span><span class="rv-bar-num">0</span></div>
+                        <div class="rv-bar-row"><span class="rv-bar-label">1★</span><span class="rv-bar"><span class="rv-bar-fill" style="width:0.6%"></span></span><span class="rv-bar-num">2</span></div>
+                    </div>
+                </div>
+
+                <p class="rv-updated" data-rv="updated">
+                    <span class="rv-dot" aria-hidden="true"></span>
+                    <span data-rv="updatedtext">每小時與 App Store 核對一次。</span>
+                </p>
+
+                <section class="rv-week" data-rv="week" aria-labelledby="rv-week-heading" hidden>
+                    <div class="rv-week-head">
+                        <div class="rv-week-stat">
+                            <span class="rv-week-num" data-rv="weeknum">—</span>
+                            <span class="rv-week-label" id="rv-week-heading">最近 7 天的新增評分</span>
+                        </div>
+                        <ul class="rv-week-countries" data-rv="weekcountries" aria-label="這些評分來自的國家或地區"></ul>
+                    </div>
+                    <div class="rv-week-reviews" data-rv="weekreviews" hidden>
+                        <h3 class="rv-week-subhead" data-rv="weeksubhead"></h3>
+                        <div class="rv-week-list" data-rv="weeklist"></div>
+                    </div>
+                    <p class="rv-week-empty" data-rv="weekempty" hidden></p>
+                </section>
+
+                <div class="rv-controls" data-rv="controls" hidden>
+                    <div class="rv-chips" role="group" aria-label="依星等篩選評論">
+                        <button type="button" class="rv-chip is-active" data-rv-stars="all">全部</button>
+                        <button type="button" class="rv-chip" data-rv-stars="5">5★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="4">4★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="3">3★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="2">2★</button>
+                        <button type="button" class="rv-chip" data-rv-stars="1">1★</button>
+                    </div>
+                    <div class="rv-selects">
+                        <label class="rv-select">
+                            <span class="rv-select-label">排序</span>
+                            <select data-rv="sort">
+                                <option value="newest">最新優先</option>
+                                <option value="oldest">最舊優先</option>
+                                <option value="lowest">評分由低到高</option>
+                                <option value="highest">評分由高到低</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <p class="rv-count-line" data-rv="countline" hidden></p>
+
+                <div class="rv-list" data-rv="list">
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-27</span>
+                        </div>
+                        <h3 class="rv-card-title">Great App</h3>
+                        <p class="rv-card-body">Everything needed for analysing snoring patterns, no gimmicks app</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">mdmorz</span>
+                            <span class="rv-card-meta">🇮🇳 India · v4.10</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-18</span>
+                        </div>
+                        <h3 class="rv-card-title">好用</h3>
+                        <p class="rv-card-body">记录清晰完整准确，值得推荐！</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">smjtysx</span>
+                            <span class="rv-card-meta">🇨🇳 China · v4.9</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-14</span>
+                        </div>
+                        <h3 class="rv-card-title">Thank you for making my life better. CEO in California.</h3>
+                        <p class="rv-card-body">Thank you for making my life better. CEO in California.</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">MoralSuperiorityComplex</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.8</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-02</span>
+                        </div>
+                        <h3 class="rv-card-title">Absolute game changer</h3>
+                        <p class="rv-card-body">It’s really amazing how people can built an actually good app, It’s also all free. nothing locked behind a paywall! it’s so incredibly helpful and incredible</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">snap hater lol</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.8</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-07-02</span>
+                        </div>
+                        <h3 class="rv-card-title">Todo lo necesario!</h3>
+                        <p class="rv-card-body">Graba ronquidos y tiene la opción de que se guarden únicamente los que se detectan.
+
+Tiene despertador incluido opcional y el resumen de la noche es completo y me ha ayudado a dar seguimiento a mis hábitos de sueño
+
+Súper recomendada y el diseño de interfaz es impecable</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Jerooskii</span>
+                            <span class="rv-card-meta">🇲🇽 Mexico · v4.8</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-23</span>
+                        </div>
+                        <h3 class="rv-card-title">👍</h3>
+                        <p class="rv-card-body">❤️￼ best snore app I’ve used yet</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Mic winter</span>
+                            <span class="rv-card-meta">🇨🇦 Canada · v4.6</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-22</span>
+                        </div>
+                        <h3 class="rv-card-title">Thank you</h3>
+                        <p class="rv-card-body">Thank you for making this free. You are the best</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Sasanki124</span>
+                            <span class="rv-card-meta">🇨🇦 Canada · v4.6</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-16</span>
+                        </div>
+                        <h3 class="rv-card-title">Three thumbs up!</h3>
+                        <p class="rv-card-body">What an impressive app!  
+
+Incredibly robust, long feature list with lots of anticipated needs and corresponding features. Super impressed with what's there!   Kudos to the developer for the level of maturity obtained.  If I had a third hand - it'd be rated three thumbs up!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Jj hiker</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.6</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-10</span>
+                        </div>
+                        <h3 class="rv-card-title">Amazing app</h3>
+                        <p class="rv-card-body">Well written app. Using it is a delight! Just tracked my first sleep!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">DarthMike98</span>
+                            <span class="rv-card-meta">🇮🇳 India · v4.5</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-09</span>
+                        </div>
+                        <h3 class="rv-card-title">Great App!</h3>
+                        <p class="rv-card-body">I hardly ever write reviews, but I want other people like myself (skeptics by nature) to know that this is an excellent app that preforms exactly as advertised, and most importantly, without ANY additional fees, subscriptions, ads, paywalls, etc. 
+
+I learned about this app on Reddit, from the developer himself, I believe. I decided to give it a try, and was pleasantly surprised to find out if it does exactly what it said it would do. A rare find these days! Highly recommend if you’re looking for a solid, straightforward snore app.</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">UndertakerActual</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.5</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-07</span>
+                        </div>
+                        <h3 class="rv-card-title">Best app for sleep tracker</h3>
+                        <p class="rv-card-body">I’ve searched and tested a lot of different sleep tracker but this one is honestly the best. The recording settings are very good and so is the sleep analysis. And compared to other apps every features are free! I would definitely recommend this to anyone who wants to understand better their sleep!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Emma.abcd</span>
+                            <span class="rv-card-meta">🇦🇪 United Arab Emirates · v4.5</span>
+                        </div>
+                    </article>
+                    <article class="rv-card">
+                        <div class="rv-card-top">
+                            <span class="rv-card-stars"><span class="rv-star-on">★★★★★</span></span>
+                            <span class="rv-card-date">2026-06-07</span>
+                        </div>
+                        <h3 class="rv-card-title">Better than other paid apps!</h3>
+                        <p class="rv-card-body">I am surprised this app is free because it works better than other premium snore recording apps that cost money. Much easier to navigate and listen to recordings compared to other apps. Kudos to the developer!</p>
+                        <div class="rv-card-foot">
+                            <span class="rv-card-author">Mohammed😀</span>
+                            <span class="rv-card-meta">🇺🇸 United States · v4.5</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="rv-actions">
+                    <button type="button" class="rv-more" data-rv="more" hidden></button>
+                </div>
+
+                <p class="rv-foot">
+                    App Store 上刊出的每一則文字評論，都保留評論者本人的用字與語言。未經編輯，也未省略。這裡只有 iOS 的評分，尚未包含 Google Play 的評論。
+                    <a href="https://apps.apple.com/app/id6751759381?action=write-review" target="_blank" rel="noopener noreferrer">寫下你的評論 →</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three reasons, one row -->
+    <section class="hv-trust" aria-label="為什麼選擇 Snore Timeline">
+        <div class="container hv-trust-grid">
+            <div class="hv-trust-item">
+                <span class="hv-trust-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg></span>
+                <h3>未收集資料</h3>
+                <p>錄音只留在你的手機上。不需要帳號。</p>
+            </div>
+            <div class="hv-trust-item">
+                <span class="hv-trust-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v10H4zM2.5 7h19v4h-19zM12 7v14"/><path d="M12 7c-1.5-3.5-6-3.5-6-1s4 1 6 1zm0 0c1.5-3.5 6-3.5 6-1s-4 1-6 1z"/></svg></span>
+                <h3>無需訂閱</h3>
+                <p>所有功能免費，靠小費維持。</p>
+            </div>
+            <div class="hv-trust-item">
+                <span class="hv-trust-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h1.5M7 8v8M10.5 5v14M14 9v6M17.5 6.5v11M21 12h-1"/></svg></span>
+                <h3>整夜錄音</h3>
+                <p>不抽樣。每一分鐘都能播放。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short FAQ + help links -->
+    <section id="faq" class="hv-faq" aria-labelledby="faq-heading">
+        <div class="container hv-narrow">
+            <h2 class="section-title" id="faq-heading">常見問題</h2>
+            <details class="hv-q">
+                <summary>為什麼錄音在半夜停了？</summary>
+                <p>通常是來電、其他應用程式搶走麥克風，或 AirPods 中斷連線。讓手機插著電源，並開啟睡眠專注模式。萬一還是被中斷，鎖定畫面會出現「繼續錄音」按鈕。<a href="/zh-Hant/support/troubleshooting#stopped-recording">修復中斷的錄音</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>我的錄音在哪裡？要怎麼分享？</summary>
+                <p>點一下事件上的下載箭頭，就能把那段片段存到「檔案」App。想要整夜的內容，就開啟「匯出報告」，取得包含錄音和試算表的 ZIP，可以直接傳給醫師。<a href="/zh-Hant/support/export-and-sharing">匯出與分享</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>可以搭配我的 Apple Watch 或其他手錶使用嗎？</summary>
+                <p>錄音由手機負責。手錶透過 Apple 健康或 Health Connect 補上心率、HRV 和血氧；Apple Watch、Garmin、Fitbit 和大多數其他手錶，還能在你打鼾時輕點你的手腕。<a href="/zh-Hant/support/apple-watch">手錶與穿戴式裝置</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>它能分辨我的鼾聲和伴侶的鼾聲、電風扇或音樂嗎？</summary>
+                <p>它會聽到房間裡的所有聲音，所以無法分辨兩個人的鼾聲。請把手機放在最靠近你要追蹤的那個人的地方。電風扇或音樂這類穩定的聲音會算作背景音，而且任何時刻都能回放確認。<a href="/zh-Hant/support/how-detection-works">偵測如何運作</a></p>
+            </details>
+            <details class="hv-q">
+                <summary>真的免費嗎？我的資料會怎樣？</summary>
+                <p>是的，所有功能都免費，沒有廣告，也沒有訂閱。不需要帳號，偵測在你的手機上執行，不會上傳任何東西。App Store 隱私權標籤顯示為「未收集資料」。</p>
+            </details>
+            <details class="hv-q">
+                <summary>它能偵測睡眠呼吸中止症嗎？</summary>
+                <p>它會標出你呼吸暫停的地方，讓你回放，方便拿給醫師看。它不是醫療器材，也不做任何診斷。<a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a></p>
+            </details>
+            <div class="hv-more">
+                <p>還是沒解決？</p>
+                <div class="hv-more-actions">
+                    <a class="hv-more-btn" href="/zh-Hant/support/faq">所有問題</a>
+                    <a class="hv-more-btn" href="/zh-Hant/support/">支援中心</a>
+                    <a class="hv-more-btn" href="/zh-Hant/support/contact">傳訊息給我</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tip invite -->
+    <section class="hv-tip" aria-label="支持這款 App">
+        <div class="container hv-narrow">
+            <a class="hv-tip-card" href="/zh-Hant/tip">
+                <img class="hv-tip-icon" src="/logo.png" alt="" width="56" height="56">
+                <span class="hv-tip-text">
+                    <strong>免費，由一個人打造</strong>
+                    <span>如果 Snore Timeline 幫上了忙，你可以贊助一次。不會自動續訂。</span>
+                </span>
+                <span class="hv-tip-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.4h2c.7-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>贊助一次</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Final download -->
+    <section class="hv-cta" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 class="section-title" id="cta-heading">今晚就來聽聽看</h2>
+            <p class="section-subtitle">iPhone 與 Android 免費下載。</p>
+            <div class="hero-buttons hv-cta-buttons">
+                    <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="app-store-badge app-store-badge-large" data-store-badge="ios" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">下載自</span>
+                            <span class="app-store-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.meneliktucker.snoretimeline" class="app-store-badge app-store-badge-large" data-store-badge="android" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>
+                        <span class="app-store-text">
+                            <span class="app-store-small">下載自</span>
+                            <span class="app-store-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    </main>
+    <footer class="support-footer">
+        <div class="support-footer-inner">
+            <div class="support-footer-col">
+                <a href="/zh-Hant/" class="support-footer-brand"><img src="/logo.png" alt="">Snore Timeline</a>
+                <p>錄音、視覺化並了解你的打鼾、呼吸與睡眠，全部都在你的裝置上完成。</p>
+                <p><a href="/zh-Hant/support/">說明</a> &middot; <a href="/zh-Hant/privacy">隱私權</a></p>
+                <div class="lang-switcher">
+                    <button class="lang-switcher-btn" aria-label="Change language">
+                        <img class="lang-flag" src="/flags/tw.svg" alt="">
+                        <span>繁體中文</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/"><img class="lang-flag" src="/flags/ca.svg" alt=""><span class="lang-name">English</span></a>
+                        <a href="/ar/"><img class="lang-flag" src="/flags/sa.svg" alt=""><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></a>
+                        <a href="/zh/"><img class="lang-flag" src="/flags/cn.svg" alt=""><span class="lang-name">&#20013;&#25991;</span></a>
+                        <a href="/zh-Hant/" class="active"><img class="lang-flag" src="/flags/tw.svg" alt=""><span class="lang-name">&#32321;&#39636;&#20013;&#25991;</span></a>
+                        <a href="/da/"><img class="lang-flag" src="/flags/dk.svg" alt=""><span class="lang-name">Dansk</span></a>
+                        <a href="/nl/"><img class="lang-flag" src="/flags/nl.svg" alt=""><span class="lang-name">Nederlands</span></a>
+                        <a href="/fil/"><img class="lang-flag" src="/flags/ph.svg" alt=""><span class="lang-name">Filipino</span></a>
+                        <a href="/fr/"><img class="lang-flag" src="/flags/fr.svg" alt=""><span class="lang-name">Fran&ccedil;ais</span></a>
+                        <a href="/de/"><img class="lang-flag" src="/flags/de.svg" alt=""><span class="lang-name">Deutsch</span></a>
+                        <a href="/hi/"><img class="lang-flag" src="/flags/in.svg" alt=""><span class="lang-name">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</span></a>
+                        <a href="/id/"><img class="lang-flag" src="/flags/id.svg" alt=""><span class="lang-name">Bahasa Indonesia</span></a>
+                        <a href="/it/"><img class="lang-flag" src="/flags/it.svg" alt=""><span class="lang-name">Italiano</span></a>
+                        <a href="/ja/"><img class="lang-flag" src="/flags/jp.svg" alt=""><span class="lang-name">&#26085;&#26412;&#35486;</span></a>
+                        <a href="/ko/"><img class="lang-flag" src="/flags/kr.svg" alt=""><span class="lang-name">&#54620;&#44397;&#50612;</span></a>
+                        <a href="/ms/"><img class="lang-flag" src="/flags/my.svg" alt=""><span class="lang-name">Bahasa Melayu</span></a>
+                        <a href="/no/"><img class="lang-flag" src="/flags/no.svg" alt=""><span class="lang-name">Norsk</span></a>
+                        <a href="/pl/"><img class="lang-flag" src="/flags/pl.svg" alt=""><span class="lang-name">Polski</span></a>
+                        <a href="/pt/"><img class="lang-flag" src="/flags/pt.svg" alt=""><span class="lang-name">Portugu&ecirc;s</span></a>
+                        <a href="/ru/"><img class="lang-flag" src="/flags/ru.svg" alt=""><span class="lang-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></a>
+                        <a href="/es/"><img class="lang-flag" src="/flags/es.svg" alt=""><span class="lang-name">Espa&ntilde;ol</span></a>
+                        <a href="/sv/"><img class="lang-flag" src="/flags/se.svg" alt=""><span class="lang-name">Svenska</span></a>
+                        <a href="/th/"><img class="lang-flag" src="/flags/th.svg" alt=""><span class="lang-name">&#3652;&#3607;&#3618;</span></a>
+                        <a href="/tr/"><img class="lang-flag" src="/flags/tr.svg" alt=""><span class="lang-name">T&uuml;rk&ccedil;e</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="support-footer-col">
+                <h2>學習</h2>
+                <ul>
+                    <li><a href="/zh-Hant/support/getting-started">開始使用</a></li>
+                    <li><a href="/zh-Hant/support/how-detection-works">偵測如何運作</a></li>
+                    <li><a href="/zh-Hant/support/timeline-and-playback">時間軸與播放</a></li>
+                    <li><a href="/zh-Hant/support/breathing-disruptions">呼吸中斷</a></li>
+                    <li><a href="/zh-Hant/support/sleep-stages">睡眠階段</a></li>
+                </ul>
+            </div>
+            <div class="support-footer-col">
+                <h2>更多</h2>
+                <ul>
+                    <li><a href="/zh-Hant/support/apple-watch">Apple Watch 與 Health</a></li>
+                    <li><a href="/zh-Hant/support/export-and-sharing">匯出與分享</a></li>
+                    <li><a href="/zh-Hant/support/troubleshooting">疑難排解</a></li>
+                    <li><a href="/zh-Hant/support/android">Android</a></li>
+                    <li><a href="/zh-Hant/support/faq">常見問題</a></li>
+                    <li><a href="/zh-Hant/support/contact">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="support-footer-bottom">&copy; 2026 Snore Timeline. 保留一切權利。</div>
+    </footer>
+
+    <div class="mobile-cta-bar is-tucked">
+        <div class="mobile-cta-copy">
+            <strong>Snore Timeline</strong>
+            <span>免費 · iOS 與 Android</span>
+        </div>
+        <a href="https://apps.apple.com/app/apple-store/id6751759381?pt=126594410&ct=Marketing%20Website&mt=8" class="btn btn-primary" data-store-cta target="_blank" rel="noopener noreferrer"><svg class="store-cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>下載</a>
+    </div>
+
+    <script src="../script.js?v=33"></script>
+</body>
+</html>
