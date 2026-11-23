@@ -167,6 +167,7 @@
     </footer>
 
     <script src="/support/support-nav.js?v=8"></script>
+    <script src="/support/contact-diag.js?v=1"></script>
     <script>
     (function () {
         'use strict';
@@ -360,6 +361,7 @@
                     email: email,
                     details: form.details.value.trim(),
                     images: images.map(function (item) { return item.data; }),
+                    diagnostics: window.SnoreDiag ? window.SnoreDiag.payload() : undefined,
                     website: form.website.value
                 })
             }).then(function (res) {
@@ -369,6 +371,7 @@
                     form.reset();
                     details.value = '';
                     clearImages();
+                    if (window.SnoreDiag) window.SnoreDiag.clear();
                     show(email ? UI.sentReply.replace('{email}', email) : UI.sentAnon, 'ok');
                 } else if (data.error === 'email') {
                     show(UI.errEmail, 'error');

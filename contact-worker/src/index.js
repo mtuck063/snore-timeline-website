@@ -10,6 +10,10 @@ const MAX_FIELD = 200;
 // CPU, which parsing, checking and line-wrapping them all spend.
 const MAX_IMAGES = 3;
 const MAX_IMAGE_BASE64 = 700_000; // ~520 KB decoded
+// Diagnostics from the Android app: base64 of UTF-8 text the page decompressed
+// from the app's link. The app caps the text at 1 MB. The base64 check and the
+// line-wrapping are the only work on it, about what three screenshots cost.
+const MAX_DIAGNOSTICS_BASE64 = 1_400_000;
 // Rejecting any non-base64 character also rules out a forged MIME boundary,
 // since boundaries need "-" and line breaks. A full anchored match costs twice the CPU.
 const NOT_BASE64 = /[^A-Za-z0-9+/=]/;
@@ -45,7 +49,7 @@ export default {
         }
 
         // Refuse oversized bodies before parsing them costs CPU.
-        if (Number(request.headers.get("Content-Length") || 0) > MAX_IMAGES * MAX_IMAGE_BASE64 + 20_000) {
+        if (Number(request.headers.get("Content-Length") || 0) > MAX_IMAGES * MAX_IMAGE_BASE64 + MAX_DIAGNOSTICS_BASE64 + 20_000) {
             return json({ ok: false, error: "image" }, 413, cors);
         }
 
@@ -79,10 +83,16 @@ export default {
             return json({ ok: false, error: "image" }, 400, cors);
         }
 
+        const diagnostics = body.diagnostics === undefined ? "" : body.diagnostics;
+        if (typeof diagnostics !== "string" || diagnostics.length > MAX_DIAGNOSTICS_BASE64 || NOT_BASE64.test(diagnostics)) {
+            return json({ ok: false, error: "diagnostics" }, 400, cors);
+        }
+
         const footer = [];
         if (details) footer.push(`Details: ${details}`);
         footer.push(replyTo ? `Reply to: ${replyTo}` : "Reply to: anonymous");
         if (images.length) footer.push(`Screenshots: ${images.length} attached`);
+        if (diagnostics) footer.push("Diagnostics: attached");
         const text = [message, "", "--", ...footer].join("\n");
 
         // Gmail threads identical subjects into one conversation, so each
@@ -100,6 +110,7 @@ export default {
             subject: `Snore Timeline Feedback · ${sentAt}`,
             text,
             images,
+            diagnostics,
         });
 
         try {
@@ -142,7 +153,7 @@ function encodeHeader(str) {
     return `=?UTF-8?B?${base64Utf8(str)}?=`;
 }
 
-function buildMime({ from, to, replyTo, subject, text, images }) {
+function buildMime({ from, to, replyTo, subject, text, images, diagnostics }) {
     const domain = from.split("@")[1];
     const headers = [
         `From: Snore Timeline Contact Form <${from}>`,
@@ -161,7 +172,7 @@ function buildMime({ from, to, replyTo, subject, text, images }) {
         wrap76(base64Utf8(text)),
     ].join("\r\n");
 
-    if (!images.length) {
+    if (!images.length && !diagnostics) {
         return headers.join("\r\n") + "\r\n" + textPart;
     }
 
@@ -178,6 +189,15 @@ function buildMime({ from, to, replyTo, subject, text, images }) {
             wrap76(data),
         ].join("\r\n"));
     });
+    if (diagnostics) {
+        parts.push([
+            'Content-Type: text/plain; charset=UTF-8; name="diagnostics.txt"',
+            'Content-Disposition: attachment; filename="diagnostics.txt"',
+            "Content-Transfer-Encoding: base64",
+            "",
+            wrap76(diagnostics),
+        ].join("\r\n"));
+    }
     return headers.join("\r\n") + "\r\n\r\n" +
         parts.map((part) => `--${boundary}\r\n${part}`).join("\r\n") +
         `\r\n--${boundary}--\r\n`;

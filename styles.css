@@ -6997,6 +6997,27 @@ body[data-blog-page] .table-note { font-size: 0.85rem; color: var(--sup-ink-3); 
     font: inherit; font-size: 1.3rem; line-height: 2.2rem;
     color: #fff; background: rgba(20, 24, 31, 0.75);
 }
+/* Diagnostics the Android app passes in (support/contact-diag.js). */
+.contact-diag { display: flex; flex-direction: column; align-items: flex-start; gap: 0.45rem; }
+.contact-diag-toggle { display: flex; align-items: center; gap: 0.55rem; font-size: 0.95rem; color: var(--sup-ink); cursor: pointer; }
+.contact-diag-toggle input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--accent, var(--sup-ink)); }
+.contact-diag-view {
+    font: inherit; font-size: 0.88rem; font-weight: 600;
+    color: var(--sup-ink-2); background: none; border: none; padding: 0;
+    text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+.contact-diag-view:hover { color: var(--sup-ink); }
+.contact-diag-dialog {
+    margin: auto; width: min(94vw, 900px); max-height: 88vh; padding: 0;
+    border: 1px solid var(--sup-line); border-radius: 12px;
+    background: var(--sup-surface); color: var(--sup-ink);
+}
+.contact-diag-dialog::backdrop { background: rgba(10, 12, 16, 0.85); }
+.contact-diag-dialog pre {
+    margin: 0; padding: 3rem 1rem 1rem; max-height: 88vh; overflow: auto;
+    font-family: var(--sup-mono); font-size: 0.75rem; line-height: 1.5;
+    white-space: pre-wrap; word-break: break-word;
+}
 
 /* ---------- Skip link + main landmark ----------
    The first Tab on any page shows "Skip to content", which jumps past the
